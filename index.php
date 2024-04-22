@@ -37,7 +37,7 @@
 <body>
 <table width="908" height="4758" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td width="900" height="119" align="center" valign="middle"><img src="/imagenes_1/logo_pormizona_com_pe.jpg" width="395" height="97" /></td>
+    <td width="900" height="119" align="center" valign="middle"><img src="imagenes_1/logo_pmz_telf_rgb.jpg" width="853" height="147" /></td>
   </tr>
   <tr>
     <td height="223" align="center" bgcolor="#66FF99"><table width="903" height="173" border="1" cellpadding="1" cellspacing="1">
