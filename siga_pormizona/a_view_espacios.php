@@ -49,10 +49,15 @@ mysqli_set_charset($connec,'utf8');
 date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
-$bxproducto=$_GET['bxproducto'];
+$xzona=$_GET['xzona'];
+
 // ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
 $viewmodi=$_GET['viewmodi'];
 $xgl=$_GET['xgl'];
+
+if(strlen($xzona)==0){
+	$codcatalogo_ctg="040202";
+}
 
 ?>
 
@@ -68,20 +73,19 @@ $xgl=$_GET['xgl'];
     <td height="503" align="center"><img src="../imagenes_1/titulo_catalogo_publicitario.jpg" width="947" height="501" /></td>
   </tr>
   <tr>
-    <td height="86" align="center" valign="middle" bgcolor="#8199A3"><table width="839" height="71" border="1" align="center" cellpadding="1" cellspacing="1">
+    <td height="86" align="center" valign="middle" bgcolor="#8199A3"><table width="936" height="105" border="1" align="center" cellpadding="1" cellspacing="1">
       <tr>
-        <td width="213" align="center" bgcolor="#CCCCCC">ZONA 2<BR /> AV. PORONGOCHE</td>
-        <td width="187" align="center" bgcolor="#CCCCCC">ZONA 3<br />
-PIZARRO</td>
-        <td width="250" align="center" bgcolor="#CCCCCC">ZONA 4<br />
-AV. LAMBRAMANI (Parroquia)</td>
-        <td width="166" align="center" bgcolor="#CCCCCC">ZONA 5<br />
-AV. KENNEDY</td>
+        <td width="105" height="101" align="center" bgcolor="#CCCCCC"><a href="../index.php"><img src="iconos/boton_pmz_3letras.jpg" width="85" height="80" /></a></td>
+        <td width="202" align="center" bgcolor="#CCCCCC"><a href="a_view_espacios.php&xzona=040202"><img src="iconos/boton_zona2.jpg" width="150" height="80" /></a></td>
+        <td width="194" align="center" bgcolor="#CCCCCC">Zona 3</td>
+        <td width="203" align="center" bgcolor="#CCCCCC"><a href="a_view_espacios.php&xzona=040401"><img src="iconos/boton_zona4.jpg" width="150" height="80" /></td>
+        <td width="204" align="center" bgcolor="#CCCCCC"><a href="a_view_espacios.php&xzona=040501"><img src="iconos/boton_zona5.jpg" width="150" height="80" /></td>
       </tr>
     </table>
-    
-<?
-$codcatalogo_ctg="040202";
+      <?
+	  
+
+$codcatalogo_ctg=$xzona;
 $result=mysqli_query($connec,"select * from a_espa_catalogo where codcatalogo_ctg=$codcatalogo_ctg");
 
 $total=mysqli_num_rows($result);
