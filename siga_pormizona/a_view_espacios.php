@@ -57,7 +57,7 @@ $xgl=$_GET['xgl'];
 ?>
 
 
-<table width="908" height="1764" border="1" align="center" cellpadding="0" cellspacing="0">
+<table width="908" height="1493" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td width="900" height="119" align="center" valign="middle"><p><img src="../imagenes_1/logo_pmz_telf_rgb.jpg" width="853" height="147" /></p>
     
@@ -65,10 +65,10 @@ $xgl=$_GET['xgl'];
     </td>
   </tr>
   <tr>
-    <td height="790" align="center" bgcolor="#74878E"><img src="../imagenes_1/titulo_catalogo_publicitario.jpg" width="947" height="788" /></td>
+    <td height="503" align="center"><img src="../imagenes_1/titulo_catalogo_publicitario.jpg" width="947" height="501" /></td>
   </tr>
   <tr>
-    <td height="86" align="center" valign="middle" bgcolor="#74878E"><table width="839" height="71" border="1" align="center" cellpadding="1" cellspacing="1">
+    <td height="86" align="center" valign="middle" bgcolor="#8199A3"><table width="839" height="71" border="1" align="center" cellpadding="1" cellspacing="1">
       <tr>
         <td width="213" align="center" bgcolor="#CCCCCC">ZONA 2<BR /> AV. PORONGOCHE</td>
         <td width="187" align="center" bgcolor="#CCCCCC">ZONA 3<br />
@@ -154,7 +154,7 @@ $colorocu="#666666";
   
 
   <tr>
-    <td height="48" align="center" valign="middle" bgcolor="#CCCCCC"><span class="TITULOBLANCO"><? echo ("ESPACIOS LIBRES CATÁLOGO - ZONA ".$namezona_ctg." ".$zona_ctg." ".$campana_ctg) ?></span></td>
+    <td height="48" align="center" valign="middle" bgcolor="#000000"><span class="TITULOBLANCO"><? echo ("ESPACIOS LIBRES CATÁLOGO - ZONA ".$namezona_ctg." ".$zona_ctg." ".$campana_ctg) ?></span></td>
   </tr>
   <tr>
     <td height="613" align="center" valign="middle">
@@ -255,6 +255,9 @@ $colorocu="#666666";
     
 
 </td>
+  </tr>
+  <tr>
+    <td height="61" align="center" class="blanco"><img src="../imagenes_1/titulo_catalogo_publicitario2.jpg" width="947" height="439" /></td>
   </tr>
   <tr>
     <td height="61" align="center" bgcolor="#000000" class="blanco">Design for: JpawaJ SAC - Abril 2023 - 959 956 000 - Arequipa - Perú</td>
