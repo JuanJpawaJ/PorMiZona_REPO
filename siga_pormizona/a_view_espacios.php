@@ -54,8 +54,33 @@ $bxproducto=$_GET['bxproducto'];
 $viewmodi=$_GET['viewmodi'];
 $xgl=$_GET['xgl'];
 
+?>
 
 
+<table width="908" height="1764" border="1" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="900" height="119" align="center" valign="middle"><p><img src="../imagenes_1/logo_pmz_telf_rgb.jpg" width="853" height="147" /></p>
+    
+  
+    </td>
+  </tr>
+  <tr>
+    <td height="790" align="center" bgcolor="#74878E"><img src="../imagenes_1/titulo_catalogo_publicitario.jpg" width="947" height="788" /></td>
+  </tr>
+  <tr>
+    <td height="86" align="center" valign="middle" bgcolor="#74878E"><table width="839" height="71" border="1" align="center" cellpadding="1" cellspacing="1">
+      <tr>
+        <td width="213" align="center" bgcolor="#CCCCCC">ZONA 2<BR /> AV. PORONGOCHE</td>
+        <td width="187" align="center" bgcolor="#CCCCCC">ZONA 3<br />
+PIZARRO</td>
+        <td width="250" align="center" bgcolor="#CCCCCC">ZONA 4<br />
+AV. LAMBRAMANI (Parroquia)</td>
+        <td width="166" align="center" bgcolor="#CCCCCC">ZONA 5<br />
+AV. KENNEDY</td>
+      </tr>
+    </table>
+    
+<?
 $codcatalogo_ctg="040202";
 $result=mysqli_query($connec,"select * from a_espa_catalogo where codcatalogo_ctg=$codcatalogo_ctg");
 
@@ -121,30 +146,15 @@ $msjpublico_ctg=$tabla["msjpublico_ctg"];
 $colorlib="#66FF66";
 $colorocu="#666666";
 
-?>     
-
-
-
-
-
-<table width="908" height="1880" border="1" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td width="900" height="119" align="center" valign="middle"><p><img src="../imagenes_1/logo_pmz_telf_rgb.jpg" width="853" height="147" /></p>
+?>        
     
-  
+    
     </td>
   </tr>
+  
+
   <tr>
-    <td height="43" align="center"><img src="../imagenes_1/titulo_catalogo_publicitario.jpg" width="947" height="489" /></td>
-  </tr>
-  <tr>
-    <td height="43" align="center" bgcolor="#48887A"><p>&nbsp;</p></td>
-  </tr>
-  <tr>
-    <td height="254" align="center" valign="middle"><p>&nbsp;</p></td>
-  </tr>
-  <tr>
-    <td height="48" align="center" valign="middle" bgcolor="#48887A"><span class="TITULOBLANCO"><? echo ("ESPACIOS LIBRES CATÁLOGO - ZONA ".$namezona_ctg." ".$zona_ctg." ".$campana_ctg) ?></span></td>
+    <td height="48" align="center" valign="middle" bgcolor="#CCCCCC">PPPPP<span class="TITULOBLANCO"><? echo ("ESPACIOS LIBRES CATÁLOGO - ZONA ".$namezona_ctg." ".$zona_ctg." ".$campana_ctg) ?></span></td>
   </tr>
   <tr>
     <td height="613" align="center" valign="middle">
@@ -257,76 +267,6 @@ $colorocu="#666666";
     
 
 </td>
-  </tr>
-  <tr>
-    <td height="44" bgcolor="#48887A" class="TITULOBLANCO">TABLA DE PROGRAMACIÓN</td>
-  </tr>
-  <tr>
-    <td height="476" align="center" valign="top" bgcolor="#E7FEFD"><table width="915" height="474" border="1" cellpadding="0" cellspacing="0">
-      <tr class="TITU_TABLA_ZONAS">
-        <td width="48" height="31" align="center" valign="middle" bgcolor="#FF9900">ZONA</td>
-        <td width="306" align="center" valign="middle" bgcolor="#FF9900">REFERENCIA</td>
-        <td width="177" align="center" valign="middle" bgcolor="#FF9900">INICIO DE DISEÑO</td>
-        <td width="177" align="center" valign="middle" bgcolor="#FF9900">IMPRENTA</td>
-        <td width="179" align="center" valign="middle" bgcolor="#FF9900">DISTRIBUCIÓN</td>
-      </tr>
-      <tr>
-        <td height="58" align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">1</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">Av. Lambramani (Guisos)</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"><em>P/Confirmar</em></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">&nbsp;</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">&nbsp;</td>
-      </tr>
-      <tr>
-        <td height="48" align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">2</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">Av. Porongoche</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">15 abril 2024</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">29 abril 2024</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">01 mayo 2024</span></td>
-      </tr>
-      <tr>
-        <td height="58" align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">3</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">Pizarro</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"><em>P/Confirmar</em></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">&nbsp;</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">&nbsp;</td>
-      </tr>
-      <tr>
-        <td height="70" align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">4</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">Av. Lambramani (Parroquia)</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">01 abril 2024</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">16 abril 2024</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">18 abril 2024</td>
-      </tr>
-      <tr>
-        <td height="58" align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">5</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">Av Kennedy</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"><em>P/Confirmar</em></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">&nbsp;</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">&nbsp;</td>
-      </tr>
-      <tr>
-        <td height="45" align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">6</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">Apima</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"><em>P/Confirmar</em></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">&nbsp;</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">&nbsp;</td>
-      </tr>
-      <tr>
-        <td height="52" align="center" valign="middle" bgcolor="#FFFFCC">7</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">MM. Umachiri</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">15 marzo 2024</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">09 abril 2024</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">10 abril 2024</td>
-      </tr>
-      <tr>
-        <td height="52" align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">8</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"> Mayta Capac</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"><em>P/Confirmar</em></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">&nbsp;</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">&nbsp;</td>
-      </tr>
-    </table></td>
   </tr>
   <tr>
     <td height="61" align="center" bgcolor="#000000" class="blanco">Design for: JpawaJ SAC - Abril 2023 - 959 956 000 - Arequipa - Perú</td>
