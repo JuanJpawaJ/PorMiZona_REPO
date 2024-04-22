@@ -49,7 +49,7 @@
       </tr>
       <tr>
         <td height="50" align="center" valign="middle">PRECIOS DE CATÁLOGO</td>
-        <td align="center" valign="middle">PUBLIQUE EN NUESTRO CATÁLOGO</td>
+        <td align="center" valign="middle">PUBLIQUE EN NUESTRO CATÁLOGO}AQUI</td>
         <td align="center" valign="middle">PUBLIQUE EN ESTA PAG. WEB</td>
         <td align="center" valign="middle">&nbsp;</td>
       </tr>
