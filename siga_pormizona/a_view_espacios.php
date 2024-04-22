@@ -154,23 +154,11 @@ $colorocu="#666666";
   
 
   <tr>
-    <td height="48" align="center" valign="middle" bgcolor="#CCCCCC">PPPPP<span class="TITULOBLANCO"><? echo ("ESPACIOS LIBRES CATÁLOGO - ZONA ".$namezona_ctg." ".$zona_ctg." ".$campana_ctg) ?></span></td>
+    <td height="48" align="center" valign="middle" bgcolor="#CCCCCC"><span class="TITULOBLANCO"><? echo ("ESPACIOS LIBRES CATÁLOGO - ZONA ".$namezona_ctg." ".$zona_ctg." ".$campana_ctg) ?></span></td>
   </tr>
   <tr>
     <td height="613" align="center" valign="middle">
     
-
-
-
-<!--
-		if ($pv01_it<=$precom_it) { $color1="#FF0000";  } else {  $color1="#E4E4E4";  }
-		if ($pv02_it<=$precom_it) { $color2="#FF0000";  } else {  $color2="#E4E4E4";  }
-		if ($pv03_it<=$precom_it) { $color3="#FF0000";  } else {  $color3="#E4E4E4";  }
-
-       <td align="right" bgcolor=<? echo($color2) ?> ><?php echo($simbolo_mone.money_format('%n',($pv02_it))) ?></td>
-
--->
-        
   <table width="675" height="575" border="1" cellpadding="1" cellspacing="1">
       <tr>
         <td width="334" height="284" align="center">

@@ -35,7 +35,7 @@
 </head>
 
 <body>
-<table width="908" height="4758" border="1" align="center" cellpadding="0" cellspacing="0">
+<table width="908" height="4266" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td width="900" height="119" align="center" valign="middle"><img src="imagenes_1/logo_pmz_telf_rgb.jpg" width="862" height="158" /></td>
   </tr>
@@ -49,7 +49,7 @@
       </tr>
       <tr>
         <td height="50" align="center" valign="middle">PRECIOS DE CATÁLOGO</td>
-        <td align="center" valign="middle">PUBLIQUE EN NUESTRO CATÁLOGO}</td>
+        <td align="center" valign="middle"><a href="siga_pormizona/a_view_espacios.php">PUBLIQUE EN NUESTRO CATÁLOGO</a></td>
         <td align="center" valign="middle">PUBLIQUE EN ESTA PAG. WEB</td>
         <td align="center" valign="middle">&nbsp;</td>
       </tr>
@@ -83,76 +83,6 @@
     <td height="1312" align="center" valign="top"><img src="imagenes_1/texto_comunica_pormizona.jpg" width="900" height="1285" /></td>
   </tr>
   <tr>
-    <td height="44" bgcolor="#48887A" class="TITULOBLANCO">TABLA DE PROGRAMACIÓN</td>
-  </tr>
-  <tr>
-    <td height="504" align="center" valign="top" bgcolor="#E7FEFD"><table width="915" height="474" border="1" cellpadding="0" cellspacing="0">
-      <tr class="TITU_TABLA_ZONAS">
-        <td width="48" height="31" align="center" valign="middle" bgcolor="#FF9900">ZONA</td>
-        <td width="306" align="center" valign="middle" bgcolor="#FF9900">REFERENCIA</td>
-        <td width="177" align="center" valign="middle" bgcolor="#FF9900">INICIO DE DISEÑO</td>
-        <td width="177" align="center" valign="middle" bgcolor="#FF9900">IMPRENTA</td>
-        <td width="179" align="center" valign="middle" bgcolor="#FF9900">DISTRIBUCIÓN</td>
-      </tr>
-      <tr>
-        <td height="58" align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">1</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">Av. Lambramani (Guisos)</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"><em>P/Confirmar</em></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">&nbsp;</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">&nbsp;</td>
-      </tr>
-      <tr>
-        <td height="48" align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">2</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">Av. Porongoche</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">15 abril 2024</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">29 abril 2024</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">01 mayo 2024</span></td>
-      </tr>
-      <tr>
-        <td height="58" align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">3</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">Pizarro</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"><em>P/Confirmar</em></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">&nbsp;</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">&nbsp;</td>
-      </tr>
-      <tr>
-        <td height="70" align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">4</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">Av. Lambramani (Parroquia)</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">01 abril 2024</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">16 abril 2024</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">18 abril 2024</td>
-      </tr>
-      <tr>
-        <td height="58" align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">5</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">Av Kennedy</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"><em>P/Confirmar</em></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">&nbsp;</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">&nbsp;</td>
-      </tr>
-      <tr>
-        <td height="45" align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">6</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">Apima</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"><em>P/Confirmar</em></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">&nbsp;</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">&nbsp;</td>
-      </tr>
-      <tr>
-        <td height="52" align="center" valign="middle" bgcolor="#FFFFCC">7</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">MM. Umachiri</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">15 marzo 2024</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">09 abril 2024</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">10 abril 2024</td>
-      </tr>
-      <tr>
-        <td height="52" align="center" valign="middle" bgcolor="#FFFFCC"><span class="text_tabla_zonas">8</span></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"> Mayta Capac</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC"><em>P/Confirmar</em></td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">&nbsp;</td>
-        <td align="center" valign="middle" bgcolor="#FFFFCC">&nbsp;</td>
-      </tr>
-    </table></td>
-  </tr>
-  <tr>
     <td height="41" bgcolor="#48887A" class="TITULOBLANCO">PRECIOS</td>
   </tr>
   <tr>
@@ -180,10 +110,10 @@
     </table></td>
   </tr>
   <tr>
-    <td>&nbsp;</td>
+    <td height="24">&nbsp;</td>
   </tr>
   <tr>
-    <td height="45" align="center" bgcolor="#48887A" class="TITULOBLANCO">ZONAS GEOGRÁFICAS</td>
+    <td height="60" align="center" bgcolor="#48887A" class="TITULOBLANCO">ZONAS GEOGRÁFICAS</td>
   </tr>
   <tr>
     <td height="786" align="center" valign="top"><img src="imagenes_1/mapa_zonas.jpg" width="890" height="748" /></td>
