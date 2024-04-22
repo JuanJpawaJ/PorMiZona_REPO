@@ -77,7 +77,7 @@ if(strlen($xzona)==0){
       <tr>
         <td width="105" height="101" align="center" bgcolor="#CCCCCC"><a href="../index.php"><img src="iconos/boton_pmz_3letras.jpg" width="85" height="80" /></a></td>
         <td width="202" align="center" bgcolor="#CCCCCC"><a href="a_view_espacios.php&xzona=040202"><img src="iconos/boton_zona2.jpg" width="150" height="80" /></a></td>
-        <td width="194" align="center" bgcolor="#CCCCCC">Zona 3</td>
+        <td width="194" align="center" bgcolor="#CCCCCC"><a href="a_view_espacios.php">Zona 3</a></td>
         <td width="203" align="center" bgcolor="#CCCCCC"><a href="a_view_espacios.php&xzona=040401"><img src="iconos/boton_zona4.jpg" width="150" height="80" /></td>
         <td width="204" align="center" bgcolor="#CCCCCC"><a href="a_view_espacios.php&xzona=040501"><img src="iconos/boton_zona5.jpg" width="150" height="80" /></td>
       </tr>
