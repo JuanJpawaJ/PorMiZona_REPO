@@ -50,7 +50,7 @@ date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
 $xzona=$_GET['xzona'];
-
+ECHO ("XZONAAAAAA:  ".$xzona);
 // ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
 $viewmodi=$_GET['viewmodi'];
 $xgl=$_GET['xgl'];
@@ -158,7 +158,7 @@ $colorocu="#666666";
   
 
   <tr>
-    <td height="48" align="center" valign="middle" bgcolor="#000000"><span class="TITULOBLANCO"><? echo ("ESPACIOS LIBRES  - ZONA ".$zona_ctg." ".$namezona_ctg." ".$campana_ctg." - IMPRENTA: ".$fechafin_ctg) ?></span></td>
+    <td height="48" align="center" valign="middle" bgcolor="#000000"><span class="TITULOBLANCO"><? echo ("ESPACIOS LIBRES  -> ZONA ".$zona_ctg."  ".$namezona_ctg." - ".$campana_ctg." - IMPRENTA: ".$fechafin_ctg) ?></span></td>
   </tr>
   <tr>
     <td height="613" align="center" valign="middle">
