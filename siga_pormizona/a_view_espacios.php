@@ -13,7 +13,7 @@
 
 <meta name="googlebot" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     
-<title>POR MI ZONA.COM.PE</title> 
+<title>PMZ Publique</title> 
 
 <style type="text/css">
 .blanco {
