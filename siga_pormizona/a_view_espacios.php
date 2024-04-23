@@ -160,7 +160,7 @@ $colorocu="#666666";
 
   <tr>
     <td height="48" align="center" valign="middle" bgcolor="#000000"><span class="TITULOBLANCO"><?
-     if (
+    // if (
 	 echo ("ESPACIOS LIBRES  -> ZONA ".$zona_ctg."  ".$namezona_ctg." - ".$campana_ctg." - IMPRENTA: ".$fechafin_ctg)
 	 
 	 
