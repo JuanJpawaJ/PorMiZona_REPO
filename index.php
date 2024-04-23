@@ -35,12 +35,12 @@
 </head>
 
 <body>
-<table width="908" height="4266" border="1" align="center" cellpadding="0" cellspacing="0">
+<table width="908" height="4092" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td width="900" height="119" align="center" valign="middle"><img src="imagenes_1/logo_pmz_telf_rgb.jpg" width="862" height="158" /></td>
   </tr>
   <tr>
-    <td height="223" align="center" bgcolor="#66FF99"><table width="903" height="173" border="1" cellpadding="1" cellspacing="1">
+    <td height="194" align="center" bgcolor="#66FF99"><table width="903" height="179" border="1" cellpadding="1" cellspacing="1">
       <tr>
         <td width="218" height="83" align="center" valign="middle" bgcolor="#FFFFFF"><a href="siga_pormizona/a_lisimagenes.php"><img src="siga_pormizona/iconos/boton1_empresas.png" width="200" height="65" style="border:0;" onmouseover="this.style.border='solid  2px  #0a3d89';" onmouseout="this.style.border=0;" border="0"/></a></td>
         <td width="221" align="center" valign="middle">POR MI ZONA</td>
@@ -48,8 +48,8 @@
         <td width="218" align="center" valign="middle">PUBLIQUE EVENTOS</td>
       </tr>
       <tr>
-        <td height="50" align="center" valign="middle">PRECIOS DE CATÁLOGO</td>
-        <td align="center" valign="middle"><a href="siga_pormizona/a_view_espacios.php">PUBLIQUE EN NUESTRO CATÁLOGO</a></td>
+        <td height="90" align="center" valign="middle">PRECIOS DE CATÁLOGO</td>
+        <td align="center" valign="middle" bgcolor="#FFFFFF"><a href="siga_pormizona/a_view_espacios.php"><img src="siga_pormizona/iconos/boton_publi_catalogo.png" width="200" height="65" style="border:0;" onmouseover="this.style.border='solid  2px  #0a3d89';" onmouseout="this.style.border=0;" border="0"/></a></td>
         <td align="center" valign="middle">PUBLIQUE EN ESTA PAG. WEB</td>
         <td align="center" valign="middle">&nbsp;</td>
       </tr>
@@ -59,16 +59,9 @@
     <td height="43" align="center" bgcolor="#48887A"><span class="TITULOBLANCO">CLASIFICADOS</span></td>
   </tr>
   <tr>
-    <td height="260" align="center" valign="middle"><table width="910" height="224" border="1" cellpadding="0" cellspacing="0">
+    <td height="115" align="center" valign="middle"><table width="910" height="97" border="1" cellpadding="0" cellspacing="0">
       <tr>
-        <td height="114">&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td height="105">&nbsp;</td>
+        <td height="95">&nbsp;</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
