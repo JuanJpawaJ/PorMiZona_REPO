@@ -213,20 +213,18 @@ if ($xdelreg=="SIDELREG") {
     <!-- INICIO DE MUESTRA ITEMS -->
     <table width="987" height="80" border="1" cellspacing="0">
       <tr bgcolor="#CCFFFF" class="diez">
-        <td width="48" align="center">COD. Item</td>
-        <td width="93">IMAGEN</td>
-        <td width="36">Grupo</td>
-        <td width="251" align="center">PRODUCTO</td>
-        <td width="48" align="center">COD-MODELO</td>
-        <td width="54" align="center">COSTO</td>
-        <td width="63" align="center">PUBLICO 01</td>
-        <td width="53">UTIL 01</td>
-        <td width="44">P.VEN 02</td>
-        <td width="59">P.VEN 03</td>
-        <td width="32">VIEW01</td>
-        <td width="32">MOD</td>
-        <td width="59" align="center">Mod. IMG</td>
-        <td width="57" align="center">DEL Reg.</td>
+        <td width="51" align="center">COD. Item</td>
+        <td width="124">IMAGEN</td>
+        <td width="230">NAME ZONA</td>
+        <td width="90" align="center">CAMPAÑA</td>
+        <td width="72" align="center"><p>FECHA FIN</p></td>
+        <td width="46" align="center">PUBLICO 01</td>
+        <td width="57">UTIL 01</td>
+        <td width="63">P.VEN 03</td>
+        <td width="33">VIEW01</td>
+        <td width="33">MOD</td>
+        <td width="63" align="center">Mod. IMG</td>
+        <td width="75" align="center">DEL Reg.</td>
       </tr>
       <?php 
 
@@ -317,13 +315,11 @@ $msjpublico_ctg=$tabla["msjpublico_ctg"];
         <td valign="middle" bgcolor="#FFFFFF">           <a href="ilbupweiv.php?idx=<?php  echo($id); ?>"><img src=" <?php echo "img_items/".$img_it ?> " width="60" height="%" /><? if ($pv03_it>0) {?> <img src="iconos/promocion.jpg" alt="EN OFERTA" width="14" height="30" /> <? } ?></a></td>
         <td bgcolor="#FFFFFF"><?php echo($namezona_ctg) ?></td>
         <td bgcolor="#FFFFFF"><?php echo($campana_ctg) ?></td>
-        <td align="right" bgcolor="#FFFFFF"><?php echo($codfabrica_it) ?></td>
-        <td align="right" bgcolor="#FFFFFF"><?php echo($precom_it) ?></td>
+        <td align="right" bgcolor="#FFFFFF"><?php echo($fechafin_ctg) ?></td>
         <!--- <td align="right" bgcolor=<? echo($color1) ?> ><?php echo($simbolo_mone.money_format('%n',(round($precom_it+($precom_it*$pje1_it/100))))) ?></td>-->
    <td align="right" bgcolor=<? echo($color1) ?> class="tit_menu_sup" ><?php echo($simbolo_mone.money_format('%n',($pv01_it))) ?></td>
         <td align="right" ><?php echo($simbolo_mone.money_format('%n',($util01))) ?></td>
 
-        <td align="right" bgcolor=<? echo($color2) ?> ><?php echo($simbolo_mone.money_format('%n',($pv02_it))) ?></td>
         <td align="right" bgcolor=<? echo($color3) ?> ><?php echo($simbolo_mone.money_format('%n',($pv03_it))) ?></td>
         <td><?php echo($view01_it) ?></td>
         <td><a href="a_viewmodi_espacios.php?idx=<?php  echo($id); ?>&xview=<?php  echo("ADMIN"); ?>&xareg=NNOOO&xmodi=NOOOOO&xdelreg=NOOOOO"><img src="iconos/ico_editar.png" width="30" height="30"></a></td>

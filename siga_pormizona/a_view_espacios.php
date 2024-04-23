@@ -64,7 +64,7 @@ if(strlen($xzona)==0){
 
 <table width="908" height="1493" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td width="900" height="119" align="center" valign="middle"><p><img src="../imagenes_1/logo_pmz_telf_rgb.jpg" width="853" height="147" /></p>
+    <td width="900" height="119" align="center" valign="middle"><img src="../imagenes_1/logo_pmz_telf_rgb.jpg" width="853" height="147" />
     
   
     </td>
@@ -158,7 +158,7 @@ $colorocu="#666666";
   
 
   <tr>
-    <td height="48" align="center" valign="middle" bgcolor="#000000"><span class="TITULOBLANCO"><? echo ("ESPACIOS LIBRES CATÁLOGO - ZONA ".$namezona_ctg." ".$zona_ctg." ".$campana_ctg) ?></span></td>
+    <td height="48" align="center" valign="middle" bgcolor="#000000"><span class="TITULOBLANCO"><? echo ("ESPACIOS LIBRES  - ZONA ".$zona_ctg." ".$namezona_ctg." ".$campana_ctg." - IMPRENTA: ".$fechafin_ctg) ?></span></td>
   </tr>
   <tr>
     <td height="613" align="center" valign="middle">
