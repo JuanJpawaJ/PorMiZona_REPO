@@ -56,6 +56,7 @@ $viewmodi=$_GET['viewmodi'];
 $xgl=$_GET['xgl'];
 
 if(strlen($xzona)==0){
+	ECHO ("intro ifffffffffff:  ".$xzona);
 	$codcatalogo_ctg="040202";
 }
 
@@ -158,7 +159,12 @@ $colorocu="#666666";
   
 
   <tr>
-    <td height="48" align="center" valign="middle" bgcolor="#000000"><span class="TITULOBLANCO"><? echo ("ESPACIOS LIBRES  -> ZONA ".$zona_ctg."  ".$namezona_ctg." - ".$campana_ctg." - IMPRENTA: ".$fechafin_ctg) ?></span></td>
+    <td height="48" align="center" valign="middle" bgcolor="#000000"><span class="TITULOBLANCO"><?
+     if (
+	 echo ("ESPACIOS LIBRES  -> ZONA ".$zona_ctg."  ".$namezona_ctg." - ".$campana_ctg." - IMPRENTA: ".$fechafin_ctg)
+	 
+	 
+	  ?></span></td>
   </tr>
   <tr>
     <td height="613" align="center" valign="middle">
