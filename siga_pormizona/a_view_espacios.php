@@ -159,10 +159,9 @@ $colorocu="#666666";
   <tr>
     <td height="48" align="center" valign="middle" bgcolor="#000000"><span class="TITULOBLANCO"><?
     // if (
-	 echo ("ESPACIOS LIBRES  -> ZONA ".$zona_ctg."  ".$namezona_ctg." - ".$campana_ctg." - IMPRENTA: ".$fechafin_ctg)
-	 
-	 
-	  ?></span></td>
+	 echo ("ESPACIOS LIBRES  -> ZONA ");
+	 echo "<font color='yellow'>".$zona_ctg."</font>";
+	 echo ("  ".$namezona_ctg." - ".$campana_ctg." - IMPRENTA: ".$fechafin_ctg) ?></span></td>
   </tr>
   <tr>
     <td height="613" align="center" valign="middle">
