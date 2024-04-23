@@ -50,14 +50,12 @@ date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
 $xzona=$_GET['xzona'];
-ECHO ("XZONAAAAAA:  ".$xzona);
 // ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
 $viewmodi=$_GET['viewmodi'];
 $xgl=$_GET['xgl'];
 
 if(strlen($xzona)==0){
-	ECHO ("intro ifffffffffff:  ".$xzona);
-	$codcatalogo_ctg="040202";
+	$xzona="040202";
 }
 
 ?>
