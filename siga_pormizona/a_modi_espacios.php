@@ -25,8 +25,11 @@ $p4=$_GET['xp4'];
 $pp4=$_GET['xpp4'];
 $p5=$_GET['xp5'];
 $pp5=$_GET['xpp5'];
+$clp1=$_GET['xclp1'];
+$clp2=$_GET['xclp2'];
+$clp3=$_GET['xclp3'];
 	
-    $sql="UPDATE a_espa_catalogo SET p1_ctg='$p1',pp1_ctg='$pp1',p2_ctg='$p2',pp2_ctg='$pp2',p3_ctg='$p3',pp3_ctg='$pp3',p4_ctg='$p4',pp4_ctg='$pp4',p5_ctg='$p5',pp5_ctg='$pp5' WHERE id=$id";
+    $sql="UPDATE a_espa_catalogo SET p1_ctg='$p1',pp1_ctg='$pp1',p2_ctg='$p2',pp2_ctg='$pp2',p3_ctg='$p3',pp3_ctg='$pp3',p4_ctg='$p4',pp4_ctg='$pp4',p5_ctg='$p5',pp5_ctg='$pp5',clp1_ctg='$clp1',clp2_ctg='$clp2',clp3_ctg='$clp3' WHERE id=$id";
     $result=mysqli_query($connec,$sql);
 	if($result){
 		echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok.</span>");
@@ -44,8 +47,14 @@ $t4=$_GET['xt4'];
 $pt4=$_GET['xpt4'];
 $t5=$_GET['xt5'];
 $pt5=$_GET['xpt5'];
+$clt1=$_GET['xclt1'];
+$clt2=$_GET['xclt2'];
+$clt3=$_GET['xclt3'];
+$clt4=$_GET['xclt4'];
+$clt5=$_GET['xclt5'];
 
-	$sql="UPDATE a_espa_catalogo SET t1_ctg='$t1',pt1_ctg='$pt1',t2_ctg='$t2',pt2_ctg='$pt2',t3_ctg='$t3',pt3_ctg='$pt3',t4_ctg='$t4',pt4_ctg='$pt4',t5_ctg='$t5',pt5_ctg='$pt5' WHERE id=$id";
+
+	$sql="UPDATE a_espa_catalogo SET t1_ctg='$t1',pt1_ctg='$pt1',t2_ctg='$t2',pt2_ctg='$pt2',t3_ctg='$t3',pt3_ctg='$pt3',t4_ctg='$t4',pt4_ctg='$pt4',t5_ctg='$t5',pt5_ctg='$pt5',clt1_ctg='$clt1',clt2_ctg='$clt2',clt3_ctg='$clt3',clt4_ctg='$clt4',clt5_ctg='$clt5'   WHERE id=$id";
 
 	$result2=mysqli_query($connec,$sql);
 	if($result2){
@@ -75,9 +84,19 @@ $c9=$_GET['xc9'];
 $pc9=$_GET['xpc9'];
 $c10=$_GET['xc10'];
 $pc10=$_GET['xpc10'];
+$clc1=$_GET['xclc1'];
+$clc2=$_GET['xclc2'];
+$clc3=$_GET['xclc3'];
+$clc4=$_GET['xclc4'];
+$clc5=$_GET['xclc5'];
+$clc6=$_GET['xclc6'];
+$clc7=$_GET['xclc7'];
+$clc8=$_GET['xclc8'];
+$clc9=$_GET['xclc9'];
 
 	
-	$sql="UPDATE a_espa_catalogo SET c1_ctg='$c1',pc1_ctg='$pc1',c2_ctg='$c2',pc2_ctg='$pc2',c3_ctg='$c3',pc3_ctg='$pc3',c4_ctg='$c4',pc4_ctg='$pc4',c5_ctg='$c5',pc5_ctg='$pc5',	c6_ctg='$c6',pc6_ctg='$pc6',c7_ctg='$c7',pc7_ctg='$pc7',c8_ctg='$c8',pc8_ctg='$pc8',c9_ctg='$c9',pc9_ctg='$pc9',c10_ctg='$c10',pc10_ctg='$pc10' WHERE id=$id";
+	$sql="UPDATE a_espa_catalogo SET c1_ctg='$c1',pc1_ctg='$pc1',c2_ctg='$c2',pc2_ctg='$pc2',c3_ctg='$c3',pc3_ctg='$pc3',c4_ctg='$c4',pc4_ctg='$pc4',c5_ctg='$c5',pc5_ctg='$pc5',	c6_ctg='$c6',pc6_ctg='$pc6',c7_ctg='$c7',pc7_ctg='$pc7',c8_ctg='$c8',pc8_ctg='$pc8',c9_ctg='$c9',pc9_ctg='$pc9',c10_ctg='$c10',pc10_ctg='$pc10',clc1_ctg='$clc1',clc2_ctg='$clc2',clc3_ctg='$clc3',
+clc4_ctg='$clc4',clc5_ctg='$clc5',clc6_ctg='$clc6',clc7_ctg='$clc7',clc8_ctg='$clc8'   WHERE id=$id";
 
 	
 	$result3=mysqli_query($connec,$sql);
@@ -114,7 +133,7 @@ $msjpublico=$_GET['xmsjpublico'];
  
 
 ?>
-<table width="363" border="0">
+z	<table width="363" border="0">
   <tr bgcolor="#F8DA94">
     <th scope="col"><div align="center"><a href="a_viewmodi_espacios.php?idx=<?php  echo($idx); ?>&xview=<?php  echo("ADMIN"); ?>&xareg=NNOOO&xmodi=NOOOOO&xdelreg=NOOOOO">RETORNAR</a></div>
     
