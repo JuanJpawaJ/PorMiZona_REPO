@@ -114,9 +114,29 @@ $obs2_ctg=$tabla["obs2_ctg"];
 $view01_ctg=$tabla["view01_ctg"];
 $msjpublico_ctg=$tabla["msjpublico_ctg"];
 
+$clp1_ctg=$tabla["clp1_ctg"];
+$clp2_ctg=$tabla["clp2_ctg"];
+$clp3_ctg=$tabla["clp3_ctg"];
+
+$clt1_ctg=$tabla["clt1_ctg"];
+$clt2_ctg=$tabla["clt2_ctg"];
+$clt3_ctg=$tabla["clt3_ctg"];
+$clt4_ctg=$tabla["clt4_ctg"];
+$clt5_ctg=$tabla["clt5_ctg"];
+
+$clc1_ctg=$tabla["clc1_ctg"];
+$clc2_ctg=$tabla["clc2_ctg"];
+$clc3_ctg=$tabla["clc3_ctg"];
+$clc4_ctg=$tabla["clc4_ctg"];
+$clc5_ctg=$tabla["clc5_ctg"];
+$clc6_ctg=$tabla["clc6_ctg"];
+$clc7_ctg=$tabla["clc7_ctg"];
+$clc8_ctg=$tabla["clc8_ctg"];
+
+
 
 $colorlib="#66FF66";
-$colorocu="#666666";
+$colorocu="#999999";
 
 ?>     
 
@@ -208,22 +228,22 @@ $colorocu="#666666";
             
             <form id="form1" name="form1" method="get" action="a_modi_espacios.php">
               <tr>
-                <td width="52">P1</td>
-                <td width="73"><input name="xp1" type="text" id="xp1" size="1" maxlength="1" value="<?php echo($p1_ctg); ?>" style="text-align:right"/></td>
-                <td width="176"><input name="xpp1" type="text" id="xpp1" size="10" maxlength="10" value="<?php echo($pp1_ctg); ?>" style="text-align:right"/></td>
-                <td width="84">otros p1</td>
+                <td width="42">P1</td>
+                <td width="57"><input name="xp1" type="text" id="xp1" size="1" maxlength="1" value="<?php echo($p1_ctg); ?>" style="text-align:right"/></td>
+                <td width="134"><input name="xpp1" type="text" id="xpp1" size="10" maxlength="10" value="<?php echo($pp1_ctg); ?>" style="text-align:right"/></td>
+                <td width="152"><input name="xclp1" type="text" id="xclp1" size="20" maxlength="20" value="<?php echo($clp1_ctg); ?>" style="text-align:right"/></td>
                 </tr>
               <tr>
                 <td>P2</td>
                 <td><input name="xp2" type="text" id="xp2" size="1" maxlength="1" value="<?php echo($p2_ctg); ?>" style="text-align:right"/></td>
                 <td><input name="xpp2" type="text" id="xpp2" size="10" maxlength="10" value="<?php echo($pp2_ctg); ?>" style="text-align:right"/></td>
-                <td>otros p2</td>
+                <td><input name="xclp2" type="text" id="xclp2" size="20" maxlength="20" value="<?php echo($clp2_ctg); ?>" style="text-align:right"/></td>
                 </tr>
               <tr>
                 <td>P3</td>
                 <td><input name="xp3" type="text" id="xp3" size="1" maxlength="1" value="<?php echo($p3_ctg); ?>" style="text-align:right"/></td>
                 <td><input name="xpp3" type="text" id="xpp3" size="10" maxlength="10" value="<?php echo($pp3_ctg); ?>" style="text-align:right"/></td>
-                <td>otros p3</td>
+                <td><input name="xclp3" type="text" id="xclp3" size="20" maxlength="20" value="<?php echo($clp3_ctg); ?>" style="text-align:right"/></td>
                 </tr>
               <tr>
                 <td>P4</td>
@@ -265,31 +285,31 @@ $colorocu="#666666";
                 <td width="52">T1</td>
                 <td width="66"><input name="xt1" type="text" id="xt1" size="1" maxlength="1" value="<?php echo($t1_ctg); ?>" style="text-align:right"/></td>
                 <td width="183"><input name="xpt1" type="text" id="xpt1" size="10" maxlength="10" value="<?php echo($pt1_ctg); ?>" style="text-align:right"/></td>
-                <td width="84">otros p1</td>
+                <td width="84"><input name="xclt1" type="text" id="xclt1" size="20" maxlength="20" value="<?php echo($clt1_ctg); ?>" style="text-align:right"/></td>
               </tr>
               <tr>
                 <td>T2</td>
                 <td><input name="xt2" type="text" id="xt2" size="1" maxlength="1" value="<?php echo($t2_ctg); ?>" style="text-align:right"/></td>
                 <td><input name="xpt2" type="text" id="xpt2" size="10" maxlength="10" value="<?php echo($pt2_ctg); ?>" style="text-align:right"/></td>
-                <td>otros p2</td>
+                <td><input name="xclt2" type="text" id="xclt2" size="20" maxlength="20" value="<?php echo($clt2_ctg); ?>" style="text-align:right"/></td>
               </tr>
               <tr>
                 <td>T3</td>
                 <td><input name="xt3" type="text" id="xt3" size="1" maxlength="1" value="<?php echo($t3_ctg); ?>" style="text-align:right"/></td>
                 <td><input name="xpt3" type="text" id="xpt3" size="10" maxlength="10" value="<?php echo($pt3_ctg); ?>" style="text-align:right"/></td>
-                <td>otros p3</td>
+                <td><input name="xclt3" type="text" id="xclt3" size="20" maxlength="20" value="<?php echo($clt3_ctg); ?>" style="text-align:right"/></td>
               </tr>
               <tr>
                 <td>T4</td>
                 <td><input name="xt4" type="text" id="xt4" size="1" maxlength="1" value="<?php echo($t4_ctg); ?>" style="text-align:right"/></td>
                 <td><input name="xpt4" type="text" id="xpt4" size="10" maxlength="10" value="<?php echo($pt4_ctg); ?>" style="text-align:right"/></td>
-                <td>&nbsp;</td>
+                <td><input name="xclt4" type="text" id="xclt4" size="20" maxlength="20" value="<?php echo($clt4_ctg); ?>" style="text-align:right"/></td>
               </tr>
               <tr>
                 <td>T5</td>
                 <td><input name="xt5" type="text" id="xt5" size="1" maxlength="1" value="<?php echo($t5_ctg); ?>" style="text-align:right"/></td>
                 <td><input name="xpt5" type="text" id="xpt5" size="10" maxlength="10" value="<?php echo($pt5_ctg); ?>" style="text-align:right"/></td>
-                <td>&nbsp;</td>
+                <td><input name="xclt5" type="text" id="xclt5" size="20" maxlength="20" value="<?php echo($clt5_ctg); ?>" style="text-align:right"/></td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
@@ -317,45 +337,45 @@ $colorocu="#666666";
                 <td width="53">C1</td>
                 <td width="75"><input name="xc1" type="text" id="xc1" size="1" maxlength="1" value="<?php echo($c1_ctg); ?>" style="text-align:right"/></td>
                 <td width="148"><input name="xpc1" type="text" id="xpc1" size="10" maxlength="10" value="<?php echo($pc1_ctg); ?>" style="text-align:right"/></td>
-                <td width="102">&nbsp;</td>
+                <td width="102"><input name="xclc1" type="text" id="xclc1" size="20" maxlength="20" value="<?php echo($clc1_ctg); ?>" style="text-align:right"/></td>
                 <td width="8">&nbsp;</td>
                 <td width="55">C5</td>
                 <td width="75"><input name="xc5" type="text" id="xc5" size="1" maxlength="1" value="<?php echo($c5_ctg); ?>" style="text-align:right"/></td>
                 <td width="148"><input name="xpc5" type="text" id="xpc5" size="10" maxlength="10" value="<?php echo($pc5_ctg); ?>" style="text-align:right"/></td>
-                <td width="79">otros p1</td>
+                <td width="79"><input name="xclc5" type="text" id="xclc5" size="20" maxlength="20" value="<?php echo($clc5_ctg); ?>" style="text-align:right"/></td>
                 </tr>
               <tr>
                 <td>C2</td>
                 <td><input name="xc2" type="text" id="xc2" size="1" maxlength="1" value="<?php echo($c2_ctg); ?>" style="text-align:right"/></td>
                 <td><input name="xpc2" type="text" id="xpc2" size="10" maxlength="10" value="<?php echo($pc2_ctg); ?>" style="text-align:right"/></td>
-                <td>&nbsp;</td>
+                <td><input name="xclc2" type="text" id="xclc2" size="20" maxlength="20" value="<?php echo($clc2_ctg); ?>" style="text-align:right"/></td>
                 <td>&nbsp;</td>
                 <td>C6</td>
                 <td><input name="xc6" type="text" id="xc6" size="1" maxlength="1" value="<?php echo($c6_ctg); ?>" style="text-align:right"/></td>
                 <td><input name="xpc6" type="text" id="xpc6" size="10" maxlength="10" value="<?php echo($pc6_ctg); ?>" style="text-align:right"/></td>
-                <td>otros p2</td>
+                <td><input name="xclc6" type="text" id="xclc6" size="20" maxlength="20" value="<?php echo($clc6_ctg); ?>" style="text-align:right"/></td>
                 </tr>
               <tr>
                 <td>C3</td>
                 <td><input name="xc3" type="text" id="xc3" size="1" maxlength="1" value="<?php echo($c3_ctg); ?>" style="text-align:right"/></td>
                 <td><input name="xpc3" type="text" id="xpc3" size="10" maxlength="10" value="<?php echo($pc3_ctg); ?>" style="text-align:right"/></td>
-                <td>&nbsp;</td>
+                <td><input name="xclc3" type="text" id="xclc3" size="20" maxlength="20" value="<?php echo($clc3_ctg); ?>" style="text-align:right"/></td>
                 <td>&nbsp;</td>
                 <td>C7</td>
                 <td><input name="xc7" type="text" id="xc7" size="1" maxlength="1" value="<?php echo($c7_ctg); ?>" style="text-align:right"/></td>
                 <td><input name="xpc7" type="text" id="xpc7" size="10" maxlength="10" value="<?php echo($pc7_ctg); ?>" style="text-align:right"/></td>
-                <td>otros p3</td>
+                <td><input name="xclc7" type="text" id="xclc7" size="20" maxlength="20" value="<?php echo($clc7_ctg); ?>" style="text-align:right"/></td>
                 </tr>
               <tr>
                 <td>C4</td>
                 <td><input name="xc4" type="text" id="xc4" size="1" maxlength="1" value="<?php echo($c4_ctg); ?>" style="text-align:right"/></td>
                 <td><input name="xpc4" type="text" id="xpc4" size="10" maxlength="10" value="<?php echo($pc4_ctg); ?>" style="text-align:right"/></td>
-                <td>&nbsp;</td>
+                <td><input name="xclc4" type="text" id="xclc4" size="20" maxlength="20" value="<?php echo($clc4_ctg); ?>" style="text-align:right"/></td>
                 <td>&nbsp;</td>
                 <td>C8</td>
                 <td><input name="xc8" type="text" id="xc8" size="1" maxlength="1" value="<?php echo($c8_ctg); ?>" style="text-align:right"/></td>
                 <td><input name="xpc8" type="text" id="xpc8" size="10" maxlength="10" value="<?php echo($pc8_ctg); ?>" style="text-align:right"/></td>
-                <td>&nbsp;</td>
+                <td><input name="xclc8" type="text" id="xclc8" size="20" maxlength="20" value="<?php echo($clc8_ctg); ?>" style="text-align:right"/></td>
                 </tr>
               <tr>
                 <td>&nbsp;</td>
