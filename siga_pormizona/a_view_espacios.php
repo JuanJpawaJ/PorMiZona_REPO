@@ -266,7 +266,7 @@ $colorocu="#999999";
             </tr>
           <tr>
             <td height="84" colspan="2" align="center" valign="middle" bgcolor=<? if ($c4_ctg=="L") { echo($colorlib); } else{ echo($colorocu); } ?> ><span class="txt_espacios">
-              <?  if ($c4_ctg=="L") { echo ("C4 LIBRE"."<br>"."S/ ".intval($pc4_ctg));  } else {  echo ("OCUPADO"."<br>".$clc6_ctg); }  ?>
+              <?  if ($c4_ctg=="L") { echo ("C4 LIBRE"."<br>"."S/ ".intval($pc4_ctg));  } else {  echo ("OCUPADO"."<br>".$clc4_ctg); }  ?>
             </span></td>
             <td align="center" valign="middle">&nbsp;</td>
             <td width="84" align="center" valign="middle" bgcolor=<? if ($c7_ctg=="L") { echo($colorlib); } else{ echo($colorocu); } ?> ><span class="txt_espacios">
