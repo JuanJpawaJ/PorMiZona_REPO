@@ -19,6 +19,7 @@
 .blanco {
 	color: #FFF;
 }
+
 .TITULOBLANCO {
 	color: #FFF;
 	text-align: center;
@@ -38,8 +39,10 @@
 }
 .txt_espacios {
 	font-family: "Comic Sans MS", cursive;
-	font-size: 16px;
+	font-size: 14px;
 }</style>
+	
+
 </head>
 
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
