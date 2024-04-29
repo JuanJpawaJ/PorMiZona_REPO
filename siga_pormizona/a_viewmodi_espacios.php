@@ -442,18 +442,18 @@ $colorocu="#999999";
             <td height="73" colspan="2" align="center" valign="middle" bgcolor=<? if ($p1_ctg=="L") { echo($colorlib); } else{ echo($colorocu); } ?> >
               <span class="txt_espacios">
               <? if ($p1_ctg=="L") {
-					 echo ("P1 LIBRE");
+					 echo ("P1 LIBRE"."<br>"."S/ ".intval($pp1_ctg));
 				  } else {
-			         echo ("OCUPADO");
+			         echo ("OCUPADO"."<br>".$clp1_ctg);
 				  }  ?> 
               </span></td>
             </tr>
           <tr>
             <td width="83" height="112" align="center" valign="middle" bgcolor=<? if ($p2_ctg=="L") { echo($colorlib); } else{ echo($colorocu); } ?> > <span class="txt_espacios">
-              <?  if ($p2_ctg=="L") { echo ("P2 LIBRE");  } else {  echo ("OCUPADO"); }  ?>
+              <?  if ($p2_ctg=="L") { echo ("P2 LIBRE"."<br>"."S/ ".intval($pp2_ctg));  } else {  echo ("OCUPADO"."<br>".$clp2_ctg); }  ?>
             </span></td>
             <td width="82" align="center" valign="middle" bgcolor=<? if ($p3_ctg=="L") { echo($colorlib); } else{ echo($colorocu); } ?>  > <span class="txt_espacios">
-              <?  if ($p3_ctg=="L") { echo ("P3 LIBRE");  } else {  echo ("OCUPADO"); }  ?>
+              <?  if ($p3_ctg=="L") { echo ("P3 LIBRE"."<br>"."S/ ".intval($pp3_ctg));  } else {  echo ("OCUPADO"."<br>".$clp3_ctg); }  ?>
             </span></td>
           </tr>
       </table></td>
@@ -462,23 +462,23 @@ $colorocu="#999999";
 <table width="178" height="233" border="1" cellpadding="1" cellspacing="1">
   <tr>
             <td width="79" height="76" align="center" valign="middle" bgcolor=<? if ($t1_ctg=="L") { echo($colorlib); } else{ echo($colorocu); } ?> >              <span class="txt_espacios">
-              <?  if ($t1_ctg=="L") { echo ("T1 LIBRE");  } else {  echo ("OCUPADO"); }  ?>            
+              <?  if ($t1_ctg=="L") { echo ("T1 LIBRE"."<br>"."S/ ".intval($pt1_ctg));  } else {  echo ("OCUPADO"."<br>".$clt1_ctg); }  ?>            
               </span></td>
             <td width="74" align="center" valign="middle" bgcolor=<? if ($t2_ctg=="L") { echo($colorlib); } else{ echo($colorocu); } ?> >              <span class="txt_espacios">
-              <?  if ($t2_ctg=="L") { echo ("T2 LIBRE");  } else {  echo ("OCUPADO"); }  ?>            
+              <?  if ($t2_ctg=="L") { echo ("T2 LIBRE"."<br>"."S/ ".intval($pt2_ctg));  } else {  echo ("OCUPADO"."<br>".$clt2_ctg); }  ?>            
               </span></td>
           </tr>
           <tr>
             <td height="42" colspan="2" align="center" valign="middle" bgcolor=<? if ($t3_ctg=="L") { echo($colorlib); } else{ echo($colorocu); } ?> >              <span class="txt_espacios">
-              <?  if ($t3_ctg=="L") { echo ("T3 LIBRE");  } else {  echo ("OCUPADO"); }  ?>            
+              <?  if ($t3_ctg=="L") { echo ("T3 LIBRE"."<br>"."S/ ".intval($pt3_ctg));  } else {  echo ("OCUPADO"."<br>".$clt3_ctg); }  ?>            
               </span></td>
             </tr>
           <tr>
             <td height="82" align="center" valign="middle" bgcolor=<? if ($t4_ctg=="L") { echo($colorlib); } else{ echo($colorocu); } ?> >              <span class="txt_espacios">
-              <?  if ($t4_ctg=="L") { echo ("T4 LIBRE");  } else {  echo ("OCUPADO"); }  ?>            
+              <?  if ($t4_ctg=="L") { echo ("T4 LIBRE"."<br>"."S/ ".intval($pt4_ctg));  } else {  echo ("OCUPADO"."<br>".$clt4_ctg); }  ?>            
               </span></td>
             <td align="center" valign="middle" bgcolor=<? if ($t5_ctg=="L") { echo($colorlib); } else{ echo($colorocu); } ?> >              <span class="txt_espacios">
-              <?  if ($t5_ctg=="L") { echo ("T5 LIBRE");  } else {  echo ("OCUPADO"); }  ?>            
+              <?  if ($t5_ctg=="L") { echo ("T5 LIBRE"."<br>"."S/ ".intval($pt5_ctg));  } else {  echo ("OCUPADO"."<br>".$clt5_ctg); }  ?>            
               </span></td>
           </tr>
       </table></td>
@@ -489,35 +489,35 @@ $colorocu="#999999";
 <table width="359" height="233" border="1" cellpadding="1" cellspacing="1">
   <tr>
             <td width="84" height="77" align="center" valign="middle" bgcolor=<? if ($c1_ctg=="L") { echo($colorlib); } else{ echo($colorocu); } ?> > <span class="txt_espacios">
-              <?  if ($c1_ctg=="L") { echo ("C1 LIBRE");  } else {  echo ("OCUPADO"); }  ?>
+              <?  if ($c1_ctg=="L") { echo ("C1 LIBRE"."<br>"."S/ ".intval($pc1_ctg));  } else {  echo ("OCUPADO"."<br>".$clc1_ctg); }  ?>
             </span></td>
             <td width="76" align="center" valign="middle" bgcolor=<? if ($c2_ctg=="L") { echo($colorlib); } else{ echo($colorocu); } ?> > <span class="txt_espacios">
-              <?  if ($c2_ctg=="L") { echo ("C2 LIBRE");  } else {  echo ("OCUPADO"); }  ?>
+              <?  if ($c2_ctg=="L") { echo ("C2 LIBRE"."<br>"."S/ ".intval($pc2_ctg));  } else {  echo ("OCUPADO"."<br>".$clc2_ctg); }  ?>
             </span></td>
             <td width="8" align="center" valign="middle">&nbsp;</td>
             <td colspan="2" align="center" valign="middle" bgcolor=<? if ($c5_ctg=="L") { echo($colorlib); } else{ echo($colorocu); } ?> ><span class="txt_espacios">
-              <?  if ($c5_ctg=="L") { echo ("C5 LIBRE");  } else {  echo ("OCUPADO"); }  ?>
+              <?  if ($c5_ctg=="L") { echo ("C5 LIBRE"."<br>"."S/ ".intval($pc5_ctg));  } else {  echo ("OCUPADO"."<br>".$clc5_ctg); }  ?>
             </span></td>
             </tr>
           <tr>
             <td height="45" colspan="2" align="center" valign="middle" bgcolor=<? if ($c3_ctg=="L") { echo($colorlib); } else{ echo($colorocu); } ?> ><span class="txt_espacios">
-              <?  if ($c3_ctg=="L") { echo ("C3 LIBRE");  } else {  echo ("OCUPADO"); }  ?>
+              <?  if ($c3_ctg=="L") { echo ("C3 LIBRE"."<br>"."S/ ".intval($pc3_ctg));  } else {  echo ("OCUPADO"."<br>".$clc3_ctg); }  ?>
             </span></td>
             <td align="center" valign="middle">&nbsp;</td>
             <td colspan="2" align="center" valign="middle" bgcolor=<? if ($c6_ctg=="L") { echo($colorlib); } else{ echo($colorocu); } ?> ><span class="txt_espacios">
-              <?  if ($c6_ctg=="L") { echo ("C6 LIBRE");  } else {  echo ("OCUPADO"); }  ?>
+              <?  if ($c6_ctg=="L") { echo ("C6 LIBRE"."<br>"."S/ ".intval($pc6_ctg));  } else {  echo ("OCUPADO"."<br>".$clc6_ctg); }  ?>
             </span></td>
             </tr>
           <tr>
             <td height="84" colspan="2" align="center" valign="middle" bgcolor=<? if ($c4_ctg=="L") { echo($colorlib); } else{ echo($colorocu); } ?> ><span class="txt_espacios">
-              <?  if ($c4_ctg=="L") { echo ("C4 LIBRE");  } else {  echo ("OCUPADO"); }  ?>
+              <?  if ($c4_ctg=="L") { echo ("C4 LIBRE"."<br>"."S/ ".intval($pc4_ctg));  } else {  echo ("OCUPADO"."<br>".$clc4_ctg); }  ?>
             </span></td>
             <td align="center" valign="middle">&nbsp;</td>
             <td width="84" align="center" valign="middle" bgcolor=<? if ($c7_ctg=="L") { echo($colorlib); } else{ echo($colorocu); } ?> ><span class="txt_espacios">
-              <?  if ($c7_ctg=="L") { echo ("C7 LIBRE");  } else {  echo ("OCUPADO"); }  ?>
+              <?  if ($c7_ctg=="L") { echo ("C7 LIBRE"."<br>"."S/ ".intval($pc7_ctg));  } else {  echo ("OCUPADO"."<br>".$clc7_ctg); }  ?>
             </span></td>
             <td width="86" align="center" valign="middle" bgcolor=<? if ($c8_ctg=="L") { echo($colorlib); } else{ echo($colorocu); } ?> ><span class="txt_espacios">
-              <?  if ($c8_ctg=="L") { echo ("C8 LIBRE");  } else {  echo ("OCUPADO"); }  ?>
+              <?  if ($c8_ctg=="L") { echo ("C8 LIBRE"."<br>"."S/ ".intval($pc8_ctg));  } else {  echo ("OCUPADO"."<br>".$clc8_ctg); }  ?>
             </span></td>
           </tr>
       </table></td>
