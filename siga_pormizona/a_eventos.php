@@ -31,19 +31,7 @@
     <td height="39" align="center" bgcolor="#00CC66">2024</td>
   </tr>
   <tr>
-    <td height="577" align="center" valign="top"><img src="eventos_aqp/EXPOAQP 2024 - Del 11 al 14 de abril en CERRO JULI.jpeg" width="615" height="559" /></td>
-  </tr>
-  <tr>
-    <td height="44" bgcolor="#48887A" class="TITULOBLANCO">&nbsp;</td>
-  </tr>
-  <tr>
     <td height="13" align="center" valign="top"><img src="eventos_aqp/Orquesta Internaciona y Pamela Franco - SERENATA 2024 - 21 de Abril.jpg" width="500" height="%" /></td>
-  </tr>
-  <tr>
-    <td height="44" bgcolor="#48887A" class="TITULOBLANCO">&nbsp;</td>
-  </tr>
-  <tr>
-    <td height="411" align="center" valign="top" bgcolor="#E7FEFD"><img src="eventos_aqp/Festival Rock X Siempre Arequipa RATA BLANCA, Saratoga y muchos mas - 27 de Abril.jpeg" width="400" height="400" /></td>
   </tr>
   <tr>
     <td height="41" bgcolor="#48887A" class="TITULOBLANCO">&nbsp;</td>
