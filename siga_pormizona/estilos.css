@@ -1,0 +1,561 @@
+:root{
+    --color-principal:#21ADFF;
+    --color-fondo:#F0F0F0;
+    --color-negro:#1A1A1A;
+    --color-plomo:#999999;
+    --fuente-negrita:nexa_bold;
+    --fuente-normal:nexa_light;
+    --fuente-abel:abel; }
+
+html{
+    font-size:15px;
+}
+
+nav{
+    background-color:var(--color-principal);
+    height:70px;
+    width:100%;
+    display:flex;
+    align-items:flex-start;
+
+    justify-content:space-between;
+    
+
+    box-shadow: 0px 4px 24px -1px rgba(0,0,0,0.55);
+
+    position:fixed;
+}
+
+
+.logo{
+    margin-top:5px;
+    width:15%;
+    min-width:180px;
+    max-width:393px;
+    margin-right:20px;
+}
+
+.iconos{
+    width:100%;
+	height:auto;   
+}
+.botones_nav{
+    height:100%;
+    display:flex;
+    align-items:center;
+
+}
+input::placeholder {
+    color:#cecccc
+    
+}
+textarea::placeholder {
+    color:#cecccc  
+}
+
+
+.boton_home{
+    background-image:url(imagenes/Iconos/Home.svg);
+    background-repeat:no-repeat;
+    background-size:30px 30px;
+    background-position:center;
+    margin-right:10px;
+
+    padding:30px;
+    
+}
+.boton_menu{
+    background-image:url(imagenes/Iconos/Menu.svg);
+    background-repeat:no-repeat;
+    background-size:30px 30px;
+    background-position:center;
+
+    padding:30px;
+}
+
+.barra_titulo{
+    width: 100%;
+    background-color:var(--color-principal);
+    color:white;
+  /*   height: 3.5rem;  */
+    padding-top: 75px;
+    align-items:center;
+  display: flex;	
+  flex-wrap: wrap;
+}
+
+
+.barr_parte{
+	  width: 380px;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+
+ /*  background-color: DodgerBlue; */
+ 
+}
+
+
+
+h2{
+    font-family:var(--fuente-negrita);
+    font-size:1.6rem;
+    margin:0;
+}
+h22{
+    font-family:var(--fuente-negrita);
+    font-size:1rem;
+    margin:0;
+}
+
+h4{
+    font-family:var(--fuente-negrita);
+    font-size:1.2rem;
+    margin:0;
+}
+.busrazon{
+  
+    font-family:var(--fuente-negrita);
+}
+.busproductos{
+    font-family: Verdana, Geneva, sans-serif ;
+
+    font-size:0.6rem;
+	    color:#333;
+	 /*  padding: 10px 50px 20px;	*/
+
+}
+.busdireccion{
+    font-size:0.8rem;
+	    color:#333;
+
+}
+.busraya{
+    font-size:0.6rem;
+	    color:#999;
+
+}
+
+
+@media screen and (max-width: 715px){
+    h2{
+        font-size:1.5rem;
+    }
+}
+@media screen and (max-width: 475px){
+    h2{
+        font-size:1.3rem;
+    }
+}
+
+@media screen and (max-width: 411px){
+    h2{
+        font-size:1.1rem;
+    }
+}
+
+
+
+
+
+
+.exteriorform{
+   background-color:white;
+    /*  height:1330px; */
+    display:flex;
+    justify-content: center;
+
+}
+
+.fondo_formulario{
+    background-color:var(--color-fondo);
+    width:90%;
+    height:100%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.fondo_view{
+    background-color:#EBEBEB;
+    width:90%;
+    height:100%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+
+@media screen and (min-width:1000px){
+    .fondo_formulario{
+        width:60%;
+    }
+    .fondo_view{
+        width:60%;
+    }
+
+}
+
+form{
+    height:95%;
+    width:90%;
+    
+    font-family:var(--fuente-normal);
+    display:flex;
+    flex-direction:column;
+}
+
+.campos_de_formulario{
+    display:flex ;
+    flex-direction:column;
+    margin-bottom:1rem;
+    box-shadow: none;
+}
+.campos_de_formularioin{
+    display:flex ;
+    flex-direction:column;
+    margin-bottom:1rem;
+    box-shadow: none;
+				   
+}
+
+
+/*  INICIO *********    IDX JUAN VALDIVIA  *************    */
+.contenedoridx{
+ /*   background-color:white;
+    height:1330px;
+    display:flex;
+    justify-content: center; */
+
+        width: 100%;
+		margin:0 auto;
+        max-width: 1000px;	
+		overflow:hidden;
+	    justify-content: center;
+}
+
+.cabecera0{
+	width:100%;
+    margin-bottom:0.5rem;
+    padding-top:1.5rem;
+
+			    justify-content: center;
+}
+.cabecera1{
+	width:100%;
+    height:4rem;
+    /* margin-bottom:0.5rem; */
+    padding-top:1.5rem;
+  background-color:#F0F0FF;
+	    font-size:2rem;
+		display:flex;
+			    justify-content: center;
+}
+.barra1{
+	width:100%;
+
+    margin-bottom:0.5rem;
+}
+
+.pie1{
+	width:100%;
+	height:6rem;
+    background-color:#009;
+    margin-bottom:0.5rem;
+	color:#FFF;
+	display:flex;
+	justify-content: center;
+	text-align: center;
+
+	
+}
+
+.cuerpoidx{
+  width: 100%;
+ 
+  display: flex; 
+  flex-wrap: wrap;
+ /*  background-color: DodgerBlue; */
+ 
+}
+.botonesidx{
+	 width: 95%; 
+
+  display: flex;
+  flex-wrap: wrap;
+ /*  background-color: DodgerBlue; */
+ 
+}
+.botonazul{
+    padding:1rem;
+     justify-content:center;
+
+}
+
+
+
+.msjeboton{
+    margin-left: 2rem;	
+
+    font-size:0.8rem;
+
+}
+
+.derechaidx{
+
+     max-width: 600px;	
+     min-width: 380px;	
+
+    height:auto;
+    margin-bottom:0.5rem;
+    padding-top:0.5rem;
+
+ /*   display: flex;
+  flex-wrap: wrap;
+ background-color: DodgerBlue; */
+}
+
+.azulderecha{
+    padding:1rem;
+     justify-content:center;  
+}
+
+
+.botobligatorio{
+   /* display:flex ;
+    flex-direction:column;
+    margin-bottom:2rem; */
+
+/* 	width:100%;
+    height:auto;
+    margin-bottom:0.5rem;
+    padding-top:0.5rem; */
+    height:auto;	
+    margin-left: 2rem;	
+}
+
+
+/*  FIN *********    IDX JUAN VALDIVIA  *************    */
+
+label{
+    
+    font-size:1.5rem;
+    margin-bottom:0.2rem;
+}
+
+.desactivado{
+    background-color:#e2e2e2;
+}
+
+.campo_texto{
+    width:100%;
+    max-width:540px;
+    padding:0 1rem 0 0.5rem;
+    box-sizing:border-box;
+    border:none;
+    border-radius:50px;
+    height:2rem;
+}
+
+.campo_textoin{
+    width:50%;
+    max-width:540px;
+    padding:0 1rem 0 0.5rem;
+    box-sizing:border-box;
+    border:none;
+    border-radius:50px;
+    height:2rem;
+}
+
+.semi-titulosform{
+    font-size:1.3rem;
+    margin-bottom:0.3rem;
+    color:var(--color-principal);
+	
+}
+.semi-titulosform_iz{
+    font-size:1.3rem;
+
+    margin-left: 3rem;
+    color:var(--color-principal);
+}
+.semi-titulos{
+    font-size:1.7rem;
+    margin-bottom:0.3rem;
+    color:var(--color-principal);
+}
+@media screen and (max-width: 517px){
+    .semi_titulo_especial{
+        font-size:1.6rem;
+    }
+}
+
+
+
+
+
+.otros_datos{
+    display:flex;
+    width:100%;
+}
+
+.geolocalizacion{
+	
+
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: DodgerBlue; */ 
+    width:100%;
+}
+.geolocalizacion > div {
+   /* background-color: #f1f1f1; */
+  width: 370px;
+  margin: 10px;
+  /*  text-align: center; 
+  line-height: 25px; */ 
+  font-size: 15px;
+}
+
+.form_horizontal{
+    margin-left: 3rem;
+}
+
+.form_telef{
+    margin-bottom:0.8rem;
+}
+
+.campo_grande{
+    padding:1rem;
+    box-sizing:border-box;
+    width: 100%;
+    max-width: 540px;
+    border-radius:15px;
+    resize: none;
+    border:none;
+}
+
+.campo_boton{
+    display:flex;
+    width:100%;
+    justify-content:center;
+    margin-top:15px;
+    margin-bottom:3rem;
+}
+
+.campo_botonin{
+    display:flex;
+    width:50%;
+    justify-content:center;
+    margin-top:15px;
+    margin-bottom:3rem;
+}
+
+@media screen and (max-width: 480px){
+    .campo_boton{
+        margin-top:0;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .exterior{
+        height:1480px;
+    }
+}
+
+.boton_form{
+    height:3rem;
+    border-radius:50px;
+    border:none;
+    width:80%;
+    color:white;
+    background-color:var(--color-principal);
+    font-family:var(--fuente-negrita);
+    font-size:1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+
+    transition-duration: 0.4s;
+}
+
+@media screen and (max-width: 400px){
+    .boton_form{
+        font-size:1.3rem;
+        
+    }
+}
+
+.boton_form:hover{
+    background-color:white;
+    border:solid;
+    color:var(--color-principal);
+    border-color:var(--color-principal);
+}
+
+.agrandar{
+	width:250px;
+	}
+
+.texto_view{
+    font-family: var(--fuente-negrita);
+    padding: 10px 50px 20px;
+	  alignment-adjust:middle;
+
+}
+
+.txt_view_pequeño{
+  font-size: 10px;
+  alignment-adjust:middle;
+}
+
+.txt_view_normal{
+	 font-size: 14px;
+  alignment-adjust:middle;
+}
+
+.campo_de_posicion{
+    font-family: var(--fuente-negrita);
+}
+
+
+.fuente_norm{
+    font-family: var(--fuente-normal);
+}
+
+.edit_lat{
+
+}
+
+.edit_long{
+
+}
+
+.boton_obligatorio{
+		width:100%;
+	height:auto;
+	min-width:400px;
+			padding:10px;	
+
+
+}
+
+.campo_posicion_total{
+    width:300px;
+
+}
+
+aside0 {
+        width: 30%;
+		padding:10px;
+		float:center;
+
+}
+.titobligatorio {
+    text-align:center;
+    display:flex;
+	    color:blue;
+}
