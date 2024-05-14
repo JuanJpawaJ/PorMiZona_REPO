@@ -23,7 +23,7 @@
 </head>
 
 <body>
-<table width="908" height="2406" border="1" align="center" cellpadding="0" cellspacing="0">
+<table width="908" height="1591" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td width="900" height="119" align="center" valign="middle"><img src="/imagenes_1/logo_pormizona_com_pe.jpg" width="395" height="97" /></td>
   </tr>
@@ -31,7 +31,7 @@
     <td height="39" align="center" bgcolor="#00CC66">2024</td>
   </tr>
   <tr>
-    <td height="13" align="center" valign="top"><img src="eventos_aqp/Orquesta Internaciona y Pamela Franco - SERENATA 2024 - 21 de Abril.jpg" width="500" height="%" /></td>
+    <td height="13" align="center" valign="top"><img src="eventos_aqp/Corazon serranoColorado AREQUIPA.jpg" width="400" height="400" /></td>
   </tr>
   <tr>
     <td height="41" bgcolor="#48887A" class="TITULOBLANCO">&nbsp;</td>
@@ -43,13 +43,19 @@
     <td height="41" bgcolor="#48887A" class="TITULOBLANCO">&nbsp;</td>
   </tr>
   <tr>
-    <td height="421" align="center" valign="top"><img src="eventos_aqp/Carlos Galdos  SOLO HAY UNA - 11 de Mayo.jpg" width="400" height="400" /></td>
+    <td height="421" align="center" valign="top"><img src="eventos_aqp/Corazón Serrano HUNTER.jpg" width="400" height="400" /></td>
   </tr>
   <tr>
     <td height="45" align="center" bgcolor="#48887A" class="TITULOBLANCO">&nbsp;</td>
   </tr>
   <tr>
-    <td align="center" valign="top">&nbsp;</td>
+    <td height="275" align="center" valign="top"><img src="eventos_aqp/AMARANTA 31 de MAYO.jpg" width="400" height="250" /></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" bgcolor="#48887A">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><img src="eventos_aqp/Grupo5 15 de Junio.jpg" width="500" height="%" /></td>
   </tr>
   <tr>
     <td height="61" align="center" bgcolor="#000000" class="blanco">Design for: JpawaJ SAC - Abril 2023 - 959 956 000 - Arequipa - Perú</td>
