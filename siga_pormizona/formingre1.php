@@ -38,7 +38,7 @@ $latitud = $_POST['latitude'];
 <div class="exteriorform">
    <div class="fondo_formulario">
       <div class="cabecera1">
-            <img src="imagenes/cabecera_formulario.jpg" width="700" height="85" class="iconos">
+            <img src="iconos/cabecera_formulario.jpg" width="700" height="85" class="iconos">
       </div>
       <!-- inicio de boton obligatorio -->         
       <div class="geolocalizacion">
@@ -49,7 +49,7 @@ $latitud = $_POST['latitude'];
               </div>
               <br/>
          <? } ?>
-        <div> <a href="geo_mendoza2.html"><img src="imagenes/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
+        <div> <a href="geo_mendoza2.html"><img src="iconos/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
         </div>
         <div>
              <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
