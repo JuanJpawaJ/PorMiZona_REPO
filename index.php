@@ -13,7 +13,7 @@
 
 <meta name="googlebot" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     
-<title>PorMiZona</title> 
+<title>PorMiZona.com.pe</title> 
 
 <style type="text/css">
 .blanco {
