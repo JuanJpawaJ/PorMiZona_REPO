@@ -77,7 +77,7 @@ if(strlen($xzona)==0){
         <td width="105" height="101" align="center" bgcolor="#CCCCCC"><a href="../index.php"><img src="iconos/boton_pmz_3letras.jpg" width="85" height="80" /></a></td>
         <td width="202" align="center" 
     <?  if ($xzona=="040202") { ?>
-			bgcolor="#CCCCCC" 
+			bgcolor="#FFFF00" 
 	<?	} else { ?>
 			bgcolor="#CCCCCC" 
 	<?  } ?>
