@@ -33,7 +33,19 @@ $latitud_aso=$_POST['xlatitud'];
 $longitud_aso=$_POST['xlongitud'];	
 $date_aso=date("Y/m/d");	
 $favicon_aso=$_POST['xfavicon'];	   
-$publicidad_aso="N";	   
+$publicidad_aso="N";	
+
+$grupolista_aso="1";
+$img1_aso=" ";
+$img2_aso=" ";
+$logo_aso=" ";
+$view1_aso=" ";
+$view2_aso=" ";
+$view3_aso=" ";
+$view4_aso=" ";
+$msjpublico_aso=" ";
+$obsinterno_aso=" ";
+   
 
 
 
@@ -127,8 +139,8 @@ if(strlen($rsocial_aso)==0 OR strlen($direccion_aso)==0 ) {
 	$total_nom=mysqli_num_rows($result_nom);
     if 	($total_nom==0) {  // VUENE DE FORMULARIO Y NO HAY DUPLICIDAD *****************+
        	$sql="INSERT INTO asociado_51
-(cod_aso,     pais_aso,     rsocial_aso,    direccion_aso,    distrito_aso,    provincia_aso,  estado_aso, referencia_aso, telf1_aso, telf2_aso, usua_aso, pass_aso,    email_aso,     categoria_aso,   productos_aso,    latitud_aso,    longitud_aso,     date_aso,     favicon_aso, publicidad_aso)  VALUES
-('$cod_aso', '$pais_aso', '$rsocial_aso', '$direccion_aso', '$distrito_aso', '$provincia_aso',  '$estado_aso',   '$referencia_aso', '$telf1_aso',   '$telf2_aso', '$usua_aso', '$pass_aso', '$email_aso', '$categoria_aso', '$productos_aso', '$latitud_aso', '$longitud_aso',   '$date_aso', '$favicon_aso', 
+(cod_aso,  grupolista_aso, img1_aso, img2_aso, logo_aso, view01_aso, view02_aso, view03_aso, view04_aso, msjpublico_aso, obsinterno_aso, pais_aso,     rsocial_aso,    direccion_aso,    distrito_aso,    provincia_aso,  estado_aso, referencia_aso, telf1_aso, telf2_aso, usua_aso, pass_aso, email_aso, categoria_aso, productos_aso, latitud_aso,   longitud_aso, date_aso, favicon_aso, publicidad_aso)  VALUES
+('$cod_aso', '$grupolista_aso', '$img1_aso', '$img2_aso', '$logo_aso', '$view01_aso', '$view02_aso', '$view03_aso', '$view04_aso', '$msjpublico_aso', '$obsinterno_aso', '$pais_aso', '$rsocial_aso', '$direccion_aso', '$distrito_aso', '$provincia_aso',  '$estado_aso',   '$referencia_aso', '$telf1_aso',   '$telf2_aso', '$usua_aso', '$pass_aso', '$email_aso', '$categoria_aso', '$productos_aso', '$latitud_aso', '$longitud_aso',   '$date_aso', '$favicon_aso', 
 '$publicidad_aso')";
 
    		$result=mysqli_query($connec,$sql);
