@@ -9,8 +9,8 @@
 
 <body>
 <?php 
-include("connec_sql_denc.php");
-mysqli_query($connec,"SET CHARACTER SET utf8"); 
+include("connec_sql_new.php");
+mysqli_set_charset($connec,'utf8'); 
 date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
