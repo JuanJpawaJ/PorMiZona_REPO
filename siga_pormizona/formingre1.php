@@ -54,10 +54,10 @@ $latitud = $_POST['latitude'];
         <div>
              <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
                   <div class="campo_de_posicion edit_lat">		  
-	 	           SU LATITUD ES:  <img src="imagenes/alerta.png" width="25" height="22"> <br>
+	 	           SU LATITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
                   </div>
                   <div class="campo_de_posicion edit_long">
-	               SU LONGITUD ES:  <img src="imagenes/alerta.png" width="25" height="22"> <br>
+	               SU LONGITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
                   </div>
              <? } else { ?>
                   <div class="campo_de_posicion edit_lat">	
