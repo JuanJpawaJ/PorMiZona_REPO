@@ -109,7 +109,7 @@ mysqli_close($connec);
 <? if ($xformulario=="S") { // si es formulario retorna a view formulario ?>
     <th scope="col"><div align="center"><a href="../matriculas/view_xfxoxrxmxuxlxaxrxixo.php?id=<?php  echo($idid); ?>">RETORNAR</a></div></th>
 <? } else { ?>
-    <th scope="col" class="semi-titulosform"><div align="center"><a href="buscar_dencuentro.php">RETORNAR</a></div></th>
+    <th scope="col" class="semi-titulosform"><div align="center"><a href="buscar_pormizona.php">RETORNAR</a></div></th>
 <? } ?>
   </tr>
 </table>

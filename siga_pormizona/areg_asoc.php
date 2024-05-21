@@ -168,7 +168,7 @@ mysqli_close($connec);
 <? if ($retorna=="ERROR") {  ?>
     <th scope="col"><div align="center"><a href="formingre1.php?id=<?php  echo($idid); ?>">ERROR RETORNAR</a></div></th>
 <? } else { ?>
-    <th scope="col" class="semi-titulosform"><div align="center"><a href="formingre2.php?xcod=<?php  echo($cod_aso); ?>"><?php  echo("xxx cod que viajará XX".$cod_aso); ?>CONTINUAR CON EL PASO 3</a></div></th>
+    <th scope="col" class="semi-titulosform"><div align="center"><a href="formingre2.php?xcod=<?php  echo($cod_aso); ?>">CONTINUAR CON EL PASO 3</a></div></th>
 <? } ?>
   </tr>
 </table>

@@ -41,7 +41,6 @@ $cod_aso = $_GET['xcod'];
 
     
 <?
-echo (" esste es e nro de cod asociadOOOO: ".$cod_aso);
 
 $result=mysqli_query($connec,"select * from asociado_51 where cod_aso='$cod_aso'");
 $total=mysqli_num_rows($result);
