@@ -12,7 +12,7 @@
 </head>
 <body>
 
---
+
 <?php
 include("connec_sql_new.php");
 mysqli_set_charset($connec,'utf8'); 
@@ -30,7 +30,7 @@ $latitud = $_POST['latitude'];
             <a href="#" class="boton_menu"></a>
     </div>
     <!-- <img src="imagenes/Logo/Logo_blanco_negro.svg" alt="logo"> -->
-    <img src="imagenes/logo_dencuentrop.png" alt="logo" class="logo">
+    <img src="iconos/logo_pormizona.png" alt="logo" class="logo">
 </nav>
 <div class="barra_titulo">
      <h2>           *REGISTRE SU NEGOCIO COMPLETAMENTE GRATIS</h2>
