@@ -93,7 +93,7 @@ $latitud = $_POST['latitude'];
                <label>Categoría</label>
                 <? $sql=mysqli_query($connec,"SELECT * FROM categoria order by categoria_cat");  ?>
                <select id="departamento" name="xcategoria" class="campo_texto">
-                <option value="CATEGORIA">Categoría</option>
+                <option value="CATEGORIA">Elije tu grupo...</option>
                 <? while($rosvi=mysqli_fetch_array($sql))
                         echo "<option  value='".$rosvi["cod_cat"]."'>".$rosvi["categoria_cat"]."</option>";
                 ?>

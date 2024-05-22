@@ -124,7 +124,11 @@ echo "Recuerde: Ud. podrá realizar las modificaciones necesarias después del p
                <div class="campos_de_formulario">
                     <label>Departamento o Estado</label>
                     <? $sql=mysqli_query($connec,"SELECT * FROM estado_51 order by estado_est");  ?>
-                    <select id="departamento" name="xestado" class="campo_texto">
+                    <select id="departamento" name="xestado" class="campo_texto">  
+                    <option value="ESTADO">Elije tu ciudad...</option>
+
+                    
+                    
                         <? while($rosvi=mysqli_fetch_array($sql))
                          echo "<option  value='".$rosvi["estado_est"]."'>".$rosvi["estado_est"]."</option>";
                         ?>
