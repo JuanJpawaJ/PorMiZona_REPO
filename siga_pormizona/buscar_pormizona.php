@@ -105,7 +105,7 @@ while ($tabla=mysqli_fetch_array($result)){
 	$productos_aso=$tabla["productos_aso"];
 	$favicon_aso=$tabla["favicon_aso"];
 	if(strlen($favicon_aso)==0) {
-		$favicon_aso="f_pmz_bl.jpg";
+		$favicon_aso="f_pmz_bl.png";
 	}
 	$latitud_aso=$tabla["latitud_aso"];
 	$longitud_aso=$tabla["longitud_aso"];
