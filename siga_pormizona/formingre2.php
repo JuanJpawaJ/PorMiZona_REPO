@@ -76,21 +76,33 @@ $pass_aso=$tabla["pass_aso"];
 // $favicon_aso=$tabla["favicon_aso"];
 // $publicidad_aso=$tabla["publicidad_aso"];
 
-echo "Ud. ha completado el paso 01";
-echo $latitud_aso."<br>";
-echo $longitud_aso."<br>";
+?>
+<h2 class="semi-titulos">Ud. ha completado el Paso 01</h2>
+<?
 echo "<br>";
-echo "Ud. ha completado el paso 02";
+echo "SU LATITUD ES : ". $latitud_aso."<br>";
+echo "SU LONGITUD ES: ".$longitud_aso."<br>";
+echo "<br>";
+?>
+<h2 class="semi-titulos">Ud. ha completado el Paso 02</h2>
+<?
+echo "<br>";
 echo $cod_aso."<br>";
 echo $pais_aso."<br>";
 echo $rsocial_aso."<br>";
 echo $direccion_aso."<br>";
 echo $email_aso."<br>";
-echo $usua_aso."<br>";
 echo $email_aso."<br>";
-echo $pass_aso."<br>";
+echo "<br>";
+
 echo "Última oportunidad de tomar nota de su USUARIO y CLAVE";
 echo "Recuerde: Ud. podrá realizar las modificaciones necesarias después del paso 3. En la opción [SOY PROPIETARIO]";
+echo "<br>";
+
+echo $usua_aso."<br>";
+echo $pass_aso."<br>";
+echo "<br>";
+
 ?>
     <div class="lista">
 
