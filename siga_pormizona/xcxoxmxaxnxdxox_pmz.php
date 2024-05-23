@@ -229,7 +229,9 @@ if ($zxyw == "SCADCASA2014_09" OR ($total !==0 AND $password_per == $password)){
         </table></td>
         <td align="center">&nbsp;</td>
         <td valign="top"><p>&nbsp;</p>
-          <p><a href="formingre1.php">FORMINGRE1</a></p></td>
+          <p><a href="formingre1.php">FORMINGRE1</a></p>
+           <p><a href="buscar_pormizona.php">BUSCAR PMZ</a></p>
+          </td>
         </tr>
       <tr>
         <td>&nbsp;</td>
