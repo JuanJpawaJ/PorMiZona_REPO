@@ -1,28 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="fuentes.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="estilos-footer.css">
-    <link rel="icon" href="imagenes/dencuentro.ico" />
-    <style type="text/css">
-    a:link {
-	text-decoration: none;
-}
-a:visited {
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: none;
-}
-a:active {
-	text-decoration: none;
-}
-    </style>
+    <link rel="icon" href="imagenes/dencuentro.ico" /> 
 </head>
 <body>
 <?    
@@ -31,64 +17,28 @@ mysqli_set_charset($connec,'utf8');
 date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
-$longitud = $_POST['longitude'];
-$latitud = $_POST['latitude'];
-
-//echo ("Longitud: ".$longitud."<br>");
-//echo ("Latitud : ".$latitud."<br>");
-if ($longitud<0) {
-     $longitud = substr($longitud,0,6);
-} else {
-     $longitud = substr($longitud,0,5);
-}
-if ($latitud<0) {
-     $latitud = substr($latitud,0,6);
-} else {
-     $latitud = substr($latitud,0,5);
-}
-
-//echo ("Longitud: ".$longitud."<br>");
-//echo ("Latitud : ".$latitud."<br>");
-
-$result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$latitud%' AND longitud_aso like '%$longitud%') order by categoria_aso");
-
-$total=mysqli_num_rows($result);
-//echo "Total: ".$total."<br>";
+$cod_aso = $_GET['xcod'];
 
 ?>
-
-
-    <nav>
-
-        <div class="botones_nav">
+       
+<nav>
+    <div class="botones_nav">
             <a href="#" class="boton_home"></a>
             <a href="#" class="boton_menu"></a>
-        </div>
-       <!-- <img src="imagenes/Logo/Logo_blanco_negro.svg" alt="logo"> -->
-
- 
-
-
-       <img src="iconos/logo_pmz.png" alt="logo" class="logo">
-    </nav>
-
-    <div class="barra_titulo">
-        <h2>Cerca a Ud. </h2>
-        <h3> Su: *Longitud=<?  echo ($longitud."  "); ?> *Latitud=<? echo ($latitud); ?> </h3>
     </div>
-    
-    <div class="exterior">
-        
-        <div class="fondo_formulario">
- 
-          <div class="cabecera1">
-            <img src="imagenes/cabecera_formulario_iconos_alfa.png" alt="iconos" class="iconos">
-            </div>
-<?php 
+    <!-- <img src="imagenes/Logo/Logo_blanco_negro.svg" alt="logo"> -->
+    <img src="iconos/logo_pmz.png" alt="logo" class="logo">
+</nav>
+<div class="barra_titulo">
+     <h2>           *Nuestro asociado:</h2>
+</div>
+<?
+$result=mysqli_query($connec,"select * from asociado_51 where cod_aso='$cod_aso'");
+$total=mysqli_num_rows($result);
+$tabla = mysqli_fetch_array( $result );
 
 
-while ($tabla=mysqli_fetch_array($result)){
-	$id=$tabla["id"];
+	$xid=$tabla["id"];
 	$cod_aso=$tabla["cod_aso"];
 	$pais_aso=$tabla["pais_aso"];
 	$rsocial_aso=$tabla["rsocial_aso"];
@@ -102,17 +52,74 @@ while ($tabla=mysqli_fetch_array($result)){
 	$email_aso=$tabla["email_aso"];
 	$date_aso=$tabla["date_aso"];
 	$categoria_aso=$tabla["categoria_aso"];
+
+    $resultaso=mysqli_query($connec,"SELECT * FROM categoria   where cod_cat='$categoria_aso'");
+	$tablaaso =mysqli_fetch_array( $resultaso );
+	$categoriatxt_aso=$tablaaso["categoria_cat"];
+	
+	
 	$productos_aso=$tabla["productos_aso"];
 	$favicon_aso=$tabla["favicon_aso"];
 	if(strlen($favicon_aso)==0) {
-		$favicon_aso="f_pmz_bl.png";
+		$favicon_aso="f_dencuentro_bl.jpg";
 	}
 	$latitud_aso=$tabla["latitud_aso"];
 	$longitud_aso=$tabla["longitud_aso"];
-	
-	
-	?>
-    <div class="lista"><a href="viewasociado.php?xcod=<?php  echo($cod_aso); ?>">
+
+
+// $distrito_aso=$tabla["distrito_aso"];
+// $provincia_aso=$tabla["provincia_aso"];
+// $estado_aso=$tabla["estado_aso"];
+// $referencia_aso=$tabla["referencia_aso"];
+// $telf1_aso=$tabla["telf1_aso"];
+// $telf2_aso=$tabla["telf2_aso"];
+// $pass_aso=$tabla["pass_aso"];
+// $categoria_aso=$tabla["categoria_aso"];
+// $productos_aso=$tabla["productos_aso"];
+// $favicon_aso=$tabla["favicon_aso"];
+// $publicidad_aso=$tabla["publicidad_aso"];
+?>
+
+<div class="exteriorform">
+   <div class="fondo_view">
+      <div class="cabecera1">
+         <?
+		 echo $rsocial_aso ;
+		 ?>
+      </div>
+      <!-- inicio de boton obligatorio -->         
+      <div class="barra1">
+          <img src="imagenes/f_barra.png" width="700" height="85" class="iconos"> 
+      </div>
+
+    
+<div class="texto_view">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="9%" height="39" class="txt_view_pequeño" >Categoría:</td>
+    <td width="91%"  ><? echo $categoria_aso.": ".$categoriatxt_aso."<br>"; ?></td>
+  </tr>
+  <tr>
+    <td height="39" class="txt_view_pequeño" >Productos:</td>
+    <td width="91%"  ><? echo $productos_aso."<br>"; ?></td>
+  </tr>
+  <tr>
+    <td height="36" class="txt_view_pequeño">Dirección: </td>
+    <td ><? echo $direccion_aso."<br>"; ?></td>
+  </tr>
+  <tr>
+    <td height="32" class="txt_view_pequeño">Teléfono :</td>
+    <td><? echo $telf1_aso." / ".$telf2_aso."<br>"; ?></td>
+  </tr>
+  <tr>
+    <td height="32" class="txt_view_pequeño">Referencia: </td>
+    <td ><? echo $referencia_aso."<br>"; ?></td>
+  </tr>
+</table>
+</div>
+ 
+    <div class="lista">
+
     <table width="100%" border="0" cellpadding="0" cellspacing="0">
     
   <tr>
@@ -125,25 +132,35 @@ while ($tabla=mysqli_fetch_array($result)){
     </tr>
   <tr>
     <td width="47">&nbsp;</td>
-    <td colspan="2" class="busraya">--------------------------------------------------------------------------------------------</td>
+    <td colspan="2" class="busraya"><p>--------------------------------------------------------------------------------------------</p>
+     </td>
+
+
     </tr>
    
     </table>
-
-  </a></div>
- 
-<?php 
-       
-	} 
-
-mysqli_close($connec_sql);
-?>            
-            
+      <p>&nbsp;</p>
+    </div>
+       <div class="pie1">
+         <? echo $email_aso."<br>"; ?>     
+		 <? echo $estado_aso." - ".$pais_aso."<br>"; ?>
+		 <? echo "<br>"; ?>
+   		 <? echo $cod_aso." - ".$date_aso."<br>"; ?>         
+         <? echo "la: ".$latitud_aso." lo: ".$longitud_aso."<br>"; ?>
 
 
-          </div>   <!-- geolocalizacion-->     
-    <!-- FIN DE boton obligatorio -->              
-  
+		
+      </div>
+   
+    
+    <div>
+   Acceso solo a propietarios:  
+    
+     
+     
+     <a href="ingre.php?xid=<? echo ($xid);?> "><img src="imagenes/bot_soypropietario.png" width="156" height="23" style="border:0;" onmouseover="this.style.border='solid  2px #FFFFFF';" onmouseout="this.style.border=0;" border="0"></a>
+
+</div>
 </div>
 </div>
 
@@ -185,8 +202,9 @@ mysqli_close($connec_sql);
             <article class="footer_article">
                 <h2 class="semi-titulos">CONTACTOS</h2>
                 <p>Cel. 959956000 <br>
+                 Cel. 922900787 <br>
                     Diseño Web.
-                    Ca. Sena 105 cop. 58.
+                    Ca. Sena 105 Coop. 58.
                     J.L.B. y Rivero - Arequipa - Perú</p>
             </article>
         </div>

@@ -59,7 +59,7 @@ $favicon_aso=$tabla["favicon_aso"];
 $usua_aso=$tabla["usua_aso"];
 $pass_aso=$tabla["pass_aso"];
 	if(strlen($favicon_aso)==0) {
-		$favicon_aso="f_dencuentro_bl.jpg";
+		$favicon_aso="f_pmz_bl.png";
 	}
 
 
@@ -95,7 +95,7 @@ echo $email_aso."<br>";
 echo $email_aso."<br>";
 echo "<br>";
 
-echo "Última oportunidad de tomar nota de su USUARIO y CLAVE";
+echo "Última oportunidad de tomar nota de su USUARIO y CLAVE ";
 echo "Recuerde: Ud. podrá realizar las modificaciones necesarias después del paso 3. En la opción [SOY PROPIETARIO]";
 echo "<br>";
 
