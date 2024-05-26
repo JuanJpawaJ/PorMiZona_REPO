@@ -216,6 +216,20 @@ form{
     margin-bottom:1rem;
     box-shadow: none;
 }
+
+.campos_de_formulario_texarea{
+    display:flex ;
+    flex-direction:column;
+    margin-bottom:1rem;
+    box-shadow: none;
+    padding: 10px; /* Relleno interno */
+
+}
+
+
+
+
+
 .campos_de_formularioin{
     display:flex ;
     flex-direction:column;

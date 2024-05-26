@@ -84,7 +84,7 @@ $latitud = $_POST['latitude'];
               <input type="text" class="campo_texto" name="xnomevento" placeholder="Ejemplo: GRAN PARRILLADA..." onkeyup= "this.value=this.value.toUpperCase();"> 
            </div>
            <!--  <h2 class="semi-titulos">UBICACIÓN</h2> -->
-           <div class="campos_de_formulario">
+           <div class="campos_de_formulario_texarea">
               <label>DESCRIPCIÓN DEL EVENTO</label>
               <textarea name="xdescri" rows="5" class="campo_texto" placeholder="Ejemplo: Invito a mi parrilada bailable..."></textarea> 
            </div>
@@ -102,13 +102,13 @@ $latitud = $_POST['latitude'];
            </div>
        -->
           <div class="campos_de_formulario">
-               <label>FECHA DEL EVENTO dd/mm/aa </label>
-               <input type="text" class="campo_texto" name="xfinicio" placeholder="Ejemplo: 25/05/2025"> 
+               <label>Fecha del evento dd/mm/aa </label>
+               <input type="date" class="campo_texto" name="xfinicio" placeholder="Ejemplo: 25/05/2025"> 
            </div>
 
           <div class="campos_de_formulario">
                <label>BOLETO DE ENTRADA en soles</label>
-               <input type="number" class="campo_texto" name="xc_ingreso" placeholder="Ejemplo: S/ 10"> 
+               <input type="text" class="campo_texto" name="xc_ingreso" placeholder="Ejemplo: S/ 10"> 
            </div>
 
            <h2 class="semi-titulosform">Los siguentes datos, no se mostrarán en su aviso</h2>

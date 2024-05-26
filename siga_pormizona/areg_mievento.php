@@ -15,21 +15,21 @@ date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
 
-$codevento_mev=$_POST['xpais'];
-$nomevento_mev=$_POST['xpais'];
-$descri_mev=$_POST['xrsocial'];
-$finicio_mev=$_POST['xdireccion'];
-$c_ingreso_mev=$_POST['xdistrito'];
-$anunciante_mev=$_POST['xprovincia'];
-$telf_mev=$_POST['xestado'];
-$email_mev=$_POST['xreferencia'];
-$img_mev=$_POST['xtelf1'];
-$view01_mev=$_POST['xtelf2'];
-$view02_mev=$_POST['xusuario'];
-$mspublico_mev=$_POST['xpass'];
-$obsinterno_mev=$_POST['xemail'];
-$latitud_mev=$_POST['xcategoria'];
-$longitud_mev=$_POST['xproductos'];
+$codevento_mev=$_POST['xcodevento'];
+$nomevento_mev=$_POST['xnomevento'];
+$descri_mev=$_POST['xdescri'];
+$finicio_mev=$_POST['xfinicio'];
+$c_ingreso_mev=$_POST['xc_ingreso'];
+$anunciante_mev=$_POST['xanunciante'];
+$telf_mev=$_POST['xtelf'];
+$email_mev=$_POST['xemail'];
+$img_mev=$_POST['ximg'];
+$view01_mev=$_POST['xview01'];
+$view02_mev=$_POST['xview02'];
+$mspublico_mev=$_POST['xmspublico'];
+$obsinterno_mev=$_POST['xobsinterno'];
+$latitud_mev=$_POST['xlatitud'];
+$longitud_mev=$_POST['xlongitud'];
 $fhoy=date('Y-m-d');
 
 
