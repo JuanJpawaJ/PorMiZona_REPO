@@ -40,7 +40,7 @@
         <td width="218" height="83" align="center" valign="middle" bgcolor="#FFFFFF"><a href="siga_pormizona/a_lisimagenes.php"><img src="siga_pormizona/iconos/boton1_empresas.png" width="200" height="65" style="border:0;" onmouseover="this.style.border='solid  2px  #0a3d89';" onmouseout="this.style.border=0;" border="0"/></a></td>
         <td width="221" align="center" valign="middle" bgcolor="#FFFFFF"><a href="siga_pormizona/a_cat_impreso.php"><img src="siga_pormizona/iconos/boton1_ca_impreso.png" width="200" height="65" style="border:0;" onmouseover="this.style.border='solid  2px  #0a3d89';" onmouseout="this.style.border=0;" border="0" /></a></td>
         <td width="223" align="center" valign="middle" bgcolor="#FFFFFF"><a href="siga_pormizona/a_eventos.php"><img src="siga_pormizona/iconos/boton1_eventos.png" width="200" height="65" style="border:0;" onmouseover="this.style.border='solid  2px  #0a3d89';" onmouseout="this.style.border=0;" border="0" /></a></td>
-        <td width="218" align="center" valign="middle">DONDE HAY<br /> EVENTOS?</td>
+        <td width="218" align="center" valign="middle" bgcolor="#FFFFFF"><a href="siga_pormizona/a_lis_mievento.php"><img src="siga_pormizona/iconos/boton_dondevoy.png" width="200" height="65" style="border:0;" onmouseover="this.style.border='solid  2px  #0a3d89';" onmouseout="this.style.border=0;" border="0"/></a></td>
       </tr>
       <tr>
         <td height="90" align="center" valign="middle">EMPRESAS POR <br /> ZONAS</td>
