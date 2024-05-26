@@ -49,7 +49,7 @@ $latitud = $_POST['latitude'];
               </div>
               <br/>
          <? } ?>
-        <div> <a href="geo_mendoza2.html"><img src="iconos/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
+        <div> <a href="geo_mendoza2_mievento.html"><img src="iconos/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
         </div>
         <div>
              <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
