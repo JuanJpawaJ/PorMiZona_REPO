@@ -141,7 +141,7 @@ $latitud = $_POST['latitude'];
            <input type="hidden" name="xlatitud" value=<? echo $latitud; ?> > 
            <input type="hidden" name="xlongitud" value=<? echo $longitud; ?> > 
            <input type="hidden" name="ximg" value=""/> 
-           <input type="hidden" name="xview01" value="1"/> 
+           <input type="hidden" name="xview01" value="S"/> 
            <input type="hidden" name="xview02" value=""/> 
            <input type="hidden" name="xmsjpublico" value=""/> 
            <input type="hidden" name="xobsinterno" value=""/> 

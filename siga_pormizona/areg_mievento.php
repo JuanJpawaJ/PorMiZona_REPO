@@ -30,7 +30,7 @@ $mspublico_mev=$_POST['xmspublico'];
 $obsinterno_mev=$_POST['xobsinterno'];
 $latitud_mev=$_POST['xlatitud'];
 $longitud_mev=$_POST['xlongitud'];
-$fhoy=date('Y-m-d');
+$fhoy_mev=date('Y-m-d');
 
 
 
@@ -131,7 +131,7 @@ mysqli_close($connec);
 <? if ($retorna=="ERROR") {  ?>
     <th scope="col"><div align="center"><a href="formingre1.php?id=<?php  echo($idid); ?>">ERROR RETORNAR</a></div></th>
 <? } else { ?>
-    <th scope="col" class="semi-titulosform"><div align="center"><a href="formingre2.php?xcod=<?php  echo($cod_aso); ?>">CONTINUAR CON EL PASO 3</a></div></th>
+    <th scope="col" class="semi-titulosform"><div align="center"><a href="a_lis_mievento.php?xcod=<?php  echo($cod_aso); ?>">CONTINUAR CON EL PASO 3</a></div></th>
 <? } ?>
   </tr>
 </table>
