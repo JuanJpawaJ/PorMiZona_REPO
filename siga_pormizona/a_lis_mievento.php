@@ -1,7 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>LP - CLIENTES</title>
+<title>MIS EVENTOS</title>
 <style type="text/css">
 .TITULO_NARANJA {
 	color: #FC0;
@@ -107,7 +107,7 @@ $xgl=$_GET['xgl'];
 //$result=mysql_query("select * from items order by codfabrica_it",$connec);
 
 if(strlen($bxproducto)==0){
-        $result=mysqli_query($connec,"select * from mievento_51 where view01_it='S' ");
+        $result=mysqli_query($connec,"select * from mievento_51 where view01_mev='S' ");
 } else {
         $bxproducto1=trim($bxproducto);
         $result=mysqli_query($connec,"select * from a_items where producto_it like '%$bxproducto1%' order by producto_it");

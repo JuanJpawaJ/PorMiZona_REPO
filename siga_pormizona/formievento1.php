@@ -78,14 +78,14 @@ $latitud = $_POST['latitude'];
            <br/>
            <br/>
         <? } else { ?>             
-           <h2 class="semi-titulosform">Paso 02: Ingreso de datos</h2>
+           <h2 class="semi-titulosform">Ingreso de datos para su evento</h2>
            <div class="campos_de_formulario">
-              <label>NOMBRE DEL EVENTO</label>
+              <label>Nonmbre del evento</label>
               <input type="text" class="campo_texto" name="xnomevento" placeholder="Ejemplo: GRAN PARRILLADA..." onkeyup= "this.value=this.value.toUpperCase();"> 
            </div>
            <!--  <h2 class="semi-titulos">UBICACIÓN</h2> -->
            <div class="campos_de_formulario_texarea">
-              <label>DESCRIPCIÓN DEL EVENTO</label>
+              <label>Descripción del evento</label>
               <textarea name="xdescri" rows="5" class="campo_texto" placeholder="Ejemplo: Invito a mi parrilada bailable..."></textarea> 
            </div>
        <!-- 
@@ -114,12 +114,12 @@ $latitud = $_POST['latitude'];
            <h2 class="semi-titulosform">Los siguentes datos, no se mostrarán en su aviso</h2>
 
           <div class="campos_de_formulario">
-               <label>NOMBRE Y APELLIDO ANUNCIANTE</label>
+               <label>Nombre y apellido del anunciante</label>
                <input type="text" class="campo_texto" name="xanunciante" placeholder="Ejemplo: Pedro Rios"> 
            </div>
 
           <div class="campos_de_formulario">
-               <label>TELÉFONO CONTACTO</label>
+               <label>Teléfono contacto</label>
                <input type="text" class="campo_texto" name="xtelf" placeholder="Ejemplo: Pedro Rios"> 
            </div>
 
