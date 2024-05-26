@@ -38,7 +38,7 @@ $latitud = $_POST['latitude'];
 <div class="exteriorform">
    <div class="fondo_formulario">
       <div class="cabecera1">
-            <img src="iconos/cabecera_formulario.jpg" width="700" height="85" class="iconos">
+            <img src="iconos/cabecera_mievento.jpg" width="700" height="85" class="iconos">
       </div>
       <!-- inicio de boton obligatorio -->         
       <div class="geolocalizacion">
@@ -107,7 +107,7 @@ $latitud = $_POST['latitude'];
            </div>
 
           <div class="campos_de_formulario">
-               <label>BOLETO DE ENTRADA en soles</label>
+               <label>Boleto de ingreso - en soles</label>
                <input type="text" class="campo_texto" name="xc_ingreso" placeholder="Ejemplo: S/ 10"> 
            </div>
 

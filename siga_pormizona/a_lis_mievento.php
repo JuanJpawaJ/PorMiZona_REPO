@@ -70,7 +70,7 @@ $xgl=$_GET['xgl'];
 
   <table width="778" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td align="center" class="tit_menu_sup">POR MI ZONA</td>
+    <td align="center" class="tit_menu_sup"><img src="../imagenes_1/logo_pmz_telf_rgb.jpg" width="862" height="158"></td>
     </tr>
   <tr class="tit_menu_sup">
     <td width="774" height="86" align="center" bgcolor="#FFFFCC"><table width="735" border="1" cellspacing="1" cellpadding="0">
@@ -158,12 +158,12 @@ $fhoy_mev=$tabla["fhoy_mev"];
           <td width="767" height="175" valign="middle" bgcolor="#FFFFFF">
             <table width="751" border="0" cellspacing="0" cellpadding="1">
               <tr>
-                <td width="437" rowspan="3" align="center"><p><a href="ilbupweiv.php?idx=<?php echo($id); ?>"><img src=" <?php echo "img_items/".$img_it ?> " width="350" height="%" />
+                <td width="350" rowspan="3" align="center"><p><a href="ilbupweiv.php?idx=<?php echo($id); ?>"><img src=" <?php echo "img_items/".$img_it ?> " width="350" height="%" />
                   <? if ($pv03_it>0) {?> <img src="iconos/promocion.jpg" alt="EN OFERTA" width="40" height="%" /> <? } ?>
                 </a></p>
           <!--  <p class="TITULO">NOTA: La imagen es referencial.</p>--> </td>
                 
-                <td width="310" height="49" align="center" bgcolor="#FFFFFF"><span class="viewtexto"><?php echo($nomevento_mev) ?></span></td>
+                <td width="397" height="49" align="center" bgcolor="#FFFFFF"><span class="viewtexto"><?php echo($nomevento_mev) ?></span></td>
               </tr>
               <tr>
                 <td height="46" align="center" bgcolor=#FFFFFF ><<span class="viewtexto"><?php echo($descri_mev) ?></span>>
