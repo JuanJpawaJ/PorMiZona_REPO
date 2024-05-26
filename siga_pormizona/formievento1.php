@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario1</title>
+    <title>Mi Evento</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="fuentes.css">
     <link rel="stylesheet" href="estilos.css">
@@ -33,7 +33,7 @@ $latitud = $_POST['latitude'];
     <img src="iconos/logo_pmz.png" alt="logo" class="logo">
 </nav>
 <div class="barra_titulo">
-     <h2>           *REGISTRE SU NEGOCIO COMPLETAMENTE GRATIS</h2>
+     <h2>           *REGISTRE TU EVENTO COMPLETAMENTE GRATIS</h2>
 </div>
 <div class="exteriorform">
    <div class="fondo_formulario">
@@ -70,7 +70,7 @@ $latitud = $_POST['latitude'];
        </div>
    </div>   <!-- class="geolocalizacion"-->     
     <!-- FIN DE boton obligatorio -->              
-   <form id="form1" name="form1" method="post" onsubmit="return checkSubmit();" action="areg_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
+   <form id="form1" name="form1" method="post" onsubmit="return checkSubmit();" action="areg_mievento.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
         <?  if(strlen($longitud)==0 AND strlen($latitud)==0){	?>		
            <br/>
            <br/>	
@@ -80,30 +80,54 @@ $latitud = $_POST['latitude'];
         <? } else { ?>             
            <h2 class="semi-titulosform">Paso 02: Ingreso de datos</h2>
            <div class="campos_de_formulario">
-              <label>Razon Social</label>
-              <input type="text" class="campo_texto" name="xrsocial" placeholder="Ejemplo: Libería la Luz" onkeyup= "this.value=this.value.toUpperCase();"> 
+              <label>NOMBRE DEL EVENTO</label>
+              <input type="text" class="campo_texto" name="xnomevento" placeholder="Ejemplo: GRAN PARRILLADA..." onkeyup= "this.value=this.value.toUpperCase();"> 
            </div>
            <!--  <h2 class="semi-titulos">UBICACIÓN</h2> -->
            <div class="campos_de_formulario">
-              <label>Dirección</label>
-              <input type="text" class="campo_texto" name="xdireccion" placeholder="Ejemplo: Av. Salaverry"> 
+              <label>DESCRIPCIÓN DEL EVENTO</label>
+              <textarea name="xdescri" rows="5" class="campo_texto" placeholder="Ejemplo: Invito a mi parrilada bailable..."></textarea> 
            </div>
-           <div class="campos_de_formulario">
+       <!-- 
+          <div class="campos_de_formulario">
            
                <label>Categoría</label>
-                <? $sql=mysqli_query($connec,"SELECT * FROM categoria order by categoria_cat");  ?>
+                <? // $sql=mysqli_query($connec,"SELECT * FROM categoria order by categoria_cat");  ?>
                <select id="departamento" name="xcategoria" class="campo_texto">
                 <option value="CATEGORIA">Elije tu grupo...</option>
-                <? while($rosvi=mysqli_fetch_array($sql))
-                        echo "<option  value='".$rosvi["cod_cat"]."'>".$rosvi["categoria_cat"]."</option>";
+                <? //while($rosvi=mysqli_fetch_array($sql))
+                     //   echo "<option  value='".$rosvi["cod_cat"]."'>".$rosvi["categoria_cat"]."</option>";
                 ?>
                </select> 
            </div>
+       -->
+          <div class="campos_de_formulario">
+               <label>FECHA DEL EVENTO dd/mm/aa </label>
+               <input type="text" class="campo_texto" name="xfinicio" placeholder="Ejemplo: 25/05/2025"> 
+           </div>
+
+          <div class="campos_de_formulario">
+               <label>BOLETO DE ENTRADA en soles</label>
+               <input type="number" class="campo_texto" name="xc_ingreso" placeholder="Ejemplo: S/ 10"> 
+           </div>
+
+           <h2 class="semi-titulosform">Los siguentes datos, no se mostrarán en su aviso</h2>
+
+          <div class="campos_de_formulario">
+               <label>NOMBRE Y APELLIDO ANUNCIANTE</label>
+               <input type="text" class="campo_texto" name="xanunciante" placeholder="Ejemplo: Pedro Rios"> 
+           </div>
+
+          <div class="campos_de_formulario">
+               <label>TELÉFONO CONTACTO</label>
+               <input type="text" class="campo_texto" name="xtelf" placeholder="Ejemplo: Pedro Rios"> 
+           </div>
+
            <div class="campos_de_formulario">
                <label>Correo electrónico</label>
                <input type="text" class="campo_texto" name="xemail" placeholder="Ejemplo: librerialaluz@gmail.com"> 
            </div>
-           <div class="campos_de_formulario">
+   <!--        <div class="campos_de_formulario">
                <label>Crear un nombre de Usuario </label>
                <input type="text"  class="campo_texto" name="xusuario" placeholder="Ej. JUAN, MARIA PONCE, MORENA, etc."> 
            </div>
@@ -112,21 +136,18 @@ $latitud = $_POST['latitude'];
                <label>Crear una contraseña (Max.10 - Utilice símbolos, mayúsculas y minúsculas)</label>
                <input type="text"  class="campo_texto" name="xpass" placeholder="Permitirá modificar sus datos y productos."> 
            </div>
-           <input type="hidden" name="xpais" value="PERÚ"/> 
+   -->        
+           <input type="hidden" name="xcodevento" value="000000"/> 
            <input type="hidden" name="xlatitud" value=<? echo $latitud; ?> > 
            <input type="hidden" name="xlongitud" value=<? echo $longitud; ?> > 
-           <input type="hidden" name="xestado" value=""/> 
-           <input type="hidden" name="xprovincia" value=""/> 
-           <input type="hidden" name="xdistrito" value=""/> 
-           <input type="hidden" name="xreferencia" value=""/> 
-           <input type="hidden" name="xtelf1" value=""/> 
-           <input type="hidden" name="xtelf2" value=""/> 
-           <input type="hidden" name="xproductos" value=""/> 
-           <input type="hidden" name="xfavicon" value=""/> 
+           <input type="hidden" name="ximg" value=""/> 
+           <input type="hidden" name="xview01" value="1"/> 
+           <input type="hidden" name="xview02" value=""/> 
+           <input type="hidden" name="xmsjpublico" value=""/> 
+           <input type="hidden" name="xobsinterno" value=""/> 
            <div class="campo_boton">
               <button class="boton_form">ENVIAR FORMULARIO</button>
            </div>
-           <h2 class="semi-titulosform">Continua... Paso 03: Ingreso de datos</h2>
         <? } ?>   
            </form>
   </div>
@@ -135,7 +156,7 @@ $latitud = $_POST['latitude'];
         <div class="footer_clientes footer_uno">
             <article class="footer_article">
                 <h2 class="semi-titulos">CLIENTES</h2>
-                <p>Dencuentro.com es una página gratuita.
+                <p>Pormizona.com.pe es una página gratuita.
                 Las consultas por esta Web y los contactos 
                 con nuestros asociados son gratuitos.</p>
             </article>
@@ -166,9 +187,7 @@ $latitud = $_POST['latitude'];
             <article class="footer_article">
                 <h2 class="semi-titulos">CONTACTOS</h2>
                 <p>Cel. 959956000 <br>
-                    Diseño Web.
-                    Ca. Sena 105 cop. 58.
-                    J.L.B. y Rivero - Arequipa - Perú</p>
+                     Arequipa - Perú</p>
             </article>
         </div>
 
