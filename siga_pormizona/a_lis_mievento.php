@@ -73,7 +73,9 @@ $xgl=$_GET['xgl'];
     <td align="center" class="tit_menu_sup"><img src="../imagenes_1/logo_pmz_telf_rgb.jpg" width="862" height="158"></td>
     </tr>
   <tr class="tit_menu_sup">
-    <td width="774" height="86" align="center" bgcolor="#FFFFCC"><table width="735" border="1" cellspacing="1" cellpadding="0">
+    <td width="774" height="86" align="center" bgcolor="#FFFFCC">
+    <!--
+    <table width="735" border="1" cellspacing="1" cellpadding="0">
       <tr>
 
         <td width="92" height="75" align="center" <? if ($xgl=="S") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="a_lisimagenes.php?xgl=S"><img src="../imagenes/ico_p_informatica.png" width="72" height="58"></a></td>
@@ -93,7 +95,9 @@ $xgl=$_GET['xgl'];
             </form>
           
           </td>
-        </tr>
+          
+          -->
+    <img src="iconos/cabecera_mievento.jpg" width="703" height="86"></tr>
     </table></td>
     </tr>
   <tr class="tit_menu_sup">
@@ -166,7 +170,7 @@ $fhoy_mev=$tabla["fhoy_mev"];
                 <td width="397" height="49" align="center" bgcolor="#FFFFFF"><span class="viewtexto"><?php echo($nomevento_mev) ?></span></td>
               </tr>
               <tr>
-                <td height="46" align="center" bgcolor=#FFFFFF ><<span class="viewtexto"><?php echo($descri_mev) ?></span>>
+                <td height="46" align="center" bgcolor=#FFFFFF ><span class="viewtexto"><?php echo($descri_mev) ?></span>
 				<?  //if ($pv03_it>0) { ?>
 					<!-- <span class="tachado"> <? echo($simbolo_mone.money_format('%n',($pv01_it))) ?></span>
 					 <span class="PRECIO1"> <? echo($simbolo_mone.money_format('%n',($pv03_it))) ?></span> -->
