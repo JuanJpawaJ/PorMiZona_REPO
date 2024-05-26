@@ -46,7 +46,7 @@
         <td height="90" align="center" valign="middle">EMPRESAS POR <br /> ZONAS</td>
         <td align="center" valign="middle" bgcolor="#FFFFFF"><a href="siga_pormizona/a_view_espacios.php"><img src="siga_pormizona/iconos/boton_publi_catalogo.png" width="200" height="65" style="border:0;" onmouseover="this.style.border='solid  2px  #0a3d89';" onmouseout="this.style.border=0;" border="0"/></a></td>
         <td align="center" valign="middle">PUBLIQUE EN ESTA PAG. WEB</td>
-        <td align="center" valign="middle"><a href="siga_pormizona/formievento1.php">PUBLIQUA <br /> TUS EVENTOS</a></td>
+        <td align="center" valign="middle" bgcolor="#FFFFFF"><a href="siga_pormizona/formievento1.php"><img src="siga_pormizona/iconos/boton_publique_mievento.png" width="200" height="65" style="border:0;" onmouseover="this.style.border='solid  2px  #0a3d89';" onmouseout="this.style.border=0;" border="0"/></a></td>
       </tr>
     </table></td>
   </tr>
