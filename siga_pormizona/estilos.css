@@ -376,6 +376,15 @@ label{
     height:2rem;
 }
 
+textarea.campo_texto{
+    width:100%;
+    max-width:540px;
+    height:10rem;
+    border-radius:10px;
+    padding:0.5rem 1rem 0.5rem 0.5rem;
+    border:none;
+}
+
 .campo_textoin{
     width:50%;
     max-width:540px;
