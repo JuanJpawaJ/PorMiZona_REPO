@@ -56,11 +56,11 @@
   <tr>
     <td height="115" align="center" valign="middle"><table width="910" height="97" border="1" cellpadding="0" cellspacing="0">
       <tr>
-        <td height="95">&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
+        <td width="269" height="95"><img src="siga_pormizona/img_asociados/cli_IA.jpg" width="269" height="159" /></td>
+        <td width="127">&nbsp;</td>
+        <td width="125">&nbsp;</td>
+        <td width="162">&nbsp;</td>
+        <td width="215">&nbsp;</td>
       </tr>
     </table></td>
   </tr>
