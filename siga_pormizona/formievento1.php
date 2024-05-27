@@ -85,7 +85,7 @@ $latitud = $_POST['latitude'];
         <? } else { ?>             
            <h2 class="semi-titulosform">Ingreso de datos para su evento</h2>
            <div class="campos_de_formulario">
-              <label>Nonmbre del evento</label>
+              <label>Nombre del evento</label>
               <input type="text" class="campo_texto" name="xnomevento" placeholder="Ejemplo: GRAN PARRILLADA..." onkeyup= "this.value=this.value.toUpperCase();"> 
            </div>
            <!--  <h2 class="semi-titulos">UBICACIÓN</h2> -->
@@ -198,7 +198,7 @@ $latitud = $_POST['latitude'];
 
         <div class="footer_logo">
             <img src="imagenes/Logo/Logo_blanco_puro.svg" alt="">
-            <h3>Arequipa - 2020</h3>
+            <h3>Arequipa - 2024</h3>
         </div>
     </footer>
 </body>
