@@ -72,6 +72,8 @@ $latitud = $_POST['latitude'];
           </div>   <!-- class="geolocalizacion"-->     
     <!-- FIN DE boton obligatorio -->     
  -->   
+ <? $longitud="XXXXXXXXXX";
+ $latitud="XXXXXXXXXX"; ?>
              
    <form id="form1" name="form1" method="post" onsubmit="return checkSubmit();" action="areg_mievento.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
         <?  if(strlen($longitud)==0 AND strlen($latitud)==0){	?>		
