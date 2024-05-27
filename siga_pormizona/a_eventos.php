@@ -31,25 +31,25 @@
     <td height="39" align="center" bgcolor="#00CC66">2024</td>
   </tr>
   <tr>
-    <td height="13" align="center" valign="top"><img src="eventos_aqp/Corazon serranoColorado AREQUIPA.jpg" width="400" height="400" /></td>
+    <td height="13" align="center" valign="top"><img src="eventos_aqp/AMARANTA 31 de MAYO.jpg" width="400" height="250" /></td>
   </tr>
   <tr>
     <td height="41" bgcolor="#48887A" class="TITULOBLANCO">&nbsp;</td>
   </tr>
   <tr>
-    <td height="41" class="TITULOBLANCO"><img src="eventos_aqp/exporock_mayo24.jpg" width="500" height="%" /></td>
+    <td height="41" class="TITULOBLANCO"><img src="eventos_aqp/caribena.jpg" width="454" height="429" /></td>
   </tr>
   <tr>
     <td height="41" bgcolor="#48887A" class="TITULOBLANCO">&nbsp;</td>
   </tr>
   <tr>
-    <td height="421" align="center" valign="top"><img src="eventos_aqp/Corazón Serrano HUNTER.jpg" width="400" height="400" /></td>
+    <td height="421" align="center" valign="top"><img src="eventos_aqp/kinke_mayo.jpg" width="481" height="501" /></td>
   </tr>
   <tr>
     <td height="45" align="center" bgcolor="#48887A" class="TITULOBLANCO">&nbsp;</td>
   </tr>
   <tr>
-    <td height="275" align="center" valign="top"><img src="eventos_aqp/AMARANTA 31 de MAYO.jpg" width="400" height="250" /></td>
+    <td height="275" align="center" valign="top"><img src="eventos_aqp/shoyinfantil.jpg" width="523" height="462" /></td>
   </tr>
   <tr>
     <td align="center" valign="top" bgcolor="#48887A">&nbsp;</td>
@@ -61,8 +61,5 @@
     <td height="61" align="center" bgcolor="#000000" class="blanco">Design for: JpawaJ SAC - Abril 2023 - 959 956 000 - Arequipa - Perú</td>
   </tr>
 </table>
-
-
-
 </body>
 </html>
