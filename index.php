@@ -43,7 +43,8 @@
         <td width="218" align="center" valign="middle" bgcolor="#FFFFFF"><a href="siga_pormizona/a_lis_mievento.php"><img src="siga_pormizona/iconos/boton_ver_dondevoy.png" width="200" height="65" style="border:0;" onmouseover="this.style.border='solid  2px  #0a3d89';" onmouseout="this.style.border=0;" border="0"/></a></td>
       </tr>
       <tr>
-        <td height="90" align="center" valign="middle">EMPRESAS POR <br /> ZONAS</td>
+        <td height="90" align="center" valign="middle"><p>EMPRESAS POR <br /> 
+          ZONAS<br /><a href="siga_pormizona/formingre1.php">.</a></p></td>
         <td align="center" valign="middle" bgcolor="#FFFFFF"><a href="siga_pormizona/a_view_espacios.php"><img src="siga_pormizona/iconos/boton_publi_catalogo.png" width="200" height="65" style="border:0;" onmouseover="this.style.border='solid  2px  #0a3d89';" onmouseout="this.style.border=0;" border="0"/></a></td>
         <td align="center" valign="middle">PUBLIQUE EN ESTA PAG. WEB</td>
         <td align="center" valign="middle" bgcolor="#FFFFFF"><a href="siga_pormizona/formievento1.php"><img src="siga_pormizona/iconos/boton_publique_mievento.png" width="200" height="65" style="border:0;" onmouseover="this.style.border='solid  2px  #0a3d89';" onmouseout="this.style.border=0;" border="0"/></a></td>
