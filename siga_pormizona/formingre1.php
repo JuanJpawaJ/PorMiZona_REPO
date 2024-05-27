@@ -45,8 +45,7 @@ $latitud = $_POST['latitude'];
          <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	            
               <h2 class="semi-titulosform_iz">Paso 01: Geolocalización</h2> 
               <div class="titobligatorio">
-                  Es obligatorio reconocer su Geolocalización. Si usa un móvil, recuerde activar su ubicación 
-              </div>
+                  Es obligatorio reconocer la Geolocalización de su Local Comercial. Si usa un móvil, recuerde activar su ubicación </div>
               <br/>
          <? } ?>
         <div> <a href="geo_mendoza2.html"><img src="iconos/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
@@ -80,12 +79,12 @@ $latitud = $_POST['latitude'];
         <? } else { ?>             
            <h2 class="semi-titulosform">Paso 02: Ingreso de datos</h2>
            <div class="campos_de_formulario">
-              <label>Razon Social</label>
+              <label>Razon Social (del local comercial, negocio, empresa)</label>
               <input type="text" class="campo_texto" name="xrsocial" placeholder="Ejemplo: Libería la Luz" onkeyup= "this.value=this.value.toUpperCase();"> 
            </div>
            <!--  <h2 class="semi-titulos">UBICACIÓN</h2> -->
            <div class="campos_de_formulario">
-              <label>Dirección</label>
+              <label>Dirección (del local com..)</label>
               <input type="text" class="campo_texto" name="xdireccion" placeholder="Ejemplo: Av. Salaverry"> 
            </div>
            <div class="campos_de_formulario">
