@@ -43,31 +43,31 @@ $latitud = $_POST['latitude'];
       <!-- inicio de boton obligatorio -->         
   <!--
       <div class="geolocalizacion">
-         <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	            
+         <?  //if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	            
               <h2 class="semi-titulosform_iz">Paso 01: Geolocalización</h2> 
               <div class="titobligatorio">
                   Es obligatorio reconocer su Geolocalización. Si usa un móvil, recuerde activar su ubicación 
               </div>
               <br/>
-         <? } ?>
+         <? //} ?>
         <div> <a href="geo_mendoza2_mievento.html"><img src="iconos/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
         </div>
         <div>
-             <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
+             <? //if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
                   <div class="campo_de_posicion edit_lat">		  
 	 	           SU LATITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
                   </div>
                   <div class="campo_de_posicion edit_long">
 	               SU LONGITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
                   </div>
-             <? } else { ?>
+             <? //} else { ?>
                   <div class="campo_de_posicion edit_lat">	
 			        SU LATITUD ES: <? echo $latitud; ?> <br>
                   </div>
                   <div class="campo_de_posicion edit_long">
 			        SU LONGITUD ES: <? echo $longitud; ?> <br>
                   </div>
- 		     <? } ?>
+ 		     <? //} ?>
        </div>
           </div>   <!-- class="geolocalizacion"-->     
     <!-- FIN DE boton obligatorio -->     
