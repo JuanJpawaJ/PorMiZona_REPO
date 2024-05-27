@@ -41,6 +41,7 @@ $latitud = $_POST['latitude'];
             <img src="iconos/cabecera_mievento.jpg" width="700" height="85" class="iconos">
       </div>
       <!-- inicio de boton obligatorio -->         
+  <!--
       <div class="geolocalizacion">
          <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	            
               <h2 class="semi-titulosform_iz">Paso 01: Geolocalización</h2> 
@@ -68,8 +69,10 @@ $latitud = $_POST['latitude'];
                   </div>
  		     <? } ?>
        </div>
-   </div>   <!-- class="geolocalizacion"-->     
-    <!-- FIN DE boton obligatorio -->              
+          </div>   <!-- class="geolocalizacion"-->     
+    <!-- FIN DE boton obligatorio -->     
+ -->   
+             
    <form id="form1" name="form1" method="post" onsubmit="return checkSubmit();" action="areg_mievento.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
         <?  if(strlen($longitud)==0 AND strlen($latitud)==0){	?>		
            <br/>
