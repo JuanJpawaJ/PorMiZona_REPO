@@ -128,7 +128,7 @@ $total=mysqli_num_rows($result);
   <tr class="tit_menu_sup">
     <td height="118" valign="top" bgcolor="#FFFFCC">
       <!-- INICIO DE MUESTRA ITEMS -->
-      <table width="769" height="99" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" >
+      <table width="769" height="197" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" >
         <?php 
 
 
@@ -186,18 +186,19 @@ while ($tabla=mysqli_fetch_array($result)){
 ?>
         
         <tr bgcolor="#FFFFFF" class="tabla20">
-          <td width="767" height="97" valign="middle">
+          <td width="767" height="195" valign="middle">
             <table width="751" border="0" cellspacing="0" cellpadding="1">
               <tr>
-                 <td width="151" rowspan="3" align="center" valign="middle"><img src="img_asociados/f_pmz_bl.png" width="130" height="129"></td>
+                 <td width="150" rowspan="3" align="center" valign="middle"><img src="img_asociados/f_pmz_bl.png" width="100" height="100"></td>
                  
-                <td width="596" height="45" align="left" bgcolor="#FFFFFF"><span class="rsocial"><?php echo($rsocial_aso) ?></span></td>
+                <td width="418" height="52" align="left" bgcolor="#FFFFFF"><span class="rsocial"><?php echo($rsocial_aso) ?></span></td>
+                <td width="177" align="left" bgcolor="#FFFFFF"><span class="viewtexto"><?php echo($telf1_aso) ?></span></td>
               </tr>
               <tr>
-                <td height="54" align="left" bgcolor=#FFFFFF ><span class="viewtexto"><?php echo($direccion_aso) ?></span></td>
+                <td height="51" colspan="2" align="left" bgcolor=#FFFFFF ><span class="viewtexto"><?php echo($direccion_aso) ?></span></td>
               </tr>
               <tr>
-                <td height="69" align="left" bgcolor=#FFFFFF ><span class="viewtexto">
+                <td height="57" colspan="2" align="left" bgcolor=#FFFFFF ><span class="viewtexto">
                 <?php echo($productos_aso) ?> </span>
                 </td>
               </tr>
