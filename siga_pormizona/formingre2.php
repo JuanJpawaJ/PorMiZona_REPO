@@ -95,11 +95,12 @@ echo "SU EMAIL : ".$email_aso."<br>";
 echo " SU ".$email_aso."<br>";
 echo "<br>";
 ?>
- <h2 class="semi-titulos">Ud. h--------a completado el Paso 02</h2> 
+ <h2 class="semi-titulos">Tome nota de su usuario y clave</h2> 
 <?
 
-echo "Última oportunidad de tomar nota de su USUARIO y CLAVE ";
-echo "Recuerde: Ud. podrá realizar las modificaciones necesarias después del paso 3. En la opción [SOY PROPIETARIO]";
+echo "Última oportunidad de tomar nota de su USUARIO y CLAVE "."<br>";
+echo "Recuerde: Ud. podrá realizar las modificaciones necesarias después del paso 3"."<br>";
+echo "En la opción [SOY PROPIETARIO]";
 echo "<br>";
 
 echo "SU USUARIO . ".$usua_aso."<br>";
