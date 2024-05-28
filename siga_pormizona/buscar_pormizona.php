@@ -126,9 +126,9 @@ $total=mysqli_num_rows($result);
     </table></td>
     </tr>
   <tr class="tit_menu_sup">
-    <td height="262" valign="top" bgcolor="#FFFFCC">
+    <td height="118" valign="top" bgcolor="#FFFFCC">
       <!-- INICIO DE MUESTRA ITEMS -->
-      <table width="769" height="203" border="1" align="center" cellpadding="0" cellspacing="0">
+      <table width="769" height="99" border="1" align="center" cellpadding="0" cellspacing="0">
         <?php 
 
 
@@ -186,7 +186,7 @@ while ($tabla=mysqli_fetch_array($result)){
 ?>
         
         <tr bgcolor="#FFFFFF" class="tabla20">
-          <td width="767" height="175" valign="middle" bgcolor="#FFFFFF">
+          <td width="767" height="97" valign="middle" bgcolor="#FFFFFF">
             <table width="751" border="0" cellspacing="0" cellpadding="1">
               <tr>
                  <td width="47" rowspan="2" valign="middle"><img src="img_asociados/<?php  echo($favicon_aso); ?>" width="45" height="45"></td>
@@ -200,11 +200,7 @@ while ($tabla=mysqli_fetch_array($result)){
               </tr>
               <tr> 
 
-                <td height="59" align="center"><span class="once"><?php echo($msjpublico_it); ?></span>  
-                               
-              <!--  <span class="PRECIO2"> <?php // echo($simbolo_mone.money_format('%n',round($pv01_it*1.05/2,0))."      / ".$simbolo_mone.money_format('%n',round($pv01_it*1.15/3,0)))."<br>" ." 02/cuotas      / "." 03/cuotas " ?></span> -->
-                
-                </td>             
+ 
               </tr>
           </table></td>
           
