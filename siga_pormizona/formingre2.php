@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario 2</title>
+    <title>Datos - Paso 02</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="fuentes.css">
     <link rel="stylesheet" href="estilos.css">
@@ -89,7 +89,7 @@ echo "<br>";
 echo "<br>";
 echo "SU CÓDIGO ES : ".$cod_aso."<br>";
 echo "PAÍS DE ORIGEN : ".$pais_aso."<br>";
-echo "SU RAZÓN SOCILA : ".$rsocial_aso."<br>";
+echo "SU RAZÓN SOCIAL : ".$rsocial_aso."<br>";
 echo "SU DIRECCIÓN : ".$direccion_aso."<br>";
 echo "SU EMAIL : ".$email_aso."<br>";
 echo " SU ".$email_aso."<br>";
@@ -100,12 +100,11 @@ echo "<br>";
 
 echo "Última oportunidad de tomar nota de su USUARIO y CLAVE "."<br>";
 echo "Recuerde: Ud. podrá realizar las modificaciones necesarias después del paso 3"."<br>";
-echo "En la opción [SOY PROPIETARIO]";
-echo "<br>";
+echo "En la opción [SOY PROPIETARIO]"."<br>"."<br>";
 
-echo "SU USUARIO . ".$usua_aso."<br>";
+echo "SU USUARIO  : ".$usua_aso."<br>";
 echo "SU PASSWORD : ".$pass_aso."<br>";
-echo "<br>";
+
 ?>
 
  <h2 class="semi-titulos">Continuar con el ingreso de datos</h2> 
@@ -184,7 +183,7 @@ echo "<br>";
                     </div>
                 </div>            
                 <div class="campos_de_formulario">
-                    <label>Relación de productos y servicios</label>
+                    <label>Relación de productos y/o servicios</label>
                     <textarea id="" cols="5" rows="4" name="xproductos" placeholder="Ej. palabras de búsqueda: cabello corte computadoras gasfitero plumones libros carne menú carpintero licores bcp clases legal, etc. (Max. 250 caracteres)" class="campo_grande" ></textarea> 
                 </div>
                 
