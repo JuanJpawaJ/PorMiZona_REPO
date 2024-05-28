@@ -84,7 +84,7 @@ echo "SU LATITUD ES : ". $latitud_aso."<br>";
 echo "SU LONGITUD ES: ".$longitud_aso."<br>";
 echo "<br>";
 ?>
-<h2 class="semi-titulos">Ud. ha completado el Paso 02</h2>
+<!-- <h2 class="semi-titulos">Ud. ha completado el Paso 02</h2> -->
 <?
 echo "<br>";
 echo "SU CÓDIGO ES : ".$cod_aso."<br>";
