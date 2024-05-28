@@ -30,10 +30,10 @@
 .tit_menu_sup {
 	color: #000;
 }
-.PRECIO1 {
+.rsocial {
 	color: #009;
 	font-weight: bold;
-		font-size: 18px;
+		font-size: 25px;
 }
 .PRECIO2 {
 	color: #999;
@@ -189,19 +189,17 @@ while ($tabla=mysqli_fetch_array($result)){
           <td width="767" height="97" valign="middle">
             <table width="751" border="0" cellspacing="0" cellpadding="1">
               <tr>
-                 <td width="85" rowspan="2" valign="middle"><img src="img_asociados/<?php  echo($favicon_aso); ?>" width="45" height="45"></td>
+                 <td width="85" rowspan="3" valign="middle"><img src="img_asociados/<?php  echo($favicon_aso); ?>" width="45" height="45"></td>
                  
-                <td width="331" height="37" align="left" bgcolor="#FFFFFF"><span class="PRECIO1"><?php echo($rsocial_aso) ?></span></td>
-                <td width="331" align="left" bgcolor="#FFFFFF"><span class="viewtexto"><?php echo($direccion_aso) ?></span></td>
+                <td height="37" align="left" bgcolor="#FFFFFF"><span class="rsocial"><?php echo($rsocial_aso) ?></span></td>
               </tr>
               <tr>
-                <td height="37" colspan="2" align="left" bgcolor=#FFFFFF ><span class="viewtexto">
+                <td height="37" align="left" bgcolor=#FFFFFF ><span class="viewtexto"><?php echo($direccion_aso) ?></span></td>
+              </tr>
+              <tr>
+                <td height="37" align="left" bgcolor=#FFFFFF ><span class="viewtexto">
                 <?php echo($productos_aso) ?> </span>
                 </td>
-              </tr>
-              <tr> 
-
- 
               </tr>
           </table></td>
           
