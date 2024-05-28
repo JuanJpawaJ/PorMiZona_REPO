@@ -46,7 +46,7 @@ $latitud = $_POST['latitude'];
               <h2 class="semi-titulosform_iz">Paso 01: Geolocalización</h2>
               <br>               
               <div class="titobligatorio">
-                 Para que ubiquen su Local Comercial, es obligatorio reconocer su Geolocalización IN SITU (En el mismo local comercial u oficina). Si usa un móvil, recuerde activar su ubicación </div>
+                 Para que ubiquen perfectamente su Local Comercial, es obligatorio reconocer su Geolocalización IN SITU (En el mismo local comercial u oficina). Si usa un móvil, recuerde activar su ubicación </div>
               <br/>
          <? } ?>
         <div> <a href="geo_mendoza2.html"><img src="iconos/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
@@ -135,7 +135,7 @@ $latitud = $_POST['latitude'];
         <div class="footer_clientes footer_uno">
             <article class="footer_article">
                 <h2 class="semi-titulos">CLIENTES</h2>
-                <p>Dencuentro.com es una página gratuita.
+                <p>Pormizona.com.pe es una página gratuita.
                 Las consultas por esta Web y los contactos 
                 con nuestros asociados son gratuitos.</p>
             </article>
@@ -167,8 +167,7 @@ $latitud = $_POST['latitude'];
                 <h2 class="semi-titulos">CONTACTOS</h2>
                 <p>Cel. 959956000 <br>
                     Diseño Web.
-                    Ca. Sena 105 cop. 58.
-                    J.L.B. y Rivero - Arequipa - Perú</p>
+                    Arequipa - Perú</p>
             </article>
         </div>
 
