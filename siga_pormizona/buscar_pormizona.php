@@ -195,7 +195,7 @@ while ($tabla=mysqli_fetch_array($result)){
                 <td width="331" align="left" bgcolor="#FFFFFF"><span class="viewtexto"><?php echo($direccion_aso) ?></span></td>
               </tr>
               <tr>
-                <td height="37" colspan="2" align="center" bgcolor=#FFFFFF ><span class="viewtexto">
+                <td height="37" colspan="2" align="left" bgcolor=#FFFFFF ><span class="viewtexto">
                 <?php echo($productos_aso) ?> </span>
                 </td>
               </tr>
