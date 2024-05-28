@@ -35,7 +35,7 @@ $cod_aso = $_GET['xcod'];
 <div class="exteriorform">
    <div class="fondo_formulario">
       <div class="cabecera1">
-            <img src="iconos/cabecera_formulario.jpg" width="700" height="85" class="iconos">
+            <img src="iconos/cabecera_donde_compro.jpg" width="700" height="85" class="iconos">
       </div>
       <!-- inicio de boton obligatorio -->         
 
@@ -87,20 +87,20 @@ echo "<br>";
 <h2 class="semi-titulos">Ud. ha completado el Paso 02</h2>
 <?
 echo "<br>";
-echo $cod_aso."<br>";
-echo $pais_aso."<br>";
-echo $rsocial_aso."<br>";
-echo $direccion_aso."<br>";
-echo $email_aso."<br>";
-echo $email_aso."<br>";
+echo "SU CÓDIGO ES : ".$cod_aso."<br>";
+echo "PAÍS DE ORIGEN : ".$pais_aso."<br>";
+echo "SU RAZÓN SOCILA : ".$rsocial_aso."<br>";
+echo "SU DIRECCIÓN : ".$direccion_aso."<br>";
+echo "SU EMAIL : ".$email_aso."<br>";
+echo " SU ".$email_aso."<br>";
 echo "<br>";
 
 echo "Última oportunidad de tomar nota de su USUARIO y CLAVE ";
 echo "Recuerde: Ud. podrá realizar las modificaciones necesarias después del paso 3. En la opción [SOY PROPIETARIO]";
 echo "<br>";
 
-echo $usua_aso."<br>";
-echo $pass_aso."<br>";
+echo "SU USUARIO . ".$usua_aso."<br>";
+echo "SU PASSWORD : ".$pass_aso."<br>";
 echo "<br>";
 
 ?>
