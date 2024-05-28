@@ -33,7 +33,7 @@
 .rsocial {
 	color: #009;
 	font-weight: bold;
-		font-size: 25px;
+		font-size: 28px;
 }
 .PRECIO2 {
 	color: #999;
@@ -43,7 +43,7 @@
 
 .viewtexto {
 	font-family: "Arial";
-	font-size: 14px;
+	font-size: 18px;
 	color: #009;
 }
 .tachado {
