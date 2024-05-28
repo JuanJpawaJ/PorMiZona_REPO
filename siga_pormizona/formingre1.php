@@ -38,14 +38,15 @@ $latitud = $_POST['latitude'];
 <div class="exteriorform">
    <div class="fondo_formulario">
       <div class="cabecera1">
-            <img src="iconos/cabecera_formulario.jpg" width="700" height="85" class="iconos">
+            <img src="iconos/cabecera_donde_compro.jpg" width="700" height="85" class="iconos">
       </div>
       <!-- inicio de boton obligatorio -->         
       <div class="geolocalizacion">
          <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	            
-              <h2 class="semi-titulosform_iz">Paso 01: Geolocalización</h2> 
+              <h2 class="semi-titulosform_iz">Paso 01: Geolocalización</h2>
+              <br>               
               <div class="titobligatorio">
-                  Es obligatorio reconocer la Geolocalización de su Local Comercial. Si usa un móvil, recuerde activar su ubicación </div>
+                 Para que ubiquen su Local Comercial, es obligatorio reconocer su Geolocalización IN SITU (En el mismo local comercial u oficina). Si usa un móvil, recuerde activar su ubicación </div>
               <br/>
          <? } ?>
         <div> <a href="geo_mendoza2.html"><img src="iconos/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
@@ -84,7 +85,7 @@ $latitud = $_POST['latitude'];
            </div>
            <!--  <h2 class="semi-titulos">UBICACIÓN</h2> -->
            <div class="campos_de_formulario">
-              <label>Dirección (del local com..)</label>
+              <label>Dirección (del local comercial.)</label>
               <input type="text" class="campo_texto" name="xdireccion" placeholder="Ejemplo: Av. Salaverry"> 
            </div>
            <div class="campos_de_formulario">
