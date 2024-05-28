@@ -128,7 +128,7 @@ $total=mysqli_num_rows($result);
   <tr class="tit_menu_sup">
     <td height="118" valign="top" bgcolor="#FFFFCC">
       <!-- INICIO DE MUESTRA ITEMS -->
-      <table width="769" height="99" border="1" align="center" cellpadding="0" cellspacing="0">
+      <table width="769" height="99" align="center" cellpadding="0" cellspacing="0"  style="border: 1px solid red;">
         <?php 
 
 
