@@ -1,7 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>LP - CLIENTES</title>
+<title>BUSCO Por Mi Zona</title>
 <style type="text/css">
 .TITULO_NARANJA {
 	color: #FC0;
