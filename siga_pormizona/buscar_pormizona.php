@@ -191,7 +191,7 @@ while ($tabla=mysqli_fetch_array($result)){
               <tr>
                  <td width="85" rowspan="2" valign="middle"><img src="img_asociados/<?php  echo($favicon_aso); ?>" width="45" height="45"></td>
                  
-                <td width="331" height="37" align="center" bgcolor="#FFFFFF"><span class="PRECIO1"><?php echo($rsocial_aso) ?></span></td>
+                <td width="331" height="37" align="left" bgcolor="#FFFFFF"><span class="PRECIO1"><?php echo($rsocial_aso) ?></span></td>
                 <td width="331" align="center" bgcolor="#FFFFFF"><span class="viewtexto"><?php echo($direccion_aso) ?></span></td>
               </tr>
               <tr>
