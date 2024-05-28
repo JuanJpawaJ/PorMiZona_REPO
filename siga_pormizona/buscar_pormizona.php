@@ -189,13 +189,14 @@ while ($tabla=mysqli_fetch_array($result)){
           <td width="767" height="97" valign="middle" bgcolor="#FFFFFF">
             <table width="751" border="0" cellspacing="0" cellpadding="1">
               <tr>
-                 <td width="47" rowspan="2" valign="middle"><img src="img_asociados/<?php  echo($favicon_aso); ?>" width="45" height="45"></td>
+                 <td width="85" rowspan="2" valign="middle"><img src="img_asociados/<?php  echo($favicon_aso); ?>" width="45" height="45"></td>
                  
-                <td width="310" height="37" align="center" bgcolor="#FFFFFF"><span class="viewtexto"><?php echo($rsocial_aso) ?></span></td>
+                <td width="331" height="37" align="center" bgcolor="#FFFFFF"><span class="PRECIO1"><?php echo($rsocial_aso) ?></span></td>
+                <td width="331" align="center" bgcolor="#FFFFFF"><span class="viewtexto"><?php echo($direccion_aso) ?></span></td>
               </tr>
               <tr>
-                <td height="37" align="center" bgcolor=#FFFFFF ><span class="PRECIO1">
-                <?php echo($direccion_aso) ?>
+                <td height="37" colspan="2" align="center" bgcolor=#FFFFFF ><span class="viewtexto">
+                <?php echo($productos_aso) ?> </span>
                 </td>
               </tr>
               <tr> 
