@@ -84,7 +84,7 @@ echo "SU LATITUD ES : ". $latitud_aso."<br>";
 echo "SU LONGITUD ES: ".$longitud_aso."<br>";
 echo "<br>";
 ?>
-<!-- <h2 class="semi-titulos">Ud. ha completado el Paso 02</h2> -->
+ <h2 class="semi-titulos">Ud. ha completado el Paso 02</h2> 
 <?
 echo "<br>";
 echo "SU CÓDIGO ES : ".$cod_aso."<br>";
@@ -102,8 +102,11 @@ echo "<br>";
 echo "SU USUARIO . ".$usua_aso."<br>";
 echo "SU PASSWORD : ".$pass_aso."<br>";
 echo "<br>";
-
 ?>
+
+ <h2 class="semi-titulos">Continuar con el ingreso de datos</h2> 
+
+
     <div class="lista">
 
     <table width="100%" border="0" cellpadding="0" cellspacing="0">
