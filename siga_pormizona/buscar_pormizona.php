@@ -129,13 +129,11 @@ if ($latitud<0) {
 $bxproducto=$_GET['bxproducto'];
 // ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
 $viewmodi=$_GET['viewmodi'];
-$xfl=$_GET['xfl'];
-echo "este es xf1:".$xf1."voy a if";
-if(strlen($xfl)==0){
-   $xfl="T";
+$xfi=$_GET['xfi'];
+if(strlen($xfi)==0){
+   $xfi="T";
 }
-echo "despues xf1:".$xf1."fin";
-if($xf1=="T") {
+if($xfi=="T") {
    if(strlen($bxproducto)==0){
 $titulo="LISTA TOTAL SIN filtro";
 $result=mysqli_query($connec,"select * from asociado_51 order by categoria_aso");
@@ -170,7 +168,7 @@ $total=mysqli_num_rows($result);
     <td width="774" height="141" align="center" bgcolor="#FFFFCC"><table width="735" border="1" cellspacing="1" cellpadding="0">
       <tr>
 
-   <td width="92" height="84" align="center"  class="tabla10" <? if ($xfl=="T") {?>  bgcolor="#FFF00" <? } ?>><a href="buscar_pormizona.php?xfl=T"><img src="../imagenes/ico_p_informatica.png" width="72" height="58"></a></td>
+   <td width="92" height="84" align="center"  class="tabla10" <? if ($xfl=="T") {?>  bgcolor="#FFF00" <? } ?>><a href="buscar_pormizona.php?xfi=T"><img src="../imagenes/ico_p_informatica.png" width="72" height="58"></a></td>
 
    <td align="center" class="tabla10" >
    <form id="form0" name="form0" method="get" action="buscar_pormizona.php">
@@ -184,10 +182,10 @@ $total=mysqli_num_rows($result);
   </form>
   </td>
 
-  <td width="92" align="center" <? if ($xfl=="Z") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="buscar_pormizona.php?xfl=Z"><img src="../imagenes/ico_p_perfumeria.png" width="72" height="58"></a></td>
+  <td width="92" align="center" <? if ($xfl=="Z") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="buscar_pormizona.php?xfi=Z"><img src="../imagenes/ico_p_perfumeria.png" width="72" height="58"></a></td>
         </tr>
       <tr>
-        <td height="37" colspan="3" align="center" bgcolor="#0099FF" class="tabla10"><? echo $titulo." -- ". $xf1?></td>
+        <td height="37" colspan="3" align="center" bgcolor="#0099FF" class="tabla10"><? echo $titulo ?></td>
         </tr>
     </table></td>
     </tr>
