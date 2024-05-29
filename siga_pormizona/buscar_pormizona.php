@@ -130,9 +130,11 @@ $bxproducto=$_GET['bxproducto'];
 // ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
 $viewmodi=$_GET['viewmodi'];
 $xfl=$_GET['xfl'];
+echo "este es xf1:".$xf1."voy a if";
 if(strlen($xfl)==0){
    $xfl="T";
 }
+echo "despues xf1:".$xf1."fin";
 if($xf1=="T") {
    if(strlen($bxproducto)==0){
 $titulo="LISTA TOTAL SIN filtro";
@@ -185,7 +187,7 @@ $total=mysqli_num_rows($result);
   <td width="92" align="center" <? if ($xfl=="Z") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="buscar_pormizona.php?xfl=Z"><img src="../imagenes/ico_p_perfumeria.png" width="72" height="58"></a></td>
         </tr>
       <tr>
-        <td height="37" colspan="3" align="center" bgcolor="#0099FF" class="tabla10"><? echo $titulo." ". $xf1?></td>
+        <td height="37" colspan="3" align="center" bgcolor="#0099FF" class="tabla10"><? echo $titulo." -- ". $xf1?></td>
         </tr>
     </table></td>
     </tr>
