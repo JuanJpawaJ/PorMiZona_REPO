@@ -52,6 +52,20 @@
 	font-size: 12px;
 }
 
+nav{
+    background-color:var(--color-principal);
+    height:70px;
+    width:100%;
+    display:flex;
+    align-items:flex-start;
+
+    justify-content:space-between;
+    
+
+    box-shadow: 0px 4px 24px -1px rgba(0,0,0,0.55);
+
+    position:fixed;
+}
 
 </style>
 </head>
