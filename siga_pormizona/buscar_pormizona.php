@@ -109,26 +109,7 @@ setlocale(LC_ALL, "sp");
        <img src="iconos/logo_pmz.png" alt="logo" class="logo">
     </nav>
 
-
-<?
-$bxproducto=$_GET['bxproducto'];
-// ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
-$viewmodi=$_GET['viewmodi'];
-$xfi=$_GET['xfi'];
-if(strlen($xfi)==0){
-   $xfi="T";
-}
-if($xfi=="T") {
-   if(strlen($bxproducto)==0){
-$titulo="LISTA TOTAL SIN filtro";
-$result=mysqli_query($connec,"select * from asociado_51 order by categoria_aso");
-   } else { // "Z" latitud y longitud
-$titulo="LISTA TOTAL CON filtro";
-$result=mysqli_query($connec,"select * from asociado_51 where (productos_aso like '%$bxproducto%') order by categoria_aso");
-   }
-
-} else { // "Z" latitud y longitud
-?>
+<? if($xfi=="Z") { ?>
       <div class="geolocalizacion">
          <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	            
               <h2 class="semi-titulosform_iz">Geolocalización</h2>
@@ -157,7 +138,27 @@ Para motrar las empresas cerca a usted, es obligatorio reconocer su Geolocalizac
  		     <? } ?>
        </div>
 
-<?
+<? } 
+
+
+$bxproducto=$_GET['bxproducto'];
+// ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
+$viewmodi=$_GET['viewmodi'];
+$xfi=$_GET['xfi'];
+if(strlen($xfi)==0){
+   $xfi="T";
+}
+if($xfi=="T") {
+   if(strlen($bxproducto)==0){
+$titulo="LISTA TOTAL SIN filtro";
+$result=mysqli_query($connec,"select * from asociado_51 order by categoria_aso");
+   } else { // "Z" latitud y longitud
+$titulo="LISTA TOTAL CON filtro";
+$result=mysqli_query($connec,"select * from asociado_51 where (productos_aso like '%$bxproducto%') order by categoria_aso");
+   }
+
+} else { // "Z" latitud y longitud
+
    if(strlen($bxproducto)==0){ 
 $titulo="LISTA POR MI ZONA sin filtro";
 $result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$latitud%' AND longitud_aso like '%$longitud%') order by categoria_aso");
