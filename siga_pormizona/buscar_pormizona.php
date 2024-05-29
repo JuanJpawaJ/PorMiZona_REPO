@@ -152,12 +152,8 @@ $total=mysqli_num_rows($result);
       <tr>
 
         <td width="92" height="75" align="center" <? if ($xgl=="S") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="a_lisimagenes.php?xgl=S"><img src="../imagenes/ico_p_informatica.png" width="72" height="58"></a></td>
-        <td width="92" align="center" <? if ($xgl=="M") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="a_lisimagenes.php?xgl=M"><img src="../imagenes/ico_p_boutique.png" width="72" height="58"></a></td>
-        <td width="92" align="center" <? if ($xgl=="R") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="a_lisimagenes.php?xgl=R"><img src="../imagenes/ico_p_regalos.png" width="72" height="58"></a></td>
-        <td width="92" align="center" <? if ($xgl=="P") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="a_lisimagenes.php?xgl=P"><img src="../imagenes/ico_p_perfumeria.png" width="72" height="58"></a></td>
-        <td width="350" align="center">
-        
-  <form id="form0" name="form0" method="get" action="buscar_pormizona.php">
+        <td align="center" class="tabla10" >
+        <form id="form0" name="form0" method="get" action="buscar_pormizona.php">
             <table width="334" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
               <tr>
                 <td width="203" height="28" bgcolor="#FFCC66"> <span class="TITULO">Dato a buscar:</span>                  <input name="bxproducto" type="text" id="bxproducto" size="25" maxlength="60" /></td>
@@ -167,8 +163,9 @@ $total=mysqli_num_rows($result);
                 </tr>
               </table>
   </form>
-          
-          </td>
+  
+        </td>
+        <td width="92" align="center" <? if ($xgl=="P") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="a_lisimagenes.php?xgl=P"><img src="../imagenes/ico_p_perfumeria.png" width="72" height="58"></a></td>
         </tr>
     </table></td>
     </tr>
