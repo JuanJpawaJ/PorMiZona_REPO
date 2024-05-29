@@ -129,14 +129,31 @@ if ($latitud<0) {
 $bxproducto=$_GET['bxproducto'];
 // ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
 $viewmodi=$_GET['viewmodi'];
-$xgl=$_GET['xgl'];
-
-
-if(strlen($bxproducto)==0){
-      $result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$latitud%' AND longitud_aso like '%$longitud%') order by categoria_aso");
-} else {
-      $result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$latitud%' AND longitud_aso like '%$longitud%' AND productos_aso like '%$bxproducto%' ) order by categoria_aso");
+$xfl=$_GET['xfl'];
+if(strlen($xfl)==0){
+   $xfl="T";
 }
+if($xf1=="T") {
+   if(strlen($bxproducto)==0){
+$titulo="LISTA TOTAL SIN filtro";
+$result=mysqli_query($connec,"select * from asociado_51 order by categoria_aso");
+   } else {
+$titulo="LISTA TOTAL CON filtro";
+$result=mysqli_query($connec,"select * from asociado_51 where (productos_aso like '%$bxproducto%') order by categoria_aso");
+
+   }
+
+} else {
+
+   if(strlen($bxproducto)==0){
+$titulo="LISTA POR MI ZONA sin filtro";
+$result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$latitud%' AND longitud_aso like '%$longitud%') order by categoria_aso");
+   } else {
+$titulo="LISTA POR MI ZONA con filtro";
+$result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$latitud%' AND longitud_aso like '%$longitud%' AND productos_aso like '%$bxproducto%' ) order by categoria_aso");
+   }
+}
+
 $total=mysqli_num_rows($result);
 //echo "Total: ".$total."<br>";
 
@@ -148,24 +165,27 @@ $total=mysqli_num_rows($result);
     <td height="77" align="center" class="tit_menu_sup">POR MI ZONA</td>
     </tr>
   <tr class="tit_menu_sup">
-    <td width="774" height="98" align="center" bgcolor="#FFFFCC"><table width="735" border="1" cellspacing="1" cellpadding="0">
+    <td width="774" height="141" align="center" bgcolor="#FFFFCC"><table width="735" border="1" cellspacing="1" cellpadding="0">
       <tr>
 
-        <td width="92" height="75" align="center" <? if ($xgl=="S") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="a_lisimagenes.php?xgl=S"><img src="../imagenes/ico_p_informatica.png" width="72" height="58"></a></td>
-        <td align="center" class="tabla10" >
-        <form id="form0" name="form0" method="get" action="buscar_pormizona.php">
-            <table width="334" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
+   <td width="92" height="84" align="center"  class="tabla10" <? if ($xfl=="T") {?>  bgcolor="#FFF00" <? } ?>><a href="buscar_pormizona.php?xfl=T"><img src="../imagenes/ico_p_informatica.png" width="72" height="58"></a></td>
+
+   <td align="center" class="tabla10" >
+   <form id="form0" name="form0" method="get" action="buscar_pormizona.php">
+         <table width="371" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
               <tr>
-                <td width="203" height="28" bgcolor="#FFCC66"> <span class="TITULO">Dato a buscar:</span>                  <input name="bxproducto" type="text" id="bxproducto" size="25" maxlength="60" /></td>
+                <td width="234" height="50" bgcolor="#FFCC66"> <span class="TITULO">¿Que está buscando?:</span>                  <input name="bxproducto" type="text" id="bxproducto" size="30" maxlength="60" /></td>
                 
-                <td width="125" bgcolor="#FFCC66"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
-                
-                </tr>
-              </table>
+                <td width="131" bgcolor="#FFCC66"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
+             </tr>
+        </table>
   </form>
-  
-        </td>
-        <td width="92" align="center" <? if ($xgl=="P") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="a_lisimagenes.php?xgl=P"><img src="../imagenes/ico_p_perfumeria.png" width="72" height="58"></a></td>
+  </td>
+
+  <td width="92" align="center" <? if ($xfl=="Z") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="buscar_pormizona.php?xfl=Z"><img src="../imagenes/ico_p_perfumeria.png" width="72" height="58"></a></td>
+        </tr>
+      <tr>
+        <td height="37" colspan="3" align="center" bgcolor="#0099FF" class="tabla10"><? echo $titulo ?></td>
         </tr>
     </table></td>
     </tr>
