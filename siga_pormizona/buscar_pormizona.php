@@ -120,27 +120,8 @@ Para motrar las empresas cerca a usted, es obligatorio reconocer su Geolocalizac
          <? } ?>
         <div> <a href="geo_mendoza3.html"><img src="iconos/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
         </div>
-  <? } ?>      
-        
-        <div>
-             <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
-                  <div class="campo_de_posicion edit_lat">		  
-	 	           SU LATITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
-                  </div>
-                  <div class="campo_de_posicion edit_long">
-	               SU LONGITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
-                  </div>
-             <? } else { ?>
-                  <div class="campo_de_posicion edit_lat">	
-			        SU LATITUD ES: <? echo $latitud; ?> <br>
-                  </div>
-                  <div class="campo_de_posicion edit_long">
-			        SU LONGITUD ES: <? echo $longitud; ?> <br>
-                  </div>
- 		     <? } ?>
-       </div>
+  <? } 
 
-<? 
 
 
 $bxproducto=$_GET['bxproducto'];
@@ -178,7 +159,31 @@ $total=mysqli_num_rows($result);
 
   <table width="778" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td height="77" align="center" class="tit_menu_sup">POR MI ZONA</td>
+    <td height="77" align="center" class="tit_menu_sup">
+    
+           <div>
+             <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
+                  <div class="campo_de_posicion edit_lat">		  
+	 	           SU LATITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
+                  </div>
+                  <div class="campo_de_posicion edit_long">
+	               SU LONGITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
+                  </div>
+             <? } else { ?>
+                  <div class="campo_de_posicion edit_lat">	
+			        SU LATITUD ES: <? echo $latitud; ?> <br>
+                  </div>
+                  <div class="campo_de_posicion edit_long">
+			        SU LONGITUD ES: <? echo $longitud; ?> <br>
+                  </div>
+ 		     <? } ?>
+       </div>
+ 
+    
+    
+    
+    
+    POR MI ZONA</td>
     </tr>
   <tr class="tit_menu_sup">
     <td width="774" height="141" align="center" bgcolor="#FFFFCC"><table width="735" border="1" cellspacing="1" cellpadding="0">
