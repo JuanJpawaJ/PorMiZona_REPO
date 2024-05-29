@@ -142,7 +142,7 @@ $total=mysqli_num_rows($result);
 
   <table width="778" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td align="center" class="tit_menu_sup">POR MI ZONA</td>
+    <td height="181" align="center" class="tit_menu_sup">POR MI ZONA</td>
     </tr>
   <tr class="tit_menu_sup">
     <td width="774" height="98" align="center" bgcolor="#FFFFCC"><table width="735" border="1" cellspacing="1" cellpadding="0">
