@@ -137,18 +137,46 @@ if($xfi=="T") {
    if(strlen($bxproducto)==0){
 $titulo="LISTA TOTAL SIN filtro";
 $result=mysqli_query($connec,"select * from asociado_51 order by categoria_aso");
-   } else {
+   } else { // "Z" latitud y longitud
 $titulo="LISTA TOTAL CON filtro";
 $result=mysqli_query($connec,"select * from asociado_51 where (productos_aso like '%$bxproducto%') order by categoria_aso");
-
    }
 
-} else {
+} else { // "Z" latitud y longitud
+?>
+      <div class="geolocalizacion">
+         <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	            
+              <h2 class="semi-titulosform_iz">Paso 01: Geolocalización</h2>
+              <br>               
+              <div class="titobligatorio">
+                 Para que ubiquen perfectamente su Local Comercial, es obligatorio reconocer su Geolocalización IN SITU (En el mismo local comercial u oficina). Si usa un móvil, recuerde activar su ubicación </div>
+              <br/>
+         <? } ?>
+        <div> <a href="geo_mendoza2.html"><img src="iconos/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
+        </div>
+        <div>
+             <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
+                  <div class="campo_de_posicion edit_lat">		  
+	 	           SU LATITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
+                  </div>
+                  <div class="campo_de_posicion edit_long">
+	               SU LONGITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
+                  </div>
+             <? } else { ?>
+                  <div class="campo_de_posicion edit_lat">	
+			        SU LATITUD ES: <? echo $latitud; ?> <br>
+                  </div>
+                  <div class="campo_de_posicion edit_long">
+			        SU LONGITUD ES: <? echo $longitud; ?> <br>
+                  </div>
+ 		     <? } ?>
+       </div>
 
-   if(strlen($bxproducto)==0){
+<?
+   if(strlen($bxproducto)==0){ 
 $titulo="LISTA POR MI ZONA sin filtro";
 $result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$latitud%' AND longitud_aso like '%$longitud%') order by categoria_aso");
-   } else {
+   } else { 
 $titulo="LISTA POR MI ZONA con filtro";
 $result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$latitud%' AND longitud_aso like '%$longitud%' AND productos_aso like '%$bxproducto%' ) order by categoria_aso");
    }
@@ -168,7 +196,7 @@ $total=mysqli_num_rows($result);
     <td width="774" height="141" align="center" bgcolor="#FFFFCC"><table width="735" border="1" cellspacing="1" cellpadding="0">
       <tr>
 
-   <td width="92" height="84" align="center"  class="tabla10" <? if ($xfl=="T") {?>  bgcolor="#FFF00" <? } ?>><a href="buscar_pormizona.php?xfi=T"><img src="../imagenes/ico_p_informatica.png" width="72" height="58"></a></td>
+   <td width="92" height="84" align="center"  class="tabla10" <? if ($xfi=="T") {?>  bgcolor="#FFF00" <? } ?>><a href="buscar_pormizona.php?xfi=T"><img src="../imagenes/ico_p_informatica.png" width="72" height="58"></a></td>
 
    <td align="center" class="tabla10" >
    <form id="form0" name="form0" method="get" action="buscar_pormizona.php">
@@ -182,7 +210,7 @@ $total=mysqli_num_rows($result);
   </form>
   </td>
 
-  <td width="92" align="center" <? if ($xfl=="Z") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="buscar_pormizona.php?xfi=Z"><img src="../imagenes/ico_p_perfumeria.png" width="72" height="58"></a></td>
+  <td width="92" align="center" <? if ($xfi=="Z") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="buscar_pormizona.php?xfi=Z"><img src="../imagenes/ico_p_perfumeria.png" width="72" height="58"></a></td>
         </tr>
       <tr>
         <td height="37" colspan="3" align="center" bgcolor="#0099FF" class="tabla10"><? echo $titulo ?></td>
