@@ -132,8 +132,11 @@ $viewmodi=$_GET['viewmodi'];
 $xgl=$_GET['xgl'];
 
 
-$result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$latitud%' AND longitud_aso like '%$longitud%') order by categoria_aso");
-
+if(strlen($bxproducto)==0){
+      $result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$latitud%' AND longitud_aso like '%$longitud%') order by categoria_aso");
+} else {
+      $result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$latitud%' AND longitud_aso like '%$longitud%' AND productos_aso like '%$bxproducto1%' ) order by categoria_aso");
+}
 $total=mysqli_num_rows($result);
 //echo "Total: ".$total."<br>";
 
@@ -142,7 +145,7 @@ $total=mysqli_num_rows($result);
 
   <table width="778" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td height="181" align="center" class="tit_menu_sup">POR MI ZONA</td>
+    <td height="77" align="center" class="tit_menu_sup">POR MI ZONA</td>
     </tr>
   <tr class="tit_menu_sup">
     <td width="774" height="98" align="center" bgcolor="#FFFFCC"><table width="735" border="1" cellspacing="1" cellpadding="0">
@@ -153,10 +156,10 @@ $total=mysqli_num_rows($result);
         <td width="92" align="center" <? if ($xgl=="R") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="a_lisimagenes.php?xgl=R"><img src="../imagenes/ico_p_regalos.png" width="72" height="58"></a></td>
         <td width="92" align="center" <? if ($xgl=="P") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="a_lisimagenes.php?xgl=P"><img src="../imagenes/ico_p_perfumeria.png" width="72" height="58"></a></td>
         <td width="350" align="center">
-          <form id="form0" name="form0" method="get" action="a_lisimagenes.php">
+          <form id="form0" name="form0" method="get" action="buscar_pormizona.php">
             <table width="334" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
               <tr>
-                <td width="203" height="28" bgcolor="#FFCC66"> <span class="TITULO">Dato a buscar Producto:</span>                  <input name="bxproducto" type="text" id="bxproducto" size="25" maxlength="60" /></td>
+                <td width="203" height="28" bgcolor="#FFCC66"> <span class="TITULO">Dato a buscar:</span>                  <input name="bxproducto" type="text" id="bxproducto" size="25" maxlength="60" /></td>
                 
                 <td width="125" bgcolor="#FFCC66"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
                 
