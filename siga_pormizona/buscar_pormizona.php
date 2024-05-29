@@ -167,23 +167,6 @@ $total=mysqli_num_rows($result);
   <tr>
     <td height="77" align="center" class="tit_menu_sup">
     
-           <div>
-             <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
-                  <div class="campo_de_posicion edit_lat">		  
-	 	           SU LATITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
-                  </div>
-                  <div class="campo_de_posicion edit_long">
-	               SU LONGITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
-                  </div>
-             <? } else { ?>
-                  <div class="campo_de_posicion edit_lat">	
-			        SU LATITUD ES: <? echo $latitud; ?> <br>
-                  </div>
-                  <div class="campo_de_posicion edit_long">
-			        SU LONGITUD ES: <? echo $longitud; ?> <br>
-                  </div>
- 		     <? } ?>
-       </div>
  
     
     
@@ -212,7 +195,24 @@ $total=mysqli_num_rows($result);
   <td width="92" align="center" <? if ($xfi=="Z") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="buscar_pormizona.php?xfi=Z"><img src="../imagenes/ico_p_perfumeria.png" width="72" height="58"></a></td>
         </tr>
       <tr>
-        <td height="37" colspan="3" align="center" bgcolor="#0099FF" class="tabla10"><? echo $titulo ?></td>
+        <td height="37" colspan="3" align="center" bgcolor="#0099FF" class="tabla10">
+		
+		           <div>
+             <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
+	 	           SU LATITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
+	               SU LONGITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
+             <? } else { ?>
+			        SU LATITUD ES: <? echo $latitud; ?> <br>
+			        SU LONGITUD ES: <? echo $longitud; ?> <br>
+ 		     <? } ?>
+       </div>
+
+		
+		
+		
+		
+		
+		<? echo $titulo ?></td>
         </tr>
     </table></td>
     </tr>
