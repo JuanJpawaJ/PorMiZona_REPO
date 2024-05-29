@@ -3,6 +3,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>BUSCO Por Mi Zona</title>
 <style type="text/css">
+:root{
+    --color-principal:#21ADFF;
+    --color-fondo:#F0F0F0;
+    --color-negro:#1A1A1A;
+    --color-plomo:#999999;
+    --fuente-negrita:nexa_bold;
+    --fuente-normal:nexa_light;
+    --fuente-abel:abel; }
+
 .TITULO_NARANJA {
 	color: #FC0;
 	font-weight: bold;
@@ -65,6 +74,13 @@ nav{
     box-shadow: 0px 4px 24px -1px rgba(0,0,0,0.55);
 
     position:fixed;
+}
+.logo{
+    margin-top:5px;
+    width:15%;
+    min-width:180px;
+    max-width:393px;
+    margin-right:20px;
 }
 
 </style>
