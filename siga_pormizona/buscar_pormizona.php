@@ -187,6 +187,9 @@ while ($tabla=mysqli_fetch_array($result)){
         
         <tr bgcolor="#FFFFFF" class="tabla20">
           <td width="767" height="153" valign="middle">
+          
+              <div class="lista"><a href="viewasociado.php?xcod=<?php  echo($cod_aso); ?>">
+
             <table width="751" border="0" cellspacing="0" cellpadding="1">
               <tr>
                  <td width="150" rowspan="3" align="center" valign="middle"><img src="img_asociados/f_pmz_bl.png" width="100" height="100"></td>
@@ -202,7 +205,10 @@ while ($tabla=mysqli_fetch_array($result)){
                 <?php echo($productos_aso) ?> </span>
                 </td>
               </tr>
-          </table></td>
+          </table>
+          
+          </a></div>
+          </td>
           
           <!--- <td align="right" bgcolor=<? echo($color1) ?> ><?php echo($simbolo_mone.money_format('%n',(round($precom_it+($precom_it*$pje1_it/100))))) ?></td>-->        </tr>
         <?php 
