@@ -135,7 +135,7 @@ $xgl=$_GET['xgl'];
 if(strlen($bxproducto)==0){
       $result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$latitud%' AND longitud_aso like '%$longitud%') order by categoria_aso");
 } else {
-      $result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$latitud%' AND longitud_aso like '%$longitud%' AND productos_aso like '%$bxproducto1%' ) order by categoria_aso");
+      $result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$latitud%' AND longitud_aso like '%$longitud%' AND productos_aso like '%$bxproducto%' ) order by categoria_aso");
 }
 $total=mysqli_num_rows($result);
 //echo "Total: ".$total."<br>";
@@ -156,7 +156,8 @@ $total=mysqli_num_rows($result);
         <td width="92" align="center" <? if ($xgl=="R") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="a_lisimagenes.php?xgl=R"><img src="../imagenes/ico_p_regalos.png" width="72" height="58"></a></td>
         <td width="92" align="center" <? if ($xgl=="P") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="a_lisimagenes.php?xgl=P"><img src="../imagenes/ico_p_perfumeria.png" width="72" height="58"></a></td>
         <td width="350" align="center">
-          <form id="form0" name="form0" method="get" action="buscar_pormizona.php">
+        
+  <form id="form0" name="form0" method="get" action="buscar_pormizona.php">
             <table width="334" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
               <tr>
                 <td width="203" height="28" bgcolor="#FFCC66"> <span class="TITULO">Dato a buscar:</span>                  <input name="bxproducto" type="text" id="bxproducto" size="25" maxlength="60" /></td>
@@ -165,7 +166,7 @@ $total=mysqli_num_rows($result);
                 
                 </tr>
               </table>
-            </form>
+  </form>
           
           </td>
         </tr>
