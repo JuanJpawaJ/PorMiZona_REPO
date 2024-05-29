@@ -120,6 +120,8 @@ Para motrar las empresas cerca a usted, es obligatorio reconocer su Geolocalizac
          <? } ?>
         <div> <a href="geo_mendoza3.html"><img src="iconos/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
         </div>
+  <? } ?>      
+        
         <div>
              <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
                   <div class="campo_de_posicion edit_lat">		  
@@ -138,7 +140,7 @@ Para motrar las empresas cerca a usted, es obligatorio reconocer su Geolocalizac
  		     <? } ?>
        </div>
 
-<? } 
+<? 
 
 
 $bxproducto=$_GET['bxproducto'];
