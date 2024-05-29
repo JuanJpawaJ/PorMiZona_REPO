@@ -146,13 +146,13 @@ $result=mysqli_query($connec,"select * from asociado_51 where (productos_aso lik
 ?>
       <div class="geolocalizacion">
          <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	            
-              <h2 class="semi-titulosform_iz">Paso 01: Geolocalización</h2>
+              <h2 class="semi-titulosform_iz">Geolocalización</h2>
               <br>               
               <div class="titobligatorio">
-                 Para que ubiquen perfectamente su Local Comercial, es obligatorio reconocer su Geolocalización IN SITU (En el mismo local comercial u oficina). Si usa un móvil, recuerde activar su ubicación </div>
+Para motrar las empresas cerca a usted, es obligatorio reconocer su Geolocalización IN SITU. Si usa un móvil, recuerde activar su ubicación </div>
               <br/>
          <? } ?>
-        <div> <a href="geo_mendoza2.html"><img src="iconos/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
+        <div> <a href="geo_mendoza3.html"><img src="iconos/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
         </div>
         <div>
              <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
