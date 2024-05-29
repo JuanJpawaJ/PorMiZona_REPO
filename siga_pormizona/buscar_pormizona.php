@@ -78,11 +78,24 @@ if ($latitud<0) {
 } else {
      $latitud = substr($latitud,0,5);
 }
+?>
+
+    <nav>
+
+        <div class="botones_nav">
+            <a href="#" class="boton_home"></a>
+            <a href="#" class="boton_menu"></a>
+        </div>
+       <!-- <img src="imagenes/Logo/Logo_blanco_negro.svg" alt="logo"> -->
+
+ 
 
 
+       <img src="iconos/logo_pmz.png" alt="logo" class="logo">
+    </nav>
 
 
-
+<?
 $bxproducto=$_GET['bxproducto'];
 // ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
 $viewmodi=$_GET['viewmodi'];
