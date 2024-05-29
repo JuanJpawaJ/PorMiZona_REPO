@@ -93,21 +93,6 @@ date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
 
-$longitud = $_POST['longitude'];
-$latitud = $_POST['latitude'];
-
-//echo ("Longitud: ".$longitud."<br>");
-//echo ("Latitud : ".$latitud."<br>");
-if ($longitud<0) {
-     $longitud = substr($longitud,0,6);
-} else {
-     $longitud = substr($longitud,0,5);
-}
-if ($latitud<0) {
-     $latitud = substr($latitud,0,6);
-} else {
-     $latitud = substr($latitud,0,5);
-}
 ?>
 
     <nav>
