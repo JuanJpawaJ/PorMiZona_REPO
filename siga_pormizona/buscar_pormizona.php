@@ -109,7 +109,18 @@ setlocale(LC_ALL, "sp");
        <img src="iconos/logo_pmz.png" alt="logo" class="logo">
     </nav>
 
-<? if($xfi=="Z") { ?>
+
+<?
+
+$bxproducto=$_GET['bxproducto'];
+// ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
+$viewmodi=$_GET['viewmodi'];
+$xfi=$_GET['xfi'];
+if(strlen($xfi)==0){
+   $xfi="T";
+}
+
+ if($xfi=="Z") { ?>
       <div class="geolocalizacion">
          <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	            
               <h2 class="semi-titulosform_iz">Geolocalización</h2>
@@ -124,13 +135,8 @@ Para motrar las empresas cerca a usted, es obligatorio reconocer su Geolocalizac
 
 
 
-$bxproducto=$_GET['bxproducto'];
-// ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
-$viewmodi=$_GET['viewmodi'];
-$xfi=$_GET['xfi'];
-if(strlen($xfi)==0){
-   $xfi="T";
-}
+
+
 if($xfi=="T") {
    if(strlen($bxproducto)==0){
 $titulo="LISTA TOTAL SIN filtro";
