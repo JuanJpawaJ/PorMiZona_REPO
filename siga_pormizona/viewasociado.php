@@ -80,6 +80,7 @@ $tabla = mysqli_fetch_array( $result );
 // $publicidad_aso=$tabla["publicidad_aso"];
 ?>
 
+
 <div class="exteriorform">
    <div class="fondo_view">
       <div class="cabecera1">
@@ -88,13 +89,13 @@ $tabla = mysqli_fetch_array( $result );
 		 ?>
       </div>
       <!-- inicio de boton obligatorio -->         
-      <div class="barra1">
-          <img src="imagenes/f_barra.png" width="700" height="85" class="iconos"> 
-      </div>
+      <div class="barra1"></div>
 
     
-<div class="texto_view">
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+  <table width="778" border="1" align="center" cellpadding="0" cellspacing="0">
+
+
   <tr>
     <td width="9%" height="39" class="txt_view_pequeño" >Categoría:</td>
     <td width="91%"  ><? echo $categoria_aso.": ".$categoriatxt_aso."<br>"; ?></td>
@@ -116,7 +117,7 @@ $tabla = mysqli_fetch_array( $result );
     <td ><? echo $referencia_aso."<br>"; ?></td>
   </tr>
 </table>
-</div>
+
  
     <div class="lista">
 
