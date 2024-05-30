@@ -113,7 +113,20 @@ setlocale(LC_ALL, "sp");
 $longitud = $_POST['longitude'];
 $latitud = $_POST['latitude'];
 
+//--
+//if ($longitud<0) {
+//     $longitud = substr($longitud,0,6);
+//} else {
+//     $longitud = substr($longitud,0,5);
+//}
+//if ($latitud<0) {
+//     $latitud = substr($latitud,0,6);
+//} else {
+//     $latitud = substr($latitud,0,5);
+//}
 
+
+//---
 ?>
 
     <nav>
@@ -155,11 +168,11 @@ Para motrar las empresas cerca a usted, es obligatorio reconocer su Geolocalizac
         </div>
         
        
-  <? $xfi="Z"; 
-   } 
+  <?  } 
 
-
-
+if(strlen($longitud)<>0 OR strlen($latitud)<>0){
+	$xfi="Z";
+}
 
 
 if($xfi=="T") {
