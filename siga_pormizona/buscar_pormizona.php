@@ -171,6 +171,9 @@ Para motrar las empresas cerca a usted, es obligatorio reconocer su Geolocalizac
   <?  } 
 
 if(strlen($longitud)<>0 OR strlen($latitud)<>0){
+	$longitud = substr($longitud,0,5);
+    $latitud = substr($latitud,0,5);
+
 	$xfi="Z";
 }
 
