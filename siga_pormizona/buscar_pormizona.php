@@ -223,7 +223,7 @@ $total=mysqli_num_rows($result);
   <tr class="tit_menu_sup">
     <td width="774" height="141" align="center" bgcolor="#FFFFCC"><table width="735" border="1" cellspacing="1" cellpadding="0">
       <tr>
-        <td width="121" rowspan="2" align="center" valign="middle"  bgcolor="#FFF00"  class="tabla10" <? if ($xfi=="T") {?> <? } ?>><a href="buscar_pormizona.php?xfi=T"><img src="iconos/ico_todo.png" width="100" height="100"></td>
+        <td width="121" rowspan="2" align="center" valign="middle"    class="tabla10" <? if ($xfi=="T") {?> bgcolor="#FFF00" <? } ?>><a href="buscar_pormizona.php?xfi=T"><img src="iconos/ico_todo.png" width="100" height="100"></td>
         
  
         
@@ -245,7 +245,7 @@ $total=mysqli_num_rows($result);
  		     <? } ?>
    
         </td>
-        <td width="122" rowspan="2" align="center" bgcolor="#FFF00" class="tabla10" <? if ($xfi=="Z") {?> <? } ?>><a href="buscar_pormizona.php?xfi=Z"><img src="iconos/ico_pmz.png" width="100" height="100"></td>
+        <td width="122" rowspan="2" align="center"  class="tabla10" <? if ($xfi=="Z") {?>bgcolor="#FFF00" <? } ?>><a href="buscar_pormizona.php?xfi=Z"><img src="iconos/ico_pmz.png" width="100" height="100"></td>
         
      </tr>
       <tr>
