@@ -36,6 +36,11 @@
 	font-size: 12px;
 	color: #000;
 }
+.T_QUE {
+	font-size: 14px;
+	color: #000;
+}
+
 .tit_menu_sup {
 	color: #000;
 }
@@ -171,8 +176,8 @@ Para motrar las empresas cerca a usted, es obligatorio reconocer su Geolocalizac
   <?  } 
 
 if(strlen($longitud)<>0 OR strlen($latitud)<>0){
-	$longitud = substr($longitud,0,6);
-    $latitud = substr($latitud,0,6);
+	$bxlongitud = substr($longitud,0,6);
+    $bxlatitud = substr($latitud,0,6);
 
 	$xfi="Z";
 }
@@ -191,10 +196,10 @@ $result=mysqli_query($connec,"select * from asociado_51 where (productos_aso lik
 
    if(strlen($bxproducto)==0){ 
 $titulo="LISTA POR MI ZONA sin filtro";
-$result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$latitud%' AND longitud_aso like '%$longitud%') order by categoria_aso");
+$result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$bxlatitud%' AND longitud_aso like '%$bxlongitud%') order by categoria_aso");
    } else { 
 $titulo="LISTA POR MI ZONA con filtro";
-$result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$latitud%' AND longitud_aso like '%$longitud%' AND productos_aso like '%$bxproducto%' ) order by categoria_aso");
+$result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$bxlatitud%' AND longitud_aso like '%$bxlongitud%' AND productos_aso like '%$bxproducto%' ) order by categoria_aso");
    }
 }
 
@@ -218,42 +223,47 @@ $total=mysqli_num_rows($result);
   <tr class="tit_menu_sup">
     <td width="774" height="141" align="center" bgcolor="#FFFFCC"><table width="735" border="1" cellspacing="1" cellpadding="0">
       <tr>
-
-   <td width="92" height="84" align="center"  class="tabla10" <? if ($xfi=="T") {?>  bgcolor="#FFF00" <? } ?>><a href="buscar_pormizona.php?xfi=T"><img src="../imagenes/ico_p_informatica.png" width="72" height="58"></a></td>
-
-   <td align="center" class="tabla10" >
-   <form id="form0" name="form0" method="get" action="buscar_pormizona.php">
-         <table width="371" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
-              <tr>
-                <td width="234" height="50" bgcolor="#FFCC66"> <span class="TITULO">¿Que está buscando?:</span>                  <input name="bxproducto" type="text" id="bxproducto" size="30" maxlength="60" /></td>
-                
-                <td width="131" bgcolor="#FFCC66"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
-             </tr>
-        </table>
-  </form>
-  </td>
-
-  <td width="92" align="center" <? if ($xfi=="Z") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="buscar_pormizona.php?xfi=Z"><img src="../imagenes/ico_p_perfumeria.png" width="72" height="58"></a></td>
-        </tr>
-      <tr>
-        <td height="37" colspan="3" align="center" bgcolor="#0099FF" class="tabla10">
-		
-		           <div>
+        <td width="121" rowspan="2" align="center" valign="middle"  bgcolor="#FFF00"  class="tabla10" <? if ($xfi=="T") {?> <? } ?>><a href="buscar_pormizona.php?xfi=T"><img src="iconos/ico_todo.png" width="100" height="100"></td>
+        
+ 
+        
+        
+        <td width="224" height="30" align="center" class="tabla10" >
              <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
 	 	           SU LATITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
-	               SU LONGITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
              <? } else { ?>
 			        SU LATITUD ES: <? echo $latitud; ?> <br>
+ 		     <? } ?>
+
+        </td>
+        <td width="253" align="center" class="tabla10" >
+        
+             <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
+	               SU LONGITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
+             <? } else { ?>
 			        SU LONGITUD ES: <? echo $longitud; ?> <br>
  		     <? } ?>
-       </div>
+   
+        </td>
+        <td width="122" rowspan="2" align="center" bgcolor="#FFF00" class="tabla10" <? if ($xfi=="Z") {?> <? } ?>><a href="buscar_pormizona.php?xfi=Z"><img src="iconos/ico_pmz.png" width="100" height="100"></td>
+        
+     </tr>
+      <tr>
 
-		
-		
-		
-		
-		
-		<? echo $titulo ?></td>
+   <td height="66" colspan="2" align="center" class="tabla10" >
+     <form id="form0" name="form0" method="get" action="buscar_pormizona.php">
+       <table width="371" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
+         <tr>
+           <td width="234" height="50" bgcolor="#FFCC66"> <span class="T_QUE">¿Que está buscando?:</span>                  <input name="bxproducto" type="text" id="bxproducto" size="30" maxlength="60" /></td>
+           
+           <td width="131" bgcolor="#FFCC66"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
+           </tr>
+         </table>
+       </form>
+   </td>
+  </tr>
+      <tr>
+        <td height="37" colspan="4" align="center" bgcolor="#0099FF" class="tabla10"><? echo $titulo ?></td>
         </tr>
     </table></td>
     </tr>
