@@ -82,24 +82,35 @@ $tabla = mysqli_fetch_array( $result );
 
 
 
-         <?
-		 echo $rsocial_aso ;
-		 ?>
       <!-- inicio de boton obligatorio -->         
 
 
     
 
-  <table width="778" border="1" align="center" cellpadding="0" cellspacing="0">
+  
+
+ 
+
+
+    <table width="800" height="327" border="1" align="center" cellpadding="1" cellspacing="1">
+      <tr>
+        <td colspan="2"> <? echo $rsocial_aso ; ?>  &nbsp;</td>
+      </tr>
+      <tr>
+        <td width="97">FAVICON</td>
+        <td width="690">LOGO</td>
+      </tr>
+      <tr>
+        <td colspan="2"><table width="633" border="1" align="center" cellpadding="0" cellspacing="0">
 
 
   <tr>
-    <td width="150" height="39" class="txt_view_pequeño" >Categoría:</td>
-    <td width="150"  ><? echo $categoria_aso.": ".$categoriatxt_aso."<br>"; ?></td>
+    <td width="93" height="39" class="txt_view_pequeño" >Categoría:</td>
+    <td width="534"  ><? echo $categoria_aso.": ".$categoriatxt_aso."<br>"; ?></td>
   </tr>
   <tr>
-    <td height="20" class="txt_view_pequeño" >Productos:</td>
-    <td width="20"  ><? echo $productos_aso."<br>"; ?></td>
+    <td height="31" class="txt_view_pequeño" >Productos:</td>
+    <td width="534"  ><? echo $productos_aso."<br>"; ?></td>
   </tr>
   <tr>
     <td height="36" class="txt_view_pequeño">Dirección: </td>
@@ -113,44 +124,17 @@ $tabla = mysqli_fetch_array( $result );
     <td height="32" class="txt_view_pequeño">Referencia: </td>
     <td ><? echo $referencia_aso."<br>"; ?></td>
   </tr>
-</table>
-
- 
-
-
-    <table width="250" border="0" cellpadding="0" cellspacing="0">
-    
-  <tr>
-    <td width="47" rowspan="2" valign="middle"><img src="img_asociados/<?php  echo($favicon_aso); ?>" width="45" height="45"></td>
-    <td width="226" class="busrazon"><?php  echo("  ".$rsocial_aso); ?></td>
-    <td width="64" rowspan="2" class="busdireccion"><?php  echo($direccion_aso); ?></td>
-  </tr>
-  <tr>
-    <td valign="middle" class="busproductos"><?php  echo(substr($productos_aso,0,45)); ?></td>
-    </tr>
-  <tr>
-    <td width="47">&nbsp;</td>
-    <td colspan="2" class="busraya"><p>--------------------------------------------------------------------------------------------</p>
-     </td>
-
-
-    </tr>
-   
+</table>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><? echo $email_aso."<br>"; ?> <? echo $estado_aso." - ".$pais_aso."<br>"; ?> <? echo "<br>"; ?> <? echo $cod_aso." - ".$date_aso."<br>"; ?> <? echo "la: ".$latitud_aso." lo: ".$longitud_aso."<br>"; ?></td>
+      </tr>
+      <tr>
+        <td colspan="2">&nbsp;</td>
+      </tr>
     </table>
-      <p>&nbsp;</p>
- 
-
-         <? echo $email_aso."<br>"; ?>     
-		 <? echo $estado_aso." - ".$pais_aso."<br>"; ?>
-		 <? echo "<br>"; ?>
-   		 <? echo $cod_aso." - ".$date_aso."<br>"; ?>         
-         <? echo "la: ".$latitud_aso." lo: ".$longitud_aso."<br>"; ?>
-
-
-		
-
-   
-    
+    <p>&nbsp;</p>
+       
 
    Acceso solo a propietarios:  
     
@@ -163,7 +147,7 @@ $tabla = mysqli_fetch_array( $result );
 
 
 
-    <footer>
+<footer>
         <div class="footer_clientes footer_uno">
             <article class="footer_article">
                 <h2 class="semi-titulos">CLIENTES</h2>
