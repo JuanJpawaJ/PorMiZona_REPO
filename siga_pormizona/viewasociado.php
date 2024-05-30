@@ -81,11 +81,10 @@ $tabla = mysqli_fetch_array( $result );
 ?>
 
 
-      <div class="cabecera1">
+
          <?
 		 echo $rsocial_aso ;
 		 ?>
-      </div>
       <!-- inicio de boton obligatorio -->         
 
 
@@ -140,7 +139,7 @@ $tabla = mysqli_fetch_array( $result );
     </table>
       <p>&nbsp;</p>
  
-       <div class="pie1">
+
          <? echo $email_aso."<br>"; ?>     
 		 <? echo $estado_aso." - ".$pais_aso."<br>"; ?>
 		 <? echo "<br>"; ?>
@@ -149,7 +148,7 @@ $tabla = mysqli_fetch_array( $result );
 
 
 		
-      </div>
+
    
     
 
@@ -159,7 +158,7 @@ $tabla = mysqli_fetch_array( $result );
      
      <a href="ingre.php?xid=<? echo ($xid);?> "><img src="imagenes/bot_soypropietario.png" width="156" height="23" style="border:0;" onmouseover="this.style.border='solid  2px #FFFFFF';" onmouseout="this.style.border=0;" border="0"></a>
 
-</div>
+
 
 
 
