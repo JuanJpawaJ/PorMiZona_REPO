@@ -185,10 +185,10 @@ if(strlen($longitud)<>0 OR strlen($latitud)<>0){
 
 if($xfi=="T") {
    if(strlen($bxproducto)==0){
-$titulo="LISTA TOTAL SIN filtro";
+$titulo="LISTA TODO sin filtro";
 $result=mysqli_query($connec,"select * from asociado_51 order by categoria_aso");
    } else { // "Z" latitud y longitud
-$titulo="LISTA TOTAL CON filtro";
+$titulo="LISTA TODO con filtro";
 $result=mysqli_query($connec,"select * from asociado_51 where (productos_aso like '%$bxproducto%') order by categoria_aso");
    }
 
