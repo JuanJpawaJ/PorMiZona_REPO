@@ -82,26 +82,21 @@ $tabla = mysqli_fetch_array( $result );
 
 
 
-      <!-- inicio de boton obligatorio -->         
-
-
-    
-
-  
-
- 
-
-
-    <table width="800" height="327" border="1" align="center" cellpadding="1" cellspacing="1">
+    <table width="800" height="846" border="1" align="center" cellpadding="1" cellspacing="1">
       <tr>
-        <td colspan="2"> <? echo $rsocial_aso ; ?>  &nbsp;</td>
+        <td height="32" colspan="2" align="center" bgcolor="#0099CC"> <? echo $rsocial_aso ; ?>  &nbsp;</td>
       </tr>
       <tr>
-        <td width="97">FAVICON</td>
-        <td width="690">LOGO</td>
+        <td width="110" height="102">FAVICON</td>
+        <td width="677">LOGO</td>
       </tr>
       <tr>
-        <td colspan="2"><table width="633" border="1" align="center" cellpadding="0" cellspacing="0">
+        <td height="344" colspan="2"><p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td height="281" colspan="2" align="center" valign="middle"><table width="633" border="1" align="center" cellpadding="0" cellspacing="0">
 
 
   <tr>
@@ -109,8 +104,8 @@ $tabla = mysqli_fetch_array( $result );
     <td width="534"  ><? echo $categoria_aso.": ".$categoriatxt_aso."<br>"; ?></td>
   </tr>
   <tr>
-    <td height="31" class="txt_view_pequeño" >Productos:</td>
-    <td width="534"  ><? echo $productos_aso."<br>"; ?></td>
+    <td height="31" class="txt_view_pequeño" >&nbsp;</td>
+    <td width="534"  >&nbsp;</td>
   </tr>
   <tr>
     <td height="36" class="txt_view_pequeño">Dirección: </td>
@@ -124,29 +119,31 @@ $tabla = mysqli_fetch_array( $result );
     <td height="32" class="txt_view_pequeño">Referencia: </td>
     <td ><? echo $referencia_aso."<br>"; ?></td>
   </tr>
-</table>&nbsp;</td>
+  <tr>
+    <td height="32" class="txt_view_pequeño">&nbsp;</td>
+    <td >&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="32" class="txt_view_pequeño">&nbsp;</td>
+    <td >&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="32" class="txt_view_pequeño">Productos:</td>
+    <td ><? echo $productos_aso."<br>"; ?></td>
+  </tr>
+</table></td>
       </tr>
       <tr>
-        <td colspan="2" align="center"><? echo $email_aso."<br>"; ?> <? echo $estado_aso." - ".$pais_aso."<br>"; ?> <? echo "<br>"; ?> <? echo $cod_aso." - ".$date_aso."<br>"; ?> <? echo "la: ".$latitud_aso." lo: ".$longitud_aso."<br>"; ?></td>
+        <td colspan="2" align="center" bgcolor="#0099CC"><? echo $email_aso."<br>"; ?> <? echo $estado_aso." - ".$pais_aso."<br>"; ?> <? echo "<br>"; ?> <? echo $cod_aso." - ".$date_aso."<br>"; ?> <? echo "la: ".$latitud_aso." lo: ".$longitud_aso."<br>"; ?></td>
+      </tr>
+      <tr>
+        <td colspan="2">Acceso solo a propietarios:<a href="ingre.php?xid=<? echo ($xid);?> "><img src="imagenes/bot_soypropietario.png" width="156" height="23" style="border:0;" onMouseOver="this.style.border='solid  2px #FFFFFF';" onMouseOut="this.style.border=0;" border="0"></a></td>
       </tr>
       <tr>
         <td colspan="2">&nbsp;</td>
       </tr>
     </table>
-    <p>&nbsp;</p>
-       
-
-   Acceso solo a propietarios:  
-    
-     
-     
-     <a href="ingre.php?xid=<? echo ($xid);?> "><img src="imagenes/bot_soypropietario.png" width="156" height="23" style="border:0;" onmouseover="this.style.border='solid  2px #FFFFFF';" onmouseout="this.style.border=0;" border="0"></a>
-
-
-
-
-
-
+<p>&nbsp;</p>
 <footer>
         <div class="footer_clientes footer_uno">
             <article class="footer_article">
@@ -155,7 +152,7 @@ $tabla = mysqli_fetch_array( $result );
                 Las consultas por esta Web y los contactos 
                 con nuestros asociados son gratuitos.</p>
             </article>
-        </div>
+  </div>
 
         <div class="footer_asociados footer_uno">
             <article class="footer_article">
@@ -193,6 +190,6 @@ $tabla = mysqli_fetch_array( $result );
             <img src="imagenes/Logo/Logo_blanco_puro.svg" alt="">
             <h3>Arequipa - 2020</h3>
         </div>
-    </footer>
+</footer>
 </body>
 </html>
