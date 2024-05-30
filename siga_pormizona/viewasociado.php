@@ -81,15 +81,13 @@ $tabla = mysqli_fetch_array( $result );
 ?>
 
 
-<div class="exteriorform">
-   <div class="fondo_view">
       <div class="cabecera1">
          <?
 		 echo $rsocial_aso ;
 		 ?>
       </div>
       <!-- inicio de boton obligatorio -->         
-      <div class="barra1"></div>
+
 
     
 
@@ -119,7 +117,7 @@ $tabla = mysqli_fetch_array( $result );
 </table>
 
  
-    <div class="lista">
+
 
     <table width="100%" border="0" cellpadding="0" cellspacing="0">
     
@@ -141,7 +139,7 @@ $tabla = mysqli_fetch_array( $result );
    
     </table>
       <p>&nbsp;</p>
-    </div>
+ 
        <div class="pie1">
          <? echo $email_aso."<br>"; ?>     
 		 <? echo $estado_aso." - ".$pais_aso."<br>"; ?>
@@ -154,15 +152,13 @@ $tabla = mysqli_fetch_array( $result );
       </div>
    
     
-    <div>
+
    Acceso solo a propietarios:  
     
      
      
      <a href="ingre.php?xid=<? echo ($xid);?> "><img src="imagenes/bot_soypropietario.png" width="156" height="23" style="border:0;" onmouseover="this.style.border='solid  2px #FFFFFF';" onmouseout="this.style.border=0;" border="0"></a>
 
-</div>
-</div>
 </div>
 
 
