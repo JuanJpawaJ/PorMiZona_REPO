@@ -82,6 +82,24 @@ nav{
     max-width:393px;
     margin-right:20px;
 }
+.geolocalizacion{
+	
+
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: DodgerBlue; */ 
+    width:100%;
+}
+.geolocalizacion > div {
+   /* background-color: #f1f1f1; */
+  width: 370px;
+  margin: 10px;
+  /*  text-align: center; 
+  line-height: 25px; */ 
+  font-size: 15px;
+}
+
+
 
 </style>
 </head>
@@ -125,6 +143,7 @@ if(strlen($xfi)==0){
 
  if($xfi=="Z") { ?>
       <div class="geolocalizacion">
+       <br> 
          <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	            
               <h2 class="semi-titulosform_iz">Geolocalización</h2>
               <br>               
@@ -134,7 +153,10 @@ Para motrar las empresas cerca a usted, es obligatorio reconocer su Geolocalizac
          <? } ?>
         <div> <a href="geo_mendoza3.html"><img src="iconos/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
         </div>
-  <? } 
+        
+       
+  <? $xfi="Z"; 
+   } 
 
 
 
