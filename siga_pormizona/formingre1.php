@@ -46,7 +46,7 @@ $latitud = $_POST['latitude'];
               <h2 class="semi-titulosform_iz">Paso 01: Geolocalización</h2>
               <br>               
               <div class="titobligatorio">
-                 Para que ubiquen perfectamente su Local Comercial, es obligatorio reconocer su Geolocalización IN SITU (En el mismo local comercial u oficina). Si usa un móvil, recuerde activar su ubicación </div>
+                 RECOMENDABLE USAR UN EQUPO MOVIL. Para que ubiquen perfectamente su Local Comercial, es obligatorio reconocer su Geolocalización IN SITU (En el mismo local comercial u oficina). </div>
               <br/>
          <? } ?>
         <div> <a href="geo_mendoza2.html"><img src="iconos/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
