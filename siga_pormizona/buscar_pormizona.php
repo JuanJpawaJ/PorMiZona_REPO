@@ -223,12 +223,12 @@ $total=mysqli_num_rows($result);
   <tr class="tit_menu_sup">
     <td width="774" height="141" align="center" bgcolor="#FFFFCC"><table width="735" border="1" cellspacing="1" cellpadding="0">
       <tr>
-        <td width="121" rowspan="2" align="center" valign="middle"    class="tabla10" <? if ($xfi=="T") {?> bgcolor="#FFF00" <? } ?>><a href="buscar_pormizona.php?xfi=T"><img src="iconos/ico_todo.png" width="100" height="100"></td>
+        <td width="135" rowspan="2" align="center" valign="middle"    class="tabla10" <? if ($xfi=="T") {?> bgcolor="#FFF00" <? } ?>><a href="buscar_pormizona.php?xfi=T"><img src="iconos/ico_todo.png" width="100" height="100"></td>
         
  
         
         
-        <td width="224" height="30" align="center" class="tabla10" >
+        <td width="210" height="30" align="center" class="tabla10" >
              <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
 	 	           SU LATITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
              <? } else { ?>
@@ -236,7 +236,7 @@ $total=mysqli_num_rows($result);
  		     <? } ?>
 
         </td>
-        <td width="253" align="center" class="tabla10" >
+        <td width="239" align="center" class="tabla10" >
         
              <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
 	               SU LONGITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
@@ -245,12 +245,12 @@ $total=mysqli_num_rows($result);
  		     <? } ?>
    
         </td>
-        <td width="122" rowspan="2" align="center"  class="tabla10" <? if ($xfi=="Z") {?>bgcolor="#FFF00" <? } ?>><a href="buscar_pormizona.php?xfi=Z"><img src="iconos/ico_pmz.png" width="100" height="100"></td>
+        <td width="136" rowspan="2" align="center"  class="tabla10" <? if ($xfi=="Z") {?>bgcolor="#FFF00" <? } ?>><a href="buscar_pormizona.php?xfi=Z"><img src="iconos/ico_pmz.png" width="100" height="100"></td>
         
      </tr>
       <tr>
 
-   <td height="66" colspan="2" align="center" class="tabla10" >
+   <td height="84" colspan="2" align="center" class="tabla10" >
      <form id="form0" name="form0" method="get" action="buscar_pormizona.php">
        <table width="371" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
          <tr>
@@ -263,7 +263,9 @@ $total=mysqli_num_rows($result);
    </td>
   </tr>
       <tr>
-        <td height="37" colspan="4" align="center" bgcolor="#0099FF" class="tabla10"><? echo $titulo ?></td>
+        <td height="37" colspan="4" align="center" bgcolor="#0099FF" class="tabla10"><span class="rsocial"><?php echo($titulo) ?></span></td>
+        
+                                                                    
         </tr>
     </table></td>
     </tr>
