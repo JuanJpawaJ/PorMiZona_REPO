@@ -95,12 +95,12 @@ $tabla = mysqli_fetch_array( $result );
 
 
   <tr>
-    <td width="9%" height="39" class="txt_view_pequeño" >Categoría:</td>
-    <td width="91%"  ><? echo $categoria_aso.": ".$categoriatxt_aso."<br>"; ?></td>
+    <td width="150" height="39" class="txt_view_pequeño" >Categoría:</td>
+    <td width="150"  ><? echo $categoria_aso.": ".$categoriatxt_aso."<br>"; ?></td>
   </tr>
   <tr>
-    <td height="39" class="txt_view_pequeño" >Productos:</td>
-    <td width="91%"  ><? echo $productos_aso."<br>"; ?></td>
+    <td height="20" class="txt_view_pequeño" >Productos:</td>
+    <td width="20"  ><? echo $productos_aso."<br>"; ?></td>
   </tr>
   <tr>
     <td height="36" class="txt_view_pequeño">Dirección: </td>
@@ -119,7 +119,7 @@ $tabla = mysqli_fetch_array( $result );
  
 
 
-    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <table width="250" border="0" cellpadding="0" cellspacing="0">
     
   <tr>
     <td width="47" rowspan="2" valign="middle"><img src="img_asociados/<?php  echo($favicon_aso); ?>" width="45" height="45"></td>
