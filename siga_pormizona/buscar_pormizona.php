@@ -89,7 +89,7 @@ nav{
   flex-wrap: wrap;
   /* background-color: DodgerBlue; */ 
     width:100%;
-}
+ }
 .geolocalizacion > div {
    /* background-color: #f1f1f1; */
   width: 370px;
@@ -142,7 +142,7 @@ if(strlen($xfi)==0){
 }
 
  if($xfi=="Z") { ?>
-      <div class="geolocalizacion">
+      <div class="geolocalizacionxxx">
        <br> 
          <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	            
               <h2 class="semi-titulosform_iz">Geolocalización</h2>
