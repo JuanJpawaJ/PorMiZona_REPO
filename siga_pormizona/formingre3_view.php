@@ -135,8 +135,13 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
 </div>
   
   
-  <br/>    
+  <br/>  
+  
+  <div class="exteriorform">
+   <div class="fondo_formulario">  
  <h2 class="semi-titulosform">FORMULARIO 01</h2>
+ 
+ 
                
    <form id="form1" name="form1" method="post" onsubmit="return checkSubmit();" action="areg_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
            <div class="campos_de_formulario">
