@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario1</title>
+    <title>Formu 3 - EDITA</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="fuentes.css">
     <link rel="stylesheet" href="estilos.css">
@@ -20,59 +20,48 @@ setlocale(LC_ALL, "sp");
 $id_aso = $_GET['xid'];
 
 
-$longitud = $_POST['longitude'];
-$latitud = $_POST['latitude'];
+$xlongitud = $_POST['longitude'];
+$xlatitud = $_POST['latitude'];
 //ÑÑÑ
 $result=mysqli_query($connec,"select * from asociado_51 where id='$id_aso'");
 $total=mysqli_num_rows($result);
 $tabla = mysqli_fetch_array( $result );
 
+$xid=$tabla["id"];
+$cod_aso=$tabla["cod_aso"];
 
-	$xid=$tabla["id"];
-	$cod_aso=$tabla["cod_aso"];
-	$pais_aso=$tabla["pais_aso"];
-	$rsocial_aso=$tabla["rsocial_aso"];
-	$direccion_aso=$tabla["direccion_aso"];
-	$distrito_aso=$tabla["distrito_aso"];
-	$provincia_aso=$tabla["provincia_aso"];
-	$estado_aso=$tabla["estado_aso"];
-	$referencia_aso=$tabla["referencia_aso"];
-	$telf1_aso=$tabla["telf1_aso"];
-	$telf2_aso=$tabla["telf2_aso"];
-	$email_aso=$tabla["email_aso"];
-	$date_aso=$tabla["date_aso"];
-	$categoria_aso=$tabla["categoria_aso"];
-	$productos_aso=$tabla["productos_aso"];
-	$favicon_aso=$tabla["favicon_aso"];
-	if(strlen($favicon_aso)==0) {
-		$favicon_aso="f_dencuentro_bl.jpg";
-	}
-	$latitud_aso=$tabla["latitud_aso"];
-	$longitud_aso=$tabla["longitud_aso"];
-	$latitud=$latitud_aso;
-	$longitud=$longitud_aso;
-
-    $usua_aso=$tabla["usua_aso"];
-	$pass_aso=$tabla["pass_aso"];
-
-
-
- $distrito_aso=$tabla["distrito_aso"];
- $provincia_aso=$tabla["provincia_aso"];
- $estado_aso=$tabla["estado_aso"];
- $referencia_aso=$tabla["referencia_aso"];
- $telf1_aso=$tabla["telf1_aso"];
- $telf2_aso=$tabla["telf2_aso"];
-// $categoria_aso=$tabla["categoria_aso"];
-  $productos_aso=$tabla["productos_aso"];
-// $favicon_aso=$tabla["favicon_aso"];
-// $publicidad_aso=$tabla["publicidad_aso"];
-
-
-
-
-//ÑÑÑ
-
+$pais_aso=$tabla['pais_aso'];
+$rsocial_aso=$tabla['rsocial_aso'];
+$direccion_aso=$tabla['direccion_aso'];
+$distrito_aso=$tabla['distrito_aso'];
+$provincia_aso=$tabla['provincia_aso'];
+$estado_aso=$tabla['estado_aso'];
+$referencia_aso=$tabla['referencia_aso'];
+$telf1_aso=$tabla['telf1_aso'];
+$telf2_aso=$tabla['telf2_aso'];
+$usua_aso=$tabla['usua_aso'];
+$pass_aso=$tabla['pass_aso'];
+$email_aso=$tabla['email_aso'];
+$categoria_aso=$tabla['categoria_aso'];
+$productos_aso=$tabla['productos_aso'];
+$latitud_aso=$tabla['latitud_aso'];
+$longitud_aso=$tabla['longitud_aso'];	
+$favicon_aso=$tabla["favicon_aso"];
+ if(strlen($favicon_aso)==0) {
+	$favicon_aso="f_pmz_bl.png";
+ }
+$date_aso=$tabla["$date_aso"];	
+$publicidad_aso=$tabla["$publicidad_aso"];	
+$grupolista_aso=$tabla["$grupolista_aso"];
+$img1_aso=$tabla["$img1_aso"];
+$img2_aso=$tabla["$img2_aso"];
+$logo_aso=$tabla["$logo_aso"];
+$view1_aso=$tabla["$view1_aso"];
+$view2_aso=$tabla["$view2_aso"];
+$view3_aso=$tabla["$view3_aso"];
+$view4_aso=$tabla["$view4_aso"];
+$msjpublico_aso=$tabla["$msjpublico_aso"];
+$obsinterno_aso=$tabla["$obsinterno_aso"];
 
 ?>
 <nav>
@@ -91,7 +80,12 @@ $tabla = mysqli_fetch_array( $result );
       <div class="cabecera1">
             <img src="imagenes/cabecera_formulario.jpg" width="700" height="85" class="iconos">
       </div>
-      <!-- inicio de boton obligatorio -->         
+  
+   <h2 class="semi-titulosform">FORMULARIO 00</h2>
+               
+   <form id="form0" name="form0" method="post" onsubmit="return checkSubmit();" action="areg_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
+   
+        <!-- inicio de boton obligatorio -->         
       <div class="geolocalizacion">
          <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	            
               <h2 class="semi-titulosform_iz">Paso 01: Geolocalización</h2> 
@@ -100,7 +94,7 @@ $tabla = mysqli_fetch_array( $result );
               </div>
               <br/>
          <? } ?>
-        <div> <a href="geo_mendoza2.html"><img src="imagenes/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
+        <div> <a href="geo_mendoza33.html"><img src="imagenes/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
         </div>
         <div>
              <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
@@ -120,8 +114,31 @@ $tabla = mysqli_fetch_array( $result );
  		     <? } ?>
        </div>
    </div>   <!-- class="geolocalizacion"-->     
-    <!-- FIN DE boton obligatorio -->              
-   <form id="form1" name="form1" method="post" onsubmit="return checkSubmit();" action="areg_asocXX.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
+    <!-- FIN DE boton obligatorio -->            
+
+
+           <div class="campos_de_formulario">
+               <label>Crear una contraseña (Max.10 - Utilice símbolos, mayúsculas y minúsculas)</label>
+               <input type="text"  class="campo_texto" name="xpass" value="<?php echo($pass_aso); ?>"> 
+           </div>
+           <input type="hidden" name="xform" value="00"/> 
+           <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> > 
+           <input type="hidden" name="xlatitud" value=<? echo $latitud; ?> > 
+           <input type="hidden" name="xlongitud" value=<? echo $longitud; ?> > 
+
+           <div class="campo_boton">
+              <button class="boton_form">ENVIAR FORMULARIO 00</button>
+           </div>
+   
+           </form>
+  </div>
+</div>
+  
+  
+  <br/>    
+ <h2 class="semi-titulosform">FORMULARIO 01</h2>
+               
+   <form id="form1" name="form1" method="post" onsubmit="return checkSubmit();" action="areg_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
            <div class="campos_de_formulario">
               <label>Razon Social</label>
               <input type="text" class="campo_texto" name="xrsocial" value="<?php echo($rsocial_aso); ?>" onkeyup= "this.value=this.value.toUpperCase();"> 
@@ -160,54 +177,30 @@ $tabla = mysqli_fetch_array( $result );
                <label>Crear una contraseña (Max.10 - Utilice símbolos, mayúsculas y minúsculas)</label>
                <input type="text"  class="campo_texto" name="xpass" value="<?php echo($pass_aso); ?>"> 
            </div>
-           <input type="hidden" name="xpais" value="PERÚ"/> 
-           <input type="hidden" name="xlatitud" value=<? echo $latitud; ?> > 
-           <input type="hidden" name="xlongitud" value=<? echo $longitud; ?> > 
-           <input type="hidden" name="xestado" value=""/> 
-           <input type="hidden" name="xprovincia" value=""/> 
-           <input type="hidden" name="xdistrito" value=""/> 
-           <input type="hidden" name="xreferencia" value=""/> 
-           <input type="hidden" name="xtelf1" value=""/> 
-           <input type="hidden" name="xtelf2" value=""/> 
-           <input type="hidden" name="xproductos" value=""/> 
-           <input type="hidden" name="xfavicon" value=""/> 
+           <input type="hidden" name="xform" value="01"/> 
+           <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> > 
+
            <div class="campo_boton">
-              <button class="boton_form">ENVIAR FORMULARIO</button>
+              <button class="boton_form">ENVIAR FORMULARIO 01</button>
            </div>
    
            </form>
   </div>
 </div>
 
+<br/>
 
-ñññññññññññññññññññññññññññññññññññññ
+ 
+ 
 <div class="exteriorform">
    <div class="fondo_formulario">
       <!-- inicio de boton obligatorio -->         
 
-    
-    <div class="lista">
+ <h2 class="semi-titulosform">FORMULARIO 02</h2>
+ 
+ <br/>   
 
-    <table width="100%" border="0" cellpadding="0" cellspacing="0">
-    
-  <tr>
-    <td width="47" rowspan="2" valign="middle"><img src="img_asociados/<?php  echo($favicon_aso); ?>" width="45" height="45"></td>
-    <td width="226" class="busrazon"><?php  echo("  ".$rsocial_aso); ?></td>
-    <td width="64" rowspan="2" class="busdireccion"><?php  echo($direccion_aso); ?></td>
-  </tr>
-  <tr>
-    <td valign="middle" class="busproductos"><?php  echo($productos_aso); ?></td>
-    </tr>
-  <tr>
-    <td width="47">&nbsp;</td>
-    <td colspan="2" class="busraya">--------------------------------------------------------------------------------------------</td>
-    </tr>
-   
-    </table>
-
-  </a></div>
-
-          <form id="form1" name="form1" method="post" onsubmit="return checkSubmit();" action="upd2_asocXX.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
+          <form id="form2" name="form2" method="post" onsubmit="return checkSubmit();" action="areg_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
 
   
                <div class="campos_de_formulario">
@@ -260,12 +253,11 @@ $tabla = mysqli_fetch_array( $result );
                 
                <!-- <a href="img_asociados/n_subir_xfile.php?xcod=<? echo $cod_aso; ?>">favicon</a>  -->
             <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> > 
+            <input type="hidden" name="xform" value="02"/> 
                 
-                
-                
-                
+               
                     <div class="campo_boton">
-                    <button class="boton_form">ENVIAR FORMULARIO</button>
+                    <button class="boton_form">ENVIAR FORMULARIO 02</button>
                     </div>
             </form>
 </div>
@@ -273,7 +265,7 @@ $tabla = mysqli_fetch_array( $result );
 
 
 
-ññññññññññññññññññññ
+
     <footer>
         <div class="footer_clientes footer_uno">
             <article class="footer_article">
