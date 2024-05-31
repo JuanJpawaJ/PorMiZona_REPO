@@ -22,6 +22,7 @@ $id_aso = $_GET['xid'];
 
 $xlongitud = $_POST['longitude'];
 $xlatitud = $_POST['latitude'];
+
 //ÑÑÑ
 $result=mysqli_query($connec,"select * from asociado_51 where id='$id_aso'");
 $total=mysqli_num_rows($result);
@@ -87,29 +88,29 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
    
         <!-- inicio de boton obligatorio -->         
       <div class="geolocalizacion">
-         <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	            
-              <h2 class="semi-titulosform_iz">¿Desea cambiar? Geolocalización</h2> 
-              <div class="titobligatorio">
-                  Es obligatorio reconocer su Geolocalización. Use un equipo móvil para ser más exacto. 
-              </div>
-              <br/>
-         <? } ?>
-        <div> <a href="geo_mendoza33.html"><img src="imagenes/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
-        </div>
-        <div>
-             <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
+           <h2 class="semi-titulosform_iz">¿Desea cambiar? Geolocalización</h2> 
+           <div class="titobligatorio">
+                Si desea cambiar la Geolocalización, utilice un equipo móvil para ser más exacto. 
+           </div>
+           <br/>
+           <div> <a href="geo_mendoza33.html"><img src="imagenes/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
+           </div>
+                           
+           <div>
+             <? if(strlen($xlongitud)==0 OR strlen($xlatitud)==0){	?>	
+                    
                   <div class="campo_de_posicion edit_lat">		  
-	 	           SU LATITUD ES:  <img src="imagenes/alerta.png" width="25" height="22"> <br>
+	 	           SU LATITUD REGISTRADA ES: <? echo $latitud_aso; ?>  <br>
                   </div>
                   <div class="campo_de_posicion edit_long">
-	               SU LONGITUD ES:  <img src="imagenes/alerta.png" width="25" height="22"> <br>
+	               SU LONGITUD REGISTRADA ES: <? echo $longitud_aso; ?>  <br>
                   </div>
              <? } else { ?>
                   <div class="campo_de_posicion edit_lat">	
-			        SU LATITUD ES: <? echo $latitud; ?> <br>
+			        SU NUEVA LATITUD ES: <? echo $xlatitud; ?> <br>
                   </div>
                   <div class="campo_de_posicion edit_long">
-			        SU LONGITUD ES: <? echo $longitud; ?> <br>
+			        SU NUEVA LONGITUD ES: <? echo $xlongitud; ?> <br>
                   </div>
  		     <? } ?>
        </div>
@@ -119,8 +120,8 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
 
           <input type="hidden" name="xform" value="00"/> 
            <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> > 
-           <input type="hidden" name="xlatitud" value=<? echo $latitud; ?> > 
-           <input type="hidden" name="xlongitud" value=<? echo $longitud; ?> > 
+           <input type="hidden" name="xlatitud" value=<? echo $xlatitud; ?> > 
+           <input type="hidden" name="xlongitud" value=<? echo $xlongitud; ?> > 
 
            <div class="campo_boton">
               <button class="boton_form">ENVIAR FORMULARIO 00</button>
