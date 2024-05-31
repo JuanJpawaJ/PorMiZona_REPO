@@ -117,11 +117,7 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
     <!-- FIN DE boton obligatorio -->            
 
 
-           <div class="campos_de_formulario">
-               <label>Crear una contraseña (Max.10 - Utilice símbolos, mayúsculas y minúsculas)</label>
-               <input type="text"  class="campo_texto" name="xpass" value="<?php echo($pass_aso); ?>"> 
-           </div>
-           <input type="hidden" name="xform" value="00"/> 
+          <input type="hidden" name="xform" value="00"/> 
            <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> > 
            <input type="hidden" name="xlatitud" value=<? echo $latitud; ?> > 
            <input type="hidden" name="xlongitud" value=<? echo $longitud; ?> > 
