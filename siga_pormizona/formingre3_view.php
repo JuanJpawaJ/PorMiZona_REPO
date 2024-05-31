@@ -88,9 +88,9 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
         <!-- inicio de boton obligatorio -->         
       <div class="geolocalizacion">
          <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	            
-              <h2 class="semi-titulosform_iz">Paso 01: Geolocalización</h2> 
+              <h2 class="semi-titulosform_iz">¿Desea cambiar? Geolocalización</h2> 
               <div class="titobligatorio">
-                  Es obligatorio reconocer su Geolocalización. Si usa un móvil, recuerde activar su ubicación 
+                  Es obligatorio reconocer su Geolocalización. Use un equipo móvil para ser más exacto. 
               </div>
               <br/>
          <? } ?>
