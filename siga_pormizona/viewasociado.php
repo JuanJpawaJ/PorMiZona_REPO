@@ -138,7 +138,7 @@ $tabla = mysqli_fetch_array( $result );
         <td colspan="2" align="center" bgcolor="#0099CC"><? echo $email_aso."<br>"; ?> <? echo $estado_aso." - ".$pais_aso."<br>"; ?> <? echo "<br>"; ?> <? echo $cod_aso." - ".$date_aso."<br>"; ?> <? echo "la: ".$latitud_aso." lo: ".$longitud_aso."<br>"; ?></td>
       </tr>
       <tr>
-        <td colspan="2">Acceso solo a propietarios:<a href="ingre.php?xid=<? echo ($xid);?>&xiclave=SI"><img src="imagenes/bot_soypropietario.png" width="156" height="23" style="border:0;" onMouseOver="this.style.border='solid  2px #FFFFFF';" onMouseOut="this.style.border=0;" border="0"></a></td>
+        <td colspan="2">Acceso solo a propietarios:<a href="ingre.php?xcod=<? echo ($cod_aso);?>&xiclave=SI"><img src="imagenes/bot_soypropietario.png" width="156" height="23" style="border:0;" onMouseOver="this.style.border='solid  2px #FFFFFF';" onMouseOut="this.style.border=0;" border="0"></a></td>
  
       </tr>
       <tr>

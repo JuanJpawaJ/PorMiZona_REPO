@@ -17,12 +17,12 @@ mysqli_set_charset($connec,'utf8');
 date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
-$id_aso = $_POST['xid'];
+$cod_aso = $_POST['xcod'];
 $xlongitud = $_POST['longitude'];
 $xlatitud = $_POST['latitude'];
 
 //ÑÑÑ
-$result=mysqli_query($connec,"select * from asociado_51 where id='$id_aso'");
+$result=mysqli_query($connec,"select * from asociado_51 where cod_aso='$cod_aso'");
 $total=mysqli_num_rows($result);
 $tabla = mysqli_fetch_array( $result );
 

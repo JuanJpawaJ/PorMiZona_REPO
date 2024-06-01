@@ -20,7 +20,7 @@ mysqli_set_charset($connec,'utf8');
 date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
-$id_aso = $_GET['xid'];
+$cod_aso = $_GET['xcod'];
 $iclave= $_GET['xiclave'];
 
 $xusuario= $_GET['xusuario'];
@@ -67,19 +67,19 @@ if ($iclave=="SI") { ?>
 </div>
 <? } else {
 
-$result=mysqli_query($connec,"select * from asociado_51 where id='$id_aso'");
+$result=mysqli_query($connec,"select * from asociado_51 where cod_aso='$cod_aso'");
 $total=mysqli_num_rows($result);
 $tabla = mysqli_fetch_array( $result );
 
 $usua_aso=$tabla['usua_aso'];
 $pass_aso=$tabla['pass_aso'];
-//echo ("tabla usua_aso : ".$usua_aso);
-//echo ("tabla pass_aso : ".$pass_aso);
+echo ("tabla usua_aso : ".$usua_aso);
+echo ("tabla pass_aso : ".$pass_aso);
 
 if ($usua_aso==$xusuario AND  $pass_aso==$xclave) { ?>
       </div>
       <form id="form0" name="form0" method="post" onsubmit="return checkSubmit();" action="formingre3_view.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
-         <input type="hidden" name="xid" value=<? echo $id_aso; ?> >
+         <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> >
          <div class="campo_botonin">
               <button class="boton_form"> ¡TENGA CUIDADO AL REALIZAR MODIFICACIONES!</button>
          </div>
