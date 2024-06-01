@@ -23,6 +23,11 @@ setlocale(LC_ALL, "sp");
 
 $id_aso = $_GET['xid'];
 $iclave= $_GET['xiclave'];
+
+
+$xusuario= $_GET['xusuario'];
+$xclave= $_GET['xclave'];
+
 echo (" en ingre el idddddd ".$id_aso."<br>");
 echo (" en ingre el iclave ".$iclave."<br>");
 
