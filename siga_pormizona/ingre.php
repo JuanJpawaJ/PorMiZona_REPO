@@ -24,14 +24,17 @@ setlocale(LC_ALL, "sp");
 $id_aso = $_GET['xid'];
 $iclave= $_GET['xiclave'];
 
-
 $xusuario= $_GET['xusuario'];
 $xclave= $_GET['xclave'];
 
-echo (" en ingre el idddddd ".$id_aso."<br>");
+echo (" en ingre el id_aso ".$id_aso."<br>");
 echo (" en ingre el iclave ".$iclave."<br>");
 
-if ($iclave="SI") { ?>
+echo (" en ingre el xusuario ".$xusuario."<br>");
+echo (" en ingre el xclave ".$xclave."<br>");
+
+
+if ($iclave=="SI") { ?>
 
 
 <div class="exteriorform">
