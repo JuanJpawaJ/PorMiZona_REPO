@@ -22,10 +22,10 @@ if      ($form=="00") {
    $latitud_aso=$_POST['xlatitud'];
    $longitud_aso=$_POST['xlongitud'];	
    
-   echo ("form :").$form;
-   echo ("cod :").$cod;
-   echo ("lati :").$latitud_aso;
-   echo ("long :").$longitud_aso;
+  // echo ("form :").$form;
+  // echo ("cod :").$cod;
+  // echo ("lati :").$latitud_aso;
+  // echo ("long :").$longitud_aso;
    
    $sql="UPDATE asociado_51 SET latitud_aso='$latitud_aso',longitud_aso='$longitud_aso' WHERE cod_aso=$cod";
    $result=mysqli_query($connec,$sql);
@@ -88,28 +88,6 @@ $obsinterno_aso=" ";
 		
 }
 
- 
-
-
-echo "pais :".$pais_aso."<br>";
-echo "rsoc :".$rsocial_aso."<br>";
-echo "dire :".$direccion_aso."<br>";
-echo "dist :".$distrito_aso."<br>";
-echo "prov :".$provincia_aso."<br>";
-echo "esta :".$estado_aso."<br>";
-echo "refe :".$referencia_aso."<br>";
-echo "tel1 :".$telf1_aso."<br>";
-echo "tel2 :".$telf2_aso."<br>";
-echo "pass :".$pass_aso."<br>";
-echo "pass :".$usua_aso."<br>";
-echo "emai :".$email_aso."<br>";
-echo "cate :".$categoria_aso."<br>";
-echo "pod  :".$productos_aso."<br>";
-echo "lati :".$latitud_aso."<br>";
-echo "long :".$longitud_aso."<br>";
-echo "date :".$date_aso."<br>";
-echo "favi :".$favicon_aso."<br>";
-echo "publi :".$publicidad_aso."<br>";
 
 
 	
@@ -119,9 +97,9 @@ mysqli_close($connec);
 <table width="363" border="0">
   <tr bgcolor="#F8DA94">
 <? if ($retorna=="ERROR") {  ?>
-    <th scope="col"><div align="center"><a href="formingre1.php?id=<?php  echo($idid); ?>">ERROR RETORNAR</a></div></th>
+    <th scope="col"><div align="center"><a href="viewasociado.php?xcod=<?php  echo($cod); ?>">ERROR RETORNAR</a></div></th>
 <? } else { ?>
-    <th scope="col" class="semi-titulosform"><div align="center"><a href="viewasociado.php?xcod=<?php  echo($cod_aso); ?>">CONTINUAR CON EL PASO 3</a></div></th>
+    <th scope="col" class="semi-titulosform"><div align="center"><a href="viewasociado.php?xcod=<?php  echo($cod); ?>">SU DATOS DE REGISTRARON </a></div></th>
 <? } ?>
   </tr>
 </table>
