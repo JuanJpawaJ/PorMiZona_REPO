@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Geo Localización 3</title>
 
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 <script>
+
+const xcodValue = document.querySelector('[name="xcod"]').value;
 
 $(document).ready(function(){
     if (navigator.geolocation) {
@@ -22,12 +25,13 @@ function showLocation(position) {
 	
     var latitude = position.coords.latitude;
 	var longitude = position.coords.longitude;
+	var xcod = xcodValue;
 	
 	$.ajax({
 		type:'POST',
 		url:'formingre3_view.php', 
 		// getLocation.php',
-		data:'latitude='+latitude+'&longitude='+longitude,
+		data:'latitude='+latitude+'&longitude='+longitude+'&xcod='+xcodValue,
 		success:function(msg){
             if(msg){
                $("#location").html(msg);
