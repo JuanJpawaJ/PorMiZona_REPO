@@ -23,16 +23,18 @@ setlocale(LC_ALL, "sp");
 
 $id_aso = $_GET['xid'];
 $iclave= $_GET['xiclave'];
+echo (" en ingre el idddddd ".$id_aso."<br>");
+echo (" en ingre el iclave ".$iclave."<br>");
 
 if ($iclave="SI") { ?>
-//echo (" en ingre el idddddd ".$id_aso."<br>");
+
 
 <div class="exteriorform">
   <div class="fondo_formulario">
       <div class="cabecera1">
         <img src="imagenes/cabecera_formulario.jpg"  class="iconos">
       </div>
-      <form id="form1" name="form1" method="post" onsubmit="return checkSubmit();" action="ingre.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
+      <form id="form1" name="form1" method="GET" onsubmit="return checkSubmit();" action="ingre.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
          <h2 class="semi-titulosform">INGRESE USUARIO Y CLAVE</h2>
          <div class="campos_de_formularioin">
               <label>Usuario</label>
