@@ -10,7 +10,8 @@
 
 <script>
 
-const xcodValue = document.querySelector('[name="xcod"]').value;
+
+  var xcodValue = document.getElementById("xcod").value;
 
 $(document).ready(function(){
     if (navigator.geolocation) {
@@ -25,7 +26,7 @@ function showLocation(position) {
 	
     var latitude = position.coords.latitude;
 	var longitude = position.coords.longitude;
-	var xcod = xcodValue;
+
 	
 	$.ajax({
 		type:'POST',
