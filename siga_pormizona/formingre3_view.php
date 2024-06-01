@@ -17,8 +17,8 @@ mysqli_set_charset($connec,'utf8');
 date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
-$id_aso = $_GET['xid'];
-
+$xusuario = $_POST['xusuario'];
+$xclave = $_POST['xclave'];
 
 $xlongitud = $_POST['longitude'];
 $xlatitud = $_POST['latitude'];
@@ -27,6 +27,11 @@ $xlatitud = $_POST['latitude'];
 $result=mysqli_query($connec,"select * from asociado_51 where id='$id_aso'");
 $total=mysqli_num_rows($result);
 $tabla = mysqli_fetch_array( $result );
+
+$usua_aso=$tabla['usua_aso'];
+$pass_aso=$tabla['pass_aso'];
+if ($usua_aso==$xusuario AND  $pass_aso==$xclave) {
+
 
 $xid=$tabla["id"];
 $cod_aso=$tabla["cod_aso"];
@@ -40,8 +45,6 @@ $estado_aso=$tabla['estado_aso'];
 $referencia_aso=$tabla['referencia_aso'];
 $telf1_aso=$tabla['telf1_aso'];
 $telf2_aso=$tabla['telf2_aso'];
-$usua_aso=$tabla['usua_aso'];
-$pass_aso=$tabla['pass_aso'];
 $email_aso=$tabla['email_aso'];
 $categoria_aso=$tabla['categoria_aso'];
 $productos_aso=$tabla['productos_aso'];
@@ -264,8 +267,15 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
             </form>
 </div>
 </div>
+<? } else {  ?>
+  <table width="363" border="0">
+  <tr bgcolor="#F8DA94">
+    <th scope="col"><div align="center"><a href="buscar_pormizona.php">CUIDADO !! Tenemos registrado su IP !! - NO ESTA UD. REGISTRADO</a></div>
+    </th>
+  </tr>
+</table>
 
-
+<? }  ?>
 
 
     <footer>

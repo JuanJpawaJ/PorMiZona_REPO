@@ -29,11 +29,11 @@ $id_aso = $_GET['xid'];
       <div class="cabecera1">
         <img src="imagenes/cabecera_formulario.jpg"  class="iconos">
       </div>
-   <form id="form1" name="form1" method="get" onsubmit="return checkSubmit();" action="formingre3_view.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
+   <form id="form1" name="form1" method="post" onsubmit="return checkSubmit();" action="formingre3_view.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
            <h2 class="semi-titulosform">INGRESE USUARIO Y CLAVE</h2>
       <div class="campos_de_formularioin">
               <label>Usuario</label>
-              <input type="text" class="campo_textoin" name="xusuario"  onkeyup= "this.value=this.value.toUpperCase();"> 
+              <input type="text" class="campo_textoin" name="xusuario"  > 
            </div>
            <!--  <h2 class="semi-titulos">UBICACIÓN</h2> -->
       <div class="campos_de_formularioin">
