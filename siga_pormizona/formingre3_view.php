@@ -28,8 +28,6 @@ $tabla = mysqli_fetch_array( $result );
 
 $usua_aso=$tabla['usua_aso'];
 $pass_aso=$tabla['pass_aso'];
-echo ("tabla usua_aso : ".$usua_aso);
-echo ("tabla pass_aso : ".$pass_aso);
 
 
 $xid=$tabla["id"];
