@@ -5,13 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Geo Localización 3</title>
 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 <script>
-
-
- 
 
 $(document).ready(function(){
     if (navigator.geolocation) {
@@ -21,12 +17,11 @@ $(document).ready(function(){
     }
 });
 
-
 function showLocation(position) {
 	
     var latitude = position.coords.latitude;
 	var longitude = position.coords.longitude;
- var xcodValue = document.getElementById("xcod").value;
+ 
 	
 	$.ajax({
 		type:'POST',
