@@ -19,7 +19,8 @@ setlocale(LC_ALL, "sp");
 
 $xusuario = $_POST['xusuario'];
 $xclave = $_POST['xclave'];
-
+echo ("recibe UUSSSUUUAAARRRIIIOOOO : ".$xusuario);
+echo ("recibe cccllllaaaaavvvveeee : ".$xclave);
 $xlongitud = $_POST['longitude'];
 $xlatitud = $_POST['latitude'];
 
@@ -30,6 +31,9 @@ $tabla = mysqli_fetch_array( $result );
 
 $usua_aso=$tabla['usua_aso'];
 $pass_aso=$tabla['pass_aso'];
+echo ("tabla usua_aso : ".$usua_aso);
+echo ("tabla pass_aso : ".$pass_aso);
+
 if ($usua_aso==$xusuario AND  $pass_aso==$xclave) {
 
 
