@@ -79,7 +79,7 @@ if ($usua_aso==$xusuario AND  $pass_aso==$xclave) { ?>
     </form>
   </div>
 
-} else { ?>
+<? } else { ?>
   <table width="363" border="0">
   <tr bgcolor="#F8DA94">
     <th scope="col"><div align="center"><a href="buscar_pormizona.php">CUIDADO !! Tenemos registrado su IP !! - NO ESTA UD. REGISTRADO</a></div>
