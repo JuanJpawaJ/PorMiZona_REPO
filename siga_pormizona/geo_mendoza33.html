@@ -27,7 +27,7 @@ function showLocation(position) {
 		type:'POST',
 		url:'formingre3_view.php', 
 		// getLocation.php',
-		data:'latitude='+latitude+'&longitude='+longitude+'&xcod='+xcodValue,
+		data:'latitude='+latitude+'&longitude='+longitude,
 		success:function(msg){
             if(msg){
                $("#location").html(msg);
