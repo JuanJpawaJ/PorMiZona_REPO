@@ -18,10 +18,10 @@
 <? 
 $id_aso = $_GET['xid'];
 
-echo (" en ingre el idddddd ".$id_aso."<br>");
-echo " en ingre el idddddd ".$id_aso."<br>";
-echo " en ingre el idddddd ".$id_aso."<br>";
-echo " en ingre el idddddd ".$id_aso."<br>";
+//echo (" en ingre el idddddd ".$id_aso."<br>");
+//echo " en ingre el idddddd ".$id_aso."<br>";
+//echo " en ingre el idddddd ".$id_aso."<br>";
+//echo " en ingre el idddddd ".$id_aso."<br>";
 
 ?>
 <div class="exteriorform">
@@ -30,7 +30,7 @@ echo " en ingre el idddddd ".$id_aso."<br>";
         <img src="imagenes/cabecera_formulario.jpg"  class="iconos">
       </div>
    <form id="form1" name="form1" method="get" onsubmit="return checkSubmit();" action="formingre3_view.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
-           <h2 class="semi-titulosform">Paso 02: Ingreso de datos</h2>
+           <h2 class="semi-titulosform">INGRESE USUARIO Y CLAVE</h2>
       <div class="campos_de_formularioin">
               <label>Usuario</label>
               <input type="text" class="campo_textoin" name="xusuario"  onkeyup= "this.value=this.value.toUpperCase();"> 
@@ -49,8 +49,7 @@ echo " en ingre el idddddd ".$id_aso."<br>";
            </div>
    <div>
   Si dese realizar alguna consulta comunicarse con:
-Consulta: consultas@dencuentro.com
-Solo para propietarios: asociados@dencuentro.com
+Consulta: 959956000 Solo para propietarios.
 
 Este formulario SI, es SEGURO. Gracias
  </div>
