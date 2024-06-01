@@ -17,12 +17,7 @@ mysqli_set_charset($connec,'utf8');
 date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
-$xusuario = $_POST['xusuario'];
-$xclave = $_POST['xclave'];
 $id_aso = $_POST['xid'];
-
-echo ("recibe UUSSSUUUAAARRRIIIOOOO : ".$xusuario);
-echo ("recibe cccllllaaaaavvvveeee : ".$xclave);
 $xlongitud = $_POST['longitude'];
 $xlatitud = $_POST['latitude'];
 
@@ -35,8 +30,6 @@ $usua_aso=$tabla['usua_aso'];
 $pass_aso=$tabla['pass_aso'];
 echo ("tabla usua_aso : ".$usua_aso);
 echo ("tabla pass_aso : ".$pass_aso);
-
-if ($usua_aso==$xusuario AND  $pass_aso==$xclave) {
 
 
 $xid=$tabla["id"];
@@ -273,15 +266,6 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
             </form>
 </div>
 </div>
-<? } else {  ?>
-  <table width="363" border="0">
-  <tr bgcolor="#F8DA94">
-    <th scope="col"><div align="center"><a href="buscar_pormizona.php">CUIDADO !! Tenemos registrado su IP !! - NO ESTA UD. REGISTRADO</a></div>
-    </th>
-  </tr>
-</table>
-
-<? }  ?>
 
 
     <footer>

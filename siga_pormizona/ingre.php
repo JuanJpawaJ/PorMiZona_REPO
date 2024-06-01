@@ -2,16 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Su ingreso</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario1</title>
-<!--    <link rel="stylesheet" href="normalize.css">
+    <title>Usuario - Clave</title>
+   <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="fuentes.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="estilos-footer.css">
     <link rel="icon" href="imagenes/dencuentro.ico" /> 
--->
+
 </head>
 
 <body>
@@ -27,11 +26,11 @@ $iclave= $_GET['xiclave'];
 $xusuario= $_GET['xusuario'];
 $xclave= $_GET['xclave'];
 
-echo (" en ingre el id_aso ".$id_aso."<br>");
-echo (" en ingre el iclave ".$iclave."<br>");
+//echo (" en ingre el id_aso ".$id_aso."<br>");
+//echo (" en ingre el iclave ".$iclave."<br>");
 
-echo (" en ingre el xusuario ".$xusuario."<br>");
-echo (" en ingre el xclave ".$xclave."<br>");
+//echo (" en ingre el xusuario ".$xusuario."<br>");
+//echo (" en ingre el xclave ".$xclave."<br>");
 
 
 if ($iclave=="SI") { ?>
@@ -59,8 +58,8 @@ if ($iclave=="SI") { ?>
               <button class="boton_form">INGRESAR</button>
          </div>
          <div>
-           Si dese realizar alguna consulta comunicarse con:
-           Consulta: 959956000 Solo para propietarios.
+           Si desea realizar alguna consulta comunicarse con:
+            959956000 - Solo para propietarios.
            Este formulario SI, es SEGURO. Gracias
          </div>         
     </form>
@@ -74,8 +73,8 @@ $tabla = mysqli_fetch_array( $result );
 
 $usua_aso=$tabla['usua_aso'];
 $pass_aso=$tabla['pass_aso'];
-echo ("tabla usua_aso : ".$usua_aso);
-echo ("tabla pass_aso : ".$pass_aso);
+//echo ("tabla usua_aso : ".$usua_aso);
+//echo ("tabla pass_aso : ".$pass_aso);
 
 if ($usua_aso==$xusuario AND  $pass_aso==$xclave) { ?>
       </div>
