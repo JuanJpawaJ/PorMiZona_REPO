@@ -21,6 +21,12 @@ $cod=$_POST['xcod'];
 if      ($form=="00") {
    $latitud_aso=$_POST['xlatitud'];
    $longitud_aso=$_POST['xlongitud'];	
+   
+   echo ("form :").$form;
+   echo ("cod :").$cod;
+   echo ("lati :").$latitud_aso;
+   echo ("long :").$longitud_aso;
+   
    $sql="UPDATE asociado_51 SET latitud_aso='$latitud_aso',longitud_aso='$longitud_aso' WHERE cod_aso=$cod";
    $result=mysqli_query($connec,$sql);
    if($result){
