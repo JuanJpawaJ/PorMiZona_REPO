@@ -19,6 +19,8 @@ setlocale(LC_ALL, "sp");
 
 $xusuario = $_POST['xusuario'];
 $xclave = $_POST['xclave'];
+$id_aso = $_POST['xid'];
+
 echo ("recibe UUSSSUUUAAARRRIIIOOOO : ".$xusuario);
 echo ("recibe cccllllaaaaavvvveeee : ".$xclave);
 $xlongitud = $_POST['longitude'];
