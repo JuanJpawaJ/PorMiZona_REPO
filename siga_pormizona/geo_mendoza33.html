@@ -21,13 +21,13 @@ function showLocation(position) {
 	
     var latitude = position.coords.latitude;
 	var longitude = position.coords.longitude;
-
+    var xcodValue = document.getElementById("xcod").value;
 	
 	$.ajax({
 		type:'POST',
 		url:'formingre3_view.php', 
 		// getLocation.php',
-		data:'latitude='+latitude+'&longitude='+longitude,
+		data:'latitude='+latitude+'&longitude='+longitude+'&xcodValue='+xcodValue,
 		success:function(msg){
             if(msg){
                $("#location").html(msg);

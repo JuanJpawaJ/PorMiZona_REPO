@@ -18,6 +18,7 @@ date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
 $cod_aso = $_POST['xcod'];
+$xcodvalue = $_POST['codValue'];
 $xlongitud = $_POST['longitude'];
 $xlatitud = $_POST['latitude'];
 
