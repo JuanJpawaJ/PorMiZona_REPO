@@ -26,11 +26,11 @@ $iclave= $_GET['xiclave'];
 $xusuario= $_GET['xusuario'];
 $xclave= $_GET['xclave'];
 
-//echo (" en ingre el id_aso ".$id_aso."<br>");
-//echo (" en ingre el iclave ".$iclave."<br>");
+echo (" en ingre el cod_aso ".$cod_aso."<br>");
+echo (" en ingre el iclave ".$iclave."<br>");
 
-//echo (" en ingre el xusuario ".$xusuario."<br>");
-//echo (" en ingre el xclave ".$xclave."<br>");
+echo (" en ingre el xusuario ".$xusuario."<br>");
+echo (" en ingre el xclave ".$xclave."<br>");
 
 
 if ($iclave=="SI") { ?>
@@ -52,7 +52,7 @@ if ($iclave=="SI") { ?>
               <label>Clave</label>
               <input type="password" class="campo_textoin" name="xclave" > 
          </div>
-         <input type="hidden" name="xid" value=<? echo $id_aso; ?> >
+         <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> >
          <input type="hidden" name="xiclave" value="NO" />
          <div class="campo_botonin">
               <button class="boton_form">INGRESAR</button>
