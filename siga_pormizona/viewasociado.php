@@ -9,6 +9,36 @@
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="estilos-footer.css">
     <link rel="icon" href="imagenes/dencuentro.ico" /> 
+<style type="text/css">
+.blanco {
+	color: #FFF;
+}
+.LOGO {
+	color: #0000FF;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+}
+.text_tabla_zonas {
+	font-family: "Times New Roman", Times, serif;
+}
+.TITU_TABLA_ZONAS {
+	font-size: 11px;
+	font-weight: bold;
+}
+.tit_espacios {
+	font-family: "Comic Sans MS", cursive;
+	color: #00C;
+	font-size: 14px;
+}
+.txt_espacios {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 14px;
+}</style>
+    
+    
+    
+    
 </head>
 <body>
 <?    
@@ -32,6 +62,7 @@ $cod_aso = $_GET['xcod'];
 <div class="barra_titulo">
      <h2>           *Nuestro asociado:</h2>
 </div>
+<span class="busraya">
 <?
 $result=mysqli_query($connec,"select * from asociado_51 where cod_aso='$cod_aso'");
 $total=mysqli_num_rows($result);
@@ -52,6 +83,7 @@ $tabla = mysqli_fetch_array( $result );
 	$email_aso=$tabla["email_aso"];
 	$date_aso=$tabla["date_aso"];
 	$categoria_aso=$tabla["categoria_aso"];
+	$logo_aso=$tabla["logo_aso"];
 
     $resultaso=mysqli_query($connec,"SELECT * FROM categoria   where cod_cat='$categoria_aso'");
 	$tablaaso =mysqli_fetch_array( $resultaso );
@@ -80,6 +112,7 @@ $tabla = mysqli_fetch_array( $result );
 // $favicon_aso=$tabla["favicon_aso"];
 // $publicidad_aso=$tabla["publicidad_aso"];
 ?>
+</span>
 
 
 
@@ -89,7 +122,16 @@ $tabla = mysqli_fetch_array( $result );
       </tr>
       <tr>
         <td width="110" height="102">FAVICON</td>
-        <td width="677">LOGO</td>
+        <td width="677">
+     <?    
+  	if(strlen($logo_aso)==0) { ?>
+       <span class="LOGO"><? echo ($rsocial_aso); ?></span>		
+<? 	}else{ ?>
+       <img src=" <?php echo "img_asociados/".$logo_aso ?> " width="100" height="50" />
+<?  } ?>  
+        
+        
+        </td>
       </tr>
       <tr>
         <td height="344" colspan="2"><p>&nbsp;</p>
