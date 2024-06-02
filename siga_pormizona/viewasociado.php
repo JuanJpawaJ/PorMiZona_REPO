@@ -127,7 +127,9 @@ $tabla = mysqli_fetch_array( $result );
 	 
 	 echo "LOOOGGGOOO_AAASSSO :".$logo_aso; 
 	 
-  	if(strlen($logo_aso)==0) { ?>
+  	if(strlen($logo_aso)==0) { 
+ 	 echo "ESTOY DENTRO DEL IF :"; ?>
+   
        <span class="LOGO"><? echo ($rsocial_aso); ?></span>		
 <? 	}else{ ?>
        <img src=" <?php echo "img_asociados/".$logo_aso ?> " width="100" height="50" />
