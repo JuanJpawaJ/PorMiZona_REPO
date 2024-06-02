@@ -22,6 +22,10 @@ $xcodvalue = $_POST['xcodValue'];
 $xlongitud = $_POST['longitude'];
 $xlatitud = $_POST['latitude'];
 
+
+echo ("ESTES ES ELLLLLLLLLLLLLLLLLLLL cod_aso : ".$cod_aso);
+echo ("ESTES ES ELLLLLLLLLLLLLLLLLLLL xcodValue : ".$xcodvalue);
+
 //ÑÑÑ
 $result=mysqli_query($connec,"select * from asociado_51 where cod_aso='$cod_aso'");
 $total=mysqli_num_rows($result);
