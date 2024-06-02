@@ -13,7 +13,7 @@
 .blanco {
 	color: #FFF;
 }
-.LOGO {
+.logo_web {
 	color: #0000FF;
 	text-align: center;
 	font-weight: bold;
@@ -127,10 +127,10 @@ $tabla = mysqli_fetch_array( $result );
 	 
 	 echo "LOOOGGGOOO_AAASSSO :".$logo_aso; 
 	 
-  	if(strlen($logo_aso)==0) { 
+  	if(strlen(trim($logo_aso))==0) { 
  	 echo "ESTOY DENTRO DEL IF :"; ?>
    
-       <span class="LOGO"><? echo ($rsocial_aso); ?></span>		
+       <span class="logo_web"><? echo ($rsocial_aso); ?></span>		
 <? 	}else{ 
  
   	 echo "ESTOY DENTRO DEL ELLLSEEEE :"; ?>
