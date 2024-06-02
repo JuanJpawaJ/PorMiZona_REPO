@@ -6,7 +6,9 @@
 <title>Geo Localización 3</title>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 <script>
+
 $(document).ready(function(){
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showLocation);
@@ -15,40 +17,30 @@ $(document).ready(function(){
     }
 });
 
-function getParameterByName(name) {
-    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-        results = regex.exec(location.search);
-    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-}
-
 function showLocation(position) {
+	
     var latitude = position.coords.latitude;
-    var longitude = position.coords.longitude;
-    var xcodValue = getParameterByName('xcod');
+	var longitude = position.coords.longitude;
+    var xcodValue = document.getElementById("xcod").value;
+	
+	$.ajax({
+		type:'POST',
+		url:'formingre3_view.php', 
+		// getLocation.php',
+		data: 'latitude=' +latitude  + '&longitude=' + longitude + '&xcodValue=' + xcodValue,
+		
 
-    $.ajax({
-        type: 'POST',
-        url: 'formingre3_view.php',
-        data: {
-            latitude: latitude,
-            longitude: longitude,
-            xcodValue: xcodValue
-        },
-        success: function(msg) {
-            if(msg) {
-                $("#location").html(msg);
-            } else {
+		success:function(msg){
+            if(msg){
+               $("#location").html(msg);
+            }else{
                 $("#location").html('Not Available');
             }
-        }
-    });
+		}
+	});
+
 }
 </script>
-
-
-
-
 <!-- 
 <style type="text/css">
 	p{ border: 2px dashed #009755; width: auto; padding: 10px; font-size: 18px; border-radius: 5px; color: #FF7361;}
