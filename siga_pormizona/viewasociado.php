@@ -131,7 +131,10 @@ $tabla = mysqli_fetch_array( $result );
  	 echo "ESTOY DENTRO DEL IF :"; ?>
    
        <span class="LOGO"><? echo ($rsocial_aso); ?></span>		
-<? 	}else{ ?>
+<? 	}else{ 
+ 
+  	 echo "ESTOY DENTRO DEL ELLLSEEEE :"; ?>
+   
        <img src=" <?php echo "img_asociados/".$logo_aso ?> " width="100" height="50" />
 <?  } ?>  
         
