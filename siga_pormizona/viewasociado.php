@@ -123,7 +123,10 @@ $tabla = mysqli_fetch_array( $result );
       <tr>
         <td width="110" height="102">FAVICON</td>
         <td width="677">
-     <?    
+     <?   
+	 
+	 echo "LOOOGGGOOO_AAASSSO :".$logo_aso; 
+	 
   	if(strlen($logo_aso)==0) { ?>
        <span class="LOGO"><? echo ($rsocial_aso); ?></span>		
 <? 	}else{ ?>
