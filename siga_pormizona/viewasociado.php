@@ -16,11 +16,9 @@
 .logo_web {
 	color: #0000FF;
 	text-align: center;
-	font-weight: bold;
-	font-size: 24px;
-
+	font-size: 26px;
 	font-family: "Comic Sans MS", cursive;
-	
+	font-weight: bold;	
 }
 .text_tabla_zonas {
 	font-family: "Times New Roman", Times, serif;
@@ -101,6 +99,26 @@ $tabla = mysqli_fetch_array( $result );
 	}
 	$latitud_aso=$tabla["latitud_aso"];
 	$longitud_aso=$tabla["longitud_aso"];
+	
+$date_aso=$tabla["$date_aso"];	
+$publicidad_aso=$tabla["$publicidad_aso"];	
+$grupolista_aso=$tabla["$grupolista_aso"];
+$img1_aso=$tabla["$img1_aso"];
+	if(strlen($img1_aso)==0) {
+		$img1_aso="avi_pmz_bl.jpg";
+	}
+
+
+$img2_aso=$tabla["$img2_aso"];
+$logo_aso=$tabla["$logo_aso"];
+$view1_aso=$tabla["$view1_aso"];
+$view2_aso=$tabla["$view2_aso"];
+$view3_aso=$tabla["$view3_aso"];
+$view4_aso=$tabla["$view4_aso"];
+$msjpublico_aso=$tabla["$msjpublico_aso"];
+$obsinterno_aso=$tabla["$obsinterno_aso"];
+	
+	
 
 
 // $distrito_aso=$tabla["distrito_aso"];
@@ -119,35 +137,21 @@ $tabla = mysqli_fetch_array( $result );
 
 
 
-    <table width="800" height="846" border="1" align="center" cellpadding="1" cellspacing="1">
+    <table width="800" height="1368" border="1" align="center" cellpadding="1" cellspacing="1">
       <tr>
-        <td height="32" colspan="2" align="center" bgcolor="#0099CC"> <? echo $rsocial_aso ; ?>  &nbsp;</td>
+        <td width="787" height="32" colspan="2" align="center" bgcolor="#0099CC"> <? echo $rsocial_aso ; ?>  &nbsp;</td>
       </tr>
       <tr>
-        <td width="110" height="102" class="ñññ">FAVICON</td>
-        <td width="677">
-<?   
-  	if(strlen(trim($logo_aso))==0) { ?>
-       <span class="logo_web"><? echo ($rsocial_aso); ?></span>		
-<? 	}else{ ?>
-        <img src=" <?php echo "img_asociados/".$logo_aso ?> " width="100" height="50" />
-<?  } ?>  
-        
-        
-		
-		</td>
-      </tr>
-      <tr>
-        <td height="171" colspan="2" background="iconos/f_cabview.jpg" >
-		<table width="713" border="0" cellspacing="0" cellpadding="0">
+        <td height="142" colspan="2" align="center" valign="middle" background="iconos/f_cabview.jpg" >
+		<table width="772" border="0" cellspacing="0" cellpadding="0">
 		  <tr>
-		    <td width="150" height="84"
+		    <td width="166" height="84"
 			
                  rowspan="3" align="center" valign="middle"><img src="img_asociados/<? echo($favicon_aso); ?>" width="100" height="100">
 			
 					
 			</td>
-		    <td width="593">
+		    <td width="547">
 <?   
   	if(strlen(trim($logo_aso))==0) { ?>
        <span class="logo_web"><? echo ($rsocial_aso); ?></span>		
@@ -159,13 +163,10 @@ $tabla = mysqli_fetch_array( $result );
 			
 			</td>
 	      </tr>
-		  </table>
-	
-		
-		</td>
+		  </table></td>
       </tr>
       <tr>
-        <td height="172" colspan="2">&nbsp;</td>
+        <td height="481" colspan="2" align="center" valign="middle"><img src="<?php echo "img_asociados/".$img1_aso ?>" width="769" height="441"></td>
       </tr>
       <tr>
         <td height="344" colspan="2">&nbsp;</td>
