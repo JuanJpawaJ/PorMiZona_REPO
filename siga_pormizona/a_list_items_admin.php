@@ -239,13 +239,13 @@ if ($xdelreg=="SIDELREG") {
 
 if(strlen($bxproducto)==0){
 	if ($xgl=="SMRD") {
-        $result=mysqli_query($connec,"select * from asociado_51 order by producto_it");
+        $result=mysqli_query($connec,"select * from asociado_51 order by rsocial_aso");
 	}else{
-        $result=mysqli_query($connec,"select * from asociado_51 where grupolista_it like '%$xgl%' order by producto_it");
+        $result=mysqli_query($connec,"select * from asociado_51 where grupolista_it like '%$xgl%' order by rsocial_aso");
 	}
 } else {
 $bxproducto1=trim($bxproducto);
-$result=mysqli_query($connec,"select * from asociado_51 where producto_it like '%$bxproducto1%' order by producto_it");
+$result=mysqli_query($connec,"select * from asociado_51 where producto_it like '%$bxproducto1%' order by rsocial_aso");
 }
 
 
