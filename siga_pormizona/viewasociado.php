@@ -137,7 +137,7 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
 
 
 
-    <table width="800" height="1036" border="1" align="center" cellpadding="1" cellspacing="1">
+    <table width="800" height="1056" border="1" align="center" cellpadding="1" cellspacing="1">
       <tr>
         <td width="787" height="32" colspan="2" align="center" bgcolor="#0099CC"> <? echo $rsocial_aso ; ?>  &nbsp;</td>
       </tr>
@@ -166,10 +166,13 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
 		  </table></td>
       </tr>
       <tr>
-        <td height="481" colspan="2" align="center" valign="middle"><img src="<?php echo "img_asociados/".$img1_aso ?>" width="769" height="441"></td>
+        <td height="447" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC"><img src="<?php echo "img_asociados/".$img1_aso ?>" width="769" height="441"></td>
       </tr>
       <tr>
-        <td height="281" colspan="2" align="center" valign="middle"><table width="633" border="1" align="center" cellpadding="0" cellspacing="0">
+        <td height="53" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC" class="logo_web"><? echo $productos_aso."<br>"; ?></td>
+      </tr>
+      <tr>
+        <td height="281" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC"><table width="633" border="1" align="center" cellpadding="0" cellspacing="0">
 
 
   <tr>
@@ -202,7 +205,7 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
   </tr>
   <tr>
     <td height="32" class="txt_view_pequeño">Productos:</td>
-    <td ><? echo $productos_aso."<br>"; ?></td>
+    <td >&nbsp;</td>
   </tr>
 </table></td>
       </tr>
