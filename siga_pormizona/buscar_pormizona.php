@@ -336,7 +336,7 @@ while ($tabla=mysqli_fetch_array($result)){
 
             <table width="751" border="0" cellspacing="0" cellpadding="1">
               <tr>
-                 <td width="150" rowspan="3" align="center" valign="middle"><img src="img_asociados/f_pmz_bl.png" width="100" height="100"></td>
+                 <td width="150" rowspan="3" align="center" valign="middle"><img src="img_asociados/<? echo($favicon_aso); ?>" width="100" height="100"></td>
                  
                 <td width="418" height="41" align="left" bgcolor="#FFFFFF"><span class="rsocial"><?php echo($rsocial_aso) ?></span></td>
                 <td width="177" align="left" bgcolor="#FFFFFF"><span class="viewtexto"><?php echo($telf1_aso) ?></span></td>

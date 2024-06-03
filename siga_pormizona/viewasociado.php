@@ -126,9 +126,7 @@ $tabla = mysqli_fetch_array( $result );
       <tr>
         <td width="110" height="102" class="ñññ">FAVICON</td>
         <td width="677">
-     <?   
-	 
-	 
+<?   
   	if(strlen(trim($logo_aso))==0) { ?>
        <span class="logo_web"><? echo ($rsocial_aso); ?></span>		
 <? 	}else{ ?>
@@ -136,12 +134,41 @@ $tabla = mysqli_fetch_array( $result );
 <?  } ?>  
         
         
-        </td>
+		
+		</td>
       </tr>
       <tr>
-        <td height="344" colspan="2"><p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p></td>
+        <td height="171" colspan="2" background="iconos/f_cabview.jpg" >
+		<table width="713" border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+		    <td width="150" height="84"
+			
+                 rowspan="3" align="center" valign="middle"><img src="img_asociados/<? echo($favicon_aso); ?>" width="100" height="100">
+			
+					
+			</td>
+		    <td width="593">
+<?   
+  	if(strlen(trim($logo_aso))==0) { ?>
+       <span class="logo_web"><? echo ($rsocial_aso); ?></span>		
+<? 	}else{ ?>
+        <img src=" <?php echo "img_asociados/".$logo_aso ?> " width="300" height="50" />
+<?  } ?>  
+			
+			
+			
+			</td>
+	      </tr>
+		  </table>
+	
+		
+		</td>
+      </tr>
+      <tr>
+        <td height="172" colspan="2">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="344" colspan="2">&nbsp;</td>
       </tr>
       <tr>
         <td height="281" colspan="2" align="center" valign="middle"><table width="633" border="1" align="center" cellpadding="0" cellspacing="0">
