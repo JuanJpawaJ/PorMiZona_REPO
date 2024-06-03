@@ -239,13 +239,13 @@ if ($xdelreg=="SIDELREG") {
 
 if(strlen($bxproducto)==0){
 	if ($xgl=="SMRD") {
-        $result=mysqli_query($connec,"select * from a_items order by producto_it");
+        $result=mysqli_query($connec,"select * from asociado_51 order by producto_it");
 	}else{
-        $result=mysqli_query($connec,"select * from a_items where grupolista_it like '%$xgl%' order by producto_it");
+        $result=mysqli_query($connec,"select * from asociado_51 where grupolista_it like '%$xgl%' order by producto_it");
 	}
 } else {
 $bxproducto1=trim($bxproducto);
-$result=mysqli_query($connec,"select * from a_items where producto_it like '%$bxproducto1%' order by producto_it");
+$result=mysqli_query($connec,"select * from asociado_51 where producto_it like '%$bxproducto1%' order by producto_it");
 }
 
 
@@ -256,53 +256,64 @@ $total=mysqli_num_rows($result);
 
 while ($tabla=mysqli_fetch_array($result)){
 	
-		$id=$tabla["id"];
-		$codigo_it=$tabla["codigo_it"];
-		    $codfabrica_it=$tabla["codfabrica_it"];
-		$img_it=$tabla["img_it"];
-		$grupolista_it=$tabla["grupolista_it"];
-		$producto_it=$tabla["producto_it"];
-		$marka_it=$tabla["marka_it"];
-    		$fabricante_it=$tabla["fabricante_it"];
-		$precom_it=$tabla["precom_it"];
-		$pv01_it=$tabla["pv01_it"];
-        $util01=$pv01_it-$precom_it;
-		$pv02_it=$tabla["pv02_it"];
-		$pv03_it=$tabla["pv03_it"];
-		$view01_it=$tabla["view01_it"];
-		
-		if ($pv01_it<=$precom_it) { $color1="#FF0000";  } else {  $color1="#E4E4E4";  }
-		if ($pv02_it<=$precom_it) { $color2="#FF0000";  } else {  $color2="#E4E4E4";  }
-		if ($pv03_it<=$precom_it) { $color3="#FF0000";  } else {  $color3="#E4E4E4";  }
-        
-		//$lugar_al_it=$tabla["lugar_al_it"];	
-
-		//$monelista_it=$tabla["monelista_it"];
-        //if ($monelista_it=="S") {
-         //   $simbolo_mone="S/  ";
-		//} else {
-        //    $simbolo_mone="US$ ";
-		//}
+	$id=$tabla["id"];
+	$cod_aso=$tabla["cod_aso"];
+	
+	$pais_aso=$tabla["pais_aso"];
+	$rsocial_aso=$tabla["rsocial_aso"];
+	$direccion_aso=$tabla["direccion_aso"];
+	
+	$distrito_aso=$tabla["distrito_aso"];
+	$provincia_aso=$tabla["provincia_aso"];
+	$estado_aso=$tabla["estado_aso"];
+	
+	$referencia_aso=$tabla["referencia_aso"];
+	$telf1_aso=$tabla["telf1_aso"];
+	$telf2_aso=$tabla["telf2_aso"];
+	
+	$email_aso=$tabla["email_aso"];
+	$date_aso=$tabla["date_aso"];
+	
+	$categoria_aso=$tabla["categoria_aso"];
+	$productos_aso=$tabla["productos_aso"];
+	$latitud_aso=$tabla["latitud_aso"];
+	$longitud_aso=$tabla["longitud_aso"];
+	$favicon_aso=$tabla["favicon_aso"];
+	if(strlen($favicon_aso)==0) {
+		$favicon_aso="f_pmz_bl.png";
+	}
+	$logo_aso=$tabla["logo_aso"];
+$date_aso=$tabla["$date_aso"];	
+$publicidad_aso=$tabla["$publicidad_aso"];	
+$grupolista_aso=$tabla["$grupolista_aso"];
+$img1_aso=$tabla["$img1_aso"];
+$img2_aso=$tabla["$img2_aso"];
+$logo_aso=$tabla["$logo_aso"];
+$view1_aso=$tabla["$view1_aso"];
+$view2_aso=$tabla["$view2_aso"];
+$view3_aso=$tabla["$view3_aso"];
+$view4_aso=$tabla["$view4_aso"];
+$msjpublico_aso=$tabla["$msjpublico_aso"];
+$obsinterno_aso=$tabla["$obsinterno_aso"];
 
 ?>
       
       <tr bgcolor="#FFFFFF" class="tabla10">
         <td bgcolor="#FFFFFF"><?php echo($codigo_it) ?></td>
 
-        <td valign="middle" bgcolor="#FFFFFF">           <a href="ilbupweiv.php?idx=<?php  echo($id); ?>"><img src=" <?php echo "img_items/".$img_it ?> " width="60" height="%" /><? if ($pv03_it>0) {?> <img src="iconos/promocion.jpg" alt="EN OFERTA" width="14" height="30" /> <? } ?></a></td>
-        <td bgcolor="#FFFFFF"><?php echo($grupolista_it) ?></td>
-        <td bgcolor="#FFFFFF"><?php echo($producto_it) ?></td>
-        <td align="right" bgcolor="#FFFFFF"><?php echo($codfabrica_it) ?></td>
-        <td align="right" bgcolor="#FFFFFF"><?php echo($precom_it) ?></td>
-        <!--- <td align="right" bgcolor=<? echo($color1) ?> ><?php echo($simbolo_mone.money_format('%n',(round($precom_it+($precom_it*$pje1_it/100))))) ?></td>-->
-   <td align="right" bgcolor=<? echo($color1) ?> class="tit_menu_sup" ><?php echo($simbolo_mone.money_format('%n',($pv01_it))) ?></td>
-        <td align="right" ><?php echo($simbolo_mone.money_format('%n',($util01))) ?></td>
+        <td valign="middle" bgcolor="#FFFFFF"><a href="viewasociado.php?idx=<?php  echo($id); ?>"><img src=" <?php echo "img_items/".$img1_aso ?> " width="60" height="%" /></a></td>
+        <td bgcolor="#FFFFFF"><?php echo($categoria_aso) ?></td>
+        <td bgcolor="#FFFFFF"><?php echo($rsocial_aso) ?></td>
+        <td align="right" bgcolor="#FFFFFF"><? echo($latitud_aso." ".$longitud_aso) ?></td>
+        <td align="right" bgcolor="#FFFFFF"><? echo($favicon_aso) ?></td>
+        <td align="right" bgcolor="#FFFFFF"><? echo($logo_aso) ?></td>
+        <td align="right" bgcolor="#FFFFFF"><? echo($view1_aso) ?></td>
 
         <td align="right" bgcolor=<? echo($color2) ?> ><?php echo($simbolo_mone.money_format('%n',($pv02_it))) ?></td>
         <td align="right" bgcolor=<? echo($color3) ?> ><?php echo($simbolo_mone.money_format('%n',($pv03_it))) ?></td>
         <td><?php echo($view01_it) ?></td>
         <td><a href="n_admin_3view.php?idx=<?php  echo($id); ?>&xview=<?php  echo("ADMIN"); ?>&xareg=NNOOO&xmodi=NOOOOO&xdelreg=NOOOOO"><img src="iconos/ico_editar.png" width="30" height="30"></a></td>
-        <td bgcolor="#FFCC66" align="center"><a href="img_items/n_subir_xfile.php?id_img=<?php  echo($id); ?>"><img src="iconos/ico_imagen.png" width="30" height="30"></a></td>
+        <td bgcolor="#FFCC66" align="center"><a href="img_asociados/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>"><img src="iconos/ico_imagen.png" width="30" height="30"></a></td>                                                                  
 
         <td bgcolor="#FFCC66" align="center"><a href="a_list_items_admin.php?delcod=<?php echo($codigo_it);?>&xdelreg=<?php echo("SIDELREG");?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">X</a></td>
       </tr>
