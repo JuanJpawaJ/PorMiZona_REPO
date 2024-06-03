@@ -17,7 +17,10 @@
 	color: #0000FF;
 	text-align: center;
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 24px;
+
+	font-family: "Comic Sans MS", cursive;
+	
 }
 .text_tabla_zonas {
 	font-family: "Times New Roman", Times, serif;
@@ -34,7 +37,7 @@
 .txt_espacios {
 	font-family: "Comic Sans MS", cursive;
 	font-size: 14px;
-}</style>
+</style>
     
     
     
@@ -121,21 +124,15 @@ $tabla = mysqli_fetch_array( $result );
         <td height="32" colspan="2" align="center" bgcolor="#0099CC"> <? echo $rsocial_aso ; ?>  &nbsp;</td>
       </tr>
       <tr>
-        <td width="110" height="102">FAVICON</td>
+        <td width="110" height="102" class="ñññ">FAVICON</td>
         <td width="677">
      <?   
 	 
-	 echo "LOOOGGGOOO_AAASSSO :".$logo_aso; 
 	 
-  	if(strlen(trim($logo_aso))==0) { 
- 	 echo "ESTOY DENTRO DEL IF :"; ?>
-   
+  	if(strlen(trim($logo_aso))==0) { ?>
        <span class="logo_web"><? echo ($rsocial_aso); ?></span>		
-<? 	}else{ 
- 
-  	 echo "ESTOY DENTRO DEL ELLLSEEEE :"; ?>
-   
-       <img src=" <?php echo "img_asociados/".$logo_aso ?> " width="100" height="50" />
+<? 	}else{ ?>
+        <img src=" <?php echo "img_asociados/".$logo_aso ?> " width="100" height="50" />
 <?  } ?>  
         
         
