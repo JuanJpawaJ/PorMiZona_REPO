@@ -13,13 +13,21 @@
 .blanco {
 	color: #FFF;
 }
-.logo_web {
+.logo_aso {
 	color: #0000FF;
 	text-align: center;
 	font-size: 26px;
 	font-family: "Comic Sans MS", cursive;
 	font-weight: bold;	
 }
+.productos_aso {
+	color: #000000;
+	text-align: center;
+	font-size: 20px;
+	font-family: "Comic Sans MS", cursive;
+	font-weight: bold;	
+}
+
 .text_tabla_zonas {
 	font-family: "Times New Roman", Times, serif;
 }
@@ -154,7 +162,7 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
 		    <td width="547">
 <?   
   	if(strlen(trim($logo_aso))==0) { ?>
-       <span class="logo_web"><? echo ($rsocial_aso); ?></span>		
+       <span class="logo_aso"><? echo ($rsocial_aso); ?></span>		
 <? 	}else{ ?>
         <img src=" <?php echo "img_asociados/".$logo_aso ?> " width="300" height="50" />
 <?  } ?>  
@@ -169,7 +177,7 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
         <td height="447" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC"><img src="<?php echo "img_asociados/".$img1_aso ?>" width="769" height="441"></td>
       </tr>
       <tr>
-        <td height="53" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC" class="logo_web"><? echo $productos_aso."<br>"; ?></td>
+        <td height="53" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC" class="productos_aso"><? echo $productos_aso."<br>"; ?></td>
       </tr>
       <tr>
         <td height="281" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC"><table width="633" border="1" align="center" cellpadding="0" cellspacing="0">
