@@ -169,9 +169,6 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
         <td height="481" colspan="2" align="center" valign="middle"><img src="<?php echo "img_asociados/".$img1_aso ?>" width="769" height="441"></td>
       </tr>
       <tr>
-        <td height="344" colspan="2">&nbsp;</td>
-      </tr>
-      <tr>
         <td height="281" colspan="2" align="center" valign="middle"><table width="633" border="1" align="center" cellpadding="0" cellspacing="0">
 
 
