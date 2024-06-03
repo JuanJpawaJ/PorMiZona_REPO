@@ -137,7 +137,7 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
 
 
 
-    <table width="800" height="1368" border="1" align="center" cellpadding="1" cellspacing="1">
+    <table width="800" height="1036" border="1" align="center" cellpadding="1" cellspacing="1">
       <tr>
         <td width="787" height="32" colspan="2" align="center" bgcolor="#0099CC"> <? echo $rsocial_aso ; ?>  &nbsp;</td>
       </tr>
@@ -207,14 +207,14 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
 </table></td>
       </tr>
       <tr>
-        <td colspan="2" align="center" bgcolor="#0099CC"><? echo $email_aso."<br>"; ?> <? echo $estado_aso." - ".$pais_aso."<br>"; ?> <? echo "<br>"; ?> <? echo $cod_aso." - ".$date_aso."<br>"; ?> <? echo "la: ".$latitud_aso." lo: ".$longitud_aso."<br>"; ?></td>
+        <td height="35" colspan="2" align="center" bgcolor="#0099CC"><? echo $email_aso."<br>"; ?> <? echo $estado_aso." - ".$pais_aso."<br>"; ?> <? echo "<br>"; ?> <? echo $cod_aso." - ".$date_aso."<br>"; ?> <? echo "la: ".$latitud_aso." lo: ".$longitud_aso."<br>"; ?></td>
       </tr>
       <tr>
-        <td colspan="2">Acceso solo a propietarios:<a href="ingre.php?xcod=<? echo ($cod_aso);?>&xiclave=SI"><img src="imagenes/bot_soypropietario.png" width="156" height="23" style="border:0;" onMouseOver="this.style.border='solid  2px #FFFFFF';" onMouseOut="this.style.border=0;" border="0"></a></td>
+        <td height="32" colspan="2">Acceso solo a propietarios:<a href="ingre.php?xcod=<? echo ($cod_aso);?>&xiclave=SI"><img src="imagenes/bot_soypropietario.png" width="156" height="23" style="border:0;" onMouseOver="this.style.border='solid  2px #FFFFFF';" onMouseOut="this.style.border=0;" border="0"></a></td>
  
       </tr>
       <tr>
-        <td colspan="2">&nbsp;</td>
+        <td height="23" colspan="2">&nbsp;</td>
       </tr>
     </table>
 <p>&nbsp;</p>
