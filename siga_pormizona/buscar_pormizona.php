@@ -308,6 +308,7 @@ while ($tabla=mysqli_fetch_array($result)){
 	if(strlen($favicon_aso)==0) {
 		$favicon_aso="f_pmz_bl.png";
 	}
+	echo "favicon ahoraaaa: ".$favicon_aso;
 	$latitud_aso=$tabla["latitud_aso"];
 	$longitud_aso=$tabla["longitud_aso"];
 	
