@@ -211,21 +211,22 @@ if ($xdelreg=="SIDELREG") {
   <tr class="tit_menu_sup">
     <td height="262" colspan="2" rowspan="4" valign="top" bgcolor="#FFFFCC">
     <!-- INICIO DE MUESTRA ITEMS -->
-    <table width="987" height="80" border="1" cellspacing="0">
+    <table width="1038" height="80" border="1" cellspacing="0">
       <tr bgcolor="#CCFFFF" class="diez">
         <td width="48" align="center">COD. Item</td>
-        <td width="93">IMAGEN</td>
+        <td width="93">FAVICON</td>
+        <td width="36">IMAGEN</td>
+        <td width="36">LOGO</td>
         <td width="36">Grupo</td>
         <td width="251" align="center">PRODUCTO</td>
         <td width="48" align="center">COD-MODELO</td>
         <td width="54" align="center">COSTO</td>
         <td width="63" align="center">PUBLICO 01</td>
         <td width="53">UTIL 01</td>
-        <td width="44">P.VEN 02</td>
-        <td width="59">P.VEN 03</td>
-        <td width="39">VIEW01</td>
-        <td width="25">MOD</td>
-        <td width="59" align="center">Mod. IMG</td>
+        <td width="44">FAVICON</td>
+        <td width="59">IMAGEN1</td>
+        <td width="39">LOGO</td>
+        <td width="59" align="center">EDITAR TXT</td>
         <td width="57" align="center">DEL Reg.</td>
       </tr>
       <?php 
@@ -301,7 +302,9 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
       <tr bgcolor="#FFFFFF" class="tabla10">
         <td bgcolor="#FFFFFF"><?php echo($codigo_it) ?></td>
 
-        <td valign="middle" bgcolor="#FFFFFF"><a href="viewasociado.php?idx=<?php  echo($id); ?>"><img src=" <?php echo "img_items/".$img1_aso ?> " width="60" height="%" /></a></td>
+        <td valign="middle" bgcolor="#FFFFFF"><a href="viewasociado.php?idx=<?php  echo($id); ?>"><img src=" <?php echo "img_asociados/".$favicon_aso ?> " width="60" height="%" /></a></td>
+        <td bgcolor="#FFFFFF"><img src=" <?php echo "img_asociados/".$img1_aso ?> " width="60" height="%" /></td>
+        <td bgcolor="#FFFFFF"><img src=" <?php echo "img_asociados/".$logo_aso ?> " width="60" height="%" /></td>
         <td bgcolor="#FFFFFF"><?php echo($categoria_aso) ?></td>
         <td bgcolor="#FFFFFF"><?php echo($rsocial_aso) ?></td>
         <td align="right" bgcolor="#FFFFFF"><? echo($latitud_aso." ".$longitud_aso) ?></td>
@@ -312,7 +315,6 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
         <td bgcolor="#FFCC66" align="center"><a href="img_asociados/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=02"><img src="iconos/ico_imagen.png" width="30" height="30"></a></td>                                                                  
         <td bgcolor="#FFCC66" align="center"><a href="img_asociados/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=03"><img src="iconos/ico_logo.png" width="30" height="30"></a></td>                                                                  
 
-        <td bgcolor="#FFFFFF"><?php echo($view01_it) ?></td>
         <td align="center" bgcolor="#FFCC66"><a href="n_admin_3view.php?idx=<?php  echo($id); ?>&xview=<?php  echo("ADMIN"); ?>&xareg=NNOOO&xmodi=NOOOOO&xdelreg=NOOOOO"><img src="iconos/ico_editar.png" width="30" height="30"></a></td>
 
         <td align="center"><a href="a_list_items_admin.php?delcod=<?php echo($codigo_it);?>&xdelreg=<?php echo("SIDELREG");?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">X</a></td>
