@@ -284,12 +284,22 @@ while ($tabla=mysqli_fetch_array($result)){
 		$favicon_aso="f_pmz_bl.png";
 	}
 	$logo_aso=$tabla["logo_aso"];
+	if(strlen($logo_aso)==0) {
+		$logo_aso="f_pmz_bl.png";
+	}
+
+$img1_aso=$tabla["$img1_aso"];
+	if(strlen($img1_aso)==0) {
+		$img1_aso="f_pmz_bl.png";
+	}
+
+$img2_aso=$tabla["$img2_aso"];
+
+
 $date_aso=$tabla["$date_aso"];	
 $publicidad_aso=$tabla["$publicidad_aso"];	
 $grupolista_aso=$tabla["$grupolista_aso"];
-$img1_aso=$tabla["$img1_aso"];
-$img2_aso=$tabla["$img2_aso"];
-$logo_aso=$tabla["$logo_aso"];
+
 $view1_aso=$tabla["$view1_aso"];
 $view2_aso=$tabla["$view2_aso"];
 $view3_aso=$tabla["$view3_aso"];
@@ -308,8 +318,8 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
         <td bgcolor="#FFFFFF"><?php echo($categoria_aso) ?></td>
         <td bgcolor="#FFFFFF"><?php echo($rsocial_aso) ?></td>
         <td align="right" bgcolor="#FFFFFF"><? echo($latitud_aso." ".$longitud_aso) ?></td>
-        <td align="right" bgcolor="#FFFFFF"><? echo($favicon_aso) ?></td>
-        <td align="right" bgcolor="#FFFFFF"><? echo($logo_aso) ?></td>
+        <td align="right" bgcolor="#FFFFFF"><? echo($date_aso) ?></td>
+        <td align="right" bgcolor="#FFFFFF"><? echo($publicidad_aso) ?></td>
         <td align="right" bgcolor="#FFFFFF"><? echo($view1_aso) ?></td>
         <td bgcolor="#FFCC66" align="center"><a href="img_asociados/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=01"><img src="iconos/ico_favicon.png" width="30" height="30"></a></td>                                                                  
         <td bgcolor="#FFCC66" align="center"><a href="img_asociados/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=02"><img src="iconos/ico_imagen.png" width="30" height="30"></a></td>                                                                  
