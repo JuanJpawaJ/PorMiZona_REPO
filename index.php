@@ -35,19 +35,19 @@
     <td width="900" height="119" align="center" valign="middle"><img src="imagenes_1/logo_pmz_telf_rgb.jpg" width="862" height="158" /></td>
   </tr>
   <tr>
-    <td height="194" align="center" bgcolor="#66FF99"><table width="903" height="179" border="1" cellpadding="1" cellspacing="1">
+    <td height="194" align="center"><table width="903" height="179" border="1" cellpadding="1" cellspacing="1">
       <tr>
-        <td width="218" height="83" align="center" valign="middle" bgcolor="#FFFFFF"><a href="siga_pormizona/a_lisimagenes.php"><img src="siga_pormizona/iconos/boton_ver_tiendas.png" width="200" height="65" style="border:0;" onmouseover="this.style.border='solid  2px  #0a3d89';" onmouseout="this.style.border=0;" border="0"/></a></td>
+        <td width="218" height="83" align="center" valign="middle" bgcolor="#66FFFF"><a href="siga_pormizona/buscar_pormizona.php"><img src="siga_pormizona/iconos/boton_ver_tiendas.png" width="200" height="65" style="border:0;" onmouseover="this.style.border='solid  2px  #0a3d89';" onmouseout="this.style.border=0;" border="0"/></a></td>
         <td width="221" align="center" valign="middle" bgcolor="#FFFFFF"><a href="siga_pormizona/a_cat_impreso.php"><img src="siga_pormizona/iconos/boton_ver_catimpreso.png" width="200" height="65" style="border:0;" onmouseover="this.style.border='solid  2px  #0a3d89';" onmouseout="this.style.border=0;" border="0" /></a></td>
         <td width="223" align="center" valign="middle" bgcolor="#FFFFFF"><a href="siga_pormizona/a_eventos.php"><img src="siga_pormizona/iconos/boton_ver_evenciudad.png" width="200" height="65" style="border:0;" onmouseover="this.style.border='solid  2px  #0a3d89';" onmouseout="this.style.border=0;" border="0" /></a></td>
-        <td width="218" align="center" valign="middle" bgcolor="#FFFFFF"><a href="siga_pormizona/a_lis_mievento.php"><img src="siga_pormizona/iconos/boton_ver_dondevoy.png" width="200" height="65" style="border:0;" onmouseover="this.style.border='solid  2px  #0a3d89';" onmouseout="this.style.border=0;" border="0"/></a></td>
+        <td width="218" align="center" valign="middle" bgcolor="#FFFF99"><a href="siga_pormizona/a_lis_mievento.php"><img src="siga_pormizona/iconos/boton_ver_dondevoy.png" width="200" height="65" style="border:0;" onmouseover="this.style.border='solid  2px  #0a3d89';" onmouseout="this.style.border=0;" border="0"/></a></td>
       </tr>
       <tr>
-        <td height="90" align="center" valign="middle"><p>EMPRESAS POR <br /> 
-          ZONAS<br /><a href="siga_pormizona/formingre1.php">.</a></p></td>
+        <td height="90" align="center" valign="middle" bgcolor="#66FFFF"><p><a href="siga_pormizona/formingre1.php"><img src="siga_pormizona/iconos/boton_publique_empresas.png" width="200" height="65"  style="border:0;" onmouseover="this.style.border='solid  2px  #0a3d89';" onmouseout="this.style.border=0;" border="0" /></a><br />
+        </p></td>
         <td align="center" valign="middle" bgcolor="#FFFFFF"><a href="siga_pormizona/a_view_espacios.php"><img src="siga_pormizona/iconos/boton_publi_catalogo.png" width="200" height="65" style="border:0;" onmouseover="this.style.border='solid  2px  #0a3d89';" onmouseout="this.style.border=0;" border="0"/></a></td>
-        <td align="center" valign="middle">PUBLIQUE EN ESTA PAG. WEB</td>
-        <td align="center" valign="middle" bgcolor="#FFFFFF"><a href="siga_pormizona/formievento1.php"><img src="siga_pormizona/iconos/boton_publique_mievento.png" width="200" height="65" style="border:0;" onmouseover="this.style.border='solid  2px  #0a3d89';" onmouseout="this.style.border=0;" border="0"/></a></td>
+        <td align="center" valign="middle" bgcolor="#006633">PUBLIQUE EN ESTA PAG. WEB</td>
+        <td align="center" valign="middle" bgcolor="#FFFF99"><a href="siga_pormizona/formievento1.php"><img src="siga_pormizona/iconos/boton_publique_mievento.png" width="200" height="65" style="border:0;" onmouseover="this.style.border='solid  2px  #0a3d89';" onmouseout="this.style.border=0;" border="0"/></a></td>
       </tr>
     </table></td>
   </tr>
