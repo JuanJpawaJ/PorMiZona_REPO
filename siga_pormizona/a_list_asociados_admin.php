@@ -312,7 +312,7 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
       <tr bgcolor="#FFFFFF" class="tabla10">
         <td bgcolor="#FFFFFF"><?php echo($codigo_it) ?></td>
 
-        <td valign="middle" bgcolor="#FFFFFF"><a href="viewasociado.php?idx=<?php  echo($id); ?>"><img src=" <?php echo "img_asociados/".$favicon_aso ?> " width="60" height="%" /></a></td>
+        <td valign="middle" bgcolor="#FFFFFF"><a href="viewasociado.php?xcod=<?php  echo($cod_aso); ?>"><img src=" <?php echo "img_asociados/".$favicon_aso ?> " width="60" height="%" /></a></td>
         <td bgcolor="#FFFFFF"><img src=" <?php echo "img_asociados/".$img1_aso ?> " width="60" height="%" /></td>
         <td bgcolor="#FFFFFF"><img src=" <?php echo "img_asociados/".$logo_aso ?> " width="60" height="%" /></td>
         <td bgcolor="#FFFFFF"><?php echo($categoria_aso) ?></td>
