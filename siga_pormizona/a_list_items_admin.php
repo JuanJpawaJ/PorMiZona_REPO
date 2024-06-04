@@ -288,12 +288,12 @@ while ($tabla=mysqli_fetch_array($result)){
 		$logo_aso="f_pmz_bl.png";
 	}
 
-$img1_aso=$tabla["$img1_aso"];
+$img1_aso=$tabla["img1_aso"];
 	if(strlen($img1_aso)==0) {
 		$img1_aso="f_pmz_bl.png";
 	}
 
-$img2_aso=$tabla["$img2_aso"];
+$img2_aso=$tabla["img2_aso"];
 
 
 $date_aso=$tabla["$date_aso"];	
