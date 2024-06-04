@@ -154,7 +154,7 @@ if ($xdelreg=="SIDELREG") {
     <td colspan="4" bgcolor="#000066" class="tit_menu_sup"><table width="904" height="63" border="0" cellpadding="0" cellspacing="0">
       <tr>
         <td width="121" align="center" valign="top"><img src="iconos/ico_yo_sigachef.png" width="120" height="60"></td>
-        <td width="575"><div align="center"><span class="TITULO_NARANJA">ADMINISTRADOR - ITEMS *****</span></div></td>
+        <td width="575"><div align="center"><span class="TITULO_NARANJA">ADMINISTRADOR - ASOCIADOS ***** P. Mi ZONA</span></div></td>
         <td width="154" align="center" valign="middle"><img src="iconos/logo_cli_120_60_png.png" width="120" height="60"></td>
         </tr>
     </table></td>
@@ -223,8 +223,8 @@ if ($xdelreg=="SIDELREG") {
         <td width="53">UTIL 01</td>
         <td width="44">P.VEN 02</td>
         <td width="59">P.VEN 03</td>
-        <td width="32">VIEW01</td>
-        <td width="32">MOD</td>
+        <td width="39">VIEW01</td>
+        <td width="25">MOD</td>
         <td width="59" align="center">Mod. IMG</td>
         <td width="57" align="center">DEL Reg.</td>
       </tr>
@@ -308,14 +308,14 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
         <td align="right" bgcolor="#FFFFFF"><? echo($favicon_aso) ?></td>
         <td align="right" bgcolor="#FFFFFF"><? echo($logo_aso) ?></td>
         <td align="right" bgcolor="#FFFFFF"><? echo($view1_aso) ?></td>
+        <td bgcolor="#FFCC66" align="center"><a href="img_asociados/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=01"><img src="iconos/ico_favicon.png" width="30" height="30"></a></td>                                                                  
+        <td bgcolor="#FFCC66" align="center"><a href="img_asociados/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=02"><img src="iconos/ico_imagen.png" width="30" height="30"></a></td>                                                                  
+        <td bgcolor="#FFCC66" align="center"><a href="img_asociados/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=03"><img src="iconos/ico_logo.png" width="30" height="30"></a></td>                                                                  
 
-        <td align="right" bgcolor=<? echo($color2) ?> ><?php echo($simbolo_mone.money_format('%n',($pv02_it))) ?></td>
-        <td align="right" bgcolor=<? echo($color3) ?> ><?php echo($simbolo_mone.money_format('%n',($pv03_it))) ?></td>
-        <td><?php echo($view01_it) ?></td>
-        <td><a href="n_admin_3view.php?idx=<?php  echo($id); ?>&xview=<?php  echo("ADMIN"); ?>&xareg=NNOOO&xmodi=NOOOOO&xdelreg=NOOOOO"><img src="iconos/ico_editar.png" width="30" height="30"></a></td>
-        <td bgcolor="#FFCC66" align="center"><a href="img_asociados/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>"><img src="iconos/ico_imagen.png" width="30" height="30"></a></td>                                                                  
+        <td bgcolor="#FFFFFF"><?php echo($view01_it) ?></td>
+        <td align="center" bgcolor="#FFCC66"><a href="n_admin_3view.php?idx=<?php  echo($id); ?>&xview=<?php  echo("ADMIN"); ?>&xareg=NNOOO&xmodi=NOOOOO&xdelreg=NOOOOO"><img src="iconos/ico_editar.png" width="30" height="30"></a></td>
 
-        <td bgcolor="#FFCC66" align="center"><a href="a_list_items_admin.php?delcod=<?php echo($codigo_it);?>&xdelreg=<?php echo("SIDELREG");?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">X</a></td>
+        <td align="center"><a href="a_list_items_admin.php?delcod=<?php echo($codigo_it);?>&xdelreg=<?php echo("SIDELREG");?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">X</a></td>
       </tr>
       <?php 
 	}

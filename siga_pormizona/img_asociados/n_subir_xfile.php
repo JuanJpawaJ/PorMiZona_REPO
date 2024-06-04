@@ -9,6 +9,8 @@
 
    
     $cod_aso=$_GET['xcod'];
+	$xtip=$_GET['xtip'];
+	
 	echo "cod aso 000 :".$cod_aso."<br>";
 
 	echo "IMPORTANTE! - Verifique 1.- Que el nombre de su documento no contenga carácteres extraños (# . $ ?)"."<br>";	
@@ -60,7 +62,16 @@ setlocale(LC_ALL, "sp");
 
 			echo "ARCHIVO a guardar : ".$destino."<br>";
 			echo "id a    a guardar : ".$id_md."<br>";	
-			$sql="UPDATE asociado_51 SET favicon_aso='$destino'  WHERE cod_aso='$cod_aso'";
+			if ($xtip=="01") {
+				$sql="UPDATE asociado_51 SET favicon_aso='$destino'  WHERE cod_aso='$cod_aso'";
+			} elseif ($xtip=="02") {
+				$sql="UPDATE asociado_51 SET img1_aso='$destino'  WHERE cod_aso='$cod_aso'";
+				
+			} else {
+				$sql="UPDATE asociado_51 SET logo_aso='$destino'  WHERE cod_aso='$cod_aso'";
+			
+			}
+				
 			$result=mysqli_query($connec,$sql);
 			if($result)  {
 				echo ("<span style='background-color: #006600'>Ok. ---DATOS -- Ok.</span>");
