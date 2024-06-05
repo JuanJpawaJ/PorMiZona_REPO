@@ -22,9 +22,9 @@ $xcodvalue = $_POST['xcodValue'];
 $xlongitud = $_POST['longitude'];
 $xlatitud = $_POST['latitude'];
 
-if(strlen($xcodvalue)<>0) {
-	$cod_aso=$xcodvalue;
-}
+//if(strlen($xcodvalue)<>0) {
+//	$cod_aso=$xcodvalue;
+//}
 
 
 
