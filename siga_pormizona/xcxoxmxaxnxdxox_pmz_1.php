@@ -161,7 +161,7 @@ if ($zxyw == "SCADCASA2014_09" OR ($total !==0 AND $password_per == $password)){
         <td width="8" align="center">&nbsp;</td>
         <td width="84"><table width="147" border="1" cellspacing="1" cellpadding="1">
           <tr>
-              <td width="139" align="center" bgcolor="#FFFF00"><a href="a_list_asociados_admin.php">LIST ADMIN ASOCIADOS</a></td>
+              <td width="139" align="center" bgcolor="#FFFF00"><a href="a_list_asociados_admin.php?xgl=SMRD">LIST ADMIN ASOCIADOS</a></td>
             </tr>
             <tr>
               <td align="center"><a href="a_list_catalogos_admin.php">LISTA CATALOGOS</a></td>
