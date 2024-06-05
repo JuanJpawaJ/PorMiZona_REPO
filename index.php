@@ -55,7 +55,14 @@
     <td height="43" align="center" bgcolor="#48887A"><span class="TITULOBLANCO">CLASIFICADOS</span></td>
   </tr>
   <tr>
-    <td height="115" align="center" valign="middle"><table width="910" height="97" border="1" cellpadding="0" cellspacing="0">
+    <td height="115" align="center" valign="middle"><table width="910" height="287" border="1" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="95">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
       <tr>
         <td width="269" height="95"><img src="siga_pormizona/img_asociados/cli_IA.jpg" width="269" height="159" /></td>
         <td width="127">&nbsp;</td>
