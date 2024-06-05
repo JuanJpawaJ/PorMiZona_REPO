@@ -145,12 +145,9 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 
 
 
-    <table width="800" height="1056" border="1" align="center" cellpadding="1" cellspacing="1">
+    <table width="800" height="969" border="1" align="center" cellpadding="1" cellspacing="1">
       <tr>
-        <td width="787" height="32" colspan="2" align="center" bgcolor="#0099CC"> <? echo $rsocial_aso ; ?>  &nbsp;</td>
-      </tr>
-      <tr>
-        <td height="142" colspan="2" align="center" valign="middle" background="iconos/f_cabview.jpg" >
+        <td width="1574" height="142" colspan="2" align="center" valign="middle" background="iconos/f_cabview.jpg" >
 		<table width="772" border="0" cellspacing="0" cellpadding="0">
 		  <tr>
 		    <td width="166" height="84"
@@ -180,36 +177,22 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         <td height="53" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC" class="productos_aso"><? echo $productos_aso."<br>"; ?></td>
       </tr>
       <tr>
-        <td height="281" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC"><table width="633" border="1" align="center" cellpadding="0" cellspacing="0">
+        <td height="194" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC"><table width="759" border="1" align="center" cellpadding="0" cellspacing="0">
 
 
   <tr>
-    <td width="93" height="39" class="txt_view_pequeño" >Categoría:</td>
-    <td width="534"  ><? echo $categoria_aso.": ".$categoriatxt_aso."<br>"; ?></td>
+    <td height="39" class="txt_view_pequeño" ><? echo $direccion_aso."<br>"; ?></td>
+    <td rowspan="2"  ><? echo $telf1_aso." / ".$telf2_aso."<br>"; ?></td>
   </tr>
   <tr>
-    <td height="31" class="txt_view_pequeño" >&nbsp;</td>
-    <td width="534"  >&nbsp;</td>
-  </tr>
+    <td height="39" class="txt_view_pequeño" ><? echo $referencia_aso."<br>"; ?></td>
+    </tr>
   <tr>
-    <td height="36" class="txt_view_pequeño">Dirección: </td>
-    <td ><? echo $direccion_aso."<br>"; ?></td>
-  </tr>
+    <td height="39" colspan="2" class="txt_view_pequeño" ><? echo $categoria_aso.": ".$categoriatxt_aso."<br>"; ?></td>
+    </tr>
   <tr>
-    <td height="32" class="txt_view_pequeño">Teléfono :</td>
-    <td><? echo $telf1_aso." / ".$telf2_aso."<br>"; ?></td>
-  </tr>
-  <tr>
-    <td height="32" class="txt_view_pequeño">Referencia: </td>
-    <td ><? echo $referencia_aso."<br>"; ?></td>
-  </tr>
-  <tr>
-    <td height="32" class="txt_view_pequeño">&nbsp;</td>
-    <td >&nbsp;</td>
-  </tr>
-  <tr>
-    <td height="32" class="txt_view_pequeño">&nbsp;</td>
-    <td >&nbsp;</td>
+    <td width="512" height="39" class="txt_view_pequeño" >&nbsp;</td>
+    <td width="241"  >&nbsp;</td>
   </tr>
   <tr>
     <td height="32" class="txt_view_pequeño">Productos:</td>
