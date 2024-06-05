@@ -17,7 +17,7 @@ mysqli_set_charset($connec,'utf8');
 date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
-$cod_aso = $_POST['xcod'];
+$cod_aso = $_GET['xcod'];
 $xcodvalue = $_POST['xcodValue'];
 $xlongitud = $_POST['longitude'];
 $xlatitud = $_POST['latitude'];
@@ -28,7 +28,7 @@ $xlatitud = $_POST['latitude'];
 
 
 
-echo ("ESTES ES ELLLLLLLLLLLLLLLLLLLL cod_aso : ".$cod_aso);
+echo ("ESTES ES  cod_aso : ".$cod_aso);
 echo ("ESTES ES ELLLLLLLLLLLLLLLLLLLL xcodValue : ".$xcodvalue);
 
 //ÑÑÑ
