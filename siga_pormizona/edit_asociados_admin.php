@@ -233,10 +233,6 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
      </td>
    </tr>
 
-    $favicon_aso=$_POST['xfavicon'];	   
-    $grupolista_aso=$_POST['xgrupolista'];
-
-
    <tr>
      <td>Publicidad</td>
      <td>

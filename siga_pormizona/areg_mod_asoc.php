@@ -44,17 +44,16 @@ if      ($form=="TODO") {
     $view1_aso=$_POST['xview1'];
     $view2_aso=$_POST['xview2'];
     $view3_aso=$_POST['xview3'];
-    $xview4_aso=$_POST['xview4'];
+    $view4_aso=$_POST['xview4'];
     $msjpublico_aso=$_POST['xmsjpublico'];
     $obsinterno_aso=$_POST['xobsinterno'];
-    $sql="UPDATE asociado_51 SET rsocial_aso='$rsocial_aso',direccion_aso='$direccion_aso',categoria_aso='$categoria_aso',email_aso='$email_aso', usua_aso='$usua_aso',pass_aso='$pass_aso',pais_aso='$pais_aso',estado_aso='$estado_aso', provincia_aso='$provincia_aso',distrito_aso='$distrito_aso', referencia_aso='$referencia_aso', telf1_aso='$telf1_aso', telf2_aso='$telf2_aso', productos_aso='$productos_aso', favicon_aso='$favicon_aso', grupolista_aso='$grupolista_aso',
-	 publicidad_aso='$publicidad_aso', img1_aso='$img1_aso', img2_aso='$img2_aso', logo_aso='$logo_aso', view1_aso='$view1_aso', view2_aso='$view2_aso', view3_aso='$view3_aso', view4_aso='$view4_aso', msjpublico_aso='$msjpublico_aso', 
-obsinterno_aso='$obsinterno_aso'  WHERE cod_aso=$cod";
+	
+    $sql="UPDATE asociado_51 SET rsocial_aso='$rsocial_aso', direccion_aso='$direccion_aso', categoria_aso='$categoria_aso', email_aso='$email_aso', usua_aso='$usua_aso',pass_aso='$pass_aso',pais_aso='$pais_aso',estado_aso='$estado_aso', provincia_aso='$provincia_aso',distrito_aso='$distrito_aso', referencia_aso='$referencia_aso', telf1_aso='$telf1_aso', telf2_aso='$telf2_aso', productos_aso='$productos_aso', favicon_aso='$favicon_aso', grupolista_aso='$grupolista_aso', 	 publicidad_aso='$publicidad_aso', img1_aso='$img1_aso', img2_aso='$img2_aso', logo_aso='$logo_aso', view1_aso='$view1_aso', view2_aso='$view2_aso', view3_aso='$view3_aso', view4_aso='$view4_aso', msjpublico_aso='$msjpublico_aso', obsinterno_aso='$obsinterno_aso'  WHERE cod_aso=$cod";
     $result=mysqli_query($connec,$sql);
 	if($result){
-		echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok.</span>");
+		echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok TODO.</span>");
 	}else{
-		echo ("<span style='background-color: #CC0000'>XX. ERROR AL REGISTRARSE  XX.</span>");
+		echo ("<span style='background-color: #CC0000'>XX. ERROR AL REGISTRARSE  TODO.</span>");
 	}	
 
 	
