@@ -61,30 +61,25 @@ $favicon_aso=$tabla["favicon_aso"];
  if(strlen($favicon_aso)==0) {
 	$favicon_aso="f_pmz_bl.png";
  }
-$date_aso=$tabla["$date_aso"];	
-$publicidad_aso=$tabla["$publicidad_aso"];	
-$grupolista_aso=$tabla["$grupolista_aso"];
-$img1_aso=$tabla["$img1_aso"];
-$img2_aso=$tabla["$img2_aso"];
-$logo_aso=$tabla["$logo_aso"];
-$view1_aso=$tabla["$view1_aso"];
-$view2_aso=$tabla["$view2_aso"];
-$view3_aso=$tabla["$view3_aso"];
-$view4_aso=$tabla["$view4_aso"];
-$msjpublico_aso=$tabla["$msjpublico_aso"];
-$obsinterno_aso=$tabla["$obsinterno_aso"];
+$date_aso=$tabla["date_aso"];	
+$publicidad_aso=$tabla["publicidad_aso"];	
+$grupolista_aso=$tabla["grupolista_aso"];
+$img1_aso=$tabla["img1_aso"];
+$img2_aso=$tabla["img2_aso"];
+$logo_aso=$tabla["logo_aso"];
+$view1_aso=$tabla["view1_aso"];
+$view2_aso=$tabla["view2_aso"];
+$view3_aso=$tabla["view3_aso"];
+$view4_aso=$tabla["view4_aso"];
+$msjpublico_aso=$tabla["msjpublico_aso"];
+$obsinterno_aso=$tabla["obsinterno_aso"];
 
 ?>
 
      <h2>           *PAGINA DE EDICION ADMIN  </h2>
 
-<div class="exteriorform">
-   <div class="fondo_formulario">
   
-   <h2 class="semi-titulosform">FORMULARIO 00</h2>
-   <p>&nbsp;</p>
-               
-   <form id="form0" name="form0" method="post" onsubmit="return checkSubmit();" action="areg_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
+<form id="form0" name="form0" method="post" onsubmit="return checkSubmit();" action="areg_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
  
  <table width="669" border="1" cellspacing="1" cellpadding="1">
    <tr>
@@ -219,14 +214,14 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
    <tr>
      <td>Móvil</td>
      <td>
-                         <input type="text" class="campo_texto form_telef" name="xtelf1" value="<?php echo($telf1_aso); ?>"> 
+                   <input type="text" class="campo_texto form_telef" name="xtelf1" value="<?php echo($telf1_aso); ?>"> 
      
      </td>
    </tr>
    <tr>
      <td>Fijo</td>
      <td>
-                        <input type="text" class="campo_texto form_telef" name="xtelf2" value="<?php echo($telf2_aso); ?>"> 
+                   <input type="text" class="campo_texto form_telef" name="xtelf2" value="<?php echo($telf2_aso); ?>"> 
      
      </td>
    </tr>
@@ -238,69 +233,94 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
      </td>
    </tr>
    <tr>
-     <td>&nbsp;</td>
-     <td>&nbsp;</td>
+     <td>Publcidad</td>
+     <td>
+     <input type="text" class="campo_texto" name="xpublicidad" value="<?php echo($publicidad_aso); ?>"> 
+     </td>
    </tr>
    <tr>
-     <td>&nbsp;</td>
-     <td>&nbsp;</td>
+     <td>Grupo lista</td>
+     <td>
+      <input type="text" class="campo_texto" name="xgrupolista" value="<?php echo($grupolista_aso); ?>"> 
+    
+     </td>
    </tr>
    <tr>
-     <td>&nbsp;</td>
-     <td>&nbsp;</td>
+     <td>Imagen 1</td>
+     <td>
+      <input type="text" class="campo_texto" name="ximg1" value="<?php echo($img1_aso); ?>"> 
+
+     </td>
    </tr>
    <tr>
-     <td>&nbsp;</td>
-     <td>&nbsp;</td>
+     <td>Imagen 2</td>
+     <td>
+      <input type="text" class="campo_texto" name="ximg2" value="<?php echo($img2_aso); ?>"> 
+     
+     </td>
    </tr>
    <tr>
-     <td>&nbsp;</td>
-     <td>&nbsp;</td>
+     <td>Logo</td>
+     <td>
+      <input type="text" class="campo_texto" name="xlogo" value="<?php echo($logo_aso); ?>"> 
+
+     </td>
    </tr>
    <tr>
-     <td>&nbsp;</td>
-     <td>&nbsp;</td>
+     <td>View 1</td>
+     <td>
+      <input type="text" class="campo_texto" name="xview1" value="<?php echo($view1_aso); ?>"> 
+
+     </td>
    </tr>
    <tr>
-     <td>&nbsp;</td>
-     <td>&nbsp;</td>
+     <td>View 2</td>
+     <td>
+      <input type="text" class="campo_texto" name="xview2" value="<?php echo($view2_aso); ?>"> 
+
+     </td>
    </tr>
    <tr>
-     <td>&nbsp;</td>
-     <td>&nbsp;</td>
+     <td>View 3</td>
+     <td>
+      <input type="text" class="campo_texto" name="xview3" value="<?php echo($view3_aso); ?>"> 
+
+     </td>
    </tr>
    <tr>
-     <td>&nbsp;</td>
-     <td>&nbsp;</td>
+     <td>View 4</td>
+     <td>
+      <input type="text" class="campo_texto" name="xview4" value="<?php echo($view4_aso); ?>"> 
+
+     </td>
    </tr>
    <tr>
-     <td>&nbsp;</td>
-     <td>&nbsp;</td>
+     <td>Msj público</td>
+     <td>
+      <input type="text" class="campo_texto" name="xmsjpublico" value="<?php echo($msjpublico_aso); ?>"> 
+
+     
+     </td>
    </tr>
    <tr>
-     <td>&nbsp;</td>
-     <td>&nbsp;</td>
+     <td>Observaciones internas</td>
+     <td>
+      <input type="text" class="campo_texto" name="xobsinterno" value="<?php echo($obsinterno_aso); ?>"> 
+
+     </td>
    </tr>
    <tr>
-     <td>&nbsp;</td>
-     <td>&nbsp;</td>
-   </tr>
-   <tr>
-     <td>&nbsp;</td>
-     <td>&nbsp;</td>
-   </tr>
-   <tr>
-     <td>&nbsp;</td>
-     <td>&nbsp;</td>
+     <td>fecha publicación</td>
+     <td>
+     <?php echo($date_aso); ?> 
+
+     </td>
    </tr>
    <tr>
      <td>&nbsp;</td>
      <td>&nbsp;</td>
    </tr>
  </table>
-
-  
-  
   <br/>  
   
  <h2 class="semi-titulosform">FORMULARIO 01</h2>
@@ -308,25 +328,14 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
 
            <input type="hidden" name="xform" value="00"/> 
            <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> > 
-           <input type="hidden" name="xlatitud" value=<? echo $xlatitud; ?> > 
-           <input type="hidden" name="xlongitud" value=<? echo $xlongitud; ?> > 
               
                
  
-                    <div class="campo_boton">
+           <div class="campo_boton">
                     <button class="boton_form">ENVIAR FORMULARIO 02</button>
-                    </div>
-            </form>
-            
-
-
- 
-<br/>
-
- 
- 
- 
- <br/>   
+           </div>
+    </form>
+<br/>   
 
 
 </body>
