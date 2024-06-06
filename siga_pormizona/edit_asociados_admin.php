@@ -79,7 +79,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
      <h2>           *PAGINA DE EDICION ADMIN  </h2>
 
   
-<form id="form0" name="form0" method="post" onsubmit="return checkSubmit();" action="areg_admin_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
+<form id="form0" name="form0" method="post" onsubmit="return checkSubmit();" action="areg_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
  
  <table width="669" border="1" cellspacing="1" cellpadding="1">
    <tr>
