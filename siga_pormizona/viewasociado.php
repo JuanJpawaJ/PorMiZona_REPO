@@ -181,11 +181,11 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 
 
   <tr>
-    <td height="39" colspan="2" class="txt_view_pequeño" ><? echo $referencia_aso."<br>"; ?></td>
-    <td height="39" colspan="2" class="txt_view_pequeño" ><? echo $telf1_aso." / ".$telf2_aso."<br>"; ?></td>
+    <td height="39" colspan="2"  ><? echo $direccion_aso."<br>"; ?></td>
+    <td height="39" colspan="2"  ><? echo $telf1_aso." / ".$telf2_aso."<br>"; ?></td>
     </tr>
   <tr>
-    <td width="352" height="39" class="txt_view_pequeño" ><? echo $direccion_aso."<br>"; ?></td>
+    <td width="352" height="39" class="txt_view_pequeño" ><? echo $referencia_aso."<br>"; ?></td>
     <td width="137" class="txt_view_pequeño" ><? echo $distrito_aso; ?></td>
     <td width="142" class="txt_view_pequeño" ><? echo $provincia_aso; ?></td>
     <td width="118"  ><? echo $estado_aso; ?></td>
