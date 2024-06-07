@@ -39,10 +39,10 @@ $grupolista_aso="1";
 $img1_aso=" ";
 $img2_aso=" ";
 $logo_aso=" ";
-$view1_aso=" ";
-$view2_aso=" ";
-$view3_aso=" ";
-$view4_aso=" ";
+$view01_aso=" ";
+$view02_aso=" ";
+$view03_aso=" ";
+$view04_aso=" ";
 $msjpublico_aso=" ";
 $obsinterno_aso=" ";
    

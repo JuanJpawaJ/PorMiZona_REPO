@@ -295,28 +295,28 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
    <tr>
      <td>View 1</td>
      <td>
-      <input type="text" class="campo_texto" name="xview1" value="<?php echo($view1_aso); ?>"> 
+      <input type="text" class="campo_texto" name="xview1" value="<?php echo($view01_aso); ?>"> 
 
      </td>
    </tr>
    <tr>
      <td>View 2</td>
      <td>
-      <input type="text" class="campo_texto" name="xview2" value="<?php echo($view2_aso); ?>"> 
+      <input type="text" class="campo_texto" name="xview2" value="<?php echo($view02_aso); ?>"> 
 
      </td>
    </tr>
    <tr>
      <td>View 3</td>
      <td>
-      <input type="text" class="campo_texto" name="xview3" value="<?php echo($view3_aso); ?>"> 
+      <input type="text" class="campo_texto" name="xview3" value="<?php echo($view03_aso); ?>"> 
 
      </td>
    </tr>
    <tr>
      <td>View 4</td>
      <td>
-      <input type="text" class="campo_texto" name="xview4" value="<?php echo($view4_aso); ?>"> 
+      <input type="text" class="campo_texto" name="xview4" value="<?php echo($view04_aso); ?>"> 
 
      </td>
    </tr>
