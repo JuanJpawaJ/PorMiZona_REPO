@@ -48,6 +48,14 @@
 	font-family:Tahoma, Geneva, sans-serif
 	font-weight: bold;	
 }
+
+.txt_view_pie {
+	color: #000000;
+	text-align: center;
+	font-size: 16px;
+	font-family:Tahoma, Geneva, sans-serif
+	font-weight: bold;	
+}
 .text_tabla_zonas {
 	font-family: "Times New Roman", Times, serif;
 }
@@ -223,7 +231,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 </table></td>
       </tr>
       <tr>
-        <td height="22" colspan="2" align="center" bgcolor="#0099CC"> <? echo "<br>"; ?> <? echo $cod_aso." - ".$date_aso."<br>"; ?> <? echo "la: ".$latitud_aso." lo: ".$longitud_aso."<br>"; ?></td>
+        <td height="22" colspan="2" align="center" bgcolor="#000000" class="txt_view_pie">  <? echo $cod_aso." - ".$date_aso."<br>"; ?> <? echo "Latitud: ".$latitud_aso." - "." Longitud: ".$longitud_aso."<br>"; ?></td>
       </tr>
       <tr>
         <td height="32" colspan="2">Acceso solo a propietarios:<a href="ingre.php?xcod=<? echo ($cod_aso);?>&xiclave=SI"><img src="imagenes/bot_soypropietario.png" width="156" height="23" style="border:0;" onMouseOver="this.style.border='solid  2px #FFFFFF';" onMouseOut="this.style.border=0;" border="0"></a></td>
