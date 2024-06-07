@@ -205,7 +205,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         <td height="53" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC" class="productos_aso"><? echo $productos_aso."<br>"; ?></td>
       </tr>
       <tr>
-        <td height="194" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC"><table width="759" border="0" align="center" cellpadding="0" cellspacing="0">
+        <td height="194" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC"><table width="759" border="2" align="center" cellpadding="0" cellspacing="0">
 
 
   <tr>
@@ -219,11 +219,9 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
     <td width="118" class="txt_view_dir_otros" ><? echo $estado_aso; ?></td>
   </tr>
   <tr>
-    <td height="39" colspan="4" class="txt_view_dir_otros" ><? echo $categoria_aso.": ".$categoriatxt_aso."<br>"; ?></td>
-  </tr>
-  <tr>
-    <td height="39" colspan="3" class="txt_view_dir_otros" ><? echo $email_aso; ?></td>  
-  </tr>
+    <td height="39" colspan="2" class="txt_view_dir_otros" ><? echo $categoria_aso.": ".$categoriatxt_aso."<br>"; ?></td>
+    <td height="39" colspan="2" class="txt_view_dir_otros" ><? echo $email_aso; ?></td>
+    </tr>
   <tr>
     <td height="32" colspan="3" class="txt_view_dir_otros"><? echo $msjpublico_aso; ?></td>
     <td >&nbsp;</td>
