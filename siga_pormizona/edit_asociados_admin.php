@@ -79,7 +79,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
      <h2>           *PAGINA DE EDICION ADMIN  </h2>
 
   
-<form id="form0" name="form0" method="post" onsubmit="return checkSubmit();" action="areg_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
+<form id="form1" name="form1" method="post" onsubmit="return checkSubmit();" action="areg_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
  
  <table width="669" border="1" cellspacing="1" cellpadding="1">
    <tr>
@@ -234,6 +234,25 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
    </tr>
 
    <tr>
+  </table>  
+  
+             <input type="hidden" name="xform" value="TODO01"/> 
+           <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> > 
+              
+               
+ 
+           <div class="campo_boton">
+                    <button class="boton_form">ENVIAR FORMULARIO TODO 01</button>
+           </div>
+   </form>
+   <br/>   
+<br/>   
+
+   
+<form id="form2" name="form2" method="post" onsubmit="return checkSubmit();" action="areg_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
+   
+  <table width="669" border="1" cellspacing="1" cellpadding="1">
+  
      <td>Publicidad</td>
      <td>
      <input type="text" class="campo_texto" name="xpublicidad" value="<?php echo($publicidad_aso); ?>"> 
@@ -330,16 +349,16 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
  </table>
   <br/>  
   
- <h2 class="semi-titulosform">FORMULARIO 01</h2>
+
  
 
-           <input type="hidden" name="xform" value="TODO"/> 
+           <input type="hidden" name="xform" value="TODO02"/> 
            <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> > 
               
                
  
            <div class="campo_boton">
-                    <button class="boton_form">ENVIAR FORMULARIO 02</button>
+                    <button class="boton_form">ENVIAR FORMULARIO TODO 02</button>
            </div>
     </form>
 <br/>   
