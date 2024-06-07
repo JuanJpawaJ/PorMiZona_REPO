@@ -145,7 +145,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 
 
 
-    <table width="800" height="969" border="1" align="center" cellpadding="1" cellspacing="1">
+    <table width="800" height="962" border="1" align="center" cellpadding="1" cellspacing="1">
       <tr>
         <td width="1574" height="142" colspan="2" align="center" valign="middle" background="iconos/f_cabview.jpg" >
 		<table width="772" border="0" cellspacing="0" cellpadding="0">
@@ -181,26 +181,33 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 
 
   <tr>
-    <td height="39" class="txt_view_pequeño" ><? echo $direccion_aso."<br>"; ?></td>
-    <td rowspan="2"  ><? echo $telf1_aso." / ".$telf2_aso."<br>"; ?></td>
-  </tr>
-  <tr>
-    <td height="39" class="txt_view_pequeño" ><? echo $referencia_aso."<br>"; ?></td>
+    <td height="39" colspan="2" class="txt_view_pequeño" ><? echo $referencia_aso."<br>"; ?></td>
+    <td height="39" colspan="2" class="txt_view_pequeño" ><? echo $telf1_aso." / ".$telf2_aso."<br>"; ?></td>
     </tr>
   <tr>
-    <td height="39" colspan="2" class="txt_view_pequeño" ><? echo $categoria_aso.": ".$categoriatxt_aso."<br>"; ?></td>
-    </tr>
-  <tr>
-    <td width="512" height="39" class="txt_view_pequeño" ><? echo $email_aso; ?></td>  
+    <td width="352" height="39" class="txt_view_pequeño" ><? echo $direccion_aso."<br>"; ?></td>
+    <td width="137" class="txt_view_pequeño" ><? echo $distrito_aso; ?></td>
+    <td width="142" class="txt_view_pequeño" ><? echo $provincia_aso; ?></td>
+    <td width="118"  ><? echo $estado_aso; ?></td>
   </tr>
   <tr>
-    <td height="32" class="txt_view_pequeño">Productos:</td>
+    <td height="39" colspan="3" class="txt_view_pequeño" >&nbsp;</td>
+    <td  >&nbsp;</td>
+    </tr>
+  <tr>
+    <td height="39" colspan="4" class="txt_view_pequeño" ><? echo $categoria_aso.": ".$categoriatxt_aso."<br>"; ?></td>
+    </tr>
+  <tr>
+    <td height="39" colspan="3" class="txt_view_pequeño" ><? echo $email_aso; ?></td>  
+  </tr>
+  <tr>
+    <td height="32" colspan="3" class="txt_view_pequeño">Productos:</td>
     <td >&nbsp;</td>
   </tr>
 </table></td>
       </tr>
       <tr>
-        <td height="35" colspan="2" align="center" bgcolor="#0099CC"><? echo $email_aso."<br>"; ?> <? echo $estado_aso." - ".$pais_aso."<br>"; ?> <? echo "<br>"; ?> <? echo $cod_aso." - ".$date_aso."<br>"; ?> <? echo "la: ".$latitud_aso." lo: ".$longitud_aso."<br>"; ?></td>
+        <td height="22" colspan="2" align="center" bgcolor="#0099CC"> <? echo "<br>"; ?> <? echo $cod_aso." - ".$date_aso."<br>"; ?> <? echo "la: ".$latitud_aso." lo: ".$longitud_aso."<br>"; ?></td>
       </tr>
       <tr>
         <td height="32" colspan="2">Acceso solo a propietarios:<a href="ingre.php?xcod=<? echo ($cod_aso);?>&xiclave=SI"><img src="imagenes/bot_soypropietario.png" width="156" height="23" style="border:0;" onMouseOver="this.style.border='solid  2px #FFFFFF';" onMouseOut="this.style.border=0;" border="0"></a></td>
