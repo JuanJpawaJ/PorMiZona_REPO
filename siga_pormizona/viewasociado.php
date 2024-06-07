@@ -50,7 +50,7 @@
 }
 
 .txt_view_pie {
-	color: #000000;
+	color:#FFF
 	text-align: center;
 	font-size: 16px;
 	font-family:Tahoma, Geneva, sans-serif
