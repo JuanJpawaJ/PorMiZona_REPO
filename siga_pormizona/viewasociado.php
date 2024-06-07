@@ -27,7 +27,14 @@
 	font-family: "Comic Sans MS", cursive;
 	font-weight: bold;	
 }
+.txt_view_dirección {
+	color: #0000FF;
+	text-align: center;
+	font-size: 14px;
+	font-family:Tahoma, Geneva, sans-serif
+	font-weight: bold;	
 
+}
 .text_tabla_zonas {
 	font-family: "Times New Roman", Times, serif;
 }
@@ -181,8 +188,8 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 
 
   <tr>
-    <td height="39" colspan="2"  ><? echo $direccion_aso."<br>"; ?></td>
-    <td height="39" colspan="2"  ><? echo $telf1_aso." / ".$telf2_aso."<br>"; ?></td>
+    <td height="39" colspan="2" class="txt_view_direccion"  ><? echo $direccion_aso."<br>"; ?></td>
+    <td height="39" colspan="2" class="txt_view_direccion" ><? echo $telf1_aso." / ".$telf2_aso."<br>"; ?></td>
     </tr>
   <tr>
     <td width="352" height="39" class="txt_view_pequeño" ><? echo $referencia_aso."<br>"; ?></td>
