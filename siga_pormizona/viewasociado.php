@@ -29,19 +29,25 @@
 }
 .txt_view_direcc {
 	color: #0000FF;
-	font-size: 18px;
+	font-size: 20px;
 	font-family:Tahoma, Geneva, sans-serif
 	font-weight: bold;	
 }
 .txt_view_telf {
 	color: #0000FF;
 	text-align: center;
-	font-size: 18px;
+	font-size: 20px;
 	font-family:Tahoma, Geneva, sans-serif
 	font-weight: bold;	
-
 }
 
+.txt_view_otros {
+	color: #0000FF;
+	text-align: center;
+	font-size: 16px;
+	font-family:Tahoma, Geneva, sans-serif
+	font-weight: bold;	
+}
 .text_tabla_zonas {
 	font-family: "Times New Roman", Times, serif;
 }
@@ -199,20 +205,16 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
     <td height="39" colspan="2" class="txt_view_telf" ><? echo $telf1_aso." / ".$telf2_aso."<br>"; ?></td>
     </tr>
   <tr>
-    <td width="352" height="39" class="txt_view_pequeño" ><? echo $referencia_aso."<br>"; ?></td>
-    <td width="137" class="txt_view_pequeño" ><? echo $distrito_aso; ?></td>
-    <td width="142" class="txt_view_pequeño" ><? echo $provincia_aso; ?></td>
-    <td width="118"  ><? echo $estado_aso; ?></td>
+    <td width="352" height="39" class="txt_view_dir_otros" ><? echo $referencia_aso."<br>"; ?></td>
+    <td width="137" class="txt_view_dir_otros" ><? echo $distrito_aso; ?></td>
+    <td width="142" class="txt_view_dir_otros" ><? echo $provincia_aso; ?></td>
+    <td width="118" class="txt_view_dir_otros" ><? echo $estado_aso; ?></td>
   </tr>
   <tr>
-    <td height="39" colspan="3" class="txt_view_pequeño" >&nbsp;</td>
-    <td  >&nbsp;</td>
-    </tr>
+    <td height="39" colspan="4" class="txt_view_dir_otros" ><? echo $categoria_aso.": ".$categoriatxt_aso."<br>"; ?></td>
+  </tr>
   <tr>
-    <td height="39" colspan="4" class="txt_view_pequeño" ><? echo $categoria_aso.": ".$categoriatxt_aso."<br>"; ?></td>
-    </tr>
-  <tr>
-    <td height="39" colspan="3" class="txt_view_pequeño" ><? echo $email_aso; ?></td>  
+    <td height="39" colspan="3" class="txt_view_dir_otros" ><? echo $email_aso; ?></td>  
   </tr>
   <tr>
     <td height="32" colspan="3" class="txt_view_pequeño">Productos:</td>
