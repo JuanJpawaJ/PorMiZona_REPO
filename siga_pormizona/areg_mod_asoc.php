@@ -58,7 +58,10 @@ if      ($form=="TODO01") {
     $msjpublico_aso=$_POST['xmsjpublico'];
     $obsinterno_aso=$_POST['xobsinterno'];
 	
-    $sql="UPDATE asociado_51 SET favicon_aso='$favicon_aso', grupolista_aso='$grupolista_aso', 	 publicidad_aso='$publicidad_aso', img1_aso='$img1_aso', img2_aso='$img2_aso', logo_aso='$logo_aso', view1_aso='$view1_aso', view2_aso='$view2_aso', view3_aso='$view3_aso', view4_aso='$view4_aso', msjpublico_aso='$msjpublico_aso', obsinterno_aso='$obsinterno_aso'  WHERE cod_aso=$cod";
+//    $sql="UPDATE asociado_51 SET favicon_aso='$favicon_aso', grupolista_aso='$grupolista_aso', publicidad_aso='$publicidad_aso', img1_aso='$img1_aso', img2_aso='$img2_aso', logo_aso='$logo_aso', view1_aso='$view1_aso', view2_aso='$view2_aso', view3_aso='$view3_aso', view4_aso='$view4_aso', msjpublico_aso='$msjpublico_aso', obsinterno_aso='$obsinterno_aso'  WHERE cod_aso=$cod";
+
+
+    $sql="UPDATE asociado_51 SET logo_aso='$logo_aso', view1_aso='$view1_aso', view2_aso='$view2_aso', view3_aso='$view3_aso', view4_aso='$view4_aso', msjpublico_aso='$msjpublico_aso', obsinterno_aso='$obsinterno_aso'  WHERE cod_aso=$cod";
     $result=mysqli_query($connec,$sql);
 	if($result){
 		echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok TODO.</span>");
