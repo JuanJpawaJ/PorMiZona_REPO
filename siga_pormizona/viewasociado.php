@@ -191,8 +191,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
     <td height="39" colspan="2" class="txt_view_pequeño" ><? echo $categoria_aso.": ".$categoriatxt_aso."<br>"; ?></td>
     </tr>
   <tr>
-    <td width="512" height="39" class="txt_view_pequeño" >&nbsp;</td>
-    <td width="241"  >&nbsp;</td>
+    <td width="512" height="39" class="txt_view_pequeño" ><? echo $email_aso; ?></td>  
   </tr>
   <tr>
     <td height="32" class="txt_view_pequeño">Productos:</td>
