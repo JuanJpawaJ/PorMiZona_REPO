@@ -197,7 +197,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         <td height="53" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC" class="productos_aso"><? echo $productos_aso."<br>"; ?></td>
       </tr>
       <tr>
-        <td height="194" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC"><table width="759" border="1" align="center" cellpadding="0" cellspacing="0">
+        <td height="194" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC"><table width="759" border="0" align="center" cellpadding="0" cellspacing="0">
 
 
   <tr>
@@ -217,7 +217,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
     <td height="39" colspan="3" class="txt_view_dir_otros" ><? echo $email_aso; ?></td>  
   </tr>
   <tr>
-    <td height="32" colspan="3" class="txt_view_pequeño">Productos:</td>
+    <td height="32" colspan="3" class="txt_view_dir_otros"><? echo $msjpublico_aso; ?></td>
     <td >&nbsp;</td>
   </tr>
 </table></td>
@@ -238,7 +238,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         <div class="footer_clientes footer_uno">
             <article class="footer_article">
                 <h2 class="semi-titulos">CLIENTES</h2>
-                <p>Dencuentro.com es una página gratuita.
+                <p>PorMiZona.com.pe es una página gratuita.
                 Las consultas por esta Web y los contactos 
                 con nuestros asociados son gratuitos.</p>
             </article>
@@ -253,6 +253,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
                      
                     * Servicio por convenio:
                     - Diseño logos
+					- Favicon
                     - Mapa Google.
                 </p>
             </article>
@@ -278,7 +279,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 
         <div class="footer_logo">
             <img src="imagenes/Logo/Logo_blanco_puro.svg" alt="">
-            <h3>Arequipa - 2020</h3>
+            <h3>Arequipa - 2024</h3>
         </div>
 </footer>
 </body>
