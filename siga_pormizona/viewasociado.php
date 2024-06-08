@@ -28,15 +28,15 @@
 	font-weight: bold;	
 }
 .txt_view_direcc {
-	color: #0000FF;
-	font-size: 20px;
+	color: #000000;
+	font-size: 24px;
 	font-family:Tahoma, Geneva, sans-serif
 	font-weight: bold;	
 }
 .txt_view_telf {
-	color: #0000FF;
+	color: #000000;
 	text-align: center;
-	font-size: 20px;
+	font-size: 24px;
 	font-family:Tahoma, Geneva, sans-serif
 	font-weight: bold;	
 }
@@ -114,6 +114,7 @@ $tabla = mysqli_fetch_array( $result );
 	$distrito_aso=$tabla["distrito_aso"];
 	$provincia_aso=$tabla["provincia_aso"];
 	$estado_aso=$tabla["estado_aso"];
+	
 	$referencia_aso=$tabla["referencia_aso"];
 	$telf1_aso=$tabla["telf1_aso"];
 	$telf2_aso=$tabla["telf2_aso"];
@@ -232,7 +233,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
             <td><span class="txt_view_dir_otros"><? echo $estado_aso; ?></span></td>
           </tr>
           <tr>
-            <td colspan="3" align="center" class="txt_view_pie"><? echo $cod_aso." - ".$date_aso."<br>"; ?> <? echo "Latitud: ".$latitud_aso." - "." Longitud: ".$longitud_aso."<br>"; ?></td>
+            <td colspan="3" align="center" class="txt_view_pie"><? echo $cod_aso." - ". "Latitud: ".$latitud_aso." - "." Longitud: ".$longitud_aso." - ".$date_aso ; ?></td>
           </tr>
         </table></td>
       </tr>
