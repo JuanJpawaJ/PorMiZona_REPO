@@ -28,13 +28,13 @@
 	font-weight: bold;	
 }
 .txt_view_direcc {
-	color: #000000;
+	color: #FFFFFF;
 	font-size: 24px;
 	font-family:Tahoma, Geneva, sans-serif
 	font-weight: bold;	
 }
 .txt_view_telf {
-	color: #000000;
+	color: #FFFFFF;
 	text-align: center;
 	font-size: 24px;
 	font-family:Tahoma, Geneva, sans-serif
@@ -44,7 +44,7 @@
 .txt_view_otros {
 	color: #0000FF;
 	text-align: center;
-	font-size: 16px;
+	font-size: 18px;
 	font-family:Tahoma, Geneva, sans-serif
 	font-weight: bold;	
 }
@@ -52,7 +52,7 @@
 .txt_view_pie {
 	color:#FFF;
 	text-align: center;
-	font-size: 16px;
+	font-size: 14px;
 	font-family:Tahoma, Geneva, sans-serif
 	font-weight: bold;	
 }
@@ -206,7 +206,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         <td height="53" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC" class="productos_aso"><? echo $productos_aso."<br>"; ?></td>
       </tr>
       <tr>
-        <td height="68" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC"><table width="759" border="2" align="center" cellpadding="0" cellspacing="0">
+        <td height="68" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC"><table width="759" border="0" align="center" cellpadding="0" cellspacing="0">
 
   <tr>
     <td width="489" height="28" colspan="2" class="txt_view_dir_otros" ><? echo $categoria_aso.": ".$categoriatxt_aso."<br>"; ?></td>
@@ -221,16 +221,24 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
       <tr>
         <td height="11" colspan="2" align="center" bgcolor="#000000" class="txt_view_pie"><table width="773" border="0" cellspacing="0" cellpadding="0">
           <tr>
-            <td width="580" colspan="2"><span class="txt_view_direcc"><? echo $direccion_aso."<br>"; ?></span></td>
-            <td width="180"><span class="txt_view_telf"><? echo $telf1_aso." / ".$telf2_aso."<br>"; ?></span></td>
+            <td width="448" colspan="3"><table width="755" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="616"><span class="txt_view_direcc"><? echo $direccion_aso."<br>"; ?></span></td>
+                <td width="126"><span class="txt_view_telf"><? echo $telf1_aso." / ".$telf2_aso."<br>"; ?></span></td>
+              </tr>
+            </table></td>
           </tr>
           <tr>
             <td colspan="3"><span class="txt_view_dir_otros"><? echo $referencia_aso."<br>"; ?></span></td>
           </tr>
           <tr>
-            <td><span class="txt_view_dir_otros"><? echo $distrito_aso; ?></span></td>
-            <td><span class="txt_view_dir_otros"><? echo $provincia_aso; ?></span></td>
-            <td><span class="txt_view_dir_otros"><? echo $estado_aso; ?></span></td>
+            <td colspan="3" align="center" valign="middle"><table width="764" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><span class="txt_view_dir_otros"><? echo $distrito_aso; ?></span></td>
+                <td><span class="txt_view_dir_otros"><? echo $provincia_aso; ?></span></td>
+                <td><span class="txt_view_dir_otros"><? echo $estado_aso; ?></span></td>
+              </tr>
+            </table></td>
           </tr>
           <tr>
             <td colspan="3" align="center" class="txt_view_pie"><? echo $cod_aso." - ". "Latitud: ".$latitud_aso." - "." Longitud: ".$longitud_aso." - ".$date_aso ; ?></td>
