@@ -173,7 +173,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 
 
 
-    <table width="800" height="962" border="1" align="center" cellpadding="1" cellspacing="1">
+    <table width="800" height="873" border="1" align="center" cellpadding="1" cellspacing="1">
       <tr>
         <td width="1574" height="142" colspan="2" align="center" valign="middle" background="iconos/f_cabview.jpg" >
 		<table width="772" border="0" cellspacing="0" cellpadding="0">
@@ -205,38 +205,40 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         <td height="53" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC" class="productos_aso"><? echo $productos_aso."<br>"; ?></td>
       </tr>
       <tr>
-        <td height="194" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC"><table width="759" border="2" align="center" cellpadding="0" cellspacing="0">
-
+        <td height="68" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC"><table width="759" border="2" align="center" cellpadding="0" cellspacing="0">
 
   <tr>
-    <td height="39" colspan="2" class="txt_view_direcc"  ><? echo $direccion_aso."<br>"; ?></td>
-    <td height="39" colspan="2" class="txt_view_telf" ><? echo $telf1_aso." / ".$telf2_aso."<br>"; ?></td>
-    </tr>
-  <tr>
-    <td width="352" height="39" class="txt_view_dir_otros" ><? echo $referencia_aso."<br>"; ?></td>
-    <td width="137" class="txt_view_dir_otros" ><? echo $distrito_aso; ?></td>
-    <td width="142" class="txt_view_dir_otros" ><? echo $provincia_aso; ?></td>
-    <td width="118" class="txt_view_dir_otros" ><? echo $estado_aso; ?></td>
+    <td width="489" height="28" colspan="2" class="txt_view_dir_otros" ><? echo $categoria_aso.": ".$categoriatxt_aso."<br>"; ?></td>
+    <td width="142" height="28" colspan="2" class="txt_view_dir_otros" ><? echo $email_aso; ?></td>
   </tr>
   <tr>
-    <td height="39" colspan="2" class="txt_view_dir_otros" ><? echo $categoria_aso.": ".$categoriatxt_aso."<br>"; ?></td>
-    <td height="39" colspan="2" class="txt_view_dir_otros" ><? echo $email_aso; ?></td>
-    </tr>
-  <tr>
     <td height="32" colspan="3" class="txt_view_dir_otros"><? echo $msjpublico_aso; ?></td>
-    <td >&nbsp;</td>
+    <td width="118" >&nbsp;</td>
   </tr>
 </table></td>
       </tr>
       <tr>
-        <td height="22" colspan="2" align="center" bgcolor="#000000" class="txt_view_pie">  <? echo $cod_aso." - ".$date_aso."<br>"; ?> <? echo "Latitud: ".$latitud_aso." - "." Longitud: ".$longitud_aso."<br>"; ?></td>
+        <td height="11" colspan="2" align="center" bgcolor="#000000" class="txt_view_pie"><table width="773" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="580" colspan="2"><span class="txt_view_direcc"><? echo $direccion_aso."<br>"; ?></span></td>
+            <td width="180"><span class="txt_view_telf"><? echo $telf1_aso." / ".$telf2_aso."<br>"; ?></span></td>
+          </tr>
+          <tr>
+            <td colspan="3"><span class="txt_view_dir_otros"><? echo $referencia_aso."<br>"; ?></span></td>
+          </tr>
+          <tr>
+            <td><span class="txt_view_dir_otros"><? echo $distrito_aso; ?></span></td>
+            <td><span class="txt_view_dir_otros"><? echo $provincia_aso; ?></span></td>
+            <td><span class="txt_view_dir_otros"><? echo $estado_aso; ?></span></td>
+          </tr>
+          <tr>
+            <td colspan="3" align="center" class="txt_view_pie"><? echo $cod_aso." - ".$date_aso."<br>"; ?> <? echo "Latitud: ".$latitud_aso." - "." Longitud: ".$longitud_aso."<br>"; ?></td>
+          </tr>
+        </table></td>
       </tr>
       <tr>
         <td height="32" colspan="2">Acceso solo a propietarios:<a href="ingre.php?xcod=<? echo ($cod_aso);?>&xiclave=SI"><img src="imagenes/bot_soypropietario.png" width="156" height="23" style="border:0;" onMouseOver="this.style.border='solid  2px #FFFFFF';" onMouseOut="this.style.border=0;" border="0"></a></td>
  
-      </tr>
-      <tr>
-        <td height="23" colspan="2">&nbsp;</td>
       </tr>
     </table>
 <p>&nbsp;</p>
