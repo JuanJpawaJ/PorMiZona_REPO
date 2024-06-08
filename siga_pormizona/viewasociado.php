@@ -35,7 +35,7 @@
 }
 .txt_view_telf {
 	color: #FFFFFF;
-	font-size: 24px;
+	font-size: 20px;
 	font-family:Tahoma, Geneva, sans-serif
 	font-weight: bold;	
 }
