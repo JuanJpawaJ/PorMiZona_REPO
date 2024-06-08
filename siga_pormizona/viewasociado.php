@@ -35,7 +35,6 @@
 }
 .txt_view_telf {
 	color: #FFFFFF;
-	text-align: center;
 	font-size: 24px;
 	font-family:Tahoma, Geneva, sans-serif
 	font-weight: bold;	
@@ -223,7 +222,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
           <tr>
             <td width="448" colspan="3"><table width="755" border="0" cellspacing="0" cellpadding="0">
               <tr>
-                <td width="564"><span class="txt_view_direcc"><? echo $direccion_aso."<br>"; ?></span></td>
+                <td width="564" align="left"><span class="txt_view_direcc"><? echo $direccion_aso."<br>"; ?></span></td>
                 <td width="191"><span class="txt_view_telf"><? echo $telf1_aso." / ".$telf2_aso."<br>"; ?></span></td>
               </tr>
             </table></td>
