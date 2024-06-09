@@ -148,7 +148,7 @@ $img1_aso=$tabla["img1_aso"];
         //echo "Dimensiones originales - Ancho: " . $originalWidth . " píxeles, Alto: " . $originalHeight . " píxeles<br>";
         $futuro_ancho=((740/$originalWidth)*$originalHeight);
         if ($futuro_ancho>482) {
-	       $vw_ancho=500;
+	       $vw_ancho=450;
         } else {
 	       $vw_ancho=740;
         }
