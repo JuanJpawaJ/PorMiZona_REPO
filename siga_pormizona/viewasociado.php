@@ -182,7 +182,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 
 
 
-    <table width="800" height="873" border="1" align="center" cellpadding="1" cellspacing="1">
+    <table width="800" height="707" border="1" align="center" cellpadding="1" cellspacing="1">
       <tr>
         <td width="1574" height="142" colspan="2" align="center" valign="middle" background="iconos/f_cabview.jpg" >
 		<table width="772" border="0" cellspacing="0" cellpadding="0">
@@ -208,7 +208,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 		  </table></td>
       </tr>
       <tr>
-        <td height="447" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC"><img src="<?php echo "img_asociados/".$img1_aso ?>" width="<? echo $vw_ancho; ?>"  height="%"></td>
+        <td height="305" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC"><img src="<?php echo "img_asociados/".$img1_aso ?>" width="<? echo $vw_ancho; ?>"  height="%"></td>
       </tr>
       <tr>
         <td height="53" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC" class="productos_aso"><? echo $productos_aso."<br>"; ?></td>
@@ -217,13 +217,12 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         <td height="68" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC"><table width="759" border="0" align="center" cellpadding="0" cellspacing="0">
 
   <tr>
-    <td width="489" height="28" colspan="2" class="txt_view_dir_otros" ><? echo $categoria_aso.": ".$categoriatxt_aso."<br>"; ?></td>
-    <td width="142" height="28" colspan="2" class="txt_view_dir_otros" ><? echo $email_aso; ?></td>
+    <td width="489" height="28" class="txt_view_dir_otros" ><? echo $categoria_aso.": ".$categoriatxt_aso."<br>"; ?></td>
+    <td width="142" height="28" class="txt_view_dir_otros" ><? echo $email_aso; ?></td>
   </tr>
   <tr>
     <td height="32" colspan="3" class="txt_view_dir_otros"><? echo $msjpublico_aso; ?></td>
-    <td width="118" >&nbsp;</td>
-  </tr>
+    </tr>
 </table></td>
       </tr>
       <tr>
@@ -231,7 +230,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
           <tr>
             <td width="448" colspan="3"><table width="755" border="0" cellspacing="0" cellpadding="0">
               <tr>
-                <td width="564" align="left"><span class="txt_view_direcc"><? echo $direccion_aso."<br>"; ?></span></td>
+                <td width="564" align="center"><span class="txt_view_direcc"><? echo $direccion_aso."<br>"; ?></span></td>
                 <td width="191"><span class="txt_view_telf"><? echo $telf1_aso." / ".$telf2_aso."<br>"; ?></span></td>
               </tr>
             </table></td>
@@ -242,9 +241,9 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
           <tr>
             <td colspan="3" align="center" valign="middle"><table width="764" border="0" cellspacing="0" cellpadding="0">
               <tr>
-                <td><span class="txt_view_dir_otros"><? echo $distrito_aso; ?></span></td>
-                <td><span class="txt_view_dir_otros"><? echo $provincia_aso; ?></span></td>
-                <td><span class="txt_view_dir_otros"><? echo $estado_aso; ?></span></td>
+                <td align="center"><span class="txt_view_dir_otros"><? echo $distrito_aso; ?></span></td>
+                <td align="center"><span class="txt_view_dir_otros"><? echo $provincia_aso; ?></span></td>
+                <td align="center"><span class="txt_view_dir_otros"><? echo $estado_aso; ?></span></td>
               </tr>
             </table></td>
           </tr>
