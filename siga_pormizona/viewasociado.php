@@ -143,17 +143,16 @@ $img1_aso=$tabla["img1_aso"];
 	if(strlen($img1_aso)==0) {
 		$img1_aso="avi_pmz_bl.jpg";
 	} else {
-	// Ruta de la imagen original
-$imagePath = "img_asociados/".$img1_aso; 
-
-// Obtener las dimensiones de la imagen original
-list($originalWidth, $originalHeight) = getimagesize($imagePath);
-
-// Mostrar las dimensiones originales
-echo "Dimensiones originales - Ancho: " . $originalWidth . " píxeles, Alto: " . $originalHeight . " píxeles<br>";
-	
+        $imagePath = "img_asociados/".$img1_aso; 
+        list($originalWidth, $originalHeight) = getimagesize($imagePath);
+        //echo "Dimensiones originales - Ancho: " . $originalWidth . " píxeles, Alto: " . $originalHeight . " píxeles<br>";
+        $futuro_ancho=((740/$originalWidth)*$originalHeight);
+        if ($futuro_ancho>482) {
+	       $vw_ancho=500;
+        } else {
+	       $vw_ancho=740;
+        }
 	}
-
 
 $img2_aso=$tabla["img2_aso"];
 $logo_aso=$tabla["logo_aso"];
@@ -209,7 +208,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 		  </table></td>
       </tr>
       <tr>
-        <td height="447" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC"><img src="<?php echo "img_asociados/".$img1_aso ?>" width="769" height="441"></td>
+        <td height="447" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC"><img src="<?php echo "img_asociados/".$img1_aso ?>" width="<? echo $vw_ancho; ?>"  height="%"></td>
       </tr>
       <tr>
         <td height="53" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC" class="productos_aso"><? echo $productos_aso."<br>"; ?></td>
