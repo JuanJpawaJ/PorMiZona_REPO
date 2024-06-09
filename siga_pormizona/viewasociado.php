@@ -142,6 +142,16 @@ $grupolista_aso=$tabla["grupolista_aso"];
 $img1_aso=$tabla["img1_aso"];
 	if(strlen($img1_aso)==0) {
 		$img1_aso="avi_pmz_bl.jpg";
+	} else {
+	// Ruta de la imagen original
+$imagePath = "img_asociados/".$img1_aso; 
+
+// Obtener las dimensiones de la imagen original
+list($originalWidth, $originalHeight) = getimagesize($imagePath);
+
+// Mostrar las dimensiones originales
+echo "Dimensiones originales - Ancho: " . $originalWidth . " píxeles, Alto: " . $originalHeight . " píxeles<br>";
+	
 	}
 
 
