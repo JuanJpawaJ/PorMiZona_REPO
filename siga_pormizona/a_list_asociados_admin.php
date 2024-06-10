@@ -213,21 +213,21 @@ if ($xdelreg=="SIDELREG") {
     <!-- INICIO DE MUESTRA ITEMS -->
     <table width="1038" height="80" border="1" cellspacing="0">
       <tr bgcolor="#CCFFFF" class="diez">
-        <td width="48" align="center">COD. Item</td>
-        <td width="93">FAVICON</td>
-        <td width="36">IMAGEN</td>
-        <td width="36">LOGO</td>
-        <td width="36">Grupo</td>
-        <td width="251" align="center">PRODUCTO</td>
-        <td width="48" align="center">COD-MODELO</td>
-        <td width="54" align="center">COSTO</td>
-        <td width="63" align="center">PUBLICO 01</td>
-        <td width="53">UTIL 01</td>
-        <td width="44">FAVICON</td>
-        <td width="59">IMAGEN1</td>
-        <td width="39">LOGO</td>
-        <td width="59" align="center">EDITAR TXT</td>
-        <td width="57" align="center">DEL Reg.</td>
+        <td width="45" align="center">COD. Item</td>
+        <td width="68">FAVICON</td>
+        <td width="63">IMAGEN</td>
+        <td width="60">LOGO</td>
+        <td width="32">Grupo</td>
+        <td width="223" align="center">R. SOCIAL</td>
+        <td width="68" align="center">GEOLOCALIZA</td>
+        <td width="44" align="center">fecha</td>
+        <td width="71" align="center">PUBLICO 01</td>
+        <td width="49">UTIL 01</td>
+        <td width="43">FAVICON</td>
+        <td width="56">IMAGEN1</td>
+        <td width="38">LOGO</td>
+        <td width="56" align="center">EDITAR TXT</td>
+        <td width="60" align="center">DEL Reg.</td>
       </tr>
       <?php 
 
@@ -310,7 +310,7 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
 ?>
       
       <tr bgcolor="#FFFFFF" class="tabla10">
-        <td bgcolor="#FFFFFF"><?php echo($codigo_it) ?></td>
+        <td bgcolor="#FFFFFF"><?php echo($cod_aso) ?></td>
 
         <td valign="middle" bgcolor="#FFFFFF"><a href="viewasociado.php?xcod=<?php  echo($cod_aso); ?>"><img src=" <?php echo "img_asociados/".$favicon_aso ?> " width="60" height="%" /></a></td>
         <td bgcolor="#FFFFFF"><img src=" <?php echo "img_asociados/".$img1_aso ?> " width="60" height="%" /></td>
@@ -319,7 +319,7 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
         <td bgcolor="#FFFFFF"><?php echo($rsocial_aso) ?></td>
         <td align="right" bgcolor="#FFFFFF"><? echo($latitud_aso." ".$longitud_aso) ?></td>
         <td align="right" bgcolor="#FFFFFF"><? echo($date_aso) ?></td>
-        <td align="right" bgcolor="#FFFFFF"><? echo($publicidad_aso) ?></td>
+        <td align="right" bgcolor="#FFFFFF"><? echo($direccion_aso) ?></td>
         <td align="right" bgcolor="#FFFFFF"><? echo($view1_aso) ?></td>
         <td bgcolor="#FFCC66" align="center"><a href="img_asociados/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=01"><img src="iconos/ico_favicon.png" width="30" height="30"></a></td>                                                                  
         <td bgcolor="#FFCC66" align="center"><a href="img_asociados/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=02"><img src="iconos/ico_imagen.png" width="30" height="30"></a></td>                                                                  
