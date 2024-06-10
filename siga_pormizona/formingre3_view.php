@@ -27,10 +27,6 @@ if(strlen($xcodvalue)<>0) {
 }
 
 
-
-echo ("ESTES ES ELLLLLLLLLLLLLLLLLLLL cod_aso : ".$cod_aso);
-echo ("ESTES ES ELLLLLLLLLLLLLLLLLLLL xcodValue : ".$xcodvalue);
-
 //ÑÑÑ
 $result=mysqli_query($connec,"select * from asociado_51 where cod_aso='$cod_aso'");
 $total=mysqli_num_rows($result);
@@ -135,7 +131,7 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
            <input type="hidden" name="xlongitud" value=<? echo $xlongitud; ?> > 
 
            <div class="campo_boton">
-              <button class="boton_form">ENVIAR FORMULARIO 00</button>
+              <button class="boton_form">ENVIAR FORMULARIO 00 (Solo si es necesario)</button>
            </div>
    
            </form>
