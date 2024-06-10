@@ -74,9 +74,10 @@
     <td height="55" bgcolor="#48887A" class="TITULOBLANCO">Bienvenidos a Por Mi Zona.com.pe</td>
   </tr>
   <tr>
-    <td height="243" align="center" valign="top"><table width="846" height="596" border="1" cellpadding="1" cellspacing="1">
+    <td height="243" align="center" valign="top"><table width="846" height="596" border="0" cellpadding="0" cellspacing="0">
       <tr>
-        <td width="838"><h3>Conectamos tu negocio con la comunidad local</h3>
+        <td width="838"><h3>&nbsp;</h3>
+          <h3>Conectamos tu negocio con la comunidad local</h3>
           <p><strong>¿Quiénes somos?</strong> En <strong>Por Mi Zona.com.pe</strong>, nos dedicamos a conectar tiendas, empresas y profesionales con su público local a través de soluciones de publicidad eficientes y accesibles. Facilitamos la visibilidad de tu negocio y eventos locales de manera integral.</p>
           <p><strong>Nuestras soluciones:</strong></p>
           <ol>
@@ -108,12 +109,10 @@
           </ul>
           <p><strong>Únete a nosotros y haz crecer tu negocio con Por Mi Zona.com.pe!</strong></p>
           <p>Visítanos en <a rel="noreferrer" target="_new" href="http://www.pormizona.com.pe">www.pormizona.com.pe</a> y descubre cómo podemos ayudarte a alcanzar tus metas comerciales y a estar al tanto de todos los eventos importantes en tu área.</p>
-          <p><strong>Por Mi Zona.com.pe</strong> - ¡Tu conexión con la comunidad local!</p></td>
+          <p><strong>Por Mi Zona.com.pe</strong> - ¡Tu conexión con la comunidad local!</p>
+          <p>&nbsp;</p></td>
       </tr>
     </table></td>
-  </tr>
-  <tr>
-    <td height="24">&nbsp;</td>
   </tr>
   <tr>
     <td height="155" align="center" bgcolor="#CCCCCC" class="blanco"><img src="imagenes_1/anuncia_aqui.jpg" width="720" height="132" /></td>
