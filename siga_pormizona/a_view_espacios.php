@@ -295,6 +295,12 @@ $colorocu="#999999";
     <td height="61" align="center" class="blanco"><img src="../imagenes_1/titulo_catalogo_publicitario2.jpg" width="947" height="439" /></td>
   </tr>
   <tr>
+    <td height="61" align="center" class="blanco"><img src="../imagenes_1/texto_comunica_pormizona.jpg" width="734" height="969" /></td>
+  </tr>
+  <tr>
+    <td height="61" align="center" class="blanco"><img src="../imagenes_1/mapa_zonas.jpg" width="946" height="882" /></td>
+  </tr>
+  <tr>
     <td height="61" align="center" bgcolor="#000000" class="blanco">Design for: JpawaJ SAC - Abril 2023 - 959 956 000 - Arequipa - Perú</td>
   </tr>
 </table>

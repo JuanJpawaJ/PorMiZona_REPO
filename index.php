@@ -30,7 +30,7 @@
 </head>
 
 <body>
-<table width="908" height="2973" border="1" align="center" cellpadding="0" cellspacing="0">
+<table width="908" height="1882" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td width="900" height="119" align="center" valign="middle"><img src="imagenes_1/logo_pmz_telf_rgb.jpg" width="862" height="158" /></td>
   </tr>
@@ -52,40 +52,68 @@
     </table></td>
   </tr>
   <tr>
-    <td height="43" align="center" bgcolor="#48887A"><span class="TITULOBLANCO">CLASIFICADOS</span></td>
+    <td height="43" align="center" bgcolor="#48887A"><span class="TITULOBLANCO">EMPRESAS - ASOCIADAS</span></td>
   </tr>
   <tr>
-    <td height="115" align="center" valign="middle"><table width="910" height="287" border="1" cellpadding="0" cellspacing="0">
+    <td height="115" align="center" valign="middle"><table width="910" height="305" border="1" cellpadding="0" cellspacing="0">
       <tr>
-        <td height="95">&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
+        <td height="151" align="center" valign="middle"><img src="siga_pormizona/img_asociados/log_mujerbonita.png" width="190" height="99" /></td>
+        <td align="center"><img src="siga_pormizona/img_asociados/log_jpawaj.png" width="190" height="99" /></td>
+        <td align="center"><img src="siga_pormizona/img_asociados/log_syscomputer.png" width="190" height="83" /></td>
+        <td align="center"><img src="siga_pormizona/img_asociados/log_interclass.png" width="190" height="65" /></td>
       </tr>
       <tr>
-        <td width="269" height="95"><img src="siga_pormizona/img_asociados/cli_IA.jpg" width="269" height="159" /></td>
-        <td width="127">&nbsp;</td>
-        <td width="125">&nbsp;</td>
-        <td width="162">&nbsp;</td>
-        <td width="215">&nbsp;</td>
+        <td width="230" height="147"><img src="siga_pormizona/img_asociados/cli_IA.jpg" width="220" height="112" /></td>
+        <td width="229" align="center"><img src="siga_pormizona/img_asociados/log_dental32.png" width="215" height="83" /></td>
+        <td width="225" align="center"><img src="siga_pormizona/img_asociados/log_annyperfu.png" width="200" height="88" /></td>
+        <td width="216" align="center"><img src="siga_pormizona/img_asociados/mia_delicia.png" width="200" height="126" /></td>
       </tr>
     </table></td>
   </tr>
   <tr>
-    <td height="44" bgcolor="#48887A" class="TITULOBLANCO">INDICACIONES - CATÁLOGO PUBLICITARIO</td>
+    <td height="55" bgcolor="#48887A" class="TITULOBLANCO">Bienvenidos a Por Mi Zona.com.pe</td>
   </tr>
   <tr>
-    <td height="1295" align="center" valign="top"><img src="imagenes_1/texto_comunica_pormizona.jpg" width="900" height="1285" /></td>
+    <td height="243" align="center" valign="top"><table width="846" height="596" border="1" cellpadding="1" cellspacing="1">
+      <tr>
+        <td width="838"><h3>Conectamos tu negocio con la comunidad local</h3>
+          <p><strong>¿Quiénes somos?</strong> En <strong>Por Mi Zona.com.pe</strong>, nos dedicamos a conectar tiendas, empresas y profesionales con su público local a través de soluciones de publicidad eficientes y accesibles. Facilitamos la visibilidad de tu negocio y eventos locales de manera integral.</p>
+          <p><strong>Nuestras soluciones:</strong></p>
+          <ol>
+            <li>
+              <p><strong>Publicidad Virtual por Zona:</strong></p>
+              <ul>
+                <li><strong>Geolocalización Precisa:</strong> Publica gratuitamente el nombre de tu empresa, dirección y actividad en nuestra plataforma. Nuestra tecnología se encarga de ubicar tu negocio en el mapa para que los usuarios puedan encontrarte fácilmente por zona.</li>
+                <li><strong>Visibilidad Online:</strong> Al registrarte, tu negocio estará al alcance de potenciales clientes que buscan productos y servicios cerca de ellos.</li>
+                <li></li>
+              </ul>
+            </li>
+            <li><strong>Publicidad Impresa:</strong>
+              <ul>
+                <li><strong>Bifoliado Impreso:</strong> Distribuimos bifoliados impresos en zonas específicas, permitiendo que las tiendas locales sean conocidas en su área. Esta es una manera efectiva de llegar a clientes que prefieren información tangible y local.</li>
+                <li></li>
+              </ul>
+            </li>
+            <li><strong>Publicación de Eventos:</strong>
+              <ul>
+                <li><strong>Eventos Locales:</strong> Nuestra plataforma permite a los usuarios publicar eventos gratuitos de todo tipo, desde pequeñas reuniones y parrilladas hasta grandes eventos musicales. Así, todos estarán informados de lo que sucede en su ciudad.</li>
+            </ul>
+            </li>
+          </ol>
+          <p><strong>¿Por qué elegir Por Mi Zona.com.pe?</strong></p>
+          <ul>
+            <li><strong>Fácil y Accesible:</strong> Publica tu negocio o evento de manera gratuita y sin complicaciones.</li>
+            <li><strong>Mayor Alcance:</strong> Con nuestra combinación de publicidad digital y física, garantizamos que tu mensaje llegue a una audiencia amplia y variada.</li>
+            <li><strong>Comunidad Local:</strong> Apoyamos el crecimiento de la economía local al conectar negocios con consumidores cercanos.</li>
+          </ul>
+          <p><strong>Únete a nosotros y haz crecer tu negocio con Por Mi Zona.com.pe!</strong></p>
+          <p>Visítanos en <a rel="noreferrer" target="_new" href="http://www.pormizona.com.pe">www.pormizona.com.pe</a> y descubre cómo podemos ayudarte a alcanzar tus metas comerciales y a estar al tanto de todos los eventos importantes en tu área.</p>
+          <p><strong>Por Mi Zona.com.pe</strong> - ¡Tu conexión con la comunidad local!</p></td>
+      </tr>
+    </table></td>
   </tr>
   <tr>
     <td height="24">&nbsp;</td>
-  </tr>
-  <tr>
-    <td height="60" align="center" bgcolor="#48887A" class="TITULOBLANCO">ZONAS GEOGRÁFICAS</td>
-  </tr>
-  <tr>
-    <td height="786" align="center" valign="top"><img src="imagenes_1/mapa_zonas.jpg" width="890" height="748" /></td>
   </tr>
   <tr>
     <td height="155" align="center" bgcolor="#CCCCCC" class="blanco"><img src="imagenes_1/anuncia_aqui.jpg" width="720" height="132" /></td>
