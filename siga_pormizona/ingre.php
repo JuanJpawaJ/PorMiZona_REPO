@@ -73,15 +73,13 @@ $tabla = mysqli_fetch_array( $result );
 
 $usua_aso=$tabla['usua_aso'];
 $pass_aso=$tabla['pass_aso'];
-echo ("tabla usua_aso : ".$usua_aso);
-echo ("tabla pass_aso : ".$pass_aso);
 
 if ($usua_aso==$xusuario AND  $pass_aso==$xclave) { ?>
       </div>
       <form id="form0" name="form0" method="post" onsubmit="return checkSubmit();" action="formingre3_view.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
          <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> >
          <div class="campo_botonin">
-              <button class="boton_form"> ¡TENGA CUIDADO AL REALIZAR MODIFICACIONES!</button>
+              <button class="boton_form"> ¡ CONTINUAR ! (Modificaciones)</button>
          </div>
     </form>
   </div>
