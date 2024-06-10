@@ -115,6 +115,9 @@
     </table></td>
   </tr>
   <tr>
+    <td height="155" align="center" bgcolor="#002967" class="blanco"><img src="imagenes_1/aviso_pmz_web.jpg" width="800" height="307" /></td>
+  </tr>
+  <tr>
     <td height="155" align="center" bgcolor="#CCCCCC" class="blanco"><img src="imagenes_1/anuncia_aqui.jpg" width="720" height="132" /></td>
   </tr>
   <tr>
