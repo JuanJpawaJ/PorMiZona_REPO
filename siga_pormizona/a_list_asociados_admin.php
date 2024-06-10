@@ -296,16 +296,16 @@ $img1_aso=$tabla["img1_aso"];
 $img2_aso=$tabla["img2_aso"];
 
 
-$date_aso=$tabla["$date_aso"];	
-$publicidad_aso=$tabla["$publicidad_aso"];	
-$grupolista_aso=$tabla["$grupolista_aso"];
+$date_aso=$tabla["date_aso"];	
+$publicidad_aso=$tabla["publicidad_aso"];	
+$grupolista_aso=$tabla["grupolista_aso"];
 
-$view1_aso=$tabla["$view1_aso"];
-$view2_aso=$tabla["$view2_aso"];
-$view3_aso=$tabla["$view3_aso"];
-$view4_aso=$tabla["$view4_aso"];
-$msjpublico_aso=$tabla["$msjpublico_aso"];
-$obsinterno_aso=$tabla["$obsinterno_aso"];
+$view1_aso=$tabla["view1_aso"];
+$view2_aso=$tabla["view2_aso"];
+$view3_aso=$tabla["view3_aso"];
+$view4_aso=$tabla["view4_aso"];
+$msjpublico_aso=$tabla["msjpublico_aso"];
+$obsinterno_aso=$tabla["obsinterno_aso"];
 
 ?>
       
