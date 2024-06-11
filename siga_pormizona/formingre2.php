@@ -78,12 +78,18 @@ $pass_aso=$tabla["pass_aso"];
 
 ?>
 <h2 class="semi-titulos">Ud. ha completado el Paso 01</h2>
-<?
-echo "<br>";
-echo "SU LATITUD ES : ". $latitud_aso."<br>";
-echo "SU LONGITUD ES: ".$longitud_aso."<br>";
-echo "<br>";
-?>
+<table width="250" border="1" cellspacing="1" cellpadding="1">
+  <tr>
+    <td><? echo "SU LATITUD ES : "; ?></td>
+    <td><? echo $latitud_aso; ?></td>
+  </tr>
+  <tr>
+    <td><? echo "SU LONGITUD ES: "; ?></td>
+    <td><? echo $longitud_aso; ?></td>
+  </tr>
+</table>
+
+
  <h2 class="semi-titulos">Ud. ha completado el Paso 02</h2> 
 <?
 echo "<br>";
@@ -97,7 +103,7 @@ echo "<br>";
  <h2 class="semi-titulos">Tome nota de su usuario y clave</h2> 
 <?
 
-echo "Última oportunidad de tomar nota de su USUARIO y CLAVE "."<br>";
+echo "Última oportunidad de TOMAR NOTA de su USUARIO y CLAVE "."<br>";
 echo "Recuerde: Ud. podrá realizar las modificaciones necesarias después del paso 3"."<br>";
 echo "En la opción [SOY PROPIETARIO]"."<br>"."<br>";
 
