@@ -92,7 +92,6 @@ echo "PAÍS DE ORIGEN : ".$pais_aso."<br>";
 echo "SU RAZÓN SOCIAL : ".$rsocial_aso."<br>";
 echo "SU DIRECCIÓN : ".$direccion_aso."<br>";
 echo "SU EMAIL : ".$email_aso."<br>";
-echo " SU ".$email_aso."<br>";
 echo "<br>";
 ?>
  <h2 class="semi-titulos">Tome nota de su usuario y clave</h2> 
@@ -107,29 +106,9 @@ echo "SU PASSWORD : ".$pass_aso."<br>";
 
 ?>
 
- <h2 class="semi-titulos">Continuar con el ingreso de datos</h2> 
 
 
-    <div class="lista">
 
-    <table width="100%" border="0" cellpadding="0" cellspacing="0">
-    
-  <tr>
-    <td width="47" rowspan="2" valign="middle"><img src="img_asociados/<?php  echo($favicon_aso); ?>" width="45" height="45"></td>
-    <td width="226" class="busrazon"><?php  echo("  ".$rsocial_aso); ?></td>
-    <td width="64" rowspan="2" class="busdireccion"><?php  echo($direccion_aso); ?></td>
-  </tr>
-  <tr>
-    <td valign="middle" class="busproductos"><?php  echo($productos_aso); ?></td>
-    </tr>
-  <tr>
-    <td width="47">&nbsp;</td>
-    <td colspan="2" class="busraya">--------------------------------------------------------------------------------------------</td>
-    </tr>
-   
-    </table>
-
-  </a></div>
 
           <form id="form1" name="form1" method="post" onsubmit="return checkSubmit();" action="upd2_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
 
