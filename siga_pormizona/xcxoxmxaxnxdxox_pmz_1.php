@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Sistema SIGA</title>
+<title>Por Mi Zona - MENÚ</title>
 <style type="text/css">
 .TITULO_AMARILLO {
 	font-family: "Comic Sans MS", cursive;
