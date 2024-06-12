@@ -31,9 +31,9 @@
 .productos_aso {
 	color: #000000;
 	text-align: center;
-	font-size: 20px;
+	font-size: 14px;
 	font-family: "Comic Sans MS", cursive;
-	font-weight: bold;	
+	
 }
 .txt_view_direcc {
 	color: #FFFFFF;
