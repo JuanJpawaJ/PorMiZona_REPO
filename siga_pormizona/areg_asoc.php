@@ -22,6 +22,7 @@ $distrito_aso=$_POST['xdistrito'];
 $provincia_aso=$_POST['xprovincia'];
 $estado_aso=$_POST['xestado'];
 $referencia_aso=$_POST['xreferencia'];
+$gironeg_aso=$_POST['xgironeg'];
 $telf1_aso=$_POST['xtelf1'];
 $telf2_aso=$_POST['xtelf2'];
 $usua_aso=$_POST['xusuario'];
@@ -49,25 +50,6 @@ $obsinterno_aso=" ";
 
 
 
-echo "pais :".$pais_aso."<br>";
-echo "rsoc :".$rsocial_aso."<br>";
-echo "dire :".$direccion_aso."<br>";
-echo "dist :".$distrito_aso."<br>";
-echo "prov :".$provincia_aso."<br>";
-echo "esta :".$estado_aso."<br>";
-echo "refe :".$referencia_aso."<br>";
-echo "tel1 :".$telf1_aso."<br>";
-echo "tel2 :".$telf2_aso."<br>";
-echo "pass :".$pass_aso."<br>";
-echo "pass :".$usua_aso."<br>";
-echo "emai :".$email_aso."<br>";
-echo "cate :".$categoria_aso."<br>";
-echo "pod  :".$productos_aso."<br>";
-echo "lati :".$latitud_aso."<br>";
-echo "long :".$longitud_aso."<br>";
-echo "date :".$date_aso."<br>";
-echo "favi :".$favicon_aso."<br>";
-echo "publi :".$publicidad_aso."<br>";
 
 
 
@@ -138,8 +120,8 @@ if(strlen($rsocial_aso)==0 OR strlen($direccion_aso)==0 ) {
 	$result_nom=mysqli_query($connec,"select * from asociado_51 where (rsocial_aso='$rsocial_aso') AND (direccion_aso='$direccion_aso')");
 	$total_nom=mysqli_num_rows($result_nom);
     if 	($total_nom==0) {  // VUENE DE FORMULARIO Y NO HAY DUPLICIDAD *****************+
-       	$sql="INSERT INTO asociado_51 (cod_aso,  grupolista_aso, img1_aso, img2_aso, logo_aso, view01_aso, view02_aso, view03_aso, view04_aso, msjpublico_aso, obsinterno_aso, pais_aso,     rsocial_aso,    direccion_aso,    distrito_aso,    provincia_aso,  estado_aso, referencia_aso, telf1_aso, telf2_aso, usua_aso, pass_aso, email_aso, categoria_aso, productos_aso, latitud_aso,   longitud_aso, date_aso, favicon_aso, publicidad_aso)  VALUES
-('$cod_aso', '$grupolista_aso', '$img1_aso', '$img2_aso', '$logo_aso', '$view01_aso', '$view02_aso', '$view03_aso', '$view04_aso', '$msjpublico_aso', '$obsinterno_aso', '$pais_aso', '$rsocial_aso', '$direccion_aso', '$distrito_aso', '$provincia_aso',  '$estado_aso',   '$referencia_aso', '$telf1_aso',   '$telf2_aso', '$usua_aso', '$pass_aso', '$email_aso', '$categoria_aso', '$productos_aso', '$latitud_aso', '$longitud_aso',   '$date_aso', '$favicon_aso', 
+       	$sql="INSERT INTO asociado_51 (cod_aso,  grupolista_aso, img1_aso, img2_aso, logo_aso, view01_aso, view02_aso, view03_aso, view04_aso, msjpublico_aso, obsinterno_aso, pais_aso,     rsocial_aso,    direccion_aso,    distrito_aso,    provincia_aso,  estado_aso, referencia_aso, gironeg_aso, telf1_aso, telf2_aso, usua_aso, pass_aso, email_aso, categoria_aso, productos_aso, latitud_aso,   longitud_aso, date_aso, favicon_aso, publicidad_aso)  VALUES
+('$cod_aso', '$grupolista_aso', '$img1_aso', '$img2_aso', '$logo_aso', '$view01_aso', '$view02_aso', '$view03_aso', '$view04_aso', '$msjpublico_aso', '$obsinterno_aso', '$pais_aso', '$rsocial_aso', '$direccion_aso', '$distrito_aso', '$provincia_aso',  '$estado_aso',   '$referencia_aso', '$gironeg_aso', $telf1_aso',   '$telf2_aso', '$usua_aso', '$pass_aso', '$email_aso', '$categoria_aso', '$productos_aso', '$latitud_aso', '$longitud_aso',   '$date_aso', '$favicon_aso', 
 '$publicidad_aso')";
 
    		$result=mysqli_query($connec,$sql);

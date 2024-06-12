@@ -89,6 +89,10 @@ $latitud = $_POST['latitude'];
               <input type="text" class="campo_texto" name="xdireccion" placeholder="Ejemplo: Av. Salaverry"> 
            </div>
            <div class="campos_de_formulario">
+              <label>Giro del negocio.</label>
+              <input type="text" class="campo_texto" name="xgironeg" placeholder="Ej. Boutique, Librería, Dentista, ferretería, etc."> 
+           </div>
+           <div class="campos_de_formulario">
            
                <label>Categoría</label>
                 <? $sql=mysqli_query($connec,"SELECT * FROM categoria order by categoria_cat");  ?>

@@ -30,12 +30,13 @@ if      ($form=="TODO01") {
     $provincia_aso=$_POST['xprovincia'];
     $distrito_aso=$_POST['xdistrito'];
     $referencia_aso=$_POST['xreferencia'];
+	$gironeg_aso=$_POST['xgironeg'];
     $telf1_aso=$_POST['xtelf1'];
     $telf2_aso=$_POST['xtelf2'];
     $productos_aso=$_POST['xproductos'];
 
 	
-    $sql="UPDATE asociado_51 SET rsocial_aso='$rsocial_aso', direccion_aso='$direccion_aso', categoria_aso='$categoria_aso', email_aso='$email_aso', usua_aso='$usua_aso',pass_aso='$pass_aso',pais_aso='$pais_aso',estado_aso='$estado_aso', provincia_aso='$provincia_aso',distrito_aso='$distrito_aso', referencia_aso='$referencia_aso', telf1_aso='$telf1_aso', telf2_aso='$telf2_aso', productos_aso='$productos_aso'  WHERE cod_aso=$cod";
+    $sql="UPDATE asociado_51 SET rsocial_aso='$rsocial_aso', direccion_aso='$direccion_aso', categoria_aso='$categoria_aso', email_aso='$email_aso', usua_aso='$usua_aso',pass_aso='$pass_aso',pais_aso='$pais_aso',estado_aso='$estado_aso', provincia_aso='$provincia_aso',distrito_aso='$distrito_aso', referencia_aso='$referencia_aso', gironeg_aso='$gironeg_aso', telf1_aso='$telf1_aso', telf2_aso='$telf2_aso', productos_aso='$productos_aso'  WHERE cod_aso=$cod";
     $result=mysqli_query($connec,$sql);
 	if($result){
 		echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok TODO.</span>");
@@ -87,11 +88,12 @@ if      ($form=="TODO01") {
 } elseif ($form=="01") {
     $rsocial_aso=$_POST['xrsocial'];
     $direccion_aso=$_POST['xdireccion'];
+	$gironeg_aso=$_POST['xgironeg'];
     $categoria_aso=$_POST['xcategoria'];
     $email_aso=$_POST['xemail'];
     $usua_aso=$_POST['xusuario'];
     $pass_aso=$_POST['xpass'];
-    $sql="UPDATE asociado_51 SET rsocial_aso='$rsocial_aso',direccion_aso='$direccion_aso',categoria_aso='$categoria_aso',email_aso='$email_aso', usua_aso='$usua_aso',pass_aso='$pass_aso' WHERE cod_aso=$cod";
+    $sql="UPDATE asociado_51 SET rsocial_aso='$rsocial_aso',direccion_aso='$direccion_aso',gironeg_aso='$gironeg_aso',categoria_aso='$categoria_aso',email_aso='$email_aso', usua_aso='$usua_aso',pass_aso='$pass_aso' WHERE cod_aso=$cod";
     $result=mysqli_query($connec,$sql);
 	if($result){
 		echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok.</span>");

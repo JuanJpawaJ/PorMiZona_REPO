@@ -51,6 +51,7 @@ $cod_aso=$tabla["cod_aso"];
 $pais_aso=$tabla["pais_aso"];
 $rsocial_aso=$tabla["rsocial_aso"];
 $direccion_aso=$tabla["direccion_aso"];
+$gironeg_aso=$tabla["gironeg_aso"];
 $email_aso=$tabla["email_aso"];
 $date_aso=$tabla["date_aso"];
 $latitud_aso=$tabla["latitud_aso"];
@@ -78,7 +79,7 @@ $pass_aso=$tabla["pass_aso"];
 
 ?>
 <h2 class="semi-titulos">Ud. ha completado el Paso 01</h2>
-<table width="250" border="1" cellspacing="1" cellpadding="1">
+<table width="300" border="1" cellspacing="1" cellpadding="1">
   <tr>
     <td><? echo "SU LATITUD ES : "; ?></td>
     <td><? echo $latitud_aso; ?></td>
@@ -88,31 +89,55 @@ $pass_aso=$tabla["pass_aso"];
     <td><? echo $longitud_aso; ?></td>
   </tr>
 </table>
-
+<? echo "<br>"; ?>
 
  <h2 class="semi-titulos">Ud. ha completado el Paso 02</h2> 
-<?
-echo "<br>";
-echo "SU CÓDIGO ES : ".$cod_aso."<br>";
-echo "PAÍS DE ORIGEN : ".$pais_aso."<br>";
-echo "SU RAZÓN SOCIAL : ".$rsocial_aso."<br>";
-echo "SU DIRECCIÓN : ".$direccion_aso."<br>";
-echo "SU EMAIL : ".$email_aso."<br>";
-echo "<br>";
-?>
- <h2 class="semi-titulos">Tome nota de su usuario y clave</h2> 
-<?
+ <table width="300" border="1" cellspacing="1" cellpadding="1">
+  <tr>
+    <td><? echo "SU CÓDIGO ES : "; ?></td>
+    <td><? echo $cod_aso; ?></td>
+  </tr>
+  <tr>
+    <td><? echo "PAÍS DE ORIGEN : "; ?></td>
+    <td><? echo $pais_aso; ?></td>
+  </tr>
+  <tr>
+    <td><? echo "SU RAZÓN SOCIAL : "; ?></td>
+    <td><? echo $rsocial_aso; ?></td>
+  </tr>
+  <tr>
+    <td><? echo "SU DIRECCIÓN : "; ?></td>
+    <td><? echo $direccion_aso; ?></td>
+  </tr>
+  <tr>
+    <td><? echo "SU GIRO NEGOCIO : "; ?></td>
+    <td><? echo $gironeg_aso; ?></td>
+  </tr>
+</table>
 
+<? echo "<br>"; ?>
+ <h2 class="semi-titulos">Tome nota de su usuario y clave</h2> 
+
+<table width="300" border="1" cellspacing="1" cellpadding="1">
+  <tr>
+    <td><? 
 echo "Última oportunidad de TOMAR NOTA de su USUARIO y CLAVE "."<br>";
 echo "Recuerde: Ud. podrá realizar las modificaciones necesarias después del paso 3"."<br>";
 echo "En la opción [SOY PROPIETARIO]"."<br>"."<br>";
-
-echo "SU USUARIO  : ".$usua_aso."<br>";
-echo "SU PASSWORD : ".$pass_aso."<br>";
-
 ?>
+  </tr>
+  <tr>
+    <td><? echo "SU USUARIO  : "; ?></td>
+    <td><? echo $usua_aso; ?></td>
+  </tr>
+  <tr>
+    <td><? echo "SU PASSWORD : "; ?></td>
+    <td><? echo $pass_aso; ?></td>
+  </tr>
 
+</table>
 
+<? echo "<br>"; ?>
 
 
 

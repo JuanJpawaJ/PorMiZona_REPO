@@ -46,6 +46,7 @@ $distrito_aso=$tabla['distrito_aso'];
 $provincia_aso=$tabla['provincia_aso'];
 $estado_aso=$tabla['estado_aso'];
 $referencia_aso=$tabla['referencia_aso'];
+$gironeg_aso=$tabla["gironeg_aso"];
 $telf1_aso=$tabla['telf1_aso'];
 $telf2_aso=$tabla['telf2_aso'];
 $email_aso=$tabla['email_aso'];
@@ -156,6 +157,10 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
            <div class="campos_de_formulario">
               <label>Dirección</label>
               <input type="text" class="campo_texto" name="xdireccion" value="<?php echo($direccion_aso); ?>"> 
+           </div>
+           <div class="campos_de_formulario">
+              <label>Giro del negocio</label>
+              <input type="text" class="campo_texto" name="xgironeg" value="<?php echo($gironeg_aso); ?>"> 
            </div>
            <div class="campos_de_formulario">
                <label>Categoría</label>
