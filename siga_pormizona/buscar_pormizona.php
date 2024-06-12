@@ -310,6 +310,7 @@ while ($tabla=mysqli_fetch_array($result)){
 	$provincia_aso=$tabla["provincia_aso"];
 	$estado_aso=$tabla["estado_aso"];
 	$referencia_aso=$tabla["referencia_aso"];
+	$gironeg_aso=$tabla["gironeg_aso"];
 	$telf1_aso=$tabla["telf1_aso"];
 	$telf2_aso=$tabla["telf2_aso"];
 	$email_aso=$tabla["email_aso"];
@@ -351,10 +352,11 @@ while ($tabla=mysqli_fetch_array($result)){
                  <td width="150" rowspan="3" align="center" valign="middle"><img src="img_asociados/<? echo($favicon_aso); ?>" width="100" height="100"></td>
                  
                 <td width="418" height="41" align="left" bgcolor="#FFFFFF"><span class="rsocial"><?php echo($rsocial_aso) ?></span></td>
-                <td width="177" align="left" bgcolor="#FFFFFF"><span class="viewtexto"><?php echo($telf1_aso) ?></span></td>
+                <td width="177" align="left" bgcolor="#FFFFFF"><span class="viewtexto"><?php echo($gironeg_aso) ?></span></td>
               </tr>
               <tr>
-                <td height="37" colspan="2" align="left" bgcolor=#FFFFFF ><span class="viewtexto"><?php echo($direccion_aso) ?></span></td>
+                <td height="37" align="left" bgcolor=#FFFFFF ><span class="viewtexto"><?php echo($direccion_aso) ?></span></td>
+                <td height="37" align="left" bgcolor=#FFFFFF ><span class="viewtexto"><?php echo($telf1_aso) ?></span></td>
               </tr>
               <tr>
                 <td height="52" colspan="2" align="left" bgcolor=#FFFFFF ><span class="viewtexto">
