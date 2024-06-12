@@ -211,15 +211,16 @@ if ($xdelreg=="SIDELREG") {
   <tr class="tit_menu_sup">
     <td height="262" colspan="2" rowspan="4" valign="top" bgcolor="#FFFFCC">
     <!-- INICIO DE MUESTRA ITEMS -->
-    <table width="1038" height="80" border="1" cellspacing="0">
+    <table width="1119" height="80" border="1" cellspacing="0">
       <tr bgcolor="#CCFFFF" class="diez">
         <td width="45" align="center">COD. Item</td>
         <td width="68">FAVICON</td>
         <td width="63">IMAGEN</td>
         <td width="60">LOGO</td>
-        <td width="32">Grupo</td>
-        <td width="223" align="center">R. SOCIAL</td>
-        <td width="68" align="center">GEOLOCALIZA</td>
+        <td width="28">Grupo</td>
+        <td width="218" align="center">R. SOCIAL</td>
+        <td width="77" align="center">GIRO</td>
+        <td width="77" align="center">GEOLOCALIZA</td>
         <td width="44" align="center">fecha</td>
         <td width="71" align="center">PUBLICO 01</td>
         <td width="49">UTIL 01</td>
@@ -269,6 +270,7 @@ while ($tabla=mysqli_fetch_array($result)){
 	$estado_aso=$tabla["estado_aso"];
 	
 	$referencia_aso=$tabla["referencia_aso"];
+	$gironeg_aso=$tabla["gironeg_aso"];
 	$telf1_aso=$tabla["telf1_aso"];
 	$telf2_aso=$tabla["telf2_aso"];
 	
@@ -317,6 +319,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         <td bgcolor="#FFFFFF"><img src=" <?php echo "img_asociados/".$logo_aso ?> " width="60" height="%" /></td>
         <td bgcolor="#FFFFFF"><?php echo($categoria_aso) ?></td>
         <td bgcolor="#FFFFFF"><?php echo($rsocial_aso) ?></td>
+        <td bgcolor="#FFFFFF"><?php echo($gironeg_aso) ?></td>
         <td align="right" bgcolor="#FFFFFF"><? echo($latitud_aso." ".$longitud_aso) ?></td>
         <td align="right" bgcolor="#FFFFFF"><? echo($date_aso) ?></td>
         <td align="right" bgcolor="#FFFFFF"><? echo($direccion_aso) ?></td>
