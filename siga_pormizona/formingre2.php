@@ -193,8 +193,8 @@ echo "En la opción [SOY PROPIETARIO]"."<br>"."<br>";
                     </div>
                 </div>            
                 <div class="campos_de_formulario">
-                    <label>Relación de productos y/o servicios</label>
-                    <textarea id="" cols="5" rows="4" name="xproductos" placeholder="Ej. palabras de búsqueda: cabello corte computadoras gasfitero plumones libros carne menú carpintero licores bcp clases legal, etc. (Max. 250 caracteres)" class="campo_grande" ></textarea> 
+                    <label>Etiqueta de productos y/o servicios</label>
+                    <textarea id="" cols="5" rows="4" name="xproductos" placeholder="Ej. palabras de búsqueda: cabello, ropa, perfumes, computadoras, gasfitero plumones libros carne menú carpintero licores bcp clases legal, etc. (Max. 250 caracteres)" class="campo_grande" ></textarea> 
                 </div>
                 
                <!-- <a href="img_asociados/n_subir_xfile.php?xcod=<? echo $cod_aso; ?>">favicon</a>  -->
