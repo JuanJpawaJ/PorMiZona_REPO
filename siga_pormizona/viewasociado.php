@@ -20,6 +20,14 @@
 	font-family: "Comic Sans MS", cursive;
 	font-weight: bold;	
 }
+.giro {
+	color: #0000FF;
+	text-align:right;
+	font-size: 20px;
+	font-family: "Comic Sans MS", cursive;
+	font-weight: bold;	
+}
+
 .productos_aso {
 	color: #000000;
 	text-align: center;
@@ -115,6 +123,7 @@ $tabla = mysqli_fetch_array( $result );
 	$estado_aso=$tabla["estado_aso"];
 	
 	$referencia_aso=$tabla["referencia_aso"];
+	$gironeg_aso=$tabla["gironeg_aso"];
 	$telf1_aso=$tabla["telf1_aso"];
 	$telf2_aso=$tabla["telf2_aso"];
 	$email_aso=$tabla["email_aso"];
@@ -189,11 +198,11 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 		  <tr>
 		    <td width="166" height="84"
 			
-                 rowspan="3" align="center" valign="middle"><img src="img_asociados/<? echo($favicon_aso); ?>" width="100" height="100">
+                 rowspan="4" align="center" valign="middle"><img src="img_asociados/<? echo($favicon_aso); ?>" width="100" height="100">
 			
 					
 			</td>
-		    <td width="547">
+		    <td width="547" height="77">
 <?   
   	if(strlen(trim($logo_aso))==0) { ?>
        <span class="logo_aso"><? echo ($rsocial_aso); ?></span>		
@@ -204,6 +213,9 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 			
 			
 			</td>
+	      </tr>
+		  <tr>
+		    <td class="giro"><? echo $gironeg_aso; ?></td>
 	      </tr>
 		  </table></td>
       </tr>
