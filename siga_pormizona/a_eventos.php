@@ -31,13 +31,13 @@
     <td height="39" align="center" bgcolor="#00CC66">2024</td>
   </tr>
   <tr>
-    <td height="13" align="center" valign="top"><img src="eventos_aqp/AMARANTA 31 de MAYO.jpg" width="400" height="250" /></td>
+    <td height="13" align="center" valign="top"><img src="eventos_aqp/Show Infantil en Arequipa.jpeg" width="602" height="763" /></td>
   </tr>
   <tr>
     <td height="41" bgcolor="#48887A" class="TITULOBLANCO">&nbsp;</td>
   </tr>
   <tr>
-    <td height="41" class="TITULOBLANCO"><img src="eventos_aqp/caribena.jpg" width="454" height="429" /></td>
+    <td height="41" class="TITULOBLANCO">&nbsp;</td>
   </tr>
   <tr>
     <td height="41" bgcolor="#48887A" class="TITULOBLANCO">&nbsp;</td>
