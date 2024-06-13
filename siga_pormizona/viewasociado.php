@@ -220,13 +220,13 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 		  </table></td>
       </tr>
       <tr>
-        <td height="305" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC"><img src="<?php echo "img_asociados/".$img1_aso ?>" width="<? echo $vw_ancho; ?>"  height="%"></td>
+        <td height="305" colspan="2" align="center" valign="middle" bgcolor="#EEF6F8"><img src="<?php echo "img_asociados/".$img1_aso ?>" width="<? echo $vw_ancho; ?>"  height="%"></td>
       </tr>
       <tr>
-        <td height="53" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC" class="productos_aso"><? echo $productos_aso."<br>"; ?></td>
+        <td height="53" colspan="2" align="center" valign="middle" bgcolor="#EEF6F8" class="productos_aso"><? echo $productos_aso."<br>"; ?></td>
       </tr>
       <tr>
-        <td height="68" colspan="2" align="center" valign="middle" bgcolor="#CBF6EC"><table width="759" border="0" align="center" cellpadding="0" cellspacing="0">
+        <td height="68" colspan="2" align="center" valign="middle" bgcolor="#EEF6F8"><table width="759" border="0" align="center" cellpadding="0" cellspacing="0">
 
   <tr>
     <td width="489" height="28" class="txt_view_dir_otros" ><? echo $categoria_aso.": ".$categoriatxt_aso."<br>"; ?></td>
