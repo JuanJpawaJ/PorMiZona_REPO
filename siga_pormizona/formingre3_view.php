@@ -223,12 +223,7 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
                </div>
                <div class="campos_de_formulario">
                     <label>Departamento o Estado</label>
-                    <? $sql=mysqli_query($connec,"SELECT * FROM estado_51 order by estado_est");  ?>
-                    <select id="departamento" name="xestado" class="campo_texto">
-                        <? while($rosvi=mysqli_fetch_array($sql))
-                         echo "<option  value='".$rosvi["estado_est"]."'>".$rosvi["estado_est"]."</option>";
-                        ?>
-                    </select> 
+                    <input type="text" class="campo_texto agrandar" name="xestado" value="<?php echo($estado_aso); ?>"> 
                </div>
 
                <div class="otros_datos">
@@ -321,7 +316,7 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
 
         <div class="footer_logo">
             <img src="imagenes/Logo/Logo_blanco_puro.svg" alt="">
-            <h3>Arequipa - 2020</h3>
+            <h3>Arequipa - 2024</h3>
         </div>
     </footer>
 </body>

@@ -190,12 +190,8 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
    <tr>
      <td>Departamento o Estado</td>
      <td>
-                    <? $sql=mysqli_query($connec,"SELECT * FROM estado_51 order by estado_est");  ?>
-                    <select id="departamento" name="xestado" class="campo_texto">
-                        <? while($rosvi=mysqli_fetch_array($sql))
-                         echo "<option  value='".$rosvi["estado_est"]."'>".$rosvi["estado_est"]."</option>";
-                        ?>
-                    </select> 
+                    <input type="text" class="campo_texto agrandar" name="xprxestadoovincia" value="<?php echo($estado_aso); ?>"> 
+
      
      </td>
    </tr>
