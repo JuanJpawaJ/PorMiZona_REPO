@@ -216,7 +216,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
    <tr>
      <td>Referencia</td>
      <td>
-                    <textarea name="xreferencia" cols="5" rows="1" class="campo_grande"><?php echo($referencia_aso); ?></textarea>
+                    <input type="text"  class="campo_texto agrandar" name="xreferencia" value="<?php echo($referencia_aso); ?>">
      
      </td>
    </tr>
