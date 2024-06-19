@@ -30,7 +30,7 @@
 </head>
 
 <body>
-<table width="908" height="1882" border="1" align="center" cellpadding="0" cellspacing="0">
+<table width="908" height="2423" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td width="900" height="119" align="center" valign="middle"><img src="imagenes_1/logo_pmz_telf_rgb.jpg" width="862" height="158" /></td>
   </tr>
@@ -50,6 +50,9 @@
         <td align="center" valign="middle" bgcolor="#FFFF99"><a href="siga_pormizona/formievento1.php"><img src="siga_pormizona/iconos/boton_publique_mievento.png" width="200" height="65" style="border:0;" onmouseover="this.style.border='solid  2px  #0a3d89';" onmouseout="this.style.border=0;" border="0"/></a></td>
       </tr>
     </table></td>
+  </tr>
+  <tr>
+    <td height="179" align="center"><img src="imagenes_1/aproveche_geolocalización.jpg" width="862" height="161" /></td>
   </tr>
   <tr>
     <td height="43" align="center" bgcolor="#48887A"><span class="TITULOBLANCO">EMPRESAS - ASOCIADAS</span></td>
