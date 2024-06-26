@@ -177,7 +177,7 @@ $latitud = $_POST['latitude'];
 
         <div class="footer_logo">
             <img src="imagenes/Logo/Logo_blanco_puro.svg" alt="">
-            <h3>Arequipa - 2020</h3>
+            <h3>Arequipa - 2024</h3>
         </div>
     </footer>
 </body>

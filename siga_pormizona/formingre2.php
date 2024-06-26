@@ -183,12 +183,12 @@ echo "En la opción [SOY PROPIETARIO]"."<br>"."<br>";
                 </div>
                 <div class="otros_datos">
                     <div class="campos_de_formulario">
-                        <label>Móvil</label>
+                        <label>Móvil 1</label>
                         <input type="text" class="campo_texto form_telef" name="xtelf1" placeholder="959595959"> 
                     </div>
                     
                     <div class="campos_de_formulario form_horizontal">
-                        <label>Fijo</label>
+                        <label>Móvil 2</label>
                         <input type="text" class="campo_texto form_telef" name="xtelf2" placeholder="054-224836"> 
                     </div>
                 </div>            

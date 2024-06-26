@@ -37,15 +37,15 @@ $favicon_aso=$_POST['xfavicon'];
 $publicidad_aso="N";	
 
 $grupolista_aso="1";
-$img1_aso=" ";
-$img2_aso=" ";
-$logo_aso=" ";
-$view01_aso=" ";
-$view02_aso=" ";
-$view03_aso=" ";
-$view04_aso=" ";
-$msjpublico_aso=" ";
-$obsinterno_aso=" ";
+$img1_aso="";
+$img2_aso="";
+$logo_aso="";
+$view01_aso="";
+$view02_aso="";
+$view03_aso="";
+$view04_aso="";
+$msjpublico_aso="";
+$obsinterno_aso="";
    
 
 
