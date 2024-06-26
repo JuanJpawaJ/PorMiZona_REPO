@@ -240,15 +240,17 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
       <tr>
         <td height="11" colspan="2" align="center" bgcolor="#000000" class="txt_view_pie"><table width="773" border="0" cellspacing="0" cellpadding="0">
           <tr>
-            <td width="448" colspan="3"><table width="755" border="0" cellspacing="0" cellpadding="0">
+            <td width="448" height="31" colspan="3"><table width="755" border="0" cellspacing="0" cellpadding="0">
               <tr>
                 <td width="564" align="center"><span class="txt_view_direcc"><? echo $direccion_aso."<br>"; ?></span></td>
-                <td width="191"><span class="txt_view_telf"><? echo $telf1_aso."<br>".$telf2_aso; ?></span></td>
               </tr>
             </table></td>
           </tr>
           <tr>
-            <td colspan="3"><span class="txt_view_dir_otros"><? echo $referencia_aso."<br>"; ?></span></td>
+            <td colspan="3" align="center"><span class="txt_view_dir_otros"><? echo $referencia_aso."<br>"; ?></span></td>
+          </tr>
+          <tr>
+            <td colspan="3" align="center"><span class="txt_view_telf"><? echo $telf1_aso." - ".$telf2_aso; ?></span></td>
           </tr>
           <tr>
             <td colspan="3" align="center" valign="middle"><table width="764" border="0" cellspacing="0" cellpadding="0">
