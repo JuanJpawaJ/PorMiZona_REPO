@@ -262,7 +262,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
             </table></td>
           </tr>
           <tr>
-            <td colspan="3" align="center" class="txt_view_pie"><? echo $cod_aso." - ". "Latitud: ".$latitud_aso." - "." Longitud: ".$longitud_aso." - ".$date_aso ; ?></td>
+            <td height="34" colspan="3" align="center" valign="middle" class="txt_view_pie"><? echo $cod_aso." - ". "Latitud: ".$latitud_aso." - "." Longitud: ".$longitud_aso." - ".$date_aso ; ?></td>
           </tr>
         </table></td>
       </tr>

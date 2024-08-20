@@ -29,6 +29,9 @@ $usua_aso=$_POST['xusuario'];
 $pass_aso=$_POST['xpass'];
 $email_aso=$_POST['xemail'];
 $categoria_aso=$_POST['xcategoria'];
+if ($categoria_aso=="CATEGORIA") {
+	$categoria_aso="";
+}
 $productos_aso=$_POST['xproductos'];
 $latitud_aso=$_POST['xlatitud'];
 $longitud_aso=$_POST['xlongitud'];	
