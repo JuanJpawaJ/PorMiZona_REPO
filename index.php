@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/estilos_footer.css">
     <link rel="stylesheet" href="css/estilos_navegador.css">
-<title>PorMiZona.com.pe - PUBLICIDAD Y EVENTOS**</title> 
+<title>PorMiZona.com.pe - PUBLICIDAD Y EVENTOS**pppppppp</title> 
 
 </head>
 <body>
