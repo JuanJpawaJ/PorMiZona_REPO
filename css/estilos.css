@@ -1,0 +1,185 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    background-color: white;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+    header > div:first-of-type{
+        background-color: white;
+        display: flex;
+        align-items: center;
+        height: 180px;
+        justify-content: space-around;
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+        header > div:first-of-type > img.logo_por_mi_zona{
+            height: 80%;
+        }
+
+        header > div:first-of-type > img.central_de_edicion{
+            height: 80%;
+        }
+
+        header > div:first-of-type > button.nav{
+            background-color: green;
+            width: 50px;
+            height: 50px;
+        }
+
+    header > div:nth-of-type(2){
+        background-color: #F6FC8C;
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+        header > div:nth-of-type(2) > h2{
+            margin: 0;
+            font-size: var(--fuente_tamanio_titulo_3);
+            font-family: var(--fuente_gruesa_2);
+        }
+
+    header > div.contenedor_botones{
+        background-color: #9D8669;
+        height: 100px;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+        header > div.contenedor_botones > a{
+            background: linear-gradient(to right, #5761F3 0%, #32388D 100%);;
+            display: flex;
+            width: 220px;
+            min-height: 70px;
+            padding: 0.5rem 0;
+            box-sizing: border-box;
+
+            justify-content: center;
+            align-items: center;
+
+            font-size: var(--fuente_tamanio_titulo_2);
+            font-family: var(--fuente_gruesa_1);
+            text-align: center;
+            color:#F0F93B;
+            border-radius: 1rem;
+        }
+
+    
+.division{
+    background-color: #FF974B;
+    height: 20px;
+    width: 100vw;
+    margin: 0.7rem 0;
+}
+
+.empresas_asociadas{
+    background-color: #9D8669;
+    width: 80%;
+    padding: 1rem;
+}
+
+    .empresas_asociadas > h1{
+        font-size: var(--fuente_tamanio_titulo_2);
+        font-family: var(--fuente_cursiva_gruesa);
+        display: inline;
+        background-color: antiquewhite;
+        border-radius: 2rem;
+        padding: 1px 20px;
+        
+    }
+
+    .empresas_asociadas > .contenedor_empresas{
+        margin-top: 1rem;
+        /*background-color: yellow;*/
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        row-gap: 1rem;
+    }
+
+    .empresas_asociadas > .contenedor_empresas > .empresa{
+        width:200px;
+        height: 140px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        padding: 5px 0;
+    }
+
+        .empresas_asociadas > .contenedor_empresas > .empresa > div{
+            background-color: black;
+            width: 90%;
+            height: 65px;
+        }
+
+
+        
+@media only screen and (max-width: 1000px) {
+    header > div:first-of-type{
+        flex-direction: column;
+        height: auto;
+    }
+
+    header > div:first-of-type > img.logo_por_mi_zona{
+        height: 100px;
+        margin-bottom: 1rem;
+    }
+
+    header > div:first-of-type > img.central_de_edicion{
+        height: 100px;
+    }
+
+    header > div:nth-of-type(2){
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header > div.contenedor_botones{
+        flex-direction: column;
+        height: auto;
+    }
+
+    header > div.contenedor_botones > a{
+        margin-bottom: 1rem;
+    }
+
+    header > div:nth-of-type(2) > h2{
+        font-size: var(--fuente_tamanio_titulo_4);
+        text-align: center;
+    }
+
+    .empresas_asociadas > .contenedor_empresas{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .empresas_asociadas{
+        width: 100%;
+        padding: 0.2rem;
+    }
+
+    .empresas_asociadas > .contenedor_empresas > .empresa{
+        width: 180px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 550px) {
+}
