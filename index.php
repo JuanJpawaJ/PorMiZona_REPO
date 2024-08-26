@@ -14,14 +14,14 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/estilos_footer.css">
     <link rel="stylesheet" href="css/estilos_navegador.css">
-<title>PorMiZona.com.pe - PUBLICIDAD Y EVENTOS**pppppppp</title> 
+<title>PorMiZona.com.pe - PUBLICIDAD Y EVENTOS</title> 
 
 </head>
 <body>
     <header>
         <div>
-            <img src="imgs/image 14.png" alt="" class="logo_por_mi_zona">
-            <img src="imgs/image 13.png" alt="" class="central_de_edicion">
+            <img src="imgs/pmz_01_rgb_jpg" alt="" class="logo_por_mi_zona">
+            <img src="imgs/c_edi_01_rgb_jpg" alt="" class="central_de_edicion">
             
             <div class="contenedor_navegador">
                 <button class="nav" id="boton_hamburguesa" onclick="desplegarBotonHamburguesa()">
