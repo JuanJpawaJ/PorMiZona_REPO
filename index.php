@@ -20,8 +20,8 @@
 <body>
     <header>
         <div>
-            <img src="imgs/pmz_01_rgb_jpg" alt="" class="logo_por_mi_zona">
-            <img src="imgs/c_edi_01_rgb_jpg" alt="" class="central_de_edicion">
+            <img src="imgs/pmz_01_rgb.jpg" alt="" class="logo_por_mi_zona">
+            <img src="imgs/c_edi_01_rgb.jpg" alt="" class="central_de_edicion">
             
             <div class="contenedor_navegador">
                 <button class="nav" id="boton_hamburguesa" onclick="desplegarBotonHamburguesa()">
