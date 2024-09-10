@@ -47,8 +47,7 @@
             <h2>ENCUENTRE LO QUE NECESITE CERCA DE USTED</h2>
             <h2>PUBLICIDAD LOCALIZADA Y EVENTOS</h2>
         </div>
-      <!--  <div class="contenedor_botones"> -->
-        <div >
+       <div class="contenedor_botones"> 
 
             <a href=""><img src="imgs/b_tiendas.png" alt="" ></a>
             <a href=""><img src="imgs/b_eventos.png" alt="" ></a>
