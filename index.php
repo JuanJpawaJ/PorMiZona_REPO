@@ -47,11 +47,13 @@
             <h2>ENCUENTRE LO QUE NECESITE CERCA DE USTED</h2>
             <h2>PUBLICIDAD LOCALIZADA Y EVENTOS</h2>
         </div>
-        <div class="contenedor_botones">
+      <!--  <div class="contenedor_botones"> -->
+        <div >
+
             <a href=""><img src="imgs/b_tiendas.png" alt="" ></a>
-            <a href="">BUSCAR EVENTOS LOCALES</a>
-            <a href="">VER CATÁLOGO IMPRESO</a>
-            <a href="">PUBLICAR</a>
+            <a href=""><img src="imgs/b_eventos.png" alt="" ></a>
+            <a href=""><img src="imgs/b_catalogo.png" alt="" ></a>
+            <a href=""><img src="imgs/b_publicar.png" alt="" ></a>
         </div>
     </header>
     <div class="division"></div>
