@@ -62,7 +62,7 @@ header{
     }
 
         header > div.contenedor_botones > a{
-            background: linear-gradient(to right, #5761F3 0%, #32388D 100%);;
+            /* background: linear-gradient(to right, #5761F3 0%, #32388D 100%);; */
             display: flex;
             width: 220px;
             min-height: 70px;
