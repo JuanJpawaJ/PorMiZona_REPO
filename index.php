@@ -14,6 +14,17 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/estilos_footer.css">
     <link rel="stylesheet" href="css/estilos_navegador.css">
+  <style>
+      .button {
+          display: inline-block;
+          transition: transform 0.3s ease; /* Suaviza la transición */
+      }
+
+      .button:hover {
+          transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
+      }
+  </style>
+
 <title>PorMiZona.com.pe - PUBLICIDAD Y EVENTOS</title> 
 
 </head>
@@ -49,10 +60,24 @@
         </div>
        <div class="contenedor_botones"> 
 
-            <a href=""><img src="imgs/b_tiendas.png" alt="" ></a>
-            <a href=""><img src="imgs/b_eventos.png" alt="" ></a>
-            <a href=""><img src="imgs/b_catalogo.png" alt="" ></a>
-            <a href=""><img src="imgs/b_publicar.png" alt="" ></a>
+            <a href="" class="button"><img src="imgs/b_tiendas.png" alt="Botón 1" ></a>
+            <a href="" class="button"><img src="imgs/b_eventos.png" alt="Botón 2" ></a>
+            <a href="" class="button"><img src="imgs/b_catalogo.png" alt="Botón 3" ></a>
+            <a href="" class="button"><img src="imgs/b_publicar.png" alt="Botón 4" ></a>
+<!---
+
+    <a href="https://example.com" class="button"><img src="button1.png" alt="Botón 1">
+    </a>
+    <a href="https://example.com" class="button">
+        <img src="button2.png" alt="Botón 2">
+    </a>
+
+
+--->
+
+
+
+
         </div>
     </header>
     <div class="division"></div>
