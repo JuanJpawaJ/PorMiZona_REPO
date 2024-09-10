@@ -77,6 +77,14 @@ header{
             text-align: center;
             color:#F0F93B;
             border-radius: 1rem;
+			
+			
+        }
+		
+		header > div.contenedor_botones > a.button_text_img{
+            /* background: linear-gradient(to right, #5761F3 0%, #32388D 100%);; */
+				display:flex;
+				flex-direction:column;
         }
 
     
