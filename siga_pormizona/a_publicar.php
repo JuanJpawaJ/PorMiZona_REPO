@@ -68,82 +68,10 @@
         </div>
     </header>
     <div class="division"></div>
-    <div class="empresas_asociadas">
-        <h1>EMPRESAS ASOCIADAS</h1>
-        <div class="contenedor_empresas">
-            <div class="empresa">
-                <div>
-                   HOLA 1 
-                </div>
-            </div>
-
-            <div class="empresa">
-                <div>
-                    HOLA 2
-                </div>
-            </div>
-
-            <div class="empresa">
-                <div>
-                    
-                </div>
-            </div>
-
-            <div class="empresa">
-                <div>
-                    
-                </div>
-            </div>
-
-            <div class="empresa">
-                <div>
-                    
-                </div>
-            </div>
-            <div class="empresa">
-                <div>
-                    
-                </div>
-            </div>
-
-            <div class="empresa">
-                <div>
-                    
-                </div>
-            </div>
-
-            <div class="empresa">
-                <div>
-                    
-                </div>
-            </div>
-
-            <div class="empresa">
-                <div>
-                    
-                </div>
-            </div>
-            
   
-            <div class="empresa">
-                <div>
-                    
-                </div>
-            </div>
   
-            <div class="empresa">
-                <div>
-                    
-                </div>
-            </div>
-
-            <div class="empresa">
-                <div>
-                    
-                </div>
-            </div>
-    </div>
-    </div>
+  
+  
     <div class="division"></div>
 
     <div class="footer">
