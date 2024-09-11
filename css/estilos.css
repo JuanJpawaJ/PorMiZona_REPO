@@ -71,9 +71,6 @@ header{
     }
 
 
-
-
-
         header > div.contenedor_botones > a{
             /* background: linear-gradient(to right, #5761F3 0%, #32388D 100%);; */
             display: flex;
@@ -93,6 +90,27 @@ header{
 			
 			
         }
+
+        header > div.contenedor_botonespublica > a{
+            /* background: linear-gradient(to right, #5761F3 0%, #32388D 100%);; */
+            display: flex;
+            width: 220px;
+            min-height: 70px;
+            padding: 0.5rem 0;
+            box-sizing: border-box;
+
+            justify-content: center;
+            align-items: center;
+
+            font-size: var(--fuente_tamanio_titulo_2);
+            font-family: var(--fuente_gruesa_1);
+            text-align: center;
+            color:#F0F93B;
+            border-radius: 1rem;
+			
+			
+        }
+
 		
 		header > div.contenedor_botones > a.button_text_img{
             /* background: linear-gradient(to right, #5761F3 0%, #32388D 100%);; */
