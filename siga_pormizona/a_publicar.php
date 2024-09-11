@@ -47,12 +47,10 @@
         </div>
        <div class="contenedor_botones"> 
 
-            <a href="siga_pormizona/buscar_pormizona.php" class="button"><img src="../imgs/b_tiendas.png" alt="Botón 1" ></a>
+            <a href="" class="button button_text_img"><p>PROPIETARIOS DE:</p><p>Tienda, empresa</p><img src="../imgs/b_tiendas.png" alt="Botón 1" ></a>
             <a href="" class="button"><img src="../imgs/b_eventos.png" alt="Botón 2" ></a>
             <a href="siga_pormizona/a_cat_impreso.php" class="button"><img src="../imgs/b_catalogo.png" alt="Botón 3" ></a>
-            <a href="" class="button button_text_img">
-            	<p>este es un texto</p>
-            	<img src="../imgs/b_publicar.png" alt="Botón 4" >
+            <a href="" class="button button_text_img"><p>este es un texto</p><img src="../imgs/b_publicar.png" alt="Botón 4" >
             </a>
 <!---
 
@@ -175,33 +173,33 @@
             <ul class="lista_de_redes_sociales">
                 <li>
                     <a href="#">
-                        <img src="imgs/imagenes_index/logo_facebook_blanco.png" alt="">
+                        <img src="../imgs/imagenes_index/logo_facebook_blanco.png" alt="">
                         <p>instagram/jpawaj</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="imgs/imagenes_index/logo_facebook_blanco.png" alt="">
-                        <p>instagram/jpawaj</p>
-                    </a>
-                </li>
-    
-                <li>
-                    <a href="#">
-                        <img src="imgs/imagenes_index/logo_instagram_blanco.png" alt="">
-                        <p>instagram/jpawaj</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="imgs/imagenes_index/logo_whatsapp_blanco.png" alt="">
+                        <img src="../imgs/imagenes_index/logo_facebook_blanco.png" alt="">
                         <p>instagram/jpawaj</p>
                     </a>
                 </li>
     
                 <li>
                     <a href="#">
-                        <img src="imgs/imagenes_index/logo_whatsapp_blanco.png" alt="">
+                        <img src="../imgs/imagenes_index/logo_instagram_blanco.png" alt="">
+                        <p>instagram/jpawaj</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../imgs/imagenes_index/logo_whatsapp_blanco.png" alt="">
+                        <p>instagram/jpawaj</p>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#">
+                        <img src="../imgs/imagenes_index/logo_whatsapp_blanco.png" alt="">
                         <p>instagram/jpawaj</p>
                     </a>
                 </li>
@@ -209,7 +207,7 @@
         </div>
     
         <div class="contenedor_final_footer">
-            <img src="/imgs/imagenes_index/logo_JPAWAJ_blanco.png" alt="">
+            <img src="../imgs/imagenes_index/logo_JPAWAJ_blanco.png" alt="">
             <p>Arequipa - Peru - 2024</p>
         </div>
     </div>
