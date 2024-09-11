@@ -60,6 +60,19 @@ header{
         align-items: center;
         justify-content: space-around;
     }
+	
+    header > div.contenedor_botonespublica{
+        background-color: #27798b;
+        
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+
+
 
         header > div.contenedor_botones > a{
             /* background: linear-gradient(to right, #5761F3 0%, #32388D 100%);; */
