@@ -47,7 +47,8 @@
         </div>
        <div class="contenedor_botones"> 
 
-            <a href="" class="button button_text_img"><p>PROPIETARIOS DE:<br>Tienda, empresa<br>profesionales, ocupaciones.</p><img src="../imgs/b_tiendas.png" alt="Botón 1" ></a>
+            <a href="" class="button button_text_img"><p>PROPIETARIO DE:<br>Tienda, empresa<br>profesional, ocupación</p><img src="../imgs/b_tiendas.png" alt="Botón 1" ></a>
+            <a href="" class="button button_text_img"><p>INVITA AL PÚBLICO A:<br>Eventos, espectáculos<br>Actividades culturales, etc.</p><img src="../imgs/b_tiendas.png" alt="Botón 1" ></a>
             <a href="" class="button"><img src="../imgs/b_eventos.png" alt="Botón 2" ></a>
             <a href="siga_pormizona/a_cat_impreso.php" class="button"><img src="../imgs/b_catalogo.png" alt="Botón 3" ></a>
             <a href="" class="button button_text_img"><p>este es un texto</p><img src="../imgs/b_publicar.png" alt="Botón 4" >
