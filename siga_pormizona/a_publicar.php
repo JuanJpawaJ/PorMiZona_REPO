@@ -45,7 +45,7 @@
             <h2>ENCUENTRE LO QUE NECESITE CERCA DE USTED</h2>
             <h2>PUBLICIDAD LOCALIZADA Y EVENTOS</h2>
         </div>
-       <div class="contenedor_botones"> 
+       <div class="contenedor_botonespublica"> 
 
             <a href="" class="button button_text_img"><p>PROPIETARIO DE:<br>Tienda, empresa,<br>profesional, ocupación.</p><img src="../imgs/bp_negocio.png" alt="Botón 1" ></a>
             <a href="" class="button button_text_img"><p>INVITA AL PÚBLICO A:<br>Eventos, espectáculos,<br>actividades culturales, etc.</p><img src="../imgs/bp_evento.png" alt="Botón 2" ></a>
