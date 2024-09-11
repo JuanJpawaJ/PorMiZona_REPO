@@ -68,19 +68,6 @@
         </div>
     </header>
     <div class="division"></div>
-    <div class="empresas_asociadas">
-        <h1>EMPRESAS ASOCIADAS</h1>
-        <div class="contenedor_empresas">
- 
- 
-             <div class="empresa">
-                <div>
-                    
-                </div>
-            </div>
-    </div>
-    </div>
-    <div class="division"></div>
 
     <div class="footer">
         <div>
