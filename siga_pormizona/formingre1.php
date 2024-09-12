@@ -50,8 +50,8 @@ $latitud = $_POST['latitude'];
 ¿PORQUE ES IMPORTANTE LA GEOLOCALIZACIÓN PARA SU NEGOCIO?<br>
 Para que sus clientes potenciales, haciendo uso de su ubicación actual, encuentren el producto de su necesidad en la tienda más cercana. Esta tienda es decir su negocio deberá estar plenamente identificado por la geolocalización.<br><br>
 ¿COMO PUBLICAR SU NEGOCIO?<br>
-Para obtener una ubicación precisa, ES RECOMENDABLE USAR UN EQUPO MOVIL. Esto permitirá capturar la geolocalización exacta en el lugar donde se encuentra su negocio y publicar su tienda.<br>
-¡No se preocupes por la geolocalización! El proceso es rápido y sencillo. Si tienes alguna duda o necesitas ayuda, estamos aquí para asistirte en cada paso.<br><br>
+Para obtener una ubicación precisa, ES RECOMENDABLE USAR UN EQUIPO MOVIL. Esto permitirá capturar la geolocalización exacta en el lugar donde se encuentra su negocio y publicar su tienda.<br>
+¡No se preocupe por la geolocalización! El proceso es rápido y sencillo. Si tiene alguna duda o necesita ayuda, estamos aquí para asistir en cada paso.<br><br>
 ¡HAGA QUE SU NEGOCIO SEA VISIBLE PARA LOS CLIENTES CERCANOS!</div>
               <br/>
          <? } ?>
