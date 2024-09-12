@@ -46,7 +46,15 @@ $latitud = $_POST['latitude'];
               <h2 class="semi-titulosform_iz">Paso 01: Geolocalización</h2>
               <br>               
               <div class="titobligatorio">
-                 RECOMENDABLE USAR UN EQUPO MOVIL. Para que ubiquen perfectamente su Local Comercial, es obligatorio reconocer su Geolocalización IN SITU (En el mismo local comercial u oficina). </div>
+                 La GEOLOCALIZACIÓN, son números que corresponden a coordenadas geográficas. Ejemplo: Latitud -16.458626685027895 y longitud -71.12705155985589.
+¿Porque es importante la geolocalización para su negocio?
+Para que sus clientes potenciales, haciendo uso de su ubicación actual, encuentren el producto de su necesidad en la tienda más cercana. Esta tienda es decir su negocio deberá estar plenamente identificado por la geolocalización.
+¿Como publicar su negocio?
+Para obtener una ubicación precisa, ES RECOMENDABLE USAR UN EQUPO MOVIL. Esto permitirá capturar la geolocalización exacta en el lugar donde se encuentra su negocio y publicar su tienda.
+¡No te preocupes por la geolocalización!
+No te preocupes, el proceso es rápido y sencillo. Si tienes alguna duda o necesitas ayuda, estamos aquí para asistirte en cada paso.
+¡HACER QUE TU NEGOCIO SEA VISIBLE PARA LOS CLIENTES CERCANOS NUNCA HA SIDO TAN FÁCIL!
+. </div>
               <br/>
          <? } ?>
         <div> <a href="geo_mendoza2.html"><img src="iconos/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
