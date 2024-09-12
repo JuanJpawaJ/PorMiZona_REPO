@@ -61,6 +61,11 @@ header{
         justify-content: space-around;
     }
 	
+	header > div.contenedor_botones_publicar{
+        background-color: #133452;
+        padding: 2rem 0
+    }
+	
 
 
         header > div.contenedor_botones > a{
@@ -167,6 +172,8 @@ header{
         flex-direction: column;
         height: auto;
     }
+	
+	
 
     header > div.contenedor_botones > a{
         margin-bottom: 1rem;
