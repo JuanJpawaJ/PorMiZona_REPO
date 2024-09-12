@@ -60,6 +60,51 @@
         </div>
     </header>
     <div class="division"></div>
+    <footer>
+        <div class="footer_clientes footer_uno">
+            <article class="footer_article">
+                <h2 class="semi-titulos">CLIENTES</h2>
+                <p>Pormizona.com.pe es una página gratuita.
+                Las consultas por esta Web y los contactos 
+                con nuestros asociados son gratuitos.</p>
+            </article>
+        </div>
+
+        <div class="footer_asociados footer_uno">
+            <article class="footer_article">
+                <h2 class="semi-titulos">ASOCIADOS</h2>
+                <p>Brinda los siguientes servicios:
+                    * Servicio gratuito incluye:
+                    - El registro de datos, ubicación y productos que comercializa.
+                     
+                    * Servicio por convenio:
+                    - Diseño logos
+                    - Mapa Google.
+                </p>
+            </article>
+        </div>
+
+        <div class="footer_clientes footer_uno">
+            <article class="footer_article">
+                <h2 class="semi-titulos">PRODUCTOS</h2>
+                <p>Nuestra empresa, no se responsabiliza por productos o servicos en mal estado.</p>
+            </article>
+        </div>
+
+        <div class="footer_contactos footer_uno">
+            <article class="footer_article">
+                <h2 class="semi-titulos">CONTACTOS</h2>
+                <p>Cel. 959956000 <br>
+                    Diseño Web.
+                    Arequipa - Perú</p>
+            </article>
+        </div>
+
+        <div class="footer_logo">
+            <img src="imagenes/Logo/Logo_blanco_puro.svg" alt="">
+            <h3>Arequipa - 2024</h3>
+        </div>
+    </footer>
 
     <div class="footer">
         <div>
