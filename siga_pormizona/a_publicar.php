@@ -31,14 +31,6 @@
             <img src="../imgs/pmz_01_rgb.jpg" alt="" class="logo_por_mi_zona">
             <img src="../imgs/c_edi_01_rgb.jpg" alt="" class="central_de_edicion">
             
-            <div class="contenedor_navegador">
-                <button class="nav" id="boton_hamburguesa" onclick="desplegarBotonHamburguesa()">
-                    <span class="material-symbols-outlined">
-                        menu
-                    </span>
-                </button>
-    
-            </div>
 
         </div>
         <div>
