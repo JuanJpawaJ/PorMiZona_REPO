@@ -39,9 +39,9 @@
         </div>
        <div class="contenedor_botones contenedor_botones_publicar"> 
 
-            <a href="siga_pormizona/formingre1.php" class="button button_text_img"><p>PROPIETARIO DE:<br>Tienda, empresa,<br>profesional, ocupación.</p><img src="../imgs/bp_negocio.png" alt="Botón 1" ></a>
+            <a href="/siga_pormizona/formingre1.php" class="button button_text_img"><p>PROPIETARIO DE:<br>Tienda, empresa,<br>profesional, ocupación.</p><img src="../imgs/bp_negocio.png" alt="Botón 1" ></a>
             <a href="" class="button button_text_img"><p>INVITA AL PÚBLICO A:<br>Eventos, espectáculos,<br>actividades culturales, etc.</p><img src="../imgs/bp_evento.png" alt="Botón 2" ></a>
-            <a href="siga_pormizona/a_cat_impreso.php" class="button button_text_img"><p>CATÁLOGO PORMIZONA<br>Publicidad impresa,<br>Distribución 1.5 Km.</p><img src="../imgs/bp_impreso.png" alt="Botón 3" ></a>
+            <a href="/siga_pormizona/a_cat_impreso.php" class="button button_text_img"><p>CATÁLOGO PORMIZONA<br>Publicidad impresa,<br>Distribución 1.5 Km.</p><img src="../imgs/bp_impreso.png" alt="Botón 3" ></a>
             </a>
 <!---
 
