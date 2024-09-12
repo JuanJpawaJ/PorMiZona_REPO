@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/estilos_footer.css">
+    <link rel="stylesheet" href="estilos-footer.css">
     <link rel="stylesheet" href="../css/estilos_navegador.css">
    <style>
       .button {
