@@ -84,13 +84,46 @@
     <div class="empresas_asociadas">
         <h1>EMPRESAS ASOCIADAS</h1>
         <div class="contenedor_empresas">
+  <?php      
+$titulo="LISTA POR MI ZONA con filtro";
+$result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$bxlatitud%' AND longitud_aso like '%$bxlongitud%' AND productos_aso like '%$bxproducto%' ) order by categoria_aso");
+   
+$total=mysqli_num_rows($result);        
+
+while ($tabla=mysqli_fetch_array($result)){
+	$id=$tabla["id"];
+	$cod_aso=$tabla["cod_aso"];
+	$pais_aso=$tabla["pais_aso"];
+	$rsocial_aso=$tabla["rsocial_aso"];
+	$direccion_aso=$tabla["direccion_aso"];
+	$distrito_aso=$tabla["distrito_aso"];
+	$provincia_aso=$tabla["provincia_aso"];
+	$estado_aso=$tabla["estado_aso"];
+	$referencia_aso=$tabla["referencia_aso"];
+	$gironeg_aso=$tabla["gironeg_aso"];
+	$telf1_aso=$tabla["telf1_aso"];
+	$telf2_aso=$tabla["telf2_aso"];
+	$email_aso=$tabla["email_aso"];
+	$date_aso=$tabla["date_aso"];
+	$categoria_aso=$tabla["categoria_aso"];
+	$productos_aso=$tabla["productos_aso"];
+	$favicon_aso=$tabla["favicon_aso"];
+	if(strlen($favicon_aso)==0) {
+		$favicon_aso="f_pmz_bl.png";
+	}
+	$latitud_aso=$tabla["latitud_aso"];
+	$longitud_aso=$tabla["longitud_aso"];
+     
+  ?>       
             <div class="empresa">
                 <div>
-                   HOLA 1 
+                   <?php  echo($cod_aso); ?> 
                 </div>
             </div>
-
-            <div class="empresa">
+<?php
+}
+ ?>
+<!--            <div class="empresa">
                 <div>
                     HOLA 2
                 </div>
@@ -155,6 +188,9 @@
                     
                 </div>
             </div>
+            -->
+            
+            
     </div>
     </div>
     <div class="division"></div>
