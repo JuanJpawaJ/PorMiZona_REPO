@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/estilos_footer.css">
     <link rel="stylesheet" href="css/estilos_navegador.css">
-    <link rel="stylesheet" href="css/estilos-footer.css">
+    <link rel="stylesheet" href="siga_pormizona/estilos-footer.css">
 
   <style>
       .button {
