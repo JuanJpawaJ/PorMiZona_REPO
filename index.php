@@ -17,12 +17,12 @@
     <link rel="stylesheet" href="siga_pormizona/estilos-footer.css">
 
   <style>
-      .button {
+      .button, .empresa > a {
           display: inline-block;
           transition: transform 0.3s ease; /* Suaviza la transición */
       }
 
-      .button:hover {
+      .button:hover, .empresa > a {
           transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
       }
   </style>
