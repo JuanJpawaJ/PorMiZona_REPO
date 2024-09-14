@@ -110,7 +110,7 @@ header{
     padding: 1rem;
 } 
 
-    .empresas_asociadas > h1{
+   /* .empresas_asociadas > h1{
         font-size: var(--fuente_tamanio_titulo_2);
         font-family: var(--fuente_cursiva_gruesa);
         display: inline;
@@ -118,7 +118,7 @@ header{
         border-radius: 2rem;
         padding: 1px 20px;
         
-    }
+    } */
 
     .empresas_asociadas > .contenedor_empresas{
         margin-top: 1rem;
