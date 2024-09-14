@@ -131,7 +131,9 @@ while ($tabla=mysqli_fetch_array($result)){
                    
 				   
     
-   <a href="link01_aso"> <img src="siga_pormizona/img_asociados/<? echo($logo_aso); ?>"  ></a>
+   <a href=" <? echo($link01_aso) ?> "> <img src="siga_pormizona/img_asociados/<? echo($logo_aso); ?>"  ></a>
+   
+
        <?  echo($gironeg_aso); ?>                
             </div>
 <?php
