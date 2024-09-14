@@ -133,8 +133,8 @@ header{
 
     .empresas_asociadas > .contenedor_empresas > .empresa{
         width:200px;
-        height: 140px;
-        background-color: white;
+        /* height: 140px;
+        background-color: white; */
         display: flex;
         justify-content: center;
         padding: 5px 0;
