@@ -115,6 +115,7 @@ while ($tabla=mysqli_fetch_array($result)){
 	$categoria_aso=$tabla["categoria_aso"];
 	$productos_aso=$tabla["productos_aso"];
 	$favicon_aso=$tabla["favicon_aso"];
+	$img2_aso=$tabla["img2_aso"];
 	if(strlen($favicon_aso)==0) {
 		$favicon_aso="f_pmz_bl.png";
 	}
@@ -124,78 +125,17 @@ while ($tabla=mysqli_fetch_array($result)){
   ?>       
             <div class="empresa">
                 <div>
-                   <?php  echo($rsocial_aso); ?> 
+                   
+				   
+	<img src="img_asociados/<? echo($img2_aso); ?>" width="100" height="%"			   
+				   
+				   
+				     echo($rsocial_aso); ?> 
                 </div>
             </div>
 <?php
 }
  ?>
-<!--            <div class="empresa">
-                <div>
-                    HOLA 2
-                </div>
-            </div>
-
-            <div class="empresa">
-                <div>
-                    
-                </div>
-            </div>
-
-            <div class="empresa">
-                <div>
-                    
-                </div>
-            </div>
-
-            <div class="empresa">
-                <div>
-                    
-                </div>
-            </div>
-            <div class="empresa">
-                <div>
-                    
-                </div>
-            </div>
-
-            <div class="empresa">
-                <div>
-                    
-                </div>
-            </div>
-
-            <div class="empresa">
-                <div>
-                    
-                </div>
-            </div>
-
-            <div class="empresa">
-                <div>
-                    
-                </div>
-            </div>
-            
-  
-            <div class="empresa">
-                <div>
-                    
-                </div>
-            </div>
-  
-            <div class="empresa">
-                <div>
-                    
-                </div>
-            </div>
-
-            <div class="empresa">
-                <div>
-                    
-                </div>
-            </div>
-            -->
             
             
     </div>
