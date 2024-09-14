@@ -115,7 +115,7 @@ while ($tabla=mysqli_fetch_array($result)){
 	$categoria_aso=$tabla["categoria_aso"];
 	$productos_aso=$tabla["productos_aso"];
 	$favicon_aso=$tabla["favicon_aso"];
-	$logo_aso=$tabla["img2_aso"];
+	$logo_aso=$tabla["logo_aso"];
 	if(strlen($favicon_aso)==0) {
 		$favicon_aso="f_pmz_bl.png";
 	}
