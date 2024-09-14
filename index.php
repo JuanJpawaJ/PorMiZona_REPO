@@ -132,7 +132,7 @@ while ($tabla=mysqli_fetch_array($result)){
 				   
     
    <a href="link01_aso"> <img src="siga_pormizona/img_asociados/<? echo($logo_aso); ?>" width="180" height="%" ></a>
-       <? // echo($gironeg_aso); ?>                
+       <?  echo($gironeg_aso); ?>                
             </div>
 <?php
 }
