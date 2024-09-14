@@ -86,7 +86,7 @@
         <div class="contenedor_empresas">
   <?php      
 $titulo="LISTA POR MI ZONA con filtro";
-$result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$bxlatitud%' AND longitud_aso like '%$bxlongitud%' AND productos_aso like '%$bxproducto%' ) order by categoria_aso");
+$result=mysqli_query($connec,"select * from asociado_51 where view01_aso='S' order by categoria_aso");
    
 $total=mysqli_num_rows($result);        
 
@@ -117,7 +117,7 @@ while ($tabla=mysqli_fetch_array($result)){
   ?>       
             <div class="empresa">
                 <div>
-                   <?php  echo($cod_aso); ?> 
+                   <?php  echo($rsocial_aso); ?> 
                 </div>
             </div>
 <?php
