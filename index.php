@@ -84,7 +84,13 @@
     <div class="empresas_asociadas">
         <h1>EMPRESAS ASOCIADAS</h1>
         <div class="contenedor_empresas">
-  <?php      
+  <?php   
+  
+  include("connec_sql_new.php");
+mysqli_set_charset($connec,'utf8'); 
+date_default_timezone_set("America/Lima");
+setlocale(LC_ALL, "sp");
+   
 $titulo="LISTA POR MI ZONA con filtro";
 //$result=mysqli_query($connec,"select * from asociado_51 where view01_aso='S' ");
 $result=mysqli_query($connec,"select * from asociado_51");
