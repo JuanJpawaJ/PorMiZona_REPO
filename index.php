@@ -127,7 +127,7 @@ while ($tabla=mysqli_fetch_array($result)){
                 <div>
                    
 				   
-	<img src="siga_pormizona/img_asociados/<? echo($logo_aso); ?>" width="250" height="%"			   
+	<img src="siga_pormizona/img_asociados/<? echo($logo_aso); ?>" width="200" height="%"			   
 				   
 				   
 				     echo($rsocial_aso); ?> 
