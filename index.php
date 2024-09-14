@@ -22,7 +22,7 @@
           transition: transform 0.3s ease; /* Suaviza la transición */
       }
 
-      .button:hover, .empresa > a > img{
+      .button:hover, .empresa > a:hover > img{
           transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
       }
   </style>
