@@ -207,7 +207,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
   	if(strlen(trim($logo_aso))==0) { ?>
        <span class="logo_aso"><? echo ($rsocial_aso); ?></span>		
 <? 	}else{ ?>
-        <img src=" <?php echo "img_asociados/".$logo_aso ?> " width="300" height="50" />
+        <img src=" <?php echo "img_asociados/".$logo_aso ?> " width="200" height="%" />
 <?  } ?>  
 			
 			
