@@ -92,8 +92,8 @@ date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
    
 $titulo="LISTA POR MI ZONA con filtro";
-//$result=mysqli_query($connec,"select * from asociado_51 where view01_aso='S' ");
-$result=mysqli_query($connec,"select * from asociado_51");
+
+$result=mysqli_query($connec,"select * from asociado_51 where view01_aso='S' ");
    
 $total=mysqli_num_rows($result);        
 
