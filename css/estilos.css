@@ -105,10 +105,10 @@ header{
 }
 
 .empresas_asociadas{
-   /* background-color: #9D8669;
+   /* background-color: #9D8669; */
     width: 80%;
     padding: 1rem;
-} */
+} 
 
     .empresas_asociadas > h1{
         font-size: var(--fuente_tamanio_titulo_2);
