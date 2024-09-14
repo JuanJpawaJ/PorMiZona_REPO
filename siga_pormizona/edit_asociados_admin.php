@@ -326,6 +326,20 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
      </td>
    </tr>
    <tr>
+     <td>Link 01</td>
+     <td>
+      <input type="text" class="campo_texto" name="xlink1" value="<?php echo($link01_aso); ?>"> 
+
+     </td>
+   </tr>
+   <tr>
+     <td>Link02</td>
+     <td>
+       <input type="text" class="campo_texto" name="xlink2" value="<?php echo($link02_aso); ?>"> 
+    
+     </td>
+   </tr>
+   <tr>
      <td>Msj público</td>
      <td>
       <input type="text" class="campo_texto" name="xmsjpublico" value="<?php echo($msjpublico_aso); ?>"> 

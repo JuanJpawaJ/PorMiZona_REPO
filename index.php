@@ -118,6 +118,7 @@ while ($tabla=mysqli_fetch_array($result)){
 	$productos_aso=$tabla["productos_aso"];
 	$favicon_aso=$tabla["favicon_aso"];
 	$logo_aso=$tabla["logo_aso"];
+	$link01_aso=$tabla["link01_aso"];
 	if(strlen($favicon_aso)==0) {
 		$favicon_aso="f_pmz_bl.png";
 	}
@@ -129,9 +130,9 @@ while ($tabla=mysqli_fetch_array($result)){
                
                    
 				   
-	<img src="siga_pormizona/img_asociados/<? echo($logo_aso); ?>" width="180" height="%" > 
-      <? // echo($gironeg_aso); ?> 
-                
+    
+   <a href="link01_aso"> <img src="siga_pormizona/img_asociados/<? echo($logo_aso); ?>" width="180" height="%" ></a>
+       <? // echo($gironeg_aso); ?>                
             </div>
 <?php
 }
