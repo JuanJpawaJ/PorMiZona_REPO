@@ -141,7 +141,7 @@ header{
     }
 
         .empresas_asociadas > .contenedor_empresas > .empresa > div{
-            background-color: black;
+           /* background-color: black; */
             width: 90%;
             height: 65px;
         }
