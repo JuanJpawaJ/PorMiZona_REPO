@@ -86,7 +86,8 @@
         <div class="contenedor_empresas">
   <?php      
 $titulo="LISTA POR MI ZONA con filtro";
-$result=mysqli_query($connec,"select * from asociado_51 where view01_aso='S' order by categoria_aso");
+//$result=mysqli_query($connec,"select * from asociado_51 where view01_aso='S' ");
+$result=mysqli_query($connec,"select * from asociado_51");
    
 $total=mysqli_num_rows($result);        
 
