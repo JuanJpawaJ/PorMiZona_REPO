@@ -124,14 +124,14 @@ while ($tabla=mysqli_fetch_array($result)){
      
   ?>       
             <div class="empresa">
-                <div>
+               
                    
 				   
 	<img src="siga_pormizona/img_asociados/<? echo($logo_aso); ?>" width="180" height="%"			   
 				   
 				   
 				     echo($rsocial_aso); ?> 
-                </div>
+                
             </div>
 <?php
 }
