@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/estilos_footer.css">
     <link rel="stylesheet" href="css/estilos_navegador.css">
+    <link rel="stylesheet" href="estilos-footer.css">
+
   <style>
       .button {
           display: inline-block;
@@ -142,70 +144,51 @@ while ($tabla=mysqli_fetch_array($result)){
     </div>
     <div class="division"></div>
 
-    <div class="footer">
-        <div>
-            <h4>Tienda exhibición:</h4>
-            <p>Av. Porongoche 323 (1/2 cuadra del Mall Aventura Plaza - Porongoche)</p>
-    
-            <h4>Almacen:</h4>
-            <p>Calle Sena 105 - Coop 58 (1/2 cuadra del Mall Aventura Porongoche)</p>
+    <footer>
+        <div class="footer_clientes footer_uno">
+            <article class="footer_article">
+                <h2 class="semi-titulos">CLIENTES</h2>
+                <p>Pormizona.com.pe es una página gratuita.
+                Las consultas por esta Web y los contactos 
+                con nuestros asociados son gratuitos.</p>
+            </article>
         </div>
-    
-        <div>
-            <h4>Teléfonos:</h4>
-            <ul>
-                <li>959956000</li>
-                <li>959956060</li>
-            </ul>
-    
-            <h4>Correo electrónico:</h4>
-            <ul>
-                <li>jpawajsac@gmail.com</li>
-                <li>jpawajsac@gmail.com</li>
-            </ul>
+
+        <div class="footer_asociados footer_uno">
+            <article class="footer_article">
+                <h2 class="semi-titulos">ASOCIADOS</h2>
+                <p>Brinda los siguientes servicios:
+                    * Servicio gratuito incluye:
+                    - El registro de datos, ubicación y productos que comercializa.
+                     
+                    * Servicio por convenio:
+                    - Diseño logos
+                    - Mapa Google.
+                </p>
+            </article>
         </div>
-        <div>
-            <ul class="lista_de_redes_sociales">
-                <li>
-                    <a href="#">
-                        <img src="imgs/imagenes_index/logo_facebook_blanco.png" alt="">
-                        <p>instagram/jpawaj</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="imgs/imagenes_index/logo_facebook_blanco.png" alt="">
-                        <p>instagram/jpawaj</p>
-                    </a>
-                </li>
-    
-                <li>
-                    <a href="#">
-                        <img src="imgs/imagenes_index/logo_instagram_blanco.png" alt="">
-                        <p>instagram/jpawaj</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="imgs/imagenes_index/logo_whatsapp_blanco.png" alt="">
-                        <p>instagram/jpawaj</p>
-                    </a>
-                </li>
-    
-                <li>
-                    <a href="#">
-                        <img src="imgs/imagenes_index/logo_whatsapp_blanco.png" alt="">
-                        <p>instagram/jpawaj</p>
-                    </a>
-                </li>
-            </ul>
+
+        <div class="footer_clientes footer_uno">
+            <article class="footer_article">
+                <h2 class="semi-titulos">PRODUCTOS</h2>
+                <p>Nuestra empresa, no se responsabiliza por productos o servicos en mal estado.</p>
+            </article>
         </div>
-    
-        <div class="contenedor_final_footer">
-            <img src="/imgs/imagenes_index/logo_JPAWAJ_blanco.png" alt="">
-            <p>Arequipa - Peru - 2024</p>
+
+        <div class="footer_contactos footer_uno">
+            <article class="footer_article">
+                <h2 class="semi-titulos">CONTACTOS</h2>
+                <p>Cel. 959956000 <br>
+                    Diseño Web.
+                    Arequipa - Perú</p>
+            </article>
         </div>
-    </div>
+
+        <div class="footer_logo">
+            <img src="imagenes/Logo/Logo_blanco_puro.svg" alt="">
+            <h3>Arequipa - 2024</h3>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
