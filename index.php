@@ -129,10 +129,8 @@ while ($tabla=mysqli_fetch_array($result)){
                
                    
 				   
-	<img src="siga_pormizona/img_asociados/<? echo($logo_aso); ?>" width="180" height="%"			   
-				   
-				   
-				     echo($rsocial_aso); ?> 
+	<img src="siga_pormizona/img_asociados/<? echo($logo_aso); ?>" width="180" height="%" > 
+    <p> <? echo($gironeg_aso); ?> </p>
                 
             </div>
 <?php
@@ -171,7 +169,7 @@ while ($tabla=mysqli_fetch_array($result)){
         <div class="footer_clientes footer_uno">
             <article class="footer_article">
                 <h2 class="semi-titulos">PRODUCTOS</h2>
-                <p>Nuestra empresa, no se responsabiliza por productos o servicos en mal estado.</p>
+                <p>Nuestra empresa, no se responsabiliza por productos o servicios en mal estado.</p>
             </article>
         </div>
 
