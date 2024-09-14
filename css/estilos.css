@@ -132,7 +132,7 @@ header{
     }
 
     .empresas_asociadas > .contenedor_empresas > .empresa{
-        width:200px;
+        width:180px;
         /* height: 140px;
         background-color: white; */
         display: flex;
@@ -141,6 +141,10 @@ header{
 		flex-direction:column;
 		align-items:center;
     }
+	
+	.empresas_asociadas > .contenedor_empresas > .empresa > img{
+		width:100%;
+	}
 
      /*   .empresas_asociadas > .contenedor_empresas > .empresa > div{
            /* background-color: black; */
