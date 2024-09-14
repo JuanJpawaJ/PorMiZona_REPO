@@ -68,10 +68,12 @@ $grupolista_aso=$tabla["grupolista_aso"];
 $img1_aso=$tabla["img1_aso"];
 $img2_aso=$tabla["img2_aso"];
 $logo_aso=$tabla["logo_aso"];
-$view1_aso=$tabla["view1_aso"];
-$view2_aso=$tabla["view2_aso"];
-$view3_aso=$tabla["view3_aso"];
-$view4_aso=$tabla["view4_aso"];
+$view01_aso=$tabla["view01_aso"];
+$view02_aso=$tabla["view02_aso"];
+$view03_aso=$tabla["view03_aso"];
+$view04_aso=$tabla["view04_aso"];
+$link01_aso=$tabla["link01_aso"];
+$link02_aso=$tabla["link02_aso"];
 $msjpublico_aso=$tabla["msjpublico_aso"];
 $obsinterno_aso=$tabla["obsinterno_aso"];
 
