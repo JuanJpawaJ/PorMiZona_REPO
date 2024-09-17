@@ -58,7 +58,7 @@
         </div>
         <div>
             <h2>ENCUENTRE LO QUE NECESITE CERCA DE USTED</h2>
-            <h2>PUBLICIDAD LOCALIZADA Y EVENTOS</h2>
+            <h2>PUBLICIDAD LOCALIZADA Y EVENTOS**</h2>
         </div>
        <div class="contenedor_botones"> 
 
