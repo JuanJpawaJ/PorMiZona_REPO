@@ -42,7 +42,7 @@
 
             <a href="/siga_pormizona/formingre1.php" class="button button_text_img"><p>PRECIO DE ESPACIOS<br>Tienda, empresa,<br>profesional, ocupación.</p><img src="../imgs/bp_negocio.png" alt="Botón 1" ></a>
             <a href="/siga_pormizona/a_view_espacios.php" class="button button_text_img"><p>ESPACIOS DISPONIBLE<br>Según la zona<br>Catálogo de turno</p><img src="../imgs/bp_evento.png" alt="Botón 2" ></a>
-            <a href="/siga_pormizona/a_cat_impreso.php" class="button button_text_img"><p>CATÁLOGO PORMIZONA<br>Publicidad impresa,<br>Distribución 1.5 Km.</p><img src="../imgs/bp_impreso.png" alt="Botón 3" ></a>
+            <a href="/siga_pormizona/a_view_catimpreso.php" class="button button_text_img"><p>CATÁLOGO PORMIZONA<br>Publicidad impresa,<br>Distribución 1.5 Km.</p><img src="../imgs/bp_impreso.png" alt="Botón 3" ></a>
             </a>
 <!---
 
