@@ -66,6 +66,11 @@ header{
         padding: 2rem 0
     }
 	
+	header > div.contenedor_botones_publicar2{
+        background-color: #165a03;
+        padding: 2rem 0
+    }
+
 
 
         header > div.contenedor_botones > a{

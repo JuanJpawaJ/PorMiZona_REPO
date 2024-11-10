@@ -28,6 +28,21 @@
     <td width="900" height="119" align="center" valign="middle"><img src="/imagenes_1/logo_pormizona_com_pe.jpg" width="395" height="97" /></td>
   </tr>
   <tr>
+    <td height="39" align="center" bgcolor="#48887A">040204 - Zona Porongoche - octubre 2024</td>
+  </tr>
+  <tr>
+    <td height="39" align="center"><img src="cata_impreso/P1_cat_040402_oct.jpg" width="902" height="1273" /></td>
+  </tr>
+  <tr>
+    <td height="39" align="center"><img src="cata_impreso/P2_cat_040402_oct.jpg" width="902" height="1273" /></td>
+  </tr>
+  <tr>
+    <td height="39" align="center"><img src="cata_impreso/P3_cat_040402_oct.jpg" width="902" height="1273" /></td>
+  </tr>
+  <tr>
+    <td height="39" align="center"><img src="cata_impreso/P4_cat_040402_oct.jpg" width="902" height="1273" /></td>
+  </tr>
+  <tr>
     <td height="39" align="center" bgcolor="#48887A">040202 - Zona Porongoche - mayo 2024</td>
   </tr>
   <tr>

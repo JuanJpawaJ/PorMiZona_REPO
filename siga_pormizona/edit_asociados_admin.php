@@ -300,7 +300,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
      </td>
    </tr>
    <tr>
-     <td>View 1</td>
+     <td>E. Asoc. View1</td>
      <td>
       <input type="text" class="campo_texto" name="xview1" value="<?php echo($view01_aso); ?>"> 
 

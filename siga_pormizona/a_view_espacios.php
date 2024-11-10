@@ -55,7 +55,7 @@ $viewmodi=$_GET['viewmodi'];
 $xgl=$_GET['xgl'];
 
 if(strlen($xzona)==0){
-	$xzona="040501";
+	$xzona="040204";
 }
 
 ?>
@@ -76,8 +76,8 @@ if(strlen($xzona)==0){
       <tr>
         <td width="105" height="101" align="center" bgcolor="#CCCCCC"><a href="../index.php"><img src="iconos/boton_pmz_3letras.jpg" width="85" height="80" /></a></td>
         <td width="202" align="center" 
-    <? if ($xzona=="040202") { ?> bgcolor="#FFFF00" <?	} else { ?> bgcolor="#CCCCCC" <?  } ?>
-        ><a href="a_view_espacios.php?&xzona=040202"><img src="iconos/boton_zona2.jpg" width="150" height="80" /></a></td>
+    <? if ($xzona=="040204") { ?> bgcolor="#FFFF00" <?	} else { ?> bgcolor="#CCCCCC" <?  } ?>
+        ><a href="a_view_espacios.php?&xzona=040204"><img src="iconos/boton_zona2.jpg" width="150" height="80" /></a></td>
         <td width="194" align="center"
     <? if ($xzona=="000000") { ?> bgcolor="#FFFF00" <?	} else { ?> bgcolor="#CCCCCC" <?  } ?>
          >Zona 3</td>
@@ -179,7 +179,6 @@ $colorocu="#999999";
 ?>        
     
     
-    </td>
   </tr>
   
 
@@ -189,7 +188,7 @@ $colorocu="#999999";
 	 echo ("ESPACIOS LIBRES  -> ");
 	 echo "<font color='yellow'>".ZONA." ".$zona_ctg."  ".$namezona_ctg."</font>";
 
-	 echo (" - ".$campana_ctg." - IMPRENTA: ".$fechafin_ctg) ?></span></td>
+	 echo (" -".$campana_ctg." -F.INICIO: ".$fechaini_ctg." -F.IMPRENTA: ".$fechafin_ctg) ?></span></td>
   </tr>
   <tr>
     <td height="613" align="center" valign="middle">

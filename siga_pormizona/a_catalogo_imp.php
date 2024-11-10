@@ -38,11 +38,11 @@
             <h2>ENCUENTRE LO QUE NECESITE CERCA DE USTED</h2>
             <h2>CATALOGO IMPRESO</h2>
         </div>
-       <div class="contenedor_botones contenedor_botones_publicar"> 
+       <div class="contenedor_botones contenedor_botones_publicar2"> 
 
-            <a href="/siga_pormizona/formingre1.php" class="button button_text_img"><p>PRECIO DE ESPACIOS<br>Tienda, empresa,<br>profesional, ocupación.</p><img src="../imgs/bp_negocio.png" alt="Botón 1" ></a>
-            <a href="/siga_pormizona/a_view_espacios.php" class="button button_text_img"><p>ESPACIOS DISPONIBLE<br>Según la zona<br>Catálogo de turno</p><img src="../imgs/bp_evento.png" alt="Botón 2" ></a>
-            <a href="/siga_pormizona/a_view_catimpreso.php" class="button button_text_img"><p>CATÁLOGO PORMIZONA<br>Publicidad impresa,<br>Distribución 1.5 Km.</p><img src="../imgs/bp_impreso.png" alt="Botón 3" ></a>
+            <a href="/siga_pormizona/a_datos_precios_cat.php" class="button button_text_img"><p>PRECIO DE ESPACIOS<br>PLATAFORMA IMPRESA<br>Avisos económicos</p><img src="../imgs/bc_precios.png" alt="Botón 1" ></a>
+            <a href="/siga_pormizona/a_view_espacios.php" class="button button_text_img"><p>VERIFIQUE LOS<br>ESPACIOS DISPONIBLES<br>Catálogo de turno</p><img src="../imgs/bc_espacios.png" alt="Botón 2" ></a>
+            <a href="/siga_pormizona/a_view_catimpreso.php" class="button button_text_img"><p>CATÁLOGO PORMIZONA<br>Impresos y distribuidos,<br>Zona 1.5 Km.</p><img src="../imgs/bc_view.png" alt="Botón 3" ></a>
             </a>
 <!---
 
