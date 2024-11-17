@@ -58,6 +58,7 @@
                 grid-template-columns: 1fr auto;
                 row-gap: 1rem;
                 column-gap: 1rem;
+                margin-bottom: 90px;
             }
 
                 .contenido_total > .contenido > .contenido_2 > .principal > h1{
