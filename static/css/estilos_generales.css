@@ -93,9 +93,15 @@ nav{
     }
 
 
-        nav > ul > li >  a{
+        nav > ul > li > a{
             color:var(--color_blanco);
+            padding:1rem 1rem;
             font-weight: var(--fuente_semibold);
+            transition: background-color 0.3s ease;
+        }
+
+        nav > ul > li > a:hover{
+            background-color: var(--color_rojo_1);
         }
 
 .espacio_navegador{
