@@ -197,14 +197,14 @@ echo ("VOYYYYYYYY AAAAA IF xfi");
 if($xfi=="T") {
   $titulo="LISTA TODO con filtro";
   $result=mysqli_query($connec,"select * from asociado_51 where (productos_aso like '%$bxproducto%' OR rsocial_aso like '%$bxproducto%' OR gironeg_aso like '%$bxproducto%) order by categoria_aso");
-
+ //$result=mysqli_query($connec,"select * from asociado_51 where (productos_aso like '%$bxproducto%') order by categoria_aso");
 
 } else { // "Z" latitud y longitud
   echo ("ESTOY AQUIIIIIIIIII ZZZZZZZZZZZ");
 
   $titulo="LISTA POR MI ZONA con filtro";
-  $result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$bxlatitud%' AND longitud_aso like '%$bxlongitud%') AND (productos_aso like '%$bxproducto%' OR rsocial_aso like '%$bxproducto%' OR gironeg_aso like '%$bxproducto%) order by categoria_aso");
-
+ // $result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$bxlatitud%' AND longitud_aso like '%$bxlongitud%') AND (productos_aso like '%$bxproducto%' OR rsocial_aso like '%$bxproducto%' OR gironeg_aso like '%$bxproducto%) order by categoria_aso");
+ $result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$bxlatitud%' AND longitud_aso like '%$bxlongitud%' AND (productos_aso like '%$bxproducto%' OR rsocial_aso like '%$bxproducto%' OR gironeg_aso like '%$bxproducto%)) order by categoria_aso");
 }
 
 $total=mysqli_num_rows($result);
