@@ -127,8 +127,8 @@ mysqli_set_charset($connec,'utf8');
 date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
-$longitud = $_GET['longitud'];
-$latitud = $_GET['latitud'];
+$longitud = $_POST['longitud'];
+$latitud = $_POST['latitud'];
 
 //--
 //if ($longitud<0) {
