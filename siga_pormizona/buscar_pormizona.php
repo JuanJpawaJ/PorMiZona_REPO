@@ -129,6 +129,11 @@ setlocale(LC_ALL, "sp");
 
 $longitud = $_GET['longitud'];
 $latitud = $_GET['latitud'];
+$bxproducto=$_GET['texto'];
+$xfi=$_GET['xfi'];
+//if(strlen($xfi)==0){
+//  $xfi="T";
+//}
 
 //--
 //if ($longitud<0) {
@@ -163,13 +168,7 @@ $latitud = $_GET['latitud'];
 
 <?
 
-$bxproducto=$_GET['texto'];
-// ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
-$viewmodi=$_GET['viewmodi'];
-$xfi=$_GET['xfi'];
-if(strlen($xfi)==0){
-   $xfi="T";
-}
+
 
  if($xfi=="Z") { ?>
       <div class="geolocalizacionxxx">
@@ -189,30 +188,22 @@ Para motrar las empresas cerca a usted, es obligatorio reconocer su Geolocalizac
 
 if(strlen($longitud)<>0 OR strlen($latitud)<>0){
 	$bxlongitud = substr($longitud,0,6);
-    $bxlatitud = substr($latitud,0,6);
+  $bxlatitud = substr($latitud,0,6);
 
 	$xfi="Z";
 }
 
 
 if($xfi=="T") {
-   if(strlen($bxproducto)==0){
-$titulo="LISTA TODO sin filtro";
-$result=mysqli_query($connec,"select * from asociado_51 order by categoria_aso");
-   } else { // "Z" latitud y longitud
-$titulo="LISTA TODO con filtro";
-$result=mysqli_query($connec,"select * from asociado_51 where (productos_aso like '%$bxproducto%') order by categoria_aso");
-   }
+  $titulo="LISTA TODO con filtro";
+  $result=mysqli_query($connec,"select * from asociado_51 where (productos_aso like '%$bxproducto%' OR rsocial_aso like '%$bxproducto%' OR gironeg_aso like '%$bxproducto%) order by categoria_aso");
+
 
 } else { // "Z" latitud y longitud
 
-   if(strlen($bxproducto)==0){ 
-$titulo="LISTA POR MI ZONA sin filtro";
-$result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$bxlatitud%' AND longitud_aso like '%$bxlongitud%') order by categoria_aso");
-   } else { 
-$titulo="LISTA POR MI ZONA con filtro";
-$result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$bxlatitud%' AND longitud_aso like '%$bxlongitud%' AND productos_aso like '%$bxproducto%' ) order by categoria_aso");
-   }
+  $titulo="LISTA POR MI ZONA con filtro";
+  $result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$bxlatitud%' AND longitud_aso like '%$bxlongitud%') AND (productos_aso like '%$bxproducto%' OR rsocial_aso like '%$bxproducto%' OR gironeg_aso like '%$bxproducto%) order by categoria_aso");
+
 }
 
 $total=mysqli_num_rows($result);
