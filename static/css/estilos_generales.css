@@ -75,6 +75,15 @@ nav{
     top: 0;          /* Asegura que esté pegado a la parte superior */
     left: 0;         /* Asegura que esté alineado al borde izquierdo */
     z-index: 1000;  
+    transition: background-color 0.3s ease;
+}
+
+nav.transparente{
+    background-color: transparent;
+}
+
+nav.color{
+    background-color: var(--color_rojo_1);
 }
 
     nav > .cont_logo{
