@@ -155,23 +155,6 @@ $xfi=$_GET['xfi'];
 <?
 
 
-
- if($xfi=="Z") { ?>
-      <div class="geolocalizacionxxx">
-       <br> 
-         <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	            
-              <h2 class="semi-titulosform_iz">Geolocalización</h2>
-              <br>               
-              <div class="titobligatorio">
-Para motrar las empresas cerca a usted, es obligatorio reconocer su Geolocalización IN SITU. Si usa un móvil, recuerde activar su ubicación </div>
-              <br/>
-         <? } ?>
-        <div> <a href="geo_mendoza3.html"><img src="iconos/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
-        </div>
-        
-       
-  <?  } 
-
 if(strlen($longitud)<>0 OR strlen($latitud)<>0){
 	$bxlongitud = substr($longitud,0,6);
   $bxlatitud = substr($latitud,0,6);
@@ -206,7 +189,15 @@ $total=mysqli_num_rows($result);
     </tr>
   <tr class="tit_menu_sup">
     <td width="774" height="141" align="center" bgcolor="#FFFFCC"><table width="735" border="1" cellspacing="1" cellpadding="0">
-      <tr>
+        <tr>
+          <td height="38" colspan="2" align="center" class="tabla10" >&nbsp;</td>
+          <td width="136" rowspan="3" align="center"  class="tabla10" >
+            <iframe id="mapa" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d402.28170424441254!2d<?php echo ($longitud) ?>!3d<?php echo ($latitud) ?>!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe"> </iframe>		
+            
+            
+          </td>
+        </tr>
+        <tr>
         <td width="210" height="30" align="center" class="tabla10" >
              <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
 	 	           SU LATITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
@@ -224,13 +215,7 @@ $total=mysqli_num_rows($result);
  		     <? } ?>
    
         </td>
-        <td width="136" rowspan="2" align="center"  class="tabla10" >
-          <iframe id="mapa" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d402.28170424441254!2d<?php echo ($longitud) ?>!3d<?php echo ($latitud) ?>!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe"> </iframe>		
-      
-        
-        </td>
-        
-     </tr>
+        </tr>
       <tr>
 
    <td height="84" colspan="2" align="center" class="tabla10" >
