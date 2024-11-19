@@ -229,7 +229,13 @@ $total=mysqli_num_rows($result);
  		     <? } ?>
    
         </td>
-        <td width="136" rowspan="2" align="center"  class="tabla10" <? if ($xfi=="Z") {?>bgcolor="#FFF00" <? } ?>><a href="buscar_pormizona.php?xfi=Z"><img src="iconos/ico_pmz.png" width="100" height="100"></td>
+        <td width="136" rowspan="2" align="center"  class="tabla10" <? if ($xfi=="Z") {?>bgcolor="#FFF00" <? } ?>><a href="buscar_pormizona.php?xfi=Z"><img src="iconos/ico_pmz.png" width="100" height="100">
+        
+        
+  		 <iframe id="mapa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d402.28170424441254!2d<?php echo ($longitud) ?>!3d<?php echo ($latitud) ?>!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe"> </iframe>		
+      
+        
+        </td>
         
      </tr>
       <tr>
@@ -260,7 +266,6 @@ $total=mysqli_num_rows($result);
       <!-- INICIO DE MUESTRA ITEMS -->
       <table width="769" height="155" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" >
         
-		 <iframe id="mapa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d402.28170424441254!2d<?php echo ($longitud) ?>!3d<?php echo ($latitud) ?>!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe"> </iframe>		
 		
 		
 		<?php 
