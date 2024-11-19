@@ -207,11 +207,6 @@ $total=mysqli_num_rows($result);
   <tr class="tit_menu_sup">
     <td width="774" height="141" align="center" bgcolor="#FFFFCC"><table width="735" border="1" cellspacing="1" cellpadding="0">
       <tr>
-        <td width="135" rowspan="2" align="center" valign="middle"    class="tabla10" <? if ($xfi=="T") {?> bgcolor="#FFF00" <? } ?>><a href="buscar_pormizona.php?xfi=T"><img src="iconos/ico_todo.png" width="100" height="100"></td>
-        
- 
-        
-        
         <td width="210" height="30" align="center" class="tabla10" >
              <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
 	 	           SU LATITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
@@ -229,10 +224,8 @@ $total=mysqli_num_rows($result);
  		     <? } ?>
    
         </td>
-        <td width="136" rowspan="2" align="center"  class="tabla10" <? if ($xfi=="Z") {?>bgcolor="#FFF00" <? } ?>><a href="buscar_pormizona.php?xfi=Z"><img src="iconos/ico_pmz.png" width="100" height="100">
-        
-        
-  		 <iframe id="mapa" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d402.28170424441254!2d<?php echo ($longitud) ?>!3d<?php echo ($latitud) ?>!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe"> </iframe>		
+        <td width="136" rowspan="2" align="center"  class="tabla10" >
+          <iframe id="mapa" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d402.28170424441254!2d<?php echo ($longitud) ?>!3d<?php echo ($latitud) ?>!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe"> </iframe>		
       
         
         </td>
@@ -255,7 +248,7 @@ $total=mysqli_num_rows($result);
    </td>
   </tr>
       <tr>
-        <td height="37" colspan="4" align="center" bgcolor="#0099FF" class="tabla10"><span class="rsocial"><?php echo($titulo) ?></span></td>
+        <td height="37" colspan="3" align="center" bgcolor="#0099FF" class="tabla10"><span class="rsocial"><?php echo($titulo) ?></span></td>
         
                                                                     
         </tr>
