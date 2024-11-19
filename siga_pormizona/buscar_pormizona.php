@@ -135,20 +135,6 @@ $xfi=$_GET['xfi'];
 //  $xfi="T";
 //}
 
-//--
-//if ($longitud<0) {
-//     $longitud = substr($longitud,0,6);
-//} else {
-//     $longitud = substr($longitud,0,5);
-//}
-//if ($latitud<0) {
-//     $latitud = substr($latitud,0,6);
-//} else {
-//     $latitud = substr($latitud,0,5);
-//}
-
-
-//---
 ?>
 
     <nav>
@@ -162,7 +148,7 @@ $xfi=$_GET['xfi'];
  
 
 
-       <img src="iconos/logo_pmz.png" alt="logo" class="logo">
+       <img src="../static/imgs/Logos/logo_pormizona_borde_bl.png" alt="logo" class="logo">
     </nav>
 
 
