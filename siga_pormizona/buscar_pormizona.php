@@ -193,22 +193,16 @@ if(strlen($longitud)<>0 OR strlen($latitud)<>0){
 	$xfi="Z";
 }
 
-echo ("VOYYYYYYYY AAAAA IF xfi");
 if($xfi=="T") {
-  $titulo="LISTA TODO con filtro";
-  $result=mysqli_query($connec,"select * from asociado_51 where (productos_aso like '%$bxproducto%' OR rsocial_aso like '%$bxproducto%' OR gironeg_aso like '%$bxproducto%) order by categoria_aso");
- //$result=mysqli_query($connec,"select * from asociado_51 where (productos_aso like '%$bxproducto%') order by categoria_aso");
-
+  $titulo="Busqueda: GENERAL";
+  $result=mysqli_query($connec,"select * from asociado_51 where (productos_aso like '%$bxproducto%' OR rsocial_aso like '%$bxproducto%' OR gironeg_aso like '%$bxproducto%') order by categoria_aso");
+ 
 } else { // "Z" latitud y longitud
-  echo ("ESTOY AQUIIIIIIIIII ZZZZZZZZZZZ");
-
-  $titulo="LISTA POR MI ZONA con filtro";
- // $result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$bxlatitud%' AND longitud_aso like '%$bxlongitud%') AND (productos_aso like '%$bxproducto%' OR rsocial_aso like '%$bxproducto%' OR gironeg_aso like '%$bxproducto%) order by categoria_aso");
- $result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$bxlatitud%' AND longitud_aso like '%$bxlongitud%' AND (productos_aso like '%$bxproducto%' OR rsocial_aso like '%$bxproducto%' OR gironeg_aso like '%$bxproducto%') ) order by categoria_aso");
+  $titulo="Busqueda: POR MI ZONA";
+  $result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$bxlatitud%' AND longitud_aso like '%$bxlongitud%' AND (productos_aso like '%$bxproducto%' OR rsocial_aso like '%$bxproducto%' OR gironeg_aso like '%$bxproducto%') ) order by categoria_aso");
 }
 
 $total=mysqli_num_rows($result);
-//echo "Total: ".$total."<br>";
 
 
 ?>
@@ -258,8 +252,10 @@ $total=mysqli_num_rows($result);
      <form id="form0" name="form0" method="get" action="buscar_pormizona.php">
        <table width="371" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
          <tr>
-           <td width="234" height="50" bgcolor="#FFCC66"> <span class="T_QUE">¿Que está buscando?:</span>                  <input name="bxproducto" type="text" id="bxproducto" size="30" maxlength="60" /></td>
-           
+           <td width="234" height="50" bgcolor="#FFCC66"> <span class="T_QUE">¿Que está buscando?:</span>  
+             <input name="texto" type="text" id="texto" size="30" maxlength="60" value="<?php echo($bxproducto); ?>" style="text-align:right"/></td>
+             <input type="hidden" name="longitud" value="<?php echo($longitud); ?>" />
+             <input type="hidden" name="latitud" value="<?php echo($latitud); ?>" />
            <td width="131" bgcolor="#FFCC66"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
            </tr>
          </table>
