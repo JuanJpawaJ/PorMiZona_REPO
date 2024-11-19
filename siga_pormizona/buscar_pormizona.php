@@ -253,7 +253,7 @@ $total=mysqli_num_rows($result);
        <table width="371" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
          <tr>
            <td width="234" height="50" bgcolor="#FFCC66"> <span class="T_QUE">¿Que está buscando?:</span>  
-             <input name="texto" type="text" id="texto" size="30" maxlength="60" value="<?php echo($bxproducto); ?>" style="text-align:right"/></td>
+             <input name="texto" type="text" id="texto" size="30" maxlength="60" value="<?php echo($bxproducto); ?>" /></td>
              <input type="hidden" name="longitud" value="<?php echo($longitud); ?>" />
              <input type="hidden" name="latitud" value="<?php echo($latitud); ?>" />
            <td width="131" bgcolor="#FFCC66"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
