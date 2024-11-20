@@ -75,7 +75,8 @@ $xgl=$_GET['xgl'];
   <tr class="tit_menu_sup">
     <td width="751" height="86" align="center" bgcolor="#FFFFCC">
     <img src="iconos/cabecera_mievento.jpg" width="703" height="86">    
-    <td width="136" align="center" bgcolor="#FFFFCC"><a href="formievento1.php">Ingresa<br /> TU EVENTO </a>    </tr>
+    <td width="136" align="center" bgcolor="#FFFFCC"><a href="formievento1.php">Ingresa<br /> 
+    TU EVENTO </a>.    </tr>
     
     </table></td>
     </tr>
@@ -119,6 +120,7 @@ $msjpublico_mev=$tabla["msjpublico_mev"];
 $obsinterno_mev=$tabla["obsinterno_mev"];
 $latitud_mev=$tabla["latitud_mev"];
 $longitud_mev=$tabla["longitud_mev"];
+$finicio_mev=$tabla["finicio_mev"];
 $fhoy_mev=$tabla["fhoy_mev"];
 		
 		
@@ -141,7 +143,7 @@ $fhoy_mev=$tabla["fhoy_mev"];
           <td width="767" height="175" valign="middle" bgcolor="#FFFFFF">
             <table width="751" border="0" cellspacing="0" cellpadding="1">
               <tr>
-                <td width="350" rowspan="3" align="center"><p><a href="ilbupweiv.php?idx=<?php echo($id); ?>"><img src=" <?php echo "img_items/".$img_it ?> " width="350" height="%" />
+                <td width="350" rowspan="4" align="center"><p><a href="ilbupweiv.php?idx=<?php echo($id); ?>"><img src=" <?php echo "img_items/".$img_it ?> " width="350" height="%" />
                   <? if ($pv03_it>0) {?> <img src="iconos/promocion.jpg" alt="EN OFERTA" width="40" height="%" /> <? } ?>
                 </a></p>
           <!--  <p class="TITULO">NOTA: La imagen es referencial.</p>--> </td>
@@ -161,11 +163,10 @@ $fhoy_mev=$tabla["fhoy_mev"];
               </tr>
               <tr> 
 
-                <td height="59" align="center"><span class="once"><?php echo($msjpublico_it); ?></span>  
-                               
-              <!--  <span class="PRECIO2"> <?php // echo($simbolo_mone.money_format('%n',round($pv01_it*1.05/2,0))."      / ".$simbolo_mone.money_format('%n',round($pv01_it*1.15/3,0)))."<br>" ." 02/cuotas      / "." 03/cuotas " ?></span> -->
-                
-                </td>             
+                <td height="29" align="center"><span class="once"><?php echo($msjpublico_mev); ?></span>   </td>             
+              </tr>
+              <tr>
+                <td height="30" align="center"><span class="once"><?php echo($msfinicio_mev); ?></span></td>
               </tr>
           </table></td>
           
