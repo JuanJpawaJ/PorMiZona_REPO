@@ -166,7 +166,7 @@ $fhoy_mev=$tabla["fhoy_mev"];
                 <td height="29" align="center"><span class="once"><?php echo($msjpublico_mev); ?></span>   </td>             
               </tr>
               <tr>
-                <td height="30" align="center"><span class="once"><?php echo($msfinicio_mev); ?></span></td>
+                <td height="30" align="center"><span class="once"><?php echo($finicio_mev); ?></span></td>
               </tr>
           </table></td>
           
