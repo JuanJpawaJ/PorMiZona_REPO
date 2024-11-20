@@ -70,34 +70,13 @@ $xgl=$_GET['xgl'];
 
   <table width="778" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td align="center" class="tit_menu_sup"><img src="../imagenes_1/logo_pmz_telf_rgb.jpg" width="862" height="158"></td>
+    <td colspan="2" align="center" class="tit_menu_sup"><img src="../imagenes_1/logo_pmz_telf_rgb.jpg" width="862" height="158"></td>
     </tr>
   <tr class="tit_menu_sup">
-    <td width="774" height="86" align="center" bgcolor="#FFFFCC">
-    <!--
-    <table width="735" border="1" cellspacing="1" cellpadding="0">
-      <tr>
-
-        <td width="92" height="75" align="center" <? if ($xgl=="S") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="a_lisimagenes.php?xgl=S"><img src="../imagenes/ico_p_informatica.png" width="72" height="58"></a></td>
-        <td width="92" align="center" <? if ($xgl=="M") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="a_lisimagenes.php?xgl=M"><img src="../imagenes/ico_p_boutique.png" width="72" height="58"></a></td>
-        <td width="92" align="center" <? if ($xgl=="R") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="a_lisimagenes.php?xgl=R"><img src="../imagenes/ico_p_regalos.png" width="72" height="58"></a></td>
-        <td width="92" align="center" <? if ($xgl=="P") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="a_lisimagenes.php?xgl=P"><img src="../imagenes/ico_p_perfumeria.png" width="72" height="58"></a></td>
-        <td width="350" align="center">
-          <form id="form0" name="form0" method="get" action="a_lisimagenes.php">
-            <table width="334" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
-              <tr>
-                <td width="203" height="28" bgcolor="#FFCC66"> <span class="TITULO">Dato a buscar Producto:</span>                  <input name="bxproducto" type="text" id="bxproducto" size="25" maxlength="60" /></td>
-                
-                <td width="125" bgcolor="#FFCC66"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
-                
-                </tr>
-              </table>
-            </form>
-          
-          </td>
-          
-          -->
-    <img src="iconos/cabecera_mievento.jpg" width="703" height="86"></tr>
+    <td width="751" height="86" align="center" bgcolor="#FFFFCC">
+    <img src="iconos/cabecera_mievento.jpg" width="703" height="86">    
+    <td width="136" align="center" bgcolor="#FFFFCC"><a href="formievento1.php">Ingresa<br /> TU EVENTO </a>    </tr>
+    
     </table></td>
     </tr>
   <tr class="tit_menu_sup">
