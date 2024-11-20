@@ -90,15 +90,9 @@ $xgl=$_GET['xgl'];
   
 //$result=mysql_query("select * from items order by codfabrica_it",$connec);
 
-if(strlen($bxproducto)==0){
-        $result=mysqli_query($connec,"select * from mievento_51 where view01_mev='S' ");
-} else {
-        $bxproducto1=trim($bxproducto);
-        $result=mysqli_query($connec,"select * from a_items where producto_it like '%$bxproducto1%' order by producto_it");
-}
 
-//$result=mysql_query("select * from a_items",$connec);
-$total=mysqli_num_rows($result);
+   $result=mysqli_query($connec,"select * from mievento_51 where view01_mev='S' order by finicio_mev DESC");
+   $total=mysqli_num_rows($result);
 
 
 while ($tabla=mysqli_fetch_array($result)){
