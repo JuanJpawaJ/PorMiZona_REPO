@@ -74,9 +74,12 @@ $xgl=$_GET['xgl'];
     <td colspan="2" align="center" class="tit_menu_sup"><img src="../imagenes_1/logo_pmz_telf_rgb.jpg" width="862" height="158"></td>
     </tr>
   <tr class="tit_menu_sup">
-    <td width="751" height="86" align="center" bgcolor="#FFFFCC">
+    <td height="25" colspan="2" align="center" class="TITULO"><span class="viewtexto"><span class="TITULO_NARANJA"><span class="PRECIO2"><span class="viewtexto">¿Donde voy? - Eventos - ¿Que haré hoy? </span> </span> </span> </span>    
+    </tr>
+  <tr class="tit_menu_sup">
+    <td width="751" height="86" align="center">
     <img src="iconos/cabecera_mievento.jpg" width="703" height="86">    
-    <td width="136" align="center" bgcolor="#FFFFCC"><a href="formievento1.php">Ingresa<br /> 
+    <td width="136" align="center"><a href="formievento1.php">Ingresa<br /> 
     TU EVENTO </a>.    </tr>
     
     </table></td>
