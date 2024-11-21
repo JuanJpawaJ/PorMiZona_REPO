@@ -61,6 +61,7 @@ include("connec_sql_new.php");
 mysqli_set_charset($connec,'utf8'); 
 date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
+setlocale(LC_TIME, 'es_ES.UTF-8');
 
 $bxproducto=$_GET['bxproducto'];
 // ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
@@ -117,6 +118,9 @@ $longitud_mev=$tabla["longitud_mev"];
 $finicio_mev=$tabla["finicio_mev"];
 $fhoy_mev=$tabla["fhoy_mev"];
 		
+$timestamp = strtotime($finicio_mev);
+$fecha_formateada = strftime("%A %d de %B %Y", $timestamp);
+//$fecha_formateada = ucwords($fecha_formateada);
 		
 		//if ($pv01_it<=$precom_it) { $color1="#FF0000";  } else {  $color1="#E4E4E4";  }
 		//if ($pv02_it<=$precom_it) { $color2="#FF0000";  } else {  $color2="#E4E4E4";  }
@@ -160,7 +164,7 @@ $fhoy_mev=$tabla["fhoy_mev"];
                 <td height="29" align="center"><span class="once"><?php echo($msjpublico_mev); ?></span>   </td>             
               </tr>
               <tr>
-                <td height="30" align="center"><span class="once"><?php echo($finicio_mev); ?></span></td>
+                <td height="30" align="center"><span class="once"><?php echo($fecha_formateada); ?></span></td>
               </tr>
           </table></td>
           
