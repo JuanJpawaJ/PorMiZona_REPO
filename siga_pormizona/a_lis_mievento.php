@@ -79,7 +79,7 @@ $xgl=$_GET['xgl'];
   <tr class="tit_menu_sup">
     <td width="751" height="86" align="center">
     <img src="iconos/cabecera_mievento.jpg" width="703" height="86">    
-    <td width="136" align="center"><a href="formievento1.php">Ingresa<br /> 
+    <td width="136" align="center" bgcolor="#CCCCCC"><a href="formievento1.php">Ingresa<br /> 
     TU EVENTO </a>.    </tr>
     
     </table></td>
@@ -164,7 +164,7 @@ $fecha_formateada = strftime("%A %d de %B %Y", $timestamp);
               </tr>
               <tr> 
 
-                <td height="29" align="center"><span class="once"><?php echo($msjpublico_mev); ?></span>   </td>             
+                <td height="29" align="center"><span class="once"><?php echo($msjpublico_mev." ".$simbolo_mone.money_format('%n',($c_ingreso_mev))); ?></span>   </td>             
               </tr>
               <tr>
                 <td height="30" align="center"><span class="once"><?php echo($fecha_formateada); ?></span></td>
