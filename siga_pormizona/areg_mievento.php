@@ -76,7 +76,7 @@ $rs = mysqli_query($connec, "SELECT MAX(id) AS id FROM mievento_51");
 if ($row = mysqli_fetch_row($rs)) {
     $idid = trim($row[0]);
 }
-$codigo_mev=substr($idid+10000001,-7);	
+$codigo_mev=substr($idid+1000001,-6);	
 echo "codigo : ".$codigo_mev."<br>";
 echo "codigo2 : ".$codigo_mev."<br>";
 
