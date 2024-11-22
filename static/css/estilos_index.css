@@ -136,6 +136,10 @@
             
         }
 
+        .ventana_emergente_ubicacion > .contenedor_opcion > div > select > option{
+            font-size: 13px;
+        }
+
         .ventana_emergente_ubicacion > .contenedor_opcion > div > button{
             align-self: center;
             background-color: var(--color_blanco);
