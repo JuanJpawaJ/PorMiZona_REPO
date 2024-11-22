@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../static/css/estilos_generales.css">
     <link rel="stylesheet" href="../static/css/estilos_index.css">
     <link rel="stylesheet" href="../static/css/estilos_contenedor_marcas.css">
-    <title>Document</title>
+    <title>PorMiZona</title>
 </head>
 <body>
     <nav id="navbar">
@@ -21,16 +21,20 @@
             <img src="static/imgs/Logos/logo_pormizona_borde_bl.png" alt="">
         </div>
         <ul>
-            <li><a href="">¡PUBLICA TU TIENDA!</a></li>
-            <li><a href="">Eventos locales</a></li>
-            <li><a href="">Catálogo</a></li>
-            <li><a href="">Publicar avisos</a></li>
+            <li><a href="siga_pormizona/formingre1.php">¡PUBLICA TU TIENDA!</a></li>
+            <li><a href="siga_pormizona/a_lis_mievento.php">Eventos locales</a></li>
+            <li><a href="siga_pormizona/a_catalogo_imp.php">Catálogo</a></li>
+            <li><a href="siga_pormizona/a_publicar.php">Publicar avisos</a></li>
         </ul>
     </nav>
 
     <div class="contenido_total">
+
         <div class="overlay"></div>
+
         <div class="contenido">
+  <!--        <div class=" "> Para motrar las empresas cerca a usted, es obligatorio reconocer su Geolocalización IN SITU. Un móvil es mucho más preciso, recuerde activar su ubicación</div> -->
+
             <div class="contenido_2">
                 <button id="select_ubi" class="seleccion_ubicacion">
                     <span class="material-symbols-outlined">
@@ -61,6 +65,7 @@
                     </div>
                 </div>
                 
+
                 <form class="principal" method="GET" action="siga_pormizona/buscar_pormizona.php">
                     <h1>¿Qué estás buscando?</h1>
                     <input type="text" name="texto" placeholder="ropa, comida, eventos, etc" required>

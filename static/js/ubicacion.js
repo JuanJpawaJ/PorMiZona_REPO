@@ -43,9 +43,3 @@ botonActivarUbi.addEventListener('click', function () {
     }
 });
 
-document.querySelector('.principal').addEventListener('submit', function (event) {
-    if (!latitud && !longitud && !ciudad) {
-        event.preventDefault();
-        alert('Por favor, selecciona tu ubicación antes de buscar.');
-    }
-});

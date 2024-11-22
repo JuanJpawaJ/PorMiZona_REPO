@@ -61,6 +61,7 @@ include("connec_sql_new.php");
 mysqli_set_charset($connec,'utf8'); 
 date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
+setlocale(LC_TIME, 'es_ES.UTF-8');
 
 $bxproducto=$_GET['bxproducto'];
 // ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
@@ -70,34 +71,17 @@ $xgl=$_GET['xgl'];
 
   <table width="778" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td align="center" class="tit_menu_sup"><img src="../imagenes_1/logo_pmz_telf_rgb.jpg" width="862" height="158"></td>
+    <td colspan="2" align="center" class="tit_menu_sup"><img src="../imagenes_1/logo_pmz_telf_rgb.jpg" width="862" height="158"></td>
     </tr>
   <tr class="tit_menu_sup">
-    <td width="774" height="86" align="center" bgcolor="#FFFFCC">
-    <!--
-    <table width="735" border="1" cellspacing="1" cellpadding="0">
-      <tr>
-
-        <td width="92" height="75" align="center" <? if ($xgl=="S") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="a_lisimagenes.php?xgl=S"><img src="../imagenes/ico_p_informatica.png" width="72" height="58"></a></td>
-        <td width="92" align="center" <? if ($xgl=="M") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="a_lisimagenes.php?xgl=M"><img src="../imagenes/ico_p_boutique.png" width="72" height="58"></a></td>
-        <td width="92" align="center" <? if ($xgl=="R") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="a_lisimagenes.php?xgl=R"><img src="../imagenes/ico_p_regalos.png" width="72" height="58"></a></td>
-        <td width="92" align="center" <? if ($xgl=="P") {?> bgcolor="#FFF00" <? } ?> class="tabla10"><a href="a_lisimagenes.php?xgl=P"><img src="../imagenes/ico_p_perfumeria.png" width="72" height="58"></a></td>
-        <td width="350" align="center">
-          <form id="form0" name="form0" method="get" action="a_lisimagenes.php">
-            <table width="334" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
-              <tr>
-                <td width="203" height="28" bgcolor="#FFCC66"> <span class="TITULO">Dato a buscar Producto:</span>                  <input name="bxproducto" type="text" id="bxproducto" size="25" maxlength="60" /></td>
-                
-                <td width="125" bgcolor="#FFCC66"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
-                
-                </tr>
-              </table>
-            </form>
-          
-          </td>
-          
-          -->
-    <img src="iconos/cabecera_mievento.jpg" width="703" height="86"></tr>
+    <td height="25" colspan="2" align="center" class="TITULO"><span class="viewtexto"><span class="TITULO_NARANJA"><span class="PRECIO2"><span class="viewtexto">¿Donde voy? - Eventos - ¿Que haré hoy? </span> </span> </span> </span>    
+    </tr>
+  <tr class="tit_menu_sup">
+    <td width="751" height="86" align="center">
+    <img src="iconos/cabecera_mievento.jpg" width="703" height="86">    
+    <td width="136" align="center" bgcolor="#CCCCCC"><a href="formievento1.php">Ingresa<br /> 
+    TU EVENTO </a>.    </tr>
+    
     </table></td>
     </tr>
   <tr class="tit_menu_sup">
@@ -110,15 +94,9 @@ $xgl=$_GET['xgl'];
   
 //$result=mysql_query("select * from items order by codfabrica_it",$connec);
 
-if(strlen($bxproducto)==0){
-        $result=mysqli_query($connec,"select * from mievento_51 where view01_mev='S' ");
-} else {
-        $bxproducto1=trim($bxproducto);
-        $result=mysqli_query($connec,"select * from a_items where producto_it like '%$bxproducto1%' order by producto_it");
-}
 
-//$result=mysql_query("select * from a_items",$connec);
-$total=mysqli_num_rows($result);
+   $result=mysqli_query($connec,"select * from mievento_51 where view01_mev='S' order by finicio_mev DESC");
+   $total=mysqli_num_rows($result);
 
 
 while ($tabla=mysqli_fetch_array($result)){
@@ -140,8 +118,12 @@ $msjpublico_mev=$tabla["msjpublico_mev"];
 $obsinterno_mev=$tabla["obsinterno_mev"];
 $latitud_mev=$tabla["latitud_mev"];
 $longitud_mev=$tabla["longitud_mev"];
+$finicio_mev=$tabla["finicio_mev"];
 $fhoy_mev=$tabla["fhoy_mev"];
 		
+$timestamp = strtotime($finicio_mev);
+$fecha_formateada = strftime("%A %d de %B %Y", $timestamp);
+//$fecha_formateada = ucwords($fecha_formateada);
 		
 		//if ($pv01_it<=$precom_it) { $color1="#FF0000";  } else {  $color1="#E4E4E4";  }
 		//if ($pv02_it<=$precom_it) { $color2="#FF0000";  } else {  $color2="#E4E4E4";  }
@@ -162,7 +144,7 @@ $fhoy_mev=$tabla["fhoy_mev"];
           <td width="767" height="175" valign="middle" bgcolor="#FFFFFF">
             <table width="751" border="0" cellspacing="0" cellpadding="1">
               <tr>
-                <td width="350" rowspan="3" align="center"><p><a href="ilbupweiv.php?idx=<?php echo($id); ?>"><img src=" <?php echo "img_items/".$img_it ?> " width="350" height="%" />
+                <td width="350" rowspan="4" align="center"><p><a href="ilbupweiv.php?idx=<?php echo($id); ?>"><img src=" <?php echo "img_items/".$img_it ?> " width="350" height="%" />
                   <? if ($pv03_it>0) {?> <img src="iconos/promocion.jpg" alt="EN OFERTA" width="40" height="%" /> <? } ?>
                 </a></p>
           <!--  <p class="TITULO">NOTA: La imagen es referencial.</p>--> </td>
@@ -182,11 +164,10 @@ $fhoy_mev=$tabla["fhoy_mev"];
               </tr>
               <tr> 
 
-                <td height="59" align="center"><span class="once"><?php echo($msjpublico_it); ?></span>  
-                               
-              <!--  <span class="PRECIO2"> <?php // echo($simbolo_mone.money_format('%n',round($pv01_it*1.05/2,0))."      / ".$simbolo_mone.money_format('%n',round($pv01_it*1.15/3,0)))."<br>" ." 02/cuotas      / "." 03/cuotas " ?></span> -->
-                
-                </td>             
+                <td height="29" align="center"><span class="once"><?php echo($msjpublico_mev." ".$simbolo_mone.money_format('%n',($c_ingreso_mev))); ?></span>   </td>             
+              </tr>
+              <tr>
+                <td height="30" align="center"><span class="once"><?php echo($fecha_formateada); ?></span></td>
               </tr>
           </table></td>
           
