@@ -109,7 +109,7 @@ if ($zxyw == "SCADCASA2014_09" OR ($total !==0 AND $password_per == $password)){
       <tr>
         <td width="19" align="center" valign="middle">&nbsp;</td>
         <td width="41" height="123" align="center" valign="middle">&nbsp;</td>
-        <td width="163" rowspan="3" align="center" valign="top">
+        <td width="163" rowspan="4" align="center" valign="top">
           <table width="146" height="428" border="1" align="center">
 			  <tr>
 			    <td width="136" height="28" align="center">YO VENDEDOR</td>
@@ -208,10 +208,10 @@ if ($zxyw == "SCADCASA2014_09" OR ($total !==0 AND $password_per == $password)){
         </table></td>
         </tr>
       <tr>
-        <td>&nbsp;</td>
-        <td height="181">&nbsp;</td>
-        <td>&nbsp;</td>
-        <td align="center" valign="top"><table width="296" border="1">
+        <td rowspan="2">&nbsp;</td>
+        <td height="181" rowspan="2">&nbsp;</td>
+        <td rowspan="2">&nbsp;</td>
+        <td rowspan="2" align="center" valign="top"><table width="296" border="1">
           <tr>
             <td height="23" colspan="3" align="center">CONSULTAS</td>
           </tr>
@@ -221,7 +221,7 @@ if ($zxyw == "SCADCASA2014_09" OR ($total !==0 AND $password_per == $password)){
             <td width="71" align="center"><a href="a_ligv.php"><img src="iconos/ico_igv.png" width="61" height="60" style="border: solid 3px #cccccc;" onmouseover="this.style.border='solid 3px #0066CC';" onmouseout="this.style.border='solid 3px #cccccc';" /></a></td>
           </tr>
         </table></td>
-        <td align="center">&nbsp;</td>
+        <td rowspan="2" align="center">&nbsp;</td>
         <td align="center" valign="top">
         <table width="200" border="1">
           <tr>
@@ -233,16 +233,32 @@ if ($zxyw == "SCADCASA2014_09" OR ($total !==0 AND $password_per == $password)){
             <? } ?>
           </tr>
         </table></td>
-        <td align="center">&nbsp;</td>
-        <td valign="top"><p>&nbsp;</p>
+        <td rowspan="2" align="center">&nbsp;</td>
+        <td rowspan="2" valign="top"><p>&nbsp;</p>
           <p><a href="formingre1.php">FORMINGRE1</a></p>
            <p><a href="buscar_pormizona.php">BUSCAR PMZ</a></p>
             <p><a href="geo_mendoza1.html">GEOMENDOZA 01 PMZ</a></p>
-            <p><a href="formievento1.php">formievento PMZ</a></p>
+            
             
 
           </td>
         </tr>
+      <tr>
+        <td align="center" valign="top"><table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>MI EVENTO</td>
+          </tr>
+          <tr>
+            <td><a href="formievento1.php">formievento PMZ</a></td>
+          </tr>
+          <tr>
+            <td><a href="a_lis_mievento.php">List MI EVENTO</a></td>
+          </tr>
+          <tr>
+            <td><a href="a_list_mievento_admin.php">List ADMIN-MI EVENTO</a></td>
+          </tr>
+        </table></td>
+      </tr>
       <tr>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
