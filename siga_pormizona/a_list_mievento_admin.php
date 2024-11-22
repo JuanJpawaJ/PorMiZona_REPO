@@ -239,7 +239,7 @@ if ($xdelreg=="SIDELREG") {
 //$result=mysql_query("select * from items order by codfabrica_it",$connec);
 
 
-$result=mysqli_query($connec,"select * from mievento_51 order by rsocial_aso");
+$result=mysqli_query($connec,"select * from mievento_51 ");
 $total=mysqli_num_rows($result);
 
 
