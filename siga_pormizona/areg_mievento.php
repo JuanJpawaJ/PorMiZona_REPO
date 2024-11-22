@@ -77,7 +77,11 @@ if ($row = mysqli_fetch_row($rs)) {
     $idid = trim($row[0]);
 }
 $codigo_mev=substr($idid+10000001,-7);	
-echo "codigo : ".$cod_aso."<br>";
+echo "codigo : ".$codigo_mev."<br>";
+echo "codigo2 : ".$codigo_mev."<br>";
+
+echo "codigo3 : ".$codigo_mev."<br>";
+
 /*$cod_p_pass=substr($idid+10001,-4);
 $cod_pass_1=substr($cod_p_pass,0,2);
 $cod_pass_2=substr($apellido_alu,0,1);
@@ -85,12 +89,12 @@ $cod_pass_3=substr($nombre_alu,0,1);
 $cod_pass_4=substr($cod_p_pass,-2);
 $password_alu=$cod_pass_1.$cod_pass_2.$cod_pass_3.$cod_pass_4."00"; */
 	
-$result_bqd=mysqli_query($connec,"select * from mievento_51 where email_amev='$email_mev'");
-$total_bqd=mysqli_num_rows($result_bqd);
-$tabla_bqd = mysqli_fetch_array( $result_bqd );
-if ($total_bqd>0) {
-	$idid=$tabla_bqd["id"];
-}
+//$result_bqd=mysqli_query($connec,"select * from mievento_51 where email_mev='$email_mev'");
+//$total_bqd=mysqli_num_rows($result_bqd);
+//$tabla_bqd = mysqli_fetch_array( $result_bqd );
+//if ($total_bqd>0) {
+//	$idid=$tabla_bqd["id"];
+//}
 	
 //if(strlen($rsocial_aso)==0 OR strlen($documento_aso)==0  OR strlen($email_aso)==0 OR $total_bqd>0) {
 if(strlen($nomevento_mev)==0 OR strlen($descri_mev)==0 ) {
