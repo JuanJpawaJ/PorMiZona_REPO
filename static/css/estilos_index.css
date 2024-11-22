@@ -75,6 +75,7 @@
                     border: 2px solid var(--color_rojo_1);
                     border-radius: 0.5rem;
                     font-weight: var(--fuente_semibold);
+                    position: relative;
                 }
 
                 .contenido_total > .contenido > .contenido_2 > .principal > button:hover{
@@ -87,7 +88,72 @@
                     border-radius: 0.5rem;
                     padding: 0 1rem;  
                 }
+
+
+.ventana_emergente_ubicacion {
+    /*background-color: red;*/
+    width: 25rem;
+    font-size: var(--fuente_tamanio_titulo_4);
+    position: absolute; /* Ahora se posicionará en relación al contenedor anterior */
+    top: 40px; /* La ventana emergente se coloca justo debajo del botón */
+    left: 0; /* La ventana emergente se alineará al inicio del botón */
+    z-index: 10; /* La ventana debe estar por encima de otros elementos */
+    box-shadow: 1px 16px 10px -5px rgba(0,0,0,0.75);
+}
+
+    .ventana_emergente_ubicacion > .cabecera_botones{
+    /*background-color: green;*/
+    display: flex;
+    }
+
+    .ventana_emergente_ubicacion > .cabecera_botones > button{
+        background-color: var(--color_gris_-1);
+        padding: 0.3rem 1rem;
+        border: 1px solid black;
+        color: var(--color_gris_1);
+        font-weight: var(--fuente_semibold);
+    }
+
     
+
+    .ventana_emergente_ubicacion > .cabecera_botones > button.seleccionado{
+        color: var(--color_negro);
+        border-bottom: 1px solid var(--color_blanco);
+        background-color: var(--color_blanco);
+    }
+
+    .ventana_emergente_ubicacion > .contenedor_opcion{
+        background-color: var(--color_blanco);
+        padding: 0.5rem;
+        border: 1px solid black;
+        margin-top: -1px;
+    }
+
+        .ventana_emergente_ubicacion > .contenedor_opcion > div{
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.7rem;
+            
+        }
+
+        .ventana_emergente_ubicacion > .contenedor_opcion > div > button{
+            align-self: center;
+            background-color: var(--color_blanco);
+            padding:0.3rem 1.5rem;
+            color: var(--color_negro);
+            border: 1px solid black;
+        }
+
+        .ventana_emergente_ubicacion > .contenedor_opcion > div > button:hover{
+            background-color: var(--color_verde_1);
+            color: var(--color_blanco);
+        }
+
+        .ventana_emergente_ubicacion > .contenedor_opcion > div.cont_mi_zona > p{
+            color:rgb(245, 17, 17);
+            font-size: 13px;
+        }
+
 @media only screen and (max-width: 600px){
 
     .contenido_total > .contenido > .contenido_2 > .principal{

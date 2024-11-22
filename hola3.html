@@ -36,13 +36,37 @@
                     <span class="material-symbols-outlined">
                         location_on
                     </span>
-                    <p>Arequipa/Arequipa</p>
+                    <p>Seleccionar ubicación</p>
+                    
                 </button>
+
+                <div class="ventana_emergente_ubicacion" id="ventana_emergente_ubicacion" style="display:none;">
+                    <div class="cabecera_botones">
+                        <button id="boton1" class="seleccionado">En mi ciudad</button>
+                        <button id="boton2">Por mi zona</button>
+                    </div>
+                    <div class="contenedor_opcion">
+                        <div class="cont_mi_ciudad" id="div1">
+                            <select name="Seleccionar ciudad" id="selector_ciudad" style="width:10rem; color:black;">
+                                <option value="opcion1">Arequipa</option>
+                                <option value="opcion2">Lima</option>
+                                <option value="opcion3">Puno</option>
+                            </select>
+                            <button id="aceptar_ciudad">Aceptar</button>
+                        </div>
+                        <div class="cont_mi_zona" id="div2" style="display:none;"> 
+                            <p>*El sistema usará tu ubicación solo para recomendaciones cercanas. No se comparte ni almacena</p>
+                            <button id="activar_ubi">Activar mi ubicación</button>
+                        </div>
+                    </div>
+                </div>
+                
                 <form class="principal" method="GET" action="siga_pormizona/buscar_pormizona.php">
                     <h1>¿Qué estás buscando?</h1>
                     <input type="text" name="texto" placeholder="ropa, comida, eventos, etc" required>
                     <input type="hidden" id="latitud" name="latitud">
                     <input type="hidden" id="longitud" name="longitud">
+                    <input type="hidden" id="ciudad" name="ciudad">
                     <button type="submit">Buscar</button>
                 </form>
             </div>
@@ -88,56 +112,13 @@
         </div>
     </div>
 
-    <script>
-        const selectUbiButton = document.getElementById('select_ubi');
-        const ubicacionText = selectUbiButton.querySelector('p');
-        const latitudInput = document.getElementById('latitud');
-        const longitudInput = document.getElementById('longitud');
 
-        let latitud = null;
-        let longitud = null;
+    
 
-        selectUbiButton.addEventListener('click', function() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(function(position) {
-                    // Obtiene las coordenadas
-                    latitud = position.coords.latitude;
-                    longitud = position.coords.longitude;
-
-                    ubicacionText.textContent = `Lat: ${latitud.toFixed(5)}, Lon: ${longitud.toFixed(5)}`;
-
-                    latitudInput.value = latitud;
-                    longitudInput.value = longitud;
-                }, function(error) {
-                    switch (error.code) {
-                        case error.PERMISSION_DENIED:
-                            ubicacionText.textContent = "Permiso denegado";
-                            break;
-                        case error.POSITION_UNAVAILABLE:
-                            ubicacionText.textContent = "Ubicación no disponible";
-                            break;
-                        case error.TIMEOUT:
-                            ubicacionText.textContent = "Tiempo de espera agotado";
-                            break;
-                        default:
-                            ubicacionText.textContent = "Error desconocido";
-                            break;
-                    }
-                });
-            } else {
-                ubicacionText.textContent = "Geolocalización no soportada";
-            }
-        });
-
-        document.querySelector('.principal').addEventListener('submit', function(event) {
-            if (!latitud || !longitud) {
-                event.preventDefault(); 
-                alert('Por favor, selecciona tu ubicación antes de buscar.');
-            }
-        });
-    </script>
 
     <script src="/static/js/navegador.js"></script>
     <script src="/static/js/slider_marcas.js"></script>
+    <script src="/static/js/ubicacion.js"></script>
+    <script src="/static/js/ventana_emergente_ubicacion.js"></script>
 </body>
 </html>
