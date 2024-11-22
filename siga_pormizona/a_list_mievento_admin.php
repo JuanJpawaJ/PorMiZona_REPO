@@ -162,41 +162,21 @@ if ($xdelreg=="SIDELREG") {
   <tr class="tit_menu_sup">
     <td width="679" align="center" bgcolor="#FFFFCC"><table width="912" border="0" cellspacing="0" cellpadding="0">
       <tr>
-        <td width="63" height="17" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=SMRP">TODO</a></td>
-        <td width="64" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=S">SYSCOMP</a></td>
-        <td width="98" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=M">M.BONITA</a></td>
-        <td width="89" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=R">R.STORE</a></td>
-        <td width="88" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=P">PERFUMERIA</a></td>
-        <td width="510" rowspan="2" align="center">
-    <form id="form0" name="form0" method="get" action="a_list_items_admin.php">
-          <table width="395" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
-            <tr>
-              <td width="250" height="28" bgcolor="#FFCC66"> Dato a buscar Producto.:
-    <input name="bxproducto" type="text" id="bxproducto" size="25" maxlength="60" onKeyUp="this.value=this.value.toUpperCase();"/></td>
-
-              <td width="139" bgcolor="#FFCC66"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
-               
-              </tr>
-           </table>
-        </form>
-
+        <td width="510" height="34" align="center">
+          <form id="form0" name="form0" method="get" action="a_list_mievento_admin.php">
+            <table width="395" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
+              <tr>
+                <td width="250" height="28" bgcolor="#FFCC66"> Dato a buscar Producto.:
+                  <input name="bxproducto" type="text" id="bxproducto" size="25" maxlength="60" onKeyUp="this.value=this.value.toUpperCase();"/></td>
+                
+                <td width="139" bgcolor="#FFCC66"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
+                
+                </tr>
+              </table>
+            </form>
+          
         </td>
       </tr>
-      <tr>
-        <td height="17" colspan="5" align="center" class="tabla10">
-		<? if ($xgl=="SMRD") {
-			 echo "TODO";
-		   }elseif ($xgl=="S") {
-			 echo "SYSCOMPUTER";			   
-		   }elseif ($xgl=="M") {
-			 echo "MUJER BONITA";			
-		   }elseif ($xgl=="R"){   
-			 echo "REGAL STORE";
-		   }elseif ($xgl=="D"){   
-			 echo "DELIBEARS";			   
-		   } ?>
-			    </td>
-        </tr>
     </table></td>
     <td width="5" bgcolor="#FFFFCC">&nbsp;</td>
     <td width="390" colspan="2" bgcolor="#FFFFCC"height="76" align="center"><table width="600" border="1">
@@ -213,30 +193,29 @@ if ($xdelreg=="SIDELREG") {
     <!-- INICIO DE MUESTRA ITEMS -->
     <table width="1216" height="80" border="1" cellspacing="0">
       <tr bgcolor="#CCFFFF" class="diez">
-        <td width="45" align="center">COD. Item</td>
-        <td width="63">FECHA HOY</td>
-        <td width="63">IMAGEN</td>
-        <td width="28">codevento</td>
-        <td width="28">momevento</td>
-        <td width="218" align="center">DESCRI EVENTO</td>
-        <td width="77" align="center">FECH INICIO</td>
-        <td width="77" align="center">CUOTA S/</td>
-        <td width="77" align="center">ANUNCIANTE</td>
-        <td width="44" align="center">telf</td>
-        <td width="71" align="center">email</td>
-        <td width="49">viw01</td>
-        <td width="49">msj pub</td>
-        <td width="43">FAVICON</td>
-        <td width="56">IMAGEN1</td>
-        <td width="38">LOGO</td>
-        <td width="56" align="center">EDITAR TXT</td>
-        <td width="60" align="center">DEL Reg.</td>
+        <td width="44" align="center">COD. Item</td>
+        <td width="49">FECHA HOY</td>
+        <td width="60">IMAGEN</td>
+        <td width="34">codevento</td>
+        <td width="122">momevento</td>
+        <td width="228" align="center">DESCRI EVENTO</td>
+        <td width="51" align="center">FECH INICIO</td>
+        <td width="43" align="center">CUOTA S/</td>
+        <td width="70" align="center">ANUNCIANTE</td>
+        <td width="50" align="center">telf</td>
+        <td width="67" align="center">email</td>
+        <td width="21">viw01</td>
+        <td width="48">msj pub</td>
+        <td width="42">FAVICON</td>
+        <td width="55">IMAGEN1</td>
+        <td width="37">LOGO</td>
+        <td width="55" align="center">EDITAR TXT</td>
+        <td width="66" align="center">DEL Reg.</td>
       </tr>
       <?php 
 
 
   
-//$result=mysql_query("select * from items order by codfabrica_it",$connec);
 
 
 $result=mysqli_query($connec,"select * from mievento_51 ");
@@ -272,7 +251,7 @@ $fhoy_mev=$tabla["fhoy_mev"];
         <td bgcolor="#FFFFFF"><?php echo($codigo_mev) ?></td>
         <td bgcolor="#FFFFFF"><?php echo($fhoy_mev) ?></td>
 
-        <td bgcolor="#FFFFFF"><img src=" <?php echo "img_mievento51/".$img_mev ?> " width="60" height="%" /></td>
+        <td bgcolor="#FFFFFF"><img src=" <?php echo "img_mievento/".$img_mev ?> " width="60" height="%" /></td>
         <td bgcolor="#FFFFFF"><?php echo($codevento_mev) ?></td>
         <td bgcolor="#FFFFFF"><?php echo($nomevento_mev) ?></td>
         <td bgcolor="#FFFFFF"><?php echo($descri_mev) ?></td>
@@ -283,9 +262,9 @@ $fhoy_mev=$tabla["fhoy_mev"];
         <td bgcolor="#FFFFFF"><? echo($email_mev) ?></td>
         <td bgcolor="#FFFFFF"><? echo($view01_mev) ?></td>
         <td bgcolor="#FFFFFF"><? echo($msjpublico_mev) ?></td>
-        <td bgcolor="#FFCC66" align="center"><a href="img_mievento51/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=01"><img src="iconos/ico_favicon.png" width="30" height="30"></a></td>                                                                  
-        <td bgcolor="#FFCC66" align="center"><a href="img_mievento51/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=02"><img src="iconos/ico_imagen.png" width="30" height="30"></a></td>                                                                  
-        <td bgcolor="#FFCC66" align="center"><a href="img_mievento51/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=03"><img src="iconos/ico_logo.png" width="30" height="30"></a></td>                                                                  
+        <td bgcolor="#FFCC66" align="center"><a href="img_mievento/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=01"><img src="iconos/ico_favicon.png" width="30" height="30"></a></td>                                                                  
+        <td bgcolor="#FFCC66" align="center"><a href="img_mievento/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=02"><img src="iconos/ico_imagen.png" width="30" height="30"></a></td>                                                                  
+        <td bgcolor="#FFCC66" align="center"><a href="img_mievento/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=03"><img src="iconos/ico_logo.png" width="30" height="30"></a></td>                                                                  
 
         <td align="center" bgcolor="#FFCC66"><a href="edit_mievento_admin.php?xcod=<?php  echo($cod_aso); ?>&xview=<?php  echo("ADMIN"); ?>&xareg=NNOOO&xmodi=NOOOOO&xdelreg=NOOOOO"><img src="iconos/ico_editar.png" width="30" height="30"></a></td>
 
