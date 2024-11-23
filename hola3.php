@@ -59,9 +59,9 @@ setlocale(LC_ALL, "sp");
                     <div class="contenedor_opcion">
                         <div class="cont_mi_ciudad" id="div1">
                             <? $sql=mysqli_query($connec,"SELECT * FROM estado_51");  ?>
-                          <select name="departamento" id="xdepartamento" style="width:10rem; color:black;">
+                          <select name="ciudad" id="selector_ciudad" style="width:10rem; color:black;">
                                <? while($rosvi=mysqli_fetch_array($sql))
-                                  echo "<option  value='".$rosvi["cod_est"]."'>".$rosvi["cod_est"]." ".$rosvi["estado_est"]."</option>";
+                                  echo "<option  value='".$rosvi["cod_est"]."'>".$rosvi["estado_est"]."</option>";
                                ?>
                                   </select> 
                                <button id="aceptar_ciudad">Aceptar</button>
@@ -80,7 +80,7 @@ setlocale(LC_ALL, "sp");
                     <input type="text" name="texto" placeholder="ropa, comida, eventos, etc" required>
                     <input type="hidden" id="latitud" name="latitud">
                     <input type="hidden" id="longitud" name="longitud">
-                    <input type="hidden" id="xdepartamento" name="xdepartamento">
+                    <input type="hidden" id="ciudad" name="ciudad">
                     <button type="submit">Buscar</button>
                 </form>
             </div>
