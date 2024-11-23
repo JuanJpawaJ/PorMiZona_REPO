@@ -51,13 +51,25 @@
                     </div>
                     <div class="contenedor_opcion">
                         <div class="cont_mi_ciudad" id="div1">
-                            <? $sql=mysqli_query($connec,"SELECT * FROM estado_51 order by cod_est");  ?>
-                            <select name="Seleccionar ciudad" id="selector_ciudad" style="width:10rem; color:black;">
+                            <? $sql=mysqli_query($connec,"SELECT * FROM estado_51");  ?>
+                            <select name="xcoddepa" id="selector_ciudad" style="width:10rem; color:black;">
                                <? while($rosvi=mysqli_fetch_array($sql))
                                   echo "<option  value='".$rosvi["cod_est"]."'>".$rosvi["estado_est"]."</option>";
                                ?>
                                   </select> 
                                <button id="aceptar_ciudad">Aceptar</button>
+                               
+                               --
+               <label>Categoría</label>
+                <? $sql=mysqli_query($connec,"SELECT * FROM categoria order by categoria_cat");  ?>
+               <select id="departamento" name="xcategoria" class="campo_texto">
+                <option value="CATEGORIA">Elije tu grupo...</option>
+                <? while($rosvi=mysqli_fetch_array($sql))
+                        echo "<option  value='".$rosvi["cod_cat"]."'>".$rosvi["categoria_cat"]."</option>";
+                ?>
+               </select> 
+                               
+                               ---
                          
                         </div>
                         <div class="cont_mi_zona" id="div2" style="display:none;"> 
