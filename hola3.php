@@ -61,19 +61,6 @@
                                <button id="aceptar_ciudad">Aceptar</button>
                          
                         </div>
-                        <div>
-                        
-                                       <label>Categoría</label>
-                <? $sql=mysqli_query($connec,"SELECT * FROM categoria order by categoria_cat");  ?>
-               <select id="departamento" name="xcategoria" class="campo_texto">
-                <option value="CATEGORIA">Elije tu grupo...</option>
-                <? while($rosvi=mysqli_fetch_array($sql))
-                        echo "<option  value='".$rosvi["cod_cat"]."'>".$rosvi["categoria_cat"]."</option>";
-                ?>
-               </select> 
-                               
- 
-                        </div>
                         <div class="cont_mi_zona" id="div2" style="display:none;"> 
                             <p>*El sistema usará tu ubicación solo para recomendaciones cercanas. No se comparte ni almacena</p>
                             <button id="activar_ubi">Activar mi ubicación</button>
@@ -93,6 +80,17 @@
             </div>
         </div>
     </div>
+                            <div>
+                <label>Categoría</label>
+                <? $sql=mysqli_query($connec,"SELECT * FROM categoria order by categoria_cat");  ?>
+               <select id="departamento" name="xcategoria" class="campo_texto">
+                <option value="CATEGORIA">Elije tu grupo...</option>
+                <? while($rosvi=mysqli_fetch_array($sql))
+                        echo "<option  value='".$rosvi["cod_cat"]."'>".$rosvi["categoria_cat"]."</option>";
+                ?>
+               </select> 
+                         </div>
+
 
     <div class="contenedor_marcas">
         <h3>NUESTROS PRINCIPALES CLIENTES</h3>
