@@ -27,6 +27,13 @@
             <li><a href="siga_pormizona/a_publicar.php">Publicar avisos</a></li>
         </ul>
     </nav>
+    
+<?php 
+include("connec_sql_new.php");
+mysqli_set_charset($connec,'utf8'); 
+date_default_timezone_set("America/Lima");
+setlocale(LC_ALL, "sp");
+?>    
 
     <div class="contenido_total">
 
@@ -52,8 +59,7 @@
                     <div class="contenedor_opcion">
                         <div class="cont_mi_ciudad" id="div1">
                             <? $sql=mysqli_query($connec,"SELECT * FROM estado_51");  ?>
-                      <!--      <select name="xcoddepa" id="selector_ciudad" style="width:10rem; color:black;">  -->
-                               <select name="xcoddepa" id="xcoddepa" style="width:20rem; color:black;">  
+                          <select name="xcoddepa" id="selector_ciudad" style="width:10rem; color:black;">
                                <? while($rosvi=mysqli_fetch_array($sql))
                                   echo "<option  value='".$rosvi["cod_est"]."'>".$rosvi["estado_est"]."</option>";
                                ?>
