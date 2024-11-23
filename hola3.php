@@ -59,9 +59,11 @@
                                ?>
                                   </select> 
                                <button id="aceptar_ciudad">Aceptar</button>
-                               
-                               --
-               <label>Categoría</label>
+                         
+                        </div>
+                        <div>
+                        
+                                       <label>Categoría</label>
                 <? $sql=mysqli_query($connec,"SELECT * FROM categoria order by categoria_cat");  ?>
                <select id="departamento" name="xcategoria" class="campo_texto">
                 <option value="CATEGORIA">Elije tu grupo...</option>
@@ -70,8 +72,7 @@
                 ?>
                </select> 
                                
-                               ---
-                         
+ 
                         </div>
                         <div class="cont_mi_zona" id="div2" style="display:none;"> 
                             <p>*El sistema usará tu ubicación solo para recomendaciones cercanas. No se comparte ni almacena</p>
