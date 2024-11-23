@@ -80,7 +80,7 @@ setlocale(LC_ALL, "sp");
                     <input type="text" name="texto" placeholder="ropa, comida, eventos, etc" required>
                     <input type="hidden" id="latitud" name="latitud">
                     <input type="hidden" id="longitud" name="longitud">
-                    <input type="hidden" id="ciudad" name="ciudad">
+                    <input type="hidden" id="selector_ciudad" name="selector_ciudad">
                     <button type="submit">Buscar</button>
                 </form>
             </div>
