@@ -56,8 +56,9 @@
                                <? while($rosvi=mysqli_fetch_array($sql))
                                   echo "<option  value='".$rosvi["cod_est"]."'>".$rosvi["estado_est"]."</option>";
                                ?>
+                                  </select> 
                                <button id="aceptar_ciudad">Aceptar</button>
-                            </select> 
+                         
                         </div>
                         <div class="cont_mi_zona" id="div2" style="display:none;"> 
                             <p>*El sistema usará tu ubicación solo para recomendaciones cercanas. No se comparte ni almacena</p>
