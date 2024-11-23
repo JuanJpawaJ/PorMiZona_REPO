@@ -61,7 +61,7 @@ setlocale(LC_ALL, "sp");
                             <? $sql=mysqli_query($connec,"SELECT * FROM estado_51");  ?>
                           <select name="ciudad" id="selector_ciudad" style="width:10rem; color:black;">
                                <? while($rosvi=mysqli_fetch_array($sql))
-                                  echo "<option  value='".$rosvi["cod_est"]."'>".$rosvi["estado_est"]."</option>";
+                                  echo "<option  value='".$rosvi["cod_est"]."'>".$rosvi["cod_est"]." ".$rosvi["estado_est"]."</option>";
                                ?>
                                   </select> 
                                <button id="aceptar_ciudad">Aceptar</button>
