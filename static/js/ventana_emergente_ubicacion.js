@@ -52,7 +52,7 @@ const selectElement = document.getElementById('selector_ciudad');
 
 boton_aceptar_ciudad.addEventListener('click', function() {
     // Obtiene el texto de la opción seleccionada
-    const selectedOption = selectElement.options[selectElement.selectedIndex].text;
+    const selectedOption = selectElement.options[selectElement.selectedIndex].value;
     
     // Modifica el contenido del p con el texto de la opción seleccionada
     ubicacionText_mismo.textContent = selectedOption;
