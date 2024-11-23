@@ -163,11 +163,11 @@ if(strlen($longitud)<>0 OR strlen($latitud)<>0){
 }
 
 if($xfi=="T") {
-  $titulo="Busqueda: GENERAL";
+  $titulo="Busqueda: Ciudad";
   $result=mysqli_query($connec,"select * from asociado_51 where (productos_aso like '%$bxproducto%' OR rsocial_aso like '%$bxproducto%' OR gironeg_aso like '%$bxproducto%') order by categoria_aso");
  
 } else { // "Z" latitud y longitud
-  $titulo="Busqueda: POR MI ZONA";
+  $titulo="Busqueda: PorMiZona";
   $result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$bxlatitud%' AND longitud_aso like '%$bxlongitud%' AND (productos_aso like '%$bxproducto%' OR rsocial_aso like '%$bxproducto%' OR gironeg_aso like '%$bxproducto%') ) order by categoria_aso");
 }
 

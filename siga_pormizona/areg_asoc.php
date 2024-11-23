@@ -36,6 +36,7 @@ $productos_aso=$_POST['xproductos'];
 $latitud_aso=$_POST['xlatitud'];
 $longitud_aso=$_POST['xlongitud'];	
 $date_aso=date("Y/m/d");	
+$datehoy_aso=date("Y/m/d");
 $favicon_aso=$_POST['xfavicon'];	   
 $publicidad_aso="N";	
 
@@ -125,7 +126,7 @@ if(strlen($rsocial_aso)==0 OR strlen($direccion_aso)==0 ) {
 	$result_nom=mysqli_query($connec,"select * from asociado_51 where (rsocial_aso='$rsocial_aso') AND (direccion_aso='$direccion_aso')");
 	$total_nom=mysqli_num_rows($result_nom);
     if 	($total_nom==0) {  // VUENE DE FORMULARIO Y NO HAY DUPLICIDAD *****************+
-       	$sql="INSERT INTO asociado_51 (cod_aso,  grupolista_aso, img1_aso, img2_aso, logo_aso, view01_aso, view02_aso, view03_aso, view04_aso, link01_aso, link02_aso, msjpublico_aso, obsinterno_aso, pais_aso,     rsocial_aso,    direccion_aso,    distrito_aso,    provincia_aso,  estado_aso, referencia_aso, gironeg_aso, telf1_aso, telf2_aso, usua_aso, pass_aso, email_aso, categoria_aso, productos_aso, latitud_aso,   longitud_aso, date_aso, favicon_aso, publicidad_aso)  VALUES ('$cod_aso', '$grupolista_aso', '$img1_aso', '$img2_aso', '$logo_aso', '$view01_aso', '$view02_aso', '$view03_aso', '$view04_aso', '$link01_aso', '$link02_aso', '$msjpublico_aso', '$obsinterno_aso', '$pais_aso', '$rsocial_aso', '$direccion_aso', '$distrito_aso', '$provincia_aso',  '$estado_aso',   '$referencia_aso', '$gironeg_aso', '$telf1_aso',   '$telf2_aso', '$usua_aso', '$pass_aso', '$email_aso', '$categoria_aso', '$productos_aso', '$latitud_aso', '$longitud_aso',   '$date_aso', '$favicon_aso', '$publicidad_aso')";
+       	$sql="INSERT INTO asociado_51 (cod_aso,  grupolista_aso, img1_aso, img2_aso, logo_aso, view01_aso, view02_aso, view03_aso, view04_aso, link01_aso, link02_aso, msjpublico_aso, obsinterno_aso, pais_aso,     rsocial_aso,    direccion_aso,    distrito_aso,    provincia_aso,  estado_aso, referencia_aso, gironeg_aso, telf1_aso, telf2_aso, usua_aso, pass_aso, email_aso, categoria_aso, productos_aso, latitud_aso,   longitud_aso, date_aso, datehoy_aso, favicon_aso, publicidad_aso)  VALUES ('$cod_aso', '$grupolista_aso', '$img1_aso', '$img2_aso', '$logo_aso', '$view01_aso', '$view02_aso', '$view03_aso', '$view04_aso', '$link01_aso', '$link02_aso', '$msjpublico_aso', '$obsinterno_aso', '$pais_aso', '$rsocial_aso', '$direccion_aso', '$distrito_aso', '$provincia_aso',  '$estado_aso',   '$referencia_aso', '$gironeg_aso', '$telf1_aso',   '$telf2_aso', '$usua_aso', '$pass_aso', '$email_aso', '$categoria_aso', '$productos_aso', '$latitud_aso', '$longitud_aso',   '$date_aso', '$datehoy_aso', '$favicon_aso', '$publicidad_aso')";
 
    		$result=mysqli_query($connec,$sql);
    		if($result)  {
