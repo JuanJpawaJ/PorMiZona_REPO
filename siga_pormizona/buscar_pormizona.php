@@ -132,7 +132,7 @@ $latitud = $_GET['latitud'];
 $bxproducto=$_GET['texto'];
 $xfi=$_GET['xfi'];
 //if(strlen($xfi)==0){
-//  $xfi="T";
+//  $xfi="D";
 //}
 
 ?>
@@ -162,8 +162,8 @@ if(strlen($longitud)<>0 OR strlen($latitud)<>0){
 	$xfi="Z";
 }
 
-if($xfi=="T") {
-  $titulo="Busqueda: Ciudad";
+if($xfi=="D") {
+  $titulo="Busqueda: Departamento";
   $result=mysqli_query($connec,"select * from asociado_51 where (productos_aso like '%$bxproducto%' OR rsocial_aso like '%$bxproducto%' OR gironeg_aso like '%$bxproducto%') order by categoria_aso");
  
 } else { // "Z" latitud y longitud

@@ -46,17 +46,18 @@
 
                 <div class="ventana_emergente_ubicacion" id="ventana_emergente_ubicacion" style="display:none;">
                     <div class="cabecera_botones">
-                        <button id="boton1" class="seleccionado">En mi ciudad</button>
+                        <button id="boton1" class="seleccionado">Departamento</button>
                         <button id="boton2">Por mi zona</button>
                     </div>
                     <div class="contenedor_opcion">
                         <div class="cont_mi_ciudad" id="div1">
+                            <? $sql=mysqli_query($connec,"SELECT * FROM estado_51 order by cod_est");  ?>
                             <select name="Seleccionar ciudad" id="selector_ciudad" style="width:10rem; color:black;">
-                                <option value="opcion1">Arequipa</option>
-                                <option value="opcion2">Lima</option>
-                                <option value="opcion3">Puno</option>
-                            </select>
-                            <button id="aceptar_ciudad">Aceptar</button>
+                               <? while($rosvi=mysqli_fetch_array($sql))
+                                  echo "<option  value='".$rosvi["cod_est"]."'>".$rosvi["estado_est"]."</option>";
+                               ?>
+                               <button id="aceptar_ciudad">Aceptar</button>
+                            </select> 
                         </div>
                         <div class="cont_mi_zona" id="div2" style="display:none;"> 
                             <p>*El sistema usará tu ubicación solo para recomendaciones cercanas. No se comparte ni almacena</p>
