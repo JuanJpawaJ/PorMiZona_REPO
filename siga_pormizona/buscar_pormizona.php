@@ -186,7 +186,7 @@ $total=mysqli_num_rows($result);
           <td height="99" colspan="2" align="center" bgcolor="#000000" class="tabla10" ><img src="../static/imgs/Logos/logo_pormizona_borde_bl.png" width="285" height="86"></td>
           <td width="312" rowspan="3" align="center" bgcolor="#000000"  class="tabla10" >
           <? if ($xxxciudad=="SI") { ?>
-		     <img src="img_asociados/<? echo ($imgciudad) ?>" width="300" height="225">
+		     <img src="img_ciudades/<? echo ($imgciudad) ?>" width="300" height="225">
 		  <? } else {   ?>
             <iframe id="mapa" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d402.28170424441254!2d<?php echo ($longitud) ?>!3d<?php echo ($latitud) ?>!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe"> </iframe>		
           <? } ?>  
