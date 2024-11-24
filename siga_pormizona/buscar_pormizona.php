@@ -168,16 +168,14 @@ $total=mysqli_num_rows($result);
 
 
 ?>
-
-  <span class="tabla10"><img src="../static/imgs/Logos/logo_pormizona_borde_bl.png" width="285" height="86"></span>
-  <table width="778" border="1" align="center" cellpadding="0" cellspacing="0">
+<table width="778" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td height="77" align="center" class="tit_menu_sup">POR MI ZONA</td>
     </tr>
   <tr class="tit_menu_sup">
     <td width="774" height="141" align="center" bgcolor="#0099CC"><table width="740" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td height="99" colspan="2" align="center" bgcolor="#0099CC" class="tabla10" >&nbsp;</td>
+          <td height="99" colspan="2" align="center" bgcolor="#0099CC" class="tabla10" ><img src="../static/imgs/Logos/logo_pormizona_borde_bl.png" width="285" height="86"></td>
           <td width="312" rowspan="3" align="center" bgcolor="#000000"  class="tabla10" >
           <? if ($xxxciudad=="SI") { ?>
 	        <img src="img_ciudades/<? echo ($imgciudad) ?>" width="300" height="225">
