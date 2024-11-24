@@ -171,22 +171,15 @@ $total=mysqli_num_rows($result);
 
   <table width="778" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td height="77" align="center" class="tit_menu_sup">
-    
- 
-    
-    
-    
-    
-    POR MI ZONA</td>
+    <td height="77" align="center" class="tit_menu_sup">POR MI ZONA</td>
     </tr>
   <tr class="tit_menu_sup">
-    <td width="774" height="141" align="center" bgcolor="#FFFFCC"><table width="740" border="0" cellspacing="0" cellpadding="0">
+    <td width="774" height="141" align="center" bgcolor="#000000"><table width="740" border="0" cellspacing="0" cellpadding="0">
         <tr>
           <td height="99" colspan="2" align="center" bgcolor="#000000" class="tabla10" ><img src="../static/imgs/Logos/logo_pormizona_borde_bl.png" width="285" height="86"></td>
           <td width="312" rowspan="3" align="center" bgcolor="#000000"  class="tabla10" >
           <? if ($xxxciudad=="SI") { ?>
-		     <img src="img_ciudades/<? echo ($imgciudad) ?>" width="300" height="225">
+	        <img src="img_ciudades/<? echo ($imgciudad) ?>" width="300" height="225">
 		  <? } else {   ?>
             <iframe id="mapa" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d402.28170424441254!2d<?php echo ($longitud) ?>!3d<?php echo ($latitud) ?>!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe"> </iframe>		
           <? } ?>  
@@ -194,7 +187,7 @@ $total=mysqli_num_rows($result);
           </td>
         </tr>
         <tr>
-        <td width="200" height="71" align="center" class="tabla10" >
+        <td width="200" height="71" align="center" bgcolor="#CCCCCC" class="tabla10" >
              <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
 	 	           SU LATITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
              <? } else { ?>
@@ -202,7 +195,7 @@ $total=mysqli_num_rows($result);
  		     <? } ?>
 
         </td>
-        <td width="228" align="center" class="tabla10" >
+        <td width="228" align="center" bgcolor="#CCCCCC" class="tabla10" >
         
              <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
 	               SU LONGITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
@@ -213,26 +206,21 @@ $total=mysqli_num_rows($result);
         </td>
         </tr>
       <tr>
-
-   <td height="72" colspan="2" align="center" class="tabla10" >
-     <form id="form0" name="form0" method="get" action="buscar_pormizona.php">
-       <table width="371" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
-         <tr>
-           <td width="234" height="50" bgcolor="#FFCC66"> <span class="T_QUE">¿Que está buscando?:</span>  
-             <input name="texto" type="text" id="texto" size="30" maxlength="60" value="<?php echo($bxproducto); ?>" /></td>
-             <input type="hidden" name="longitud" value="<?php echo($longitud); ?>" />
-             <input type="hidden" name="latitud" value="<?php echo($latitud); ?>" />
-           <td width="131" bgcolor="#FFCC66"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
-           </tr>
-         </table>
-       </form>
-   </td>
-  </tr>
-      <tr>
-        <td height="27" colspan="3" align="center" bgcolor="#0099FF" class="tabla10"><span class="rsocial"><?php echo($imgciudad);	?></span></td>
         
-                                                                    
-        </tr>
+        <td height="72" colspan="2" align="center" bgcolor="#000000" class="tabla10" >
+          <form id="form0" name="form0" method="get" action="buscar_pormizona.php">
+            <table width="371" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
+              <tr>
+                <td width="234" height="50" bgcolor="#CCCCCC"> <span class="T_QUE">¿Que está buscando?:</span>  
+                  <input name="texto" type="text" id="texto" size="30" maxlength="60" value="<?php echo($bxproducto); ?>" /></td>
+                <input type="hidden" name="longitud" value="<?php echo($longitud); ?>" />
+                <input type="hidden" name="latitud" value="<?php echo($latitud); ?>" />
+                <td width="131" bgcolor="#CCCCCC"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
+                </tr>
+              </table>
+            </form>
+          </td>
+      </tr>
     </table></td>
     </tr>
   <tr class="tit_menu_sup">
