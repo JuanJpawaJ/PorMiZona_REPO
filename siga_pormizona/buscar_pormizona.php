@@ -210,7 +210,7 @@ $total=mysqli_num_rows($result);
           <form id="form0" name="form0" method="get" action="buscar_pormizona.php">
             <table width="371" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
               <tr>
-                <td width="244" height="50" bgcolor="#CCCCCC"> <span class="T_QUE">¿Que está buscando?:</span>  
+                <td width="244" height="50" align="center" bgcolor="#CCCCCC"> <span class="T_QUE">¿Que está buscando?:</span>  
                   <input name="texto" type="text" id="texto" size="30" maxlength="60" value="<?php echo($bxproducto); ?>" /></td>
                 <input type="hidden" name="longitud" value="<?php echo($longitud); ?>" />
                 <input type="hidden" name="latitud" value="<?php echo($latitud); ?>" />
