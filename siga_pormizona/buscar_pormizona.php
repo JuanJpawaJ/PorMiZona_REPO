@@ -157,6 +157,7 @@ if(strlen($ciudad)<>0) {
   $result=mysqli_query($connec,"select * from asociado_51 where (productos_aso like '%$bxproducto%' OR rsocial_aso like '%$bxproducto%' OR gironeg_aso like '%$bxproducto%') order by categoria_aso");
   $xxxciudad="SI";
   $imgciudad="img".$ciudad.".jpg";
+  echo ("ESTA ES LA CIUDAD ESPERO SE PUEDA VER...".$imgciudad);
  
 } else { //  latitud y longitud
   $titulo="Busqueda: PorMiZona";
