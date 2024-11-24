@@ -169,14 +169,15 @@ $total=mysqli_num_rows($result);
 
 ?>
 
+  <span class="tabla10"><img src="../static/imgs/Logos/logo_pormizona_borde_bl.png" width="285" height="86"></span>
   <table width="778" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td height="77" align="center" class="tit_menu_sup">POR MI ZONA</td>
     </tr>
   <tr class="tit_menu_sup">
-    <td width="774" height="141" align="center" bgcolor="#000000"><table width="740" border="0" cellspacing="0" cellpadding="0">
+    <td width="774" height="141" align="center" bgcolor="#0099CC"><table width="740" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td height="99" colspan="2" align="center" bgcolor="#000000" class="tabla10" ><img src="../static/imgs/Logos/logo_pormizona_borde_bl.png" width="285" height="86"></td>
+          <td height="99" colspan="2" align="center" bgcolor="#0099CC" class="tabla10" >&nbsp;</td>
           <td width="312" rowspan="3" align="center" bgcolor="#000000"  class="tabla10" >
           <? if ($xxxciudad=="SI") { ?>
 	        <img src="img_ciudades/<? echo ($imgciudad) ?>" width="300" height="225">
@@ -187,7 +188,7 @@ $total=mysqli_num_rows($result);
           </td>
         </tr>
         <tr>
-        <td width="200" height="71" align="center" bgcolor="#CCCCCC" class="tabla10" >
+        <td width="200" height="71" align="center" bgcolor="#0099CC" class="tabla10" >
              <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
 	 	           SU LATITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
              <? } else { ?>
@@ -195,7 +196,7 @@ $total=mysqli_num_rows($result);
  		     <? } ?>
 
         </td>
-        <td width="228" align="center" bgcolor="#CCCCCC" class="tabla10" >
+        <td width="228" align="center" bgcolor="#0099CC" class="tabla10" >
         
              <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
 	               SU LONGITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
@@ -207,15 +208,15 @@ $total=mysqli_num_rows($result);
         </tr>
       <tr>
         
-        <td height="72" colspan="2" align="center" bgcolor="#000000" class="tabla10" >
+        <td height="72" colspan="2" align="center" bgcolor="#0099CC" class="tabla10" >
           <form id="form0" name="form0" method="get" action="buscar_pormizona.php">
             <table width="371" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
               <tr>
-                <td width="234" height="50" bgcolor="#CCCCCC"> <span class="T_QUE">¿Que está buscando?:</span>  
+                <td width="244" height="50" bgcolor="#CCCCCC"> <span class="T_QUE">¿Que está buscando?:</span>  
                   <input name="texto" type="text" id="texto" size="30" maxlength="60" value="<?php echo($bxproducto); ?>" /></td>
                 <input type="hidden" name="longitud" value="<?php echo($longitud); ?>" />
                 <input type="hidden" name="latitud" value="<?php echo($latitud); ?>" />
-                <td width="131" bgcolor="#CCCCCC"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
+                <td width="121" align="center" bgcolor="#CCCCCC"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
                 </tr>
               </table>
             </form>
