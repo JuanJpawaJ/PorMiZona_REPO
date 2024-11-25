@@ -95,33 +95,35 @@ nav.color{
            width: auto;
         }
 
-    nav > button{
+    nav > button#boton_hamburguesa{
         padding: 0.5rem;
         border:2px solid white;
         border-radius: 5px;
         color:white;
+
+        display: none;
     }
 
-        nav > button > span{
+        nav > button#boton_hamburguesa > span{
             position: relative;
             top:2px;
         }
 
 
-    nav > ul{
+    nav > ul#menu{
         display: flex;
         column-gap: 2.5rem;
     }
 
 
-        nav > ul > li > a{
+        nav > ul#menu > li > a{
             color:var(--color_blanco);
             padding:1rem 1rem;
             font-weight: var(--fuente_semibold);
             transition: background-color 0.3s ease;
         }
 
-        nav > ul > li > a:hover{
+        nav > ul#menu > li > a:hover{
             background-color: var(--color_rojo_1);
         }
 
@@ -133,25 +135,26 @@ nav.color{
 
 @media only screen and (max-width: 1000px){
 
-    .boton_nav{
+    nav > button#boton_hamburguesa{
+        
         display: block;
     }
 
-
-    nav > ul{
+    nav > ul#menu{
         display: flex;
         column-gap: 2.5rem;
         flex-direction: column;
         position: absolute;
         right:0;
         bottom: -125px;
+        
     }
 
-    nav > ul > li{
-        background-color: green;
-        padding:0.5rem 10px;
-        border: 1px solid white;
-        margin:-1px;
-    }
-    
+        nav > ul#menu > li{
+            background-color: var(--color_verde_1);
+            padding:0.5rem 10px;
+            border: 1px solid white;
+            margin:-1px;
+        }
+        
 }

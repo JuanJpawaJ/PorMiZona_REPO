@@ -13,19 +13,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-var boton_hamburguesa = document.getElementById("boton_hamburguesa");
-var elementos_navegador = document.getElementById("cont_elementos_navegador");
+const boton = document.getElementById('boton_hamburguesa');
+const cont_menu = document.getElementById('menu');
 
-var boton_desplegado = false;
 
-function desplegarBotonHamburguesa(){
-    if(boton_desplegado == false){
-        elementos_navegador.style.display = "block"
-        boton_desplegado = true;
-        console.log(boton_desplegado);
-    }else{
-        elementos_navegador.style.display = "none"
-        boton_desplegado = false;
-        console.log(boton_desplegado);
+boton_hamburguesa.addEventListener('click', () => {
+    if (cont_menu.style.display === 'none' || cont_menu.style.display === '') {
+        cont_menu.style.display = 'flex'; // Mostrar el div
+    } else {
+        cont_menu.style.display = 'none'; // Ocultar el div
     }
-}
+});
