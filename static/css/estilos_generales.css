@@ -95,6 +95,18 @@ nav.color{
            width: auto;
         }
 
+    nav > button{
+        padding: 0.5rem;
+        border:2px solid white;
+        border-radius: 5px;
+        color:white;
+    }
+
+        nav > button > span{
+            position: relative;
+            top:2px;
+        }
+
 
     nav > ul{
         display: flex;
@@ -115,4 +127,31 @@ nav.color{
 
 .espacio_navegador{
     height: 90px;
+}
+
+
+
+@media only screen and (max-width: 1000px){
+
+    .boton_nav{
+        display: block;
+    }
+
+
+    nav > ul{
+        display: flex;
+        column-gap: 2.5rem;
+        flex-direction: column;
+        position: absolute;
+        right:0;
+        bottom: -125px;
+    }
+
+    nav > ul > li{
+        background-color: green;
+        padding:0.5rem 10px;
+        border: 1px solid white;
+        margin:-1px;
+    }
+    
 }
