@@ -101,7 +101,7 @@ Para obtener una ubicación precisa, ES RECOMENDABLE USAR UN EQUIPO MOVIL. Esto 
          
            <div class="campos_de_formulario">
                <label>Departamento o Estado</label>
-                    <? $sql=mysqli_query($connec,"SELECT * FROM estado_51 order by departamento_est");  ?>
+                    <? $sql=mysqli_query($connec,"SELECT * FROM estado_51 order by estado_est");  ?>
                     <select id="departamento" name="xdepartamento" class="campo_texto">  
                     <option value="ESTADO">Elije tu ciudad...</option>
                         <? while($rosvi=mysqli_fetch_array($sql))
