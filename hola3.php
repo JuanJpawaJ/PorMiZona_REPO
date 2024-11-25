@@ -84,7 +84,7 @@ setlocale(LC_ALL, "sp");
                 </div>
                 
 
-                <form class="principal" method="GET" action="siga_pormizona/buscar_pormizonas.php">
+                <form class="principal" method="GET" action="siga_pormizona/buscar_pormizona.php">
                     <h1>¿Qué estás buscando?</h1>
                     <input type="text" name="texto" placeholder="ropa, comida, eventos, etc" required>
                     <input type="hidden" id="latitud" name="latitud">
