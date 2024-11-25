@@ -87,7 +87,7 @@ Para obtener una ubicación precisa, ES RECOMENDABLE USAR UN EQUIPO MOVIL. Esto 
            <h2 class="semi-titulosform">Paso 02: Ingreso de datos</h2>
            <div class="campos_de_formulario">
               <label>Razon Social (del local comercial, negocio, empresa)</label>
-              <input type="text" class="campo_texto" name="xrsocial" placeholder="Ejemplo: Libería la Luz" onkeyup= "this.value=this.value.toUpperCase();"> 
+              <input type="text" class="campo_texto" name="xrsocial" placeholder="Ejemplo: Libería la Luz, JPAWAJ SAC" onkeyup= "this.value=this.value.toUpperCase();"> 
            </div>
            <!--  <h2 class="semi-titulos">UBICACIÓN</h2> -->
            <div class="campos_de_formulario">
@@ -98,6 +98,19 @@ Para obtener una ubicación precisa, ES RECOMENDABLE USAR UN EQUIPO MOVIL. Esto 
               <label>Giro del negocio.</label>
               <input type="text" class="campo_texto" name="xgironeg" placeholder="Ej. Boutique, Librería, Dentista, ferretería, etc."> 
            </div>
+         
+           <div class="campos_de_formulario">
+               <label>Departamento o Estado</label>
+                    <? $sql=mysqli_query($connec,"SELECT * FROM estado_51 order by departamento_est");  ?>
+                    <select id="departamento" name="xdepartamento" class="campo_texto">  
+                    <option value="ESTADO">Elije tu ciudad...</option>
+                        <? while($rosvi=mysqli_fetch_array($sql))
+						 echo "<option  value='".$rosvi["cod_est"]."'>".$rosvi["cod_est"]." ".$rosvi["estado_est"]."</option>";
+                        ?>
+                    </select> 
+           </div>
+           
+      
            <div class="campos_de_formulario">
            
                <label>Categoría</label>
@@ -114,19 +127,14 @@ Para obtener una ubicación precisa, ES RECOMENDABLE USAR UN EQUIPO MOVIL. Esto 
                <input type="text" class="campo_texto" name="xemail" placeholder="Ejemplo: librerialaluz@gmail.com"> 
            </div>
            <div class="campos_de_formulario">
-               <label>Crear un nombre de Usuario </label>
-               <input type="text"  class="campo_texto" name="xusuario" placeholder="Ej. JUAN, MARIA PONCE, MORENA, etc."> 
-           </div>
-
-           <div class="campos_de_formulario">
                <label>Crear una contraseña (Max.10 - Utilice símbolos, mayúsculas y minúsculas)</label>
                <input type="text"  class="campo_texto" name="xpass" placeholder="Permitirá modificar sus datos y productos."> 
            </div>
            <input type="hidden" name="xpais" value="PERÚ"/> 
            <input type="hidden" name="xlatitud" value=<? echo $latitud; ?> > 
            <input type="hidden" name="xlongitud" value=<? echo $longitud; ?> > 
-           <input type="hidden" name="xdepartamento" value=""/> 
            <input type="hidden" name="xprovincia" value=""/> 
+           <input type="hidden" name="xusuario" value=""/> 
            <input type="hidden" name="xdistrito" value=""/> 
            <input type="hidden" name="xreferencia" value=""/> 
            <input type="hidden" name="xtelf1" value=""/> 
