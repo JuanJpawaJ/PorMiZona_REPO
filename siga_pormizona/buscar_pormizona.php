@@ -47,7 +47,7 @@
 .rsocial {
 	color: #009;
 	font-weight: bold;
-		font-size: 28px;
+		font-size: 18px;
 }
 .PRECIO2 {
 	color: #999;
@@ -130,44 +130,37 @@ setlocale(LC_ALL, "sp");
 $longitud = $_GET['longitud'];
 $latitud = $_GET['latitud'];
 $bxproducto=$_GET['texto'];
-$xfi=$_GET['xfi'];
+$ciudad = $_GET['ciudad']; //solo llega el codigo de ciudad
 //if(strlen($xfi)==0){
-//  $xfi="T";
+//  $xfi="D";
 //}
-
 ?>
 
-    <nav>
-
-        <div class="botones_nav">
+ <nav>
+     <div class="botones_nav">
             <a href="#" class="boton_home"></a>
             <a href="#" class="boton_menu"></a>
-        </div>
-       <!-- <img src="imagenes/Logo/Logo_blanco_negro.svg" alt="logo"> -->
-
- 
-
-
-       <img src="../static/imgs/Logos/logo_pormizona_borde_bl.png" alt="logo" class="logo">
-    </nav>
-
-
+     </div>
+     <!-- <img src="imagenes/Logo/Logo_blanco_negro.svg" alt="logo"> -->
+     <img src="../static/imgs/Logos/logo_pormizona_borde_bl.png" alt="logo" class="logo">
+ </nav>
 <?
 
 
-if(strlen($longitud)<>0 OR strlen($latitud)<>0){
-	$bxlongitud = substr($longitud,0,6);
-  $bxlatitud = substr($latitud,0,6);
-
-	$xfi="Z";
+if(strlen(($longitud)==0 OR strlen($latitud)==0) AND (strlen($ciudad)==0) ){
+	echo (" debería ubicacion geoubicación");
 }
 
-if($xfi=="T") {
-  $titulo="Busqueda: GENERAL";
+$xxxciudad="NO";
+if(strlen($ciudad)<>0) {
+  $titulo="Busqueda: Departamento";
   $result=mysqli_query($connec,"select * from asociado_51 where (productos_aso like '%$bxproducto%' OR rsocial_aso like '%$bxproducto%' OR gironeg_aso like '%$bxproducto%') order by categoria_aso");
+  $xxxciudad="SI";
+  $imgciudad="img".$ciudad.".jpg";
+
  
-} else { // "Z" latitud y longitud
-  $titulo="Busqueda: POR MI ZONA";
+} else { //  latitud y longitud
+  $titulo="Busqueda: PorMiZona";
   $result=mysqli_query($connec,"select * from asociado_51 where (latitud_aso like '%$bxlatitud%' AND longitud_aso like '%$bxlongitud%' AND (productos_aso like '%$bxproducto%' OR rsocial_aso like '%$bxproducto%' OR gironeg_aso like '%$bxproducto%') ) order by categoria_aso");
 }
 
@@ -175,30 +168,25 @@ $total=mysqli_num_rows($result);
 
 
 ?>
-
-  <table width="778" border="1" align="center" cellpadding="0" cellspacing="0">
+<table width="778" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td height="77" align="center" class="tit_menu_sup">
-    
- 
-    
-    
-    
-    
-    POR MI ZONA</td>
+    <td height="77" align="center" class="tit_menu_sup">POR MI ZONA</td>
     </tr>
   <tr class="tit_menu_sup">
-    <td width="774" height="141" align="center" bgcolor="#FFFFCC"><table width="735" border="1" cellspacing="1" cellpadding="0">
+    <td width="774" height="141" align="center" bgcolor="#0099CC"><table width="740" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td height="38" colspan="2" align="center" class="tabla10" >&nbsp;</td>
-          <td width="136" rowspan="3" align="center"  class="tabla10" >
+          <td height="99" colspan="2" align="center" bgcolor="#0099CC" class="tabla10" ><img src="../static/imgs/Logos/logo_pormizona_borde_bl.png" width="285" height="86"></td>
+          <td width="312" rowspan="3" align="center" bgcolor="#000000"  class="tabla10" >
+          <? if ($xxxciudad=="SI") { ?>
+	        <img src="img_ciudades/<? echo ($imgciudad) ?>" width="300" height="225">
+		  <? } else {   ?>
             <iframe id="mapa" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d402.28170424441254!2d<?php echo ($longitud) ?>!3d<?php echo ($latitud) ?>!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe"> </iframe>		
-            
+          <? } ?>  
             
           </td>
         </tr>
         <tr>
-        <td width="210" height="30" align="center" class="tabla10" >
+        <td width="200" height="71" align="center" bgcolor="#0099CC" class="tabla10" >
              <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
 	 	           SU LATITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
              <? } else { ?>
@@ -206,7 +194,7 @@ $total=mysqli_num_rows($result);
  		     <? } ?>
 
         </td>
-        <td width="239" align="center" class="tabla10" >
+        <td width="228" align="center" bgcolor="#0099CC" class="tabla10" >
         
              <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
 	               SU LONGITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
@@ -217,26 +205,21 @@ $total=mysqli_num_rows($result);
         </td>
         </tr>
       <tr>
-
-   <td height="84" colspan="2" align="center" class="tabla10" >
-     <form id="form0" name="form0" method="get" action="buscar_pormizona.php">
-       <table width="371" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
-         <tr>
-           <td width="234" height="50" bgcolor="#FFCC66"> <span class="T_QUE">¿Que está buscando?:</span>  
-             <input name="texto" type="text" id="texto" size="30" maxlength="60" value="<?php echo($bxproducto); ?>" /></td>
-             <input type="hidden" name="longitud" value="<?php echo($longitud); ?>" />
-             <input type="hidden" name="latitud" value="<?php echo($latitud); ?>" />
-           <td width="131" bgcolor="#FFCC66"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
-           </tr>
-         </table>
-       </form>
-   </td>
-  </tr>
-      <tr>
-        <td height="37" colspan="3" align="center" bgcolor="#0099FF" class="tabla10"><span class="rsocial"><?php echo($titulo) ?></span></td>
         
-                                                                    
-        </tr>
+        <td height="72" colspan="2" align="center" bgcolor="#0099CC" class="tabla10" >
+          <form id="form0" name="form0" method="get" action="buscar_pormizona.php">
+            <table width="371" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
+              <tr>
+                <td width="244" height="50" align="center" bgcolor="#CCCCCC"> <span class="T_QUE">¿Que está buscando?:</span>  
+                  <input name="texto" type="text" id="texto" size="30" maxlength="60" value="<?php echo($bxproducto); ?>" /></td>
+                <input type="hidden" name="longitud" value="<?php echo($longitud); ?>" />
+                <input type="hidden" name="latitud" value="<?php echo($latitud); ?>" />
+                <td width="121" align="center" bgcolor="#CCCCCC"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
+                </tr>
+              </table>
+            </form>
+          </td>
+      </tr>
     </table></td>
     </tr>
   <tr class="tit_menu_sup">

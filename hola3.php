@@ -34,6 +34,13 @@
             <li><a href="siga_pormizona/a_publicar.php">Publicar avisos</a></li>
         </ul>
     </nav>
+    
+<?php 
+include("connec_sql_new.php");
+mysqli_set_charset($connec,'utf8'); 
+date_default_timezone_set("America/Lima");
+setlocale(LC_ALL, "sp");
+?>    
 
     <div class="contenido_total">
 
@@ -53,16 +60,20 @@
 
                 <div class="ventana_emergente_ubicacion" id="ventana_emergente_ubicacion" style="display:none;">
                     <div class="cabecera_botones">
-                        <button id="boton1" >En mi ciudad</button>
+
+                        <button id="boton1">Departamento</button>
+
                         <button id="boton2" class="seleccionado">Por mi zona</button>
                     </div>
                     <div class="contenedor_opcion">
                         <div class="cont_mi_ciudad" id="div1" style="display:none;">
-                            <select name="Seleccionar ciudad" id="selector_ciudad" style="width:10rem; color:black;">
-                                <option value="opcion1">Arequipa</option>
-                                <option value="opcion2">Lima</option>
-                                <option value="opcion3">Puno</option>
-                            </select>
+
+                            <? $sql=mysqli_query($connec,"SELECT * FROM estado_51");  ?>
+                            <select name="ciudad" id="selector_ciudad" style="width:10rem; color:black;">
+                               <? while($rosvi=mysqli_fetch_array($sql))
+                                  echo "<option  value='".$rosvi["cod_est"]."'>".$rosvi["cod_est"]." ".$rosvi["estado_est"]."</option>";
+                               ?>
+                            </select> 
                             <button id="aceptar_ciudad">Aceptar</button>
                         </div>
                         <div class="cont_mi_zona" id="div2" > 

@@ -53,7 +53,8 @@ const selectElement = document.getElementById('selector_ciudad');
 boton_aceptar_ciudad.addEventListener('click', function() {
     // Obtiene el texto de la opción seleccionada
     const selectedOption = selectElement.options[selectElement.selectedIndex].value;
-    const selectedOptionText = selectElement.options[selectElement.selectedIndex].text;
+
+	const selectedOptionText = selectElement.options[selectElement.selectedIndex].text;
     
     // Modifica el contenido del p con el texto de la opción seleccionada
     ubicacionText_mismo.textContent = selectedOptionText;
