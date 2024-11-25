@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=location_on" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../static/css/estilos_generales.css">
     <link rel="stylesheet" href="../static/css/estilos_index.css">
     <link rel="stylesheet" href="../static/css/estilos_contenedor_marcas.css">
@@ -20,8 +20,17 @@
         <div class="cont_logo">
             <img src="static/imgs/Logos/logo_pormizona_borde_bl.png" alt="">
         </div>
-        <ul>
-            <li><a href="siga_pormizona/formingre1.php">¡PUBLICA TU TIENDA!</a></li>
+
+        <a href="siga_pormizona/formingre1.php">¡PUBLICA TU TIENDA!</a>
+        
+        <button class="boton_nav" id="boton_hamburguesa">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </button>
+
+
+        <ul id="menu">
             <li><a href="siga_pormizona/a_lis_mievento.php">Eventos locales</a></li>
             <li><a href="siga_pormizona/a_catalogo_imp.php">Catálogo</a></li>
             <li><a href="siga_pormizona/a_publicar.php">Publicar avisos</a></li>
@@ -53,11 +62,14 @@ setlocale(LC_ALL, "sp");
 
                 <div class="ventana_emergente_ubicacion" id="ventana_emergente_ubicacion" style="display:none;">
                     <div class="cabecera_botones">
+
                         <button id="boton1">Departamento</button>
+
                         <button id="boton2" class="seleccionado">Por mi zona</button>
                     </div>
                     <div class="contenedor_opcion">
                         <div class="cont_mi_ciudad" id="div1" style="display:none;">
+
                             <? $sql=mysqli_query($connec,"SELECT * FROM estado_51");  ?>
                             <select name="ciudad" id="selector_ciudad" style="width:10rem; color:black;">
                                <? while($rosvi=mysqli_fetch_array($sql))
