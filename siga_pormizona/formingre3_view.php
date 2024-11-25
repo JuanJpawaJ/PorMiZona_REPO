@@ -44,7 +44,7 @@ $rsocial_aso=$tabla['rsocial_aso'];
 $direccion_aso=$tabla['direccion_aso'];
 $distrito_aso=$tabla['distrito_aso'];
 $provincia_aso=$tabla['provincia_aso'];
-$estado_aso=$tabla['estado_aso'];
+$departamento_aso=$tabla['departamento_aso'];
 $referencia_aso=$tabla['referencia_aso'];
 $gironeg_aso=$tabla["gironeg_aso"];
 $telf1_aso=$tabla['telf1_aso'];
@@ -223,7 +223,7 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
                </div>
                <div class="campos_de_formulario">
                     <label>Departamento o Estado</label>
-                    <input type="text" class="campo_texto agrandar" name="xestado" value="<?php echo($estado_aso); ?>"> 
+                    <input type="text" class="campo_texto agrandar" name="xdepartamento" value="<?php echo($departamento_aso); ?>"> 
                </div>
 
                <div class="otros_datos">

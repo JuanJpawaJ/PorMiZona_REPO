@@ -125,7 +125,7 @@ Para obtener una ubicación precisa, ES RECOMENDABLE USAR UN EQUIPO MOVIL. Esto 
            <input type="hidden" name="xpais" value="PERÚ"/> 
            <input type="hidden" name="xlatitud" value=<? echo $latitud; ?> > 
            <input type="hidden" name="xlongitud" value=<? echo $longitud; ?> > 
-           <input type="hidden" name="xestado" value=""/> 
+           <input type="hidden" name="xdepartamento" value=""/> 
            <input type="hidden" name="xprovincia" value=""/> 
            <input type="hidden" name="xdistrito" value=""/> 
            <input type="hidden" name="xreferencia" value=""/> 

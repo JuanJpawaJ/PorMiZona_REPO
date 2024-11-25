@@ -151,14 +151,14 @@ echo "En la opción [SOY PROPIETARIO]"."<br>"."<br>";
                </div>
                <div class="campos_de_formulario">
                     <label>Departamento o Estado</label>
-                    <? $sql=mysqli_query($connec,"SELECT * FROM estado_51 order by estado_est");  ?>
-                    <select id="departamento" name="xestado" class="campo_texto">  
+                    <? $sql=mysqli_query($connec,"SELECT * FROM estado_51 order by departamento_est");  ?>
+                    <select id="departamento" name="xdepartamento" class="campo_texto">  
                     <option value="ESTADO">Elije tu ciudad...</option>
 
                     
                     
                         <? while($rosvi=mysqli_fetch_array($sql))
-                         echo "<option  value='".$rosvi["estado_est"]."'>".$rosvi["estado_est"]."</option>";
+						 echo "<option  value='".$rosvi["cod_est"]."'>".$rosvi["cod_est"]." ".$rosvi["estado_est"]."</option>";
                         ?>
                     </select> 
                </div>
