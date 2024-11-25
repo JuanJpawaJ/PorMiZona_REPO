@@ -20,8 +20,8 @@ $rsocial_aso=$_POST['xrsocial'];
 $direccion_aso=$_POST['xdireccion'];
 $distrito_aso=$_POST['xdistrito'];
 $provincia_aso=$_POST['xprovincia'];
-//$departamento_aso=$_POST['xdepartamento'];
-$departamento_aso="08";
+$departamento_aso=$_POST['xdepartamento'];
+//$departamento_aso="08";
 
 $referencia_aso=$_POST['xreferencia'];
 $gironeg_aso=$_POST['xgironeg'];
