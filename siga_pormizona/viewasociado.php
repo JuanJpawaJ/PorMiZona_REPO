@@ -120,7 +120,7 @@ $tabla = mysqli_fetch_array( $result );
 	$direccion_aso=$tabla["direccion_aso"];
 	$distrito_aso=$tabla["distrito_aso"];
 	$provincia_aso=$tabla["provincia_aso"];
-	$estado_aso=$tabla["estado_aso"];
+	$departamento_aso=$tabla["departamento_aso"];
 	
 	$referencia_aso=$tabla["referencia_aso"];
 	$gironeg_aso=$tabla["gironeg_aso"];
@@ -131,9 +131,13 @@ $tabla = mysqli_fetch_array( $result );
 	$categoria_aso=$tabla["categoria_aso"];
 	$logo_aso=$tabla["logo_aso"];
 
-    $resultaso=mysqli_query($connec,"SELECT * FROM categoria   where cod_cat='$categoria_aso'");
+//    $resultaso=mysqli_query($connec,"SELECT * FROM categoria   where cod_cat='$categoria_aso'");
+//	$tablaaso =mysqli_fetch_array( $resultaso );
+//	$categoriatxt_aso=$tablaaso["categoria_cat"];
+
+    $resultaso=mysqli_query($connec,"SELECT * FROM estado_51   where cod_est='$departamento_aso'");
 	$tablaaso =mysqli_fetch_array( $resultaso );
-	$categoriatxt_aso=$tablaaso["categoria_cat"];
+	$departamentotxt_aso=$tablaaso["estado_est"];
 	
 	
 	$productos_aso=$tabla["productos_aso"];
@@ -257,7 +261,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
               <tr>
                 <td align="center"><span class="txt_view_dir_otros"><? echo $distrito_aso; ?></span></td>
                 <td align="center"><span class="txt_view_dir_otros"><? echo $provincia_aso; ?></span></td>
-                <td align="center"><span class="txt_view_dir_otros"><? echo $estado_aso; ?></span></td>
+                <td align="center"><span class="txt_view_dir_otros"><? echo $departamento_aso." ".$departamentotxt_aso; ?></span></td>
               </tr>
             </table></td>
           </tr>
