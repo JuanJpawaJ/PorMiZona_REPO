@@ -159,34 +159,43 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
               <input type="text" class="campo_texto" name="xdireccion" value="<?php echo($direccion_aso); ?>"> 
            </div>
            <div class="campos_de_formulario">
+               <label>Departamento o Estado</label>
+                    <? $sql=mysqli_query($connec,"SELECT * FROM estado_51 order by estado_est");  ?>
+                    <select id="departamento" name="xdepartamento" class="campo_texto">  
+                    <option value="ESTADO">Elije tu ciudad...</option>
+                        <? while($rosvi=mysqli_fetch_array($sql))
+				        if ($rosvi["cod_est"]==$departamento_aso) {
+						 echo "<option  value='".$rosvi["cod_est"]."'selected>".$rosvi["cod_est"]." ".$rosvi["estado_est"]."</option>";
+						} else { 
+						 echo "<option  value='".$rosvi["cod_est"]."'>".$rosvi["cod_est"]." ".$rosvi["estado_est"]."</option>";
+                        }
+						?>
+                    </select> 
+           </div>
+
+
+           <div class="campos_de_formulario">
               <label>Giro del negocio</label>
               <input type="text" class="campo_texto" name="xgironeg" value="<?php echo($gironeg_aso); ?>"> 
            </div>
-           <div class="campos_de_formulario">
+    <!--       <div class="campos_de_formulario">
                <label>Categoría</label>
-                <? $sql=mysqli_query($connec,"SELECT * FROM categoria order by categoria_cat");  ?>
+                <? //$sql=mysqli_query($connec,"SELECT * FROM categoria order by categoria_cat");  ?>
                <select id="departamento" name="xcategoria" class="campo_texto">
-                <? while($rosvi=mysqli_fetch_array($sql))
-				        if ($rosvi["cod_cat"]==$categoria_aso) {
-                            echo "<option  value='".$rosvi["cod_cat"]."' selected>".$rosvi["categoria_cat"]."</option>";
-						} else {
-                            echo "<option  value='".$rosvi["cod_cat"]."'>".$rosvi["categoria_cat"]."</option>";
-						}
+                <? //while($rosvi=mysqli_fetch_array($sql))
+				        //if ($rosvi["cod_cat"]==$categoria_aso) {
+                          //  echo "<option  value='".$rosvi["cod_cat"]."' selected>".$rosvi["categoria_cat"]."</option>";
+					 //	} else {
+                      //      echo "<option  value='".$rosvi["cod_cat"]."'>".$rosvi["categoria_cat"]."</option>";
+					//	}
                 ?>
                </select> 
                
-                 <!-- <option value="3" selected>Tres</option> -->
-                  <!-- <option value="value2" selected>Value 2</option> -->
-           </div>
+            </div>  -->
            <div class="campos_de_formulario">
                <label>Correo electrónico</label>
                <input type="text" class="campo_texto" name="xemail" value="<?php echo($email_aso); ?>"> 
            </div>
-           <div class="campos_de_formulario">
-               <label>Crear un nombre de Usuario </label>
-               <input type="text"  class="campo_texto" name="xusuario" value="<?php echo($usua_aso); ?>"> 
-           </div>
-
            <div class="campos_de_formulario">
                <label>Crear una contraseña (Max.10 - Utilice símbolos, mayúsculas y minúsculas)</label>
                <input type="text"  class="campo_texto" name="xpass" value="<?php echo($pass_aso); ?>"> 
@@ -220,10 +229,6 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
                <div class="campos_de_formulario">
                 <label>País</label>
                 <input type="text" value="Perú" disabled class="desactivado campo_texto"> 
-               </div>
-               <div class="campos_de_formulario">
-                    <label>Departamento o Estado</label>
-                    <input type="text" class="campo_texto agrandar" name="xdepartamento" value="<?php echo($departamento_aso); ?>"> 
                </div>
 
                <div class="otros_datos">

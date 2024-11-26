@@ -23,7 +23,7 @@ setlocale(LC_ALL, "sp");
 $cod_aso = $_GET['xcod'];
 $iclave= $_GET['xiclave'];
 
-$xusuario= $_GET['xusuario'];
+$xemail= $_GET['xemail'];
 $xclave= $_GET['xclave'];
 
 //echo (" en ingre el cod_aso ".$cod_aso."<br>");
@@ -44,8 +44,8 @@ if ($iclave=="SI") { ?>
       <form id="form1" name="form1" method="GET" onsubmit="return checkSubmit();" action="ingre.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
          <h2 class="semi-titulosform">INGRESE USUARIO Y CLAVE</h2>
          <div class="campos_de_formularioin">
-              <label>Usuario</label>
-              <input type="text" class="campo_textoin" name="xusuario"  > 
+              <label>e-mail</label>
+              <input type="text" class="campo_textoin" name="xemail"  > 
          </div>
            <!--  <h2 class="semi-titulos">UBICACIÓN</h2> -->
          <div class="campos_de_formularioin">
@@ -71,10 +71,10 @@ $result=mysqli_query($connec,"select * from asociado_51 where cod_aso='$cod_aso'
 $total=mysqli_num_rows($result);
 $tabla = mysqli_fetch_array( $result );
 
-$usua_aso=$tabla['usua_aso'];
+$email_aso=$tabla['email_aso'];
 $pass_aso=$tabla['pass_aso'];
 
-if ($usua_aso==$xusuario AND  $pass_aso==$xclave) { ?>
+if ($email_aso==$xemail AND  $pass_aso==$xclave) { ?>
       </div>
       <form id="form0" name="form0" method="post" onsubmit="return checkSubmit();" action="formingre3_view.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
          <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> >
