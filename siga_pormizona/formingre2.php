@@ -51,6 +51,7 @@ $cod_aso=$tabla["cod_aso"];
 $pais_aso=$tabla["pais_aso"];
 $rsocial_aso=$tabla["rsocial_aso"];
 $direccion_aso=$tabla["direccion_aso"];
+$departamento_aso=$tabla["departamento_aso"];
 $gironeg_aso=$tabla["gironeg_aso"];
 $email_aso=$tabla["email_aso"];
 $date_aso=$tabla["date_aso"];
@@ -113,6 +114,10 @@ $pass_aso=$tabla["pass_aso"];
     <td><? echo "SU GIRO NEGOCIO : "; ?></td>
     <td><? echo $gironeg_aso; ?></td>
   </tr>
+  <tr>
+    <td><? echo "SU cod DEPARTAMENTO : "; ?></td>
+    <td><? echo $departamento_aso; ?></td>
+  </tr>
 </table>
 
 <? echo "<br>"; ?>
@@ -149,19 +154,6 @@ echo "En la opción [SOY PROPIETARIO]"."<br>"."<br>";
                 <label>País</label>
                 <input type="text" value="Perú" disabled class="desactivado campo_texto"> 
                </div>
-               <div class="campos_de_formulario">
-                    <label>Departamento o Estado</label>
-                    <? $sql=mysqli_query($connec,"SELECT * FROM estado_51 order by departamento_est");  ?>
-                    <select id="departamento" name="xdepartamento" class="campo_texto">  
-                    <option value="ESTADO">Elije tu ciudad...</option>
-
-                    
-                    
-                        <? while($rosvi=mysqli_fetch_array($sql))
-						 echo "<option  value='".$rosvi["cod_est"]."'>".$rosvi["cod_est"]." ".$rosvi["estado_est"]."</option>";
-                        ?>
-                    </select> 
-               </div>
 
                <div class="otros_datos">
                 
@@ -193,7 +185,7 @@ echo "En la opción [SOY PROPIETARIO]"."<br>"."<br>";
                     </div>
                 </div>            
                 <div class="campos_de_formulario">
-                    <label>Etiqueta de productos y/o servicios</label>
+                    <label>Etiqueta de productos y/o servicios ¡IMPORTANTE!</label>
                     <textarea id="" cols="5" rows="4" name="xproductos" placeholder="Ej. palabras de búsqueda: cabello, ropa, perfumes, computadoras, gasfitero plumones libros carne menú carpintero licores bcp clases legal, etc. (Max. 250 caracteres)" class="campo_grande" ></textarea> 
                 </div>
                 

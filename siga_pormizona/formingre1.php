@@ -111,19 +111,20 @@ Para obtener una ubicación precisa, ES RECOMENDABLE USAR UN EQUIPO MOVIL. Esto 
            </div>
            
       
-           <div class="campos_de_formulario">
+         <!--  <div class="campos_de_formulario">
            
                <label>Categoría</label>
-                <? $sql=mysqli_query($connec,"SELECT * FROM categoria order by categoria_cat");  ?>
+                <? //$sql=mysqli_query($connec,"SELECT * FROM categoria order by categoria_cat");  ?>
                <select id="departamento" name="xcategoria" class="campo_texto">
                 <option value="CATEGORIA">Elije tu grupo...</option>
-                <? while($rosvi=mysqli_fetch_array($sql))
-                        echo "<option  value='".$rosvi["cod_cat"]."'>".$rosvi["categoria_cat"]."</option>";
+                <? //while($rosvi=mysqli_fetch_array($sql))
+                   //     echo "<option  value='".$rosvi["cod_cat"]."'>".$rosvi["categoria_cat"]."</option>";
                 ?>
                </select> 
-           </div>
+           </div>  -->
+           
            <div class="campos_de_formulario">
-               <label>Correo electrónico</label>
+               <label>Correo electrónico </label>
                <input type="text" class="campo_texto" name="xemail" placeholder="Ejemplo: librerialaluz@gmail.com"> 
            </div>
            <div class="campos_de_formulario">
