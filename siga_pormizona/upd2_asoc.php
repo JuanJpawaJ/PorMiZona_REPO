@@ -17,7 +17,6 @@ setlocale(LC_ALL, "sp");
 $cod_aso=$_POST['xcod'];
 $distrito_aso=$_POST['xdistrito'];
 $provincia_aso=$_POST['xprovincia'];
-$estado_aso=$_POST['xestado'];
 $referencia_aso=$_POST['xreferencia'];
 $telf1_aso=$_POST['xtelf1'];
 $telf2_aso=$_POST['xtelf2'];
@@ -93,7 +92,7 @@ if(strlen($productos_aso)==0 OR strlen($telf1_aso)==0 ) {
    echo "** o  NO HAY DATOS - VERIFIQUE **";
 }else{
 
-  $sql="UPDATE asociado_51 SET distrito_aso='$distrito_aso',provincia_aso='$provincia_aso',estado_aso='$estado_aso',      referencia_aso='$referencia_aso',telf1_aso='$telf1_aso',telf2_aso='$telf2_aso', productos_aso='$productos_aso' WHERE cod_aso='$cod_aso'";
+  $sql="UPDATE asociado_51 SET distrito_aso='$distrito_aso',provincia_aso='$provincia_aso', referencia_aso='$referencia_aso',telf1_aso='$telf1_aso',telf2_aso='$telf2_aso', productos_aso='$productos_aso' WHERE cod_aso='$cod_aso'";
 		
    		$result=mysqli_query($connec,$sql);
    		if($result)  {
