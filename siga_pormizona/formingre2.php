@@ -134,6 +134,7 @@ echo "Última oportunidad de TOMAR NOTA de su USUARIO y CLAVE "."<br>";
 echo "Recuerde: Ud. podrá realizar las modificaciones necesarias después del paso 3"."<br>";
 echo "En la opción [SOY PROPIETARIO]"."<br>"."<br>";
 ?>
+</td>
   </tr>
   <tr>
     <td><? echo "SU USUARIO  : "; ?></td>
@@ -145,6 +146,11 @@ echo "En la opción [SOY PROPIETARIO]"."<br>"."<br>";
   </tr>
 
 </table>
+
+
+
+
+
 
 <? echo "<br>"; ?>
 
