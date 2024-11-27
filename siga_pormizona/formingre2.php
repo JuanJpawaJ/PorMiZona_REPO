@@ -195,8 +195,8 @@ echo "En la opción [SOY PROPIETARIO]"."<br>"."<br>";
                 
                <!-- <a href="img_asociados/n_subir_xfile.php?xcod=<? echo $cod_aso; ?>">favicon</a>  -->
             <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> > 
-            <input type="hidden" name="longitud" value=<? echo $longitud; ?> > 
-            <input type="hidden" name="latitud" value=<? echo $latitud; ?> > 
+            <input type="hidden" name="longitud" value=<? echo $longitud_aso; ?> > 
+            <input type="hidden" name="latitud" value=<? echo $latitud_aso; ?> > 
             <input type="hidden" name="xrsocial" value=<? echo $rsocial_aso; ?> > 
                
                 <h2 class="semi-titulos">Al finalizar, continue con el botón SOY PROPIETARIO</h2>
