@@ -152,7 +152,7 @@ echo "En la opción [SOY PROPIETARIO]"."<br>"."<br>";
 
           <form id="form1" name="form1" method="post" onsubmit="return checkSubmit();" action="upd2_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
 
-                <h2 class="semi-titulos">Paso 03 - Productos</h2>
+                <h2 class="semi-titulos">Continuamos.. Paso 03 - Productos</h2>
   
                <div class="campos_de_formulario">
                 <label>País</label>

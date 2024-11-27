@@ -21,6 +21,11 @@ $referencia_aso=$_POST['xreferencia'];
 $telf1_aso=$_POST['xtelf1'];
 $telf2_aso=$_POST['xtelf2'];
 $productos_aso=$_POST['xproductos'];
+$longitud=$_POST['longitud'];
+$latitud=$_POST['latitud'];
+$rsocial_aso=$_POST['xrsocial'];
+
+
 //$favicon_aso=$_POST['xfavicon'];
 //$favicon_aso="xxx";
 
@@ -108,7 +113,7 @@ mysqli_close($connec);
 <? if ($xformulario=="S") { // si es formulario retorna a view formulario ?>
     <th scope="col"><div align="center"><a href="../matriculas/view_xfxoxrxmxuxlxaxrxixo.php?id=<?php  echo($idid); ?>">RETORNAR</a></div></th>
 <? } else { ?>
-    <th scope="col" class="semi-titulosform"><div align="center"><a href="buscar_pormizona.php">RETORNAR</a></div></th>
+    <th scope="col" class="semi-titulosform"><div align="center"><a href="buscar_pormizona.php?longitud=<?php  echo($longitud); ?>&latitud=<?php  echo($latitud); ?>&texto=<?php  echo($rsocial_aso); ?>">RETORNAR</a></div></th>
 <? } ?>
   </tr>
 </table>
