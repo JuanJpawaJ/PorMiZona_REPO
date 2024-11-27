@@ -64,6 +64,9 @@ $pass_aso=$tabla["pass_aso"];
 		$favicon_aso="f_pmz_bl.png";
 	}
 
+    $resultaso=mysqli_query($connec,"SELECT * FROM estado_51   where cod_est='$departamento_aso'");
+	$tablaaso =mysqli_fetch_array( $resultaso );
+	$departamentotxt_aso=$tablaaso["estado_est"];
 
 
 // $distrito_aso=$tabla["distrito_aso"];
@@ -115,8 +118,9 @@ $pass_aso=$tabla["pass_aso"];
     <td><? echo $gironeg_aso; ?></td>
   </tr>
   <tr>
-    <td><? echo "SU cod DEPARTAMENTO : "; ?></td>
-    <td><? echo $departamento_aso; ?></td>
+    <td><? echo "SU DEPARTAMENTO : "; ?></td>
+    <td><? echo $departamento_aso." ".$departamentotxt_aso; ?></td>
+    
   </tr>
 </table>
 
@@ -133,7 +137,7 @@ echo "En la opción [SOY PROPIETARIO]"."<br>"."<br>";
   </tr>
   <tr>
     <td><? echo "SU USUARIO  : "; ?></td>
-    <td><? echo $usua_aso; ?></td>
+    <td><? echo $email_aso; ?></td>
   </tr>
   <tr>
     <td><? echo "SU PASSWORD : "; ?></td>
