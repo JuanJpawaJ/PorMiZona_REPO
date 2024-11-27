@@ -42,10 +42,10 @@ $rsocial_aso=$_POST['xrsocial'];
 // echo "pass :".$pass_aso."<br>";
 // echo "emai :".$email_aso."<br>";
 // echo "cate :".$categoria_aso."<br>";
-// echo "pod  :".$productos_aso."<br>";
-// echo "lati :".$latitud_aso."<br>";
-// echo "long :".$longitud_aso."<br>";
-// echo "date :".$date_aso."<br>";
+ echo "pod  :".$productos_aso."<br>";
+ echo "lati :".$latitud_aso."<br>";
+ echo "long :".$longitud_aso."<br>";
+ echo "texto :".$rsocial_aso."<br>";
 // echo "favi :".$favicon_aso."<br>";
 // echo "publi :".$publicidad_aso."<br>";
 
