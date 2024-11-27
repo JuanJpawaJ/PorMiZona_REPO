@@ -169,15 +169,15 @@ $total=mysqli_num_rows($result);
 
 
 ?>
-<table width="778" border="1" align="center" cellpadding="0" cellspacing="0">
+<table width="839" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td height="77" align="center" class="tit_menu_sup">POR MI ZONA</td>
     </tr>
   <tr class="tit_menu_sup">
-    <td width="774" height="141" align="center" bgcolor="#0099CC"><table width="740" border="0" cellspacing="0" cellpadding="0">
+    <td width="835" height="141" align="center" bgcolor="#0099CC"><table width="788" border="0" cellspacing="0" cellpadding="0">
         <tr>
           <td height="99" colspan="2" align="center" bgcolor="#0099CC" class="tabla10" ><img src="../static/imgs/Logos/logo_pormizona_borde_bl.png" width="285" height="86"></td>
-          <td width="312" rowspan="3" align="center" bgcolor="#000000"  class="tabla10" >
+          <td width="360" rowspan="3" align="center" bgcolor="#000000"  class="tabla10" >
           <? if ($xxxciudad=="SI") { ?>
 	        <img src="img_ciudades/<? echo ($imgciudad) ?>" width="300" height="225">
 		  <? } else {   ?>
@@ -226,7 +226,7 @@ $total=mysqli_num_rows($result);
   <tr class="tit_menu_sup">
     <td height="188" valign="top" bgcolor="#FFFFCC">
       <!-- INICIO DE MUESTRA ITEMS -->
-      <table width="769" height="155" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" >
+      <table width="821" height="155" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" >
         
 		
 		
@@ -292,16 +292,16 @@ while ($tabla=mysqli_fetch_array($result)){
 ?>
         
         <tr bgcolor="#FFFFFF" class="tabla20">
-          <td width="767" height="153" valign="middle">
+          <td width="817" height="153" valign="middle">
           
               <div class="lista"><a href="viewasociado.php?xcod=<?php  echo($cod_aso); ?>">
 
-            <table width="751" border="0" cellspacing="0" cellpadding="1">
+            <table width="820" border="0" cellspacing="0" cellpadding="1">
               <tr>
                  <td width="150" rowspan="3" align="center" valign="middle"><img src="img_asociados/<? echo($favicon_aso); ?>" width="100" height="100"></td>
                  
-                <td width="418" height="41" align="left" bgcolor="#FFFFFF"><span class="rsocial"><?php echo($rsocial_aso) ?></span></td>
-                <td width="177" align="left" bgcolor="#FFFFFF"><span class="viewtexto"><?php echo($gironeg_aso) ?></span></td>
+                <td width="430" height="41" align="left" bgcolor="#FFFFFF"><span class="rsocial"><?php echo($rsocial_aso) ?></span></td>
+                <td width="234" align="left" bgcolor="#FFFFFF"><span class="viewtexto"><?php echo($gironeg_aso) ?></span></td>
               </tr>
               <tr>
                 <td height="37" align="left" bgcolor=#FFFFFF ><span class="viewtexto"><?php echo($direccion_aso) ?></span></td>
