@@ -47,7 +47,7 @@
 .rsocial {
 	color: #009;
 	font-weight: bold;
-		font-size: 18px;
+		font-size: 20px;
 }
 .PRECIO2 {
 	color: #999;

@@ -48,7 +48,7 @@ $latitud = $_POST['latitude'];
               <div class="titobligatorio">
                  La GEOLOCALIZACIÓN, son números que corresponden a coordenadas geográficas. Ejemplo: Latitud -16.458626685027895 y longitud -71.12705155985589.<br> <br>
 ¿POR QUÉ ES IMPORTANTE LA GEOLOCALIZACIÓN PARA SU NEGOCIO?<br>
-Para que sus clientes potenciales, haciendo uso de su ubicación actual, encuentren el producto de su necesidad en la tienda más cercana. Esta tienda es decir su negocio deberá estar plenamente identificado por la geolocalización.<br><br>
+Para que sus clientes potenciales, haciendo uso de su ubicación actual, encuentren el producto de su necesidad en la tienda más cercana. Esta tienda es decir su negocio deberá estar previamente identificado por la geolocalización.<br><br>
 ¿COMO PUBLICAR SU NEGOCIO?<br>
 Para obtener una ubicación precisa, ES RECOMENDABLE USAR UN EQUIPO MOVIL. Esto permitirá capturar la geolocalización exacta en el lugar donde se encuentra su negocio y publicar su tienda.<br>
 ¡No se preocupe por la geolocalización! El proceso es rápido y sencillo. Si tiene alguna duda o necesita ayuda, estamos aquí para asistir en cada paso.<br><br>
@@ -96,7 +96,7 @@ Para obtener una ubicación precisa, ES RECOMENDABLE USAR UN EQUIPO MOVIL. Esto 
            </div>
            <div class="campos_de_formulario">
               <label>Giro del negocio.</label>
-              <input type="text" class="campo_texto" name="xgironeg" placeholder="Ej. Boutique, Librería, Dentista, ferretería, etc."> 
+              <input type="text" class="campo_texto" name="xgironeg" placeholder="Ej. Boutique, Librería, Dentista, ferretería, etc." onkeyup= "this.value=this.value.toUpperCase();"> 
            </div>
          
            <div class="campos_de_formulario">
