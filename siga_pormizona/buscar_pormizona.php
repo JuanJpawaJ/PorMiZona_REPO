@@ -47,7 +47,7 @@
 .rsocial {
 	color: #009;
 	font-weight: bold;
-		font-size: 30px;
+		font-size: 40px;
 }
 .PRECIO2 {
 	color: #999;
@@ -60,6 +60,12 @@
 	font-size: 18px;
 	color: #009;
 }
+.viegiro {
+	font-family: "Arial";
+	font-size: 28px;
+	color: #009;
+}
+
 .viewdir {
 	font-family: "Arial";
 	font-size: 22px;
@@ -314,11 +320,11 @@ while ($tabla=mysqli_fetch_array($result)){
                 <td height="41" colspan="2" align="left" bgcolor="#FFFFFF"><span class="rsocial"><?php echo($rsocial_aso) ?></span></td>
                 </tr>
               <tr>
-                <td width="467" height="37" align="left" bgcolor=#FFFFFF ><span class="viewdir"><?php echo($gironeg_aso) ?></span></td>
-                <td width="264" height="37" align="left" bgcolor=#FFFFFF ><span class="viewdir"><?php echo($telf1_aso) ?></span></td>
+                <td width="467" height="37" align="left" bgcolor=#FFFFFF ><span class="viewgiro"><?php echo($gironeg_aso) ?></span></td>
+                <td width="264" height="37" align="left" bgcolor=#FFFFFF ><span class="viewgiro"><?php echo($telf1_aso) ?></span></td>
               </tr>
               <tr>
-                <td height="37" colspan="2" align="left" bgcolor=#FFFFFF ><span class="viewtexto"><?php echo($direccion_aso) ?></span></td>
+                <td height="37" colspan="2" align="left" bgcolor=#FFFFFF ><span class="viewdir"><?php echo($direccion_aso) ?></span></td>
                 </tr>
               <tr>
                 <td height="52" colspan="2" align="left" bgcolor=#FFFFFF ><span class="viewproductos">
