@@ -11,8 +11,8 @@
 
 $(document).ready(function(){
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showLocation);
-    } else { 
+		navigator.geolocation.getCurrentPosition(showLocation, showError); 
+	} else { 
         $("#location").html('Geolocation is not supported by this browser.');
     }
 });
@@ -38,6 +38,32 @@ function showLocation(position) {
 	});
 
 }
+
+function showError(error) { 
+    switch(error.code) { 
+         case error.PERMISSION_DENIED:
+             alert("Por favor, activa la geolocalización en tu dispositivo para continuar.");
+            window.location.href = "https://www.pormizona.com.pe/siga_pormizona/formingre1.php"; 
+// Cambia esta URL por la que desees redirigir break;
+          case error.POSITION_UNAVAILABLE:
+            alert("La información de ubicación no está disponible.");
+            window.location.href = "https://www.pormizona.com.pe";
+ // URL de redirección en caso de error de posición;
+           break;
+          case error.TIMEOUT:
+           alert("La solicitud de geolocalización ha caducado.");
+           window.location.href = "https://www.pormizona.com.pe";
+ // URL de redirección en caso de tiempo agotado;
+           break;
+          case error.UNKNOWN_ERROR:
+            alert("Ha ocurrido un error desconocido.");
+           window.location.href = "https://www.pormizona.com.pe"; 
+ // URL de redirección en caso de error desconocido;
+           break;
+		    }
+
+}
+
 </script>
 <!-- 
 <style type="text/css">
