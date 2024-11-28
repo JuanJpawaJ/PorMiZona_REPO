@@ -47,7 +47,7 @@
 .rsocial {
 	color: #009;
 	font-weight: bold;
-		font-size: 45px;
+		font-size: 48px;
 }
 .PRECIO2 {
 	color: #999;
@@ -62,7 +62,7 @@
 }
 .viegiro {
 	font-family: "Arial";
-	font-size: 30px;
+	font-size: 40px;
 	color: #009;
 }
 
@@ -73,7 +73,7 @@
 }
 .viewproducto {
 	font-family: "Arial";
-	font-size: 18px;
+	font-size: 28px;
 	color: #009;
 }
 
