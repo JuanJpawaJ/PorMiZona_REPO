@@ -147,6 +147,7 @@ setlocale(LC_ALL, "sp");
 $longitud = $_GET['longitud'];
 $latitud = $_GET['latitud'];
 $bxproducto=$_GET['texto'];
+$bxproducto=trim($bxproducto);
 $ciudad = $_GET['ciudad']; //solo llega el codigo de ciudad
 
 //if(strlen($xfi)==0){
