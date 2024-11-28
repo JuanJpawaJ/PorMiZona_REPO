@@ -271,7 +271,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         </table></td>
       </tr>
       <tr>
-        <td height="32" colspan="2">Acceso solo a propietarios:<a href="ingre.php?xcod=<? echo ($cod_aso);?>&xiclave=SI"><img src="imagenes/bot_soypropietario.png" width="156" height="23" style="border:0;" onMouseOver="this.style.border='solid  2px #FFFFFF';" onMouseOut="this.style.border=0;" border="0"></a></td>
+        <td height="32" colspan="2">Acceso solo a propietarios:<a href="ingre.php?xcod=<? echo ($cod_aso);?>&xiclave=SI">" SOY PROPIETARIO "</a></td>
  
       </tr>
     </table>
