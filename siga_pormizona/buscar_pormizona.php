@@ -60,6 +60,12 @@
 	font-size: 18px;
 	color: #009;
 }
+.viewproducto {
+	font-family: "Arial";
+	font-size: 10px;
+	color: #009;
+}
+
 .tachado {
     text-decoration:line-through;
     color: red;
@@ -298,17 +304,19 @@ while ($tabla=mysqli_fetch_array($result)){
 
             <table width="851" border="0" cellspacing="0" cellpadding="1">
               <tr>
-                 <td width="150" rowspan="3" align="center" valign="middle"><img src="img_asociados/<? echo($favicon_aso); ?>" width="100" height="100"></td>
+                 <td width="150" rowspan="4" align="center" valign="middle"><img src="img_asociados/<? echo($favicon_aso); ?>" width="100" height="100"></td>
                  
-                <td width="487" height="41" align="left" bgcolor="#FFFFFF"><span class="rsocial"><?php echo($rsocial_aso) ?></span></td>
-                <td width="208" align="left" bgcolor="#FFFFFF"><span class="viewtexto"><?php echo($gironeg_aso) ?></span></td>
+                <td height="41" colspan="2" align="left" bgcolor="#FFFFFF"><span class="rsocial"><?php echo($rsocial_aso) ?></span></td>
+                </tr>
+              <tr>
+                <td width="467" height="37" align="left" bgcolor=#FFFFFF ><span class="viewtexto"><?php echo($gironeg_aso) ?></span></td>
+                <td width="228" height="37" align="left" bgcolor=#FFFFFF ><span class="viewtexto"><?php echo($telf1_aso) ?></span></td>
               </tr>
               <tr>
-                <td height="37" align="left" bgcolor=#FFFFFF ><span class="viewtexto"><?php echo($direccion_aso) ?></span></td>
-                <td height="37" align="left" bgcolor=#FFFFFF ><span class="viewtexto"><?php echo($telf1_aso) ?></span></td>
-              </tr>
+                <td height="37" colspan="2" align="left" bgcolor=#FFFFFF ><span class="viewtexto"><?php echo($direccion_aso) ?></span></td>
+                </tr>
               <tr>
-                <td height="52" colspan="2" align="left" bgcolor=#FFFFFF ><span class="viewtexto">
+                <td height="52" colspan="2" align="left" bgcolor=#FFFFFF ><span class="viewproductos">
                 <?php echo($productos_aso) ?> </span>
                 </td>
               </tr>
