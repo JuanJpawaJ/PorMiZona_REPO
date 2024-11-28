@@ -129,7 +129,7 @@ $pass_aso=$tabla["pass_aso"];
 
 <table width="300" border="1" cellspacing="1" cellpadding="1">
   <tr>
-    <td><? 
+    <td colspan="2"><? 
 echo "Última oportunidad de TOMAR NOTA de su USUARIO y CLAVE "."<br>";
 echo "Recuerde: Ud. podrá realizar las modificaciones necesarias después del paso 3"."<br>";
 echo "En la opción [SOY PROPIETARIO]"."<br>"."<br>";
