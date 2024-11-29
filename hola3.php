@@ -111,30 +111,8 @@ setlocale(LC_ALL, "sp");
            $result=mysqli_query($connec,"select * from asociado_51 where view01_aso='S' ");
            $total=mysqli_num_rows($result);        
            while ($tabla=mysqli_fetch_array($result)){
-	         $id=$tabla["id"];
-	         $cod_aso=$tabla["cod_aso"];
-	         $pais_aso=$tabla["pais_aso"];
-	         $rsocial_aso=$tabla["rsocial_aso"];
-	         $direccion_aso=$tabla["direccion_aso"];
-	         $distrito_aso=$tabla["distrito_aso"];
-	         $provincia_aso=$tabla["provincia_aso"];
-	         $estado_aso=$tabla["estado_aso"];
-	         $referencia_aso=$tabla["referencia_aso"];
 	         $gironeg_aso=$tabla["gironeg_aso"];
-	         $telf1_aso=$tabla["telf1_aso"];
-	         $telf2_aso=$tabla["telf2_aso"];
-	         $email_aso=$tabla["email_aso"];
-	         $date_aso=$tabla["date_aso"];
-	         $categoria_aso=$tabla["categoria_aso"];
-	         $productos_aso=$tabla["productos_aso"];
-	         $favicon_aso=$tabla["favicon_aso"];
 	         $logo_aso=$tabla["logo_aso"];
-	         $link01_aso=$tabla["link01_aso"];
-	         if(strlen($favicon_aso)==0) {
-	    	    $favicon_aso="f_pmz_bl.png";
-	         }
-	         $latitud_aso=$tabla["latitud_aso"];
-	         $longitud_aso=$tabla["longitud_aso"];
              ?>       
              <div class="empresa">
                 <a href=" <? echo($link01_aso); ?> "> <img src="siga_pormizona/img_asociados/<? echo($logo_aso); ?>"  ></a>
@@ -145,28 +123,26 @@ setlocale(LC_ALL, "sp");
  </div>
 
 
-   <!---
+   
     <div class="contenedor_marcas">
         <h3>NUESTROS PRINCIPALES CLIENTES</h3>
         <div class="contenedor_slider">
             <div class="slider-track" id="sliderTrack">
-                <div class="slide"><img
-                        src="static/imgs/Proporciones_marcas/marca_1_23_40.png"
-                        alt=""></div>
-                <div class="slide"><img
-                        src="static/imgs/Proporciones_marcas/marca_2_23_40.png"
-                        alt=""></div>
-                <div class="slide"><img
-                        src="static/imgs/Proporciones_marcas/marca_3_23_40.png"
-                        alt=""></div>
-                <div class="slide"><img
-                        src="static/imgs/Proporciones_marcas/marca_4_23_40.png"
-                        alt=""></div>
+                <?while ($tabla=mysqli_fetch_array($result)){
+                $gironeg_aso=$tabla["gironeg_aso"];
+                $logo_aso=$tabla["logo_aso"];
+                ?>       
+                <!--<div class="empresa">
+                //   <a href=" <? // echo($link01_aso); ?> "> <img src="siga_pormizona/img_asociados/<? // echo($logo_aso); ?>"  ></a>
+                <?//  echo($gironeg_aso); ?>                
+                </div>-->
+                <div class="slide"><img src="siga_pormizona/img_asociados/<? echo($logo_aso); ?>"  ></div>
+                <? } ?>
             </div>
         </div>
     </div>
 
-    <div class="contenedor_marcas">
+    <<!--div class="contenedor_marcas">
         <div class="contenedor_slider">
             <div class="slider-track" id="sliderTrack2">
                 <div class="slide"><img
@@ -183,8 +159,8 @@ setlocale(LC_ALL, "sp");
                         alt=""></div>
             </div>
         </div>
-    </div>
--->
+    </div>-->
+
 
     
 
