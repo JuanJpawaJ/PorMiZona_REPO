@@ -116,7 +116,7 @@ setlocale(LC_ALL, "sp");
 
    
     <div class="contenedor_marcas">
-        <h3>NUESTROS PRINCIPALES CLIENTES</h3>
+        <h3>EMPRESAS ASOCIADAS</h3>
         <div class="contenedor_slider">
             <div class="slider-track" id="sliderTrack">
                 <?while ($tabla=mysqli_fetch_array($result)){
@@ -133,7 +133,7 @@ setlocale(LC_ALL, "sp");
         </div>
     </div>
 
-    <<!--div class="contenedor_marcas">
+    <!--div class="contenedor_marcas">
         <div class="contenedor_slider">
             <div class="slider-track" id="sliderTrack2">
                 <div class="slide"><img
