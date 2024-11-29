@@ -109,16 +109,7 @@ setlocale(LC_ALL, "sp");
    
            $titulo="LISTA POR MI ZONA con filtro";
            $result=mysqli_query($connec,"select * from asociado_51 where view01_aso='S' ");
-           $total=mysqli_num_rows($result);        
-           while ($tabla=mysqli_fetch_array($result)){
-	         $gironeg_aso=$tabla["gironeg_aso"];
-	         $logo_aso=$tabla["logo_aso"];
-             ?>       
-             <div class="empresa">
-                <a href=" <? echo($link01_aso); ?> "> <img src="siga_pormizona/img_asociados/<? echo($logo_aso); ?>"  ></a>
-            <?  echo($gironeg_aso); ?>                
-            </div>
-      <? } ?>
+           $total=mysqli_num_rows($result); ?>
     </div>
  </div>
 
