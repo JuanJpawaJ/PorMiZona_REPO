@@ -116,24 +116,33 @@ setlocale(LC_ALL, "sp");
 
    
     <div class="contenedor_marcas">
-        <h3>NUESTROS PRINCIPALES CLIENTES</h3>
+        <h3>EMPRESAS ASOCIADAS</h3>
         <div class="contenedor_slider">
             <div class="slider-track" id="sliderTrack">
-                <?while ($tabla=mysqli_fetch_array($result)){
+                <? while ($tabla=mysqli_fetch_array($result)){
                 $gironeg_aso=$tabla["gironeg_aso"];
                 $logo_aso=$tabla["logo_aso"];
+                $link01_aso=$tabla["link01_aso"];
                 ?>       
                 <!--<div class="empresa">
                 //   <a href=" <? // echo($link01_aso); ?> "> <img src="siga_pormizona/img_asociados/<? // echo($logo_aso); ?>"  ></a>
                 <?//  echo($gironeg_aso); ?>                
                 </div>-->
-                <div class="slide"><img src="siga_pormizona/img_asociados/<? echo($logo_aso); ?>"  ></div>
+<div class="slide">
+    <a href="<?php echo $link01_aso; ?>">
+        <img src="siga_pormizona/img_asociados/<?php echo $logo_aso; ?>" width="200" height="auto" alt="Logo">
+    
+    <p style="color: white; text-align: center;"><?php echo $gironeg_aso; ?></p>
+    
+    </a>
+</div>
+                
                 <? } ?>
             </div>
         </div>
     </div>
 
-    <<!--div class="contenedor_marcas">
+    <!--div class="contenedor_marcas">
         <div class="contenedor_slider">
             <div class="slider-track" id="sliderTrack2">
                 <div class="slide"><img
