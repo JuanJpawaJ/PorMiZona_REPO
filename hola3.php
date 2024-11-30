@@ -131,8 +131,9 @@ setlocale(LC_ALL, "sp");
 <div class="slide">
     <a href="<?php echo $link01_aso; ?>">
         <img src="siga_pormizona/img_asociados/<?php echo $logo_aso; ?>" width="200" height="auto" alt="Logo">
-    </a>
+    
     <p style="color: white;"><?php echo $gironeg_aso; ?></p>
+    </a>
 </div>
                 
                 <? } ?>
