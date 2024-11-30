@@ -128,7 +128,9 @@ setlocale(LC_ALL, "sp");
                 //   <a href=" <? // echo($link01_aso); ?> "> <img src="siga_pormizona/img_asociados/<? // echo($logo_aso); ?>"  ></a>
                 <?//  echo($gironeg_aso); ?>                
                 </div>-->
-                <div class="slide"><a href=" <? echo($link01_aso); ?> "> <img src="siga_pormizona/img_asociados/<? echo($logo_aso); ?>" width="200" height="%" > </a> </div>
+                <div class="slide"><a href=" <? echo($link01_aso); ?> "> <img src="siga_pormizona/img_asociados/<? echo($logo_aso); ?>" width="200" height="%" > </a> 
+                <? echo($gironeg_aso); ?>"
+                </div>
                 
                 <? } ?>
             </div>
