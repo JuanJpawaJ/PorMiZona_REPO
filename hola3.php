@@ -119,15 +119,17 @@ setlocale(LC_ALL, "sp");
         <h3>EMPRESAS ASOCIADAS</h3>
         <div class="contenedor_slider">
             <div class="slider-track" id="sliderTrack">
-                <?while ($tabla=mysqli_fetch_array($result)){
+                <? while ($tabla=mysqli_fetch_array($result)){
                 $gironeg_aso=$tabla["gironeg_aso"];
                 $logo_aso=$tabla["logo_aso"];
+                $link01_aso=$tabla["link01_aso"];
                 ?>       
                 <!--<div class="empresa">
                 //   <a href=" <? // echo($link01_aso); ?> "> <img src="siga_pormizona/img_asociados/<? // echo($logo_aso); ?>"  ></a>
                 <?//  echo($gironeg_aso); ?>                
                 </div>-->
-                <div class="slide"><img src="siga_pormizona/img_asociados/<? echo($logo_aso); ?>" width="200" height="%" ></div>
+                <div class="slide"><a href=" <? echo($link01_aso); ?> "> <img src="siga_pormizona/img_asociados/<? echo($logo_aso); ?>" width="200" height="%" > </a> </div>
+                
                 <? } ?>
             </div>
         </div>
