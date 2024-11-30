@@ -86,8 +86,8 @@
 
         .contenedor_slider .slide{
             /* background-color: black; */
-            width:235px;
-            height:115px;
+          /*  width:235px;
+            height:115px; */
             display: flex;
             justify-content: center;
 
