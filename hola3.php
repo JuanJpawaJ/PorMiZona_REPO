@@ -99,7 +99,6 @@ setlocale(LC_ALL, "sp");
     </div>
 
     <div class="empresas_asociadas">
-        <h1>EMPRESAS ASOCIADAS</h1>
         <div class="contenedor_empresas">
            <?   
            include("connec_sql_new.php");
