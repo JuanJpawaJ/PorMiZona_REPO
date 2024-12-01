@@ -50,6 +50,14 @@
                 top:1rem;
                 left:1rem;
                 font-weight: var(--fuente_bold);
+                border-radius: 1rem;
+                border: 1px solid white;
+                padding: 0.4rem;
+            }
+
+            .contenido_total > .contenido > .contenido_2 > .seleccion_ubicacion:hover{
+                border: 1px solid white;
+                background-color: var(--color_verde_1);
             }
 
             .contenido_total > .contenido > .contenido_2 > .principal{

@@ -123,6 +123,8 @@ nav.color{
             transition: background-color 0.3s ease;
         }
 
+        
+
         nav > ul#menu > li > a:hover, nav > a:hover{
             background-color: var(--color_rojo_1);
         }
@@ -137,7 +139,7 @@ nav.color{
 
 @media only screen and (max-width: 1000px) {
     nav{
-        padding: 0 0.5rem;
+        padding: 0 0.4rem;
     }
     
     nav > button#boton_hamburguesa {
@@ -161,10 +163,14 @@ nav.color{
     }
 
     nav > .cont_logo {
-        height: 55px;
+        height: 50px;
     }
 
-    
-
+    nav > a{
+        background-color: var(--color_amarillo_0);
+        padding: 0.5rem;
+        color: var(--color_negro);
+        font-weight: var(--fuente_extrabold);
+    }
 
 }
