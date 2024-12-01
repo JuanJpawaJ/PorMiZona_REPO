@@ -43,15 +43,15 @@ function showError(error) {
     switch(error.code) { 
          case error.PERMISSION_DENIED:
              alert("Por favor, activa el ACCESO A LA UBICACIÓN en tu dispositivo. Esperamos gracias...");
-			 //document.body.innerHTML = '<div> <img src="../imagenes_1/ubica_opciones.jpg" alt=""> </div>'
+			 document.body.innerHTML = '<div> <img src="../imagenes_1/ubica_opciones.jpg" alt=""> </div>'
             //<td height="402" align="center"><img src="../imagenes_1/titulo_catalogo_publicitario.jpg" width="947" height="400" /></td>			 
 		
  // Inserta la imagen en el cuerpo del documento 
- var img = document.createElement('img');
- img.src = '../imagenes_1/ubica_opciones.jpg'; // Cambia esta ruta por la de tu imagen 
- img.alt = 'Activa tu ubicación';
- document.body.appendChild(img);
-			
+// var img = document.createElement('img');
+// img.src = '../imagenes_1/ubica_opciones.jpg'; // Cambia esta ruta por la de tu imagen 
+// img.alt = 'Activa tu ubicación';
+// document.body.appendChild(img);
+break;			
 		
 			 
             window.location.href = "https://www.pormizona.com.pe"; 
