@@ -42,7 +42,7 @@ function showLocation(position) {
 function showError(error) { 
     switch(error.code) { 
          case error.PERMISSION_DENIED:
-             alert("Por favor, activa el ACCESO A LA UBICACIÓN en tu dispositivo. Esperamos gracias.");
+             alert("Por favor, activa el ACCESO A LA UBICACIÓN en tu dispositivo. Esperamos gracias....");
 			 document.body.innerHTML += '<div id="geoloc-image"><img src="..imagenes_1/ubica_opciones.jpg" alt="Activa tu ubicación"></div>';
             window.location.href = "https://www.pormizona.com.pe"; 
 // Cambia esta URL por la que desees redirigir break;
