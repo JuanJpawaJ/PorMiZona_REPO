@@ -163,7 +163,7 @@ if ($xdelreg=="SIDELREG") {
     <td width="679" align="center" bgcolor="#FFFFCC"><table width="912" border="0" cellspacing="0" cellpadding="0">
       <tr>
         <td width="63" height="17" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=SMRP">TODO</a></td>
-        <td width="64" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=S">SYSCOMP</a></td>
+        <td width="64" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=Y">FECH.HOY</a></td>
         <td width="98" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=M">M.BONITA</a></td>
         <td width="89" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=R">R.STORE</a></td>
         <td width="88" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=P">PERFUMERIA</a></td>
@@ -186,8 +186,8 @@ if ($xdelreg=="SIDELREG") {
         <td height="17" colspan="5" align="center" class="tabla10">
 		<? if ($xgl=="SMRD") {
 			 echo "TODO";
-		   }elseif ($xgl=="S") {
-			 echo "SYSCOMPUTER";			   
+		   }elseif ($xgl=="Y") {
+			 $orden="Fech. Hoy";			   
 		   }elseif ($xgl=="M") {
 			 echo "MUJER BONITA";			
 		   }elseif ($xgl=="R"){   
@@ -242,6 +242,8 @@ if ($xdelreg=="SIDELREG") {
 if(strlen($bxproducto)==0){
 	if ($xgl=="SMRD") {
         $result=mysqli_query($connec,"select * from asociado_51 order by rsocial_aso");
+	}elseif ($xgl=="Y") {
+        $result=mysqli_query($connec,"select * from asociado_51 order by fechhoy_aso");
 	}else{
         $result=mysqli_query($connec,"select * from asociado_51 where grupolista_it like '%$xgl%' order by rsocial_aso");
 	}
