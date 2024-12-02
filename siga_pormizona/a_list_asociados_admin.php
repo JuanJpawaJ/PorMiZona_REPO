@@ -187,7 +187,7 @@ if ($xdelreg=="SIDELREG") {
 		<? if ($xgl=="SMRD") {
 			 echo "TODO";
 		   }elseif ($xgl=="Y") {
-			 $orden="Fech. Hoy";			   
+			  echo "X FECHA HOY";			   
 		   }elseif ($xgl=="M") {
 			 echo "MUJER BONITA";			
 		   }elseif ($xgl=="R"){   
