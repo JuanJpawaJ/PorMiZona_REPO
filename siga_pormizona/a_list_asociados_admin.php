@@ -243,7 +243,7 @@ if(strlen($bxproducto)==0){
 	if ($xgl=="SMRD") {
         $result=mysqli_query($connec,"select * from asociado_51 order by rsocial_aso");
 	}elseif ($xgl=="Y") {
-        $result=mysqli_query($connec,"select * from asociado_51 order by fechhoy_aso");
+        $result=mysqli_query($connec,"select * from asociado_51 order by datehoy_aso");
 	}else{
         $result=mysqli_query($connec,"select * from asociado_51 where grupolista_it like '%$xgl%' order by rsocial_aso");
 	}
