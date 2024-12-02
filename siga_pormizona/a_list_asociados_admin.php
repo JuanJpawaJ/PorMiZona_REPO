@@ -163,7 +163,7 @@ if ($xdelreg=="SIDELREG") {
     <td width="679" align="center" bgcolor="#FFFFCC"><table width="912" border="0" cellspacing="0" cellpadding="0">
       <tr>
         <td width="63" height="17" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=SMRP">TODO</a></td>
-        <td width="64" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=Y">FECH.HOY</a></td>
+        <td width="64" align="center" class="tabla10"><a href="a_list_asociados_admin.php?xgl=Y">FECH.HOY</a></td>
         <td width="98" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=M">M.BONITA</a></td>
         <td width="89" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=R">R.STORE</a></td>
         <td width="88" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=P">PERFUMERIA</a></td>
