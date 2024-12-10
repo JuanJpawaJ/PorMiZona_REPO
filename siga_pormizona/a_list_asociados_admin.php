@@ -140,7 +140,7 @@ if ($xdelreg=="SIDELREG") {
 
    $idx=$_GET['idx']; 
    $delcod=$_GET['delcod'];
-   $query = "delete from a_items where codigo_it ='$delcod'";  
+   $query = "delete from asociado_51 where codigo_it ='$delcod'";  
    $result = mysqli_query($connec,$query); 
   
    $xdelreg="NO";
