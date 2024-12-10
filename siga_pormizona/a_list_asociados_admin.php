@@ -333,7 +333,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 
         <td align="center" bgcolor="#FFCC66"><a href="edit_asociados_admin.php?xcod=<?php  echo($cod_aso); ?>&xview=<?php  echo("ADMIN"); ?>&xareg=NNOOO&xmodi=NOOOOO&xdelreg=NOOOOO"><img src="iconos/ico_editar.png" width="30" height="30"></a></td>
 
-        <td align="center"><a href="a_list_items_admin.php?delcod=<?php echo($codigo_it);?>&xdelreg=<?php echo("SIDELREG");?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">X</a></td>
+        <td align="center"><a href="a_list_items_admin.php?delcod=<?php echo($cod_aso);?>&xdelreg=<?php echo("SIDELREG");?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">X</a></td>
       </tr>
       <?php 
 	}
