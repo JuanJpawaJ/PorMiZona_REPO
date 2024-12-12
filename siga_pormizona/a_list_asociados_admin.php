@@ -142,7 +142,7 @@ if ($xdelreg=="SIDELREG") {
    $idx=$_GET['idx']; 
    $delcod=$_GET['delcod'];
 
-echo ("AHora estor dentro dl IFFFFF". "SIDELREG" . "$delcod"." ".$delcod);
+echo ("AHora estor dentro dl IFFFFF". "SIDELREG" . "delcod=====: "." ".$delcod);
 
    $query = "delete from asociado_51 where codigo_aso ='$delcod'";  
    $result = mysqli_query($connec,$query); 
