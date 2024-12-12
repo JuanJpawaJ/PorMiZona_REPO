@@ -33,7 +33,7 @@ setlocale(LC_ALL, "sp");
 
 $bxproducto=$_GET['bxproducto'];
 // ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
-   $xdelreg="NOOO";
+  // $xdelreg="NOOO";
 $xareg=$_GET['xareg'];
 $xmodi=$_GET['xmodi'];
 $xdelreg=$_GET['xdelreg'];
@@ -41,7 +41,8 @@ $viewmodi=$_GET['viewmodi'];
 // ++++$xtipoi=$_GET['xtipoi'];
 
 $xgl=$_GET['xgl']; //CMRD
-
+echo (" ESTOY ENNNNN....  delreg:". $xdekreg. " xmodi..: ". $xdelreg);
+echo (" ESTOY ENNNNN....  delreg:". $xdekreg. " xmodi..: ". $xdelreg);
 		
 if ($xareg=="SIAREG") {
   // genera el codigo de 6 digitos en base al max id anterior
