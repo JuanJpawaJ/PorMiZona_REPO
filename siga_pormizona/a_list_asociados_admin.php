@@ -138,9 +138,12 @@ $sql="UPDATE a_items SET codfabrica_it='$xcodfab',producto_it='$xproducto',produ
 // ********++  DEL REGISTRO
 if ($xdelreg=="SIDELREG") {
 	
-
+ 
    $idx=$_GET['idx']; 
    $delcod=$_GET['delcod'];
+
+echo ("AHora estor dentro dl IFFFFF". "SIDELREG" . "$delcod"." ".$delcod);
+
    $query = "delete from asociado_51 where codigo_aso ='$delcod'";  
    $result = mysqli_query($connec,$query); 
   
@@ -332,7 +335,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         <td bgcolor="#FFCC66" align="center"><a href="img_asociados/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=02"><img src="iconos/ico_imagen.png" width="30" height="30"></a></td>                                                                  
         <td bgcolor="#FFCC66" align="center"><a href="img_asociados/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=03"><img src="iconos/ico_logo.png" width="30" height="30"></a></td>                                                                  
 
-        <td align="center" bgcolor="#FFCC66"><a href="edit_asociados_admin.php?xcod=<?php  echo($cod_aso); ?>&xview=<?php  echo("ADMIN"); ?>&xareg=NNOOO&xmodi=NOOOOO&xdelreg=NOOOOO"><img src="iconos/ico_editar.png" width="30" height="30"></a></td>
+        <td align="center" bgcolor="#FFCC66" class="tabla10"><a href="edit_asociados_admin.php?xcod=<?php  echo($cod_aso); ?>&xview=<?php  echo("ADMIN"); ?>&xareg=NNOOO&xmodi=NOOOOO&xdelreg=NOOOOO"><img src="iconos/ico_editar.png" width="30" height="30"></a></td>
 
         <td align="center"><a href="a_list_asociados_admin.php?delcod=<?php echo($cod_aso);?>&xdelreg=<?php echo("SIDELREG");?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">X</a></td>
         
