@@ -41,8 +41,6 @@ $viewmodi=$_GET['viewmodi'];
 // ++++$xtipoi=$_GET['xtipoi'];
 
 $xgl=$_GET['xgl']; //CMRD
-echo (" ESTOY ENNNNN....  delreg:". $xdelreg. " xmodi..: ". $xmodi);
-echo (" ESTOY ENNNNN....  delreg:". $xdelreg. " xmodi..: ". $xmodi);
 		
 if ($xareg=="SIAREG") {
   // genera el codigo de 6 digitos en base al max id anterior
@@ -144,7 +142,7 @@ if ($xdelreg=="SIDELREG") {
 
 echo ("AHora estor dentro dl IFFFFF". "SIDELREG" . "delcod=====: "." ".$delcod);
 
-   $query = "delete from asociado_51 where codigo_aso ='$delcod'";  
+   $query = "delete from asociado_51 where cod_aso ='$delcod'";  
    $result = mysqli_query($connec,$query); 
   
    $xdelreg="NO";
