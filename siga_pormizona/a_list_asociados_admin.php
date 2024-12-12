@@ -41,8 +41,8 @@ $viewmodi=$_GET['viewmodi'];
 // ++++$xtipoi=$_GET['xtipoi'];
 
 $xgl=$_GET['xgl']; //CMRD
-echo (" ESTOY ENNNNN....  delreg:". $xdekreg. " xmodi..: ". $xdelreg);
-echo (" ESTOY ENNNNN....  delreg:". $xdekreg. " xmodi..: ". $xdelreg);
+echo (" ESTOY ENNNNN....  delreg:". $xdelreg. " xmodi..: ". $xmodi);
+echo (" ESTOY ENNNNN....  delreg:". $xdelreg. " xmodi..: ". $xmodi);
 		
 if ($xareg=="SIAREG") {
   // genera el codigo de 6 digitos en base al max id anterior
