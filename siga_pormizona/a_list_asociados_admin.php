@@ -248,7 +248,8 @@ if(strlen($bxproducto)==0){
 		echo ( "YA ESTOY AQUIIIIIIIIIIIIIIII YYY");
         $result=mysqli_query($connec,"select * from asociado_51 order by datehoy_aso");
 	}else{
-        $result=mysqli_query($connec,"select * from asociado_51 where grupolista_it like '%$xgl%' order by rsocial_aso");
+		$result=mysqli_query($connec,"select * from asociado_51 order by rsocial_aso");
+        //$result=mysqli_query($connec,"select * from asociado_51 where grupolista_it like '%$xgl%' order by rsocial_aso");
 	}
 } else {
 $bxproducto1=trim($bxproducto);
