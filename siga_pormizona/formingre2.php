@@ -30,7 +30,7 @@ $cod_aso = $_GET['xcod'];
     <img src="imagenes/logo_dencuentrop.png" alt="logo" class="logo">
 </nav>
 <div class="barra_titulo">
-     <h2>           *CONTINUE CON EL PASO 3 - REGISTRE SU NEGOCIO COMPLETAMENTE GRATIS</h2>
+     <h2>           *REGISTRE SU NEGOCIO COMPLETAMENTE GRATIS</h2>
 </div>
 <div class="exteriorform">
    <div class="fondo_formulario">
@@ -82,6 +82,8 @@ $pass_aso=$tabla["pass_aso"];
 // $publicidad_aso=$tabla["publicidad_aso"];
 
 ?>
+<h2 class="semi-titulos">PASO 3...</h2>
+
 <h2 class="semi-titulos">Ud. ha completado el Paso 01</h2>
 <table width="300" border="1" cellspacing="1" cellpadding="1">
   <tr>

@@ -116,8 +116,14 @@ mysqli_close($connec);
    <!--  <th scope="col" class="semi-titulosform"><div align="center"><a href="buscar_pormizona.php?longitud=<?php  echo($longitud); ?>&latitud=<?php  echo($latitud); ?>&texto=<?php  echo($rsocial_aso); ?>">RETORNAR</a></div></th> -->
     
   <?  // Redirección automática a la siguiente página
-     header("Location: buscar_pormizona.php?longitud=$longitud&latitud=$latitud&texto=$rsocial_aso");
-     exit(); // Asegúrate de llamar a exit después de la redirección
+    // header("Location: buscar_pormizona.php?longitud=$longitud&latitud=$latitud&texto=$rsocial_aso");
+    // exit(); // Asegúrate de llamar a exit después de la redirección
+ 
+ 	 echo '<script type="text/javascript">';
+	 echo 'window.location.href="buscar_pormizona.php?longitud=' . $longitud . '&latitud='.$latitud. '&texto='. $rsocial_aso.' ";';
+	 echo '</script>';
+	 exit();
+
     
  } ?>
   </tr>
