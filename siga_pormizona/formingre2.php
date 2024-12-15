@@ -30,7 +30,7 @@ $cod_aso = $_GET['xcod'];
     <img src="imagenes/logo_dencuentrop.png" alt="logo" class="logo">
 </nav>
 <div class="barra_titulo">
-     <h2>           *REGISTRE SU NEGOCIO COMPLETAMENTE GRATIS</h2>
+     <h2>           *CONTINUE CON EL PASO 3 - REGISTRE SU NEGOCIO COMPLETAMENTE GRATIS</h2>
 </div>
 <div class="exteriorform">
    <div class="fondo_formulario">
