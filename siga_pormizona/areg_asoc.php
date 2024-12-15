@@ -160,7 +160,7 @@ mysqli_close($connec);
    <? 
    echo "estoy aqui  y voy al header...";
     // Redirección automática a la siguiente página
-     header("Location: formingre2.php?xcod=$cod_aso");
+     header("Location: https://www.pormizona.com.pe/formingre2.php?xcod=$cod_aso");
 	 exit(); // Asegúrate de llamar a exit después de la redirección
     
  } ?>
