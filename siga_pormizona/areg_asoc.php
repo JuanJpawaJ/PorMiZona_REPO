@@ -161,8 +161,14 @@ mysqli_close($connec);
    echo "estoy aqui  y voy al header https:// www.. sin el cod.";
     // Redirección automática a la siguiente página
    //  header("Location: https://www.pormizona.com.pe/siga_pormizona/formingre2.php?xcod=$cod_aso");
-  header("Location: https://www.pormizona.com.pe/siga_pormizona/formingre2.php");
-	 exit(); // Asegúrate de llamar a exit después de la redirección
+    
+	// header("Location: https://www.pormizona.com.pe/siga_pormizona/formingre2.php");
+	 //exit(); // Asegúrate de llamar a exit después de la redirección
+	 
+	 echo '<script type="text/javascript">';
+	 echo 'window.location.href="formingre2.php?xcod=' . $cod_aso . '";';
+	 echo '</script>';
+	 exit();
     
  } ?>
   </tr>
