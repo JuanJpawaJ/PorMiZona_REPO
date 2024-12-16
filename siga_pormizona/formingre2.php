@@ -167,7 +167,7 @@ echo "En la opción [SOY PROPIETARIO]"."<br>"."<br>";
                 <input type="text" value="Perú" disabled class="desactivado campo_texto"> 
                </div>
 
-               <div class="otros_datos">
+             
                 
                 <div class="campos_de_formulario">
                     <label>Provincia</label>
@@ -179,7 +179,7 @@ echo "En la opción [SOY PROPIETARIO]"."<br>"."<br>";
                     <input type="text" class="campo_texto agrandar" name="xdistrito" placeholder="Ejemplo: Yanahuara"> 
                 </div>
 
-              </div>        
+                    
                <div class="campos_de_formulario campo_fondo_texto">
                     <label>Referencia</label>
                     <textarea  id="" cols="5" rows="1" name="xreferencia" placeholder="Ejemplo: A 2 cuadras de la Plaza de Armas" class="campo_grande" ></textarea>
