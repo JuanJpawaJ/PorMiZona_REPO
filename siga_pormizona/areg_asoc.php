@@ -157,19 +157,9 @@ mysqli_close($connec);
     <th scope="col"><div align="center"><a href="formingre1.php?id=<?php  echo($idid); ?>">ERROR RETORNAR</a></div></th>
 <? } else { ?>
     <!--- <th scope="col" class="semi-titulosform"><div align="center"><a href="formingre2.php?xcod=<?php  //echo($cod_aso); ?>">CONTINUAR CON EL PASO 3</a></div></th> -->
-   <? 
-  
-    // Redirección automática a la siguiente página
-   //  header("Location: https://www.pormizona.com.pe/siga_pormizona/formingre2.php?xcod=$cod_aso");
-    
-	// header("Location: https://www.pormizona.com.pe/siga_pormizona/formingre2.php");
-	 //exit(); // Asegúrate de llamar a exit después de la redirección
-	 
-
- ?>
- <script type="text/javascript">
-   window.location.href = "formingre2.php?xcod=<?php echo $cod_aso; ?>";
- </script>
+    <script type="text/javascript">
+       window.location.href = "formingre2.php?xcod=<?php echo $cod_aso; ?>";
+    </script>
     
 <? } ?>
   </tr>

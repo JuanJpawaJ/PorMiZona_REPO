@@ -113,19 +113,12 @@ mysqli_close($connec);
 <? if ($xformulario=="S") { // si es formulario retorna a view formulario ?>
     <th scope="col"><div align="center"><a href="../matriculas/view_xfxoxrxmxuxlxaxrxixo.php?id=<?php  echo($idid); ?>">RETORNAR</a></div></th>
 <? } else { ?>
-   <!--  <th scope="col" class="semi-titulosform"><div align="center"><a href="buscar_pormizona.php?longitud=<?php  echo($longitud); ?>&latitud=<?php  echo($latitud); ?>&texto=<?php  echo($rsocial_aso); ?>">RETORNAR</a></div></th> -->
-    
-  <?  // Redirección automática a la siguiente página
-    // header("Location: buscar_pormizona.php?longitud=$longitud&latitud=$latitud&texto=$rsocial_aso");
-    // exit(); // Asegúrate de llamar a exit después de la redirección
- 
- 	 echo '<script type="text/javascript">';
-	 echo 'window.location.href="buscar_pormizona.php?longitud=' . $longitud . '&latitud='.$latitud. '&texto='. $rsocial_aso.' ";';
-	 echo '</script>';
-	 exit();
 
+    <script type="text/javascript">
+       window.location.href = "formingre2.php?longitud=<?php echo($longitud); ?>&latitud=<?php echo($latitud); ?>&texto=<?php  echo($rsocial_aso); ?>";
+    </script>
     
- } ?>
+<? } ?>
   </tr>
 </table>
 
