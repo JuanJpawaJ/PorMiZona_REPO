@@ -115,7 +115,7 @@ mysqli_close($connec);
 <? } else { ?>
 
     <script type="text/javascript">
-       window.location.href = "formingre2.php?longitud=<?php echo($longitud); ?>&latitud=<?php echo($latitud); ?>&texto=<?php  echo($rsocial_aso); ?>";
+       window.location.href = "buscar_pormizona.php?longitud=<?php echo($longitud); ?>&latitud=<?php echo($latitud); ?>&texto=<?php  echo($rsocial_aso); ?>";
     </script>
     
 <? } ?>
