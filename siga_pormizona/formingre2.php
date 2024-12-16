@@ -169,12 +169,12 @@ echo "En la opción [SOY PROPIETARIO]"."<br>"."<br>";
 
                <div class="otros_datos">
                 
-                 <div class="campos_de_formulario">
+                <div class="campos_de_formulario">
                     <label>Provincia</label>
                     <input type="text" class="campo_texto agrandar" name="xprovincia" placeholder="Ejemplo: Arequipa"> 
                 </div>
 
-                <div class="campos_de_formulario form_horizontal">
+                <div class="campos_de_formulario">
                     <label>Distrito</label>
                     <input type="text" class="campo_texto agrandar" name="xdistrito" placeholder="Ejemplo: Yanahuara"> 
                 </div>
