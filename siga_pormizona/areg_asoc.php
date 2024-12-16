@@ -165,12 +165,13 @@ mysqli_close($connec);
 	// header("Location: https://www.pormizona.com.pe/siga_pormizona/formingre2.php");
 	 //exit(); // Asegúrate de llamar a exit después de la redirección
 	 
-	 echo '<script type="text/javascript">';
-	 echo 'window.location.href="formingre2.php?xcod=' . $cod_aso . '";';
-	 echo '</script>';
-	 exit();
+
+ ?>
+ <script type="text/javascript">
+   window.location.href = "formingre2.php?xcod=<?php echo $cod_aso; ?>";
+ </script>
     
- } ?>
+<? } ?>
   </tr>
 </table>
 
