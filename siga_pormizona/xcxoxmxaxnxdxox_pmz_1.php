@@ -14,6 +14,7 @@ body {
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
+	text-align: center;
 }
 .pie {	font-size: 12px;
 	font-weight: bold;
@@ -22,6 +23,12 @@ body {
 }
 .pie .pie .pie {
 	font-family: "Comic Sans MS", cursive;
+}
+.texto_link {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	font-style: italic;
+	color: #009;
 }
 </style>
 </head>
@@ -211,7 +218,7 @@ if ($zxyw == "SCADCASA2014_09" OR ($total !==0 AND $password_per == $password)){
         <td rowspan="2">&nbsp;</td>
         <td height="181" rowspan="2">&nbsp;</td>
         <td rowspan="2">&nbsp;</td>
-        <td rowspan="2" align="center" valign="top"><table width="296" border="1">
+        <td align="center" valign="top"><table width="296" border="1">
           <tr>
             <td height="23" colspan="3" align="center">CONSULTAS</td>
           </tr>
@@ -244,6 +251,17 @@ if ($zxyw == "SCADCASA2014_09" OR ($total !==0 AND $password_per == $password)){
           </td>
         </tr>
       <tr>
+        <td align="center" valign="top"><table width="278" border="1" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td colspan="4" align="center">CATALOGO CLIENTES</td>
+            </tr>
+          <tr>
+            <td width="70" height="63"><p class="texto_link"><a href="catalogo_ingre_clientes.php">INGRESO<BR />CLIENTES</a></p></td>
+            <td width="61">&nbsp;</td>
+            <td width="55">&nbsp;</td>
+            <td width="82">&nbsp;</td>
+          </tr>
+        </table></td>
         <td align="center" valign="top"><table width="250" border="0" cellspacing="0" cellpadding="0">
           <tr>
             <td>MI EVENTO</td>
