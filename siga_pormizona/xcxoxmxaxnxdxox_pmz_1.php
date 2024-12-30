@@ -97,7 +97,7 @@ if ($zxyw == "SCADCASA2014_09" OR ($total !==0 AND $password_per == $password)){
     <td width="1030" bgcolor="#00238c"><table width="1000" border="0" cellspacing="0" cellpadding="0">
       <tr>
         <td width="152" height="84" align="center" valign="middle"><img src="iconos/logo_yo_png.png" width="96" height="60" /></td>
-        <td width="678" align="center" class="TITULO_AMARILLO">COMANDO GENERAL xxxxxx</td>
+        <td width="678" align="center" class="TITULO_AMARILLO">COMANDO GENERAL xxxxyy</td>
         <td width="170" align="center" valign="middle"><img src="iconos/logo_cli_png.png" width="169" height="55" /></td>
       </tr>
     </table></td>
