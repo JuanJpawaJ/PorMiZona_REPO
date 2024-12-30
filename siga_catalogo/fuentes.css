@@ -1,0 +1,18 @@
+@font-face{
+    font-family:"nexa_light";
+    src:url("fuentes/NexaLight.otf");
+}
+@font-face{
+    font-family:"nexa_bold";
+    src:url("fuentes/NexaBold.otf");
+}
+
+@font-face{
+    font-family:"condensada";
+    src:url("fuentes/078MKSD_MC.TTF");
+}
+
+@font-face{
+    font-family:"abel1";
+    src:url("fuentes/Abel-Regular.ttf");
+}
