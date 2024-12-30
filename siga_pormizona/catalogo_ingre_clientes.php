@@ -33,7 +33,7 @@ $latitud = $_POST['latitude'];
     <img src="iconos/logo_pmz.png" alt="logo" class="logo">
 </nav>
 <div class="barra_titulo">
-     <h2>           *REGISTRE SU NEGOCIO COMPLETAMENTE GRATIS</h2>
+     <h2>           *CATALOGO INGRESO CLIENTES</h2>
 </div>
 <div class="exteriorform">
    <div class="fondo_formulario">
@@ -42,8 +42,8 @@ $latitud = $_POST['latitude'];
       </div>
       <!-- inicio de boton obligatorio -->         
      <!-- FIN DE boton obligatorio -->              
-   <form id="form1" name="form1" method="post" onsubmit="return checkSubmit();" action="areg_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
-           <h2 class="semi-titulosform">Paso 02: Ingreso de datos</h2>
+   <form id="form1" name="form1" method="post" onsubmit="return checkSubmit();" action="catalogo_areg_cli.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
+           <h2 class="semi-titulosform">Paso 01: Ingreso de datos</h2>
            <div class="campos_de_formulario">
               <label>Razon Social (del local comercial, negocio, empresa)</label>
               <input type="text" class="campo_texto" name="xrsocial" placeholder="Ejemplo: Libería la Luz, JPAWAJ SAC" onkeyup= "this.value=this.value.toUpperCase();"> 
@@ -104,7 +104,7 @@ $latitud = $_POST['latitude'];
            <div class="campo_boton">
               <button class="boton_form">ENVIAR FORMULARIO</button>
            </div>
-           <h2 class="semi-titulosform">Continua... Paso 03: Ingreso de datos</h2>
+           <h2 class="semi-titulosform">Continua... Paso 02: Ingreso de datos</h2>
    
            </form>
   </div>
