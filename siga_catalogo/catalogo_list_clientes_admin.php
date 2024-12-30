@@ -1,7 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>iTEMS Administrador</title>
+<title>Caatalogo admin clientes</title>
 <style type="text/css">
 .TITULO_NARANJA {
 	color: #FC0;
@@ -44,7 +44,7 @@ $xgl=$_GET['xgl']; //CMRD
 		
 if ($xareg=="SIAREG") {
   // genera el codigo de 6 digitos en base al max id anterior
-  $rs = mysqli_query($connec,"SELECT MAX(id) AS id FROM a_items");
+  $rs = mysqli_query($connec,"SELECT MAX(id) AS id FROM catalogo_clientes");
    if ($row = mysqli_fetch_row($rs)) {
 	   $idid = trim($row[0]);
    }
@@ -93,7 +93,7 @@ if ($xareg=="SIAREG") {
 	   $xum=0;
 	   
 
-     $sql="INSERT INTO a_items (codigo_it,codfabrica_it,producto_it,grupolista_it,marka_it,fabricante_it, precom_it,monelista_it, pv01_it,pv02_it,pv03_it,img_it,stockmin_it,lugar_al_it,view01_it, view02_it,view03_it,view04_it,time_entrega_it,msjpublico_it,obscompra_it) VALUES 
+     $sql="INSERT INTO catalogo_clientes (codigo_it,codfabrica_it,producto_it,grupolista_it,marka_it,fabricante_it, precom_it,monelista_it, pv01_it,pv02_it,pv03_it,img_it,stockmin_it,lugar_al_it,view01_it, view02_it,view03_it,view04_it,time_entrega_it,msjpublico_it,obscompra_it) VALUES 
 ('$codigo_it','$codfabrica_it','$producto_it','$grupolista_it','$marka_it','$fabricante_it','$precom_it','$monelista_it', '$pv01_it', '$pv02_it','$pv03_it', '$img_it','$stockmin_it','$lugar_al_it','$view01_it','$view02_it','$view03_it','$view04_it','$time_entrega_it','$msjpublico_it','$obscompra_it')";
      $result=mysqli_query($connec,$sql);
      if($result){
@@ -119,7 +119,7 @@ if ($xmodi=="SIMODI") {
   $xventa=$_GET['xventa'];
    $xcosto=$_GET['xcosto'];
    $ximg=$_GET['ximg'];
-$sql="UPDATE a_items SET codfabrica_it='$xcodfab',producto_it='$xproducto',producto_it='$xproducto',marka_it='$xmarka',preven_it='$xventa',img_it='$ximg' WHERE id=$idmodi";
+$sql="UPDATE catalogo_clientes SET codfabrica_it='$xcodfab',producto_it='$xproducto',producto_it='$xproducto',marka_it='$xmarka',preven_it='$xventa',img_it='$ximg' WHERE id=$idmodi";
 
    $result=mysqli_query($connec,$sql);
    if($result){
@@ -142,7 +142,7 @@ if ($xdelreg=="SIDELREG") {
 
 echo ("AHora estor dentro dl IFFFFF". "SIDELREG" . "delcod=====: "." ".$delcod);
 
-   $query = "delete from asociado_51 where cod_aso ='$delcod'";  
+   $query = "delete from catalogo_clientes where cod_aso ='$delcod'";  
    $result = mysqli_query($connec,$query); 
   
    $xdelreg="NO";
@@ -243,17 +243,17 @@ echo ("AHora estor dentro dl IFFFFF". "SIDELREG" . "delcod=====: "." ".$delcod);
 
 if(strlen($bxproducto)==0){
 	if ($xgl=="SMRD") {
-        $result=mysqli_query($connec,"select * from asociado_51 order by rsocial_aso");
+        $result=mysqli_query($connec,"select * from catalogo_clientes order by rsocial_aso");
 	}elseif ($xgl=="Y") {
 		echo ( "YA ESTOY AQUIIIIIIIIIIIIIIII YYY");
-        $result=mysqli_query($connec,"select * from asociado_51 order by datehoy_aso");
+        $result=mysqli_query($connec,"select * from catalogo_clientes order by datehoy_aso");
 	}else{
-		$result=mysqli_query($connec,"select * from asociado_51 order by rsocial_aso");
+		$result=mysqli_query($connec,"select * from catalogo_clientes order by rsocial_aso");
         //$result=mysqli_query($connec,"select * from asociado_51 where grupolista_it like '%$xgl%' order by rsocial_aso");
 	}
 } else {
 $bxproducto1=trim($bxproducto);
-$result=mysqli_query($connec,"select * from asociado_51 where producto_it like '%$bxproducto1%' order by rsocial_aso");
+$result=mysqli_query($connec,"select * from catalogo_clientes where producto_it like '%$bxproducto1%' order by rsocial_aso");
 }
 
 
@@ -336,7 +336,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 
         <td align="center" bgcolor="#FFCC66" class="tabla10"><a href="edit_asociados_admin.php?xcod=<?php  echo($cod_aso); ?>&xview=<?php  echo("ADMIN"); ?>&xareg=NNOOO&xmodi=NOOOOO&xdelreg=NOOOOO"><img src="iconos/ico_editar.png" width="30" height="30"></a></td>
 
-        <td align="center"><a href="a_list_asociados_admin.php?delcod=<?php echo($cod_aso);?>&xdelreg=<?php echo("SIDELREG");?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">X</a></td>
+        <td align="center"><a href="catalogo_list_clientes_admin.php?delcod=<?php echo($cod_aso);?>&xdelreg=<?php echo("SIDELREG");?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">X</a></td>
         
       </tr>
       <?php 
@@ -477,7 +477,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 } elseif($viewmodi=="SIVM"){
    $idx=$_GET['idx']; 
 
-$result=mysqli_query($connec,"select * from a_items where id=$idx");	
+$result=mysqli_query($connec,"select * from catalogo_clientes where id=$idx");	
 
 $tabla = mysqli_fetch_array( $result );
 		$idmodi=$tabla["id"];
