@@ -158,7 +158,7 @@ mysqli_close($connec);
 <? } else { ?>
     <!--- <th scope="col" class="semi-titulosform"><div align="center"><a href="formingre2.php?xcod=<?php  //echo($cod_aso); ?>">CONTINUAR CON EL PASO 3</a></div></th> -->
     <script type="text/javascript">
-       window.location.href = "formingre2.php?xcod=<?php echo $cod_aso; ?>";
+       window.location.href = "catalogo_list_clientes_admin.php?xcod=<?php echo $cod_aso; ?>";
     </script>
     
 <? } ?>
