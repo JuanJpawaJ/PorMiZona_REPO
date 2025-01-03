@@ -44,63 +44,99 @@ $xgl=$_GET['xgl']; //CMRD
 		
 if ($xareg=="SIAREG") {
   // genera el codigo de 6 digitos en base al max id anterior
+  
+
+$rs = mysqli_query($connec, "SELECT MAX(id) AS id FROM catalogo_clientes");
+if ($row = mysqli_fetch_row($rs)) {
+    $idid = trim($row[0]);
+}
+$cod_aso=substr($idid+10000001,-7);	
+echo "codigo : ".$cod_aso."<br>";
+
+  
+  
+$pais_aso=$_POST['xpais'];
+$rsocial_aso=$_POST['xrsocial'];
+$direccion_aso=$_POST['xdireccion'];
+$distrito_aso=$_POST['xdistrito'];
+$provincia_aso=$_POST['xprovincia'];
+$departamento_aso=$_POST['xdepartamento'];
+//$departamento_aso="08";
+
+$referencia_aso=$_POST['xreferencia'];
+$gironeg_aso=$_POST['xgironeg'];
+$telf1_aso=$_POST['xtelf1'];
+$telf2_aso=$_POST['xtelf2'];
+$usua_aso=$_POST['xusuario'];
+$pass_aso=$_POST['xpass'];
+$email_aso=$_POST['xemail'];
+$categoria_aso=$_POST['xcategoria'];
+if ($categoria_aso=="CATEGORIA") {
+	$categoria_aso="";
+}
+$productos_aso=$_POST['xproductos'];
+$latitud_aso=$_POST['xlatitud'];
+$longitud_aso=$_POST['xlongitud'];	
+$date_aso=date("Y/m/d");	
+$datehoy_aso=date("Y/m/d");
+$favicon_aso=$_POST['xfavicon'];	   
+$publicidad_aso="N";	
+
+$grupolista_aso="1";
+$img1_aso="";
+$img2_aso="";
+$logo_aso="";
+$view01_aso="";
+$view02_aso="";
+$view03_aso="";
+$view04_aso="";
+$link01_aso="";
+$link02_aso="";
+$msjpublico_aso="";
+$obsinterno_aso="";
+  
+  
+
   $rs = mysqli_query($connec,"SELECT MAX(id) AS id FROM catalogo_clientes");
    if ($row = mysqli_fetch_row($rs)) {
 	   $idid = trim($row[0]);
    }
-   $codigo_it=substr((string)$idid+1000001,1);
-   $codfabrica_it=$_GET['xcodfabrica'];
-   $producto_it=$_GET['xproducto'];
-   $grupolista_it=$_GET['xgrupolista'];
-   $marka_it=$_GET['xmarka'];
-   $fabricante_it=$_GET['xfabricante'];
-   $precom_it=$_GET['xprecom'];
-   $monelista_it=$_GET['xmonelista'];      
-   $pv01_it=$_GET['xpv01'];
-   $pv02_it=$_GET['xpv02'];
-   $pr03_it=$_GET['xpv03'];
-   $img_it=$_GET['ximg'];
-   $stockmin_it=$_GET['xstockmin'];
-   $lugar_al_it=$_GET['xlugar_al'];
-   $view01_it=$_GET['xview01'];
-   $view02_it=$_GET['xview02'];
-   $view03_it=$_GET['xview03'];
-   $view04_it=$_GET['xview04'];
-   $time_entrega_it=$_GET['xtime_entrega'];
-   $msjpublico_it=$_GET['xmsjpublico'];
-   $obscompra_it=$_GET['xobscompra'];
-
- // echo  "codigo: ".  $codigo_it."<br>";
- //  echo  "codfab: ".  $codfabrica_it."<br>";
- //  echo  "prod: ".  $producto_it."<br>";
- //  echo  "grupo: ".  $grupolista_it."<br>";
- //  echo  "marka: ".  $marka_it."<br>";
- //  echo  "fab: ".  $fabricante_it."<br>";
- //  echo  "precom: ".  $precom_it."<br>";
- //  echo  "prevn: ".  $preven_it."<br>";
- //  echo  "pje: ".  $pje1_it."<br>";
- //  echo  "img: ".  $img_it."<br>";
- //  echo  "publico: ".  $publico_it."<br>";
- //  echo  "oferta: ".  $oferta_it."<br>";
- //  echo  "mone: ".  $monelista_it."<br>";   
 
 
-   // verifica si hay duplicados ....
-   //$result=mysql_query("select * from a_items where producto_it=$xproducto",$connec);
-   //$total=mysql_num_rows($result);
-   //if ($total==0) {
-	   $xspce="s";
-	   $xum=0;
-	   
 
-     $sql="INSERT INTO catalogo_clientes (codigo_it,codfabrica_it,producto_it,grupolista_it,marka_it,fabricante_it, precom_it,monelista_it, pv01_it,pv02_it,pv03_it,img_it,stockmin_it,lugar_al_it,view01_it, view02_it,view03_it,view04_it,time_entrega_it,msjpublico_it,obscompra_it) VALUES 
-('$codigo_it','$codfabrica_it','$producto_it','$grupolista_it','$marka_it','$fabricante_it','$precom_it','$monelista_it', '$pv01_it', '$pv02_it','$pv03_it', '$img_it','$stockmin_it','$lugar_al_it','$view01_it','$view02_it','$view03_it','$view04_it','$time_entrega_it','$msjpublico_it','$obscompra_it')";
-     $result=mysqli_query($connec,$sql);
-     if($result){
-	   echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok.</span>");
-     }else{
-	   echo ("<span style='background-color: #CC0000'>XX. ERROR AL REGISTRARSE  XX.</span>");
-     }	
+
+
+if(strlen($rsocial_aso)==0 OR strlen($direccion_aso)==0 ) {
+   echo "R.Social :".$rsocial_aso."<br>";
+   echo "Email    :".$direccion_aso."<br>";
+   echo "** ¡¡¡ CUIDADO: NO, SE HA GUARDADO ESTE REGISTRO !!! - Probablemente No ha ingresado algún dato.. **"."<BR>";
+   echo "** o  NO HAY DATOS - VERIFIQUE **";
+}else{
+	$result_nom=mysqli_query($connec,"select * from catalogo_clientes where (rsocial_aso='$rsocial_aso') AND (direccion_aso='$direccion_aso')");
+	$total_nom=mysqli_num_rows($result_nom);
+    if 	($total_nom==0) {  // VUENE DE FORMULARIO Y NO HAY DUPLICIDAD *****************+
+       	$sql="INSERT INTO catalogo_clientes (cod_aso,  grupolista_aso, img1_aso, img2_aso, logo_aso, view01_aso, view02_aso, view03_aso, view04_aso, link01_aso, link02_aso, msjpublico_aso, obsinterno_aso, pais_aso,     rsocial_aso,    direccion_aso,    distrito_aso,    provincia_aso,  departamento_aso, referencia_aso, gironeg_aso, telf1_aso, telf2_aso, usua_aso, pass_aso, email_aso, categoria_aso, productos_aso, latitud_aso,   longitud_aso, date_aso, datehoy_aso, favicon_aso, publicidad_aso)  VALUES ('$cod_aso', '$grupolista_aso', '$img1_aso', '$img2_aso', '$logo_aso', '$view01_aso', '$view02_aso', '$view03_aso', '$view04_aso', '$link01_aso', '$link02_aso', '$msjpublico_aso', '$obsinterno_aso', '$pais_aso', '$rsocial_aso', '$direccion_aso', '$distrito_aso', '$provincia_aso',  '$departamento_aso',   '$referencia_aso', '$gironeg_aso', '$telf1_aso',   '$telf2_aso', '$usua_aso', '$pass_aso', '$email_aso', '$categoria_aso', '$productos_aso', '$latitud_aso', '$longitud_aso',   '$date_aso', '$datehoy_aso', '$favicon_aso', '$publicidad_aso')";
+
+   		$result=mysqli_query($connec,$sql);
+   		if($result)  {
+			$retorna="OK";
+      		echo ("<span style='background-color: #006600'>Ok. ---DATOS -- Ok.</span>");
+   		}else{
+			$retorna="ERROR";
+	  		echo ("<span style='background-color: #CC0000'>XX. ERROR AL REGISTRARSE  XX.</span>");
+   		}
+		
+
+
+	$rs = mysqli_query($connec, "SELECT MAX(id) AS id FROM catalogo_clientes");
+	if ($row = mysqli_fetch_row($rs)) {
+			$idid = trim($row[0]);
+	}
+   }else{
+       echo "CATAL CLIENTE REPETIDO... SI TIENE PROBLEMAS, comuniquese con Cel. 959956000"."<br>";	
+   }
+}
+
    //}
    $xareg="NO";
    $xmodi="NOOO";
@@ -355,28 +391,28 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
     <form id="form1" name="form1" method="get" action="a_list_items_admin.php">
     <table width="290" border="1" class="tablaingrenuevo">
     <tr>
-      <td colspan="2" bgcolor="#FFCC66"><div align="center"><strong>INGRESO NUEVO ITEM</strong></div></td>
+      <td colspan="2" bgcolor="#FFCC66"><div align="center"><strong>CATALOGO ING. NVO. CLIENTE</strong></div></td>
     </tr>
     <tr>
-      <td bgcolor="#FDF19B"><span class="TITULO">Cod. Item</span></td>
+      <td bgcolor="#FDF19B"><span class="TITULO">Cod. Cliente</span></td>
       <td bgcolor="#FDF19B">&nbsp;</td> <!-- xcod -->
     </tr>
     <tr>
-      <td height="26" colspan="2" bgcolor="#FDF19B" class="TITULO">Producto: (Tx. para factura) Ej. MOUSE GAMER A.. <br>  
+      <td height="26" colspan="2" bgcolor="#FDF19B" class="TITULO">Nombre empresa:  Ej. LA NAUTICA SAC. <br>  
         (120 caracteres)</td>
       </tr>
     <tr>
       <td colspan="2" class="TITULO">
-      <input name="xproducto" type="text" id="xproducto" size="45" maxlength="120" onKeyUp="this.value=this.value.toUpperCase();" /></td>
+      <input name="xrsocial" type="text" id="xrsocial" size="45" maxlength="120" onKeyUp="this.value=this.value.toUpperCase();" /></td>
       </tr>
     <tr>
-      <td bgcolor="#FDF19B" class="TITULO">Cod. Modelo.</td>
+      <td bgcolor="#FDF19B" class="TITULO">Dirección:</td>
       <td><span class="TITULO">
-        <input name="xcodfabrica" type="text" id="xcodfabrica" size="25" maxlength="30" onKeyUp="this.value=this.value.toUpperCase();" />
+        <input name="xdireccion" type="text" id="xdireccion" size="25" maxlength="45"  />
         </span></td>
     </tr>
     <tr>
-      <td bgcolor="#FDF19B" class="TITULO">Marca</td>
+      <td bgcolor="#FDF19B" class="TITULO">Distrito:</td>
       <td><span class="TITULO">
         <input name="xmarka" type="text" id="xmarka" size="25" maxlength="30" onKeyUp="this.value=this.value.toUpperCase();" />
         </span></td>
