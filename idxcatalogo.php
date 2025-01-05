@@ -3,6 +3,9 @@ include ("connec_sql_new.php");
 mysqli_set_charset($connec, 'utf8');
 date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
+
+$cod_aso="0000007";
+
 ?>
 
 
@@ -32,7 +35,8 @@ setlocale(LC_ALL, "sp");
 
     <?php 
     $agregado_en_cab = "";
-    include 'widgets/navegador.php' 
+    include 'widgets/navegador.php';
+	$slid=$cod_aso."s";
     ?>
 
   
@@ -41,7 +45,7 @@ setlocale(LC_ALL, "sp");
         <div class="slider-wrapper">
             <div class="slider">
                 <div class="imagen" id="slide-1">
-                    <img class="imagen_normal" src="siga_catalogo/img_catacli/0000007sg1.jpg" alt="">
+                    <img class="imagen_normal" src="siga_catalogo/img_catacli/<? $slid."g1.jpg" ?> alt="">
                     <img class="imagen_movil" src="siga_catalogo/img_catacli/0000007sp1.jpg" alt="">
                 </div>
 
