@@ -1,0 +1,81 @@
+.contenedor_slider_imagenes{
+    height:auto;
+}
+
+.slider{
+    display: flex;
+    background-color: red;
+    height:100%;
+    overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.slider-wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+    .slider div.imagen{
+        flex:1 0 100%;
+        
+        width:100vw;
+        object-fit:cover;
+        scroll-snap-align:start;
+        background-color: blue;
+        background-size: cover; /* Ajustar la imagen para cubrir el contenedor */
+        background-position: center center; /* Posicionar la imagen en el centro */
+        background-repeat: no-repeat; /* Evitar que la imagen de fondo se repita */
+    }
+
+    .slider div.imagen > img{
+        width:100%;
+    }
+
+    .slider-nav{
+        /* background-color: green; */
+        
+        height:1rem;
+        display: flex;
+        gap:1rem;
+        justify-content: center;
+        align-self: center;
+        position: relative;
+        top:-2rem;
+    }
+
+        .slider-nav > a{
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            background-color: rgb(255, 255, 255);
+            opacity:0.75;
+            transition:opacity ease 250ms;
+            box-shadow: 4px 3px 24px 10px rgba(0,0,0,0.53);
+        }
+
+
+.contenedor_slider_imagenes div.imagen > img{
+    display: none;
+}    
+
+@media only screen and (min-width: 801px){
+    .contenedor_slider_imagenes div.imagen > .imagen_normal{
+        display: block;
+    }    
+}
+
+
+@media only screen and (max-width: 800px){
+    .contenedor_slider_imagenes div.imagen > .imagen_movil{
+        display: block;
+    }    
+    .slider-nav > a{
+        visibility: hidden;
+    }
+}

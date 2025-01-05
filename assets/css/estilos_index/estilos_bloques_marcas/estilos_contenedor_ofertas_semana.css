@@ -1,0 +1,233 @@
+:root{
+    --fuente_gruesa:Satoshi-Black;
+    --fuente_media:Satoshi-Bold;
+    --fuente_delgado:Satoshi-Regular;
+
+    --fuente_tamanio_titulo_1:28px;
+    --fuente_tamanio_titulo_2:22px;
+    --fuente_tamanio_titulo_3:18px;
+    --fuente_tamanio_titulo_4:15px;
+
+    --color_rojo_1:#A61818;
+    --color_rojo_0:#D61F1F;
+    --color_rojo_-1:#E54B4B;
+    --color_rojo_-2:#EC7E7E;
+
+    --color_caqui_1:#7B6851;
+    --color_caqui_0:#9D8669;
+    --color_caqui_-1:#B3A18A;
+    --color_caqui_-2:#C9BCAC;
+
+    --color_azul_oscuro_1:#111114;
+    --color_azul_oscuro_0:#16161A;
+    --color_azul_oscuro_-1:#454552;
+    --color_azul_oscuro_-2:#747489;
+
+    --color_crema_1:#8C7469;
+    --color_crema_0:#AB988F;
+    --color_crema_-1:#BEAFA8;
+    --color_crema_-2:#D0C6C1;
+
+    --color_salmon_claro_1:#CBABAB;
+    --color_salmon_claro_0:#F4EDED;
+    --color_salmon_claro_-1:#F6F1F1;
+    --color_salmon_claro_-2:#F9F5F5;
+
+    --color_grises_2:#1C1C1C;
+    --color_grises_1:#686868;
+    --color_grises_0:#B3B3B3;
+    --color_grises_-1:#DDDDDD;
+    --color_grises_-2:#F7F7F7;
+}
+
+.contenedor_ofertas_semana{
+    background-color: var(--color_caqui_0);
+    padding:1rem;
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    background-color: var(--color_fondo);
+    
+}
+
+.contenedor_ofertas_semana > .cabecera {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+
+    .contenedor_ofertas_semana > .cabecera > .header_ofertas{
+        display: flex;
+        color:var(--color_general);
+        align-items: center;
+        background-color: white;
+        padding:0.5rem 1.5rem;
+        border-radius: 10rem;
+        max-width: 30rem;
+        align-self: center;
+    }
+
+    .contenedor_ofertas_semana > .cabecera > .header_ofertas > h2{
+        font-family: var(--fuente_gruesa);
+        margin-right: 1rem;
+        font-size: var(--fuente_tamanio_titulo_1);
+        
+    }
+
+    .contenedor_ofertas_semana > .cabecera > .header_ofertas > span{
+        font-weight: 1000;
+        font-size: 2rem;
+        position: relative;
+        bottom:2px;
+    }
+
+    .contenedor_ofertas_semana > .cabecera > .link_productos{
+        color:white;
+        padding: 0.5rem;
+        background-color: var(--color_azul_oscuro_0);
+        border-radius: 1rem;
+    }
+
+.contenedor_productos{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:1rem;
+}
+
+
+
+    .contenedor_productos > .producto{
+        padding:1rem;
+        background-color: var(--color_salmon_claro_-1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 220px;
+
+        justify-self: center;
+    }
+
+        .contenedor_productos > .producto > div.contenedor_imagen{
+            aspect-ratio: 1/1;
+            width:100%;
+            background-color: black;
+            margin-bottom: 1rem;
+
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            overflow: hidden;
+        }
+
+        .contenedor_productos > .producto > div.contenedor_imagen > img{
+            width:100%;
+            height: 100%;
+        }
+            
+        .contenedor_productos > .producto > h3{
+            font-size: var(--fuente_tamanio_titulo_4);
+            margin-bottom: 1rem;
+
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4; /* Limita a 4 líneas */
+            -webkit-box-orient: vertical;
+
+            min-height: 69px; /*ESTO NO ES LO MÁS ÓPTIMO PERO FUNCIONA*/
+        }
+
+        .contenedor_productos > .producto > .precios{
+            align-self: flex-start;
+            margin-bottom: 1.5rem;
+        }
+
+            .contenedor_productos > .producto > .precios > .precio_antiguo{
+                color:var(--color_grises_1 );
+                text-decoration: line-through;
+                font-size: var(--fuente_tamanio_titulo_4);
+            }
+
+            .contenedor_productos > .producto > .precios > .precio_oferta{
+                font-size: var(--fuente_tamanio_titulo_2);
+                color:var(--color_general);
+            }
+
+        .contenedor_productos > .producto > a{
+            padding:3px 1.5rem;
+            border-radius: 10rem;
+            text-decoration: none;
+            border:2px solid var(--color_general);
+            color:var(--color_general);
+            font-size: var(--fuente_tamanio_titulo_4);
+        }.contenedor_productos > .producto > a:hover{
+            color:white;
+            background-color: var(--color_general);
+        }
+    
+
+@media only screen and (max-width: 1200px){
+.contenedor_ofertas_semana{
+    width:90%;
+}
+.contenedor_productos{
+    gap:0.5rem;
+}
+
+}
+
+@media only screen and (max-width: 1000px){
+.contenedor_ofertas_semana{
+    width:95%;
+}
+
+.contenedor_ofertas_semana > .cabecera {
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.link_productos_oculto{
+    display: none;
+}
+}
+
+
+@media only screen and (max-width: 1000px){
+
+.contenedor_ofertas_semana > .header_ofertas > h2{
+    font-size: var(--fuente_tamanio_titulo_2);
+}
+
+.contenedor_ofertas_semana{
+    width:80%;
+    padding:1rem 0.2rem;
+}
+
+.contenedor_productos{
+    gap:0.5rem;
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+@media only screen and (max-width: 600px){
+
+.contenedor_ofertas_semana > .header_ofertas > h2{
+    font-size: var(--fuente_tamanio_titulo_3);
+}
+
+.contenedor_ofertas_semana{
+    width:100%;
+}
+
+.contenedor_productos{
+    gap:0.1rem;
+}
+
+.contenedor_productos > .producto{
+    padding:1rem 0.5rem;
+}
+
+    
+}

@@ -1,0 +1,136 @@
+body{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buscador{
+    /* background-color: rgb(129, 129, 129); */
+    display: flex;
+
+    width:60%;
+    min-width: 663px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+    .buscador > img{
+        height:4rem;
+    }
+
+    .buscador > .contenedor_buscador{
+        background-color: #D9D9D9;
+        display: flex;
+        justify-content: space-between;
+        padding:5px 10px;
+        align-items: center;
+        border-radius: 5rem;
+        gap:10px;
+        
+    }
+
+    .buscador > .contenedor_buscador > input{
+        height: auto;
+        font-size: 18px;
+        width:25rem;
+        background-color: #D9D9D9;
+    }
+
+    .buscador > .contenedor_buscador > button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #D9D9D9;
+        border: none;
+        cursor:pointer;
+    }
+
+        .buscador > .contenedor_buscador > button > span{
+            font-weight: 1000;
+            color:rgb(38, 38, 38);
+        }
+
+
+
+.grid_lista_productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* background-color: red; */
+    width:80vw;
+    row-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.paginacion{
+    display: flex;
+    gap:1.5rem;
+    margin-bottom: 1.5rem;
+
+    flex-wrap:wrap;
+}
+
+.paginacion > a{
+    /* background-color: red; */
+    padding: 5px 10px;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .grid_lista_productos{
+        width:95vw;
+    }   
+}
+
+@media only screen and (max-width: 1000px){
+    .grid_lista_productos{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .grid_lista_productos{
+        width:90vw;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .grid_lista_productos{
+        width:95vw;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 665px) {
+
+    .grid_lista_productos{
+        width:100vw;
+        row-gap: 0.5rem;
+        column-gap: 0.2rem;
+    }
+
+    .buscador{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: auto;
+        width:90%;
+        gap:0.5rem;
+
+        margin-bottom: 1rem;
+    }
+
+    .buscador > .contenedor_buscador{
+        width:100%;
+        
+    }
+    .buscador > .contenedor_buscador > input{
+        width:100%;
+    }
+}
+
