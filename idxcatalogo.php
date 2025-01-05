@@ -74,11 +74,18 @@ setlocale(LC_ALL, "sp");
         </div>
     </div>
     -->
-    <div class="imagen">
+   <div class="contenedor_slider_imagenes">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <div class="imagen" id="slide-1">
+ 
                     <img class="imagen_normal" src="assets/img/imagenes_index/imgslider/sliderg1.jpg" alt="">
                     <img class="imagen_movil" src="assets/img/imagenes_index/imgslider/sliderp1.jpg" alt="">
     
     
+    </div>
+    </div>
+    </div>
     </div>
     
 
