@@ -24,7 +24,7 @@ setlocale(LC_ALL, "sp");
     <link rel="stylesheet" href="assets/css/estilos_index/estilos_contenedor_marcas.css">
     <link rel="stylesheet" href="assets/css/estilos_index/estilos_servicio_tecnico.css">
     <link rel="stylesheet" href="assets/css/estilos_index/estilos_bloque_marca_interclass.css">
-    <title>JPAWAJ</title>
+    <title>CATALOGO</title>
     <link rel="icon" href="assets/img/imagenes_index/icono_pestana/icono_jpawaj.png" type="image/png">
 </head>
 
@@ -36,7 +36,7 @@ setlocale(LC_ALL, "sp");
     ?>
 
   
-  <!--
+
     <div class="contenedor_slider_imagenes">
         <div class="slider-wrapper">
             <div class="slider">
@@ -45,6 +45,7 @@ setlocale(LC_ALL, "sp");
                     <img class="imagen_movil" src="assets/img/imagenes_index/imgslider/sliderp1.jpg" alt="">
                 </div>
 
+          <!--
                 <div class="imagen" id="slide-2">
                     <img class="imagen_normal" src="assets/img/imagenes_index/imgslider/sliderg2.jpg" alt="">
                     <img class="imagen_movil" src="assets/img/imagenes_index/imgslider/sliderp2.jpg" alt="">
@@ -65,27 +66,14 @@ setlocale(LC_ALL, "sp");
                     <img class="imagen_movil" src="assets/img/imagenes_index/imgslider/sliderp5.jpg" alt="">
                 </div>
 
-
+        -->
 
             </div>
-
+        <!--
             <div class="slider-nav" id="slider-nav">
             </div>
+          -->
         </div>
-    </div>
-    -->
-   <div class="contenedor_slider_imagenes">
-        <div class="slider-wrapper">
-            <div class="slider">
-                <div class="imagen" id="slide-1">
- 
-                    <img class="imagen_normal" src="assets/img/imagenes_index/imgslider/sliderg1.jpg" alt="">
-                    <img class="imagen_movil" src="assets/img/imagenes_index/imgslider/sliderp1.jpg" alt="">
-    
-    
-    </div>
-    </div>
-    </div>
     </div>
     
 
