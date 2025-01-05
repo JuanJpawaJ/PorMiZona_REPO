@@ -41,8 +41,8 @@ setlocale(LC_ALL, "sp");
         <div class="slider-wrapper">
             <div class="slider">
                 <div class="imagen" id="slide-1">
-                    <img class="imagen_normal" src="assets/img/imagenes_index/imgslider/sliderg1.jpg" alt="">
-                    <img class="imagen_movil" src="assets/img/imagenes_index/imgslider/sliderp1.jpg" alt="">
+                    <img class="imagen_normal" src="siga_catalogo/img_catacli/0000007sg1.jpg" alt="">
+                    <img class="imagen_movil" src="siga_catalogo/img_catacli/0000007sp1.jpg" alt="">
                 </div>
 
           <!--
@@ -78,7 +78,7 @@ setlocale(LC_ALL, "sp");
     
 
 <!-------   **********   JPAWAJ *********************  --->
-    <? $result = mysqli_query($connec, "select * from a_items where view03_it='S' AND grupolista_it like '%S%' order by producto_it");
+    <? $result = mysqli_query($connec, "select * from catalogo_productos where view03_it='S' AND grupolista_it like '%S%' order by producto_it");
     $simbolo_mone = "S/ "; ?>
 
 
