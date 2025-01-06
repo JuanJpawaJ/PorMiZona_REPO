@@ -46,7 +46,7 @@ $cod_aso="0000007";
             <div class="slider">
                 <div class="imagen" id="slide-1">
                     <img class="imagen_normal" src="siga_catalogo/img_catacli/<? echo($slid."g1.jpg"); ?>" alt="">
-                    <img class="imagen_movil" src="siga_catalogo/img_catacli/0000007sp1.jpg" alt="">
+                    <img class="imagen_movil" src="siga_catalogo/img_catacli/<? echo($slid."p1.jpg"); ?>" alt="">
                 </div>
 
           <!--
@@ -81,9 +81,11 @@ $cod_aso="0000007";
     </div>
     
 
-<!-------   **********   JPAWAJ *********************  --->
-    <? $result = mysqli_query($connec, "select * from catalogo_productos where view03_it='S' AND grupolista_it like '%S%' order by producto_it");
-    $simbolo_mone = "S/ "; ?>
+<!-------   **********   consulta CATALOGO_PRODUCTOS *********************  --->
+    <? $result = mysqli_query($connec, "select * from catalogo_productos where cod_aso_it=$cod_aso order by producto_it");
+    
+	
+	$simbolo_mone = "S/ "; ?>
 
 
     <div class="bloque_marca bloque_marca_syscomputer" id="jpawaj">
