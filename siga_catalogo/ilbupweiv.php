@@ -5,6 +5,8 @@ mysqli_set_charset($connec, 'utf8');
 date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
+echo ("ESTOY AQUUIIIII ANTES DE ");
+
 $id = $_GET['idx'];
 $result = mysqli_query($connec, "select * from catalogo_clientes where id=$id");
 $tabla = mysqli_fetch_array($result);
@@ -21,6 +23,9 @@ $codfabrica_it = $tabla["codfabrica_it"];
 $img_it = $tabla["img_it"];
 $grupolista_it = $tabla["grupolista_it"];
 $producto_it = $tabla["producto_it"];
+
+echo ("ESTOY AQUUIIIII DESPUES DE ".$id);
+
 $marka_it = $tabla["marka_it"];
 $fabricante_it = $tabla["fabricante_it"];
 $precom_it = $tabla["precom_it"];
