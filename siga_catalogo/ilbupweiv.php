@@ -69,7 +69,7 @@ if (strlen($img_it) == 0) {
   <div class="container_t">
     <div class="contenedor_imagen_m">
       <div class="img">
-        <img src="<? echo "img_items/" . $img_it ?>" alt="">
+        <img src="<? echo "img_catacli/" . $img_it ?>" alt="">
       </div>
       <p>La imagen es referencial*</p>
     </div>
