@@ -12,11 +12,6 @@ $result = mysqli_query($connec, "select * from catalogo_clientes where id=$id");
 $tabla = mysqli_fetch_array($result);
 
 $idmodi = $tabla["id"];
-$codigo_it = $tabla["codigo_it"];
-$codfabrica_it = $tabla["codfabrica_it"];
-$producto_it = $tabla["producto_it"];
-
-
 $id = $tabla["id"];
 $codigo_it = $tabla["codigo_it"];
 $codfabrica_it = $tabla["codfabrica_it"];
@@ -24,7 +19,7 @@ $img_it = $tabla["img_it"];
 $grupolista_it = $tabla["grupolista_it"];
 $producto_it = $tabla["producto_it"];
 
-echo ("ESTOY AQUUIIIII DESPUES DE ".$id);
+echo "ESTOY AQUUIIIII DESPUES DE: ".$id." ".$img_it;
 
 $marka_it = $tabla["marka_it"];
 $fabricante_it = $tabla["fabricante_it"];
