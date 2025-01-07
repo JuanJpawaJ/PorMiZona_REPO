@@ -89,7 +89,7 @@ $cod_aso="0000007";
 
 
     <div class="bloque_marca bloque_marca_syscomputer" id="jpawaj">
-        <img src="assets/img/imagenes_index/logo_jpawaj.png" alt="">
+        <!-- <img src="assets/img/imagenes_index/logo_jpawaj.png" alt=""> -->
         <div class="contenedor_ofertas_semana">
 
         <div class="cabecera">
@@ -112,8 +112,8 @@ $cod_aso="0000007";
             <div class="contenedor_productos">
 
                 <?php while ($tabla = mysqli_fetch_array($result)) { ?>
-                <div class="producto">
-                    <div class="contenedor_imagen"><img src="<?php echo " siga_jpawaj/img_items/" . $tabla["img_it"];
+                <div class="producto">                                    
+                    <div class="contenedor_imagen"><img src="<?php echo " siga_catalogo/img_catacli/" . $tabla["img_it"];
                             ?>" /></div>
                     <h3>
                         <?php
