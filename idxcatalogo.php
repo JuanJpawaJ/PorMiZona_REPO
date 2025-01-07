@@ -129,7 +129,7 @@ $cod_aso="0000007";
                             <?php echo ($simbolo_mone . ($tabla["pv03_it"])) ?>
                         </p>
                     </div>
-                    <a href="<?php echo "siga_jpawaj/ilbupweiv.php?idx=" . $tabla["id"] ?>">
+                    <a href="<?php echo "siga_catalogo/ilbupweiv.php?idx=" . $tabla["id"] ?>">
                         Ver producto
                     </a>
                 </div>
