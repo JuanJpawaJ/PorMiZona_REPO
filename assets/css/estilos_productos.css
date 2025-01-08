@@ -45,6 +45,7 @@ body{
     "cont_imagen separador descripcion"
     "cont_imagen separador codigo"
     "cont_imagen separador cont_precio"
+    "cont_imagen separador boto_comprar"
     "cont_imagen separador ."
     ;
 }
@@ -127,6 +128,32 @@ h1{
         text-decoration: line-through;
     }
 
+.boton_comprar{
+    display: inline;
+    grid-area: boto_comprar;
+   
+    padding: 0.5rem 1rem;
+    justify-self: start;  /* Alinea el enlace al principio de la celda */
+    align-self: start;  
+    margin-top: 2rem;
+    border-radius: 1rem;
+    color:black;
+    border:2px solid black;
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+    .boton_comprar:hover{
+        color:white;
+        border:2px solid #075e54;
+        background-color: #075e54;
+    }
+
+    .boton_comprar > img{
+       height: 1.5rem;
+    }
+
 
 @media only screen and (max-width: 1000px){
 
@@ -141,6 +168,7 @@ h1{
         "descripcion"
         "codigo"
         "cont_precio"
+        "boto_comprar"
         ;
     }
 
@@ -158,6 +186,11 @@ h1{
 
     .separador{
         display: none;
+    }
+
+    .boton_comprar{
+        justify-self: center;  /* Alinea el enlace al principio de la celda */
+        align-self: start;  
     }
         
 }
