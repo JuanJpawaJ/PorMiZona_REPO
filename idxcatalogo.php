@@ -5,6 +5,20 @@ date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
 $cod_aso="0000007";
+$cab_aso="SI";
+
+$rsocial_aso="Comercial SANDRITA";
+$direccion_aso="Av. La Colonial 135";
+$distrito_aso="Arequipa";
+$provincia_aso="Arequipa";
+$departamento_aso="Arequipa";
+$telf1="959956000";
+$telf2="959956000";
+$qsomos_aso="Somos una empresa comercializadora de productos INFORMÁTICOS y TECNOLÓGICOS de calidad y garantía.
+             Nuestra experiencia data de más de 25 años en el mercado PERUANO, siendo parte del Grupo SYSCOMPUTER.
+              Contamos con una vitrina de productos de seguridad e informática.
+               Gracias por su confianza y recuerde que trabajamos para usted."
+
 
 ?>
 
@@ -139,17 +153,14 @@ $cod_aso="0000007";
         </div>
         <div class="contenedor_quienes_somos">
             <h3>¿Quienes somos?</h3>
-            <p>Somos una empresa comercializadora de productos INFORMÁTICOS y TECNOLÓGICOS de calidad y garantía.
-             Nuestra experiencia data de más de 25 años en el mercado PERUANO, siendo parte del Grupo SYSCOMPUTER.
-              Contamos con una vitrina de productos de seguridad e informática.
-               Gracias por su confianza y recuerde que trabajamos para usted.</p>
+            <p> <? echo $qsomos_aso ?>; </p>
             <div class="contenedor_botones_de_contacto">
-                <a href="https://wa.me/+51959956000" target="_blank">
+                <a href="https://wa.me/<? echo '+51'.$telf2 ?>" target="_blank">
                     <p>Escribir por Whatsapp</p>
                     <img src="assets/img/imagenes_index/logo_whatsapp_blanco.png" alt="">
                 </a>
 
-                <a href="tel:+51959956000">
+                <a href="tel:<? echo '+51'.$telf2 ?>">
                     <p>Llamar por teléfono</p>
                     <img src="assets/img/imagenes_index/logo_llamada_negro.png" alt="">
                 </a>
