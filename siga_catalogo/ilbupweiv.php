@@ -117,7 +117,7 @@ if (strlen($img_it) == 0) {
 
       <?php $precio = ($pv03_it > 0) ? $pv03_it : $pv01_it;?>
 
-      <a href="https://wa.me/<? echo '51'.$telf2 ?>?text=Hola%20deseo%20comprar%20el%20producto%20<?php echo ($producto_it); ?>" target="_blank" class="boton_comprar">
+      <a href="https://wa.me/<? echo '51'.$telf2 ?>?text=Hola%20deseo%20información%20el%20producto%20<?php echo ($producto_it); ?>" target="_blank" class="boton_comprar">
         <p>Comprar por Whatsapp</p>
         <img src="../assets/img/imagenes_index/logo_whatsapp_blanco.png" alt="">
       </a>
