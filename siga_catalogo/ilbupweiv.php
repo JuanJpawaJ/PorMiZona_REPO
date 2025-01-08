@@ -6,6 +6,7 @@ date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
 $id = $_GET['idx'];
+$telf2=$_GET['xtelf2'];
 $result = mysqli_query($connec, "select * from catalogo_productos where id=$id");
 $tabla = mysqli_fetch_array($result);
 
@@ -116,7 +117,7 @@ if (strlen($img_it) == 0) {
 
       <?php $precio = ($pv03_it > 0) ? $pv03_it : $pv01_it;?>
 
-      <a href="https://wa.me/51959956000?text=Hola%20deseo%20comprar%20el%20producto%20<?php echo ($producto_it); ?>" target="_blank" class="boton_comprar">
+      <a href="https://wa.me/<? echo '51'.$telf2 ?>?text=Hola%20deseo%20comprar%20el%20producto%20<?php echo ($producto_it); ?>" target="_blank" class="boton_comprar">
         <p>Comprar por Whatsapp</p>
         <img src="../assets/img/imagenes_index/logo_whatsapp_blanco.png" alt="">
       </a>

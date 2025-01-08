@@ -143,7 +143,8 @@ $qsomos_aso="Somos una empresa comercializadora de productos REGALOS de calidad 
                             <?php echo ($simbolo_mone . ($tabla["pv03_it"])) ?>
                         </p>
                     </div>
-                    <a href="<?php echo "siga_catalogo/ilbupweiv.php?idx=" . $tabla["id"] ?>">
+                    <a href="<?php echo "siga_catalogo/ilbupweiv.php?idx=" . $tabla["id"] ?>&xtelf2=<?php echo($telf2);?>">
+                    
                         Ver producto
                     </a>
                 </div>
