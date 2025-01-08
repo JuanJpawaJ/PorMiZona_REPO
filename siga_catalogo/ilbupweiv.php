@@ -5,21 +5,22 @@ mysqli_set_charset($connec, 'utf8');
 date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
-
 $id = $_GET['idx'];
 $result = mysqli_query($connec, "select * from catalogo_productos where id=$id");
 $tabla = mysqli_fetch_array($result);
 
 $idmodi = $tabla["id"];
+$codigo_it = $tabla["codigo_it"];
+$codfabrica_it = $tabla["codfabrica_it"];
+$producto_it = $tabla["producto_it"];
+
+
 $id = $tabla["id"];
 $codigo_it = $tabla["codigo_it"];
 $codfabrica_it = $tabla["codfabrica_it"];
 $img_it = $tabla["img_it"];
 $grupolista_it = $tabla["grupolista_it"];
 $producto_it = $tabla["producto_it"];
-
-
-
 $marka_it = $tabla["marka_it"];
 $fabricante_it = $tabla["fabricante_it"];
 $precom_it = $tabla["precom_it"];
@@ -68,7 +69,7 @@ if (strlen($img_it) == 0) {
   <div class="container_t">
     <div class="contenedor_imagen_m">
       <div class="img">
-        <img src="<? echo "img_catacli/" . $img_it ?>" alt="">
+        <img src="<? echo "img_items/" . $img_it ?>" alt="">
       </div>
       <p>La imagen es referencial*</p>
     </div>
@@ -112,12 +113,22 @@ if (strlen($img_it) == 0) {
       </div>
 
       <?php }?>
+
+      <?php $precio = ($pv03_it > 0) ? $pv03_it : $pv01_it;?>
+
+      <a href="https://wa.me/51959956000?text=Hola%20deseo%20comprar%20el%20producto%20<?php echo ($producto_it); ?>" target="_blank" class="boton_comprar">
+        <p>Comprar por Whatsapp</p>
+        <img src="../assets/img/imagenes_index/logo_whatsapp_blanco.png" alt="">
+      </a>
+
   </div>
 
   <?php
   $agregado_en = "../";
   include '../widgets/footer.php';
   ?>
+
+
 </body>
 
 </html>
