@@ -5,8 +5,59 @@ mysqli_set_charset($connec, 'utf8');
 date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
+$xcod_aso=$_GET['xcod_aso'];
+$result=mysqli_query($connec,"select * from catalogo_clientes where cod_aso='$cod_aso'");
+$total=mysqli_num_rows($result);
+$tabla = mysqli_fetch_array( $result );
+  
+  $xid=$tabla["id"];
+$cod_aso=$tabla["cod_aso"];
+
+$pais_aso=$tabla['pais_aso'];
+$rsocial_aso=$tabla['rsocial_aso'];
+$direccion_aso=$tabla['direccion_aso'];
+$distrito_aso=$tabla['distrito_aso'];
+$provincia_aso=$tabla['provincia_aso'];
+$departamento_aso=$tabla['departamento_aso'];
+
+    $resultaso=mysqli_query($connec,"SELECT * FROM estado_51   where cod_est='$departamento_aso'");
+	$tablaaso =mysqli_fetch_array( $resultaso );
+	$departamentotxt_aso=$tablaaso["estado_est"];
+
+
+$referencia_aso=$tabla['referencia_aso'];
+$gironeg_aso=$tabla["gironeg_aso"];
+$telf1_aso=$tabla['telf1_aso'];
+$telf2_aso=$tabla['telf2_aso'];
+$email_aso=$tabla['email_aso'];
+$categoria_aso=$tabla['categoria_aso'];
+$productos_aso=$tabla['productos_aso'];
+$latitud_aso=$tabla['latitud_aso'];
+$longitud_aso=$tabla['longitud_aso'];	
+$favicon_aso=$tabla["favicon_aso"];
+ if(strlen($favicon_aso)==0) {
+	$favicon_aso="f_pmz_bl.png";
+ }
+$date_aso=$tabla["date_aso"];	
+$publicidad_aso=$tabla["publicidad_aso"];	
+$grupolista_aso=$tabla["grupolista_aso"];
+$img1_aso=$tabla["img1_aso"];
+$img2_aso=$tabla["img2_aso"];
+$logo_aso=$tabla["logo_aso"];
+$view01_aso=$tabla["view01_aso"];
+$view02_aso=$tabla["view02_aso"];
+$view03_aso=$tabla["view03_aso"];
+$view04_aso=$tabla["view04_aso"]; // cabecera S - N
+$link01_aso=$tabla["link01_aso"];
+$link02_aso=$tabla["link02_aso"];
+$msjpublico_aso=$tabla["msjpublico_aso"];
+$obsinterno_aso=$tabla["obsinterno_aso"];
+
+
+
+
 $id = $_GET['idx'];
-$telf2=$_GET['xtelf2'];
+
 $result = mysqli_query($connec, "select * from catalogo_productos where id=$id");
 $tabla = mysqli_fetch_array($result);
 
@@ -117,14 +168,20 @@ if (strlen($img_it) == 0) {
 
       <?php $precio = ($pv03_it > 0) ? $pv03_it : $pv01_it;?>
 
-      <a href="https://wa.me/<? echo '51'.$telf2 ?>?text=Hola%20deseo%20información%20de:%20<?php echo ($producto_it); ?>" target="_blank" class="boton_comprar">
-        <p>Comprar por Whatsapp</p>
+      <a href="https://wa.me/<? echo '51'.$telf2_aso ?>?text=Hola%20deseo%20información%20de:%20<?php echo ($producto_it); ?>" target="_blank" class="boton_comprar">
+        <p>Deseo información - Whatsapp</p>
         <img src="../assets/img/imagenes_index/logo_whatsapp_blanco.png" alt="">
       </a>
 
   </div>
 
+
+
+
   <?php
+  
+
+  
   $agregado_en = "../";
   include '../widgets/catalogo_footer.php';
   ?>

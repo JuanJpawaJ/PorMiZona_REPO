@@ -225,7 +225,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
                             <?php echo ($simbolo_mone . ($tabla["pv03_it"])) ?>
                         </p>
                     </div>
-                    <a href="<?php echo "siga_catalogo/ilbupweiv.php?idx=" . $tabla["id"] ?>&xtelf2=<?php echo($telf2_aso);?>">
+                    <a href="<?php echo "siga_catalogo/ilbupweiv.php?idx=" . $tabla["id"] ?>&xcod_aso=<?php echo($cod_aso);?>">
                     
                         Ver producto
                     </a>
