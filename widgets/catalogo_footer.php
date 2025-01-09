@@ -1,33 +1,25 @@
-<?php
-include ("connec_sql_new.php");
-mysqli_set_charset($connec, 'utf8');
-date_default_timezone_set("America/Lima");
-setlocale(LC_ALL, "sp");
-?>
-
-
 <link rel="stylesheet" href="<?php echo $agregado_en?>assets/css/estilos_footer.css">
 
 <div class="footer">
     <div>
-        <h4>Tienda exhibición:</h4>
-        <p>Av. Porongoche 323 (1/2 cuadra del Mall Aventura Plaza - Porongoche)</p>
+        <h4>Dirección:</h4>
+        <p><? echo $direccion_aso." ".$distrito_aso." ".$provincia_aso." ".$departamentotxt_aso; ?></p>
 
-        <h4>Almacen:</h4>
-        <p>Calle Sena 105 - Coop 58 (1/2 cuadra del Mall Aventura Porongoche)</p>
+        <!--<h4>Almacen:</h4>
+        <p>Calle Sena 105 - Coop 58 (1/2 cuadra del Mall Aventura Porongoche)</p> -->
     </div>
 
     <div>
         <h4>Teléfonos:</h4>
         <ul>
-            <li>959956000</li>
-            <li>959956060</li>
+            <li><? echo $telf1_aso; ?></li>
+            <li><? echo $telf2_aso; ?></li>
         </ul>
 
         <h4>Correo electrónico:</h4>
         <ul>
-            <li>jpawasac@gmail.com</li>
-            <li>jpawasac@gmail.com</li>
+            <li><?php echo $email_aso?></li>
+           <!-- <li>jpawasac@gmail.com</li> -->
         </ul>
     </div>
     <div>
