@@ -126,7 +126,7 @@ if (strlen($img_it) == 0) {
 
   <?php
   $agregado_en = "../";
-  include '../widgets/footer.php';
+  include '../widgets/catalogo_footer.php';
   ?>
 
 
