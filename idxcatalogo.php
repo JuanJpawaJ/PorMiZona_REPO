@@ -128,7 +128,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
     
 <? } else {?>
 
-<div>
+<div class="header_ofertas">
 <? 
 echo $rsocial_aso."</br>";
 echo $direccion_aso."</br>";
