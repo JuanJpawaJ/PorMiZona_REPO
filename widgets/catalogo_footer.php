@@ -60,8 +60,8 @@
     </div>
 
     <div class="contenedor_final_footer">
-        <img src="<?php echo $agregado_en?>assets/img/imagenes_index/logo_JPAWAJ_blanco.png" alt="">
-        <p>Arequipa - Peru - 2024</p>
+        <img src="siga_catalogo/img_catacli/<? echo $logo_aso; ?>" alt="">
+        <p><? echo $departamentotxt_aso; ?> - Peru - 2025</p>
     </div>
     
 </div>
