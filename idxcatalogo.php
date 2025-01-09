@@ -9,13 +9,13 @@
     margin-bottom:4rem;
 }
 
-   .contenedor_quienes_somos > h3{
+   /*  .contenedor_quienes_somos > h3{
         font-family: var(--fuente_gruesa);
-       /* margin-bottom: 1rem; */
+       margin-bottom: 1rem; 
         color:var(--color_azul_oscuro_1);
     }
 
-  /*   .contenedor_quienes_somos > p{
+    .contenedor_quienes_somos > p{
         width: 60%;
         text-align: center;
         color:var(--color_grises_2);
