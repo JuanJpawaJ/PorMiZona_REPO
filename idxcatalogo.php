@@ -5,21 +5,52 @@ date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
 $cod_aso="0000007";
-$cab_aso="SI";
-
-$rsocial_aso="Comercial SANDRITA";
-$direccion_aso="Av. La Colonial 135";
-$distrito_aso="Arequipa";
-$provincia_aso="Arequipa";
-$departamento_aso="Arequipa";
-$telf1="959956000";
-$telf2="959956000";
-$qsomos_aso="Somos una empresa comercializadora de productos REGALOS de calidad y garantía.
-             Nuestra experiencia data de más de 10 años en el mercado AREQUIPEÑO, siendo parte del Grupo AQPREGALOS.
-              Contamos con una vitrina de productos variado y de marca.
-               ¡Gracias por su confianza y recuerde que trabajamos para usted!"
 
 
+$result=mysqli_query($connec,"select * from catalogo_clientes where cod_aso='$cod_aso'");
+$total=mysqli_num_rows($result);
+$tabla = mysqli_fetch_array( $result );
+
+$usua_aso=$tabla['usua_aso'];
+$pass_aso=$tabla['pass_aso'];
+
+
+$xid=$tabla["id"];
+$cod_aso=$tabla["cod_aso"];
+
+$pais_aso=$tabla['pais_aso'];
+$rsocial_aso=$tabla['rsocial_aso'];
+$direccion_aso=$tabla['direccion_aso'];
+$distrito_aso=$tabla['distrito_aso'];
+$provincia_aso=$tabla['provincia_aso'];
+$departamento_aso=$tabla['departamento_aso'];
+$referencia_aso=$tabla['referencia_aso'];
+$gironeg_aso=$tabla["gironeg_aso"];
+$telf1_aso=$tabla['telf1_aso'];
+$telf2_aso=$tabla['telf2_aso'];
+$email_aso=$tabla['email_aso'];
+$categoria_aso=$tabla['categoria_aso'];
+$productos_aso=$tabla['productos_aso'];
+$latitud_aso=$tabla['latitud_aso'];
+$longitud_aso=$tabla['longitud_aso'];	
+$favicon_aso=$tabla["favicon_aso"];
+ if(strlen($favicon_aso)==0) {
+	$favicon_aso="f_pmz_bl.png";
+ }
+$date_aso=$tabla["date_aso"];	
+$publicidad_aso=$tabla["publicidad_aso"];	
+$grupolista_aso=$tabla["grupolista_aso"];
+$img1_aso=$tabla["img1_aso"];
+$img2_aso=$tabla["img2_aso"];
+$logo_aso=$tabla["logo_aso"];
+$view01_aso=$tabla["view01_aso"];
+$view02_aso=$tabla["view02_aso"];
+$view03_aso=$tabla["view03_aso"];
+$view04_aso=$tabla["view04_aso"]; // cabecera S - N
+$link01_aso=$tabla["link01_aso"];
+$link02_aso=$tabla["link02_aso"];
+$msjpublico_aso=$tabla["msjpublico_aso"];
+$obsinterno_aso=$tabla["obsinterno_aso"];
 ?>
 
 
@@ -53,7 +84,8 @@ $qsomos_aso="Somos una empresa comercializadora de productos REGALOS de calidad 
 	$slid=$cod_aso."s";
     ?>
 
-  
+  <? if ($view04_aso=="S") { ?>
+	  
 
     <div class="contenedor_slider_imagenes">
         <div class="slider-wrapper">
@@ -94,6 +126,19 @@ $qsomos_aso="Somos una empresa comercializadora de productos REGALOS de calidad 
         </div>
     </div>
     
+<? } else {?>
+
+<div>
+<? 
+echo $rsocial_aso."</br>";
+echo $direccion_aso."</br>";
+echo $distrito_aso." ".$provincia_aso." ".$departamento_aso."</br>";
+echo $telf1_aso." ".$telf2_aso."</br>";
+ 
+?>
+</div>
+
+<? } ?>
 
 <!-------   **********   consulta CATALOGO_PRODUCTOS *********************  --->
     <? $result = mysqli_query($connec, "select * from catalogo_productos where cod_aso_it=$cod_aso order by producto_it");
@@ -143,7 +188,7 @@ $qsomos_aso="Somos una empresa comercializadora de productos REGALOS de calidad 
                             <?php echo ($simbolo_mone . ($tabla["pv03_it"])) ?>
                         </p>
                     </div>
-                    <a href="<?php echo "siga_catalogo/ilbupweiv.php?idx=" . $tabla["id"] ?>&xtelf2=<?php echo($telf2);?>">
+                    <a href="<?php echo "siga_catalogo/ilbupweiv.php?idx=" . $tabla["id"] ?>&xtelf2=<?php echo($telf2_aso);?>">
                     
                         Ver producto
                     </a>
@@ -154,14 +199,14 @@ $qsomos_aso="Somos una empresa comercializadora de productos REGALOS de calidad 
         </div>
         <div class="contenedor_quienes_somos">
             <h3>¿Quienes somos?</h3>
-            <p> <? echo $qsomos_aso ?>; </p>
+            <p> <? echo $msjpublico_aso ?>; </p>
             <div class="contenedor_botones_de_contacto">
-                <a href="https://wa.me/<? echo '+51'.$telf2 ?>" target="_blank">
+                <a href="https://wa.me/<? echo '+51'.$telf2_aso ?>" target="_blank">
                     <p>Escribir por Whatsapp</p>
                     <img src="assets/img/imagenes_index/logo_whatsapp_blanco.png" alt="">
                 </a>
 
-                <a href="tel:<? echo '+51'.$telf2 ?>">
+                <a href="tel:<? echo '+51'.$telf2_aso ?>">
                     <p>Llamar por teléfono</p>
                     <img src="assets/img/imagenes_index/logo_llamada_negro.png" alt="">
                 </a>
@@ -173,7 +218,7 @@ $qsomos_aso="Somos una empresa comercializadora de productos REGALOS de calidad 
 
     <?php 
     $agregado_en = "";
-    include 'widgets/footer.php' 
+    include 'widgets/catalogo_footer.php' 
     ?>
 
     <script src="assets/js/slider_automatico.js"></script>
