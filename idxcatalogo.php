@@ -2,26 +2,21 @@
 
 .contenedor_cabtxt{
     /* background-color: green; */
-   
+    width:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom:4rem;
 }
 
-   /*  .contenedor_quienes_somos > h3{
+ 
+    .contenedor_cabtxt > h3{
         font-family: var(--fuente_gruesa);
        margin-bottom: 1rem; 
         color:var(--color_azul_oscuro_1);
     }
 
-    .contenedor_quienes_somos > p{
-        width: 60%;
-        text-align: center;
-        color:var(--color_grises_2);
-        margin-bottom: 2rem;
-        line-height: 1.3;
-    }*/
+    
 
   </style>
   
