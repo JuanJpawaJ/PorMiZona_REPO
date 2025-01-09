@@ -2,20 +2,20 @@
 
 .contenedor_cabtxt{
     /* background-color: green; */
-    width:80%;
+    width:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom:4rem;
 }
 
-  /*  .contenedor_quienes_somos > h3{
+   .contenedor_quienes_somos > h3{
         font-family: var(--fuente_gruesa);
         margin-bottom: 1rem;
         color:var(--color_azul_oscuro_1);
     }
 
-    .contenedor_quienes_somos > p{
+  /*   .contenedor_quienes_somos > p{
         width: 60%;
         text-align: center;
         color:var(--color_grises_2);
@@ -162,7 +162,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 <? } else {?>
 
 <div class="contenedor_cabtxt">
-<h2> <? echo $rsocial_aso; ?> </h2>
+<h3> <? echo $rsocial_aso; ?> </h3>
 <h2> <? echo $direccion_aso."</br>"; ?> </h2>
 <h2> <? echo $distrito_aso." ".$provincia_aso." ".$departamentotxt_aso."</br>"; ?> </h2>
 <h2> <? echo $telf1_aso." ".$telf2_aso."</br>"; ?> </h2>
