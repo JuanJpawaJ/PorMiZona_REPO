@@ -11,7 +11,7 @@
 
    .contenedor_quienes_somos > h3{
         font-family: var(--fuente_gruesa);
-        margin-bottom: 1rem;
+       /* margin-bottom: 1rem; */
         color:var(--color_azul_oscuro_1);
     }
 
