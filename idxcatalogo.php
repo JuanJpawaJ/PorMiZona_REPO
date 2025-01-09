@@ -1,3 +1,30 @@
+   <style>
+
+.contenedor_cabtxt{
+    /* background-color: green; */
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:4rem;
+}
+
+  /*  .contenedor_quienes_somos > h3{
+        font-family: var(--fuente_gruesa);
+        margin-bottom: 1rem;
+        color:var(--color_azul_oscuro_1);
+    }
+
+    .contenedor_quienes_somos > p{
+        width: 60%;
+        text-align: center;
+        color:var(--color_grises_2);
+        margin-bottom: 2rem;
+        line-height: 1.3;
+    }*/
+
+  </style>
+  
 <?php
 include ("connec_sql_new.php");
 mysqli_set_charset($connec, 'utf8');
@@ -134,7 +161,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
     
 <? } else {?>
 
-<div class="header_ofertas">
+<div class="contenedor_cabtxt">
 <h2> <? echo $rsocial_aso; ?> </h2>
 <h2> <? echo $direccion_aso."</br>"; ?> </h2>
 <h2> <? echo $distrito_aso." ".$provincia_aso." ".$departamentotxt_aso."</br>"; ?> </h2>
