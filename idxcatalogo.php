@@ -253,7 +253,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 <div class="footer">
     <div>
         <h4>Tienda exhibición:</h4>
-        <p>Av. Porongoche 323 (1/2 cuadra del Mall Aventura Plaza - Porongoche)</p>
+        <p>Ca SennnaaaaaaaAv. Porongoche 323 (1/2 cuadra del Mall Aventura Plaza - Porongoche)</p>
 
         <h4>Almacen:</h4>
         <p>Calle Sena 105 - Coop 58 (1/2 cuadra del Mall Aventura Porongoche)</p>
