@@ -259,7 +259,8 @@ if ($zxyw == "SCADCASA2014_09" OR ($total !==0 AND $password_per == $password)){
             <td width="70">&nbsp;</td>
             <td width="70" height="63"><p class="texto_link"><a href="../siga_catalogo/catalogo_ingre_clientes.php">CATALOGO<BR />INGRESO<BR />CLIENTES</a></p></td>
             <td width="61" class="texto_link"><a href="../siga_catalogo/catalogo_list_clientes_admin.php">CATALOGO<BR />LISTA<BR /> ADMIN<BR /> CLIENTES</a></td>
-            <td width="55"><a href="../siga_catalogo/catalogo_list_tems_admin.php">CATALOGO<BR />LISTA<BR />ITEMS<BR />ADMIN</a></td>
+            <td width="55" class="texto_link"><a href="../siga_catalogo/catalogo_list_items_admin.php">CATALOGO<BR />LISTA<BR />ITEMS<BR />ADMIN</a></td>
+                            
             <td width="55">&nbsp;</td>
             </tr>
         </table></td>
