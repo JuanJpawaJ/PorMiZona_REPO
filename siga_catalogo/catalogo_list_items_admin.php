@@ -49,7 +49,7 @@ $xgl=="SMRD";
 		
 if ($xareg=="SIAREG") {
   // genera el codigo de 6 digitos en base al max id anterior
-  $rs = mysqli_query($connec,"SELECT MAX(id) AS id FROM a_items");
+  $rs = mysqli_query($connec,"SELECT MAX(id) AS id FROM catalogo_productos");
    if ($row = mysqli_fetch_row($rs)) {
 	   $idid = trim($row[0]);
    }
@@ -98,7 +98,7 @@ if ($xareg=="SIAREG") {
 	   $xum=0;
 	   
 
-     $sql="INSERT INTO a_items (codigo_it,codfabrica_it,producto_it,grupolista_it,marka_it,fabricante_it, precom_it,monelista_it, pv01_it,pv02_it,pv03_it,img_it,stockmin_it,lugar_al_it,view01_it, view02_it,view03_it,view04_it,time_entrega_it,msjpublico_it,obscompra_it) VALUES 
+     $sql="INSERT INTO catalogo_productos (codigo_it,codfabrica_it,producto_it,grupolista_it,marka_it,fabricante_it, precom_it,monelista_it, pv01_it,pv02_it,pv03_it,img_it,stockmin_it,lugar_al_it,view01_it, view02_it,view03_it,view04_it,time_entrega_it,msjpublico_it,obscompra_it) VALUES 
 ('$codigo_it','$codfabrica_it','$producto_it','$grupolista_it','$marka_it','$fabricante_it','$precom_it','$monelista_it', '$pv01_it', '$pv02_it','$pv03_it', '$img_it','$stockmin_it','$lugar_al_it','$view01_it','$view02_it','$view03_it','$view04_it','$time_entrega_it','$msjpublico_it','$obscompra_it')";
      $result=mysqli_query($connec,$sql);
      if($result){
@@ -124,7 +124,7 @@ if ($xmodi=="SIMODI") {
   $xventa=$_GET['xventa'];
    $xcosto=$_GET['xcosto'];
    $ximg=$_GET['ximg'];
-$sql="UPDATE a_items SET codfabrica_it='$xcodfab',producto_it='$xproducto',producto_it='$xproducto',marka_it='$xmarka',preven_it='$xventa',img_it='$ximg' WHERE id=$idmodi";
+$sql="UPDATE catalogo_productos SET codfabrica_it='$xcodfab',producto_it='$xproducto',producto_it='$xproducto',marka_it='$xmarka',preven_it='$xventa',img_it='$ximg' WHERE id=$idmodi";
 
    $result=mysqli_query($connec,$sql);
    if($result){
@@ -144,7 +144,7 @@ if ($xdelreg=="SIDELREG") {
 
    $idx=$_GET['idx']; 
    $delcod=$_GET['delcod'];
-   $query = "delete from a_items where codigo_it ='$delcod'";  
+   $query = "delete from catalogo_productos where codigo_it ='$delcod'";  
    $result = mysqli_query($connec,$query); 
   
    $xdelreg="NO";
@@ -245,13 +245,13 @@ if ($xdelreg=="SIDELREG") {
 
 if(strlen($bxproducto)==0){
 	if ($xgl=="SMRD") {
-        $result=mysqli_query($connec,"select * from catalogo_clientes where cod_aso_it=$cod_aso order by producto_it");
+        $result=mysqli_query($connec,"select * from catalogo_productos where cod_aso_it=$cod_aso order by producto_it");
 	}else{
-        $result=mysqli_query($connec,"select * from catalogo_clientes where (cod_aso_it=$cod_aso) AND (grupolista_it like '%$xgl%') order by producto_it");
+        $result=mysqli_query($connec,"select * from catalogo_productos where (cod_aso_it=$cod_aso) AND (grupolista_it like '%$xgl%') order by producto_it");
 	}
 } else {
 $bxproducto1=trim($bxproducto);
-$result=mysqli_query($connec,"select * from catalogo_clientes where (cod_aso_it=$cod_aso) AND (producto_it like '%$bxproducto1%') order by producto_it");
+$result=mysqli_query($connec,"select * from catalogo_productos where (cod_aso_it=$cod_aso) AND (producto_it like '%$bxproducto1%') order by producto_it");
 }
 
 
@@ -454,7 +454,7 @@ while ($tabla=mysqli_fetch_array($result)){
 } elseif($viewmodi=="SIVM"){
    $idx=$_GET['idx']; 
 
-$result=mysqli_query($connec,"select * from a_items where id=$idx");	
+$result=mysqli_query($connec,"select * from catalogo_productos where id=$idx");	
 
 $tabla = mysqli_fetch_array( $result );
 		$idmodi=$tabla["id"];
