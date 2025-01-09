@@ -297,7 +297,7 @@ while ($tabla=mysqli_fetch_array($result)){
       <tr bgcolor="#FFFFFF" class="tabla10">
         <td bgcolor="#FFFFFF"><?php echo($codigo_it) ?></td>
 
-        <td valign="middle" bgcolor="#FFFFFF">           <a href="ilbupweiv.php?idx=<?php  echo($id); ?>"><img src=" <?php echo "img_items/".$img_it ?> " width="60" height="%" /><? if ($pv03_it>0) {?> <img src="iconos/promocion.jpg" alt="EN OFERTA" width="14" height="30" /> <? } ?></a></td>
+        <td valign="middle" bgcolor="#FFFFFF">           <a href="ilbupweiv.php?idx=<?php  echo($id); ?>"><img src=" <?php echo "img_catacli/".$img_it ?> " width="60" height="%" /><? if ($pv03_it>0) {?> <img src="iconos/promocion.jpg" alt="EN OFERTA" width="14" height="30" /> <? } ?></a></td>
         <td bgcolor="#FFFFFF"><?php echo($grupolista_it) ?></td>
         <td bgcolor="#FFFFFF"><?php echo($producto_it) ?></td>
         <td align="right" bgcolor="#FFFFFF"><?php echo($codfabrica_it) ?></td>
