@@ -129,11 +129,10 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 <? } else {?>
 
 <div class="header_ofertas">
-<h2> <? echo $rsocial_aso."</br>"; ?> </h2>
+<h2> <? echo $rsocial_aso; ?> </h2>
 <h2> <? echo $direccion_aso."</br>"; ?> </h2>
 <h2> <? echo $distrito_aso." ".$provincia_aso." ".$departamento_aso."</br>"; ?> </h2>
 <h2> <? echo $telf1_aso." ".$telf2_aso."</br>"; ?> </h2>
-
 
 </div>
 
