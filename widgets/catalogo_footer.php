@@ -30,7 +30,7 @@
                     <p>instagram/jpawaj</p>
                 </a>
             </li>
-            <li>
+         <!--   <li>
                 <a href="#">
                     <img src="<?php echo $agregado_en?>assets/img/imagenes_index/logo_facebook_blanco.png" alt="">
                     <p>instagram/jpawaj</p>
@@ -55,7 +55,7 @@
                     <img src="<?php echo $agregado_en?>assets/img/imagenes_index/logo_whatsapp_blanco.png" alt="">
                     <p>instagram/jpawaj</p>
                 </a>
-            </li>
+            </li> -->
         </ul>
     </div>
 
