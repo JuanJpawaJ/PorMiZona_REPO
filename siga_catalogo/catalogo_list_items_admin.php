@@ -33,6 +33,7 @@ setlocale(LC_ALL, "sp");
 
 
 $cod_aso="0000007";
+$rsocial_aso="PERFUMERIA ANY";
 
 $bxproducto=$_GET['bxproducto'];
 // ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
@@ -158,7 +159,7 @@ if ($xdelreg=="SIDELREG") {
     <td colspan="4" bgcolor="#000066" class="tit_menu_sup"><table width="904" height="63" border="0" cellpadding="0" cellspacing="0">
       <tr>
         <td width="121" align="center" valign="top"><img src="iconos/ico_yo_sigachef.png" width="120" height="60"></td>
-        <td width="575"><div align="center"><span class="TITULO_NARANJA">ADMINISTRADOR - ITEMS COD_ASO </span></div></td>
+        <td width="575"><div align="center"><span class="TITULO_NARANJA">ADMINISTRADOR - ITEMS -<? echo $cod_aso." ".$rsocial_aso; ?></span></div></td>
         <td width="154" align="center" valign="middle"><img src="iconos/logo_cli_120_60_png.png" width="120" height="60"></td>
         </tr>
     </table></td>
