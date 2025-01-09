@@ -24,6 +24,12 @@ $direccion_aso=$tabla['direccion_aso'];
 $distrito_aso=$tabla['distrito_aso'];
 $provincia_aso=$tabla['provincia_aso'];
 $departamento_aso=$tabla['departamento_aso'];
+
+    $resultaso=mysqli_query($connec,"SELECT * FROM estado_51   where cod_est='$departamento_aso'");
+	$tablaaso =mysqli_fetch_array( $resultaso );
+	$departamentotxt_aso=$tablaaso["estado_est"];
+
+
 $referencia_aso=$tabla['referencia_aso'];
 $gironeg_aso=$tabla["gironeg_aso"];
 $telf1_aso=$tabla['telf1_aso'];
@@ -131,7 +137,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 <div class="header_ofertas">
 <h2> <? echo $rsocial_aso; ?> </h2>
 <h2> <? echo $direccion_aso."</br>"; ?> </h2>
-<h2> <? echo $distrito_aso." ".$provincia_aso." ".$departamento_aso."</br>"; ?> </h2>
+<h2> <? echo $distrito_aso." ".$provincia_aso." ".$departamentotxt_aso."</br>"; ?> </h2>
 <h2> <? echo $telf1_aso." ".$telf2_aso."</br>"; ?> </h2>
 
 </div>
