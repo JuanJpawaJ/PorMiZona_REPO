@@ -20,9 +20,10 @@
     }
 	
 	.contenedor_cabtxt > div{
-		display:flex;
-		flex-direction: column;
-		column-gap: 1rem;
+		display: flex;
+    	flex-direction: column;
+    	row-gap: 0.5rem;
+    	align-items: center;
 	}
 
     
