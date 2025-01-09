@@ -10,7 +10,7 @@
 }
 
  
-    .contenedor_cabtxt > h3{
+    .contenedor_cabtxt > h2{
         font-family: var(--fuente_gruesa);
        margin-bottom: 1rem; 
         color:var(--color_azul_oscuro_1);
@@ -157,10 +157,10 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 <? } else {?>
 
 <div class="contenedor_cabtxt">
-<h3> <? echo $rsocial_aso; ?> </h3>
-<h2> <? echo $direccion_aso."</br>"; ?> </h2>
-<h2> <? echo $distrito_aso." ".$provincia_aso." ".$departamentotxt_aso."</br>"; ?> </h2>
-<h2> <? echo $telf1_aso." ".$telf2_aso."</br>"; ?> </h2>
+<h2> <? echo $rsocial_aso; ?> </h2>
+<h3> <? echo $direccion_aso; ?> </h3>
+<h3> <? echo $distrito_aso." ".$provincia_aso." ".$departamentotxt_aso; ?> </h3>
+<h3> <? echo $telf1_aso." ".$telf2_aso; ?> </h3>
 
 </div>
 
