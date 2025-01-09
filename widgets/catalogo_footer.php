@@ -60,7 +60,9 @@
     </div>
 
     <div class="contenedor_final_footer">
-        <img src="<? echo $agregado_en; ?>siga_catalogo/img_catacli/<? echo $logo_aso; ?>" alt="">
+      <!--  <img src="<? echo $agregado_en; ?>siga_catalogo/img_catacli/<? echo $logo_aso; ?>" alt=""> -->
+        <img src="../siga_catalogo/img_catacli/<? echo $logo_aso; ?>" alt="">
+
         <p><? echo $departamentotxt_aso; ?> - Peru - 2025</p>
     </div>
     
