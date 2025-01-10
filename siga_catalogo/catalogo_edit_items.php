@@ -96,7 +96,6 @@ $tabla = mysqli_fetch_array( $result );
 		$pv02_it=$tabla["pv02_it"];
 		$pv03_it=$tabla["pv03_it"];
 		$img_it=$tabla["img_it"];
-		echo "imagen txt . ".$img_it;
         if (strlen($img_it)==0) {
 		  $img_it="no_disponible.jpg";
         }
