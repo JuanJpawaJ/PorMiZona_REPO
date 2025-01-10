@@ -113,7 +113,7 @@ $tabla = mysqli_fetch_array( $result );
       <tr>
         <td width="86" height="40" bgcolor="#E3E3E1" >CODIGO : </td>
         <td width="215" bgcolor="#E3E3E1" class="viewtexto"><?php echo($codigo_it); ?> </td>
-        <td colspan="2" rowspan="8" align="center" valign="top" bgcolor="#E3E3E1"><p><img src="<? echo "img_catacli/".$img_it ?>" width="421" height="%" /></p>
+        <td colspan="2" rowspan="8" align="center" valign="top" bgcolor="#E3E3E1"><p><img src="<? echo "../img_catacli/".$img_it ?>" width="421" height="%" /></p>
           <p>&nbsp;</p>
           <p>NOTA: La imagen es referencial.</p></td>
       </tr>
