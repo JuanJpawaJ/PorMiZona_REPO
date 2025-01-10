@@ -155,6 +155,8 @@ $tabla = mysqli_fetch_array( $result );
       <input type="hidden" name="idx" value=<?php echo($id); ?> />
       <input type="hidden" name="xmod" value="1"/>     
       <input type="hidden" name="xview" value=<?php echo($xview);  ?> />     
+      <input type="hidden" name="xcod" value=<?php echo($cod_aso);  ?> />     
+
       <td colspan="2">
         
         

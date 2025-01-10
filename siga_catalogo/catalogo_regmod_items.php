@@ -7,6 +7,7 @@ setlocale(LC_ALL, "sp");
 $xview=$_GET['xview'];   // ADMIN  o xxxxxx
 $id = $_GET['idx'];
 //$retornar_ax=$_GET['xretornar_ax'];   
+$cod_aso=$_GET['xcod'];
 $retornar_ax="catalogo_list_items.php";	
 $xmod=$_GET['xmod'];  // tipo de formulario 1 o 2
 echo ("XMOD: ".$xmod."<BR>");
@@ -88,7 +89,7 @@ if ($xmod=="1") {   // CARACTERISTICAS  11111 admin
 ?>
 <table width="363" border="0">
   <tr bgcolor="#F8DA94">
-    <th scope="col"><div align="center"><a href="catalogo_edit_items.php?idx=<?php  echo($id); ?>&xview=<?php  echo("ADMIN"); ?>&xareg=NNOOO&xmodi=NOOOOO&xdelreg=NOOOOO">RETORNAR</a></div>
+    <th scope="col"><div align="center"><a href="catalogo_edit_items.php?idx=<?php  echo($id); ?>&xview=<?php  echo("ADMIN"); ?>&xcod=<?php  echo ($cod_aso); ?>&xareg=NNOOO&xmodi=NOOOOO&xdelreg=NOOOOO">RETORNAR</a></div>
     
     </th>
   </tr>
