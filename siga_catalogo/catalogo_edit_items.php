@@ -207,7 +207,7 @@ if (trim($xview)=="ADMIN") { // solo si es ADMIN
 ?>
   <!-- 2222222222  ↓↓↓↓↓↓↓↓↓↓↓  INICIO ADMIN  *******************  DE LA TABLA DE DATOS SOLO ADMINISTRADOR ***************** -->
   <table width="329" border="1" align="center" class="tablaingrenuevo">
-  <form id="form3" name="form3" method="get" action="n_mod_items.php">
+  <form id="form3" name="form3" method="get" action="catalogo_regmod_items.php">
     <tr>
       <td colspan="3" bgcolor="#FFCC66"><div align="center" class="tablaingrenuevo"><strong>DATOS</strong> (Uso: solo Admin)</div></td>
     </tr>
@@ -233,6 +233,7 @@ if (trim($xview)=="ADMIN") { // solo si es ADMIN
         <input type="hidden" name="idx" value="<?php echo($id); ?>" />
         <input type="hidden" name="xmod" value="3" />
         <input type="hidden" name="xview" value=<?php echo($xview);  ?> />     
+        <input type="hidden" name="xcod" value=<?php echo($cod_aso);  ?> />     
         
         <input name="Submit2" type="submit" class="Estilo38" value="-&gt; MODIFICAR &lt;-" />
     
@@ -280,7 +281,7 @@ if (trim($xview)=="ADMIN") { // solo si es ADMIN
       <td colspan="3" align="center" bgcolor="#E3E3E1">
       
       <table width="453" height="149" border="1">
-     <form id="form4" name="form4" method="get" action="n_mod_items.php">      
+     <form id="form4" name="form4" method="get" action="catalogo_regmod_items.php">      
         <tr>
           <td width="149" align="center" bgcolor="#FFFF00">01 = PV PUBLICO</td>
           <td width="141" align="center" bgcolor="#66FF00">02 = PV DISTRIBUIDOR </td>
@@ -305,6 +306,7 @@ if (trim($xview)=="ADMIN") { // solo si es ADMIN
           <td colspan="3" align="center">        <input type="hidden" name="idx" value="<?php echo($id); ?>" />
         <input type="hidden" name="idx" value="<?php echo($id); ?>" />
         <input type="hidden" name="xmod" value="4" />
+      <input type="hidden" name="xcod" value=<?php echo($cod_aso);  ?> />     
      
         <input name="Submit2" type="submit" class="Estilo38" value="-&gt; MODIFICAR &lt;-" />
 </td>
@@ -316,7 +318,7 @@ if (trim($xview)=="ADMIN") { // solo si es ADMIN
     <tr>
       <td colspan="3" bgcolor="#E3E3E1">
       <table width="442" border="1">
-       <form id="form5" name="form5" method="get" action="n_mod_items.php">      
+       <form id="form5" name="form5" method="get" action="catalogo_regmod_items.php">      
 
         <tr>
           <td width="89">GRUPO LISTA</td>
@@ -359,8 +361,11 @@ echo(": ".$decri);
           <td align="center"><input name="xgrupolista" type="text" id="xgrupolista" size="4" maxlength="4" onKeyUp="this.value=this.value.toUpperCase();" value="<?php echo($grupolista_it); ?>"/></td>
         </tr>
         <tr>
-          <td colspan="3" align="center"><input type="hidden" name="idx" value="<?php echo($id); ?>" />
+          <td colspan="3" align="center">
+          <input type="hidden" name="idx" value="<?php echo($id); ?>" />
           <input type="hidden" name="xmod" value="5" />
+      <input type="hidden" name="xcod" value=<?php echo($cod_aso);  ?> />     
+          
         <input name="Submit2" type="submit" class="Estilo38" value="-&gt; MODIFICAR &lt;-" />
 </td>
           </tr>
@@ -371,7 +376,7 @@ echo(": ".$decri);
       <td colspan="3" bgcolor="#E3E3E1">
         
         <table width="449" border="1">
-          <form id="form6" name="form6" method="get" action="n_mod_items.php">      
+          <form id="form6" name="form6" method="get" action="catalogo_regmod_items.php">      
             
             
             <tr>
@@ -423,6 +428,8 @@ echo(": ".$decri);
                 
                 <input type="hidden" name="idx" value="<?php echo($id); ?>" />
                 <input type="hidden" name="xmod" value="6" />
+                <input type="hidden" name="xcod" value=<?php echo($cod_aso);  ?> />     
+                
                 <input name="Submit2" type="submit" class="Estilo38" value="-&gt; MODIFICAR &lt;-" />
                 
                 

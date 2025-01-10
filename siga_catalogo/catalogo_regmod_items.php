@@ -8,7 +8,6 @@ $xview=$_GET['xview'];   // ADMIN  o xxxxxx
 $id = $_GET['idx'];
 //$retornar_ax=$_GET['xretornar_ax'];   
 $cod_aso=$_GET['xcod'];
-echo "CODIGOooooooooo1  :  ".$cod_aso;
 
 $retornar_ax="catalogo_list_items.php";	
 $xmod=$_GET['xmod'];  // tipo de formulario 1 o 2
