@@ -36,7 +36,7 @@ mysqli_set_charset($connec, 'utf8');
 date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
-$cod_aso=$_POST['xcod'];
+$cod_aso=$_GET['xcod'];
 
 
 $result=mysqli_query($connec,"select * from catalogo_clientes where cod_aso='$cod_aso'");
