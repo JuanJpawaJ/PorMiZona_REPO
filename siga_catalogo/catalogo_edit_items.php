@@ -79,7 +79,7 @@ $tabla0 = mysqli_fetch_array( $result0 );
 $tc_sis=$tabla0["tc_sis"]; // tipo cambio
 
 
-$result=mysqli_query($connec,"select * from catalogo_productos where id=$id AND cod_aso=$cod_aso");	
+$result=mysqli_query($connec,"select * from catalogo_productos where (id=$id) AND (cod_aso=$cod_aso)");	
 $tabla = mysqli_fetch_array( $result ); 
 
 		$id=$tabla["id"];
@@ -95,6 +95,7 @@ $tabla = mysqli_fetch_array( $result );
 		$pv02_it=$tabla["pv02_it"];
 		$pv03_it=$tabla["pv03_it"];
 		$img_it=$tabla["img_it"];
+		echo "imagen txt . ".$img_it;
         if (strlen($img_it)==0) {
 		  $img_it="no_disponible.jpg";
         }
@@ -113,7 +114,7 @@ $tabla = mysqli_fetch_array( $result );
       <tr>
         <td width="86" height="40" bgcolor="#E3E3E1" >CODIGO : </td>
         <td width="215" bgcolor="#E3E3E1" class="viewtexto"><?php echo($codigo_it); ?> </td>
-        <td colspan="2" rowspan="8" align="center" valign="top" bgcolor="#E3E3E1"><p><img src="<? echo "../img_catacli/".$img_it ?>" width="421" height="%" /></p>
+        <td colspan="2" rowspan="8" align="center" valign="top" bgcolor="#E3E3E1"><p><img src=" <?php echo "img_catacli/".$img_it ?> " width="421" height="%" /></p>
           <p>&nbsp;</p>
           <p>NOTA: La imagen es referencial.</p></td>
       </tr>
