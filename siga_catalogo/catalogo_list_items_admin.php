@@ -206,8 +206,8 @@ if ($xdelreg=="SIDELREG") {
     <td width="5" bgcolor="#FFFFCC">&nbsp;</td>
     <td width="390" colspan="2" bgcolor="#FFFFCC"height="76" align="center"><table width="600" border="1">
       <tr>
-        <td width="64"><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? $cod_aso; ?>&xrsocial=<? $rsocial_aso; ?>">INDEX<BR />PUBLICO</a></td>
-                                                             
+        <td width="64"><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>">INDEX<BR />PUBLICO</a></td>
+                                                          
         
         <td width="188"> <a href="ilbupsil.php">publico</a></td>
         <td width="283"><a href="mesas.php"><img src="iconos/ico_retornoamesas.png" width="64" height="64" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" /></a></td>
