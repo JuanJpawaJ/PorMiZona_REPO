@@ -79,7 +79,8 @@ $tabla0 = mysqli_fetch_array( $result0 );
 $tc_sis=$tabla0["tc_sis"]; // tipo cambio
 
 
-$result=mysqli_query($connec,"select * from catalogo_productos where (id=$id) AND (cod_aso=$cod_aso)");	
+$result=mysqli_query($connec,"select * from catalogo_productos where (id=$id) AND (cod_aso_it=$cod_aso)");
+
 $tabla = mysqli_fetch_array( $result ); 
 
 		$id=$tabla["id"];
