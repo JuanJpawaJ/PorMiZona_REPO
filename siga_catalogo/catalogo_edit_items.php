@@ -110,7 +110,7 @@ $tabla = mysqli_fetch_array( $result );
 		$obscompra_it=$tabla["obscompra_it"];
 ?>
         
-  <form id="form1" name="form1" method="get" action="catalogo_regedit_items.php">
+  <form id="form1" name="form1" method="get" action="catalogo_regmod_items.php">
       <tr>
         <td width="86" height="40" bgcolor="#E3E3E1" >CODIGO : </td>
         <td width="215" bgcolor="#E3E3E1" class="viewtexto"><?php echo($codigo_it); ?> </td>
