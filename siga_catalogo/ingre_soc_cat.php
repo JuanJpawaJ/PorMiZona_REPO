@@ -27,6 +27,7 @@ form {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 250px; /* Ajustado para hacer el formulario más angosto */
 }
 
 input[type="text"], input[type="password"] {
@@ -36,6 +37,7 @@ input[type="text"], input[type="password"] {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 
 button {
     padding: 10px 20px;
@@ -50,7 +52,6 @@ button:hover {
     background: #45a049;
 }
 
- 
  
  </style>
 <body>
