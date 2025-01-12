@@ -6,7 +6,7 @@ date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
 $cod_aso=$_GET['xcod_aso'];
-$result=mysqli_query($connec,"select * from catalogo_clientes where cod_aso='$cod_aso'");
+$result=mysqli_query($connec,"select * from asociado_51 where cod_aso='$cod_aso'");
 $total=mysqli_num_rows($result);
 $tabla = mysqli_fetch_array( $result );
   
