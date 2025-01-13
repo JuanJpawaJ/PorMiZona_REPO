@@ -571,9 +571,9 @@ $tabla = mysqli_fetch_array( $result );
      
 echo "  <script type='text/javascript'>
     alert('¡SUS DATOS NO SON CORRECTOS!');
-    setTimeout(function(){
+   // setTimeout(function(){
        window.location.href = 'sociocatalogo.php';
-    }, 5000); // 5000 milisegundos = 5 segundos
+   // }, 5000); // 5000 milisegundos = 5 segundos
 	   
 </script>";
 
