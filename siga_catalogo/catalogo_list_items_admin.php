@@ -43,16 +43,11 @@ if (strlen($usuario)==0){
    $usuario = $_GET['xusername'];
    $password = $_GET['xpassword'];
 }
-echo "USUARIO: ".$usuario;
-echo "PASSWORD: ".$password;
 
 $result0=mysqli_query($connec,"select * from asociado_51 WHERE TRIM(usua_aso) ='$usuario' AND TRIM(pass_aso) = '$password' ");
 $total0=mysqli_num_rows($result0);
 $columna = mysqli_fetch_array( $result0 );
 
-
-echo "TOTAL : ".$total0;
-sleep(5);
 
 if ($total0==1) {
 
@@ -572,9 +567,17 @@ $tabla = mysqli_fetch_array( $result );
   <?php  } // ************************  FFFIIIINNNN FORMULARIO DE MODIFICAR  ?>
   
 </table>
-<?php
-  } else {
-   include('sociocatalogo.php');
+<?   } else {  
+     
+echo "  <script type='text/javascript'>
+    alert('¡SUS DATOS NO SON CORRECTOS!');
+    setTimeout(function(){
+       window.location.href = 'sociocatalogo.php';
+    }, 5000); // 5000 milisegundos = 5 segundos
+	   
+</script>";
+
+   
   }
 
 ?>
