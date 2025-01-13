@@ -35,13 +35,18 @@ setlocale(LC_ALL, "sp");
 //$cod_aso="0000007";
 //$rsocial_aso="PERFUMERIA ANY";
 
-$usuario = $_POST['xusername'];
-$password = $_POST['xpassword'];
+
+$usuario = trim($_POST['xusername']);
+$password = trim($_POST['xpassword']);
 
 if (strlen($usuario)==0){
    $usuario = $_GET['xusername'];
    $password = $_GET['xpassword'];
 }
+echo "USUARIO: ".$usuario;
+echo "PASSWORD: ".$password;
+sleep(5);
+
 
 $result0=mysqli_query($connec,"select * from asociado_51 where usua_aso=$usuario AND pass_aso=$password");
 $total0=mysqli_num_rows($result0);
