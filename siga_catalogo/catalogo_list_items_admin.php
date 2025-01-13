@@ -46,11 +46,10 @@ if (strlen($usuario)==0){
 echo "USUARIO: ".$usuario;
 echo "PASSWORD: ".$password;
 
-
-
-$result0=mysqli_query($connec,"select * from asociado_51 where (usua_aso=$usuario) AND (pass_aso=$password)");
+$result0=mysqli_query($connec,"select * from asociado_51 WHERE TRIM(usua_aso) ='$usuario' AND TRIM(pass_aso) = '$password' ");
 $total0=mysqli_num_rows($result0);
 $columna = mysqli_fetch_array( $result0 );
+
 
 echo "TOTAL : ".$total0;
 sleep(5);
