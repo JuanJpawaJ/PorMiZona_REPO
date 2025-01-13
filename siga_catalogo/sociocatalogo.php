@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Documento sin título</title>
+<title>SOCIO CATALOGO</title>
 </head>
  <style>
  body, html {
@@ -60,7 +60,7 @@ button:hover {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOCIO CATALOGO</title>
+    <title>CATALOGO DE SOCIO</title>
     <!-- <link rel="stylesheet" href="styles.css"> -->
 </head>
 <body>
@@ -68,9 +68,9 @@ button:hover {
         <form action="idxcatalogo.php" method="post">
             <h2>Inicio de Sesión</h2>
             <label for="username">Ingresa el usuario:</label>
-            <input type="text" id="username" name="username" required>
+            <input type="text" id="xusername" name="xusername" required>
             <label for="password">Ingresa el password:</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="xpassword" name="xpassword" required>
             <button type="submit">Ingresar</button>
         </form>
     </div>
