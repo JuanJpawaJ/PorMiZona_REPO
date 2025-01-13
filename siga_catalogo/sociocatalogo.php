@@ -52,7 +52,14 @@ button:hover {
     background: #45a049;
 }
 
- 
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 600px) {
+    .container {
+        background-image: url('../assets/img/imagenes_index/f_catalogosocio_celular.jpg'); /* Imagen para móviles */
+    }
+}
+
  </style>
 <body>
 <!DOCTYPE html>
