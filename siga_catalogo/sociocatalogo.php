@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-image: url('../assets/img/imagenes_index/imagen_slider_1.jpg');
+    background-image: url('../assets/img/imagenes_index/f_catalogosocio.jpg');
     background-size: cover;
     background-position: center;
 }
