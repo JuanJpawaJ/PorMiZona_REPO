@@ -32,8 +32,26 @@ date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
 
-$cod_aso="0000007";
-$rsocial_aso="PERFUMERIA ANY";
+//$cod_aso="0000007";
+//$rsocial_aso="PERFUMERIA ANY";
+
+$usuario = $_POST['xusername'];
+$password = $_POST['xpassword'];
+
+if (strlen($usuario)==0){
+   $usuario = $_GET['xusername'];
+   $password = $_GET['xpassword'];
+}
+
+$result0=mysqli_query($connec,"select * from asociado_51 where usua_aso=$usuario AND pass_aso=$password");
+$total0=mysqli_num_rows($result0);
+$columna = mysqli_fetch_array( $result0 );
+
+if ($total0==1) {
+
+$cod_aso=$columna["cod_aso"];
+$rsocial_aso=$columna["rsocial_aso"];
+
 
 $bxproducto=$_GET['bxproducto'];
 // ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
@@ -547,6 +565,12 @@ $tabla = mysqli_fetch_array( $result );
   <?php  } // ************************  FFFIIIINNNN FORMULARIO DE MODIFICAR  ?>
   
 </table>
+<?php
+  } else {
+   include('sociocatalogo.php');
+  }
+
+?>
 
 <p>&nbsp;</p>
 </body>

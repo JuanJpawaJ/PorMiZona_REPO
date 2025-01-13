@@ -72,7 +72,7 @@ button:hover {
 </head>
 <body>
     <div class="container">
-        <form action="idxcatalogo.php" method="post">
+        <form action="catalogo_list_items_admin.php" method="post">
             <h2>Inicio de Sesión</h2>
             <label for="username">Ingresa el usuario:</label>
             <input type="text" id="xusername" name="xusername" required>
