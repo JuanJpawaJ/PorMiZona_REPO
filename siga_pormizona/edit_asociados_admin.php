@@ -344,7 +344,10 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
    <tr>
      <td>Msj público</td>
      <td>
-      <input type="text" class="campo_texto" name="xmsjpublico" value="<?php echo($msjpublico_aso); ?>"> 
+    <!--  <input type="text" class="campo_texto" name="xmsjpublico" value="<?php //echo($msjpublico_aso); ?>">  -->
+      <textarea class="campo_texto" name="xmsjpublico" rows="5" cols="30"><?php echo($msjpublico_aso); ?></textarea>
+
+
 
      
      </td>
