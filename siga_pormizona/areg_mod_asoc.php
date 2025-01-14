@@ -63,7 +63,7 @@ if      ($form=="TODO01") {
     $msjpublico_aso=$_POST['xmsjpublico'];
     $obsinterno_aso=$_POST['xobsinterno'];
 	
-    $sql="UPDATE asociado_51 SET favicon_aso='$favicon_aso', grupolista_aso='$grupolista_aso', 	 publicidad_aso='$publicidad_aso', img1_aso='$img1_aso', img2_aso='$img2_aso', logo_aso='$logo_aso', view01_aso='$view01_aso', view02_aso='$view02_aso', view03_aso='$view03_aso', view04_aso='$view04_aso', link01_aso='$link01_aso', link02_aso='$link02_aso', msjpublico_aso='$msjpublico_aso', obsinterno_aso='$obsinterno_aso, datehoy_aso='$datehoy_aso''  WHERE cod_aso=$cod";
+    $sql="UPDATE asociado_51 SET favicon_aso='$favicon_aso', grupolista_aso='$grupolista_aso', 	 publicidad_aso='$publicidad_aso', img1_aso='$img1_aso', img2_aso='$img2_aso', logo_aso='$logo_aso', view01_aso='$view01_aso', view02_aso='$view02_aso', view03_aso='$view03_aso', view04_aso='$view04_aso', link01_aso='$link01_aso', link02_aso='$link02_aso', msjpublico_aso='$msjpublico_aso', obsinterno_aso='$obsinterno_aso, datehoy_aso='$datehoy_aso'  WHERE cod_aso=$cod";
     $result=mysqli_query($connec,$sql);
 	if($result){
 		echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok TODO.</span>");
@@ -98,7 +98,7 @@ if      ($form=="TODO01") {
     $email_aso=$_POST['xemail'];
     $usua_aso=$_POST['xusuario'];
     $pass_aso=$_POST['xpass'];
-    $sql="UPDATE asociado_51 SET rsocial_aso='$rsocial_aso',direccion_aso='$direccion_aso', departamento_aso='$departamento_aso', gironeg_aso='$gironeg_aso',categoria_aso='$categoria_aso',email_aso='$email_aso', usua_aso='$usua_aso',pass_aso='$pass_aso, datehoy_aso='$datehoy_aso'' WHERE cod_aso=$cod";
+    $sql="UPDATE asociado_51 SET rsocial_aso='$rsocial_aso',direccion_aso='$direccion_aso', departamento_aso='$departamento_aso', gironeg_aso='$gironeg_aso',categoria_aso='$categoria_aso',email_aso='$email_aso', usua_aso='$usua_aso',pass_aso='$pass_aso, datehoy_aso='$datehoy_aso' WHERE cod_aso=$cod";
     $result=mysqli_query($connec,$sql);
 	if($result){
 		echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok.</span>");
@@ -140,7 +140,7 @@ pais_aso='$pais_aso',provincia_aso='$provincia_aso',distrito_aso='$distrito_aso'
     $msjpublico_aso=$_POST['xmsjpublico'];
     $obsinterno_aso=$_POST['xobsinterno'];
     $sql="UPDATE asociado_51 SET favicon_aso='$favicon_aso', grupolista_aso='$grupolista_aso',  publicidad_aso='$publicidad_aso', img1_aso='$img1_aso', img2_aso='$img2_aso', logo_aso='$logo_aso', view01_aso='$view01_aso', view02_aso='$view02_aso', view03_aso='$view03_aso', view04_aso='$view04_aso', msjpublico_aso='$msjpublico_aso', 
-obsinterno_aso='$obsinterno_aso, datehoy_aso='$datehoy_aso''  WHERE cod_aso=$cod";
+obsinterno_aso='$obsinterno_aso, datehoy_aso='$datehoy_aso'  WHERE cod_aso=$cod";
 		
 }
 
@@ -155,7 +155,7 @@ mysqli_close($connec);
 <? if ($retorna=="ERROR") {  ?>
     <th scope="col"><div align="center"><a href="viewasociado.php?xcod=<?php  echo($cod); ?>">ERROR RETORNAR</a></div></th>
 <? } else { ?>
-    <th scope="col" class="semi-titulosform"><div align="center"><a href="viewasociado.php?xcod=<?php  echo($cod); ?>">SU DATOS DE REGISTRARON </a></div></th>
+    <th scope="col" class="semi-titulosform"><div align="center"><a href="viewasociado.php?xcod=<?php  echo($cod); ?>">SUS DATOS SE REGISTRARON </a></div></th>
 <? } ?>
   </tr>
 </table>
