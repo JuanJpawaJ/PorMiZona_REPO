@@ -73,10 +73,10 @@ button:hover {
 <body>
     <div class="container">
         <form action="catalogo_list_items_admin.php" method="post">
-            <h2>Inicio de Sesión</h2>
-            <label for="username">Ingresa el usuario:</label>
+            <h2>Ingreso a su CATÁLOGO</h2>
+            <label for="username">Ingrese el usuario:</label>
             <input type="text" id="xusername" name="xusername" required>
-            <label for="password">Ingresa el password:</label>
+            <label for="password">Ingrese el password:</label>
             <input type="password" id="xpassword" name="xpassword" required>
             <button type="submit">Ingresar</button>
         </form>

@@ -47,9 +47,9 @@ if (strlen($usuario)==0){
 $result0=mysqli_query($connec,"select * from asociado_51 WHERE TRIM(usua_aso) ='$usuario' AND TRIM(pass_aso) = '$password' ");
 $total0=mysqli_num_rows($result0);
 $columna = mysqli_fetch_array( $result0 );
+$view04_aso=$columna["view04_aso"];
 
-
-if ($total0==1) {
+if ($total0==1 AND $view04_aso=="S") {
 
 $cod_aso=$columna["cod_aso"];
 $rsocial_aso=$columna["rsocial_aso"];
@@ -570,7 +570,7 @@ $tabla = mysqli_fetch_array( $result );
 <?   } else {  
      
 echo "  <script type='text/javascript'>
-    alert('¡SUS DATOS NO SON CORRECTOS!');
+    alert('¡SUS DATOS NO SON CORRECTOS! - Cel: 959956000');
    // setTimeout(function(){
        window.location.href = 'sociocatalogo.php';
    // }, 5000); // 5000 milisegundos = 5 segundos
