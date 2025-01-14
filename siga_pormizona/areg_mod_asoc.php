@@ -62,7 +62,25 @@ if      ($form=="TODO01") {
     $obsinterno_aso=$_POST['xobsinterno'];
 
 
+// Nombre de la tabla que deseas verificar
+$tabla = "asociado_51";
+
+// Consultar si la tabla existe
+$resultado = $conexion->query("SHOW TABLES LIKE '$tabla'");
+
+if ($resultado && $resultado->num_rows > 0) {
+    echo "La tabla '$tabla' está abierta o existe.";
+} else {
+    echo "La tabla '$tabla' no existe.";
+}
+
+
+
+
+
+
 echo "COD_ASO: ".$cod;
+echo "DATEHOY_ASO: ".$datehoy_aso;
 echo "VOY A SQL UPDATE";
 
 sleep(5);
@@ -72,7 +90,7 @@ sleep(5);
 	if($result){
 		echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok TODO.</span>");
 	}else{
-		echo ("<span style='background-color: #CC0000'>XX. ERROR AL REGISTRARSE  TODO.</span>");
+		echo ("<span style='background-color: #CC0000'>XX. ERROR AL REGISTRARSE  TODO 02.</span>");
 	}	
 
 } elseif ($form=="00") {
