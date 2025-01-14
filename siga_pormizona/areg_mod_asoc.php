@@ -62,30 +62,13 @@ if      ($form=="TODO01") {
     $obsinterno_aso=$_POST['xobsinterno'];
 
 
-// Nombre de la tabla que deseas verificar
-$tabla = "asociado_51";
-
-// Consultar si la tabla existe
-$resultado = $conexion->query("SHOW TABLES LIKE '$tabla'");
-
-if ($resultado && $resultado->num_rows > 0) {
-    echo "La tabla '$tabla' está abierta o existe.";
-} else {
-    echo "La tabla '$tabla' no existe.";
-}
-
-
-
-
-
-
 echo "COD_ASO: ".$cod;
 echo "DATEHOY_ASO: ".$datehoy_aso;
 echo "VOY A SQL UPDATE";
 
 sleep(5);
 	
-    $sql="UPDATE asociado_51 SET favicon_aso='$favicon_aso', grupolista_aso='$grupolista_aso', 	 publicidad_aso='$publicidad_aso', img1_aso='$img1_aso', img2_aso='$img2_aso', logo_aso='$logo_aso', view01_aso='$view01_aso', view02_aso='$view02_aso', view03_aso='$view03_aso', view04_aso='$view04_aso', link01_aso='$link01_aso', link02_aso='$link02_aso', msjpublico_aso='$msjpublico_aso', obsinterno_aso='$obsinterno_aso, datehoy_aso='$datehoy_aso'  WHERE cod_aso='$cod' ";
+    $sql="UPDATE asociado_51 SET favicon_aso='$favicon_aso', grupolista_aso='$grupolista_aso', 	 publicidad_aso='$publicidad_aso', img1_aso='$img1_aso', img2_aso='$img2_aso', logo_aso='$logo_aso', view01_aso='$view01_aso', view02_aso='$view02_aso', view03_aso='$view03_aso', view04_aso='$view04_aso', link01_aso='$link01_aso', link02_aso='$link02_aso', msjpublico_aso='$msjpublico_aso', obsinterno_aso='$obsinterno_aso, datehoy_aso='$datehoy_aso'  WHERE cod_aso=$cod ";
     $result=mysqli_query($connec,$sql);
 	if($result){
 		echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok TODO.</span>");
