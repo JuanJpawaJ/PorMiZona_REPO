@@ -84,7 +84,7 @@ echo "VOY A SQL UPDATE";
 
 sleep(6);
 	
-    $sql="UPDATE asociado_51 SET favicon_aso='$favicon_aso', grupolista_aso='$grupolista_aso', 	 publicidad_aso='$publicidad_aso', img1_aso='$img1_aso', img2_aso='$img2_aso', logo_aso='$logo_aso', view01_aso='$view01_aso', view02_aso='$view02_aso', view03_aso='$view03_aso', view04_aso='$view04_aso', link01_aso='$link01_aso', link02_aso='$link02_aso', msjpublico_aso='$msjpublico_aso', obsinterno_aso='$obsinterno_aso, datehoy_aso='$datehoy_aso'  WHERE cod_aso=$cod ";
+    $sql="UPDATE asociado_51 SET favicon_aso='$favicon_aso', grupolista_aso='$grupolista_aso', 	 publicidad_aso='$publicidad_aso', img1_aso='$img1_aso', img2_aso='$img2_aso', logo_aso='$logo_aso', view01_aso='$view01_aso', view02_aso='$view02_aso', view03_aso='$view03_aso', view04_aso='$view04_aso', link01_aso='$link01_aso', link02_aso='$link02_aso', msjpublico_aso='$msjpublico_aso', obsinterno_aso='$obsinterno_aso  WHERE cod_aso=$cod ";
     $result=mysqli_query($connec,$sql);
 	if($result){
 		echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok TODO.</span>");
