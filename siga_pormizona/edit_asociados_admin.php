@@ -169,7 +169,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
      </td>
    </tr>
    <tr>
-     <td>Crear un nombre de Usuario </td>
+     <td>Crea*** </td>
      <td>
                <input type="text"  class="campo_texto" name="xusuario" value="<?php echo($usua_aso); ?>"> 
      
@@ -300,7 +300,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
      </td>
    </tr>
    <tr>
-     <td>E. Asoc. View1</td>
+     <td>E. Asoc. V1</td>
      <td>
       <input type="text" class="campo_texto" name="xview1" value="<?php echo($view01_aso); ?>"> 
 
@@ -321,7 +321,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
      </td>
    </tr>
    <tr>
-     <td>Socio Catálogo </td>
+     <td>Socio Catálogo V4</td>
      <td>
       <input type="text" class="campo_texto" name="xview4" value="<?php echo($view04_aso); ?>"> 
 

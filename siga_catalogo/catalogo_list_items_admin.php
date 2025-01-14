@@ -36,15 +36,15 @@ setlocale(LC_ALL, "sp");
 //$rsocial_aso="PERFUMERIA ANY";
 
 
-$usuario = trim($_POST['xusername']);
+$usuario = trim($_POST['xusername']); // el usuario es el email_aso
 $password = trim($_POST['xpassword']);
 
 if (strlen($usuario)==0){
-   $usuario = $_GET['xusername'];
+   $usuario = $_GET['xusername']; // el usuario es el email_aso
    $password = $_GET['xpassword'];
 }
 
-$result0=mysqli_query($connec,"select * from asociado_51 WHERE TRIM(usua_aso) ='$usuario' AND TRIM(pass_aso) = '$password' ");
+$result0=mysqli_query($connec,"select * from asociado_51 WHERE TRIM(email_aso) ='$usuario' AND TRIM(pass_aso) = '$password' ");
 $total0=mysqli_num_rows($result0);
 $columna = mysqli_fetch_array( $result0 );
 $view04_aso=$columna["view04_aso"];
