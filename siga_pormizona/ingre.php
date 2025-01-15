@@ -53,9 +53,9 @@ if ($iclave=="SI") {
          <h2 class="semi-titulosform">¡FELICIDADES¡ Ud. cuenta con CATALOGO DE PRODUCTOS</h2>
  <div >
 
-        <label>Ingreso a: Modif. Datos:</label>
+        <label>Ingreso a: Modif. datos PorMiZOna:</label>
         <input type="radio" id="opcion1" name="xopcion" value="opcion1" checked> <br />
-        <label>Ingreso a: Mi Catálogo :</label>
+        <label>Ingreso a: Catálogo de  productos:</label>
         <input type="radio" id="opcion2" name="xopcion" value="opcion2">
   </div>
 <br />
@@ -101,7 +101,7 @@ $pass_aso=$tabla['pass_aso'];
 if ($email_aso==$xemail AND  $pass_aso==$xclave) { ?>
 
       </div>
-  <?     if ($xopcion="opcion1") { ?>
+  <?     if ($xopcion=="opcion1") { ?>
       
       <form id="form0" name="form0" method="post" onsubmit="return checkSubmit();" action="formingre3_view.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
          <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> >
