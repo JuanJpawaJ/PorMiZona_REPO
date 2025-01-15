@@ -53,10 +53,10 @@ if ($view04=="S") {
 
  <div class="campos_de_formularioin">
 
-        <label for="opcion1">Opción 1:</label>
-        <input type="radio" id="opcion1" name="opcion" value="opcion1">
-        <label for="opcion2">Opción 2:</label>
-        <input type="radio" id="opcion2" name="opcion" value="opcion2">
+        <label>Ingreso a: Datos PorMiZona</label>
+        <input type="radio" id="opcion1" name="xopcion" value="opcion1" checked>
+        <label>Ingreso a: MI CATALOGO</label>
+        <input type="radio" id="opcion2" name="xopcion" value="opcion2">
   </div>
 
          <div class="campos_de_formularioin">
