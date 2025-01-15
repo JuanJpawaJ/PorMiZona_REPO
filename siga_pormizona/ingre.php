@@ -25,6 +25,7 @@ $iclave= $_GET['xiclave'];
 
 $xemail= $_GET['xemail'];
 $xclave= $_GET['xclave'];
+$xopcion= $_GET['xopcion'];
 
 $rsocial= $_GET['xrsocial'];
 $view04= $_GET['xview04'];
@@ -39,9 +40,6 @@ $view04= $_GET['xview04'];
 
 if ($iclave=="SI") {
 
-if ($view04=="S") {
-   echo "USTED PUEDE INGRESAR A SU CATÁLOGO";
-}
  ?>
 <div class="exteriorform">
   <div class="fondo_formulario">
@@ -50,7 +48,9 @@ if ($view04=="S") {
       </div>
       <form id="form1" name="form1" method="GET" onsubmit="return checkSubmit();" action="ingre.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
          <h2 class="semi-titulosform">USUARIO Y CLAVE - PORMIZONA - <? echo ($rsocial);?></h2>
-
+<? if ($view04=="S") { ?>
+  
+         <h2 class="semi-titulosform">¡FELICIDADES¡ Ud. cuenta con CATALOGO DE PRODUCTOS</h2>
  <div >
 
         <label>Ingreso a: Modif. Datos:</label>
@@ -59,6 +59,14 @@ if ($view04=="S") {
         <input type="radio" id="opcion2" name="xopcion" value="opcion2">
   </div>
 <br />
+
+<? } else { ?>
+         <h2 class="semi-titulosform">¡MUESTRE SUS PRODUCTOS¡ Solicite su Catalogo - Cel: 959956000</h2>
+         <br />
+
+<? } ?>
+
+
          <div class="campos_de_formularioin">
               <label>e-mail</label>
               <input type="text" class="campo_textoin" name="xemail"  > 
@@ -75,7 +83,7 @@ if ($view04=="S") {
          </div>
          <div>
            Si desea realizar alguna consulta comunicarse con:
-            959956000 - Solo para propietarios.
+            959956000 - Solo para propietarios. <br />
            Este formulario SI, es SEGURO. Gracias
          </div>         
     </form>
@@ -91,13 +99,26 @@ $email_aso=$tabla['email_aso'];
 $pass_aso=$tabla['pass_aso'];
 
 if ($email_aso==$xemail AND  $pass_aso==$xclave) { ?>
+
       </div>
+  <?     if ($xopcion="opcion1") { ?>
+      
       <form id="form0" name="form0" method="post" onsubmit="return checkSubmit();" action="formingre3_view.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
          <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> >
          <div class="campo_botonin">
               <button class="boton_form"> ¡ CONTINUAR ! (Modificaciones)</button>
          </div>
-    </form>
+      </form>
+ <?  } else { ?>
+       <form id="form0" name="form0" method="post" onsubmit="return checkSubmit();" action="../siga_catalogo/catalogo_list_items.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
+         <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> >
+         <input type="hidden" name="xusername" value=<? echo $email_aso; ?> >
+         <input type="hidden" name="xpassword" value=<? echo $pass_aso; ?> >
+         <div class="campo_botonin">
+              <button class="boton_form"> IR A CATÁLGO</button>
+         </div>
+      </form>
+ <?  } ?>
   </div>
 
 <? } else { ?>
