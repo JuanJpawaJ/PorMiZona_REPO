@@ -110,7 +110,7 @@ if ($email_aso==$xemail AND  $pass_aso==$xclave) { ?>
          </div>
       </form>
  <?  } else { ?>
-       <form id="form0" name="form0" method="post" onsubmit="return checkSubmit();" action="../siga_catalogo/catalogo_list_items.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
+       <form id="form0" name="form0" method="post" onsubmit="return checkSubmit();" action="/siga_catalogo/catalogo_list_items.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
          <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> >
          <input type="hidden" name="xusername" value=<? echo $email_aso; ?> >
          <input type="hidden" name="xpassword" value=<? echo $pass_aso; ?> >
