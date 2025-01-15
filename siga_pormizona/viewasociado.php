@@ -271,7 +271,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         </table></td>
       </tr>
       <tr>
-        <td height="32" colspan="2">Acceso solo a propietarios:<a href="ingre.php?xcod=<? echo ($cod_aso);?>&xiclave=SI">" SOY PROPIETARIO "</a></td>
+        <td height="32" colspan="2">Acceso solo a propietarios:<a href="ingre.php?xcod=<? echo ($cod_aso);?>&xiclave=SI&xrsocial=<? echo ($rsocial_aso);?>&xview04=<? echo ($view04_aso);?>">" SOY PROPIETARIO "</a></td>
  
       </tr>
     </table>

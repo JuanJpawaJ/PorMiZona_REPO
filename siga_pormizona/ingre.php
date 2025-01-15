@@ -26,6 +26,10 @@ $iclave= $_GET['xiclave'];
 $xemail= $_GET['xemail'];
 $xclave= $_GET['xclave'];
 
+$rsocial= $_GET['xrsocial'];
+$view04= $_GET['xview04'];
+
+
 //echo (" en ingre el cod_aso ".$cod_aso."<br>");
 //echo (" en ingre el iclave ".$iclave."<br>");
 
@@ -33,16 +37,28 @@ $xclave= $_GET['xclave'];
 //echo (" en ingre el xclave ".$xclave."<br>");
 
 
-if ($iclave=="SI") { ?>
+if ($iclave=="SI") {
 
-
+if ($view04=="S") {
+   echo "USTED PUEDE INGRESAR A SU CATÁLOGO";
+}
+ ?>
 <div class="exteriorform">
   <div class="fondo_formulario">
       <div class="cabecera1">
         <img src="imagenes/cabecera_formulario.jpg"  class="iconos">
       </div>
       <form id="form1" name="form1" method="GET" onsubmit="return checkSubmit();" action="ingre.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
-         <h2 class="semi-titulosform">INGRESE USUARIO Y CLAVE</h2>
+         <h2 class="semi-titulosform">USUARIO Y CLAVE - PORMIZONA - <? echo ($rsocial);?></h2>
+
+ <div class="campos_de_formularioin">
+
+        <label for="opcion1">Opción 1:</label>
+        <input type="radio" id="opcion1" name="opcion" value="opcion1">
+        <label for="opcion2">Opción 2:</label>
+        <input type="radio" id="opcion2" name="opcion" value="opcion2">
+  </div>
+
          <div class="campos_de_formularioin">
               <label>e-mail</label>
               <input type="text" class="campo_textoin" name="xemail"  > 
