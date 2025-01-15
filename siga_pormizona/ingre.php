@@ -54,7 +54,7 @@ if ($view04=="S") {
  <div >
 
         <label>Ingreso a: DATOS PorMiZona</label>
-        <input type="radio" id="opcion1" name="xopcion" value="opcion1" checked>
+        <input type="radio" id="opcion1" name="xopcion" value="opcion1" checked> <br />
         <label>Ingreso a: MI CATALOGO</label>
         <input type="radio" id="opcion2" name="xopcion" value="opcion2">
   </div>
