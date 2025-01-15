@@ -51,10 +51,12 @@ if ($iclave=="SI") {
 <? if ($view04=="S") { ?>
   
          <h2 class="semi-titulosform">¡FELICIDADES¡ Ud. cuenta con CATALOGO DE PRODUCTOS</h2>
+         <br />
  <div >
 
         <label>Ingreso a: Modif. datos PorMiZOna:</label>
         <input type="radio" id="opcion1" name="xopcion" value="opcion1" checked> <br />
+         <br />
         <label>Ingreso a: Catálogo de  productos:</label>
         <input type="radio" id="opcion2" name="xopcion" value="opcion2">
   </div>
