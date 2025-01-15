@@ -51,9 +51,9 @@ if ($view04=="S") {
       <form id="form1" name="form1" method="GET" onsubmit="return checkSubmit();" action="ingre.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
          <h2 class="semi-titulosform">USUARIO Y CLAVE - PORMIZONA - <? echo ($rsocial);?></h2>
 
- <div class="campos_de_formularioin">
+ <div >
 
-        <label>Ingreso a: Datos PorMiZona</label>
+        <label>Ingreso a: DATOS PorMiZona</label>
         <input type="radio" id="opcion1" name="xopcion" value="opcion1" checked>
         <label>Ingreso a: MI CATALOGO</label>
         <input type="radio" id="opcion2" name="xopcion" value="opcion2">
