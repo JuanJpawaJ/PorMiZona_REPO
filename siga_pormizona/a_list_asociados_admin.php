@@ -170,7 +170,7 @@ echo ("AHora estor dentro dl IFFFFF". "SIDELREG" . "delcod=====: "." ".$delcod);
         <td width="89" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=R">R.STORE</a></td>
         <td width="88" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=P">PERFUMERIA</a></td>
         <td width="510" rowspan="2" align="center">
-    <form id="form0" name="form0" method="get" action="a_list_items_admin.php">
+    <form id="form0" name="form0" method="get" action="a_list_asociados_admin.php">
           <table width="395" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
             <tr>
               <td width="250" height="28" bgcolor="#FFCC66"> Dato a buscar Producto.:
@@ -253,7 +253,7 @@ if(strlen($bxproducto)==0){
 	}
 } else {
 $bxproducto1=trim($bxproducto);
-$result=mysqli_query($connec,"select * from asociado_51 where producto_it like '%$bxproducto1%' order by rsocial_aso");
+$result=mysqli_query($connec,"select * from asociado_51 where productos_aso like '%$bxproducto%' OR  rsocial_aso like '%$bxproducto%' order by rsocial_aso");
 }
 
 
