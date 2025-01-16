@@ -63,6 +63,8 @@ if ($iclave=="SI") {
 <br />
 
 <? } else { ?>
+        <input type="hidden" name="xopcion" value="opcion1"  />
+
          <h2 class="semi-titulosform">¡MUESTRE SUS PRODUCTOS¡ Solicite su Catalogo - Cel: 959956000</h2>
          <br />
 
