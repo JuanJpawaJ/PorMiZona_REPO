@@ -243,12 +243,11 @@ if ($xdelreg=="SIDELREG") {
     <td width="5" bgcolor="#FFFFCC">&nbsp;</td>
     <td width="390" colspan="2" bgcolor="#FFFFCC"height="76" align="center"><table width="600" border="1">
       <tr>
-        <td width="64"><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>">INDEX<BR />PUBLICO</a></td>
+        <td width="201"><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>">INDEX<BR />PUBLICO</a></td>
                                                           
         
-        <td width="188"> <a href="ilbupsil.php">publico</a></td>
-        <td width="283"><a href="mesas.php"><img src="iconos/ico_retornoamesas.png" width="64" height="64" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" /></a></td>
-        <td width="37">&nbsp;</td>
+        <td width="303"> <a href="ilbupsil.php">publico</a></td>
+        <td width="74">&nbsp;</td>
       </tr>
     </table></td>
   </tr>
@@ -354,7 +353,7 @@ while ($tabla=mysqli_fetch_array($result)){
         <td><a href="catalogo_edit_items.php?idx=<?php  echo($id); ?>&xview=<?php  echo("ADMIN"); ?>&xcod=<?php  echo($cod_aso); ?>&xareg=NNOOO&xmodi=NOOOOO&xdelreg=NOOOOO"><img src="iconos/ico_editar.png" width="30" height="30"></a></td>
         <td bgcolor="#FFCC66" align="center"><a href="img_catacli/n_subir_xfile.php?id_img=<?php echo($id); ?>&xcod=<?php echo($cod_aso); ?>&xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?> "><img src="iconos/ico_imagen.png" width="30" height="30"></a></td>
 
-        <td bgcolor="#FFCC66" align="center"><a href="catalogo_edit_items.php?delcod=<?php echo($codigo_it);?>&xdelreg=<?php echo("SIDELREG");?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">X</a></td>
+        <td bgcolor="#FFCC66" align="center"><a href="catalogo_edit_items.php?delcod=<?php echo($codigo_it);?>&xdelreg=<?php echo("SIDELREG");?>&xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">X</a></td>
       </tr>
       <?php 
 	}
