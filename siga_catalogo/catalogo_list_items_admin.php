@@ -53,7 +53,7 @@ if ($total0==1 AND $view04_aso=="S") {
 
 $cod_aso=$columna["cod_aso"];
 $rsocial_aso=$columna["rsocial_aso"];
-$logo_aso=$columna["logo_aso"];
+$logo_aso=trim($columna["logo_aso"]);
 echo "logo 01: ".$logo_aso;
 
 $bxproducto=$_GET['bxproducto'];
