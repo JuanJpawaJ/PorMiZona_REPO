@@ -54,6 +54,7 @@ if ($total0==1 AND $view04_aso=="S") {
 $cod_aso=$columna["cod_aso"];
 $rsocial_aso=$columna["rsocial_aso"];
 $logo_aso=$columna["logo_aso"];
+echo "logo 01: ".$logo_aso;
 
 $bxproducto=$_GET['bxproducto'];
 // ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
@@ -183,7 +184,7 @@ if ($xdelreg=="SIDELREG") {
         <td width="154" align="center" valign="middle">
         <? if (strlen($logo_aso)==0)  { 
 
-        echo "logo: ".$rsocial_aso;
+        echo "logo: ".$logo_aso. " rsocial : ".$rsocial_aso;
 			
 		} else { ?>
 			
