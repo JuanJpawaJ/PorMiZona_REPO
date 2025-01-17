@@ -7,6 +7,11 @@
 	color: #FC0;
 	font-weight: bold;
 }
+.LOGO_NARANJA {
+	color: #FC0;
+	font-weight: bold;
+	font-size: 18px;
+}
 .diez {	font-size: 9px;
 }
 .texto_tablas11 {	font-size: 11px;
@@ -54,7 +59,7 @@ if ($total0==1 AND $view04_aso=="S") {
 $cod_aso=$columna["cod_aso"];
 $rsocial_aso=$columna["rsocial_aso"];
 $logo_aso=trim($columna["logo_aso"]);
-echo "logo 01: ".$logo_aso;
+
 
 $bxproducto=$_GET['bxproducto'];
 // ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
@@ -182,17 +187,16 @@ if ($xdelreg=="SIDELREG") {
         <td width="121" align="center" valign="top"><img src="iconos/ico_yo_sigachef.png" width="120" height="60"></td>
         <td width="575"><div align="center"><span class="TITULO_NARANJA">ADMINISTRADOR - ITEMS -<? echo $cod_aso." ".$rsocial_aso; ?></span></div></td>
         <td width="154" align="center" valign="middle">
-        <? if (strlen($logo_aso)==0)  { 
+     <? if (strlen($logo_aso)==0)  { ?>
 
-        echo "logo: ".$logo_aso. " rsocial : ".$rsocial_aso;
+           <span class="LOGO_NARANJA"><? echo $rsocial_aso; ?></span> 
 			
-		} else { ?>
+	<?	} else { ?>
 			
-        <img src="img_catacli/<? echo ($logo_aso); ?> width="120" height="60"></td>
-
+           <img src="img_catacli/<? echo ($logo_aso); ?> width="120" height="60"> 
 			
 	<?	} ?>	
-        
+        </td>
         
         </tr>
     </table></td>
