@@ -54,7 +54,7 @@ if ($action == "upload") {
       echo "GUARDAR EN : ----- TABLA ITEMS "."<br>";
       echo "ARCHIVO a guardar : ".$destino."<br>";
       echo "id a    a guardar : ".$id_img."<br>";	
-	  $sql="UPDATE a_items SET img_it='$destino'  WHERE id='$id_img'";
+	  $sql="UPDATE catalogo_productos SET img_it='$destino'  WHERE id='$id_img'";
 	  $result=mysqli_query($connec,$sql);
       if($result) {
 		echo("DATOS - IMAGEN - REGISTRADOS -- FIN ");
