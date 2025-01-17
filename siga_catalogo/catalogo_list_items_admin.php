@@ -44,9 +44,15 @@ setlocale(LC_ALL, "sp");
 $usuario  = trim($_POST['xusername']); // el usuario es el email_aso
 $password = trim($_POST['xpassword']);
 
+$xareg=$_POST['xareg'];
+$xmodi=$_POST['xmodi'];
+$xdelreg=$_POST['xdelreg'];
+$viewmodi=$_POST['viewmodi'];
+
 if (strlen($usuario)==0){
    $usuario  = trim($_GET['xusername']); // el usuario es el email_aso
    $password = trim($_GET['xpassword']);
+   $xdelreg=$_GET['xdelreg'];
 }
 
 $result0=mysqli_query($connec,"select * from asociado_51 WHERE TRIM(email_aso) ='$usuario' AND TRIM(pass_aso) = '$password' ");
@@ -63,15 +69,10 @@ $logo_aso=trim($columna["logo_aso"]);
 
 $bxproducto=$_GET['bxproducto'];
 // ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
-   $xdelreg="NOOO";
-$xareg=$_POST['xareg'];
-$xmodi=$_POST['xmodi'];
-$xdelreg=$_POST['xdelreg'];
-$viewmodi=$_POST['viewmodi'];
 // ++++$xtipoi=$_GET['xtipoi'];
 
 //$xgl=$_GET['xgl']; //CMRD
-$xgl=="SMRD";
+$xgl=="SMRD";   // BORRAR ESTA SOLO.....
 
 		
 if ($xareg=="SIAREG") {
@@ -169,7 +170,7 @@ $sql="UPDATE catalogo_productos SET codfabrica_it='$xcodfab',producto_it='$xprod
 if ($xdelreg=="SIDELREG") {
 	
 
-   $idx=$_GET['idx']; 
+   $idx=$_GET['idx']; // CREO QUE ESTA DEM'AS
    $delcod=$_GET['delcod'];
    $query = "delete from catalogo_productos where codigo_it ='$delcod'";  
    $result = mysqli_query($connec,$query); 
@@ -353,7 +354,7 @@ while ($tabla=mysqli_fetch_array($result)){
         <td><a href="catalogo_edit_items.php?idx=<?php  echo($id); ?>&xview=<?php  echo("ADMIN"); ?>&xcod=<?php  echo($cod_aso); ?>&xareg=NNOOO&xmodi=NOOOOO&xdelreg=NOOOOO"><img src="iconos/ico_editar.png" width="30" height="30"></a></td>
         <td bgcolor="#FFCC66" align="center"><a href="img_catacli/n_subir_xfile.php?id_img=<?php echo($id); ?>&xcod=<?php echo($cod_aso); ?>&xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?> "><img src="iconos/ico_imagen.png" width="30" height="30"></a></td>
 
-        <td bgcolor="#FFCC66" align="center"><a href="catalogo_edit_items.php?delcod=<?php echo($codigo_it);?>&xdelreg=<?php echo("SIDELREG");?>&xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">X</a></td>
+        <td bgcolor="#FFCC66" align="center"><a href="catalogo_list_items_admin.php?delcod=<?php echo($codigo_it);?>&xdelreg=<?php echo("SIDELREG");?>&xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">X</a></td>
       </tr>
       <?php 
 	}
