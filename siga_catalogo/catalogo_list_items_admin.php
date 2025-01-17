@@ -41,12 +41,12 @@ setlocale(LC_ALL, "sp");
 //$rsocial_aso="PERFUMERIA ANY";
 
 
-$usuario = trim($_POST['xusername']); // el usuario es el email_aso
+$usuario  = trim($_POST['xusername']); // el usuario es el email_aso
 $password = trim($_POST['xpassword']);
 
 if (strlen($usuario)==0){
-   $usuario = $_GET['xusername']; // el usuario es el email_aso
-   $password = $_GET['xpassword'];
+   $usuario  = trim($_GET['xusername']); // el usuario es el email_aso
+   $password = trim($_GET['xpassword']);
 }
 
 $result0=mysqli_query($connec,"select * from asociado_51 WHERE TRIM(email_aso) ='$usuario' AND TRIM(pass_aso) = '$password' ");
@@ -64,10 +64,10 @@ $logo_aso=trim($columna["logo_aso"]);
 $bxproducto=$_GET['bxproducto'];
 // ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
    $xdelreg="NOOO";
-$xareg=$_GET['xareg'];
-$xmodi=$_GET['xmodi'];
-$xdelreg=$_GET['xdelreg'];
-$viewmodi=$_GET['viewmodi'];
+$xareg=$_POST['xareg'];
+$xmodi=$_POST['xmodi'];
+$xdelreg=$_POST['xdelreg'];
+$viewmodi=$_POST['viewmodi'];
 // ++++$xtipoi=$_GET['xtipoi'];
 
 //$xgl=$_GET['xgl']; //CMRD
@@ -81,26 +81,26 @@ if ($xareg=="SIAREG") {
 	   $idid = trim($row[0]);
    }
    $codigo_it=substr((string)$idid+1000001,1);
-   $codfabrica_it=$_GET['xcodfabrica'];
-   $producto_it=$_GET['xproducto'];
-   $grupolista_it=$_GET['xgrupolista'];
-   $marka_it=$_GET['xmarka'];
-   $fabricante_it=$_GET['xfabricante'];
-   $precom_it=$_GET['xprecom'];
-   $monelista_it=$_GET['xmonelista'];      
-   $pv01_it=$_GET['xpv01'];
-   $pv02_it=$_GET['xpv02'];
-   $pr03_it=$_GET['xpv03'];
-   $img_it=$_GET['ximg'];
-   $stockmin_it=$_GET['xstockmin'];
-   $lugar_al_it=$_GET['xlugar_al'];
-   $view01_it=$_GET['xview01'];
-   $view02_it=$_GET['xview02'];
-   $view03_it=$_GET['xview03'];
-   $view04_it=$_GET['xview04'];
-   $time_entrega_it=$_GET['xtime_entrega'];
-   $msjpublico_it=$_GET['xmsjpublico'];
-   $obscompra_it=$_GET['xobscompra'];
+   $codfabrica_it=$_POST['xcodfabrica'];
+   $producto_it=$_POST['xproducto'];
+   $grupolista_it=$_POST['xgrupolista'];
+   $marka_it=$_POST['xmarka'];
+   $fabricante_it=$_POST['xfabricante'];
+   $precom_it=$_POST['xprecom'];
+   $monelista_it=$_POST['xmonelista'];      
+   $pv01_it=$_POST['xpv01'];
+   $pv02_it=$_POST['xpv02'];
+   $pr03_it=$_POST['xpv03'];
+   $img_it=$_POST['ximg'];
+   $stockmin_it=$_POST['xstockmin'];
+   $lugar_al_it=$_POST['xlugar_al'];
+   $view01_it=$_POST['xview01'];
+   $view02_it=$_POST['xview02'];
+   $view03_it=$_POST['xview03'];
+   $view04_it=$_POST['xview04'];
+   $time_entrega_it=$_POST['xtime_entrega'];
+   $msjpublico_it=$_POST['xmsjpublico'];
+   $obscompra_it=$_POST['xobscompra'];
 
  // echo  "codigo: ".  $codigo_it."<br>";
  //  echo  "codfab: ".  $codfabrica_it."<br>";
@@ -352,7 +352,7 @@ while ($tabla=mysqli_fetch_array($result)){
         <td><?php echo($view02_it) ?></td>
         <td><?php echo($view03_it) ?></td>
         <td><a href="catalogo_edit_items.php?idx=<?php  echo($id); ?>&xview=<?php  echo("ADMIN"); ?>&xcod=<?php  echo($cod_aso); ?>&xareg=NNOOO&xmodi=NOOOOO&xdelreg=NOOOOO"><img src="iconos/ico_editar.png" width="30" height="30"></a></td>
-        <td bgcolor="#FFCC66" align="center"><a href="img_catacli/n_subir_xfile.php?id_img=<?php  echo($id); ?>"><img src="iconos/ico_imagen.png" width="30" height="30"></a></td>
+        <td bgcolor="#FFCC66" align="center"><a href="img_catacli/n_subir_xfile.php?id_img=<?php echo($id); ?>&xcod=<?php echo($cod_aso); ?>&xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?> "><img src="iconos/ico_imagen.png" width="30" height="30"></a></td>
 
         <td bgcolor="#FFCC66" align="center"><a href="catalogo_edit_items.php?delcod=<?php echo($codigo_it);?>&xdelreg=<?php echo("SIDELREG");?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">X</a></td>
       </tr>
@@ -369,7 +369,7 @@ while ($tabla=mysqli_fetch_array($result)){
     <?php
 	if($viewmodi<>"SIVM"){
 	?>
-    <form id="form1" name="form1" method="get" action="catalogo_list_items_admin.php">
+    <form id="form1" name="form1" method="post" action="catalogo_list_items_admin.php">
     <table width="290" border="1" class="tablaingrenuevo">
     <tr>
       <td colspan="2" bgcolor="#FFCC66"><div align="center"><strong>INGRESO NUEVO PRODUCTO</strong></div></td>

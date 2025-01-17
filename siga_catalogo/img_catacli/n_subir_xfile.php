@@ -13,6 +13,11 @@ setlocale(LC_ALL, "sp");
 
 
 $id_img=$_GET['id_img'];
+$cod_aso=$_GET['xcod'];
+$usuario=$_GET['xusername'];
+$password=$_GET['xpassword'];
+
+
 echo ("id mod ".$id_img."<br>");
 // $seccx=$_GET['secc'];
 // $asigx=$_GET['asig'];
@@ -68,7 +73,8 @@ if ($action == "upload") {
 ?>
 <table width="363" border="0">
   <tr bgcolor="#F8DA94">
-    <th scope="col"><div align="center"><a href="../a_list_items_admin.php">RETORNAR </a></div></th>
+    <th scope="col"><div align="center"><a href="../catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>">RETORNAR </a></div></th>
+
   </tr>
 </table>
  <?php 
