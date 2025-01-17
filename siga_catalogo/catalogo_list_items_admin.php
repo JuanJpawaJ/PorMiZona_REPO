@@ -181,17 +181,17 @@ if ($xdelreg=="SIDELREG") {
         <td width="121" align="center" valign="top"><img src="iconos/ico_yo_sigachef.png" width="120" height="60"></td>
         <td width="575"><div align="center"><span class="TITULO_NARANJA">ADMINISTRADOR - ITEMS -<? echo $cod_aso." ".$rsocial_aso; ?></span></div></td>
         <td width="154" align="center" valign="middle">
-        <? if (strlen($logo_aso)==0)  { ?>
+        <? if (strlen($logo_aso)==0)  { 
 
+        echo $rsocial_aso;
+			
+		} else { ?>
+			
         <img src="img_catacli/<? echo ($logo_aso); ?> width="120" height="60"></td>
 
 			
-	<?	} else {
-			
-        echo $rsocial_aso;
-			
-		} ?>	
-        </td>
+	<?	} ?>	
+        
         
         </tr>
     </table></td>
