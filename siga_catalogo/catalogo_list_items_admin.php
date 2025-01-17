@@ -352,9 +352,9 @@ while ($tabla=mysqli_fetch_array($result)){
         <td><?php echo($view02_it) ?></td>
         <td><?php echo($view03_it) ?></td>
         <td><a href="catalogo_edit_items.php?idx=<?php  echo($id); ?>&xview=<?php  echo("ADMIN"); ?>&xcod=<?php  echo($cod_aso); ?>&xareg=NNOOO&xmodi=NOOOOO&xdelreg=NOOOOO"><img src="iconos/ico_editar.png" width="30" height="30"></a></td>
-        <td bgcolor="#FFCC66" align="center"><a href="img_items/n_subir_xfile.php?id_img=<?php  echo($id); ?>"><img src="iconos/ico_imagen.png" width="30" height="30"></a></td>
+        <td bgcolor="#FFCC66" align="center"><a href="img_catacli/n_subir_xfile.php?id_img=<?php  echo($id); ?>"><img src="iconos/ico_imagen.png" width="30" height="30"></a></td>
 
-        <td bgcolor="#FFCC66" align="center"><a href="a_list_items_admin.php?delcod=<?php echo($codigo_it);?>&xdelreg=<?php echo("SIDELREG");?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">X</a></td>
+        <td bgcolor="#FFCC66" align="center"><a href="catalogo_edit_items.php?delcod=<?php echo($codigo_it);?>&xdelreg=<?php echo("SIDELREG");?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">X</a></td>
       </tr>
       <?php 
 	}
