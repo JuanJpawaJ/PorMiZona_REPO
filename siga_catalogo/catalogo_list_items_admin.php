@@ -10,7 +10,7 @@
 .LOGO_NARANJA {
 	color: #FC0;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 22px;
 }
 .diez {	font-size: 9px;
 }
@@ -125,8 +125,8 @@ if ($xareg=="SIAREG") {
 	   $xum=0;
 	   
 
-     $sql="INSERT INTO catalogo_productos (codigo_it,codfabrica_it,producto_it,grupolista_it,marka_it,fabricante_it, precom_it,monelista_it, pv01_it,pv02_it,pv03_it,img_it,stockmin_it,lugar_al_it,view01_it, view02_it,view03_it,view04_it,time_entrega_it,msjpublico_it,obscompra_it) VALUES 
-('$codigo_it','$codfabrica_it','$producto_it','$grupolista_it','$marka_it','$fabricante_it','$precom_it','$monelista_it', '$pv01_it', '$pv02_it','$pv03_it', '$img_it','$stockmin_it','$lugar_al_it','$view01_it','$view02_it','$view03_it','$view04_it','$time_entrega_it','$msjpublico_it','$obscompra_it')";
+     $sql="INSERT INTO catalogo_productos (codigo_it,cod_aso_it,codfabrica_it,producto_it,grupolista_it,marka_it,fabricante_it, precom_it,monelista_it, pv01_it,pv02_it,pv03_it,img_it,stockmin_it,lugar_al_it,view01_it, view02_it,view03_it,view04_it,time_entrega_it,msjpublico_it,obscompra_it) VALUES 
+('$codigo_it','$cod_aso,fabrica_it','$codfabrica_it','$producto_it','$grupolista_it','$marka_it','$fabricante_it','$precom_it','$monelista_it', '$pv01_it', '$pv02_it','$pv03_it', '$img_it','$stockmin_it','$lugar_al_it','$view01_it','$view02_it','$view03_it','$view04_it','$time_entrega_it','$msjpublico_it','$obscompra_it')";
      $result=mysqli_query($connec,$sql);
      if($result){
 	   echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok.</span>");
@@ -185,7 +185,7 @@ if ($xdelreg=="SIDELREG") {
     <td colspan="4" bgcolor="#000066" class="tit_menu_sup"><table width="904" height="63" border="0" cellpadding="0" cellspacing="0">
       <tr>
         <td width="121" align="center" valign="top"><img src="iconos/ico_yo_sigachef.png" width="120" height="60"></td>
-        <td width="575"><div align="center"><span class="TITULO_NARANJA">ADMINISTRADOR - ITEMS -<? echo $cod_aso." ".$rsocial_aso; ?></span></div></td>
+        <td width="575"><div align="center"><span class="TITULO_NARANJA">ADMINISTRADOR - PRODUCTOS -<? echo $cod_aso." ".$rsocial_aso; ?></span></div></td>
         <td width="154" align="center" valign="middle">
      <? if (strlen($logo_aso)==0)  { ?>
 
@@ -193,7 +193,7 @@ if ($xdelreg=="SIDELREG") {
 			
 	<?	} else { ?>
 			
-           <img src="img_catacli/<? echo ($logo_aso); ?> width="120" height="60"> 
+           <img src="img_catacli/<? echo ($logo_aso); ?>" width="120" height="60"> 
 			
 	<?	} ?>	
         </td>
@@ -463,6 +463,9 @@ while ($tabla=mysqli_fetch_array($result)){
       </tr>
     <tr>
       <td width="98"><span class="TITULO">
+     <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
+     <input type="hidden" name="xpassword" value="<?php echo(trim($password)); ?>"/>  
+         
      <input type="hidden" name="xpv02" value=0/>
      <input type="hidden" name="xpv03" value=0/>
      <input type="hidden" name="xstockmin" value=0/>
