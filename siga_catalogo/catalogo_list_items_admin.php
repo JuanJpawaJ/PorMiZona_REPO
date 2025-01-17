@@ -183,7 +183,7 @@ if ($xdelreg=="SIDELREG") {
         <td width="154" align="center" valign="middle">
         <? if (strlen($logo_aso)==0)  { 
 
-        echo $rsocial_aso;
+        echo "logo: ".$rsocial_aso;
 			
 		} else { ?>
 			
