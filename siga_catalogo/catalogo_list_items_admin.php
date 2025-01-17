@@ -369,17 +369,17 @@ while ($tabla=mysqli_fetch_array($result)){
     <?php
 	if($viewmodi<>"SIVM"){
 	?>
-    <form id="form1" name="form1" method="get" action="a_list_items_admin.php">
+    <form id="form1" name="form1" method="get" action="catalogo_list_items_admin.php">
     <table width="290" border="1" class="tablaingrenuevo">
     <tr>
-      <td colspan="2" bgcolor="#FFCC66"><div align="center"><strong>INGRESO NUEVO ITEM</strong></div></td>
+      <td colspan="2" bgcolor="#FFCC66"><div align="center"><strong>INGRESO NUEVO PRODUCTO</strong></div></td>
     </tr>
     <tr>
       <td bgcolor="#FDF19B"><span class="TITULO">Cod. Item</span></td>
       <td bgcolor="#FDF19B">&nbsp;</td> <!-- xcod -->
     </tr>
     <tr>
-      <td height="26" colspan="2" bgcolor="#FDF19B" class="TITULO">Producto: (Tx. para factura) Ej. MOUSE GAMER A.. <br>  
+      <td height="26" colspan="2" bgcolor="#FDF19B" class="TITULO">NOMBRE DEL PRODUCTO  
         (120 caracteres)</td>
       </tr>
     <tr>
