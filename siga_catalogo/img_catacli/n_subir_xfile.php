@@ -48,8 +48,8 @@ if ($action == "upload") {
    $tipo = $_FILES['documento']['type'];
    //$destino ="bak_".$archivo;
    //$destino =$cod_aso.$archivo;
-   $numero = "000002";  // Número a añadir
-   $destino = pathinfo($archivo, PATHINFO_FILENAME) . "_" . $numero . "." . pathinfo($archivo, PATHINFO_EXTENSION);
+   $numero = $cod_aso;  // Número a añadir
+   $destino = $numero.pathinfo($archivo, PATHINFO_FILENAME) . "." . pathinfo($archivo, PATHINFO_EXTENSION);
    //$destino = pathinfo($archivo, PATHINFO_FILENAME) .".". pathinfo($archivo, PATHINFO_EXTENSION);
 
    //$destino =$archivo;
