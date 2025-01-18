@@ -174,6 +174,7 @@ $view02_aso=$tabla["view02_aso"];
 $view03_aso=$tabla["view03_aso"];
 $view04_aso=$tabla["view04_aso"];
 $msjpublico_aso=$tabla["msjpublico_aso"];
+$usua_aso=$tabla["usua_aso"];
 $obsinterno_aso=$tabla["obsinterno_aso"];
 	
 	
@@ -271,7 +272,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         </table></td>
       </tr>
       <tr>
-        <td height="32" colspan="2">Acceso solo a propietarios:<a href="ingre.php?xcod=<? echo ($cod_aso);?>&xiclave=SI&xrsocial=<? echo ($rsocial_aso);?>&xview04=<? echo ($view04_aso);?>">" SOY PROPIETARIO "</a></td>
+        <td height="32" colspan="2">Acceso solo a propietarios:<a href="ingre.php?xcod=<? echo ($cod_aso);?>&xiclave=SI&xrsocial=<? echo ($rsocial_aso);?>&xusua=<? echo ($usua_aso);?> ">" SOY PROPIETARIO "</a></td>
  
       </tr>
     </table>

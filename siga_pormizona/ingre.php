@@ -28,7 +28,7 @@ $xclave= $_GET['xclave'];
 $xopcion= $_GET['xopcion'];
 
 $rsocial= $_GET['xrsocial'];
-$view04= $_GET['xview04'];
+$usua_aso= $_GET['xusua'];
 
 
 //echo (" en ingre el cod_aso ".$cod_aso."<br>");
@@ -48,7 +48,7 @@ if ($iclave=="SI") {
       </div>
       <form id="form1" name="form1" method="GET" onsubmit="return checkSubmit();" action="ingre.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
          <h2 class="semi-titulosform">USUARIO Y CLAVE - PORMIZONA - <? echo ($rsocial);?></h2>
-<? if ($view04=="S") { ?>
+<? if ($usua_aso=="S") { ?>
   
          <h2 class="semi-titulosform">¡FELICIDADES¡ Ud. cuenta con CATALOGO DE PRODUCTOS</h2>
          <br />
