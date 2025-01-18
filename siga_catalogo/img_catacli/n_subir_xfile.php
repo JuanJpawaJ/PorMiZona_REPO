@@ -27,6 +27,7 @@ echo "IMPORTANTE! - Verifique 2.- Que el nombre de su documento no tenga más de
 echo "Docente : ".$docex. " Usted esta subiendo ADJUNTO para  : ".$seccx." y la Asignatura :".$asigx."<br>";
 echo "      "."<br>"; ?>
 <!-- FORMULARIO PARA SOICITAR LA CARGA DEL EXCEL -->
+
 <form name="importa" method="post" action="<?php echo $PHP_SELF; ?>" enctype="multipart/form-data" >
      <input type="file" name="documento" />
      <input type="hidden" value="upload" name="action" />
@@ -44,8 +45,10 @@ if ($action == "upload") {
    //solo le agregue el sufijo bak_ 
    $archivo = $_FILES['documento']['name'];
    $tipo = $_FILES['documento']['type'];
-   $destino ="bak_".$archivo;
+   //$destino ="bak_".$archivo;
    //$destino =$cod_aso.$archivo;
+   $numero = "000002";  // Número a añadir
+   $destino = pathinfo($archivo, PATHINFO_FILENAME) . "_" . $numero . "." . pathinfo($archivo, PATHINFO_EXTENSION);
    //$destino =$archivo;
    echo "IMAGEN INICIO :".$archivo."<br>";
    //echo "ARCHIVO TIPO  :".$tipo."<br>";
