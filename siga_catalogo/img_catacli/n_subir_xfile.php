@@ -40,6 +40,7 @@ extract($_POST);
 $codigox=$_POST['codigox'];
 $qregx=$_POST['qregx'];
 echo ($codigox);
+
 if ($action == "upload") {
    //cargamos el archivo al servidor con el mismo nombre
    //solo le agregue el sufijo bak_ 
@@ -48,7 +49,9 @@ if ($action == "upload") {
    //$destino ="bak_".$archivo;
    //$destino =$cod_aso.$archivo;
    $numero = "000002";  // Número a añadir
-   $destino = pathinfo($archivo, PATHINFO_FILENAME) . "_" . $numero . "." . pathinfo($archivo, PATHINFO_EXTENSION);
+   //   $destino = pathinfo($archivo, PATHINFO_FILENAME) . "_" . $numero . "." . pathinfo($archivo, PATHINFO_EXTENSION);
+   $destino = pathinfo($archivo, PATHINFO_FILENAME) . pathinfo($archivo, PATHINFO_EXTENSION);
+
    //$destino =$archivo;
    echo "IMAGEN INICIO :".$archivo."<br>";
    //echo "ARCHIVO TIPO  :".$tipo."<br>";
