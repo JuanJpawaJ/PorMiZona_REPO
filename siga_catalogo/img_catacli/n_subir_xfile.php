@@ -50,7 +50,7 @@ if ($action == "upload") {
    //$destino =$cod_aso.$archivo;
    $numero = "000002";  // Número a añadir
    //   $destino = pathinfo($archivo, PATHINFO_FILENAME) . "_" . $numero . "." . pathinfo($archivo, PATHINFO_EXTENSION);
-   $destino = pathinfo($archivo, PATHINFO_FILENAME) . pathinfo($archivo, PATHINFO_EXTENSION);
+   $destino = pathinfo($archivo, PATHINFO_FILENAME) .".". pathinfo($archivo, PATHINFO_EXTENSION);
 
    //$destino =$archivo;
    echo "IMAGEN INICIO :".$archivo."<br>";
