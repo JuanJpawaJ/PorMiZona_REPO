@@ -44,8 +44,8 @@ if ($action == "upload") {
    //solo le agregue el sufijo bak_ 
    $archivo = $_FILES['documento']['name'];
    $tipo = $_FILES['documento']['type'];
-   // $destino ="bak_".$archivo;
-   $destino =$cod_aso.$archivo;
+   $destino ="bak_".$archivo;
+   //$destino =$cod_aso.$archivo;
    //$destino =$archivo;
    echo "IMAGEN INICIO :".$archivo."<br>";
    //echo "ARCHIVO TIPO  :".$tipo."<br>";
