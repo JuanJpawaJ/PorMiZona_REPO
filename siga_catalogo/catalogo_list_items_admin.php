@@ -58,9 +58,9 @@ if (strlen($usuario)==0){
 $result0=mysqli_query($connec,"select * from asociado_51 WHERE TRIM(email_aso) ='$usuario' AND TRIM(pass_aso) = '$password' ");
 $total0=mysqli_num_rows($result0);
 $columna = mysqli_fetch_array( $result0 );
-$view04_aso=$columna["view04_aso"];
+$usua_aso=$columna["usua_aso"];
 
-if ($total0==1 AND $view04_aso=="S") {
+if ($total0==1 AND $usua_aso=="S") { // usua_aso CON CONTRATO DE CATALOGO
 
 $cod_aso=$columna["cod_aso"];
 $rsocial_aso=$columna["rsocial_aso"];
@@ -244,7 +244,7 @@ if ($xdelreg=="SIDELREG") {
     <td width="5" bgcolor="#FFFFCC">&nbsp;</td>
     <td width="390" colspan="2" bgcolor="#FFFFCC"height="76" align="center"><table width="600" border="1">
       <tr>
-        <td width="201"><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>">INDEX<BR />PUBLICO</a></td>
+        <td width="201"><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>">INDEX PUBLICO</a></td>
                                                           
         
         <td width="303"> <a href="ilbupsil.php">publico</a></td>
