@@ -169,19 +169,11 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
      </td>
    </tr>
    <tr>
-     <td>Crea*** </td>
-     <td>
-               <input type="text"  class="campo_texto" name="xusuario" value="<?php echo($usua_aso); ?>"> 
-     
-     
-     </td>
-   </tr>
-   <tr>
      <td>Crear una contraseña (Max.10 - Utilice símbolos, mayúsculas y minúsculas)</td>
      <td>
-               <input type="text"  class="campo_texto" name="xpass" value="<?php echo($pass_aso); ?>"> 
-    
-     </td>
+       <input type="text"  class="campo_texto" name="xpass" value="<?php echo($pass_aso); ?>"> 
+       
+      </td>
    </tr>
    <tr>
      <td>País</td>
@@ -239,9 +231,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
      
      </td>
    </tr>
-
-   <tr>
-  </table>  
+ </table>  
   
              <input type="hidden" name="xform" value="TODO01"/> 
            <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> > 
@@ -321,7 +311,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
      </td>
    </tr>
    <tr>
-     <td>Socio Catálogo V4</td>
+     <td>Si CABECERA slide View4</td>
      <td>
       <input type="text" class="campo_texto" name="xview4" value="<?php echo($view04_aso); ?>"> 
 
@@ -352,11 +342,15 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
      
      </td>
    </tr>
-   <tr>
-     <td>Observaciones internas</td>
-     <td>
-      <input type="text" class="campo_texto" name="xobsinterno" value="<?php echo($obsinterno_aso); ?>"> 
+      <tr>
+     <td>Contrato SOCIO-CATALOGO S - N</td>
+     <td><input type="text"  class="campo_texto" name="xusuario" value="<?php echo($usua_aso); ?>"></td>
+   </tr>
 
+   <tr>
+     <td><p>Observaciones SOCIO CATALOGO </p></td>
+     <td>
+      <textarea class="campo_texto" name="xobsinterno" rows="5" cols="30"><?php echo($obsinterno_aso); ?></textarea>
      </td>
    </tr>
    <tr>
