@@ -45,7 +45,8 @@ if ($action == "upload") {
    $archivo = $_FILES['documento']['name'];
    $tipo = $_FILES['documento']['type'];
    // $destino ="bak_".$archivo;
-   $destino =$cod_aso.$archivo;
+  // $destino =$cod_aso.$archivo;
+   $destino =$archivo;
    echo "IMAGEN INICIO :".$archivo."<br>";
    //echo "ARCHIVO TIPO  :".$tipo."<br>";
    echo "IMAGEN FINAL  :".$destino."<br>";
