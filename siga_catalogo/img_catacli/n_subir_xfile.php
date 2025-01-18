@@ -49,8 +49,8 @@ if ($action == "upload") {
    //$destino ="bak_".$archivo;
    //$destino =$cod_aso.$archivo;
    $numero = "000002";  // Número a añadir
-   //   $destino = pathinfo($archivo, PATHINFO_FILENAME) . "_" . $numero . "." . pathinfo($archivo, PATHINFO_EXTENSION);
-   $destino = pathinfo($archivo, PATHINFO_FILENAME) .".". pathinfo($archivo, PATHINFO_EXTENSION);
+   $destino = pathinfo($archivo, PATHINFO_FILENAME) . "_" . $numero . "." . pathinfo($archivo, PATHINFO_EXTENSION);
+   //$destino = pathinfo($archivo, PATHINFO_FILENAME) .".". pathinfo($archivo, PATHINFO_EXTENSION);
 
    //$destino =$archivo;
    echo "IMAGEN INICIO :".$archivo."<br>";
@@ -86,7 +86,7 @@ if ($action == "upload") {
 </table>
  <?php 
  
-   if (file_exists($archivo)) {
+//   if (file_exists($archivo)) {
       /** Clases necesarias */
       require_once('Classes/PHPExcel.php');
       require_once('Classes/PHPExcel/Reader/Excel2007.php');
@@ -97,13 +97,13 @@ if ($action == "upload") {
       // Asignar hoja de excel activa
       $objPHPExcel->setActiveSheetIndex(0);
       //conectamos con la base de datos 
-      $cn = mysql_connect("localhost", "pawacorp_juan","C?}azwJt^%!d") or die("ERROR EN LA CONEXION");
-      $db = mysql_select_db("pawacorp_siga", $cn) or die("ERROR AL CONECTAR A LA BD");
+//      $cn = mysql_connect("localhost", "pawacorp_juan","C?}azwJt^%!d") or die("ERROR EN LA CONEXION");
+//      $db = mysql_select_db("pawacorp_siga", $cn) or die("ERROR AL CONECTAR A LA BD");
       //mysql_query("SET NAMES 'utf8'");
       // Llenamos el arreglo con los datos  del archivo xlsx
-   }else {   //si por algo no cargo el archivo bak_ 
+//   }else {   //si por algo no cargo el archivo bak_ 
       echo " Ok ";
-   }
+//   }
    $errores = 0;
    //recorremos el arreglo multidimensional 
    //para ir recuperando los datos obtenidos
