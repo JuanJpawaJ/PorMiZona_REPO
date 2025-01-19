@@ -382,34 +382,34 @@ while ($tabla=mysqli_fetch_array($result)){
         (120 caracteres)</td>
       </tr>
     <tr>
-      <td colspan="2" class="TITULO" >
+      <td colspan="2" bgcolor="#FDF19B" class="TITULO" >
       <input name="xproducto" type="text" id="xproducto" size="45" maxlength="120" onKeyUp="this.value=this.value.toUpperCase();" /></td>
       
       
       </tr>
     <tr>
       <td bgcolor="#FDF19B" class="TITULO">Cod. Modelo.</td>
-      <td><span class="TITULO">
+      <td bgcolor="#FDF19B"><span class="TITULO">
         <input class="cplomo" name="xcodfabrica" type="text" id="xcodfabrica" size="25" maxlength="30" onKeyUp="this.value=this.value.toUpperCase();" />
         </span></td>
     </tr>
     <tr>
       <td bgcolor="#FDF19B" class="TITULO">Marca</td>
-      <td><span class="TITULO">
+      <td bgcolor="#FDF19B"><span class="TITULO">
         <input class="cplomo" name="xmarka" type="text" id="xmarka" size="25" maxlength="30" onKeyUp="this.value=this.value.toUpperCase();" />
         </span></td>
     </tr>
     <tr>
       <td bgcolor="#FDF19B" class="TITULO">Fabricante</td>
-       <td><span class="TITULO">
+       <td bgcolor="#FDF19B"><span class="TITULO">
         <input class="cplomo" name="xfabricante" type="text" id="xfabricante" size="25" maxlength="30" onKeyUp="this.value=this.value.toUpperCase();" />
       </span></td>
 
     </tr>
     <tr>
       <td bgcolor="#FDF19B" class="TITULO">Características del producto.</td>
-      <td><span class="TITULO">
-        <textarea name="xmsjpublico" id="xmsjpublico" cols="27" rows="5"></textarea>
+      <td bgcolor="#FDF19B"><span class="TITULO">
+        <textarea name="xmsjpublico" id="xmsjpublico" cols="27" rows="5"></textarea> <!-- Características producto -->
       </span></td>
     </tr>
     <tr>
@@ -420,13 +420,13 @@ while ($tabla=mysqli_fetch_array($result)){
       </tr>
     <tr>
       <td bgcolor="#FDF19B" class="TITULO">Prec. compra</td>
-      <td><span class="TITULO">
+      <td bgcolor="#FDF19B"><span class="TITULO">
         <input class="cplomo" name="xprecom" type="text" id="xprecom" size="10" maxlength="10" onKeyUp="this.value=this.value.toUpperCase();" />
       </span></td>
     </tr>
     <tr>
       <td bgcolor="#FDF19B" class="TITULO">Moneda &quot;S&quot; - &quot;D&quot;</td>
-      <td><span class="TITULO">
+      <td bgcolor="#FDF19B"><span class="TITULO">
         <input class="cplomo" name="xmonelista" type="text" id="xmonelista" size="1" maxlength="1" onKeyUp="this.value=this.value.toUpperCase();" value="S" />
         </span></td>
     </tr>
@@ -438,27 +438,27 @@ while ($tabla=mysqli_fetch_array($result)){
         <input class="cplomo" name="ximg" type="text" id="ximg" size="45" maxlength="60" /></td>
       </tr>
     <tr>
-      <td bgcolor="#FFFF66" class="TITULO">Precio Venta 01</td>
-      <td><span class="TITULO">
+      <td bgcolor="#FDF19B" class="TITULO">Precio Venta 01</td>
+      <td bgcolor="#FDF19B"><span class="TITULO">
         <!-- <input name="xpreven" type="text" id="xpreven" size="15" maxlength="15" /> -->
  
         <input name="xpv01" type="text" id="xpv01" size="10" maxlength="10" onKeyUp="this.value=this.value.toUpperCase();" />
       </span></td>
     </tr>
     <tr>
-      <td bgcolor="#FFFF66"><span class="TITULO">Observaciones para el administrador</span></td>
+      <td bgcolor="#FDF19B"><span class="TITULO">Observaciones para el administrador</span></td>
       <td><span class="TITULO">
         <textarea class="cplomo" name="xobscompra" id="xobscompra" cols="27" rows="5"></textarea>
       </span></td>
     </tr>
     <tr>
-      <td colspan="2"><table width="306" border="1">
+      <td colspan="2" bgcolor="#FDF19B"><table width="306" border="1">
         <tr>
-          <td width="120" rowspan="2" align="center" bgcolor="#FFFF66" class="tabla10">Grupo Lista</td>
+          <td width="120" rowspan="2" align="center" bgcolor="#FDF19B" class="tabla10">Grupo Lista</td>
           <td width="170" class="tabla10">1 2 3 4 5 </td>
         </tr>
         <tr>
-          <td><input name="xgrupolista" type="text" id="xgrupolista" size="4" maxlength="4" onKeyUp="this.value=this.value.toUpperCase();" /></td>
+          <td><input class="cplomo" name="xgrupolista" type="text" id="xgrupolista" size="4" maxlength="4" onKeyUp="this.value=this.value.toUpperCase();" /></td>
         </tr>
       </table></td>
       </tr>

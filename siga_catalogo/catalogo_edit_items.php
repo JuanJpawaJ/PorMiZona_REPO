@@ -32,6 +32,7 @@
 	font-size: 14px;
 	font-weight: bold;
 }
+.cplomo { background-color:#CCC; }
 </style>
 </head>
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
@@ -124,18 +125,18 @@ $tabla = mysqli_fetch_array( $result );
     </tr>
     <tr>
       <td height="37" bgcolor="#E3E3E1">COD. MODELO</td>
-      <td bgcolor="#E3E3E1"><input name="xcodfabrica" type="text" id="xcodfabrica" size="25" maxlength="60" onkeyup="this.value=this.value.toUpperCase();" value="<?php echo($codfabrica_it); ?>"/></td>
+      <td bgcolor="#E3E3E1"><input class="cplomo" name="xcodfabrica" type="text" id="xcodfabrica" size="25" maxlength="60" onkeyup="this.value=this.value.toUpperCase();" value="<?php echo($codfabrica_it); ?>"/></td>
     </tr>
     <tr>
       <td height="37" bgcolor="#E3E3E1">MARCA </td>
-      <td bgcolor="#E3E3E1"><input name="xmarka" type="text" id="xmarka" size="25" maxlength="60" onkeyup="this.value=this.value.toUpperCase();" value="<?php echo($marka_it); ?>"/></td>
+      <td bgcolor="#E3E3E1"><input class="cplomo" name="xmarka" type="text" id="xmarka" size="25" maxlength="60" onkeyup="this.value=this.value.toUpperCase();" value="<?php echo($marka_it); ?>"/></td>
     </tr>
     <tr>
       <td height="37" bgcolor="#E3E3E1">FABRICA</td>
-      <td bgcolor="#E3E3E1">  <input name="xfabricante" type="text" id="xfabricante" size="25"  onkeyup="this.value=this.value.toUpperCase();" value="<?php echo($fabricante_it); ?>"/></td>
+      <td bgcolor="#E3E3E1">  <input class="cplomo" name="xfabricante" type="text" id="xfabricante" size="25"  onkeyup="this.value=this.value.toUpperCase();" value="<?php echo($fabricante_it); ?>"/></td>
     </tr>
     <tr>
-      <td height="129" bgcolor="#E3E3E1">MENSAJE PUBLICO  </td>   
+      <td height="129" bgcolor="#E3E3E1"><p>CARACTERÍSTICAS DEL PRODUCTO </p></td>   
       <td bgcolor="#E3E3E1"><textarea name="xmsjpub" id="xmsjpub" cols="30" rows="7"><?php echo($msjpublico_it); ?></textarea></td>
     </tr>
     <tr>
@@ -222,7 +223,7 @@ if (trim($xview)=="ADMIN") { // solo si es ADMIN
       </tr>
     <tr>
       <td align="center" bgcolor="#E3E3E1">PREC. COMP  LISTA<BR />Inc. IGV</td>
-      <td bgcolor="#E3E3E1"><input name="xprecom" type="text" id="xprecom" size="10" maxlength="10" value="<?php echo($precom_it); ?>" style="text-align:right"/></td>
+      <td bgcolor="#E3E3E1"><input class="cplomo" name="xprecom" type="text" id="xprecom" size="10" maxlength="10" value="<?php echo($precom_it); ?>" style="text-align:right"/></td>
       <td align="center" bgcolor="#E3E3E1">S/D: 
         <input name="xmonelista" type="text" id="xmonelista" size="1" onkeyup="this.value=this.value.toUpperCase();" value="<?php echo($monelista_it); ?>"/></td>
     </tr>
@@ -289,7 +290,7 @@ if (trim($xview)=="ADMIN") { // solo si es ADMIN
         </tr>
         <tr>
           <td align="center"><input name="xpv01" type="text" id="xpv01" size="10" maxlength="10" value="<?php echo($pv01_it); ?>" style="text-align:right"/></td>
-          <td align="center"><input name="xpv02" type="text" id="xpv02" size="10" maxlength="10" value="<?php echo($pv02_it); ?>" style="text-align:right"/></td>
+          <td align="center"><input class="cplomo" name="xpv02" type="text" id="xpv02" size="10" maxlength="10" value="<?php echo($pv02_it); ?>" style="text-align:right"/></td>
           <td align="center"><input name="xpv03" type="text" id="xpv03" size="10" maxlength="10" value="<?php echo($pv03_it); ?>" style="text-align:right"/></td>
         </tr>
         <tr>
@@ -381,17 +382,17 @@ echo(": ".$decri);
             
             <tr>
               <td width="139">STOCK MÍNIMO</td>
-              <td width="151"><input name="xstockmin" type="text" id="xstockmin" size="10" onkeyup="this.value=this.value.toUpperCase();" value="<?php echo($stockmin_it); ?>"/></td>
+              <td width="151"><input class="cplomo" name="xstockmin" type="text" id="xstockmin" size="10" onkeyup="this.value=this.value.toUpperCase();" value="<?php echo($stockmin_it); ?>"/></td>
               <td width="137">&nbsp;</td>
               </tr>
             <tr>
               <td>LUGAR EN EL ALMACEN</td>
-              <td><input name="xlugar_al" type="text" id="xlugar_al" size="30" onkeyup="this.value=this.value.toUpperCase();" value="<?php echo($lugar_al_it); ?>"/></td>
+              <td><input class="cplomo" name="xlugar_al" type="text" id="xlugar_al" size="30" onkeyup="this.value=this.value.toUpperCase();" value="<?php echo($lugar_al_it); ?>"/></td>
               <td>&nbsp;</td>
               </tr>
             <tr>
               <td>TIEMPO DE ENTREGA</td>
-              <td><input name="xtime_entrega" type="text" id="xtime_entrega" size="30" onkeyup="this.value=this.value.toUpperCase();" value="<?php echo($time_entrega_it); ?>"/></td>
+              <td><input class="cplomo" name="xtime_entrega" type="text" id="xtime_entrega" size="30" onkeyup="this.value=this.value.toUpperCase();" value="<?php echo($time_entrega_it); ?>"/></td>
               <td>&nbsp;</td>
               </tr>
             <tr>
@@ -421,7 +422,7 @@ echo(": ".$decri);
             <tr>
               <td>Observaciones<br />
                 administrador</td>
-              <td colspan="2"><textarea name="xobscompra" id="xobscompra" cols="30" rows="5"><?php echo($obscompra_it); ?></textarea></td>
+              <td colspan="2"><textarea class="cplomo"  name="xobscompra" id="xobscompra" cols="30" rows="5"><?php echo($obscompra_it); ?></textarea></td>
               </tr>
             <tr>
               <td colspan="3" align="center">
