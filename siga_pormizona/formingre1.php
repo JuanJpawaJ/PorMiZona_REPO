@@ -136,14 +136,6 @@ Para obtener una ubicación precisa, ES RECOMENDABLE USAR UN EQUIPO MOVIL. Esto 
            <input type="hidden" name="xpais" value="PERÚ"/> 
            <input type="hidden" name="xlatitud" value=<? echo $latitud; ?> > 
            <input type="hidden" name="xlongitud" value=<? echo $longitud; ?> > 
-           <input type="hidden" name="xprovincia" value=""/> 
-           <input type="hidden" name="xusuario" value=""/> 
-           <input type="hidden" name="xdistrito" value=""/> 
-           <input type="hidden" name="xreferencia" value=""/> 
-           <input type="hidden" name="xtelf1" value=""/> 
-           <input type="hidden" name="xtelf2" value=""/> 
-           <input type="hidden" name="xproductos" value=""/> 
-           <input type="hidden" name="xfavicon" value=""/> 
            <div class="campo_boton">
               <button class="boton_form">ENVIAR FORMULARIO</button>
            </div>
