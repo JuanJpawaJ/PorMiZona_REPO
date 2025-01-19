@@ -410,14 +410,11 @@ while ($tabla=mysqli_fetch_array($result)){
       <td bgcolor="#FDF19B" class="TITULO">Características del producto.</td>
       <td bgcolor="#FDF19B"><span class="TITULO">
         <textarea name="xmsjpublico" id="xmsjpublico" cols="27" rows="5"></textarea> <!-- Características producto -->
-      </span></td>
+        </span></td>
     </tr>
     <tr>
-      <td colspan="2" class="TITULO">&nbsp;</td>
-      </tr>
-    <tr>
-      <td colspan="2" align="center" bgcolor="#FDF19B" class="TITULO">LOS SIGUIENTES DATOS: (Solo si es necesario)</td>
-      </tr>
+      <td colspan="2" align="center" bgcolor="#FFCC66" class="TITULO"><strong>LOS SIGUIENTES DATOS: (Solo si es necesario)</strong></td>
+    </tr>
     <tr>
       <td bgcolor="#FDF19B" class="TITULO">Prec. compra</td>
       <td bgcolor="#FDF19B"><span class="TITULO">
