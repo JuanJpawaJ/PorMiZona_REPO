@@ -20,13 +20,17 @@
 	font-size: 10px;
 	font-family: Tahoma, Geneva, sans-serif;
 }
-.TITULO {
-	font-size: 12px;
+.TITULO { 
+    font-size: 12px;
 	color: #000;
 }
-.tit_menu_sup {
-	color: #000;
-}
+.tit_menu_sup { color: #000; }
+.camarilla { background-color:#FFC; }
+.cazul { background-color:#9FF; }
+.cverde { background-color:#9F9; }
+.cplomo { background-color:#CCC; }
+
+
 </style>
 </head>
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
@@ -181,7 +185,7 @@ if ($xdelreg=="SIDELREG") {
 }
 ?>
 
-  <table width="926" border="1" align="center" cellpadding="0" cellspacing="0">
+  <table width="1413" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td colspan="4" bgcolor="#000066" class="tit_menu_sup"><table width="904" height="63" border="0" cellpadding="0" cellspacing="0">
       <tr>
@@ -203,7 +207,7 @@ if ($xdelreg=="SIDELREG") {
     </table></td>
     </tr>
   <tr class="tit_menu_sup">
-    <td width="679" align="center" bgcolor="#FFFFCC"><table width="912" border="0" cellspacing="0" cellpadding="0">
+    <td width="1009" align="center" bgcolor="#FFFFCC"><table width="912" border="0" cellspacing="0" cellpadding="0">
       <tr>
         <td width="63" height="17" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=SMRP">TODO</a></td>
         <td width="64" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=S">SYSCOMP</a></td>
@@ -242,37 +246,35 @@ if ($xdelreg=="SIDELREG") {
         </tr>
     </table></td>
     <td width="5" bgcolor="#FFFFCC">&nbsp;</td>
-    <td width="390" colspan="2" bgcolor="#FFFFCC"height="76" align="center"><table width="600" border="1">
+    <td width="393" colspan="2" bgcolor="#FFFFCC"height="76" align="center"><table width="393" border="1">
       <tr>
-        <td width="201"><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>">INDEX PUBLICO</a></td>
+        <td width="172"><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>">INDEX PUBLICO</a></td>
                                                           
         
-        <td width="303"> <a href="ilbupsil.php">publico</a></td>
-        <td width="74">&nbsp;</td>
+        <td width="128"> <a href="ilbupsil.php">publico</a></td>
+        <td width="165">&nbsp;</td>
       </tr>
     </table></td>
   </tr>
   <tr class="tit_menu_sup">
     <td height="262" colspan="2" rowspan="4" valign="top" bgcolor="#FFFFCC">
     <!-- INICIO DE MUESTRA ITEMS -->
-    <table width="1059" height="80" border="1" cellspacing="0">
+    <table width="1014" height="80" border="1" cellspacing="0">
       <tr bgcolor="#CCFFFF" class="diez">
-        <td width="48" align="center">COD. Item</td>
-        <td width="93">IMAGEN</td>
-        <td width="36">Grupo</td>
-        <td width="251" align="center">PRODUCTO</td>
-        <td width="48" align="center">COD-MODELO</td>
-        <td width="54" align="center">COSTO</td>
-        <td width="63" align="center">PUBLICO 01</td>
-        <td width="53">UTIL 01</td>
-        <td width="44">P.VEN 02</td>
-        <td width="59">P.VEN 03</td>
-        <td width="32">VIEW01</td>
-        <td width="32">VIEW02</td>
-        <td width="32">VIEW03</td>
-        <td width="32">MOD</td>
-        <td width="59" align="center">Mod. IMG</td>
-        <td width="57" align="center">DEL Reg.</td>
+        <td width="53" align="center">COD. Item</td>
+        <td width="126">IMAGEN</td>
+        <td width="39">Grupo</td>
+        <td width="275" align="center">PRODUCTO</td>
+        <td width="53" align="center">COD-MODELO</td>
+        <td width="57" align="center">PUBLICO 01</td>
+        <td width="50">P.VEN 02</td>
+        <td width="63">P.VEN 03</td>
+        <td width="37">VIEW01</td>
+        <td width="37">VIEW02</td>
+        <td width="36">VIEW03</td>
+        <td width="42">MOD</td>
+        <td width="65" align="center">Mod. IMG</td>
+        <td width="23" align="center">DEL Reg.</td>
       </tr>
       <?php 
 
@@ -341,11 +343,8 @@ while ($tabla=mysqli_fetch_array($result)){
         <td bgcolor="#FFFFFF"><?php echo($grupolista_it) ?></td>
         <td bgcolor="#FFFFFF"><?php echo($producto_it) ?></td>
         <td align="right" bgcolor="#FFFFFF"><?php echo($codfabrica_it) ?></td>
-        <td align="right" bgcolor="#FFFFFF"><?php echo($precom_it) ?></td>
         <!--- <td align="right" bgcolor=<? echo($color1) ?> ><?php echo($simbolo_mone.money_format('%n',(round($precom_it+($precom_it*$pje1_it/100))))) ?></td>-->
    <td align="right" bgcolor=<? echo($color1) ?> class="tit_menu_sup" ><?php echo($simbolo_mone.money_format('%n',($pv01_it))) ?></td>
-        <td align="right" ><?php echo($simbolo_mone.money_format('%n',($util01))) ?></td>
-
         <td align="right" bgcolor=<? echo($color2) ?> ><?php echo($simbolo_mone.money_format('%n',($pv02_it))) ?></td>
         <td align="right" bgcolor=<? echo($color3) ?> ><?php echo($simbolo_mone.money_format('%n',($pv03_it))) ?></td>
         <td><?php echo($view01_it) ?></td>
@@ -383,30 +382,32 @@ while ($tabla=mysqli_fetch_array($result)){
         (120 caracteres)</td>
       </tr>
     <tr>
-      <td colspan="2" class="TITULO">
+      <td colspan="2" class="TITULO" >
       <input name="xproducto" type="text" id="xproducto" size="45" maxlength="120" onKeyUp="this.value=this.value.toUpperCase();" /></td>
+      
+      
       </tr>
     <tr>
       <td bgcolor="#FDF19B" class="TITULO">Cod. Modelo.</td>
       <td><span class="TITULO">
-        <input name="xcodfabrica" type="text" id="xcodfabrica" size="25" maxlength="30" onKeyUp="this.value=this.value.toUpperCase();" />
+        <input class="cplomo" name="xcodfabrica" type="text" id="xcodfabrica" size="25" maxlength="30" onKeyUp="this.value=this.value.toUpperCase();" />
         </span></td>
     </tr>
     <tr>
       <td bgcolor="#FDF19B" class="TITULO">Marca</td>
       <td><span class="TITULO">
-        <input name="xmarka" type="text" id="xmarka" size="25" maxlength="30" onKeyUp="this.value=this.value.toUpperCase();" />
+        <input class="cplomo" name="xmarka" type="text" id="xmarka" size="25" maxlength="30" onKeyUp="this.value=this.value.toUpperCase();" />
         </span></td>
     </tr>
     <tr>
       <td bgcolor="#FDF19B" class="TITULO">Fabricante</td>
        <td><span class="TITULO">
-        <input name="xfabricante" type="text" id="xfabricante" size="25" maxlength="30" onKeyUp="this.value=this.value.toUpperCase();" />
+        <input class="cplomo" name="xfabricante" type="text" id="xfabricante" size="25" maxlength="30" onKeyUp="this.value=this.value.toUpperCase();" />
       </span></td>
 
     </tr>
     <tr>
-      <td bgcolor="#FDF19B" class="TITULO">Observaciones para el publico.</td>
+      <td bgcolor="#FDF19B" class="TITULO">Características del producto.</td>
       <td><span class="TITULO">
         <textarea name="xmsjpublico" id="xmsjpublico" cols="27" rows="5"></textarea>
       </span></td>
@@ -415,26 +416,26 @@ while ($tabla=mysqli_fetch_array($result)){
       <td colspan="2" class="TITULO">&nbsp;</td>
       </tr>
     <tr>
-      <td colspan="2" align="center" bgcolor="#FFFF66" class="TITULO">LOS SIGUIENTES DATOS: (Solo si es necesario)</td>
+      <td colspan="2" align="center" bgcolor="#FDF19B" class="TITULO">LOS SIGUIENTES DATOS: (Solo si es necesario)</td>
       </tr>
     <tr>
-      <td bgcolor="#FFFF66" class="TITULO">Prec. compra</td>
+      <td bgcolor="#FDF19B" class="TITULO">Prec. compra</td>
       <td><span class="TITULO">
-        <input name="xprecom" type="text" id="xprecom" size="10" maxlength="10" onKeyUp="this.value=this.value.toUpperCase();" />
+        <input class="cplomo" name="xprecom" type="text" id="xprecom" size="10" maxlength="10" onKeyUp="this.value=this.value.toUpperCase();" />
       </span></td>
     </tr>
     <tr>
-      <td bgcolor="#FFFF66" class="TITULO">Moneda &quot;S&quot; - &quot;D&quot;</td>
+      <td bgcolor="#FDF19B" class="TITULO">Moneda &quot;S&quot; - &quot;D&quot;</td>
       <td><span class="TITULO">
-        <input name="xmonelista" type="text" id="xmonelista" size="1" maxlength="1" onKeyUp="this.value=this.value.toUpperCase();" value="S" />
+        <input class="cplomo" name="xmonelista" type="text" id="xmonelista" size="1" maxlength="1" onKeyUp="this.value=this.value.toUpperCase();" value="S" />
         </span></td>
     </tr>
     <tr>
-      <td colspan="2" bgcolor="#FFFF66" class="TITULO">La Imagen (JPG 120 X 73) en la orpcion: [Modificar]</td>
+      <td colspan="2" bgcolor="#FDF19B" class="TITULO">La Imagen (JPG 120 X 73) en la orpcion: [Modificar]</td>
     </tr>
     <tr>
       <td colspan="2" bgcolor="#FDF19B" class="TITULO">
-        <input name="ximg" type="text" id="ximg" size="45" maxlength="60" /></td>
+        <input class="cplomo" name="ximg" type="text" id="ximg" size="45" maxlength="60" /></td>
       </tr>
     <tr>
       <td bgcolor="#FFFF66" class="TITULO">Precio Venta 01</td>
@@ -447,14 +448,14 @@ while ($tabla=mysqli_fetch_array($result)){
     <tr>
       <td bgcolor="#FFFF66"><span class="TITULO">Observaciones para el administrador</span></td>
       <td><span class="TITULO">
-        <textarea name="xobscompra" id="xobscompra" cols="27" rows="5"></textarea>
+        <textarea class="cplomo" name="xobscompra" id="xobscompra" cols="27" rows="5"></textarea>
       </span></td>
     </tr>
     <tr>
       <td colspan="2"><table width="306" border="1">
         <tr>
-          <td width="120" rowspan="2" align="center" bgcolor="#FFFF66" class="tabla10">S SR M MR P PR SMRP</td>
-          <td width="170" class="tabla10">Syscom, M.Bonita, Regalos, Perfume</td>
+          <td width="120" rowspan="2" align="center" bgcolor="#FFFF66" class="tabla10">Grupo Lista</td>
+          <td width="170" class="tabla10">1 2 3 4 5 </td>
         </tr>
         <tr>
           <td><input name="xgrupolista" type="text" id="xgrupolista" size="4" maxlength="4" onKeyUp="this.value=this.value.toUpperCase();" /></td>
