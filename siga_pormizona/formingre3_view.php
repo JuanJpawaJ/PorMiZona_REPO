@@ -91,7 +91,7 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
   
    <h2 class="semi-titulosform">FORMULARIO 00</h2>
                
-   <form id="form0" name="form0" method="post" onsubmit="return checkSubmit();" action="areg_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
+   <form id="form0" name="form0" method="post" onsubmit="return checkSubmit();" action="upd3_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
    
         <!-- inicio de boton obligatorio -->         
       <div class="geolocalizacion">
@@ -148,7 +148,7 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
  
  
                
-   <form id="form1" name="form1" method="post" onsubmit="return checkSubmit();" action="areg_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
+   <form id="form1" name="form1" method="post" onsubmit="return checkSubmit();" action="upd3_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
            <div class="campos_de_formulario">
               <label>Razon Social</label>
               <input type="text" class="campo_texto" name="xrsocial" value="<?php echo($rsocial_aso); ?>" onkeyup= "this.value=this.value.toUpperCase();"> 
@@ -223,9 +223,10 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
  
  <br/>   
 
-          <form id="form2" name="form2" method="post" onsubmit="return checkSubmit();" action="areg_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
+          <form id="form2" name="form2" method="post" onsubmit="return checkSubmit();" action="upd3_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
 
   
+
                <div class="campos_de_formulario">
                 <label>País</label>
                 <input type="text" value="Perú" disabled class="desactivado campo_texto"> 
