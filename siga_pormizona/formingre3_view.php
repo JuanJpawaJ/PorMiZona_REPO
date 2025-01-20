@@ -50,7 +50,6 @@ $gironeg_aso=$tabla["gironeg_aso"];
 $telf1_aso=$tabla['telf1_aso'];
 $telf2_aso=$tabla['telf2_aso'];
 $email_aso=$tabla['email_aso'];
-$categoria_aso=$tabla['categoria_aso'];
 $productos_aso=$tabla['productos_aso'];
 $latitud_aso=$tabla['latitud_aso'];
 $longitud_aso=$tabla['longitud_aso'];	
@@ -58,18 +57,19 @@ $favicon_aso=$tabla["favicon_aso"];
  if(strlen($favicon_aso)==0) {
 	$favicon_aso="f_pmz_bl.png";
  }
-$date_aso=$tabla["$date_aso"];	
-$publicidad_aso=$tabla["$publicidad_aso"];	
-$grupolista_aso=$tabla["$grupolista_aso"];
-$img1_aso=$tabla["$img1_aso"];
-$img2_aso=$tabla["$img2_aso"];
-$logo_aso=$tabla["$logo_aso"];
-$view1_aso=$tabla["$view1_aso"];
-$view2_aso=$tabla["$view2_aso"];
-$view3_aso=$tabla["$view3_aso"];
-$view4_aso=$tabla["$view4_aso"];
-$msjpublico_aso=$tabla["$msjpublico_aso"];
-$obsinterno_aso=$tabla["$obsinterno_aso"];
+$date_aso=$tabla["date_aso"];	
+$publicidad_aso=$tabla["publicidad_aso"];	
+$img1_aso=$tabla["img1_aso"];
+$img2_aso=$tabla["img2_aso"];
+$logo_aso=$tabla["logo_aso"];
+$view1_aso=$tabla["view1_aso"];
+$view2_aso=$tabla["view2_aso"];
+$view3_aso=$tabla["view3_aso"];
+$obsinterno_aso=$tabla["obsinterno_aso"];
+$categoria_aso=$tabla['categoria_aso'];
+$msjpublico_aso=$tabla["msjpublico_aso"];
+$view4_aso=$tabla["view4_aso"];
+$grupolista_aso=$tabla["grupolista_aso"];
 
 ?>
 <nav>
@@ -265,8 +265,17 @@ $obsinterno_aso=$tabla["$obsinterno_aso"];
                     <label>Relación de productos y servicios</label>
                     <textarea name="xproductos" cols="5" rows="4" class="campo_grande"><?php echo($productos_aso); ?></textarea> 
                 </div>
-                
-               <!-- <a href="img_asociados/n_subir_xfile.php?xcod=<? echo $cod_aso; ?>">favicon</a>  -->
+ 
+                 <div class="campos_de_formulario">
+                    <label>Grupo de Lista</label>
+                    <textarea name="xgrupolista" cols="5" rows="4" class="campo_grande"><?php echo($grupolista_aso); ?></textarea> 
+                </div>
+                <div class="campos_de_formulario">
+                    <label>¿Quienes somos?</label>
+                    <textarea name="xmsjpublico" cols="5" rows="4" class="campo_grande"><?php echo($msjpublico_aso); ?></textarea> 
+                </div>
+
+           
             <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> > 
             <input type="hidden" name="xform" value="02"/> 
                 

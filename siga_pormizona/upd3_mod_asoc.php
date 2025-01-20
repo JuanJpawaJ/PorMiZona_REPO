@@ -62,29 +62,30 @@ if      ($form=="TODO01") {
     $msjpublico_aso=$_POST['xmsjpublico'];
     $usua_aso=$_POST['xusuario'];
     $obsinterno_aso=$_POST['xobsinterno'];
+    $grupolista_aso=$_POST['xgrupolista'];
+    $msjpublico_aso=$_POST['xmsjpublico'];
 
+// echo "COD_ASO: ".$cod;
+// echo "DATEHOY_ASO: ".$datehoy_aso;
 
-echo "COD_ASO: ".$cod;
-echo "DATEHOY_ASO: ".$datehoy_aso;
+//     echo "favicon_aso: ".$favicon_aso."<br>";	   
+//     echo "grupolista_aso: ".$grupolista_aso."<br>";
+//     echo "publicidad_aso: ".$publicidad_aso."<br>";
+//     echo "img1_aso: ".$img1_aso."<br>";
+//     echo "img2_aso: ".$img2_aso."<br>";
+//     echo "logo_aso: ".$logo_aso."<br>";
+//     echo "view01_aso: ".$view01_aso."<br>";
+//     echo "view02_aso: ".$view02_aso."<br>";
+//     echo "view03_aso: ".$view03_aso."<br>";
+//     echo "view04_aso: ".$view04_aso."<br>";
+//     echo "link01_aso: ".$link01_aso."<br>";
+//     echo "link02_aso: ".$link02_aso."<br>";
+//     echo "msjpublico_aso: ".$msjpublico_aso."<br>";
+//     echo "obsinterno_aso: ".$obsinterno_aso."<br>";
 
-    echo "favicon_aso: ".$favicon_aso."<br>";	   
-    echo "grupolista_aso: ".$grupolista_aso."<br>";
-    echo "publicidad_aso: ".$publicidad_aso."<br>";
-    echo "img1_aso: ".$img1_aso."<br>";
-    echo "img2_aso: ".$img2_aso."<br>";
-    echo "logo_aso: ".$logo_aso."<br>";
-    echo "view01_aso: ".$view01_aso."<br>";
-    echo "view02_aso: ".$view02_aso."<br>";
-    echo "view03_aso: ".$view03_aso."<br>";
-    echo "view04_aso: ".$view04_aso."<br>";
-    echo "link01_aso: ".$link01_aso."<br>";
-    echo "link02_aso: ".$link02_aso."<br>";
-    echo "msjpublico_aso: ".$msjpublico_aso."<br>";
-    echo "obsinterno_aso: ".$obsinterno_aso."<br>";
+// echo "VOY A SQL UPDATE";
 
-echo "VOY A SQL UPDATE";
-
-sleep(6);
+// sleep(6);
 	
     $sql="UPDATE asociado_51 SET favicon_aso='$favicon_aso', grupolista_aso='$grupolista_aso', 	 publicidad_aso='$publicidad_aso', img1_aso='$img1_aso', img2_aso='$img2_aso', logo_aso='$logo_aso', view01_aso='$view01_aso', view02_aso='$view02_aso', view03_aso='$view03_aso', view04_aso='$view04_aso', link01_aso='$link01_aso', link02_aso='$link02_aso', msjpublico_aso='$msjpublico_aso', usua_aso='$usua_aso', obsinterno_aso='$obsinterno_aso', datehoy_aso='$datehoy_aso'  WHERE cod_aso=$cod";
     $result=mysqli_query($connec,$sql);
