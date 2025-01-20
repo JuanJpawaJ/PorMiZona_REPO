@@ -23,14 +23,16 @@ if      ($form=="TODO01") {
     $rsocial_aso=$_POST['xrsocial'];
     $direccion_aso=$_POST['xdireccion'];
     $categoria_aso=$_POST['xcategoria'];
+	$gironeg_aso=$_POST['xgironeg'];
+    $departamento_aso=$_POST['xdepartamento'];
     $email_aso=$_POST['xemail'];
     $pass_aso=$_POST['xpass'];
+
+
     $pais_aso=$_POST['xpais'];
-    $departamento_aso=$_POST['xdepartamento'];
     $provincia_aso=$_POST['xprovincia'];
     $distrito_aso=$_POST['xdistrito'];
     $referencia_aso=$_POST['xreferencia'];
-	$gironeg_aso=$_POST['xgironeg'];
     $telf1_aso=$_POST['xtelf1'];
     $telf2_aso=$_POST['xtelf2'];
     $productos_aso=$_POST['xproductos'];
