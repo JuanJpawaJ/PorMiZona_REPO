@@ -252,7 +252,18 @@ if ($xdelreg=="SIDELREG") {
                                                           
         
         <td width="128"> <a href="ilbupsil.php">publico</a></td>
-        <td width="165">&nbsp;</td>
+        <td width="165">
+        
+      <form id="form0" name="form0" method="post" onsubmit="return checkSubmit();" action="/siga_pormizona/formingre3_view.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
+         <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> >
+         <div class="campo_botonin">
+              <button class="boton_form">YO SOCIO</button>
+         </div>
+      </form>
+
+        
+        
+        </td>
       </tr>
     </table></td>
   </tr>
