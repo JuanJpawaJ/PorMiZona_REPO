@@ -161,7 +161,7 @@ $grupolista_aso=$tabla["grupolista_aso"];
            <div class="campos_de_formulario">
                <label>Departamento o Estado</label>
                     <? $sql=mysqli_query($connec,"SELECT * FROM estado_51 order by estado_est");  ?>
-                    <select id="departamento" name="xdepartamento" class="campo_texto">  
+                    <select id="xdepartamento" name="xdepartamento" class="campo_texto">  
                     <option value="ESTADO">Elije tu ciudad...</option>
                         <? while($rosvi=mysqli_fetch_array($sql))
 				        if ($rosvi["cod_est"]==$departamento_aso) {
@@ -252,12 +252,12 @@ $grupolista_aso=$tabla["grupolista_aso"];
                 </div>
                 <div class="otros_datos">
                     <div class="campos_de_formulario">
-                        <label>Móvil</label>
+                        <label>Telf. 1</label>
                         <input type="text" class="campo_texto form_telef" name="xtelf1" value="<?php echo($telf1_aso); ?>"> 
                     </div>
                     
                     <div class="campos_de_formulario form_horizontal">
-                        <label>Fijo</label>
+                        <label>Telf. 2</label>
                         <input type="text" class="campo_texto form_telef" name="xtelf2" value="<?php echo($telf2_aso); ?>"> 
                     </div>
                 </div>            
@@ -268,7 +268,8 @@ $grupolista_aso=$tabla["grupolista_aso"];
  
                  <div class="campos_de_formulario">
                     <label>Grupo de Lista</label>
-                    <textarea name="xgrupolista" cols="5" rows="4" class="campo_grande"><?php echo($grupolista_aso); ?></textarea> 
+                    <input type="text" class="campo_texto agrandar" name="xgrupolista" value="<?php echo($grupolista_aso); ?>"> 
+
                 </div>
                 <div class="campos_de_formulario">
                     <label>¿Quienes somos?</label>

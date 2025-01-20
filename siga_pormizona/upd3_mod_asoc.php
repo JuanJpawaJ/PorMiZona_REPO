@@ -122,7 +122,7 @@ if      ($form=="TODO01") {
     $email_aso=$_POST['xemail'];
     $usua_aso=$_POST['xusuario'];
     $pass_aso=$_POST['xpass'];
-    $sql="UPDATE asociado_51 SET rsocial_aso='$rsocial_aso',direccion_aso='$direccion_aso', departamento_aso='$departamento_aso', gironeg_aso='$gironeg_aso',categoria_aso='$categoria_aso',email_aso='$email_aso', usua_aso='$usua_aso',pass_aso='$pass_aso, datehoy_aso='$datehoy_aso' WHERE cod_aso=$cod";
+    $sql="UPDATE asociado_51 SET rsocial_aso='$rsocial_aso',direccion_aso='$direccion_aso', departamento_aso='$departamento_aso', gironeg_aso='$gironeg_aso',categoria_aso='$categoria_aso',email_aso='$email_aso', usua_aso='$usua_aso', pass_aso='$pass_aso', datehoy_aso='$datehoy_aso' WHERE cod_aso=$cod";
     $result=mysqli_query($connec,$sql);
 	if($result){
 		echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok.</span>");
