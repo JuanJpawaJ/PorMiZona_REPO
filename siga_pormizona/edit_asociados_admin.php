@@ -48,7 +48,7 @@ $rsocial_aso=$tabla['rsocial_aso'];
 $direccion_aso=$tabla['direccion_aso'];
 $distrito_aso=$tabla['distrito_aso'];
 $provincia_aso=$tabla['provincia_aso'];
-$estado_aso=$tabla['estado_aso'];
+$departamento_aso=$tabla['departamento_aso'];
 $referencia_aso=$tabla['referencia_aso'];
 $gironeg_aso=$tabla["gironeg_aso"];
 $telf1_aso=$tabla['telf1_aso'];
@@ -82,7 +82,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
      <h2>           *PAGINA DE EDICION ADMIN  </h2>
 
   
-<form id="form1" name="form1" method="post" onsubmit="return checkSubmit();" action="areg_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
+<form id="form1" name="form1" method="post" onsubmit="return checkSubmit();" action="upd3_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
  
  <table width="669" border="1" cellspacing="1" cellpadding="1">
    <tr>
@@ -184,7 +184,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
    <tr>
      <td>Departamento o Estado</td>
      <td>
-                    <input type="text" class="campo_texto agrandar" name="xprxestadoovincia" value="<?php echo($estado_aso); ?>"> 
+                    <input type="text" class="campo_texto agrandar" name="xdepartamento" value="<?php echo($departamento_aso); ?>"> 
 
      
      </td>
@@ -245,8 +245,8 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
    <br/>   
 <br/>   
 
-   
-<form id="form2" name="form2" method="post" onsubmit="return checkSubmit();" action="areg_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
+
+<form id="form2" name="form2" method="post" onsubmit="return checkSubmit();" action="upd3_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
    
   <table width="669" border="1" cellspacing="1" cellpadding="1">
   
@@ -311,13 +311,6 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
      </td>
    </tr>
    <tr>
-     <td>Si CABECERA slide View4</td>
-     <td>
-      <input type="text" class="campo_texto" name="xview4" value="<?php echo($view04_aso); ?>"> 
-
-     </td>
-   </tr>
-   <tr>
      <td>Link 01</td>
      <td>
       <input type="text" class="campo_texto" name="xlink1" value="<?php echo($link01_aso); ?>"> 
@@ -353,6 +346,14 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
       <textarea class="campo_texto" name="xobsinterno" rows="5" cols="30"><?php echo($obsinterno_aso); ?></textarea>
      </td>
    </tr>
+      <tr>
+     <td>Si CABECERA slide View4</td>
+     <td>
+      <input type="text" class="campo_texto" name="xview4" value="<?php echo($view04_aso); ?>"> 
+
+     </td>
+   </tr>
+
    <tr>
      <td>fecha publicación</td>
      <td>
