@@ -54,10 +54,10 @@ if ($iclave=="SI") {
          <br />
  <div >
 
-        <label>Ingreso a: Modif. datos PorMiZOna:</label>
+        <label> Modifica: datos PorMiZOna:</label>
         <input type="radio" id="opcion1" name="xopcion" value="opcion1" checked> <br />
          <br />
-        <label>Ingreso a: Catálogo de  productos:</label>
+        <label>Lista  Catálogo de  productos:</label>
         <input type="radio" id="opcion2" name="xopcion" value="opcion2">
   </div>
 <br />
