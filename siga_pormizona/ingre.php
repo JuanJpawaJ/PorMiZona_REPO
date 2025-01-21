@@ -44,12 +44,13 @@ if ($usua_aso=="S") { ?>
                  <img src="imagenes/cabecera_formulario.jpg"  class="iconos">
             </div>
             <form id="form1" name="form1" method="GET" onsubmit="return checkSubmit();" action="ingre.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
-                 <h2 class="semi-titulosform">USUARIO Y CLAVE - PORMIZONA - <? echo ($rsocial);?></h2>
+                 <h2 class="semi-titulosform"> <? echo ($rsocial);?></h2>
+                 <h2 class="semi-titulosform" ¿AÚN NO CUENTA CON CATÁLOGO DE PRODUCTOS? - ¡Solicíte ahora mismo! <? echo ($rsocial);?></h2>
+                 <h2 class="semi-titulosform">USUARIO Y CLAVE - PORMIZONA </h2>
                  <div class="campos_de_formularioin">
                      <label>e-mail</label>
                      <input type="text" class="campo_textoin" name="xemail"  > 
                  </div>
-                 <!--  <h2 class="semi-titulos">UBICACIÓN</h2> -->
                  <div class="campos_de_formularioin">
                      <label>Clave</label>
                      <input type="password" class="campo_textoin" name="xclave" > 
@@ -60,9 +61,10 @@ if ($usua_aso=="S") { ?>
                      <button class="boton_form">INGRESAR</button>
                  </div>
                  <div>
-                   Si desea realizar alguna consulta comunicarse con:
-                   959956000 - Solo para propietarios. <br />
-                   Este formulario SI, es SEGURO. Gracias
+                   Acceso solo para PROPIETARIOS <br />
+                   Si desea realizar alguna consulta comunicarse con: 959956000 <br />
+                   Este formulario SI, es SEGURO. Gracias <br />
+                   <br />
                  </div>         
            </form>
        </div>
