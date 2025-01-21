@@ -14,7 +14,7 @@ mysqli_set_charset($connec,'utf8');
 date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
-$retorna = $_GET['xretorna'];
+$retorna = $_POST['xretorna'];
 echo " retornaaaaaaaaaaaa a: ".$retorna;
 
 $cod=$_GET['xcod'];

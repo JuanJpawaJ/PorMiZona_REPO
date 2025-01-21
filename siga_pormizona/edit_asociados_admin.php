@@ -235,7 +235,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
   
              <input type="hidden" name="xform" value="TODO01"/> 
              <input type="hidden" name="xretorna" value="a_list_asociados_admin.php"/> 
-           <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> > 
+             <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> > 
               
                
  

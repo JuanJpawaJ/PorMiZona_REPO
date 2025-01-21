@@ -130,6 +130,8 @@ $grupolista_aso=$tabla["grupolista_aso"];
            <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> > 
            <input type="hidden" name="xlatitud" value=<? echo $xlatitud; ?> > 
            <input type="hidden" name="xlongitud" value=<? echo $xlongitud; ?> > 
+             <input type="hidden" name="xretorna" value="viewasociado.php"/> 
+
 
            <div class="campo_boton">
               <button class="boton_form">ENVIAR FORMULARIO 00 (Solo si es necesario)</button>
@@ -202,6 +204,7 @@ $grupolista_aso=$tabla["grupolista_aso"];
            </div>
            <input type="hidden" name="xform" value="01"/> 
            <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> > 
+             <input type="hidden" name="xretorna" value="viewasociado.php"/> 
 
            <div class="campo_boton">
               <button class="boton_form">ENVIAR FORMULARIO 01</button>
@@ -279,6 +282,7 @@ $grupolista_aso=$tabla["grupolista_aso"];
            
             <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> > 
             <input type="hidden" name="xform" value="02"/> 
+             <input type="hidden" name="xretorna" value="viewasociado.php"/> 
                 
                
                     <div class="campo_boton">
