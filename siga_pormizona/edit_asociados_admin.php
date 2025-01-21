@@ -178,7 +178,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
    <tr>
      <td>País</td>
      <td>
-                <input type="text" value="Perú" disabled class="desactivado campo_texto"> 
+                <input type="text" value="<?php echo($pais_aso); ?>" disabled class="desactivado campo_texto"> 
      </td>
    </tr>
    <tr>
