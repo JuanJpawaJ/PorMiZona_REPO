@@ -14,9 +14,13 @@ mysqli_set_charset($connec,'utf8');
 date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
+$retorna = $_GET['xretorna'];
 
+$cod=$_GET['xcod'];
+if (strlen($cod)==0) {
+  $cod=$_POST['xcod'];
+}
 $form=$_POST['xform'];
-$cod=$_POST['xcod'];
 $datehoy_aso=date("Y/m/d");
 
 if      ($form=="TODO01") {
@@ -181,11 +185,10 @@ mysqli_close($connec);
 ?>
 <table width="363" border="0">
   <tr bgcolor="#F8DA94">
-<? if ($retorna=="ERROR") {  ?>
-    <th scope="col"><div align="center"><a href="viewasociado.php?xcod=<?php  echo($cod); ?>">ERROR RETORNAR</a></div></th>
-<? } else { ?>
-    <th scope="col" class="semi-titulosform"><div align="center"><a href="viewasociado.php?xcod=<?php  echo($cod); ?>">SUS DATOS SE REGISTRARON </a></div></th>
-<? } ?>
+
+
+ 
+    <th scope="col" class="semi-titulosform"><div align="center"><a href="<? echo($retorna); ?>?xcod=<?php  echo($cod); ?>">SUS DATOS SE REGISTRARON </a></div></th>
   </tr>
 </table>
 
