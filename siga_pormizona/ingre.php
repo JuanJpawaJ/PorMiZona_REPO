@@ -49,9 +49,9 @@ if ($usua_aso=="S") { ?>
                  <h2 class="semi-titulosform"> <? echo ($rsocial);?></h2>
                  <h2 class="semi-titulosform"> ¿AÚN NO CUENTA CON CATÁLOGO DE PRODUCTOS? - ¡Solicíte ahora mismo! </h2>
                  <br />
-                 <h2 class="semi-titulosform">INGRESE SU USUARIO Y CLAVE - PORMIZONA </h2>
+                 <h2 class="semi-titulosform">Ingrese su USUARIO y CLAVE </h2>
                  <div class="campos_de_formularioin">
-                     <label>e-mail</label>
+                     <label>Usuario</label>
                      <input type="text" class="campo_textoin" name="xemail"  > 
                  </div>
                  <div class="campos_de_formularioin">
@@ -73,7 +73,7 @@ if ($usua_aso=="S") { ?>
        </div>
      <!-- </div>  -->
      <?
-  } else {  // iclave = error
+  } else {  // iclave = YA infresó su clave
 
      $result=mysqli_query($connec,"select * from asociado_51 where cod_aso='$cod_aso'");
      $total=mysqli_num_rows($result);
