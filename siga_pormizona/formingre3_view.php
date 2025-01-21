@@ -229,7 +229,7 @@ $grupolista_aso=$tabla["grupolista_aso"];
 
                <div class="campos_de_formulario">
                 <label>País</label>
-                <input type="text" value="Perú" disabled class="desactivado campo_texto"> 
+                <input type="text" value="<?php echo($pais_aso); ?>" disabled class="desactivado campo_texto"> 
                </div>
 
                <div class="otros_datos">
@@ -268,7 +268,7 @@ $grupolista_aso=$tabla["grupolista_aso"];
  
                  <div class="campos_de_formulario">
                     <label>Grupo de Lista</label>
-                    <input type="text" class="campo_texto agrandar" name="xgrupolista" value="<?php echo($grupolista_aso); ?>"> 
+                    <input type="text" value="<?php echo($grupolista_aso); ?>" disabled class="desactivado campo_texto"> 
 
                 </div>
                 <div class="campos_de_formulario">
