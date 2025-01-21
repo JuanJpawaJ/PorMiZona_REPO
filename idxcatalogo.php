@@ -27,7 +27,11 @@
 	}
 
 
-.texto-blanco {    color: white;     }
+.razonsocial_blanco { 
+   color: white; 
+   font-size: 3rem;
+  
+   }
 
     
 
