@@ -185,7 +185,7 @@ if ($xdelreg=="SIDELREG") {
 }
 ?>
 
-  <table width="1413" border="1" align="center" cellpadding="0" cellspacing="0">
+  <table width="1283" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td colspan="4" bgcolor="#000066" class="tit_menu_sup"><table width="904" height="63" border="0" cellpadding="0" cellspacing="0">
       <tr>
@@ -207,14 +207,14 @@ if ($xdelreg=="SIDELREG") {
     </table></td>
     </tr>
   <tr class="tit_menu_sup">
-    <td width="1009" align="center" bgcolor="#FFFFCC"><table width="912" border="0" cellspacing="0" cellpadding="0">
+    <td width="903" align="center" bgcolor="#FFFFCC"><table width="884" border="0" cellspacing="0" cellpadding="0">
       <tr>
         <td width="63" height="17" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=SMRP">TODO</a></td>
         <td width="64" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=S">SYSCOMP</a></td>
         <td width="98" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=M">M.BONITA</a></td>
         <td width="89" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=R">R.STORE</a></td>
         <td width="88" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=P">PERFUMERIA</a></td>
-        <td width="510" rowspan="2" align="center">
+        <td width="482" rowspan="2" align="center">
     <form id="form0" name="form0" method="get" action="a_list_items_admin.php">
           <table width="395" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
             <tr>
@@ -245,16 +245,16 @@ if ($xdelreg=="SIDELREG") {
 			    </td>
         </tr>
     </table></td>
-    <td width="5" bgcolor="#FFFFCC">&nbsp;</td>
-    <td width="393" colspan="2" bgcolor="#FFFFCC"height="76" align="center"><table width="393" border="1">
+    <td width="1" bgcolor="#FFFFCC">&nbsp;</td>
+    <td width="371" colspan="2" bgcolor="#FFFFCC"height="76" align="center"><table width="369" border="1">
       <tr>
-        <td width="172"><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>">INDEX PUBLICO</a></td>
+        <td width="119"><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>">INDEX PUBLICO</a></td>
                                                           
         
-        <td width="128"> <a href="ilbupsil.php">publico</a></td>
-        <td width="165">
+        <td width="92"> <a href="ilbupsil.php">publico</a></td>
+        <td width="136">
         
-      <form id="form0" name="form0" method="post" onsubmit="return checkSubmit();" action="/siga_pormizona/formingre3_view.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
+      <form id="form0" name="form0" method="post" onSubmit="return checkSubmit();" action="/siga_pormizona/formingre3_view.php" onKeyPress="javascript:if(event.keyCode==13){return false;}" >
          <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> >
          <div class="campo_botonin">
               <button class="boton_form">YO SOCIO</button>
@@ -270,22 +270,21 @@ if ($xdelreg=="SIDELREG") {
   <tr class="tit_menu_sup">
     <td height="262" colspan="2" rowspan="4" valign="top" bgcolor="#FFFFCC">
     <!-- INICIO DE MUESTRA ITEMS -->
-    <table width="1014" height="80" border="1" cellspacing="0">
+    <table width="904" height="80" border="1" cellspacing="0">
       <tr bgcolor="#CCFFFF" class="diez">
-        <td width="53" align="center">COD. Item</td>
-        <td width="126">IMAGEN</td>
-        <td width="39">Grupo</td>
-        <td width="275" align="center">PRODUCTO</td>
-        <td width="53" align="center">COD-MODELO</td>
-        <td width="57" align="center">PUBLICO 01</td>
-        <td width="50">P.VEN 02</td>
-        <td width="63">P.VEN 03</td>
-        <td width="37">VIEW01</td>
-        <td width="37">VIEW02</td>
-        <td width="36">VIEW03</td>
-        <td width="42">MOD</td>
-        <td width="65" align="center">Mod. IMG</td>
-        <td width="23" align="center">DEL Reg.</td>
+        <td width="55" align="center">COD. Item</td>
+        <td width="114">IMAGEN</td>
+        <td width="33">Grupo</td>
+        <td width="255" align="center">PRODUCTO</td>
+        <td width="52" align="center">COD-MODELO</td>
+        <td width="59" align="center">PUBLICO 01</td>
+        <td width="52">P.VEN 03</td>
+        <td width="48">VIEW01</td>
+        <td width="44">VIEW02</td>
+        <td width="38">VIEW03</td>
+        <td width="36">MOD</td>
+        <td width="48" align="center">Mod. IMG</td>
+        <td width="16" align="center">DEL Reg.</td>
       </tr>
       <?php 
 
@@ -356,7 +355,6 @@ while ($tabla=mysqli_fetch_array($result)){
         <td align="right" bgcolor="#FFFFFF"><?php echo($codfabrica_it) ?></td>
         <!--- <td align="right" bgcolor=<? echo($color1) ?> ><?php echo($simbolo_mone.money_format('%n',(round($precom_it+($precom_it*$pje1_it/100))))) ?></td>-->
    <td align="right" bgcolor=<? echo($color1) ?> class="tit_menu_sup" ><?php echo($simbolo_mone.money_format('%n',($pv01_it))) ?></td>
-        <td align="right" bgcolor=<? echo($color2) ?> ><?php echo($simbolo_mone.money_format('%n',($pv02_it))) ?></td>
         <td align="right" bgcolor=<? echo($color3) ?> ><?php echo($simbolo_mone.money_format('%n',($pv03_it))) ?></td>
         <td><?php echo($view01_it) ?></td>
         <td><?php echo($view02_it) ?></td>
