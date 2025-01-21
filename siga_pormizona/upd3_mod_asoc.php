@@ -33,7 +33,7 @@ if      ($form=="TODO01") {
     $pass_aso=$_POST['xpass'];
 
 
-    //$pais_aso=$_POST['xpais'];
+    $pais_aso=$_POST['xpais'];
     $provincia_aso=$_POST['xprovincia'];
     $distrito_aso=$_POST['xdistrito'];
     $referencia_aso=$_POST['xreferencia'];
@@ -42,7 +42,7 @@ if      ($form=="TODO01") {
     $productos_aso=$_POST['xproductos'];
 
 	
-    $sql="UPDATE asociado_51 SET rsocial_aso='$rsocial_aso', direccion_aso='$direccion_aso', categoria_aso='$categoria_aso', email_aso='$email_aso',pass_aso='$pass_aso', departamento_aso='$departamento_aso', provincia_aso='$provincia_aso',distrito_aso='$distrito_aso', referencia_aso='$referencia_aso', gironeg_aso='$gironeg_aso', telf1_aso='$telf1_aso', telf2_aso='$telf2_aso', productos_aso='$productos_aso', datehoy_aso='$datehoy_aso'  WHERE cod_aso=$cod";
+    $sql="UPDATE asociado_51 SET rsocial_aso='$rsocial_aso', direccion_aso='$direccion_aso', categoria_aso='$categoria_aso', email_aso='$email_aso',pass_aso='$pass_aso', pais_aso='$pais_aso', departamento_aso='$departamento_aso', provincia_aso='$provincia_aso',distrito_aso='$distrito_aso', referencia_aso='$referencia_aso', gironeg_aso='$gironeg_aso', telf1_aso='$telf1_aso', telf2_aso='$telf2_aso', productos_aso='$productos_aso', datehoy_aso='$datehoy_aso'  WHERE cod_aso=$cod";
     $result=mysqli_query($connec,$sql);
 	if($result){
 		echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok TODO.</span>");
