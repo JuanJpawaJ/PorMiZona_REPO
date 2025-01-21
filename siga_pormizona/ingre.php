@@ -48,6 +48,7 @@ if ($usua_aso=="S") { ?>
             <form id="form1" name="form1" method="GET" onsubmit="return checkSubmit();" action="ingre.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
                  <h2 class="semi-titulosform"> <? echo ($rsocial);?></h2>
                  <h2 class="semi-titulosform"> ¿AÚN NO CUENTA CON CATÁLOGO DE PRODUCTOS? - ¡Solicíte ahora mismo! </h2>
+                 <br />
                  <h2 class="semi-titulosform">INGRESE SU USUARIO Y CLAVE - PORMIZONA </h2>
                  <div class="campos_de_formularioin">
                      <label>e-mail</label>
@@ -86,7 +87,7 @@ if ($usua_aso=="S") { ?>
             <form id="form0" name="form0" method="post" onsubmit="return checkSubmit();" action="formingre3_view.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
                <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> >
                <div class="campo_botonin">
-                  <button class="boton_form"> ¡ CONTINUAR ! (Modificaciones)</button>
+                  <button class="boton_form"> ¡ CONTINUAR ! (Mi Perfil)</button>
                </div>
            </form>
   </div>
