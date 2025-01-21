@@ -2,7 +2,17 @@
 
 <div class="navegador">
 
+<?
+if (strlen($logo_aso)==0) { 
+
+echo ($rsocial_aso); ?> 
+ 
+
+<? } else { ?>
+
         <img src="<?php echo $agregado_en_cab?>assets/img/imagenes_index/logo_JPAWAJ_rojo_blanco.png" alt="" class="logo_principal">
+
+<? } ?>
         <button class="boton_nav" id="boton_hamburguesa" onclick="desplegarBotonHamburguesa()">
             <span class="material-symbols-outlined">
                 menu
