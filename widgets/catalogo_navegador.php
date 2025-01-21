@@ -5,7 +5,7 @@
 <?
 if (strlen(trim($logo_aso))==0) { 
 
-         echo "<span class='texto-blanco'>$rsocial_aso</span>"; ?>
+         echo "<span class='razonsocial_blanco'>$rsocial_aso</span>"; ?>
 
 
 <? } else { ?>
