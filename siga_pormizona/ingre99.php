@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario - Clave</title>
+   <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="fuentes.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos-footer.css">
+    <link rel="icon" href="imagenes/dencuentro.ico" /> 
+
+</head>
+
+<body>
+<? 
+include("connec_sql_new.php");
+mysqli_set_charset($connec,'utf8'); 
+date_default_timezone_set("America/Lima");
+setlocale(LC_ALL, "sp");
+
+$cod_aso = $_GET['xcod'];
+$iclave= $_GET['xiclave'];
+
+$xemail= $_GET['xemail'];
+$xclave= $_GET['xclave'];
+$xopcion= $_GET['xopcion'];
+
+$rsocial= $_GET['xrsocial'];
+$usua_aso= $_GET['xusua'];
+
+if ($usua_aso=="S") { ?>
+         <h2 class="semi-titulosform">¡FELICIDADES¡ Ud. cuenta con CATALOGO DE PRODUCTOS</h2>
+
+    <script type="text/javascript">
+      // window.location.href = "formingre2.php?xcod=<?php echo $cod_aso; ?>";
+       window.location.href = "/siga_catalogo/sociocatalogo.php";
+
+    </script>
+<?
+} else {   ?>
+
+<h2 class="semi-titulosform">A¿UN NO CUENTA CON CATÁLOGO? Solcite al 959 956 000</h2>
+
+<?    if ($iclave=="SI") {  ?>
+          <div class="exteriorform">
+            <div class="fondo_formulario">
+               <div class="cabecera1">
+                 <img src="imagenes/cabecera_formulario.jpg"  class="iconos">
+               </div>
+            </div>
+          </div>
+<?   } else {
+          $result=mysqli_query($connec,"select * from asociado_51 where cod_aso='$cod_aso'");
+          $total=mysqli_num_rows($result);
+          $tabla = mysqli_fetch_array( $result );
+  
+          $email_aso=$tabla['email_aso'];
+          $pass_aso=$tabla['pass_aso'];
+
+          if ($email_aso==$xemail AND  $pass_aso==$xclave) { ?>
+
+             <form id="form0" name="form0" method="post" onsubmit="return checkSubmit();" action="formingre3_view.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
+                  <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> >
+                        <div class="campo_botonin">
+                             <button class="boton_form"> ¡ CONTINUAR ! (Modificaciones)</button>
+                        </div>
+             </form>
+  </div>
+
+<? } else { //$iclave=   xx ?> 
+  <table width="363" border="0">
+  <tr bgcolor="#F8DA94">
+    <th scope="col"><div align="center"><a href="buscar_pormizona.php">CUIDADO !! Tenemos su IP !! - NO ESTA REGISTRADO</a></div>
+    </th>
+  </tr>
+</table>
+<?
+} 
+}
+}?>
+</body>
+</html>
