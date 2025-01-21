@@ -3,7 +3,7 @@
 <div class="navegador">
 
 <?
-if (strlen($logo_aso)==0) { 
+if (strlen(trim($logo_aso))==0) { 
 
 echo ($rsocial_aso); ?> 
  
