@@ -15,6 +15,7 @@ date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
 $retorna = $_GET['xretorna'];
+echo " retornaaaaaaaaaaaa a: ".$retorna;
 
 $cod=$_GET['xcod'];
 if (strlen($cod)==0) {
@@ -178,17 +179,11 @@ obsinterno_aso='$obsinterno_aso, datehoy_aso='$datehoy_aso'  WHERE cod_aso=$cod"
 }
 
 
-
-	
-//if(strlen($rsocial_aso)==0 OR strlen($documento_aso)==0  OR strlen($email_aso)==0 OR $total_bqd>0) {
-mysqli_close($connec);
 ?>
 <table width="363" border="0">
   <tr bgcolor="#F8DA94">
 
-
- 
-    <th scope="col" class="semi-titulosform"><div align="center"><a href="<? echo($retorna); ?>?xcod=<?php  echo($cod); ?>">SUS DATOS SE REGISTRARON </a></div></th>
+    <th scope="col" class="semi-titulosform"><div align="center"><a href="<? echo($retorna); ?>?xcod=<?php  echo($cod); ?>">SUS * DATOS SE REGISTRARON </a></div></th>
   </tr>
 </table>
 
