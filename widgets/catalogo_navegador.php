@@ -5,8 +5,8 @@
 <?
 if (strlen(trim($logo_aso))==0) { 
 
-echo ($rsocial_aso); ?> 
- 
+         echo "<span class='texto-blanco'>$rsocial_aso</span>"; ?>
+
 
 <? } else { ?>
 

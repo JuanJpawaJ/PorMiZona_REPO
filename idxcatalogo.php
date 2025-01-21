@@ -26,6 +26,9 @@
     	align-items: center;
 	}
 
+
+.texto-blanco {    color: white;     }
+
     
 
   </style>
