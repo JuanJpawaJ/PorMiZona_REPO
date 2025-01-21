@@ -138,14 +138,14 @@ if      ($form=="TODO01") {
     $telf2_aso=$_POST['xtelf2'];
     $productos_aso=$_POST['xproductos'];
 
-    $grupolista_aso=$_POST['xgrupolista'];
+    //$grupolista_aso=$_POST['xgrupolista'];
     $msjpublico_aso=$_POST['xmsjpublico'];
 	
 	
 	
 	
     $sql="UPDATE asociado_51 SET 
-provincia_aso='$provincia_aso',distrito_aso='$distrito_aso',referencia_aso='$referencia_aso', telf1_aso='$telf1_aso', telf2_aso='$telf2_aso', productos_aso='$productos_aso', datehoy_aso='$datehoy_aso', grupolista_aso='$grupolista_aso', msjpublico_aso='$msjpublico_aso'   WHERE cod_aso=$cod";
+provincia_aso='$provincia_aso',distrito_aso='$distrito_aso',referencia_aso='$referencia_aso', telf1_aso='$telf1_aso', telf2_aso='$telf2_aso', productos_aso='$productos_aso', datehoy_aso='$datehoy_aso', msjpublico_aso='$msjpublico_aso'   WHERE cod_aso=$cod";
     $result=mysqli_query($connec,$sql);
 	if($result){
 		echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok.</span>");
