@@ -114,7 +114,7 @@ if (strlen($img_it) == 0) {
 <body>
   <?php
   $agregado_en_cab = "../";
-  include '../widgets/catalogo_navegador.php';
+  include '../widgets/navegador.php';
   ?>
 
 
@@ -180,10 +180,9 @@ if (strlen($img_it) == 0) {
 
   <?php
   
-
   
   $agregado_en = "../";
-  include '../widgets/catalogo_navegador.php';
+  include '../widgets/catalogo_footer.php';
   ?>
 
 
