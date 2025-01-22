@@ -186,8 +186,6 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 
 <!-------   **********   consulta CATALOGO_PRODUCTOS *********************  --->
     <? $result = mysqli_query($connec, "select * from catalogo_productos where (cod_aso_it=$cod_aso) AND (view01_it='S') AND (view03_it='S') order by producto_it");
-                              $view03_it = $tabla["view03_it"];
-                            echo " vvvvvvvview03  : ".$view03_it;
   
 	
 	$simbolo_mone = "S/ "; ?>
@@ -209,7 +207,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
                 </span>
             </div>
 
-            <a href="siga_jpawaj/a_lisgeneral.php" class="link_productos">
+            <a href="siga_catalogo/a_lisgeneral.php" class="link_productos">
                 Ver todos los productos 
             </a>    
         </div>
