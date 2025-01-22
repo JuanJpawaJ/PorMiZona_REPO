@@ -32,7 +32,7 @@
   $cod_aso = $_GET['xcod'];
 
   $agregado_en_cab = "../";
-  include '../widgets/catalogo_navegador.php';
+  include 'widgets/catalogo_navegador.php';
 
 
 
