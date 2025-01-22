@@ -183,7 +183,7 @@ if (strlen($img_it) == 0) {
 
   
   $agregado_en = "../";
-  include '../widgets/catalogo_footer.php';
+  include '../widgets/catalogo_navegador.php';
   ?>
 
 
