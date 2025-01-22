@@ -114,7 +114,7 @@ if (strlen($img_it) == 0) {
 <body>
   <?php
   $agregado_en_cab = "../";
-  include '../widgets/navegador.php';
+  include '../widgets/catalogo_navegador.php';
   ?>
 
 
