@@ -88,9 +88,9 @@ $grupolista_aso=$tabla["grupolista_aso"];
 $img1_aso=$tabla["img1_aso"];
 $img2_aso=$tabla["img2_aso"];
 $logo_aso=$tabla["logo_aso"];
-$view01_aso=$tabla["view01_aso"];
-$view02_aso=$tabla["view02_aso"];
-$view03_aso=$tabla["view03_aso"];
+$view01_aso=$tabla["view01_aso"];  // ver=S o NOver = 
+$view02_aso=$tabla["view02_aso"];  
+$view03_aso=$tabla["view03_aso"]; // oferta   S -
 $view04_aso=$tabla["view04_aso"]; // cabecera S - N
 $link01_aso=$tabla["link01_aso"];
 $link02_aso=$tabla["link02_aso"];
