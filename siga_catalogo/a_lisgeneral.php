@@ -29,10 +29,10 @@
   $bxproducto = $_GET['bxproducto'];
   $xgl = $_GET['xgl'];
   $pagina = $_GET['pagina'];
-  $cod_aso = $GET['xcod'];
+  $cod_aso = $_GET['xcod'];
 
   $agregado_en_cab = "../";
-  include '../widgets/catalgo_navegador.php';
+  include '../widgets/catalogo_navegador.php';
 
 
 
