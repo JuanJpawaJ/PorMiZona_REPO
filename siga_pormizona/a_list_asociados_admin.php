@@ -314,6 +314,7 @@ $view1_aso=$tabla["view1_aso"];
 $view2_aso=$tabla["view2_aso"];
 $view3_aso=$tabla["view3_aso"];
 $view4_aso=$tabla["view4_aso"];
+$usua_aso=$tabla["usua_aso"];
 $msjpublico_aso=$tabla["msjpublico_aso"];
 $obsinterno_aso=$tabla["obsinterno_aso"];
 
@@ -332,7 +333,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         <td align="right" bgcolor="#FFFFFF"><? echo($date_aso) ?></td>
         <td align="right" bgcolor="#FFFFFF"><? echo($direccion_aso) ?></td>
         <td align="right" bgcolor="#FFFFFF"><?
-		if ($view04_aso=="S") { ?>
+		if ($usua_aso=="S") { // TIENE CONTRATO DE CATALOGO?>  
 			<a href="../siga_catalogo/catalogo_list_items_admin.php?xusername=<?php  echo($email_aso); ?>&xpassword=<?php echo($pass_aso); ?>">CATALG</a>
       <? } ?>
 		 </td>
