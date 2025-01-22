@@ -185,7 +185,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 <? } ?>
 
 <!-------   **********   consulta CATALOGO_PRODUCTOS *********************  --->
-    <? $result = mysqli_query($connec, "select * from catalogo_productos where cod_aso_it=$cod_aso order by producto_it");
+    <? $result = mysqli_query($connec, "select * from catalogo_productos where cod_aso_it=$cod_aso AND view01_it='S' AND view03_it='S' order by producto_it");
     
 	
 	$simbolo_mone = "S/ "; ?>
