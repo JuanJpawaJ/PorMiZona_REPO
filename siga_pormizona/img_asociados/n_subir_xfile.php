@@ -6,6 +6,10 @@
 
 <body>
    <?php
+include("connec_sql_new.php");
+mysqli_set_charset($connec,'utf8'); 
+date_default_timezone_set("America/Lima");
+setlocale(LC_ALL, "sp");
 
    
     $cod_aso=$_GET['xcod'];
@@ -31,7 +35,6 @@
     extract($_POST);
 	$codigox=$_POST['codigox'];
 	$qregx=$_POST['qregx'];
-
 	echo ($codigox);
     if ($action == "upload") {
         //cargamos el archivo al servidor con el mismo nombre
@@ -39,25 +42,17 @@
         $archivo = $_FILES['documento']['name'];
         $tipo = $_FILES['documento']['type'];
        // $destino ="bak_".$archivo;
-        $destino =$archivo;
-echo "ARCHIVO INCIO :".$archivo."<br>";
-//echo "ARCHIVO TIPO  :".$tipo."<br>";
-echo "ARCHIVO FINAL :".$destino."<br>";
-
-//echo "codigo :".$codigox."<br>";
-//echo "QREG   :".$qregx."<br>";
-//echo "SECCION:".$seccx."<br>";
-//echo "ASIGNATURA:".$asigx."<br>";
-//echo "DOCENTE :".$docex."<br>";
+	   
+        $numero = $cod_aso;  // Número a añadir
+        //$destino =$archivo;
+        $destino = $numero.pathinfo($archivo, PATHINFO_FILENAME) . "." . pathinfo($archivo, PATHINFO_EXTENSION);
+          //echo "ARCHIVO INCIO :".$archivo."<br>";
+          //echo "ARCHIVO FINAL :".$destino."<br>";
 		
         if (copy($_FILES['documento']['tmp_name'], $destino)){
             echo "Archivo Cargado Con Éxito "."<br>";
 			echo "VOY A GUARDAR EN TABLA ASOCIADO IMAGENES "."<br>";
 			
-include("connec_sql_new.php");
-mysqli_set_charset($connec,'utf8'); 
-date_default_timezone_set("America/Lima");
-setlocale(LC_ALL, "sp");
 
 
 			echo "ARCHIVO a guardar : ".$destino."<br>";
@@ -83,7 +78,7 @@ setlocale(LC_ALL, "sp");
             echo "Error Al Cargar el Archivo";
         }
        // if (file_exists("bak_" . $archivo)) {
-        if (file_exists($archivo)) {
+    //    if (file_exists($archivo)) {
             /** Clases necesarias */
             require_once('Classes/PHPExcel.php');
             require_once('Classes/PHPExcel/Reader/Excel2007.php');
@@ -112,10 +107,10 @@ setlocale(LC_ALL, "sp");
             // Llenamos el arreglo con los datos  del archivo xlsx
 			
 		
-        }else {   //si por algo no cargo el archivo bak_ 
+      //  }else {   //si por algo no cargo el archivo bak_ 
         
             echo " Ok ";
-        }
+      //  }
         $errores = 0;
         //recorremos el arreglo multidimensional 
         //para ir recuperando los datos obtenidos

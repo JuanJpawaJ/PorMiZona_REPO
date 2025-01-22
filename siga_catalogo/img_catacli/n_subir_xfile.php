@@ -1,7 +1,7 @@
 <!-- http://ProgramarEnPHP.wordpress.com -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>:: Importar documentos al servidor ::</title>
+    <title>:: Importar documentos con CODIGO ::</title>
 </head>
 
 <body>
@@ -26,7 +26,6 @@ echo "IMPORTANTE! - Verifique 1.- Que el nombre de su documento no contenga car�
 echo "IMPORTANTE! - Verifique 2.- Que el nombre de su documento no tenga más de 60 caracteres"."<br>";	
 echo "Docente : ".$docex. " Usted esta subiendo ADJUNTO para  : ".$seccx." y la Asignatura :".$asigx."<br>";
 echo "      "."<br>"; ?>
-<!-- FORMULARIO PARA SOICITAR LA CARGA DEL EXCEL -->
 
 <form name="importa" method="post" action="<?php echo $PHP_SELF; ?>" enctype="multipart/form-data" >
      <input type="file" name="documento" />
@@ -42,25 +41,14 @@ $qregx=$_POST['qregx'];
 echo ($codigox);
 
 if ($action == "upload") {
-   //cargamos el archivo al servidor con el mismo nombre
-   //solo le agregue el sufijo bak_ 
    $archivo = $_FILES['documento']['name'];
    $tipo = $_FILES['documento']['type'];
-   //$destino ="bak_".$archivo;
-   //$destino =$cod_aso.$archivo;
+
    $numero = $cod_aso;  // Número a añadir
    $destino = $numero.pathinfo($archivo, PATHINFO_FILENAME) . "." . pathinfo($archivo, PATHINFO_EXTENSION);
-   //$destino = pathinfo($archivo, PATHINFO_FILENAME) .".". pathinfo($archivo, PATHINFO_EXTENSION);
 
-   //$destino =$archivo;
-   echo "IMAGEN INICIO :".$archivo."<br>";
-   //echo "ARCHIVO TIPO  :".$tipo."<br>";
-   echo "IMAGEN FINAL  :".$destino."<br>";
-   //echo "codigo :".$codigox."<br>";
-   //echo "QREG   :".$qregx."<br>";
-   //echo "SECCION:".$seccx."<br>";
-   //echo "ASIGNATURA:".$asigx."<br>";
-   //echo "DOCENTE :".$docex."<br>";
+   //echo "IMAGEN INICIO :".$archivo."<br>";
+   //echo "IMAGEN FINAL  :".$destino."<br>";
    if (copy($_FILES['documento']['tmp_name'], $destino)){
       echo "IMAGEN Cargado Con Éxito "."<br>"."<br>";
       echo "GUARDAR EN : ----- TABLA ITEMS "."<br>";
@@ -76,7 +64,6 @@ if ($action == "upload") {
    }else{
       echo "Error Al Cargar el Archivo";
    }
-   // if (file_exists("bak_" . $archivo)) {
 ?>
 <table width="363" border="0">
   <tr bgcolor="#F8DA94">
