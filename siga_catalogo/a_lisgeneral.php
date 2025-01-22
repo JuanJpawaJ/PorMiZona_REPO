@@ -31,7 +31,7 @@
   $pagina = $_GET['pagina'];
   $cod_aso = $_GET['xcod'];
 
-  $agregado_en_cab = "";
+  $agregado_en_cab = "../";
   include '../widgets/catalogo_navegador.php';
 
 
