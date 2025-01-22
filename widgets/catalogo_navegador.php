@@ -8,8 +8,7 @@
 
    <? } else { ?>
 
-        <img src="img_asociados/<? echo $logo_aso; ?>" alt="" class="logo_principal">
-        <img src="<?php echo $agregado_en_cab?>assets/img/imagenes_index/logo_JPAWAJ_rojo_blanco.png" alt="" class="logo_principal">
+        <img src="../img_asociados/<? echo $logo_aso; ?>" alt="" class="logo_principal">
 
    <? } ?>
         <button class="boton_nav" id="boton_hamburguesa" onclick="desplegarBotonHamburguesa()">
