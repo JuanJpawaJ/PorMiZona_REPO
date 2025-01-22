@@ -30,6 +30,8 @@
   $xgl = $_GET['xgl'];
   $pagina = $_GET['pagina'];
   $cod_aso = $_GET['xcod'];
+  $rsocial_aso = $_GET['xrsocial'];
+  $logo_aso = $_GET['xlogo'];
 
   $agregado_en_cab = "../";
   include '../widgets/catalogo_navegador.php';
