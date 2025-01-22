@@ -32,10 +32,9 @@
           
            
            
-           <li><a href="http://mujerbonita.com.pe"><img src="<?php echo $agregado_en_cab?>assets/img/imagenes_index/bot_productos_blanco.png" alt=""></a></li>
+           <li><a href="../siga_catalogo/a_lisgeneral.php?xcod=<? echo $cod_aso; ?>"><img src="<?php echo $agregado_en_cab?>assets/img/imagenes_index/bot_productos_blanco.png" alt=""></a></li>
  
-           <!-- <a href="siga_catalogo/a_lisgeneral.php" class="link_productos"> -->
- 
+
  
            <li><a href="http://mujerbonita.com.pe"><img src="<?php echo $agregado_en_cab?>assets/img/imagenes_index/bot_ubicacion_blanco.png" alt=""></a></li>
 

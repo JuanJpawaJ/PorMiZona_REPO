@@ -185,7 +185,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 <? } ?>
 
 <!-------   **********   consulta CATALOGO_PRODUCTOS *********************  --->
-    <? $result = mysqli_query($connec, "select * from catalogo_productos where (cod_aso_it=$cod_aso) AND (view01_it='S') AND (view03_it='S') order by producto_it");
+    <? $result = mysqli_query($connec, "select * from catalogo_productos where (cod_aso_it=$cod_aso) AND (view01_it='S') AND (pv03_it>0) order by producto_it");
   
 	
 	$simbolo_mone = "S/ "; ?>
@@ -201,7 +201,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
             </a> 
 
             <div class="header_ofertas">
-                <h2>OFERTAS DE LA SEMANA*</h2>
+                <h2>OFERTAS DE LA SEMANA</h2>
                 <span class="material-symbols-outlined">
                     timer
                 </span>
