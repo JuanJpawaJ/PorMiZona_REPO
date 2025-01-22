@@ -92,7 +92,9 @@
       $pv03_it = $tabla["pv03_it"];
       $simbolo_mone = "S/  ";
 
-      $imagen = "img_items/" . $img_it;
+
+
+      $imagen = "siga_catalogo/img_catacli/" . $img_it;
       $nombre_producto = $producto_it;
       $precio = $simbolo_mone . money_format('%n', ($pv01_it));
       $precio_oferta = $simbolo_mone . money_format('%n', ($pv03_it));
