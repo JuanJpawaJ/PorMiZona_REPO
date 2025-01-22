@@ -213,7 +213,7 @@ echo ("AHora estor dentro dl IFFFFF". "SIDELREG" . "delcod=====: "." ".$delcod);
   <tr class="tit_menu_sup">
     <td height="262" colspan="2" rowspan="4" valign="top" bgcolor="#FFFFCC">
     <!-- INICIO DE MUESTRA ITEMS -->
-    <table width="1119" height="80" border="1" cellspacing="0">
+    <table width="1082" height="80" border="1" cellspacing="0">
       <tr bgcolor="#CCFFFF" class="diez">
         <td width="45" align="center">COD. Item</td>
         <td width="68">FAVICON</td>
@@ -225,12 +225,12 @@ echo ("AHora estor dentro dl IFFFFF". "SIDELREG" . "delcod=====: "." ".$delcod);
         <td width="77" align="center">GEOLOCALIZA</td>
         <td width="44" align="center">fecha</td>
         <td width="71" align="center">PUBLICO 01</td>
-        <td width="49">UTIL 01</td>
-        <td width="43">FAVICON</td>
-        <td width="56">IMAGEN1</td>
-        <td width="38">LOGO</td>
-        <td width="56" align="center">EDITAR TXT</td>
-        <td width="60" align="center">DEL Reg.</td>
+        <td width="62">CATG. V4</td>
+        <td width="46">FAVICON</td>
+        <td width="45">IMAGEN1</td>
+        <td width="37">LOGO</td>
+        <td width="52" align="center">EDITAR TXT</td>
+        <td width="23" align="center">DEL Reg.</td>
       </tr>
       <?php 
 
@@ -281,6 +281,8 @@ while ($tabla=mysqli_fetch_array($result)){
 	$telf2_aso=$tabla["telf2_aso"];
 	
 	$email_aso=$tabla["email_aso"];
+	$pass_aso=$tabla["pass_aso"];
+
 	$date_aso=$tabla["date_aso"];
 	
 	$categoria_aso=$tabla["categoria_aso"];
@@ -329,7 +331,11 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         <td align="right" bgcolor="#FFFFFF"><? echo($latitud_aso." ".$longitud_aso) ?></td>
         <td align="right" bgcolor="#FFFFFF"><? echo($date_aso) ?></td>
         <td align="right" bgcolor="#FFFFFF"><? echo($direccion_aso) ?></td>
-        <td align="right" bgcolor="#FFFFFF"><? echo($view1_aso) ?></td>
+        <td align="right" bgcolor="#FFFFFF"><?
+		if ($view04_aso=="S") { ?>
+			<a href="../siga_catalogo/catalogo_list_items_admin.php?xusername=<?php  echo($email_aso); ?>&xpassword=<?php echo($pass_aso); ?>">CATALG</a>
+      <? } ?>
+		 </td>
         <td bgcolor="#FFCC66" align="center"><a href="img_asociados/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=01"><img src="iconos/ico_favicon.png" width="30" height="30"></a></td>                                                                  
         <td bgcolor="#FFCC66" align="center"><a href="img_asociados/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=02"><img src="iconos/ico_imagen.png" width="30" height="30"></a></td>                                                                  
         <td bgcolor="#FFCC66" align="center"><a href="img_asociados/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=03"><img src="iconos/ico_logo.png" width="30" height="30"></a></td>                                                                  
