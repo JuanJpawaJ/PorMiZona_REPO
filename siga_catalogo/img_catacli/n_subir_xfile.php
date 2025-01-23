@@ -1,13 +1,13 @@
 <!-- http://ProgramarEnPHP.wordpress.com -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>:: Importar documentos con CODIGO ::</title>
+    <title>:: Importar documentos con CODIGO** ::</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="fuentes.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="estilos-footer.css">
-    <link rel="icon" href="imagenes/dencuentro.ico" /> 
+   <!-- <link rel="icon" href="imagenes/dencuentro.ico" />   -->
     
 </head>
 
@@ -37,6 +37,12 @@ echo "      "."<br>"; ?>
          <input name="uploadedfile" type="file" />
          <input type="hidden" name="idx" value=<?php echo($id); ?> />
          <input type="submit" value="Subir archivo" />
+         
+     <div class="campo_botonin">
+                     <button class="boton_form">VERIFICAR</button>
+     </div>
+         
+         
      </form>
 
 ============
