@@ -251,13 +251,14 @@ if ($zxyw == "SCADCASA2014_09" OR ($total !==0 AND $password_per == $password)){
           </td>
         </tr>
       <tr>
-        <td align="center" valign="top"><table width="350" border="1" align="center" cellpadding="0" cellspacing="0">
+        <td align="center" valign="top"><table width="440" border="1" align="center" cellpadding="0" cellspacing="0">
           <tr>
-            <td colspan="5" align="center"> SOCIOS CATALOGO</td>
+            <td colspan="6" align="center"> SOCIOS CATALOGO</td>
             </tr>
           <tr>
-            <td width="88" align="center"><a href="a_list_asociados_admin.php" class="texto_link">LIST ASOCIADOS</a></td>
-            <td width="82" height="63" align="center"><p class="texto_link"><a href="../siga_catalogo/sociocatalogo.php">LINK SOCIO CATALOGO</a></p></td>
+            <td width="88" align="center" class="texto_link">PAG.<br/> PorMiZona<br/> .com.pe</td>
+            <td width="88" align="center"><a href="a_list_asociados_admin.php" class="texto_link">LISTA<br/> ASOCIADOS<br/> PorMiZona</a></td>
+            <td width="82" height="63" align="center"><p class="texto_link"><a href="../siga_catalogo/sociocatalogo.php">Pantalla acceso<br/> PASSWORD<br/> SOCIO CATALOGO</a></p></td>
             <td width="63" class="texto_link">&nbsp;</td>
             <td width="44" class="texto_link">&nbsp;</td>
                             
