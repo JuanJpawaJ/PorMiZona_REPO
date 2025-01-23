@@ -286,7 +286,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
             // Configuración del mapa
             var map = new google.maps.Map(document.getElementById('map'), {
             center: { lat: <?php echo $latitud_aso; ?>, lng: <?php echo $longitud_aso; ?> },
-            zoom: 8
+            zoom: 15
             });
 
             // Crear un marcador
