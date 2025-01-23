@@ -302,7 +302,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
     </script>
 
 <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_API&callback=initMapWhenReady">
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwIDPzMH8Ydsj3EtpZAUuBpd3W3xW3e1k&callback=initMapWhenReady">
 </script>
 </body>
 
