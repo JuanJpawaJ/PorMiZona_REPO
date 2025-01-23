@@ -92,14 +92,14 @@ if ($action == "upload") {
  
 //   if (file_exists($archivo)) {
       /** Clases necesarias */
-      require_once('Classes/PHPExcel.php');
-      require_once('Classes/PHPExcel/Reader/Excel2007.php');
+// require_once('Classes/PHPExcel.php');
+// require_once('Classes/PHPExcel/Reader/Excel2007.php');
       // Cargando la hoja de cálculo
-      $objReader = new PHPExcel_Reader_Excel2007();
-      $objPHPExcel = $objReader->load("bak_" . $archivo);
-      $objFecha = new PHPExcel_Shared_Date();
+// $objReader = new PHPExcel_Reader_Excel2007();
+// $objPHPExcel = $objReader->load("bak_" . $archivo);
+// $objFecha = new PHPExcel_Shared_Date();
       // Asignar hoja de excel activa
-      $objPHPExcel->setActiveSheetIndex(0);
+// $objPHPExcel->setActiveSheetIndex(0);
       //conectamos con la base de datos 
 //      $cn = mysql_connect("localhost", "pawacorp_juan","C?}azwJt^%!d") or die("ERROR EN LA CONEXION");
 //      $db = mysql_select_db("pawacorp_siga", $cn) or die("ERROR AL CONECTAR A LA BD");
