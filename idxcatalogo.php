@@ -293,7 +293,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
             new google.maps.Marker({
             position: { lat: <?php echo $latitud_aso; ?>, lng: <?php echo $longitud_aso; ?> },
             map: map,
-            title: '¡Hola, mundo!'
+            title: '¡Hola, mundo!',
             icon: '<?php echo $logo_aso; ?>'
             });
         }
