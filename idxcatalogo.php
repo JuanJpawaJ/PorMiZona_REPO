@@ -294,6 +294,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
             position: { lat: <?php echo $latitud_aso; ?>, lng: <?php echo $longitud_aso; ?> },
             map: map,
             title: '¡Hola, mundo!'
+            icon: '<?php echo $logo_aso; ?>'
             });
         }
 
