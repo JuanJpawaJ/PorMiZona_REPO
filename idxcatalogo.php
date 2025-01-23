@@ -258,6 +258,10 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         </div>
     </div>
 
+    <div id="map" style="height: 400px; width: 100%;"></div>
+
+
+
 
 
     <?php 
@@ -268,6 +272,26 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 
     <script src="assets/js/slider_automatico.js"></script>
     <script src="assets/js/slider_marcas.js"></script>
+    <script>
+    // Función de inicialización del mapa
+    function initMap() {
+      // Configuración del mapa
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: <? echo $latitud_aso ?>, lng: <? echo $longitud_aso ?> },
+        zoom: 8
+      });
+
+      new google.maps.Marker({
+        position: { lat: <? echo $latitud_aso ?>, <? echo $longitud_aso ?> }, // Coordenadas del marcador
+        map: map, // Mapa donde se mostrará el marcador
+        title: '¡Hola, mundo!' // Texto que se muestra al hacer clic en el marcador
+      });
+    }
+    </script>
+
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwIDPzMH8Ydsj3EtpZAUuBpd3W3xW3e1k&callback=initMap">
+    </script>
 </body>
 
 </html>
