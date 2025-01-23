@@ -294,10 +294,6 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
             position: { lat: <?php echo $latitud_aso; ?>, lng: <?php echo $longitud_aso; ?> },
             map: map,
             title: '¡Hola, mundo!',
-            icon: {
-                url: 'https://www.pormizona.com.pe/siga_pormizona/img_asociados/<?php echo $logo_aso; ?>',
-                scaledSize: new google.maps.Size(40, 40)
-            }
             });
         }
 
