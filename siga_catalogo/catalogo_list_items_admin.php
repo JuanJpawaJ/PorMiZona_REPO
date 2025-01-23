@@ -191,17 +191,6 @@ if ($xdelreg=="SIDELREG") {
       <tr>
         <td width="121" align="center" valign="top"><img src="../siga_pormizona/img_asociados/<? echo ($logo_aso); ?>" width="120" height="60"></a></td>
         <td width="575"><div align="center"><span class="TITULO_NARANJA">ADMINISTRADOR - PRODUCTOS -<? echo $cod_aso." ".$rsocial_aso; ?></span></div></td>
-        <td width="154" align="center" valign="middle">
-     <? if (strlen($logo_aso)==0)  { ?>
-
-           <span class="LOGO_NARANJA"><? echo $rsocial_aso; ?></span> 
-			
-	<?	} else { ?>
-			
-           <img src="img_catacli/<? echo ($logo_aso); ?>" width="120" height="60"> 
-			
-	<?	} ?>	
-        </td>
         
         </tr>
     </table></td>
