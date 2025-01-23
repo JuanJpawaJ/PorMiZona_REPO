@@ -36,8 +36,8 @@ echo "      "."<br>"; ?>
 <form name="importa" method="post" action="<?php echo $PHP_SELF; ?>" enctype="multipart/form-data" >
 
  
-     <input type="file" name="documento" />
-     <input type="hidden" value="upload" name="action" />
+     <input type="file" class="campo_textoin" name="documento" />
+     <input type="hidden" value="upload" class="campo_textoin" name="action" />
      
      <div class="campo_botonin">
                      <button class="boton_form">VERIFICAR</button>
