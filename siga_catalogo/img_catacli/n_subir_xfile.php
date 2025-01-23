@@ -2,6 +2,13 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>:: Importar documentos con CODIGO ::</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="fuentes.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos-footer.css">
+    <link rel="icon" href="imagenes/dencuentro.ico" /> 
+    
 </head>
 
 <body>
@@ -15,22 +22,29 @@ setlocale(LC_ALL, "sp");
 $id_img=$_GET['id_img'];
 $cod_aso=$_GET['xcod'];
 $usuario=$_GET['xusername'];
-$password=$_GET['xpassword'];
+$password=$_GET['xpassword']; ?>
 
 
-echo ("id mod ".$id_img."<br>");
-// $seccx=$_GET['secc'];
-// $asigx=$_GET['asig'];
-// $docex=$_GET['doce'];
-echo "IMPORTANTE! - Verifique 1.- Que el nombre de su documento no contenga carácteres extraños (# . $ ?)"."<br>";	
-echo "IMPORTANTE! - Verifique 2.- Que el nombre de su documento no tenga más de 60 caracteres"."<br>";	
-echo "Docente : ".$docex. " Usted esta subiendo ADJUNTO para  : ".$seccx." y la Asignatura :".$asigx."<br>";
+     <h2 class="semi-titulosform"> <? echo "IMPORTANTE! - Verifique 1.- Que el nombre de su documento no contenga carácteres extraños (# . $ ?)"; ?></h2>
+     <h2 class="semi-titulosform"> <? echo "IMPORTANTE! - Verifique 2.- Que el nombre de su documento no tenga más de 60 caracteres"; ?></h2>
+
+<?
+// echo "IMPORTANTE! - Verifique 1.- Que el nombre de su documento no contenga carácteres extraños (# . $ ?)"."<br>";	
+//echo "IMPORTANTE! - Verifique 2.- Que el nombre de su documento no tenga más de 60 caracteres"."<br>";	
 echo "      "."<br>"; ?>
 
 <form name="importa" method="post" action="<?php echo $PHP_SELF; ?>" enctype="multipart/form-data" >
+
+ 
      <input type="file" name="documento" />
      <input type="hidden" value="upload" name="action" />
-     <input type='submit' name='enviar'  value="Importar"  />
+     
+     <div class="campo_botonin">
+                     <button class="boton_form">VERIFICAR</button>
+     </div>
+     
+     
+    <!-- <input type='submit' name='enviar'  value="Importar"  /> -->
 </form>
 <!-- CARGA LA MISMA PAGINA MANDANDO LA VARIABLE upload -->
 <?
