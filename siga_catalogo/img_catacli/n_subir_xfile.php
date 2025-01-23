@@ -32,19 +32,22 @@ $password=$_GET['xpassword']; ?>
 // echo "IMPORTANTE! - Verifique 1.- Que el nombre de su documento no contenga carácteres extraños (# . $ ?)"."<br>";	
 //echo "IMPORTANTE! - Verifique 2.- Que el nombre de su documento no tenga más de 60 caracteres"."<br>";	
 echo "      "."<br>"; ?>
+============
+     <form enctype="multipart/form-data" action="subirjpg.php" method="POST">
+         <input name="uploadedfile" type="file" />
+         <input type="hidden" name="idx" value=<?php echo($id); ?> />
+         <input type="submit" value="Subir archivo" />
+     </form>
 
+============
 <form name="importa" method="post" action="<?php echo $PHP_SELF; ?>" enctype="multipart/form-data" >
-
- 
      <input type="file" class="campo_textoin" name="documento" />
      <input type="hidden" value="upload" class="campo_textoin" name="action" />
      
      <div class="campo_botonin">
                      <button class="boton_form">VERIFICAR</button>
      </div>
-     
-     
-    <!-- <input type='submit' name='enviar'  value="Importar"  /> -->
+      <input type='submit' name='enviar'  value="Importar"  /> 
 </form>
 <!-- CARGA LA MISMA PAGINA MANDANDO LA VARIABLE upload -->
 <?

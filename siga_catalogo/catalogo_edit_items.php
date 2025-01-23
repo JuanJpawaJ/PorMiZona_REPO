@@ -171,7 +171,7 @@ $tabla = mysqli_fetch_array( $result );
     </form>
       </table>
       
-      <table width="200" border="1">
+ <!--     <table width="200" border="1">
         <tr>
           <td>  
        <? if  (trim($xview) == 'ADMIN' ) { 
@@ -182,17 +182,13 @@ $tabla = mysqli_fetch_array( $result );
          <input type="hidden" name="idx" value=<?php echo($id); ?> />
          <input type="submit" value="Subir archivo" />
      </form>
- 
-
-
-
        <? }  ?>        
       </td>
         </tr>
         <tr>
           <td>&nbsp;</td>
         </tr>
-      </table>
+      </table>  -->
       <p>&nbsp;</p>
       <p>&nbsp;</p>
       
