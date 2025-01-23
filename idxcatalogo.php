@@ -274,35 +274,32 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
     <script src="assets/js/slider_marcas.js"></script>
     <script>
     // Función de inicialización del mapa
-    f<script>
-  // Función para verificar si la API de Google Maps está cargada
-  function initMapWhenReady() {
-    if (window.google && window.google.maps) {
-      initMap();
-    } else {
-      setTimeout(initMapWhenReady, 200); // Reintentar en 200ms
-    }
-  }
+        function initMapWhenReady() {
+            if (window.google && window.google.maps) {
+            initMap();
+            } else {
+            setTimeout(initMapWhenReady, 200); // Reintentar en 200ms
+            }
+        }
 
-  // Función de inicialización del mapa
-  function initMap() {
-    // Configuración del mapa
-    var map = new google.maps.Map(document.getElementById('map'), {
-      center: { lat: <?php echo $latitud_aso; ?>, lng: <?php echo $longitud_aso; ?> },
-      zoom: 8
-    });
+        function initMap() {
+            // Configuración del mapa
+            var map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: <?php echo $latitud_aso; ?>, lng: <?php echo $longitud_aso; ?> },
+            zoom: 8
+            });
 
-    // Crear un marcador
-    new google.maps.Marker({
-      position: { lat: <?php echo $latitud_aso; ?>, lng: <?php echo $longitud_aso; ?> },
-      map: map,
-      title: '¡Hola, mundo!'
-    });
-  }
+            // Crear un marcador
+            new google.maps.Marker({
+            position: { lat: <?php echo $latitud_aso; ?>, lng: <?php echo $longitud_aso; ?> },
+            map: map,
+            title: '¡Hola, mundo!'
+            });
+        }
 
-  // Llamar a la función de inicialización cuando la página esté cargada
-  window.onload = initMapWhenReady;
-</script>
+        
+        window.onload = initMapWhenReady;
+    </script>
 
 <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_API&callback=initMapWhenReady">
