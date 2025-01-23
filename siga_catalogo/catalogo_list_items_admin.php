@@ -189,7 +189,7 @@ if ($xdelreg=="SIDELREG") {
   <tr>
     <td colspan="4" bgcolor="#000066" class="tit_menu_sup"><table width="904" height="63" border="0" cellpadding="0" cellspacing="0">
       <tr>
-        <td width="121" align="center" valign="top"><img src="iconos/ico_yo_sigachef.png" width="120" height="60"></td>
+        <td width="121" align="center" valign="top"><img src="../siga_pormizona/img_asociados/<? echo ($logo_aso); ?>" width="120" height="60"></a></td>
         <td width="575"><div align="center"><span class="TITULO_NARANJA">ADMINISTRADOR - PRODUCTOS -<? echo $cod_aso." ".$rsocial_aso; ?></span></div></td>
         <td width="154" align="center" valign="middle">
      <? if (strlen($logo_aso)==0)  { ?>
@@ -272,19 +272,18 @@ if ($xdelreg=="SIDELREG") {
     <!-- INICIO DE MUESTRA ITEMS -->
     <table width="904" height="80" border="1" cellspacing="0">
       <tr bgcolor="#CCFFFF" class="diez">
-        <td width="55" align="center">COD. Item</td>
-        <td width="114">IMAGEN</td>
-        <td width="33">Grupo</td>
-        <td width="255" align="center">PRODUCTO</td>
-        <td width="52" align="center">COD-MODELO</td>
-        <td width="59" align="center">PUBLICO 01</td>
-        <td width="52">P.VEN 03</td>
-        <td width="48">VIEW01</td>
-        <td width="44">VIEW02</td>
-        <td width="38">VIEW03</td>
-        <td width="36">MOD</td>
-        <td width="48" align="center">Mod. IMG</td>
-        <td width="16" align="center">DEL Reg.</td>
+        <td width="58" align="center">COD. Item</td>
+        <td width="121">IMAGEN</td>
+        <td width="34">Grupo</td>
+        <td width="245" align="center">PRODUCTO</td>
+        <td width="59" align="center">COD-MODELO</td>
+        <td width="80" align="center">P.VENTA.-01</td>
+        <td width="54">P.OFERTA.- 03</td>
+        <td width="50">VIEW01</td>
+        <td width="40">VIEW03</td>
+        <td width="38">MOD</td>
+        <td width="50" align="center">Mod. IMG</td>
+        <td width="25" align="center">DEL Reg.</td>
       </tr>
       <?php 
 
@@ -357,7 +356,6 @@ while ($tabla=mysqli_fetch_array($result)){
    <td align="right" bgcolor=<? echo($color1) ?> class="tit_menu_sup" ><?php echo($simbolo_mone.money_format('%n',($pv01_it))) ?></td>
         <td align="right" bgcolor=<? echo($color3) ?> ><?php echo($simbolo_mone.money_format('%n',($pv03_it))) ?></td>
         <td><?php echo($view01_it) ?></td>
-        <td><?php echo($view02_it) ?></td>
         <td><?php echo($view03_it) ?></td>
         <td><a href="catalogo_edit_items.php?idx=<?php  echo($id); ?>&xview=<?php  echo("ADMIN"); ?>&xcod=<?php  echo($cod_aso); ?>&xareg=NNOOO&xmodi=NOOOOO&xdelreg=NOOOOO"><img src="iconos/ico_editar.png" width="30" height="30"></a></td>
         <td bgcolor="#FFCC66" align="center"><a href="img_catacli/n_subir_xfile.php?id_img=<?php echo($id); ?>&xcod=<?php echo($cod_aso); ?>&xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?> "><img src="iconos/ico_imagen.png" width="30" height="30"></a></td>
