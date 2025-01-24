@@ -105,13 +105,15 @@ if ($action == "upload") {
             <th scope="col"><div align="center"><a href="../catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>">RETORNAR 09pm </a></div></th> 
         </tr>
     </table>
-<?php
-    unlink($destino);
-}
-?>
-    <!-- Mantén estas líneas -->
-    <?php require_once('Classes/PHPExcel.php'); ?>
-    <?php require_once('Classes/PHPExcel/Reader/Excel2007.php'); ?>
+   <? 
+  require_once('Classes/PHPExcel.php');
+  require_once('Classes/PHPExcel/Reader/Excel2007.php');
+   unlink($destino);
+     }
+    ?>
+
+
 
 </body>
-</html>
+</html>    
+    
