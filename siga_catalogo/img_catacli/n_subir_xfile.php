@@ -80,6 +80,8 @@ echo "      "."<br>"; ?>
      <div class="campo_botonin">
                      <button class="boton_form">VERIFICAR jr</button>
      </div>
+           <input type='submit' name='enviar'  value="Importar"  /> 
+
 </form>
 
 <!-- <form name="importa" method="post" action="<?php echo $PHP_SELF; ?>" enctype="multipart/form-data" >
