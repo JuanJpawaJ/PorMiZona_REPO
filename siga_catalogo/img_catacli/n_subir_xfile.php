@@ -1,7 +1,7 @@
 <!-- http://ProgramarEnPHP.wordpress.com -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>:: Importar documentos con CODIGO** ::</title>
+    <title>:: Importar documentos con CODIGO** 20:55 ::</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <!--  <link rel="stylesheet" href="../estilos_cat/normalize.css">
     <link rel="stylesheet" href="../estilos_cat/fuentes.css">
@@ -70,7 +70,7 @@ if ($action == "upload") {
 ?>
 <table width="363" border="0">
   <tr bgcolor="#F8DA94">
-    <th scope="col"><div align="center"><a href="../catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>">RETORNAR </a></div></th>
+    <th scope="col"><div align="center"><a href="../catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>">RETORNAR 09pm </a></div></th>
 
   </tr>
 </table>
@@ -78,14 +78,14 @@ if ($action == "upload") {
  
 //   if (file_exists($archivo)) {
       /** Clases necesarias */
-     require_once('Classes/PHPExcel.php');
-    require_once('Classes/PHPExcel/Reader/Excel2007.php');
+ //    require_once('Classes/PHPExcel.php');
+ //   require_once('Classes/PHPExcel/Reader/Excel2007.php');
       // Cargando la hoja de cálculo
-  $objReader = new PHPExcel_Reader_Excel2007();
-  $objPHPExcel = $objReader->load("bak_" . $archivo);
-  $objFecha = new PHPExcel_Shared_Date();
+//  $objReader = new PHPExcel_Reader_Excel2007();
+//  $objPHPExcel = $objReader->load("bak_" . $archivo);
+//  $objFecha = new PHPExcel_Shared_Date();
       // Asignar hoja de excel activa
-  $objPHPExcel->setActiveSheetIndex(0);
+//  $objPHPExcel->setActiveSheetIndex(0);
       //conectamos con la base de datos 
 //      $cn = mysql_connect("localhost", "pawacorp_juan","C?}azwJt^%!d") or die("ERROR EN LA CONEXION");
 //      $db = mysql_select_db("pawacorp_siga", $cn) or die("ERROR AL CONECTAR A LA BD");
@@ -94,7 +94,7 @@ if ($action == "upload") {
 //   }else {   //si por algo no cargo el archivo bak_ 
       echo " Ok ";
 //   }
-   $errores = 0;
+//   $errores = 0;
    //recorremos el arreglo multidimensional 
    //para ir recuperando los datos obtenidos
    //del excel e ir insertandolos en la BD
