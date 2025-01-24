@@ -57,7 +57,7 @@ echo "      "."<br>"; ?>
 
 <!-- CARGA LA MISMA PAGINA MANDANDO LA VARIABLE upload -->
 <?
-// Importa de prueba reg_prueba.xlsx (D:Registros) desde la 3ear línea y solo las columnas indicadas.
+
 extract($_POST);
 $codigox=$_POST['codigox'];
 $qregx=$_POST['qregx'];
@@ -70,8 +70,6 @@ if ($action == "upload") {
    $numero = $cod_aso;  // Número a añadir
    $destino = $numero.pathinfo($archivo, PATHINFO_FILENAME) . "." . pathinfo($archivo, PATHINFO_EXTENSION);
 
-   //echo "IMAGEN INICIO :".$archivo."<br>";
-   //echo "IMAGEN FINAL  :".$destino."<br>";
    if (copy($_FILES['documento']['tmp_name'], $destino)){
       echo "IMAGEN Cargado Con Éxito "."<br>"."<br>";
       echo "GUARDAR EN : ----- TABLA ITEMS "."<br>";
