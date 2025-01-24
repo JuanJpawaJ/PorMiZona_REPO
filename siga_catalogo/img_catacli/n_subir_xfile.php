@@ -66,39 +66,19 @@ if ($action == "upload") {
 	  }
    }else{
       echo "Error Al Cargar el Archivo";
-   }
-?>
-<table width="363" border="0">
-  <tr bgcolor="#F8DA94">
-    <th scope="col"><div align="center"><a href="../catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>">RETORNAR 09pm </a></div></th>
-
-  </tr>
-</table>
- <?php 
- 
-//   if (file_exists($archivo)) {
-      /** Clases necesarias */
-     require_once('Classes/PHPExcel.php');
-    require_once('Classes/PHPExcel/Reader/Excel2007.php');
-      // Cargando la hoja de cálculo
-  $objReader = new PHPExcel_Reader_Excel2007();
-  $objPHPExcel = $objReader->load("bak_" . $archivo);
-  $objFecha = new PHPExcel_Shared_Date();
-      // Asignar hoja de excel activa
-  $objPHPExcel->setActiveSheetIndex(0);
-      //conectamos con la base de datos 
-//      $cn = mysql_connect("localhost", "pawacorp_juan","C?}azwJt^%!d") or die("ERROR EN LA CONEXION");
-//      $db = mysql_select_db("pawacorp_siga", $cn) or die("ERROR AL CONECTAR A LA BD");
-      //mysql_query("SET NAMES 'utf8'");
-      // Llenamos el arreglo con los datos  del archivo xlsx
-//   }else {   //si por algo no cargo el archivo bak_ 
-      echo " Ok ";
-//   }
-//   $errores = 0;
-   //recorremos el arreglo multidimensional 
-   //para ir recuperando los datos obtenidos
-   //del excel e ir insertandolos en la BD
-   //una vez terminado el proceso borramos el archivo que esta en el servidor el bak_
+   } ?>
+    <table width="363" border="0">
+       <tr bgcolor="#F8DA94">
+          <th scope="col"><div align="center"><a href="../catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>">RETORNAR 09pm </a></div>  </th> 
+      </tr>
+    </table>
+   <? 
+  require_once('Classes/PHPExcel.php');
+  require_once('Classes/PHPExcel/Reader/Excel2007.php');
+  //$objReader = new PHPExcel_Reader_Excel2007();
+  //$objPHPExcel = $objReader->load("bak_" . $archivo);
+  //$objFecha = new PHPExcel_Shared_Date();
+  //$objPHPExcel->setActiveSheetIndex(0);
    unlink($destino);
      }
     ?>
