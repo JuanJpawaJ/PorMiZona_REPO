@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="../estilos_cat/estilos.css">
     <link rel="stylesheet" href="../estilos_cat/estilos-footer.css">
    <!-- <link rel="icon" href="imagenes/dencuentro.ico" />   -->
+    <style>
+        .custom-file-upload {
+            display: inline-block;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+        }
+        .custom-file-upload:hover {
+            background-color: #e0e0e0;
+        }
+        .file-input {
+            display: none;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -31,21 +48,41 @@ $password=$_GET['xpassword']; ?>
 // echo "IMPORTANTE! - Verifique 1.- Que el nombre de su documento no contenga carácteres extraños (# . $ ?)"."<br>";	
 //echo "IMPORTANTE! - Verifique 2.- Que el nombre de su documento no tenga más de 60 caracteres"."<br>";	
 echo "      "."<br>"; ?>
-<!--============
-     <form enctype="multipart/form-data" action="subirjpg.php" method="POST">
-         <input name="uploadedfile" type="file" />
-         <input type="hidden" name="idx" value=<?php echo($id); ?> />
-         <input type="submit" value="Subir archivo" />
-         
-     <div class="campo_botonin">
-                     <button class="boton_form">VERIFICAR</button>
-     </div>
-         
-         
-     </form>
+<!-- ÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑ
 
+<form name="importa" method="post" class="campo_textoin" action="<?php //echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" enctype="multipart/form-data">
+    <label for="fileToUpload" class="custom-file-upload">
+        Seleccionar Archivo
+    </label>
+    <input type="file" name="documento" id="fileToUpload" class="file-input" />
+    <input type="hidden" value="upload" class="campo_textoin" name="action" />
+     
+    <div class="campo_botonin">
+        <button class="boton_form">VERIFICAR jr</button>
+    </div>
+    <input type='submit' name='enviar' value="Importar" class="campo_textoin" />
+</form>
+
+</body>
+</html>
+
+
+
+ÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑ
 ============  -->
-<form name="importa" method="post" class="campo_textoin" action="<?php echo $PHP_SELF; ?>" enctype="multipart/form-data" >
+<form name="importa" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" enctype="multipart/form-data" >
+    <label for="fileToUpload" class="custom-file-upload">
+        Seleccionar Archivo
+    </label>
+    <input type="file" name="documento" id="fileToUpload" class="file-input" />
+    <input type="hidden" value="upload" name="action" />
+     
+     <div class="campo_botonin">
+                     <button class="boton_form">VERIFICAR jr</button>
+     </div>
+</form>
+
+<!-- <form name="importa" method="post" action="<?php echo $PHP_SELF; ?>" enctype="multipart/form-data" >
      <input type="file" class="campo_textoin" name="documento" />
      <input type="hidden" value="upload" class="campo_textoin" name="action" />
      
@@ -53,7 +90,10 @@ echo "      "."<br>"; ?>
                      <button class="boton_form">VERIFICAR jr</button>
      </div>
       <input type='submit' name='enviar'  value="Importar"  /> 
-</form>
+</form>  -->
+
+
+
 <!-- CARGA LA MISMA PAGINA MANDANDO LA VARIABLE upload -->
 <?
 // Importa de prueba reg_prueba.xlsx (D:Registros) desde la 3ear línea y solo las columnas indicadas.
