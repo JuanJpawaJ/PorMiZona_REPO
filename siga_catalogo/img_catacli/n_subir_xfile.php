@@ -45,54 +45,13 @@ $password=$_GET['xpassword']; ?>
      <h2 class="semi-titulosform"> <? echo "IMPORTANTE! - Verifique 2.- Que el nombre de su documento no tenga más de 60 caracteres"; ?></h2>
 
 <?
-// echo "IMPORTANTE! - Verifique 1.- Que el nombre de su documento no contenga carácteres extraños (# . $ ?)"."<br>";	
-//echo "IMPORTANTE! - Verifique 2.- Que el nombre de su documento no tenga más de 60 caracteres"."<br>";	
 echo "      "."<br>"; ?>
-<!-- ÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑ
 
-<form name="importa" method="post" class="campo_textoin" action="<?php //echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" enctype="multipart/form-data">
-    <label for="fileToUpload" class="custom-file-upload">
-        Seleccionar Archivo
-    </label>
-    <input type="file" name="documento" id="fileToUpload" class="file-input" />
-    <input type="hidden" value="upload" class="campo_textoin" name="action" />
-     
-    <div class="campo_botonin">
-        <button class="boton_form">VERIFICAR jr</button>
-    </div>
-    <input type='submit' name='enviar' value="Importar" class="campo_textoin" />
-</form>
-
-</body>
-</html>
-
-
-
-ÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑ
-============  -->
-<form name="importa" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" enctype="multipart/form-data" >
-    <label for="fileToUpload" class="custom-file-upload">
-        Seleccionar Archivo
-    </label>
-    <input type="file" name="documento" id="fileToUpload" class="file-input" />
-    <input type="hidden" value="upload" name="action" />
-     
-     <div class="campo_botonin">
-                     <button class="boton_form">VERIFICAR jr</button>
-     </div>
-           <input type='submit' name='enviar'  value="Importar"  /> 
-
-</form>
-
-<!-- <form name="importa" method="post" action="<?php echo $PHP_SELF; ?>" enctype="multipart/form-data" >
-     <input type="file" class="campo_textoin" name="documento" />
-     <input type="hidden" value="upload" class="campo_textoin" name="action" />
-     
-     <div class="campo_botonin">
-                     <button class="boton_form">VERIFICAR jr</button>
-     </div>
-      <input type='submit' name='enviar'  value="Importar"  /> 
-</form>  -->
+<form name="importa" method="post" action="<?php echo $PHP_SELF; ?>" enctype="multipart/form-data" >
+     <input type="file"  name="documento" />
+     <input type="hidden" value="upload" name="action" />
+     <input type='submit' name='enviar'  value="Importar"  /> 
+</form> 
 
 
 
