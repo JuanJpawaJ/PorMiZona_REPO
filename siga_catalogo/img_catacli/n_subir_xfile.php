@@ -93,16 +93,14 @@ if ($action == "upload") {
     $destino = $numero . pathinfo($archivo, PATHINFO_FILENAME) . "." . pathinfo($archivo, PATHINFO_EXTENSION);
 
     if (copy($_FILES['documento']['tmp_name'], $destino)) {
-        echo "IMAGEN Cargado Con Éxito "."<br>"."<br>";
-        echo "GUARDAR EN : ----- TABLA ITEMS "."<br>";
+        echo "IMAGEN Cargada Con Éxito "."<br>"."<br>";
         echo "ARCHIVO a guardar : ".$destino."<br>";
-        echo "id a guardar : ".$id_img."<br>";  
         $sql = "UPDATE catalogo_productos SET img_it='$destino' WHERE id='$id_img'";
         $result = mysqli_query($connec, $sql);
         if ($result) {
-            echo("DATOS - IMAGEN - REGISTRADOS -- FIN ");
+            echo("IMAGEN - REGISTRADA ");
         } else {
-            echo("ERROR AL REGISTRARSE - POSIBLE...?");
+            echo("ERROR AL REGISTRAR..?");
         }
     } else {
         echo "Error Al Cargar el Archivo";
