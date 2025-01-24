@@ -43,7 +43,13 @@
 
         .custom-submit-button:hover {
             background-color: #45a049; /* Verde oscuro */
+        }.semi-titulosform{
+    font-size:1.3rem;
+    margin-bottom:0.3rem;
+    color:var(--color-principal);
         }
+
+		
     </style>
 </head>
 
@@ -60,15 +66,17 @@ $usuario = $_GET['xusername'];
 $password = $_GET['xpassword'];
 ?>
 
-<h2 class="semi-titulosform"> <?php echo "IMPORTANTE! - Verifique 1.- Que el nombre de su documento no contenga carácteres extraños (# . $ ?)"; ?></h2>
-<h2 class="semi-titulosform"> <?php echo "IMPORTANTE! - Verifique 2.- Que el nombre de su documento no tenga más de 60 caracteres"; ?></h2>
+<h2 class="semi-titulosform"> <?php echo "SUBIR IMÁGENES A MIS PRODUCTOS"; ?></h2>
+
+<h1 class="semi-titulosform"> <?php echo "IMPORTANTE! - Verifique 1.- Que el nombre de su documento no contenga carácteres extraños (# . $ ?)"; ?></h1>
+<h1 class="semi-titulosform"> <?php echo "IMPORTANTE! - Verifique 2.- Que el nombre de su documento no tenga más de 60 caracteres"; ?></h1>
 
 <?php echo "      "."<br>"; ?>
 
 <form name="importa" method="post" action="<?php echo $PHP_SELF; ?>" enctype="multipart/form-data">
     <input type="file" name="documento" class="custom-file-input" />
     <input type="hidden" value="upload" name="action" />
-    <input type='submit' name='enviar' value="Importar" class="custom-submit-button" /> 
+    <input type='submit' name='enviar' value="Importar imagen" class="custom-submit-button" /> 
 </form>
 
 <?php
