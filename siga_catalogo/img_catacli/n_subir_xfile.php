@@ -54,6 +54,9 @@
 </head>
 
 <body>
+
+
+
 <?php
 include("connec_sql_new.php");
 mysqli_set_charset($connec,'utf8'); 
@@ -78,6 +81,63 @@ $password = $_GET['xpassword'];
     <input type="hidden" value="upload" name="action" />
     <input type='submit' name='enviar' value="Importar imagen" class="custom-submit-button" /> 
 </form>
+
+
+
+<!-- Agrega un canvas escondido para procesar la imagen -->
+<canvas id="canvas" style="display:none;"></canvas>
+
+<script>
+document.querySelector('input[type="file"]').addEventListener('change', function(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        const img = new Image();
+        img.onload = function() {
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+
+            // Ajusta estos valores para redimensionar la imagen
+            const MAX_WIDTH = 800;
+            const MAX_HEIGHT = 800;
+            let width = img.width;
+            let height = img.height;
+
+            if (width > height) {
+                if (width > MAX_WIDTH) {
+                    height *= MAX_WIDTH / width;
+                    width = MAX_WIDTH;
+                }
+            } else {
+                if (height > MAX_HEIGHT) {
+                    width *= MAX_HEIGHT / height;
+                    height = MAX_HEIGHT;
+                }
+            }
+
+            canvas.width = width;
+            canvas.height = height;
+            ctx.drawImage(img, 0, 0, width, height);
+
+            canvas.toBlob(function(blob) {
+                const newFile = new File([blob], file.name, { type: file.type });
+                const dataTransfer = new DataTransfer();
+                dataTransfer.items.add(newFile);
+
+                // Reemplaza el archivo original con la imagen redimensionada
+                event.target.files = dataTransfer.files;
+            }, file.type);
+        };
+        img.src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+});
+</script>
+
+
+
 
 <?php
 extract($_POST);
