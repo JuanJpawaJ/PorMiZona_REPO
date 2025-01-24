@@ -3,28 +3,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>:: Importar documentos con CODIGO** ::</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="../estilos_cat/normalize.css">
+ <!--  <link rel="stylesheet" href="../estilos_cat/normalize.css">
     <link rel="stylesheet" href="../estilos_cat/fuentes.css">
     <link rel="stylesheet" href="../estilos_cat/estilos.css">
     <link rel="stylesheet" href="../estilos_cat/estilos-footer.css">
    <!-- <link rel="icon" href="imagenes/dencuentro.ico" />   -->
-    <style>
-        .custom-file-upload {
-            display: inline-block;
-            padding: 10px 20px;
-            cursor: pointer;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f0f0f0;
-        }
-        .custom-file-upload:hover {
-            background-color: #e0e0e0;
-        }
-        .file-input {
-            display: none;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -52,7 +35,6 @@ echo "      "."<br>"; ?>
      <input type="hidden" value="upload" name="action" />
      <input type='submit' name='enviar'  value="Importar"  /> 
 </form> 
-
 
 
 <!-- CARGA LA MISMA PAGINA MANDANDO LA VARIABLE upload -->
