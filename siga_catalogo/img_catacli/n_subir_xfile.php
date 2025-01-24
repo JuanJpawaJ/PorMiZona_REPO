@@ -45,7 +45,7 @@ echo "      "."<br>"; ?>
      </form>
 
 ============  -->
-<form name="importa" method="post" action="<?php echo $PHP_SELF; ?>" enctype="multipart/form-data" >
+<form name="importa" method="post" class="campo_textoin" action="<?php echo $PHP_SELF; ?>" enctype="multipart/form-data" >
      <input type="file" class="campo_textoin" name="documento" />
      <input type="hidden" value="upload" class="campo_textoin" name="action" />
      
