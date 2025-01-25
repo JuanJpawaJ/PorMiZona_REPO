@@ -7,6 +7,7 @@
     flex-direction: column;
     align-items: center;
     margin-bottom:4rem;
+	
 }
 
  
@@ -258,7 +259,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         </div>
     </div>
 
-    <div id="map" style="height: 400px; width: 100%;"></div>
+    <div id="map" style="height: 400px; width: 100%; box-shadow: 0px -5px 9px 0px rgba(0,0,0,0.75)"></div>
 
 
 
