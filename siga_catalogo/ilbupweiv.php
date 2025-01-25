@@ -5,7 +5,13 @@ mysqli_set_charset($connec, 'utf8');
 date_default_timezone_set("America/Lima");
 setlocale(LC_ALL, "sp");
 
-$cod_aso=$_GET['xcod_aso'];
+$cod_aso=$_GET['xcod'];
+
+
+
+
+
+
 $result=mysqli_query($connec,"select * from asociado_51 where cod_aso='$cod_aso'");
 $total=mysqli_num_rows($result);
 $tabla = mysqli_fetch_array( $result );

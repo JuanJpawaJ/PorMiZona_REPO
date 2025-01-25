@@ -47,7 +47,7 @@
 
   <form id="form0" name="form0" method="get" action="a_lisgeneral.php">
     <div class="buscador">
-      <img src="../assets/img/imagenes_index/logo_syscomputer.png" alt="">
+      <!-- <img src="../assets/img/imagenes_index/logo_syscomputer.png" alt=""> -->
       <div class="contenedor_buscador">
         <input type="text" placeholder="¿Qué producto deseas buscar?" name="bxproducto" id="bxproducto">
         <button type="submit" name="Submit3">
@@ -99,7 +99,10 @@
       $nombre_producto = $producto_it;
       $precio = $simbolo_mone . money_format('%n', ($pv01_it));
       $precio_oferta = $simbolo_mone . money_format('%n', ($pv03_it));
-      $enlace = "ilbupweiv.php?idx=" . $id;
+      //$enlace = "ilbupweiv.php?idx=".$id;
+
+      //$enlace = "ilbupweiv.php?idx=".$id."&xcod=".$cod_aso."&xrsocial=".$rsocial_aso."&xlogo=".$logo_aso;
+      $enlace = "ilbupweiv.php?idx=".$id."&xcod=".$cod_aso;
 
       $view03 = $tabla["view03_it"];
 
