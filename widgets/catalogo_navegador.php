@@ -36,7 +36,7 @@
  
 
  
-           <li><a href="http://mujerbonita.com.pe"><img src="<?php echo $agregado_en_cab?>assets/img/imagenes_index/bot_ubicacion_blanco.png" alt=""></a></li>
+           <li><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>#mapagoogle"><img src="<?php echo $agregado_en_cab?>assets/img/imagenes_index/bot_ubicacion_blanco.png" alt=""></a></li>
 
        
        
