@@ -95,7 +95,7 @@ if ($xareg=="SIAREG") {
    $monelista_it=$_POST['xmonelista'];      
    $pv01_it=$_POST['xpv01'];
    $pv02_it=$_POST['xpv02'];
-   $pr03_it=$_POST['xpv03'];
+   $pv03_it=$_POST['xpv03'];
    $img_it=$_POST['ximg'];
    $stockmin_it=$_POST['xstockmin'];
    $lugar_al_it=$_POST['xlugar_al'];
@@ -236,9 +236,9 @@ if ($xdelreg=="SIDELREG") {
     </table></td>
     <td width="356" colspan="2" bgcolor="#FFFFCC"height="76" align="center"><table width="320" border="1">
       <tr>
-        <td width="161"><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>">LINK Para el CLIENTE</a></td>
+        <td width="161" align="center"><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>">LINK Para el CLIENTE</a></td>
         
-        <td width="143">
+        <td width="143" align="center">
           
           <form id="form0" name="form0" method="post" onSubmit="return checkSubmit();" action="/siga_pormizona/formingre3_view.php" onKeyPress="javascript:if(event.keyCode==13){return false;}" >
             <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> >
@@ -426,12 +426,16 @@ while ($tabla=mysqli_fetch_array($result)){
         <input class="cplomo" name="ximg" type="text" id="ximg" size="45" maxlength="60" /></td>
       </tr>
     <tr>
-      <td bgcolor="#FDF19B" class="TITULO">Precio Venta 01</td>
+      <td bgcolor="#FDF19B" class="TITULO">Precio VENTA 01</td>
       <td bgcolor="#FDF19B"><span class="TITULO">
-        <!-- <input name="xpreven" type="text" id="xpreven" size="15" maxlength="15" /> -->
- 
         <input name="xpv01" type="text" id="xpv01" size="10" maxlength="10" onKeyUp="this.value=this.value.toUpperCase();" />
       </span></td>
+    </tr>
+    <tr>
+      <td bgcolor="#FDF19B"><span class="TITULO">Precio OFERTA 03</span></td>
+      <td bgcolor="#FDF19B"><span class="TITULO">
+         <input name="xpv03" type="text" id="xpv03" size="10" maxlength="10" onKeyUp="this.value=this.value.toUpperCase();" />    
+     </span> </td>
     </tr>
     <tr>
       <td bgcolor="#FDF19B"><span class="TITULO">Observaciones para el administrador</span></td>
@@ -456,7 +460,6 @@ while ($tabla=mysqli_fetch_array($result)){
      <input type="hidden" name="xpassword" value="<?php echo(trim($password)); ?>"/>  
          
      <input type="hidden" name="xpv02" value=0/>
-     <input type="hidden" name="xpv03" value=0/>
      <input type="hidden" name="xstockmin" value=0/>
      <input type="hidden" name="xlugar_al" value=""/>
      <input type="hidden" name="xview01" value="S"/>
