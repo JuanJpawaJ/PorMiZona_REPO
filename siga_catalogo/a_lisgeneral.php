@@ -102,7 +102,7 @@
       //$enlace = "ilbupweiv.php?idx=".$id;
 
       //$enlace = "ilbupweiv.php?idx=".$id."&xcod=".$cod_aso."&xrsocial=".$rsocial_aso."&xlogo=".$logo_aso;
-      $enlace = "ilbupweiv.php?idx=".$id."&xcod=".$cod_aso;
+      $enlace = "ilbupweiv.php?idx=".$id."&xcod_aso=".$cod_aso;
 
       $view03 = $tabla["view03_it"];
 
