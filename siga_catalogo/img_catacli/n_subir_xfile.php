@@ -82,8 +82,9 @@ $password = $_GET['xpassword'];
 
 <h1 class="semi-titsubir"> <?php echo "SUBIR IMÁGENES A MIS PRODUCTOS"; ?></h1>
 
-<h2 class="semi-titsubir"> <?php echo "IMPORTANTE! - Verifique 1.- Que el nombre de su documento no contenga carácteres extraños (# . $ ?)"; ?></h2>
-<h2 class="semi-titsubir"> <?php echo "IMPORTANTE! - Verifique 2.- Que el nombre de su documento no tenga más de 60 caracteres"; ?></h2>
+<h2 class="semi-titsubir"> <?php echo "IMPORTANTE!"; ?></h2>
+<h2 class="semi-titsubir"> <?php echo " - Si usted va cambiar el nombre a su documento, verifique que NO contenga carácteres extraños (# . $ ?), ni más de 60 caracteres "; ?></h2>
+
 
 <?php echo "      "."<br>"; ?>
 
