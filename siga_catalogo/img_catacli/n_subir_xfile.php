@@ -50,15 +50,15 @@
         }
 
     .semi-titsubir {
-        font-family: Arial, sans-serif;
+        font-family:"Comic Sans MS", cursive;
         font-size: 24px; /* Puedes ajustar este tamaño según tus preferencias */
-        color: #333; /* Puedes ajustar el color según tus preferencias */
+        color:  #03C; /* Puedes ajustar el color según tus preferencias */
     }
     h1.semi-titsubir {
-        font-size: 32px; /* Tamaño específico para los <h1> */
+        font-size: 24px; /* Tamaño específico para los <h1> */
     }
     h2.semi-titsubir{
-        font-size: 28px; /* Tamaño específico para los <h2> */
+        font-size: 12px; /* Tamaño específico para los <h2> */
     }
 		
     </style>
@@ -80,7 +80,7 @@ $usuario = $_GET['xusername'];
 $password = $_GET['xpassword'];
 ?>
 
-<h1 class="semi-titsubir"> <?php echo "SUBIR IMÁGENES A MIS PRODUCTOS"; ?></h1>
+<h1 class="semi-titsubir"> <?php echo "****SUBIR IMÁGENES A MIS PRODUCTOS"; ?></h1>
 
 <h2 class="semi-titsubir"> <?php echo "IMPORTANTE! - Verifique 1.- Que el nombre de su documento no contenga carácteres extraños (# . $ ?)"; ?></h2>
 <h2 class="semi-titsubir"> <?php echo "IMPORTANTE! - Verifique 2.- Que el nombre de su documento no tenga más de 60 caracteres"; ?></h2>
