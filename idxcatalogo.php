@@ -127,7 +127,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
     <?php 
     $agregado_en_cab = "";
     include 'widgets/catalogo_navegador.php';
-	$slid=$cod_aso."s";
+	$slid=$cod_aso."slide";
     ?>
 
   <? if ($view04_aso=="S") { ?>
