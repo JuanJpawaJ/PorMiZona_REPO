@@ -209,7 +209,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
             </div>
 
             <a href="siga_catalogo/a_lisgeneral.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo($rsocial_aso); ?>&xlogo=<? echo ($logo_aso); ?>" class="link_productos">
-                Ver todos los productos 
+                Ver todos los productos bien
             </a>    
         </div>
 

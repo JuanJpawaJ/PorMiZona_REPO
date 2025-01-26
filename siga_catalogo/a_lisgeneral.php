@@ -118,13 +118,24 @@
     $total_paginas = ceil($total_registros_t / $max_registros);
 
     if ($pagina_actual > 1) { // Mostrar enlaces de página previa si no estamos en la primera página
-      echo '<a href="a_lisgeneral.php?xgl=' . $xgl . '&bxproducto=' . $bxproducto . '&pagina=' . ($pagina_actual - 1) . '">Anterior</a>';
+      //echo '<a href="a_lisgeneral.php?xgl=' . $xgl . '&bxproducto=' . $bxproducto . '&pagina=' . ($pagina_actual - 1) . '">Anterior</a>';
+
+      echo '<a href="siga_catalogo/a_lisgeneral.php?xcod='. $cod_aso. '&xrsocial='.$rsocial_aso.'&xlogo='.$logo_aso.'&pagina=' . ($pagina_actual - 1) . '">Anterior</a>';
+
     }
     for ($i = 1; $i <= $total_paginas; $i++) {  // Mostrar números de página
-      echo '<a class="numeracion_paginas"href="a_lisgeneral.php?xgl=' . $xgl . '&bxproducto=' . $bxproducto . '&pagina=' . $i . '">' . $i . '</a>';
+      //echo '<a class="numeracion_paginas"href="a_lisgeneral.php?xgl=' . $xgl . '&bxproducto=' . $bxproducto . '&pagina=' . $i . '">' . $i . '</a>';
+
+      echo '<a class="numeracion_paginas"href="siga_catalogo/a_lisgeneral.php?xcod='. $cod_aso. '&xrsocial='.$rsocial_aso.'&xlogo='.$logo_aso.'&pagina=' . $i . '">' . $i . '</a>';
+
+
     }
     if ($pagina_actual < $total_paginas) { // Mostrar enlaces de página siguiente si no estamos en la última página
-      echo '<a href="a_lisgeneral.php?xgl=' . $xgl . '&bxproducto=' . $bxproducto . '&pagina=' . ($pagina_actual + 1) . '">Siguiente</a>';
+      //echo '<a href="a_lisgeneral.php?xgl=' . $xgl . '&bxproducto=' . $bxproducto . '&pagina=' . ($pagina_actual + 1) . '">Siguiente</a>';
+
+      echo '<a href="siga_catalogo/a_lisgeneral.php?xcod='. $cod_aso. '&xrsocial='.$rsocial_aso.'&xlogo='.$logo_aso. '&pagina=' . ($pagina_actual + 1) . '">Siguiente</a>';
+
+
     }
 
     
