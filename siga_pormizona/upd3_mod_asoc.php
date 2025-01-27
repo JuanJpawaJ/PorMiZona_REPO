@@ -18,12 +18,17 @@ $retorna = $_POST['xretorna'];
 echo " retornaaaaaaaaaaaa a: ".$retorna;
 
 $cod=$_GET['xcod'];
+echo " cod GET: ". $cod;
+
 if (strlen($cod)==0) {
   $cod=$_POST['xcod'];
+  echo " cod POST: ". $cod;
 }
+
 $form=$_POST['xform'];
 $datehoy_aso=date("Y/m/d");
 
+echo " EL QUE SEA cod: ". $cod;
 
 if      ($form=="TODO00") {
 
