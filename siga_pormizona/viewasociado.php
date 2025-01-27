@@ -197,9 +197,9 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 
 
 
-    <table width="800" height="905" border="1" align="center" cellpadding="1" cellspacing="1">
+    <table width="823" height="1175" border="1" align="center" cellpadding="1" cellspacing="1">
       <tr>
-        <td width="1574" height="142" colspan="2" align="center" valign="middle" background="iconos/f_cabview.jpg" >
+        <td width="815" height="142" colspan="2" align="center" valign="middle" background="iconos/f_cabview.jpg" >
 		<table width="772" border="0" cellspacing="0" cellpadding="0">
 		  <tr>
 		    <td width="166" height="84"
@@ -273,11 +273,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         </table></td>
       </tr>
       <tr>
-        <td height="15" colspan="2">Acceso solo a propietarios:<a href="ingre.php?xcod=<? echo ($cod_aso);?>&xiclave=SI&xrsocial=<? echo ($rsocial_aso);?>&xusua=<? echo ($usua_aso);?> ">" SOY PROPIETARIO "</a></td>
- 
-      </tr>
-      <tr>
-        <td height="181" colspan="2">
+        <td height="404" colspan="2">
 		
     <div id="map" style="height: 400px; width: 100%; box-shadow: 0px -5px 9px 0px rgba(0,0,0,0.75)"></div>
 		
@@ -285,6 +281,10 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 		
 		
 		</td>
+      </tr>
+      <tr>
+        <td height="15" colspan="2">Acceso solo a propietarios:<a href="ingre.php?xcod=<? echo ($cod_aso);?>&xiclave=SI&xrsocial=<? echo ($rsocial_aso);?>&xusua=<? echo ($usua_aso);?> ">" SOY PROPIETARIO "</a></td>
+		
       </tr>
     </table>
 <p>&nbsp;</p>
@@ -336,7 +336,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
             <h3>Arequipa - 2024</h3>
         </div>
 </footer>
-    <script>
+<script>
     // Función de inicialización del mapa
         function initMapWhenReady() {
             if (window.google && window.google.maps) {
@@ -365,7 +365,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         window.onload = initMapWhenReady;
     </script>
 
-    <script async defer
+<script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwIDPzMH8Ydsj3EtpZAUuBpd3W3xW3e1k&callback=initMapWhenReady">
     </script>
 
