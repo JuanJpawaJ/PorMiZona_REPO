@@ -22,9 +22,9 @@ $xcodvalue = $_POST['xcodValue'];
 $xlongitud = $_POST['longitude'];
 $xlatitud = $_POST['latitude'];
 
-//if(strlen($xcodvalue)<>0) {
-//	$cod_aso=$xcodvalue;
-//}
+if(strlen($xcodvalue)<>0) {
+	$cod_aso=$xcodvalue;
+}
 
 
 
@@ -125,7 +125,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
   
              <input type="hidden" name="xform" value="TODO00"/> 
              <input type="hidden" name="xretorna" value="a_list_asociados_admin.php"/> 
-             <input type="hidden" name="xcod" value="<? echo $cod_aso; ?>"/> 
+             <input type="hidden" name="xcod" value="<? echo $xcodvalue; ?>"/> 
               
                
  
