@@ -80,8 +80,61 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 ?>
 
      <h2>           *PAGINA DE EDICION ADMIN  </h2>
+<form id="form0" name="form0" method="post" onsubmit="return checkSubmit();" action="upd3_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
+ 
+ <table width="669" border="1" cellspacing="1" cellpadding="1">
+   <tr>
+     <td>GEOLOCALIZACION</td>
+     <td>
+           <div class="geolocalizacion">
+      <h2 class="semi-titulosform_iz">¿Desea cambiar? Geolocalización</h2> 
+           <div class="titobligatorio">
+                Si desea cambiar la Geolocalización, utilice un equipo móvil para ser más exacto. 
+           </div>
+           <br/>
+           
+           <div> <a href="geo_mendoza1.html?xcod=<? echo $cod_aso; ?>"><img src="imagenes/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
+           </div>
+                           
+           <div>
+             <? if(strlen($xlongitud)==0 OR strlen($xlatitud)==0){	?>	
+                    
+                  <div class="campo_de_posicion edit_lat">		  
+	 	           SU LATITUD REGISTRADA ES: <? echo $latitud_aso; ?>  <br>
+                  </div>
+                  <div class="campo_de_posicion edit_long">
+	               SU LONGITUD REGISTRADA ES: <? echo $longitud_aso; ?>  <br>
+                  </div>
+             <? } else { ?>
+                  <div class="campo_de_posicion edit_lat">	
+			        SU NUEVA LATITUD ES: <? echo $xlatitud; ?> <br>
+                  </div>
+                  <div class="campo_de_posicion edit_long">
+			        SU NUEVA LONGITUD ES: <? echo $xlongitud; ?> <br>
+                  </div>
+ 		     <? } ?>
+           
 
+     </td>
+   </tr>
+
+ </table>  
   
+             <input type="hidden" name="xform" value="TODO00"/> 
+             <input type="hidden" name="xretorna" value="a_list_asociados_admin.php"/> 
+             <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> > 
+              
+               
+ 
+  <div class="campo_boton">
+    <button class="boton_form">ENVIAR FORMULARIO TODO 00</button>
+           </div>
+</form>
+
+<br/>   
+<br/>   
+
+
 <form id="form1" name="form1" method="post" onsubmit="return checkSubmit();" action="upd3_mod_asoc.php" onkeypress="javascript:if(event.keyCode==13){return false;}" >
  
  <table width="669" border="1" cellspacing="1" cellpadding="1">
@@ -243,7 +296,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
                     <button class="boton_form">ENVIAR FORMULARIO TODO 01</button>
            </div>
    </form>
-   <br/>   
+<br/>   
 <br/>   
 
 

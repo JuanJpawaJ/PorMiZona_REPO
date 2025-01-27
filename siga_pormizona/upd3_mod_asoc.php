@@ -24,7 +24,27 @@ if (strlen($cod)==0) {
 $form=$_POST['xform'];
 $datehoy_aso=date("Y/m/d");
 
-if      ($form=="TODO01") {
+
+if      ($form=="TODO00") {
+
+   $latitud_aso=$_POST['xlatitud'];
+   $longitud_aso=$_POST['xlongitud'];	
+   
+   echo ("form :").$form;
+   echo ("cod :").$cod;
+   echo ("lati :").$latitud_aso;
+   echo ("long :").$longitud_aso;
+   
+   $sql="UPDATE asociado_51 SET latitud_aso='$latitud_aso',longitud_aso='$longitud_aso, datehoy_aso='$datehoy_aso'' WHERE cod_aso=$cod";
+   $result=mysqli_query($connec,$sql);
+   if($result){
+		echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok.</span>");
+   }else{
+		echo ("<span style='background-color: #CC0000'>XX. ERROR AL REGISTRARSE  XX.</span>");
+   }	
+	
+} elseif ($form=="TODO01") {	
+
     $rsocial_aso=$_POST['xrsocial'];
     $direccion_aso=$_POST['xdireccion'];
     $categoria_aso=$_POST['xcategoria'];
