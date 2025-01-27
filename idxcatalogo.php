@@ -124,24 +124,24 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 
 <body>
 
-    <?php 
+    <?php
     $agregado_en_cab = "";
     include 'widgets/catalogo_navegador.php';
-	$slid=$cod_aso."slide";
+    $slid = $cod_aso . "slide";
     ?>
 
-  <? if ($view04_aso=="S") { ?>
-	  
+    <? if ($view04_aso == "S") { ?>
 
-    <div class="contenedor_slider_imagenes">
-        <div class="slider-wrapper">
-            <div class="slider">
-                <div class="imagen" id="slide-1">
-                    <img class="imagen_normal" src="siga_catalogo/img_catacli/<? echo($slid."g1.jpg"); ?>" alt="">
-                    <img class="imagen_movil" src="siga_catalogo/img_catacli/<? echo($slid."p1.jpg"); ?>" alt="">
-                </div>
 
-          <!--
+        <div class="contenedor_slider_imagenes">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <div class="imagen" id="slide-1">
+                        <img class="imagen_normal" src="siga_catalogo/img_catacli/<? echo ($slid . "g1.jpg"); ?>" alt="">
+                        <img class="imagen_movil" src="siga_catalogo/img_catacli/<? echo ($slid . "p1.jpg"); ?>" alt="">
+                    </div>
+
+                    <!--
                 <div class="imagen" id="slide-2">
                     <img class="imagen_normal" src="assets/img/imagenes_index/imgslider/sliderg2.jpg" alt="">
                     <img class="imagen_movil" src="assets/img/imagenes_index/imgslider/sliderp2.jpg" alt="">
@@ -165,147 +165,150 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
        
 
             </div> -->
-        <!--
+                    <!--
             <div class="slider-nav" id="slider-nav">
             </div>
           -->
+                </div>
+            </div>
         </div>
-    </div>
-    
-<? } else {?>
+        <? } else { ?>
 
-<div class="contenedor_cabtxt">
-    <h2> <? echo $rsocial_aso; ?> </h2>
-    <div>
-       <h3> <? echo $direccion_aso; ?> </h3>
-       <h3> <? echo $distrito_aso." ".$provincia_aso." ".$departamentotxt_aso; ?> </h3>
-       <h3> <? echo $telf1_aso." ".$telf2_aso; ?> </h3>
-    </div>
-</div>
-
-<? } ?>
-
-<!-------   **********   consulta CATALOGO_PRODUCTOS *********************  --->
-    <? $result = mysqli_query($connec, "select * from catalogo_productos where (cod_aso_it=$cod_aso) AND (view01_it='S') AND (pv03_it>0) order by producto_it");
-  
-	
-	$simbolo_mone = "S/ "; ?>
-
-
-    <div class="bloque_marca bloque_marca_syscomputer" id="jpawaj">
-        <!-- <img src="assets/img/imagenes_index/logo_jpawaj.png" alt=""> -->
-       <div class="contenedor_ofertas_semana">
-
-        <div class="cabecera">
-            <a href="siga_catalogo/a_lisgeneral.php" class="link_productos link_productos_oculto" style="visibility: hidden;">
-                Ver todos los productos 
-            </a> 
-
-            <div class="header_ofertas">
-                <h2>OFERTAS DE LA SEMANA</h2>
-                <span class="material-symbols-outlined">
-                    timer
-                </span>
+            <div class="contenedor_cabtxt">
+                <h2> <? echo $rsocial_aso; ?> </h2>
+                <div>
+                    <h3> <? echo $direccion_aso; ?> </h3>
+                    <h3> <? echo $distrito_aso . " " . $provincia_aso . " " . $departamentotxt_aso; ?> </h3>
+                    <h3> <? echo $telf1_aso . " " . $telf2_aso; ?> </h3>
+                </div>
             </div>
 
-            <a href="siga_catalogo/a_lisgeneral.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo($rsocial_aso); ?>&xlogo=<? echo ($logo_aso); ?>" class="link_productos">
-                Ver todos los productos bien
-            </a>    
-        </div>
+        <? } ?>
 
-            <div class="contenedor_productos">
+        <!-------   **********   consulta CATALOGO_PRODUCTOS *********************  --->
+        <? $result = mysqli_query($connec, "select * from catalogo_productos where (cod_aso_it=$cod_aso) AND (view01_it='S') AND (pv03_it>0) order by producto_it");
 
-                <?php while ($tabla = mysqli_fetch_array($result)) { ?>
-                <div class="producto">                                    
-                    <div class="contenedor_imagen"><img src="<?php echo " siga_catalogo/img_catacli/" . $tabla["img_it"];
-                            ?>" /></div>
-                    <h3>
-                        <?php
-                            $producto_it = $tabla["producto_it"];
-                            echo $producto_it;
-                            ?>
-                    </h3>
-                    <div class="precios">
-                        <p class="precio_antiguo">
-                            <?php echo ($simbolo_mone . ($tabla["pv01_it"])) ?>
-                        </p>
-                        <p class="precio_oferta">
-                            <?php echo ($simbolo_mone . ($tabla["pv03_it"])) ?>
-                        </p>
+
+        $simbolo_mone = "S/ "; ?>
+
+
+        <div class="bloque_marca bloque_marca_syscomputer" id="jpawaj">
+            <!-- <img src="assets/img/imagenes_index/logo_jpawaj.png" alt=""> -->
+            <div class="contenedor_ofertas_semana">
+
+                <div class="cabecera">
+                    <a href="siga_catalogo/a_lisgeneral.php" class="link_productos link_productos_oculto"
+                        style="visibility: hidden;">
+                        Ver todos los productos
+                    </a>
+
+                    <div class="header_ofertas">
+                        <h2>OFERTAS DE LA SEMANA</h2>
+                        <span class="material-symbols-outlined">
+                            timer
+                        </span>
                     </div>
-                    <a href="<?php echo "siga_catalogo/ilbupweiv.php?idx=" . $tabla["id"] ?>&xcod_aso=<?php echo($cod_aso);?>">
-                    
-                        Ver producto
+
+                    <a href="siga_catalogo/a_lisgeneral.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo ($rsocial_aso); ?>&xlogo=<? echo ($logo_aso); ?>"
+                        class="link_productos">
+                        Ver todos los productos bien
                     </a>
                 </div>
-                <?php } ?>
 
+                <div class="contenedor_productos">
+
+                    <?php while ($tabla = mysqli_fetch_array($result)) { ?>
+                        <div class="producto">
+                            <div class="contenedor_imagen"><img src="<?php echo " siga_catalogo/img_catacli/" . $tabla["img_it"];
+                            ?>" /></div>
+                            <h3>
+                                <?php
+                                $producto_it = $tabla["producto_it"];
+                                echo $producto_it;
+                                ?>
+                            </h3>
+                            <div class="precios">
+                                <p class="precio_antiguo">
+                                    <?php echo ($simbolo_mone . ($tabla["pv01_it"])) ?>
+                                </p>
+                                <p class="precio_oferta">
+                                    <?php echo ($simbolo_mone . ($tabla["pv03_it"])) ?>
+                                </p>
+                            </div>
+                            <a
+                                href="<?php echo "siga_catalogo/ilbupweiv.php?idx=" . $tabla["id"] ?>&xcod_aso=<?php echo ($cod_aso); ?>">
+
+                                Ver producto
+                            </a>
+                        </div>
+                    <?php } ?>
+
+                </div>
+            </div>
+            <div class="contenedor_quienes_somos">
+                <h3>¿Quienes somos?</h3>
+                <p> <? echo $msjpublico_aso ?>; </p>
+                <div class="contenedor_botones_de_contacto">
+                    <a href="https://wa.me/<? echo '+51' . $telf2_aso ?>" target="_blank">
+                        <p>Escribir por Whatsapp</p>
+                        <img src="assets/img/imagenes_index/logo_whatsapp_blanco.png" alt="">
+                    </a>
+
+                    <a href="tel:<? echo '+51' . $telf2_aso ?>">
+                        <p>Llamar por teléfono</p>
+                        <img src="assets/img/imagenes_index/logo_llamada_negro.png" alt="">
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="contenedor_quienes_somos">
-            <h3>¿Quienes somos?</h3>
-            <p> <? echo $msjpublico_aso ?>; </p>
-            <div class="contenedor_botones_de_contacto">
-                <a href="https://wa.me/<? echo '+51'.$telf2_aso ?>" target="_blank">
-                    <p>Escribir por Whatsapp</p>
-                    <img src="assets/img/imagenes_index/logo_whatsapp_blanco.png" alt="">
-                </a>
 
-                <a href="tel:<? echo '+51'.$telf2_aso ?>">
-                    <p>Llamar por teléfono</p>
-                    <img src="assets/img/imagenes_index/logo_llamada_negro.png" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
 
-  
-    <div id="map" style="height: 400px; width: 100%; box-shadow: 0px -5px 9px 0px rgba(0,0,0,0.75)"></div>
+        <div id="map" style="height: 400px; width: 100%; box-shadow: 0px -5px 9px 0px rgba(0,0,0,0.75)"></div>
 
 
 
-    <?php 
-    $agregado_en = "";
-    include 'widgets/catalogo_footer.php' 
-    ?>
-    
+        <?php
+        $agregado_en = "";
+        include 'widgets/catalogo_footer.php'
+            ?>
 
-    <script src="assets/js/slider_automatico.js"></script>
-    <script src="assets/js/slider_marcas.js"></script>
-    <script>
-    // Función de inicialización del mapa
-        function initMapWhenReady() {
-            if (window.google && window.google.maps) {
-            initMap();
-            } else {
-            setTimeout(initMapWhenReady, 200); // Reintentar en 200ms
+
+        <script src="assets/js/slider_automatico.js"></script>
+        <script src="assets/js/slider_marcas.js"></script>
+        <script>
+            // Función de inicialización del mapa
+            function initMapWhenReady() {
+                if (window.google && window.google.maps) {
+                    initMap();
+                } else {
+                    setTimeout(initMapWhenReady, 200); // Reintentar en 200ms
+                }
             }
-        }
 
-        function initMap() {
-            // Configuración del mapa
-            var map = new google.maps.Map(document.getElementById('map'), {
-            center: { lat: <?php echo $latitud_aso; ?>, lng: <?php echo $longitud_aso; ?> },
-            zoom: 15
-            });
+            function initMap() {
+                // Configuración del mapa
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: { lat: <?php echo $latitud_aso; ?>, lng: <?php echo $longitud_aso; ?> },
+                    zoom: 15
+                });
 
-            // Crear un marcador
-            new google.maps.Marker({
-            position: { lat: <?php echo $latitud_aso; ?>, lng: <?php echo $longitud_aso; ?> },
-            map: map,
-            title: '¡Hola, mundo!',
-            });
-        }
+                // Crear un marcador
+                new google.maps.Marker({
+                    position: { lat: <?php echo $latitud_aso; ?>, lng: <?php echo $longitud_aso; ?> },
+                    map: map,
+                    title: '¡Hola, mundo!',
+                });
+            }
 
-        
-        window.onload = initMapWhenReady;
-    </script>
 
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwIDPzMH8Ydsj3EtpZAUuBpd3W3xW3e1k&callback=initMapWhenReady">
-    </script>
-    
-    
+            window.onload = initMapWhenReady;
+        </script>
+
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwIDPzMH8Ydsj3EtpZAUuBpd3W3xW3e1k&callback=initMapWhenReady">
+            </script>
+
+
 </body>
 
 </html>
