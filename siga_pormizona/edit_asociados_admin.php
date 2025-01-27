@@ -120,12 +120,12 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 
  </table>  
  
-             <input type="hidden" name="latitud" value=<? echo $xlatitud; ?>/> 
-             <input type="hidden" name="longitud" value=<? echo $xlongitud; ?>/> 
+             <input type="hidden" name="xlatitud" value="<? echo $xlatitud; ?>"/> 
+             <input type="hidden" name="xlongitud" value="<? echo $xlongitud; ?>"/> 
   
              <input type="hidden" name="xform" value="TODO00"/> 
              <input type="hidden" name="xretorna" value="a_list_asociados_admin.php"/> 
-             <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> 7> 
+             <input type="hidden" name="xcod" value="<? echo $cod_aso; ?>"/> 
               
                
  
@@ -291,7 +291,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
   
              <input type="hidden" name="xform" value="TODO01"/> 
              <input type="hidden" name="xretorna" value="a_list_asociados_admin.php"/> 
-             <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> > 
+             <input type="hidden" name="xcod" value="<? echo $cod_aso; ?>" /> 
               
                
  
@@ -430,7 +430,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
              <input type="hidden" name="xretorna" value="a_list_asociados_admin.php"/> 
 
            <input type="hidden" name="xform" value="TODO02"/> 
-           <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> > 
+           <input type="hidden" name="xcod" value="<? echo $cod_aso; ?>" /> 
               
                
  
