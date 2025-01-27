@@ -177,9 +177,9 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 <div class="contenedor_cabtxt">
     <h2> <? echo $rsocial_aso; ?> </h2>
     <div>
-      <h3> <? echo $direccion_aso; ?> </h3>
-      <h3> <? echo $distrito_aso." ".$provincia_aso." ".$departamentotxt_aso; ?> </h3>
-      <h3> <? echo $telf1_aso." ".$telf2_aso; ?> </h3>
+       <h3> <? echo $direccion_aso; ?> </h3>
+       <h3> <? echo $distrito_aso." ".$provincia_aso." ".$departamentotxt_aso; ?> </h3>
+       <h3> <? echo $telf1_aso." ".$telf2_aso; ?> </h3>
     </div>
 </div>
 
@@ -257,7 +257,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
                 </a>
             </div>
         </div>
-
+    </div>
 
   
     <div id="map" style="height: 400px; width: 100%; box-shadow: 0px -5px 9px 0px rgba(0,0,0,0.75)"></div>
@@ -305,7 +305,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwIDPzMH8Ydsj3EtpZAUuBpd3W3xW3e1k&callback=initMapWhenReady">
     </script>
     
-     <!-- </div>   -->
+    
 </body>
 
 </html>
