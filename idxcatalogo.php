@@ -194,7 +194,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 
     <div class="bloque_marca bloque_marca_syscomputer" id="jpawaj">
         <!-- <img src="assets/img/imagenes_index/logo_jpawaj.png" alt=""> -->
-        <div class="contenedor_ofertas_semana">
+       <div class="contenedor_ofertas_semana">
 
         <div class="cabecera">
             <a href="siga_catalogo/a_lisgeneral.php" class="link_productos link_productos_oculto" style="visibility: hidden;">
@@ -257,12 +257,10 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
                 </a>
             </div>
         </div>
-    </div>
+
 
   
     <div id="map" style="height: 400px; width: 100%; box-shadow: 0px -5px 9px 0px rgba(0,0,0,0.75)"></div>
-
-
 
 
 
@@ -306,6 +304,8 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwIDPzMH8Ydsj3EtpZAUuBpd3W3xW3e1k&callback=initMapWhenReady">
     </script>
+    
+     </div>   
 </body>
 
 </html>
