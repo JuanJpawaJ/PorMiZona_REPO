@@ -17,23 +17,25 @@ $(document).ready(function(){
     }
 });
 
-
 function showLocation(position) {
 	
     var latitude = position.coords.latitude;
 	var longitude = position.coords.longitude;
+    var xcodValue = getParameterByName('xcod');
 	
 	$.ajax({
 		type:'POST',
 		url:'edit_asociados_admin.php', 
 		
 	    <!-- url:'edit_asociados_admin.php?xcod=<?php  echo($cod_aso); ?>&xview=<?php  echo("ADMIN"); ?>&xareg=NNOOO&xmodi=NOOOOO&xdelreg=NOOOOO', -->
-		
-		
-		
 		//url:'index.php', 
 		// getLocation.php',
-		data:'latitude='+latitude+'&longitude='+longitude,
+		//data:'latitude='+latitude+'&longitude='+longitude,
+        data: {
+            latitude: latitude,
+            longitude: longitude,
+            xcodValue: xcodValue
+        },
 		success:function(msg){
             if(msg){
                $("#location").html(msg);
