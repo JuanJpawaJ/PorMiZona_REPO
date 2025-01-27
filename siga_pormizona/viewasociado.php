@@ -197,7 +197,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 
 
 
-    <table width="823" height="1175" border="1" align="center" cellpadding="1" cellspacing="1">
+    <table width="823" height="1175" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
         <td width="815" height="142" colspan="2" align="center" valign="middle" background="iconos/f_cabview.jpg" >
 		<table width="772" border="0" cellspacing="0" cellpadding="0">
