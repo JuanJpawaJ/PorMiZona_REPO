@@ -162,9 +162,9 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
                     <img class="imagen_movil" src="assets/img/imagenes_index/imgslider/sliderp5.jpg" alt="">
                 </div>
 
-        -->
+       
 
-            </div>
+            </div> -->
         <!--
             <div class="slider-nav" id="slider-nav">
             </div>
@@ -197,7 +197,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         <div class="contenedor_ofertas_semana">
 
         <div class="cabecera">
-            <a href="siga_jpawaj/a_lisgeneral.php" class="link_productos link_productos_oculto" style="visibility: hidden;">
+            <a href="siga_catalogo/a_lisgeneral.php" class="link_productos link_productos_oculto" style="visibility: hidden;">
                 Ver todos los productos 
             </a> 
 
