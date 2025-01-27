@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geo Localización 3</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showLocation);
+    } else { 
+        $("#location").html('Geolocation is not supported by this browser.');
+    }
+});
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+function showLocation(position) {
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
+    var xcodValue = getParameterByName('xcod');
+
+    $.ajax({
+        type: 'POST',
+        url: 'edit_asociados_admin.php',
+        data: {
+            latitude: latitude,
+            longitude: longitude,
+            xcodValue: xcodValue
+        },
+        success: function(msg) {
+            if(msg) {
+                $("#location").html(msg);
+            } else {
+                $("#location").html('Not Available');
+            }
+        }
+    });
+}
+</script>
+
+
+
+
+<!-- 
+<style type="text/css">
+	p{ border: 2px dashed #009755; width: auto; padding: 10px; font-size: 18px; border-radius: 5px; color: #FF7361;}
+    span.label{ font-weight: bold; color: #000;}
+</style>
+--->
+</head>
+
+<body>
+      <p><span class="label"></span> <span id="location"></span></p>
+</body>
+</html>
