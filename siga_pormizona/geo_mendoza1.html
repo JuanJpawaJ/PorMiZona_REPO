@@ -30,12 +30,12 @@ function showLocation(position) {
 	    <!-- url:'edit_asociados_admin.php?xcod=<?php  echo($cod_aso); ?>&xview=<?php  echo("ADMIN"); ?>&xareg=NNOOO&xmodi=NOOOOO&xdelreg=NOOOOO', -->
 		//url:'index.php', 
 		// getLocation.php',
-		//data:'latitude='+latitude+'&longitude='+longitude,
-        data: {
-            latitude: latitude,
-            longitude: longitude,
-            xcodValue: xcodValue
-        },
+		data:'latitude='+latitude+'&longitude='+longitude+'&xcodValue='+xcodValue,
+        //data: {
+          //  latitude: latitude,
+          //  longitude: longitude,
+          //  xcodValue: xcodValue
+        //},
 		success:function(msg){
             if(msg){
                $("#location").html(msg);
