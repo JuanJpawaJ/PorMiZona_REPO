@@ -25,7 +25,12 @@ function showLocation(position) {
 	
 	$.ajax({
 		type:'POST',
-		url:'edit_asociados_admin.php', 
+		<!--url:'edit_asociados_admin.php', -->
+		
+	    url:'edit_asociados_admin.php?xcod=<?php  echo($cod_aso); ?>&xview=<?php  echo("ADMIN"); ?>&xareg=NNOOO&xmodi=NOOOOO&xdelreg=NOOOOO',
+		
+		
+		
 		//url:'index.php', 
 		// getLocation.php',
 		data:'latitude='+latitude+'&longitude='+longitude,
