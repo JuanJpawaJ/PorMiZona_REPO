@@ -140,35 +140,6 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
                         <img class="imagen_normal" src="siga_catalogo/img_catacli/<? echo ($slid . "g1.jpg"); ?>" alt="">
                         <img class="imagen_movil" src="siga_catalogo/img_catacli/<? echo ($slid . "p1.jpg"); ?>" alt="">
                     </div>
-
-                    <!--
-                <div class="imagen" id="slide-2">
-                    <img class="imagen_normal" src="assets/img/imagenes_index/imgslider/sliderg2.jpg" alt="">
-                    <img class="imagen_movil" src="assets/img/imagenes_index/imgslider/sliderp2.jpg" alt="">
-                </div>
-
-                <div class="imagen" id="slide-3">
-                    <img class="imagen_normal" src="assets/img/imagenes_index/imgslider/sliderg3.jpg" alt="">
-                    <img class="imagen_movil" src="assets/img/imagenes_index/imgslider/sliderp3.jpg" alt="">
-                </div>
-
-                <div class="imagen" id="slide-4">
-                    <img class="imagen_normal" src="assets/img/imagenes_index/imgslider/sliderg4.jpg" alt="">
-                    <img class="imagen_movil" src="assets/img/imagenes_index/imgslider/sliderp4.jpg" alt="">
-                </div>
-
-                <div class="imagen" id="slide-5">
-                    <img class="imagen_normal" src="assets/img/imagenes_index/imgslider/sliderg5.jpg" alt="">
-                    <img class="imagen_movil" src="assets/img/imagenes_index/imgslider/sliderp5.jpg" alt="">
-                </div>
-
-       
-
-            </div> -->
-                    <!--
-            <div class="slider-nav" id="slider-nav">
-            </div>
-          -->
                 </div>
             </div>
         </div>
@@ -247,7 +218,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
             </div>
             <div class="contenedor_quienes_somos">
                 <h3>¿Quienes somos?</h3>
-                <p> <? echo $msjpublico_aso ?>; </p>
+                <p> <? echo $msjpublico_aso ?> </p>
                 <div class="contenedor_botones_de_contacto">
                     <a href="https://wa.me/<? echo '+51' . $telf2_aso ?>" target="_blank">
                         <p>Escribir por Whatsapp</p>
