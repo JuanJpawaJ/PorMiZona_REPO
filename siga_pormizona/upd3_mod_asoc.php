@@ -32,9 +32,8 @@ if      ($form=="TODO00") {
    
    echo ("form :").$form;
    echo ("cod :").$cod;
-   echo ("lati :").$latitud_aso;
-   echo ("long :").$longitud_aso;
-   sleep(5);
+   echo ("latixx :").$latitud_aso;
+   echo ("longxx :").$longitud_aso;
    
    $sql="UPDATE asociado_51 SET latitud_aso='$latitud_aso',longitud_aso='$longitud_aso', datehoy_aso='$datehoy_aso' WHERE cod_aso=$cod";
    $result=mysqli_query($connec,$sql);
