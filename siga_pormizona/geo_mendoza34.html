@@ -23,8 +23,8 @@ function getParameterByName(name) {
 }
 
 function showLocation(position) {
-    var latitude = position.coords.latitude;
-    var longitude = position.coords.longitude;
+    var xlatitude = position.coords.latitude;
+    var xlongitude = position.coords.longitude;
     var xcodValue = getParameterByName('xcod');
 
     $.ajax({
