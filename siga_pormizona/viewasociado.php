@@ -197,7 +197,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 
 
 
-    <table width="800" height="707" border="1" align="center" cellpadding="1" cellspacing="1">
+    <table width="800" height="905" border="1" align="center" cellpadding="1" cellspacing="1">
       <tr>
         <td width="1574" height="142" colspan="2" align="center" valign="middle" background="iconos/f_cabview.jpg" >
 		<table width="772" border="0" cellspacing="0" cellpadding="0">
@@ -273,8 +273,18 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         </table></td>
       </tr>
       <tr>
-        <td height="32" colspan="2">Acceso solo a propietarios:<a href="ingre.php?xcod=<? echo ($cod_aso);?>&xiclave=SI&xrsocial=<? echo ($rsocial_aso);?>&xusua=<? echo ($usua_aso);?> ">" SOY PROPIETARIO "</a></td>
+        <td height="15" colspan="2">Acceso solo a propietarios:<a href="ingre.php?xcod=<? echo ($cod_aso);?>&xiclave=SI&xrsocial=<? echo ($rsocial_aso);?>&xusua=<? echo ($usua_aso);?> ">" SOY PROPIETARIO "</a></td>
  
+      </tr>
+      <tr>
+        <td height="181" colspan="2">
+		
+    <div id="map" style="height: 400px; width: 100%; box-shadow: 0px -5px 9px 0px rgba(0,0,0,0.75)"></div>
+		
+		
+		
+		
+		</td>
       </tr>
     </table>
 <p>&nbsp;</p>
@@ -326,5 +336,40 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
             <h3>Arequipa - 2024</h3>
         </div>
 </footer>
+    <script>
+    // Función de inicialización del mapa
+        function initMapWhenReady() {
+            if (window.google && window.google.maps) {
+            initMap();
+            } else {
+            setTimeout(initMapWhenReady, 200); // Reintentar en 200ms
+            }
+        }
+
+        function initMap() {
+            // Configuración del mapa
+            var map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: <?php echo $latitud_aso; ?>, lng: <?php echo $longitud_aso; ?> },
+            zoom: 15
+            });
+
+            // Crear un marcador
+            new google.maps.Marker({
+            position: { lat: <?php echo $latitud_aso; ?>, lng: <?php echo $longitud_aso; ?> },
+            map: map,
+            title: '¡Hola, mundo!',
+            });
+        }
+
+        
+        window.onload = initMapWhenReady;
+    </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwIDPzMH8Ydsj3EtpZAUuBpd3W3xW3e1k&callback=initMapWhenReady">
+    </script>
+
+
+
 </body>
 </html>
