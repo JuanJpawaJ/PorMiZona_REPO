@@ -95,7 +95,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
            </div>
            <br/>
            
-           <div> <a href="geo_mendoza33.html?xcod=<? echo $cod_aso; ?>"><img src="imagenes/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
+           <div> <a href="geo_mendoza1.html?xcod=<? echo $cod_aso; ?>"><img src="imagenes/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
            </div>
                            
            <div>
