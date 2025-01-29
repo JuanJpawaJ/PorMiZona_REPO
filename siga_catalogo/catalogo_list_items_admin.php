@@ -609,18 +609,17 @@ document.getElementById('showFormBtn').addEventListener('click', function() {
 
 function enviarWhatsApp(event) {
     event.preventDefault();
-    
-    
-   <!-- var enlace = "https://www.tu-pagina.com/link-predefinido"; // Reemplaza con tu enlace predefinido -->
-    var enlace = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>"; // Reemplaza con tu enlace predefinido -->
-  
-    var numeroCliente = document.getElementById('numeroCliente').value;
-    var mensaje = "Hola, te comparto el enlace: " + enlace;
-    var url = "https://api.whatsapp.com/send?phone=" + numeroCliente + "&text=" + encodeURIComponent(mensaje);
-    window.open(url, "_blank");
-    // window.location.href = "https://www.tu-pagina.com"; // Reemplaza con tu página inicial
-
-    window.location.href = "catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO"; // Reemplaza con tu página inicial
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('whatsappForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        var enlace = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>"; // Reemplaza con tu enlace predefinido
+        var numeroCliente = document.getElementById('numeroCliente').value;
+        var mensaje = "Hola, te comparto el enlace: " + enlace;
+        var url = "https://api.whatsapp.com/send?phone=" + numeroCliente + "&text=" + encodeURIComponent(mensaje);
+        window.open(url, "_blank");
+        window.location.href = "catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO"; // Reemplaza con tu página inicial
+    });
+});
 	
 }
 </script>
