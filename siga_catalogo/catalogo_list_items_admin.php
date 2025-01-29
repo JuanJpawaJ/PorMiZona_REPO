@@ -7,6 +7,10 @@
 	color: #FC0;
 	font-weight: bold;
 }
+.TITULO_NEGRO {
+	color: #000;
+	font-weight: bold;
+}
 .LOGO_NARANJA {
 	color: #FC0;
 	font-weight: bold;
@@ -187,35 +191,38 @@ if ($xdelreg=="SIDELREG") {
 
   <table width="1153" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td colspan="3" bgcolor="#000066" class="tit_menu_sup"><table width="767" height="63" border="0" cellpadding="0" cellspacing="0">
+    <td colspan="3" bgcolor="#CCCCCC" class="tit_menu_sup"><table width="767" height="63" border="0" cellpadding="0" cellspacing="0">
       <tr>
         <td width="157" align="center" valign="top"><img src="../siga_pormizona/img_asociados/<? echo ($logo_aso); ?>" width="120" height="60"></a></td>
-        <td width="610"><div align="center"><span class="TITULO_NARANJA">ADMINISTRADOR DE PRODUCTOS -<? echo $cod_aso." ".$rsocial_aso; ?></span></div></td>
+        <td width="610"><div align="center"><span class="TITULO_NEGRO">ADMINISTRADOR DE PRODUCTOS -<? echo $cod_aso." ".$rsocial_aso; ?></span></div></td>
         
         </tr>
     </table></td>
     </tr>
   <tr class="tit_menu_sup">
   
-    <td width="791" align="center" bgcolor="#FFFFCC"><table width="700" border="0" cellspacing="0" cellpadding="0">
+    <td width="791" align="center" bgcolor="#FFFFCC"><table width="742" border="0" cellspacing="0" cellpadding="0">
 
       <tr>
-        <td width="83" height="17" align="center" class="tabla10"><a href="catalogo_list_items_admin.php?xgl=PRO&xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">X PRODUCTO</a></td>
+        <td width="87" height="17" align="center" class="tabla10"><a href="catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">NORMAL</a></td>
         
-        <td width="493" rowspan="2" align="center">
+        <td width="89" height="17" align="center" class="tabla10"><a href="catalogo_list_items_admin.php?xgl=PRO&xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">X PRODUCTO</a></td>
+
+        
+        <td width="460" rowspan="2" align="center">
           <form id="form0" name="form0" method="get" action="a_list_items_admin.php">
-            <table width="461" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
+            <table width="430" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
               <tr>
                 <td width="250" height="28" bgcolor="#FFCC66"> Dato a buscar Producto.:
                   <input name="bxproducto" type="text" id="bxproducto" size="25" maxlength="60" onKeyUp="this.value=this.value.toUpperCase();"/></td>
                 
-                <td width="205" bgcolor="#FFCC66"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
+                <td width="174" bgcolor="#FFCC66"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
                 
               </tr>
             </table>
           </form>
         </td>
-        <td width="124" rowspan="2" align="center">
+        <td width="106" rowspan="2" align="center">
           <form id="form0" name="form0" method="post" onSubmit="return checkSubmit();" action="/siga_pormizona/formingre3_view.php" onKeyPress="javascript:if(event.keyCode==13){return false;}" >
             <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> >
             <div class="campo_botonin">
@@ -245,13 +252,17 @@ if ($xdelreg=="SIDELREG") {
  </td>
     <td width="356" colspan="2" bgcolor="#FFFFCC"height="76" align="center"><table width="320" border="1">
       <tr>
-        <td width="161" align="center"><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>">LINK Para el CLIENTE</a></td>
+        <td width="143" align="center"> 
         
-        <td width="143" align="center"> KÑÑKÑÑ
+        <!-- Botón para enviar enlace por WhatsApp -->
+<button id="showFormBtn" style="background-color: #25D366; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px; font-size: 16px;">Enviar enlace por WhatsApp</button>
+
           
           
           
         </td>
+        <td width="161" align="center"><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>">VER MI CATALOGO</a></td>
+        
         </tr>
     </table></td>
   </tr>
