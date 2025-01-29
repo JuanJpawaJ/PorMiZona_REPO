@@ -75,8 +75,8 @@ $bxproducto=$_GET['bxproducto'];
 // ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
 // ++++$xtipoi=$_GET['xtipoi'];
 
-//$xgl=$_GET['xgl']; //CMRD
-$xgl=="SMRD";   // BORRAR ESTA SOLO.....
+$xgl=$_GET['xgl']; //PRO --- PRODUCTO
+//$xgl=="SMRD";   // BORRAR ESTA SOLO.....
 
 		
 if ($xareg=="SIAREG") {
@@ -196,27 +196,34 @@ if ($xdelreg=="SIDELREG") {
     </table></td>
     </tr>
   <tr class="tit_menu_sup">
-    <td width="791" align="center" bgcolor="#FFFFCC"><table width="776" border="0" cellspacing="0" cellpadding="0">
+  
+    <td width="791" align="center" bgcolor="#FFFFCC"><table width="700" border="0" cellspacing="0" cellpadding="0">
+
       <tr>
-        <td width="63" height="17" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=SMRP">TODO</a></td>
-        <td width="64" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=S">SYSCOMP</a></td>
-        <td width="98" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=M">M.BONITA</a></td>
-        <td width="89" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=R">R.STORE</a></td>
-        <td width="62" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=P">PERFUMERIA</a></td>
-        <td width="400" rowspan="2" align="center">
+        <td width="83" height="17" align="center" class="tabla10"><a href="catalogo_list_items_admin.php?xgl=PRO&xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">X PRODUCTO</a></td>
+        
+        <td width="493" rowspan="2" align="center">
           <form id="form0" name="form0" method="get" action="a_list_items_admin.php">
-            <table width="395" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
+            <table width="461" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
               <tr>
                 <td width="250" height="28" bgcolor="#FFCC66"> Dato a buscar Producto.:
                   <input name="bxproducto" type="text" id="bxproducto" size="25" maxlength="60" onKeyUp="this.value=this.value.toUpperCase();"/></td>
                 
-                <td width="139" bgcolor="#FFCC66"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
+                <td width="205" bgcolor="#FFCC66"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
                 
-                </tr>
-              </table>
+              </tr>
+            </table>
+          </form>
+        </td>
+        <td width="124" rowspan="2" align="center">
+          <form id="form0" name="form0" method="post" onSubmit="return checkSubmit();" action="/siga_pormizona/formingre3_view.php" onKeyPress="javascript:if(event.keyCode==13){return false;}" >
+            <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> >
+            <div class="campo_botonin">
+              <button class="boton_form">MI PERFIL</button>
+              </div>
             </form>
           
-          </td>
+        </td>
         </tr>
       <tr>
         <td height="17" colspan="5" align="center" class="tabla10">
@@ -233,19 +240,14 @@ if ($xdelreg=="SIDELREG") {
 		   } ?>
           </td>
         </tr>
-    </table></td>
+    </table>
+    
+ </td>
     <td width="356" colspan="2" bgcolor="#FFFFCC"height="76" align="center"><table width="320" border="1">
       <tr>
         <td width="161" align="center"><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>">LINK Para el CLIENTE</a></td>
         
-        <td width="143" align="center">
-          
-          <form id="form0" name="form0" method="post" onSubmit="return checkSubmit();" action="/siga_pormizona/formingre3_view.php" onKeyPress="javascript:if(event.keyCode==13){return false;}" >
-            <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> >
-            <div class="campo_botonin">
-              <button class="boton_form">MI PERFIL</button>
-              </div>
-            </form>
+        <td width="143" align="center"> KÑÑKÑÑ
           
           
           
@@ -280,10 +282,10 @@ if ($xdelreg=="SIDELREG") {
 
 
 if(strlen($bxproducto)==0){
-	if ($xgl=="SMRD") {
-        $result=mysqli_query($connec,"select * from catalogo_productos where cod_aso_it=$cod_aso order by id");
+	if ($xgl=="PRO") {
+        $result=mysqli_query($connec,"select * from catalogo_productos where cod_aso_it=$cod_aso order by producto_it");
 	}else{
-        $result=mysqli_query($connec,"select * from catalogo_productos where (cod_aso_it=$cod_aso) AND (grupolista_it like '%$xgl%') order by producto_it");
+        $result=mysqli_query($connec,"select * from catalogo_productos where cod_aso_it=$cod_aso order by codigo_id");
 	}
 } else {
 $bxproducto1=trim($bxproducto);
@@ -404,13 +406,10 @@ while ($tabla=mysqli_fetch_array($result)){
         </span></td>
     </tr>
     <tr>
-      <td colspan="2" align="center" bgcolor="#FFCC66" class="TITULO"><strong>LOS SIGUIENTES DATOS: (Solo si es necesario)</strong></td>
-    </tr>
-    <tr>
       <td bgcolor="#FDF19B" class="TITULO">Prec. compra</td>
       <td bgcolor="#FDF19B"><span class="TITULO">
         <input class="cplomo" name="xprecom" type="text" id="xprecom" size="10" maxlength="10" onKeyUp="this.value=this.value.toUpperCase();" />
-      </span></td>
+        </span></td>
     </tr>
     <tr>
       <td bgcolor="#FDF19B" class="TITULO">Moneda &quot;S&quot; - &quot;D&quot;</td>
@@ -419,17 +418,10 @@ while ($tabla=mysqli_fetch_array($result)){
         </span></td>
     </tr>
     <tr>
-      <td colspan="2" bgcolor="#FDF19B" class="TITULO">La Imagen (JPG 120 X 73) en la orpcion: [Modificar]</td>
-    </tr>
-    <tr>
-      <td colspan="2" bgcolor="#FDF19B" class="TITULO">
-        <input class="cplomo" name="ximg" type="text" id="ximg" size="45" maxlength="60" /></td>
-      </tr>
-    <tr>
       <td bgcolor="#FDF19B" class="TITULO">Precio VENTA 01</td>
       <td bgcolor="#FDF19B"><span class="TITULO">
         <input name="xpv01" type="text" id="xpv01" size="10" maxlength="10" onKeyUp="this.value=this.value.toUpperCase();" />
-      </span></td>
+        </span></td>
     </tr>
     <tr>
       <td bgcolor="#FDF19B"><span class="TITULO">Precio OFERTA 03</span></td>
@@ -464,6 +456,9 @@ while ($tabla=mysqli_fetch_array($result)){
      <input type="hidden" name="xlugar_al" value=""/>
      <input type="hidden" name="xview01" value="S"/>
      <input type="hidden" name="xview02" value=""/>
+     
+     <input type="hidden" name="ximg" value=""/>
+
      <input type="hidden" name="xview03" value=""/>
      <input type="hidden" name="xview04" value=""/>
      <input type="hidden" name="xtime_entrega" value=""/>
