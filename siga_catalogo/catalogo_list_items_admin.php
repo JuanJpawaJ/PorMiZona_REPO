@@ -601,6 +601,8 @@ echo "  <script type='text/javascript'>
   }
 
 ?>
+<script>
+
 document.getElementById('showFormBtn').addEventListener('click', function() {
     window.location.href = 'formenviocat.html';
 });
@@ -618,6 +620,8 @@ function enviarWhatsApp(event) {
     window.open(url, "_blank");
     window.location.href = "https://www.tu-pagina.com"; // Reemplaza con tu página inicial
 }
+</script>
+
 
 <p>&nbsp;</p>
 </body>
