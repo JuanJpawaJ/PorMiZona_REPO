@@ -285,7 +285,9 @@ if(strlen($bxproducto)==0){
 	if ($xgl=="PRO") {
         $result=mysqli_query($connec,"select * from catalogo_productos where cod_aso_it=$cod_aso order by producto_it");
 	}else{
-        $result=mysqli_query($connec,"select * from catalogo_productos where cod_aso_it=$cod_aso order by codigo_id");
+       // $result=mysqli_query($connec,"select * from catalogo_productos where cod_aso_it=$cod_aso order by codigo_id");
+        $result=mysqli_query($connec,"select * from catalogo_productos where cod_aso_it=$cod_aso ");
+
 	}
 } else {
 $bxproducto1=trim($bxproducto);
