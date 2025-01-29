@@ -255,7 +255,7 @@ if ($xdelreg=="SIDELREG") {
         <td width="143" align="center"> 
         
         <!-- Botón para enviar enlace por WhatsApp -->
-<button id="showFormBtn" style="background-color: #25D366; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px; font-size: 16px;">Enviar enlace por WhatsApp</button>
+<button id="showFormBtn" style="background-color: #25D366; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px; font-size: 16px;">ENVIAR catálogo por WhatsApp</button>
 
           
           
@@ -601,6 +601,23 @@ echo "  <script type='text/javascript'>
   }
 
 ?>
+document.getElementById('showFormBtn').addEventListener('click', function() {
+    window.location.href = 'formenviocat.html';
+});
+
+function enviarWhatsApp(event) {
+    event.preventDefault();
+    
+    
+   <!-- var enlace = "https://www.tu-pagina.com/link-predefinido"; // Reemplaza con tu enlace predefinido -->
+    var enlace = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>"; // Reemplaza con tu enlace predefinido -->
+  
+    var numeroCliente = document.getElementById('numeroCliente').value;
+    var mensaje = "Hola, te comparto el enlace: " + enlace;
+    var url = "https://api.whatsapp.com/send?phone=" + numeroCliente + "&text=" + encodeURIComponent(mensaje);
+    window.open(url, "_blank");
+    window.location.href = "https://www.tu-pagina.com"; // Reemplaza con tu página inicial
+}
 
 <p>&nbsp;</p>
 </body>
