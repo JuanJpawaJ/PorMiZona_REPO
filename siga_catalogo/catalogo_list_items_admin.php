@@ -230,8 +230,25 @@ if ($whatsapp=="SIWHATSAPP") {
     $whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" . "Aquí tienes el link: " . $link;
 	echo "este es el url: ".$whatsapp_url;
 
-    header("Location: " . $whatsapp_url);
+    //header("Location: " . $whatsapp_url);
     //exit();
+
+$whatsapp_number = "51959956060";
+$text_message = "Este es un mensaje de prueba";
+
+// Construir la URL de WhatsApp
+$whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" . urlencode($text_message);
+
+// Depuración: Mostrar URL generada
+echo "URL de WhatsApp: $whatsapp_url<br>";
+	echo "este es NUEVO url: ".$whatsapp_url;
+
+
+// Redirigir a WhatsApp
+header("Location: " . $whatsapp_url);
+exit();
+
+
 }
 // FIN: SOLO PARA LOS BOTONES
 ?>
