@@ -55,7 +55,7 @@
         .form-input {
             padding: 10px;
             margin: 5px;
-            font-size: 16px;
+            font-size: 10px;
         }
 
 
@@ -311,7 +311,7 @@ echo "<script>
  </td>
     <td width="356" colspan="2" bgcolor="#FFFFCC"height="76" align="center"><table width="320" border="1">
       <tr>
-        <td width="143" align="center"> 
+        <td width="143" rowspan="2" align="center"> 
         
         <!-- Botón para enviar enlace por WhatsApp
 <button id="showFormBtn" style="background-color: #25D366; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px; font-size: 16px;">ENVIAR catálogo por WhatsApp</button>  -->
@@ -320,7 +320,6 @@ echo "<script>
     <form id="formbot1" name="formbot1"action="catalogo_list_items_admin.php" method="POST">
 
         <input type="text" name="whatsapp_number" class="form-input" placeholder="Número de WhatsApp" required>
-
         <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
         <input type="hidden" name="xpassword" value="<?php echo(trim($password)); ?>"/>  
         <input type="hidden" name="xwhatsapp" value="SIWHATSAPP"/>  
@@ -331,9 +330,12 @@ echo "<script>
           
           
         </td>
-        <td width="161" align="center"><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>">VER MI CATALOGO</a></td>
+        <td width="161" height="95" align="center"><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>">VER MI CATALOGO</a></td>
         
         </tr>
+      <tr>
+        <td align="center">&nbsp;</td>
+      </tr>
     </table></td>
   </tr>
   <tr class="tit_menu_sup">
