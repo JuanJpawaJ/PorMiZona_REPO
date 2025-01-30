@@ -243,10 +243,13 @@ $whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&te
 echo "URL de WhatsApp: $whatsapp_url<br>";
 	echo "este es NUEVO url: ".$whatsapp_url;
 
+// Redirección con JavaScript
+echo "<script>window.location.href = '$whatsapp_url';</script>";
+
 
 // Redirigir a WhatsApp
-header("Location: " . $whatsapp_url);
-exit();
+//header("Location: " . $whatsapp_url);
+//exit();
 
 
 }
