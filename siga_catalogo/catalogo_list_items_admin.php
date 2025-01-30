@@ -194,7 +194,7 @@ if ($whatsapp=="SIWHATSAPP") {
 // FIN: SOLO PARA LOS BOTONES
 ?>
 
-  <table width="1153" border="1" align="center" cellpadding="0" cellspacing="0">
+    <table width="1153" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td colspan="3" bgcolor="#CCCCCC" class="tit_menu_sup"><table width="767" height="63" border="0" cellpadding="0" cellspacing="0">
       <tr>
