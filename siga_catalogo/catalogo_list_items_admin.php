@@ -340,7 +340,15 @@ echo "<script>
         
         </tr>
       <tr>
-        <td width="161" height="95" align="center"><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>">VER MI CATALOGO</a></td>
+        <td width="161" height="95" align="center">
+        
+<div class="form-container">
+    <a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>" class="btn">VER MI CATALOGO</a>
+</div>        
+        
+        
+        
+        </td>
       </tr>
     </table></td>
   </tr>
