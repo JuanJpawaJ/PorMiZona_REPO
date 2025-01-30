@@ -140,82 +140,38 @@ if ($xareg=="SIAREG") {
    $msjpublico_it=$_POST['xmsjpublico'];
    $obscompra_it=$_POST['xobscompra'];
 
- // echo  "codigo: ".  $codigo_it."<br>";
- //  echo  "codfab: ".  $codfabrica_it."<br>";
- //  echo  "prod: ".  $producto_it."<br>";
- //  echo  "grupo: ".  $grupolista_it."<br>";
- //  echo  "marka: ".  $marka_it."<br>";
- //  echo  "fab: ".  $fabricante_it."<br>";
- //  echo  "precom: ".  $precom_it."<br>";
- //  echo  "prevn: ".  $preven_it."<br>";
- //  echo  "pje: ".  $pje1_it."<br>";
- //  echo  "img: ".  $img_it."<br>";
- //  echo  "publico: ".  $publico_it."<br>";
- //  echo  "oferta: ".  $oferta_it."<br>";
- //  echo  "mone: ".  $monelista_it."<br>";   
-
-
    // verifica si hay duplicados ....
    //$result=mysql_query("select * from a_items where producto_it=$xproducto",$connec);
    //$total=mysql_num_rows($result);
    //if ($total==0) {
-	   $xspce="s";
-	   $xum=0;
-	   
-
-     $sql="INSERT INTO catalogo_productos (codigo_it,cod_aso_it,codfabrica_it,producto_it,grupolista_it,marka_it,fabricante_it, precom_it,monelista_it, pv01_it,pv02_it,pv03_it,img_it,stockmin_it,lugar_al_it,view01_it, view02_it,view03_it,view04_it,time_entrega_it,msjpublico_it,obscompra_it) VALUES 
+   $xspce="s";
+   $xum=0;
+   $sql="INSERT INTO catalogo_productos (codigo_it,cod_aso_it,codfabrica_it,producto_it,grupolista_it,marka_it,fabricante_it, precom_it,monelista_it, pv01_it,pv02_it,pv03_it,img_it,stockmin_it,lugar_al_it,view01_it, view02_it,view03_it,view04_it,time_entrega_it,msjpublico_it,obscompra_it) VALUES 
 ('$codigo_it','$cod_aso,fabrica_it','$codfabrica_it','$producto_it','$grupolista_it','$marka_it','$fabricante_it','$precom_it','$monelista_it', '$pv01_it', '$pv02_it','$pv03_it', '$img_it','$stockmin_it','$lugar_al_it','$view01_it','$view02_it','$view03_it','$view04_it','$time_entrega_it','$msjpublico_it','$obscompra_it')";
-     $result=mysqli_query($connec,$sql);
-     if($result){
+   $result=mysqli_query($connec,$sql);
+   if($result){
 	   echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok.</span>");
-     }else{
+   }else{
 	   echo ("<span style='background-color: #CC0000'>XX. ERROR AL REGISTRARSE  XX.</span>");
-     }	
-   //}
+   }	
    $xareg="NO";
    $xmodi="NOOO";
    $xdelreg="NOOO";
-  
-   
 } // ********++  FFFIIINNN  NUEVO REGISTROS 
 
-// ********++  MODIFICA REGISTRO
-if ($xmodi=="SIMODI") {
 
-   $idmodi=$_GET['xidmodi'];	
-   $xcodfab=$_GET['xcodfab'];
-   $xproducto=$_GET['xproducto'];
-   $xmarka=$_GET['xmarka'];
-  $xventa=$_GET['xventa'];
-   $xcosto=$_GET['xcosto'];
-   $ximg=$_GET['ximg'];
-$sql="UPDATE catalogo_productos SET codfabrica_it='$xcodfab',producto_it='$xproducto',producto_it='$xproducto',marka_it='$xmarka',preven_it='$xventa',img_it='$ximg' WHERE id=$idmodi";
-
-   $result=mysqli_query($connec,$sql);
-   if($result){
- 	echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok.</span>");
-   }else{
-	echo ("<span style='background-color: #CC0000'>XX. ERROR AL REGISTRARSE  XX.</span>");
-   }	
-   $xmodi="NO";
-   $xareg="NO";
-   $xdelreg="NOOO";
-
-}  // ********++  FFFIIINNN  MODIFICA
-// ******************* COMO RETORNO *************************
 // ********++  DEL REGISTRO
 if ($xdelreg=="SIDELREG") {
 	
-
    $idx=$_GET['idx']; // CREO QUE ESTA DEM'AS
    $delcod=$_GET['delcod'];
    $query = "delete from catalogo_productos where codigo_it ='$delcod'";  
    $result = mysqli_query($connec,$query); 
-  
    $xdelreg="NO";
    $xareg="NO";
    $xmodi="NOOO";
-}
+}  // FIN DEL REGISTRO
+
 
 
 // INICIO: SOLO PARA LOS BOTONES
@@ -224,25 +180,15 @@ if ($whatsapp=="SIWHATSAPP") {
     $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=" . $cod_aso . "&xrsocial=" . $rsocial_aso;
     $whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" . "CATALOGO: ".$rsocial_aso." ".$link;
 
-// Construir la URL de WhatsApp
-//$whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" . urlencode($text_message);
+    echo "<script>window.location.href = '$whatsapp_url';</script>";
 
-// Depuración: Mostrar URL generada
-
-// Redirección con JavaScript
-echo "<script>window.location.href = '$whatsapp_url';</script>";
-
-echo "<script>
+    echo "<script>
     setTimeout(function(){
         window.location.href = 'www.pormizona.com.pe/siga_catalogo/catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO';
                        
                        
     }, 5000);
 </script>";
-// Redirigir a WhatsApp
-//header("Location: " . $whatsapp_url);
-//exit();
-
 
 }
 // FIN: SOLO PARA LOS BOTONES
@@ -260,7 +206,7 @@ echo "<script>
     </tr>
   <tr class="tit_menu_sup">
   
-    <td width="791" align="center" bgcolor="#FFFFCC"><table width="742" border="0" cellspacing="0" cellpadding="0">
+    <td width="791" align="center" bgcolor="#FFFFCC"><table width="742" border="1" cellspacing="4" cellpadding="4">
 
       <tr>
         <td width="87" height="17" align="center" class="tabla10"><a href="catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">NORMAL</a></td>
@@ -268,20 +214,21 @@ echo "<script>
         <td width="89" height="17" align="center" class="tabla10"><a href="catalogo_list_items_admin.php?xgl=PRO&xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">X PRODUCTO</a></td>
 
         
-        <td width="460" rowspan="2" align="center">
+        <td width="228" rowspan="2" align="center">
           <form id="form0" name="form0" method="get" action="a_list_items_admin.php">
             <table width="430" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
               <tr>
-                <td width="250" height="28" bgcolor="#FFCC66"> Dato a buscar Producto.:
+                <td width="250" height="28" bgcolor="#FDF19B"> Dato a buscar Producto.:
                   <input name="bxproducto" type="text" id="bxproducto" size="25" maxlength="60" onKeyUp="this.value=this.value.toUpperCase();"/></td>
                 
-                <td width="174" bgcolor="#FFCC66"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
+                <td width="174" bgcolor="#FDF19B"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
                 
               </tr>
             </table>
           </form>
         </td>
-        <td width="106" rowspan="2" align="center">
+        <td width="228" rowspan="2" align="center" bgcolor="#FFCC66">
+        
           <form id="form0" name="form0" method="post" onSubmit="return checkSubmit();" action="/siga_pormizona/formingre3_view.php" onKeyPress="javascript:if(event.keyCode==13){return false;}" >
             <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> >
             <div class="campo_botonin">
@@ -289,22 +236,9 @@ echo "<script>
               </div>
             </form>
           
+        
         </td>
-        </tr>
-      <tr>
-        <td height="17" colspan="5" align="center" class="tabla10">
-          <? if ($xgl=="SMRD") {
-			 echo "TODO";
-		   }elseif ($xgl=="S") {
-			 echo "SYSCOMPUTER";			   
-		   }elseif ($xgl=="M") {
-			 echo "MUJER BONITA";			
-		   }elseif ($xgl=="R"){   
-			 echo "REGAL STORE";
-		   }elseif ($xgl=="D"){   
-			 echo "DELIBEARS";			   
-		   } ?>
-          </td>
+        
         </tr>
     </table>
     
@@ -314,9 +248,9 @@ echo "<script>
         <td width="143" rowspan="2" align="center"> 
         
         <!-- Botón para enviar enlace por WhatsApp
-<button id="showFormBtn" style="background-color: #25D366; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px; font-size: 16px;">ENVIAR catálogo por WhatsApp</button>  -->
+       <button id="showFormBtn" style="background-color: #25D366; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px; font-size: 16px;">ENVIAR catálogo por WhatsApp</button>  -->
 
-  <div class="form-container">
+   <div class="form-container"> <!-- BOTON WHATSAPP -->
     <form id="formbot1" name="formbot1"action="catalogo_list_items_admin.php" method="POST">
 
         <input type="text" name="whatsapp_number" class="form-input" placeholder="Número de WhatsApp" required>
@@ -326,36 +260,30 @@ echo "<script>
 
         <button type="submit" class="btn">Enviar</button>
     </form>
-</div>        
-          
-          
-        </td>
-        <td width="161" height="95" align="center">
-<!-- Segundo espacio: botón para copiar link -->
-<div class="form-container">
-    <button onclick="copyLink()" class="btn">Copiar Link</button>
-</div>        
-        
-        </td>
-        
-        </tr>
-      <tr>
-        <td width="161" height="95" align="center">
-        
-<div class="form-container">
-    <a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>" class="btn">VER MI CATALOGO</a>
-</div>        
-        
-        
-        
-        </td>
-      </tr>
-    </table></td>
+   </div>        
+   </td>
+   <td width="161" height="95" align="center">
+      <!-- Segundo espacio: botón para copiar link -->
+      <div class="form-container">
+          <button onClick="copyLink()" class="btn">Copiar Link</button>
+      </div>        
+   </td>
+ </tr>
+  <tr>
+    <td width="161" height="111" align="center">
+
+       <div class="form-container">
+          <a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>" class="btn">VER MI CATALOGO</a>
+       </div>        
+    </td>
+  </tr>
+  </table>
+  </td>
   </tr>
   <tr class="tit_menu_sup">
     <td height="262" rowspan="4" valign="top" bgcolor="#FFFFCC">
     <!-- INICIO DE MUESTRA ITEMS -->
-    <table width="782" height="80" border="1" cellspacing="0">
+    <table width="782" height="80" border="1" cellpadding="0" cellspacing="0">
       <tr bgcolor="#CCFFFF" class="diez">
         <td width="62" align="center">COD. Item</td>
         <td width="99" align="center">IMAGEN</td>
@@ -458,7 +386,7 @@ while ($tabla=mysqli_fetch_array($result)){
          
     <td colspan="2" valign="top" bgcolor="#FFFFCC">
     <?php
-	if($viewmodi<>"SIVM"){
+	//if($viewmodi<>"SIVM"){
 	?>
     <form id="form1" name="form1" method="post" action="catalogo_list_items_admin.php">
     <table width="290" border="1" class="tablaingrenuevo">
@@ -575,105 +503,15 @@ while ($tabla=mysqli_fetch_array($result)){
   </table>
 </form>
 </td>
-    </tr>
-  <tr class="tit_menu_sup">
-    <td colspan="2" valign="top" bgcolor="#FFFFCC">
-          <?php 
-// ************************  VER FORMULARIO DE MODIFICAR 
-} elseif($viewmodi=="SIVM"){
-   $idx=$_GET['idx']; 
-
-$result=mysqli_query($connec,"select * from catalogo_productos where id=$idx");	
-
-$tabla = mysqli_fetch_array( $result );
-		$idmodi=$tabla["id"];
-		$codigo_it=$tabla["codigo_it"];
-		$codfabrica_it=$tabla["codfabrica_it"];
-		$producto_it=$tabla["producto_it"];
-		$marka_it=$tabla["marka_it"];
-		$precom_it=$tabla["precom_it"];
-		$preven_it=$tabla["preven_it"];
-		$img_it=$tabla["img_it"];
-
-
-?>
-    
-        <form id="form1" name="form1" method="get" action="a_list_items_admin.php">
-          <table width="290" border="1" class="tablaingrenuevo">
-            <tr>
-              <td colspan="2" bgcolor="#FF0000"><div align="center"><strong>MODIFICA  ITEM</strong></div></td>
-            </tr>
-            <tr>
-              <td bgcolor="#FDF19B"><span class="TITULO">Cod. Item</span></td>
-              <td bgcolor="#FDF19B"><?php echo($codigo_it); ?></td>
-              <!-- xcod -->
-            </tr>
-            <tr>
-              <td colspan="2" bgcolor="#FDF19B"><span class="TITULO">Grupo: Ej. 100, 200, 300, 400, 500</span></td>
-            </tr>
-            <tr>
-              <td colspan="2"><span class="TITULO">
-                <input name="xcodfab" type="text" id="xcodfab" size="30" maxlength="30" value="<?php echo($codfabrica_it); ?>" onKeyUp="this.value=this.value.toUpperCase();"  />
-              </span></td>
-            </tr>
-            <tr>
-              <td colspan="2" bgcolor="#FDF19B" class="TITULO">Producto</td>
-            </tr>
-            <tr>
-              <td colspan="2"><span class="TITULO">
-                <input name="xproducto" type="text" id="xproducto" size="35" maxlength="60" value="<?php echo($producto_it); ?>" onKeyUp="this.value=this.value.toUpperCase();"  />
-
-              </span></td>
-            </tr>
-            <tr>
-              <td colspan="2" bgcolor="#FDF19B"><span class="TITULO">Insumos = PRIMA</span></td>
-            </tr>
-            <tr>
-              <td colspan="2"><span class="TITULO">
-                <input name="xmarka" type="text" id="xmarka" size="30" maxlength="30" value="<?php echo($marka_it); ?>" onKeyUp="this.value=this.value.toUpperCase();"  />
-              </span></td>
-            </tr>
-            <tr>
-              <td colspan="2" bgcolor="#FDF19B" class="TITULO">Imagen (JPG 120 X 73)</td>
-            </tr>
-            <tr>
-              <td colspan="2" class="TITULO"><input name="ximg" type="text" id="ximg" size="45" maxlength="60" value="<?php echo($img_it); ?>"/></td>
-            </tr>
-            <tr>
-              <td bgcolor="#FDF19B" class="TITULO">P.Venta:</td>
-              <td><span class="TITULO">
-                <input name="xventa" type="text" id="xventa" size="15" maxlength="15" value="<?php echo($preven_it); ?>" />
-              </span></td>
-            </tr>
-            <tr>
-              <td width="98"><span class="TITULO">
-                <input type="hidden" name="xmodi" value="<?php echo("SIMODI"); ?>" />
-                <input type="hidden" name="xidmodi" value="<?php echo($idmodi); ?>" />
-                <input type="hidden" name="xcosto" value="<?php echo($precom_it); ?>" />
-                <input type="hidden" name="xdelreg" value=NOOO/>
-                <input type="hidden" name="xareg" value=NOOO/>
-                <input type="hidden" name="viewmodi" value=NOOO/>
-                <input name="Submit3" type="submit" class="Estilo38" value="-&gt; Guardar &lt;-" />
-              </span></td>
-              <td width="180"><span class="TITULO">
-                <input name="Submit3" type="reset" class="Estilo38" value="Borrar" />
-              </span></td>
-            </tr>
-          </table>
-        </form>
-      </td>
-  </tr>
-  <tr class="tit_menu_sup">
-    <td colspan="2" valign="top" bgcolor="#FFFFCC"><a href="img_items/n_subir_xfile.php?id_img=<?php echo ($idmodi); ?>">ir</a></td>
-  </tr>
-  <tr class="tit_menu_sup">
-    <td colspan="2" valign="top" bgcolor="#FFFFCC">ññ</td>
-  </tr>
+</tr>
   
-  <?php  } // ************************  FFFIIIINNNN FORMULARIO DE MODIFICAR  ?>
+  <? // } // ************************  FFFIIIINNNN FORMULARIO DE MODIFICAR  ?>
   
 </table>
-<?   } else {  
+<?
+
+} else {  //SI ES DIFERENTE A : if ($total0==1 AND $usua_aso=="S") { // usua_aso CON CONTRATO DE CATALOGO
+
      
 echo "  <script type='text/javascript'>
     alert('¡SUS DATOS NO SON CORRECTOS! - Cel: 959956000');
@@ -684,12 +522,8 @@ echo "  <script type='text/javascript'>
 </script>";
 
    
-  }
+ }
   
-  
-  
-  
-
 ?>
 
 <script>
