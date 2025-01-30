@@ -221,7 +221,7 @@ if ($xdelreg=="SIDELREG") {
 // INICIO: SOLO PARA LOS BOTONES
 if ($whatsapp=="SIWHATSAPP") {
     $whatsapp_number = $_POST['whatsapp_number'];
-    $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=" . urlencode($cod_aso) . "&xrsocial=" . urlencode($rsocial_aso);
+    $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=" . $cod_aso . "&xrsocial=" . $rsocial_aso;
     $whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" . "CATALOGO: ".$rsocial_aso." ".$link;
 
 // Construir la URL de WhatsApp
@@ -232,7 +232,13 @@ if ($whatsapp=="SIWHATSAPP") {
 // Redirección con JavaScript
 echo "<script>window.location.href = '$whatsapp_url';</script>";
 
-
+echo "<script>
+    setTimeout(function(){
+        window.location.href = 'www.pormizona.com.pe/siga_catalogo/catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO';
+                       
+                       
+    }, 5000);
+</script>";
 // Redirigir a WhatsApp
 //header("Location: " . $whatsapp_url);
 //exit();
