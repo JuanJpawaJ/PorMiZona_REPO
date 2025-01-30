@@ -220,8 +220,10 @@ if ($xdelreg=="SIDELREG") {
 
 // INICIO: SOLO PARA LOS BOTONES
 if ($whatsapp=="SIWHATSAPP") {
-	ECHO "ESTOY DENTROOOOOOOOO DE WHATSSSAPP: ".$whatsapp;
+	echo "ESTOY DENTROOOOOOOOO DE WHATSSSAPP: ".$whatsapp;
+
     $whatsapp_number = $_POST['whatsapp_number'];
+	echo "este es el númerooo: ".$whatsapp_number;
 //    $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=" . urlencode($cod_aso) . "&xrsocial=" . urlencode($rsocial_aso);
     $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=12345&xrsocial=JUANCITO";
 
