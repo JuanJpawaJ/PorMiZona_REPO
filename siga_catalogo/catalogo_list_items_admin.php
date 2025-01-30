@@ -330,11 +330,17 @@ echo "<script>
           
           
         </td>
-        <td width="161" height="95" align="center"><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>">VER MI CATALOGO</a></td>
+        <td width="161" height="95" align="center">
+<!-- Segundo espacio: botón para copiar link -->
+<div class="form-container">
+    <button onclick="copyLink()" class="btn">Copiar Link</button>
+</div>        
+        
+        </td>
         
         </tr>
       <tr>
-        <td align="center">&nbsp;</td>
+        <td width="161" height="95" align="center"><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>">VER MI CATALOGO</a></td>
       </tr>
     </table></td>
   </tr>
@@ -671,10 +677,23 @@ echo "  <script type='text/javascript'>
 
    
   }
+  
+  
+  
+  
 
 ?>
 
-
+<script>
+    function copyLink() {
+        const link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=<?php echo $cod_aso; ?>&xrsocial=<?php echo $rsocial_aso; ?>";
+        navigator.clipboard.writeText(link).then(() => {
+            alert('Link copiado al portapapeles');
+        }).catch(err => {
+            console.error('Error al copiar el link: ', err);
+        });
+    }
+</script>
 
 <p>&nbsp;</p>
 </body>
