@@ -33,6 +33,33 @@
 .cazul { background-color:#9FF; }
 .cverde { background-color:#9F9; }
 .cplomo { background-color:#CCC; }
+ 
+ /* INCIO: SOLO PARA LOS 3 BOTONES  */
+        .btn {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            margin: 10px auto;
+            background-color: #008CBA;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-container {
+            text-align: center;
+            margin: 20px;
+        }
+        .form-input {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+
+ /* FIN: SOLO PARA LOS 3 BOTONES  */
 
 
 </style>
@@ -187,6 +214,18 @@ if ($xdelreg=="SIDELREG") {
    $xareg="NO";
    $xmodi="NOOO";
 }
+
+
+// INICIO: SOLO PARA LOS BOTONES
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['whatsapp_number'])) {
+    $whatsapp_number = htmlspecialchars($_POST['whatsapp_number']);
+    $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=" . urlencode($cod_aso) . "&xrsocial=" . urlencode($rsocial_aso);
+    $whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" . urlencode("Aquí tienes el link: " . $link);
+
+    header("Location: " . $whatsapp_url);
+    exit();
+}
+// FIN: SOLO PARA LOS BOTONES
 ?>
 
   <table width="1153" border="1" align="center" cellpadding="0" cellspacing="0">
@@ -254,10 +293,15 @@ if ($xdelreg=="SIDELREG") {
       <tr>
         <td width="143" align="center"> 
         
-        <!-- Botón para enviar enlace por WhatsApp -->
-<button id="showFormBtn" style="background-color: #25D366; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px; font-size: 16px;">ENVIAR catálogo por WhatsApp</button>
+        <!-- Botón para enviar enlace por WhatsApp
+<button id="showFormBtn" style="background-color: #25D366; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px; font-size: 16px;">ENVIAR catálogo por WhatsApp</button>  -->
 
-          
+  <div class="form-container">
+    <form action="" method="POST">
+        <input type="text" name="whatsapp_number" class="form-input" placeholder="Número de WhatsApp" required>
+        <button type="submit" class="btn">Enviar</button>
+    </form>
+</div>        
           
           
         </td>
@@ -601,28 +645,7 @@ echo "  <script type='text/javascript'>
   }
 
 ?>
-<script>
 
-document.getElementById('showFormBtn').addEventListener('click', function() {
-    window.location.href = 'formenviocat.html';
-});
-
-function enviarWhatsApp(event) {
-    event.preventDefault();
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('whatsappForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        var enlace = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>"; // Reemplaza con tu enlace predefinido
-        var numeroCliente = document.getElementById('numeroCliente').value;
-        var mensaje = "Hola, te comparto el enlace: " + enlace;
-        var url = "https://api.whatsapp.com/send?phone=" + numeroCliente + "&text=" + encodeURIComponent(mensaje);
-        window.open(url, "_blank");
-        window.location.href = "catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO"; // Reemplaza con tu página inicial
-    });
-});
-	
-}
-</script>
 
 
 <p>&nbsp;</p>
