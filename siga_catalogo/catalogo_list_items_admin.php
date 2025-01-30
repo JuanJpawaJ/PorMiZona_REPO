@@ -220,28 +220,14 @@ if ($xdelreg=="SIDELREG") {
 
 // INICIO: SOLO PARA LOS BOTONES
 if ($whatsapp=="SIWHATSAPP") {
-	echo "ESTOY DENTROOOOOOOOO DE WHATSSSAPP: ".$whatsapp;
-
     $whatsapp_number = $_POST['whatsapp_number'];
-	echo "este es el númerooo: ".$whatsapp_number;
-//    $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=" . urlencode($cod_aso) . "&xrsocial=" . urlencode($rsocial_aso);
-    $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=12345&xrsocial=JUANCITO";
-
-    $whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" . "Aquí tienes el link: " . $link;
-	echo "este es el url ANTIGUO: ".$whatsapp_url;
-
-    //header("Location: " . $whatsapp_url);
-    //exit();
-
-$whatsapp_number = "51959956060";
-$text_message = "Este es un mensaje de prueba";
+    $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=" . urlencode($cod_aso) . "&xrsocial=" . urlencode($rsocial_aso);
+    $whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" . "CATALOGO: ".$rsocial_aso." ".$link;
 
 // Construir la URL de WhatsApp
-$whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" . urlencode($text_message);
+//$whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" . urlencode($text_message);
 
 // Depuración: Mostrar URL generada
-echo "URL de WhatsApp: $whatsapp_url<br>";
-	echo "este es NUEVO url: ".$whatsapp_url;
 
 // Redirección con JavaScript
 echo "<script>window.location.href = '$whatsapp_url';</script>";
