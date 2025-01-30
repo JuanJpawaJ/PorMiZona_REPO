@@ -221,7 +221,9 @@ if ($xdelreg=="SIDELREG") {
 // INICIO: SOLO PARA LOS BOTONES
 if ($whatsapp=="SIWHATSAPP") {
     $whatsapp_number = $_POST['whatsapp_number'];
-    $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=" . urlencode($cod_aso) . "&xrsocial=" . urlencode($rsocial_aso);
+//    $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=" . urlencode($cod_aso) . "&xrsocial=" . urlencode($rsocial_aso);
+    $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=12345&xrsocial=JUANCITO";
+
     $whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" . urlencode("Aquí tienes el link: " . $link);
 
     header("Location: " . $whatsapp_url);
