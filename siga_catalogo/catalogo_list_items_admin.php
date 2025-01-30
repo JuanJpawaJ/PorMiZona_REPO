@@ -83,6 +83,8 @@ $xareg=$_POST['xareg'];
 $xmodi=$_POST['xmodi'];
 $xdelreg=$_POST['xdelreg'];
 $viewmodi=$_POST['viewmodi'];
+$whatsapp=$_POST['xwhatsapp'];
+
 
 if (strlen($usuario)==0){
    $usuario  = trim($_GET['xusername']); // el usuario es el email_aso
@@ -217,8 +219,8 @@ if ($xdelreg=="SIDELREG") {
 
 
 // INICIO: SOLO PARA LOS BOTONES
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['whatsapp_number'])) {
-    $whatsapp_number = htmlspecialchars($_POST['whatsapp_number']);
+if ($whatsapp=="SIWHATSAPP") {
+    $whatsapp_number = $_POST['whatsapp_number'];
     $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=" . urlencode($cod_aso) . "&xrsocial=" . urlencode($rsocial_aso);
     $whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" . urlencode("Aquí tienes el link: " . $link);
 
@@ -297,11 +299,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['whatsapp_number'])) {
 <button id="showFormBtn" style="background-color: #25D366; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px; font-size: 16px;">ENVIAR catálogo por WhatsApp</button>  -->
 
   <div class="form-container">
-    <form action="catalogo_list_items_admin.php" method="POST">
+    <form id="formbot1" name="formbot1"action="catalogo_list_items_admin.php" method="POST">
+
         <input type="text" name="whatsapp_number" class="form-input" placeholder="Número de WhatsApp" required>
 
         <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
         <input type="hidden" name="xpassword" value="<?php echo(trim($password)); ?>"/>  
+        <input type="hidden" name="xwhatsapp" value="SIWHATSAPP"/>  
 
         <button type="submit" class="btn">Enviar</button>
     </form>
