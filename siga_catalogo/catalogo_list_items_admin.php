@@ -297,8 +297,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['whatsapp_number'])) {
 <button id="showFormBtn" style="background-color: #25D366; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px; font-size: 16px;">ENVIAR catálogo por WhatsApp</button>  -->
 
   <div class="form-container">
-    <form action="catalogo_list_items.php" method="POST">
+    <form action="catalogo_list_items_admin.php" method="POST">
         <input type="text" name="whatsapp_number" class="form-input" placeholder="Número de WhatsApp" required>
+
+        <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
+        <input type="hidden" name="xpassword" value="<?php echo(trim($password)); ?>"/>  
+
         <button type="submit" class="btn">Enviar</button>
     </form>
 </div>        
