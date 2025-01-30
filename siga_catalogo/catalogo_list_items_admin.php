@@ -228,6 +228,7 @@ if ($whatsapp=="SIWHATSAPP") {
     $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=12345&xrsocial=JUANCITO";
 
     $whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" . "Aquí tienes el link: " . $link;
+	echo "este es el url: ".$whatsapp_url;
 
     header("Location: " . $whatsapp_url);
     //exit();
