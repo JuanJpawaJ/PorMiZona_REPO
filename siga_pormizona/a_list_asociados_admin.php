@@ -35,134 +35,35 @@ $bxproducto=$_GET['bxproducto'];
 // ********  ADICIONA, MODIFICA, ELIMINA REGISTROS 
   // $xdelreg="NOOO";
 $xareg=$_GET['xareg'];
-$xmodi=$_GET['xmodi'];
+
 $xdelreg=$_GET['xdelreg'];
 $viewmodi=$_GET['viewmodi'];
 // ++++$xtipoi=$_GET['xtipoi'];
 
 $xgl=$_GET['xgl']; //CMRD
 		
-if ($xareg=="SIAREG") {
-  // genera el codigo de 6 digitos en base al max id anterior
-  $rs = mysqli_query($connec,"SELECT MAX(id) AS id FROM a_items");
-   if ($row = mysqli_fetch_row($rs)) {
-	   $idid = trim($row[0]);
-   }
-   $codigo_it=substr((string)$idid+1000001,1);
-   $codfabrica_it=$_GET['xcodfabrica'];
-   $producto_it=$_GET['xproducto'];
-   $grupolista_it=$_GET['xgrupolista'];
-   $marka_it=$_GET['xmarka'];
-   $fabricante_it=$_GET['xfabricante'];
-   $precom_it=$_GET['xprecom'];
-   $monelista_it=$_GET['xmonelista'];      
-   $pv01_it=$_GET['xpv01'];
-   $pv02_it=$_GET['xpv02'];
-   $pr03_it=$_GET['xpv03'];
-   $img_it=$_GET['ximg'];
-   $stockmin_it=$_GET['xstockmin'];
-   $lugar_al_it=$_GET['xlugar_al'];
-   $view01_it=$_GET['xview01'];
-   $view02_it=$_GET['xview02'];
-   $view03_it=$_GET['xview03'];
-   $view04_it=$_GET['xview04'];
-   $time_entrega_it=$_GET['xtime_entrega'];
-   $msjpublico_it=$_GET['xmsjpublico'];
-   $obscompra_it=$_GET['xobscompra'];
-
- // echo  "codigo: ".  $codigo_it."<br>";
- //  echo  "codfab: ".  $codfabrica_it."<br>";
- //  echo  "prod: ".  $producto_it."<br>";
- //  echo  "grupo: ".  $grupolista_it."<br>";
- //  echo  "marka: ".  $marka_it."<br>";
- //  echo  "fab: ".  $fabricante_it."<br>";
- //  echo  "precom: ".  $precom_it."<br>";
- //  echo  "prevn: ".  $preven_it."<br>";
- //  echo  "pje: ".  $pje1_it."<br>";
- //  echo  "img: ".  $img_it."<br>";
- //  echo  "publico: ".  $publico_it."<br>";
- //  echo  "oferta: ".  $oferta_it."<br>";
- //  echo  "mone: ".  $monelista_it."<br>";   
-
-
-   // verifica si hay duplicados ....
-   //$result=mysql_query("select * from a_items where producto_it=$xproducto",$connec);
-   //$total=mysql_num_rows($result);
-   //if ($total==0) {
-	   $xspce="s";
-	   $xum=0;
-	   
-
-     $sql="INSERT INTO a_items (codigo_it,codfabrica_it,producto_it,grupolista_it,marka_it,fabricante_it, precom_it,monelista_it, pv01_it,pv02_it,pv03_it,img_it,stockmin_it,lugar_al_it,view01_it, view02_it,view03_it,view04_it,time_entrega_it,msjpublico_it,obscompra_it) VALUES 
-('$codigo_it','$codfabrica_it','$producto_it','$grupolista_it','$marka_it','$fabricante_it','$precom_it','$monelista_it', '$pv01_it', '$pv02_it','$pv03_it', '$img_it','$stockmin_it','$lugar_al_it','$view01_it','$view02_it','$view03_it','$view04_it','$time_entrega_it','$msjpublico_it','$obscompra_it')";
-     $result=mysqli_query($connec,$sql);
-     if($result){
-	   echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok.</span>");
-     }else{
-	   echo ("<span style='background-color: #CC0000'>XX. ERROR AL REGISTRARSE  XX.</span>");
-     }	
-   //}
-   $xareg="NO";
-   $xmodi="NOOO";
-   $xdelreg="NOOO";
-  
-   
-} // ********++  FFFIIINNN  NUEVO REGISTROS 
-
-// ********++  MODIFICA REGISTRO
-if ($xmodi=="SIMODI") {
-
-   $idmodi=$_GET['xidmodi'];	
-   $xcodfab=$_GET['xcodfab'];
-   $xproducto=$_GET['xproducto'];
-   $xmarka=$_GET['xmarka'];
-  $xventa=$_GET['xventa'];
-   $xcosto=$_GET['xcosto'];
-   $ximg=$_GET['ximg'];
-$sql="UPDATE a_items SET codfabrica_it='$xcodfab',producto_it='$xproducto',producto_it='$xproducto',marka_it='$xmarka',preven_it='$xventa',img_it='$ximg' WHERE id=$idmodi";
-
-   $result=mysqli_query($connec,$sql);
-   if($result){
- 	echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok.</span>");
-   }else{
-	echo ("<span style='background-color: #CC0000'>XX. ERROR AL REGISTRARSE  XX.</span>");
-   }	
-   $xmodi="NO";
-   $xareg="NO";
-   $xdelreg="NOOO";
-
-}  // ********++  FFFIIINNN  MODIFICA
-// ******************* COMO RETORNO *************************
 // ********++  DEL REGISTRO
 if ($xdelreg=="SIDELREG") {
-	
- 
    $idx=$_GET['idx']; 
    $delcod=$_GET['delcod'];
-
-echo ("AHora estor dentro dl IFFFFF". "SIDELREG" . "delcod=====: "." ".$delcod);
-
+   echo ("AHora estor dentro dl IFFFFF". "SIDELREG" . "delcod=====: "." ".$delcod);
    $query = "delete from asociado_51 where cod_aso ='$delcod'";  
    $result = mysqli_query($connec,$query); 
-  
    $xdelreg="NO";
-   $xareg="NO";
-   $xmodi="NOOO";
 }
 ?>
 
-  <table width="926" border="1" align="center" cellpadding="0" cellspacing="0">
+<table width="1090" border="1" align="center" cellpadding="0" cellspacing="5">
   <tr>
-    <td colspan="4" bgcolor="#000066" class="tit_menu_sup"><table width="904" height="63" border="0" cellpadding="0" cellspacing="0">
-      <tr>
-        <td width="121" align="center" valign="top"><img src="iconos/ico_yo_sigachef.png" width="120" height="60"></td>
-        <td width="575"><div align="center"><span class="TITULO_NARANJA">ADMINISTRADOR - ASOCIADOS ***** P. Mi ZONA</span></div></td>
-        <td width="154" align="center" valign="middle"><img src="iconos/logo_cli_120_60_png.png" width="120" height="60"></td>
-        </tr>
-    </table></td>
-    </tr>
+    <td colspan="2" bgcolor="#000066" class="tit_menu_sup"><table width="904" height="63" border="0" cellpadding="0" cellspacing="0">
+       <tr>
+         <td width="121" align="center" valign="top"><img src="iconos/ico_yo_sigachef.png" width="120" height="60"></td>
+         <td width="575"><div align="center"><span class="TITULO_NARANJA">ADMINISTRADOR - ASOCIADOS ***** P. Mi ZONA</span></div></td>
+         <td width="154" align="center" valign="middle"><img src="iconos/logo_cli_120_60_png.png" width="120" height="60"></td>
+       </tr>
+</table>
   <tr class="tit_menu_sup">
-    <td width="679" align="center" bgcolor="#FFFFCC"><table width="912" border="0" cellspacing="0" cellpadding="0">
+    <td width="1076" height="76" align="center" bgcolor="#FFFFCC"><table width="912" border="3" cellspacing="0" cellpadding="5">
       <tr>
         <td width="63" height="17" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=SMRP">TODO</a></td>
         <td width="64" align="center" class="tabla10"><a href="a_list_asociados_admin.php?xgl=Y">FECH.HOY</a></td>
@@ -170,48 +71,25 @@ echo ("AHora estor dentro dl IFFFFF". "SIDELREG" . "delcod=====: "." ".$delcod);
         <td width="89" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=R">R.STORE</a></td>
         <td width="88" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=P">PERFUMERIA</a></td>
         <td width="510" rowspan="2" align="center">
-    <form id="form0" name="form0" method="get" action="a_list_asociados_admin.php">
-          <table width="395" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
-            <tr>
-              <td width="250" height="28" bgcolor="#FFCC66"> Dato a buscar Producto.:
-    <input name="bxproducto" type="text" id="bxproducto" size="25" maxlength="60" onKeyUp="this.value=this.value.toUpperCase();"/></td>
-
-              <td width="139" bgcolor="#FFCC66"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
-               
-              </tr>
-           </table>
-        </form>
-
-        </td>
-      </tr>
-      <tr>
-        <td height="17" colspan="5" align="center" class="tabla10">
-		<? if ($xgl=="SMRD") {
-			 echo "TODO";
-		   }elseif ($xgl=="Y") {
-			  echo "X FECHA HOY";			   
-		   }elseif ($xgl=="M") {
-			 echo "MUJER BONITA";			
-		   }elseif ($xgl=="R"){   
-			 echo "REGAL STORE";
-		   }elseif ($xgl=="D"){   
-			 echo "DELIBEARS";			   
-		   } ?>
-			    </td>
+          <form id="form0" name="form0" method="get" action="a_list_asociados_admin.php">
+            <table width="395" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
+              <tr>
+                <td width="250" height="28" bgcolor="#FFCC66"> Dato a buscar Producto.:
+                  <input name="bxproducto" type="text" id="bxproducto" size="25" maxlength="60" onKeyUp="this.value=this.value.toUpperCase();"/></td>
+                
+                <td width="139" bgcolor="#FFCC66"><input name="Submit3" type="submit" class="Estilo38" value="-&gt; Buscar &lt;-" /></td>
+                
+                </tr>
+              </table>
+            </form>
+          
+          </td>
         </tr>
-    </table></td>
-    <td width="5" bgcolor="#FFFFCC">&nbsp;</td>
-    <td width="390" colspan="2" bgcolor="#FFFFCC"height="76" align="center"><table width="600" border="1">
-      <tr>
-        <td width="64"><a href="../index.php">INDEX</a></td>
-        <td width="188"> <a href="ilbupsil.php">publico</a></td>
-        <td width="283"><a href="mesas.php"><img src="iconos/ico_retornoamesas.png" width="64" height="64" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" /></a></td>
-        <td width="37">&nbsp;</td>
-      </tr>
-    </table></td>
-  </tr>
+    </table>
+    </td>
+    </tr>
   <tr class="tit_menu_sup">
-    <td height="262" colspan="2" rowspan="4" valign="top" bgcolor="#FFFFCC">
+    <td height="262" valign="top" bgcolor="#FFFFCC">
     <!-- INICIO DE MUESTRA ITEMS -->
     <table width="1082" height="80" border="1" cellspacing="0">
       <tr bgcolor="#CCFFFF" class="diez">
@@ -233,12 +111,6 @@ echo ("AHora estor dentro dl IFFFFF". "SIDELREG" . "delcod=====: "." ".$delcod);
         <td width="23" align="center">DEL Reg.</td>
       </tr>
       <?php 
-
-
-  
-//$result=mysql_query("select * from items order by codfabrica_it",$connec);
-
- 
 
 
 if(strlen($bxproducto)==0){
@@ -350,228 +222,13 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 	}
   
 ?>
-    </table> 
-        <!-- FFFIIINNN  MUESTRA ITEMS -->
+    </table>
+    <!-- FFFIIINNN  MUESTRA ITEMS -->
       
        </td>
          
-    <td colspan="2" valign="top" bgcolor="#FFFFCC">
-    <?php
-	if($viewmodi<>"SIVM"){
-	?>
-    <form id="form1" name="form1" method="get" action="a_list_items_admin.php">
-    <table width="290" border="1" class="tablaingrenuevo">
-    <tr>
-      <td colspan="2" bgcolor="#FFCC66"><div align="center"><strong>INGRESO NUEVO ITEM</strong></div></td>
     </tr>
-    <tr>
-      <td bgcolor="#FDF19B"><span class="TITULO">Cod. Item</span></td>
-      <td bgcolor="#FDF19B">&nbsp;</td> <!-- xcod -->
-    </tr>
-    <tr>
-      <td height="26" colspan="2" bgcolor="#FDF19B" class="TITULO">Producto: (Tx. para factura) Ej. MOUSE GAMER A.. <br>  
-        (120 caracteres)</td>
-      </tr>
-    <tr>
-      <td colspan="2" class="TITULO">
-      <input name="xproducto" type="text" id="xproducto" size="45" maxlength="120" onKeyUp="this.value=this.value.toUpperCase();" /></td>
-      </tr>
-    <tr>
-      <td bgcolor="#FDF19B" class="TITULO">Cod. Modelo.</td>
-      <td><span class="TITULO">
-        <input name="xcodfabrica" type="text" id="xcodfabrica" size="25" maxlength="30" onKeyUp="this.value=this.value.toUpperCase();" />
-        </span></td>
-    </tr>
-    <tr>
-      <td bgcolor="#FDF19B" class="TITULO">Marca</td>
-      <td><span class="TITULO">
-        <input name="xmarka" type="text" id="xmarka" size="25" maxlength="30" onKeyUp="this.value=this.value.toUpperCase();" />
-        </span></td>
-    </tr>
-    <tr>
-      <td bgcolor="#FDF19B" class="TITULO">Fabricante</td>
-       <td><span class="TITULO">
-        <input name="xfabricante" type="text" id="xfabricante" size="25" maxlength="30" onKeyUp="this.value=this.value.toUpperCase();" />
-      </span></td>
-
-    </tr>
-    <tr>
-      <td bgcolor="#FDF19B" class="TITULO">Observaciones para el publico.</td>
-      <td><span class="TITULO">
-        <textarea name="xmsjpublico" id="xmsjpublico" cols="27" rows="5"></textarea>
-      </span></td>
-    </tr>
-    <tr>
-      <td colspan="2" class="TITULO">&nbsp;</td>
-      </tr>
-    <tr>
-      <td colspan="2" align="center" bgcolor="#FFFF66" class="TITULO">LOS SIGUIENTES DATOS: (Solo si es necesario)</td>
-      </tr>
-    <tr>
-      <td bgcolor="#FFFF66" class="TITULO">Prec. compra</td>
-      <td><span class="TITULO">
-        <input name="xprecom" type="text" id="xprecom" size="10" maxlength="10" onKeyUp="this.value=this.value.toUpperCase();" />
-      </span></td>
-    </tr>
-    <tr>
-      <td bgcolor="#FFFF66" class="TITULO">Moneda &quot;S&quot; - &quot;D&quot;</td>
-      <td><span class="TITULO">
-        <input name="xmonelista" type="text" id="xmonelista" size="1" maxlength="1" onKeyUp="this.value=this.value.toUpperCase();" value="S" />
-        </span></td>
-    </tr>
-    <tr>
-      <td colspan="2" bgcolor="#FFFF66" class="TITULO">La Imagen (JPG 120 X 73) en la orpcion: [Modificar]</td>
-    </tr>
-    <tr>
-      <td colspan="2" bgcolor="#FDF19B" class="TITULO">
-        <input name="ximg" type="text" id="ximg" size="45" maxlength="60" /></td>
-      </tr>
-    <tr>
-      <td bgcolor="#FFFF66" class="TITULO">Precio Venta 01</td>
-      <td><span class="TITULO">
-        <!-- <input name="xpreven" type="text" id="xpreven" size="15" maxlength="15" /> -->
- 
-        <input name="xpv01" type="text" id="xpv01" size="10" maxlength="10" onKeyUp="this.value=this.value.toUpperCase();" />
-      </span></td>
-    </tr>
-    <tr>
-      <td bgcolor="#FFFF66"><span class="TITULO">Observaciones para el administrador</span></td>
-      <td><span class="TITULO">
-        <textarea name="xobscompra" id="xobscompra" cols="27" rows="5"></textarea>
-      </span></td>
-    </tr>
-    <tr>
-      <td colspan="2"><table width="306" border="1">
-        <tr>
-          <td width="120" rowspan="2" align="center" bgcolor="#FFFF66" class="tabla10">S SR M MR P PR SMRP</td>
-          <td width="170" class="tabla10">Syscom, M.Bonita, Regalos, Perfume</td>
-        </tr>
-        <tr>
-          <td><input name="xgrupolista" type="text" id="xgrupolista" size="4" maxlength="4" onKeyUp="this.value=this.value.toUpperCase();" /></td>
-        </tr>
-      </table></td>
-      </tr>
-    <tr>
-      <td width="98"><span class="TITULO">
-     <input type="hidden" name="xpv02" value=0/>
-     <input type="hidden" name="xpv03" value=0/>
-     <input type="hidden" name="xstockmin" value=0/>
-     <input type="hidden" name="xlugar_al" value=""/>
-     <input type="hidden" name="xview01" value="S"/>
-     <input type="hidden" name="xview02" value=""/>
-     <input type="hidden" name="xview03" value=""/>
-     <input type="hidden" name="xview04" value=""/>
-     <input type="hidden" name="xtime_entrega" value=""/>
-     <input type="hidden" name="xareg" value="<?php echo("SIAREG"); ?>" />
-     <input type="hidden" name="xmodi" value=NOOO/>
-     <input type="hidden" name="xcosto" value=NOOO/>
-     <input type="hidden" name="xdelreg" value=NOOO/>
-     <input type="hidden" name="viewmodi" value=NOOO/>
-        <input name="Submit" type="submit" class="Estilo38" value="-&gt; Guardar &lt;-" />
-      </span></td>
-      <td width="180"><span class="TITULO">
-        <input name="Submit2" type="reset" class="Estilo38" value="Borrar" />
-      </span></td>
-    </tr>
-  </table>
-</form>
-</td>
-    </tr>
-  <tr class="tit_menu_sup">
-    <td colspan="2" valign="top" bgcolor="#FFFFCC">
-          <?php 
-// ************************  VER FORMULARIO DE MODIFICAR 
-} elseif($viewmodi=="SIVM"){
-   $idx=$_GET['idx']; 
-
-$result=mysqli_query($connec,"select * from a_items where id=$idx");	
-
-$tabla = mysqli_fetch_array( $result );
-		$idmodi=$tabla["id"];
-		$codigo_it=$tabla["codigo_it"];
-		$codfabrica_it=$tabla["codfabrica_it"];
-		$producto_it=$tabla["producto_it"];
-		$marka_it=$tabla["marka_it"];
-		$precom_it=$tabla["precom_it"];
-		$preven_it=$tabla["preven_it"];
-		$img_it=$tabla["img_it"];
-
-
-?>
-    
-        <form id="form1" name="form1" method="get" action="a_list_items_admin.php">
-          <table width="290" border="1" class="tablaingrenuevo">
-            <tr>
-              <td colspan="2" bgcolor="#FF0000"><div align="center"><strong>MODIFICA  ITEM</strong></div></td>
-            </tr>
-            <tr>
-              <td bgcolor="#FDF19B"><span class="TITULO">Cod. Item</span></td>
-              <td bgcolor="#FDF19B"><?php echo($codigo_it); ?></td>
-              <!-- xcod -->
-            </tr>
-            <tr>
-              <td colspan="2" bgcolor="#FDF19B"><span class="TITULO">Grupo: Ej. 100, 200, 300, 400, 500</span></td>
-            </tr>
-            <tr>
-              <td colspan="2"><span class="TITULO">
-                <input name="xcodfab" type="text" id="xcodfab" size="30" maxlength="30" value="<?php echo($codfabrica_it); ?>" onKeyUp="this.value=this.value.toUpperCase();"  />
-              </span></td>
-            </tr>
-            <tr>
-              <td colspan="2" bgcolor="#FDF19B" class="TITULO">Producto</td>
-            </tr>
-            <tr>
-              <td colspan="2"><span class="TITULO">
-                <input name="xproducto" type="text" id="xproducto" size="35" maxlength="60" value="<?php echo($producto_it); ?>" onKeyUp="this.value=this.value.toUpperCase();"  />
-
-              </span></td>
-            </tr>
-            <tr>
-              <td colspan="2" bgcolor="#FDF19B"><span class="TITULO">Insumos = PRIMA</span></td>
-            </tr>
-            <tr>
-              <td colspan="2"><span class="TITULO">
-                <input name="xmarka" type="text" id="xmarka" size="30" maxlength="30" value="<?php echo($marka_it); ?>" onKeyUp="this.value=this.value.toUpperCase();"  />
-              </span></td>
-            </tr>
-            <tr>
-              <td colspan="2" bgcolor="#FDF19B" class="TITULO">Imagen (JPG 120 X 73)</td>
-            </tr>
-            <tr>
-              <td colspan="2" class="TITULO"><input name="ximg" type="text" id="ximg" size="45" maxlength="60" value="<?php echo($img_it); ?>"/></td>
-            </tr>
-            <tr>
-              <td bgcolor="#FDF19B" class="TITULO">P.Venta:</td>
-              <td><span class="TITULO">
-                <input name="xventa" type="text" id="xventa" size="15" maxlength="15" value="<?php echo($preven_it); ?>" />
-              </span></td>
-            </tr>
-            <tr>
-              <td width="98"><span class="TITULO">
-                <input type="hidden" name="xmodi" value="<?php echo("SIMODI"); ?>" />
-                <input type="hidden" name="xidmodi" value="<?php echo($idmodi); ?>" />
-                <input type="hidden" name="xcosto" value="<?php echo($precom_it); ?>" />
-                <input type="hidden" name="xdelreg" value=NOOO/>
-                <input type="hidden" name="xareg" value=NOOO/>
-                <input type="hidden" name="viewmodi" value=NOOO/>
-                <input name="Submit3" type="submit" class="Estilo38" value="-&gt; Guardar &lt;-" />
-              </span></td>
-              <td width="180"><span class="TITULO">
-                <input name="Submit3" type="reset" class="Estilo38" value="Borrar" />
-              </span></td>
-            </tr>
-          </table>
-        </form>
-      </td>
-  </tr>
-  <tr class="tit_menu_sup">
-    <td colspan="2" valign="top" bgcolor="#FFFFCC"><a href="img_items/n_subir_xfile.php?id_img=<?php echo ($idmodi); ?>">ir</a></td>
-  </tr>
-  <tr class="tit_menu_sup">
-    <td colspan="2" valign="top" bgcolor="#FFFFCC">ññ</td>
-  </tr>
   
-  <?php  } // ************************  FFFIIIINNNN FORMULARIO DE MODIFICAR  ?>
   
 </table>
 
