@@ -190,14 +190,14 @@ $total=mysqli_num_rows($result);
 <table width="902" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td height="77" align="center" class="tit_menu_sup">POR MI ZONA</td>
-    </tr>
+  </tr>
   <tr class="tit_menu_sup">
     <td width="898" height="141" align="center" bgcolor="#999999"><table width="788" border="0" cellspacing="0" cellpadding="0">
         <tr>
           <td height="99" colspan="2" align="center" bgcolor="#999999" class="tabla10" ><img src="../static/imgs/Logos/logo_pormizona_borde_bl.png" width="285" height="86"></td>
         </tr>
         <tr>
-        <td width="255" height="71" align="center" bgcolor="#999999" class="tabla10" >
+        <td width="200" height="35" align="center" bgcolor="#999999" class="tabla10" >
              <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
 	 	           SU LATITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
              <? } else { ?>
@@ -205,7 +205,7 @@ $total=mysqli_num_rows($result);
  		     <? } ?>
 
         </td>
-        <td width="533" align="center" bgcolor="#999999" class="tabla10" >
+        <td width="251" rowspan="2" align="center" bgcolor="#999999" class="tabla10" >
           <form id="form0" name="form0" method="get" action="buscar_pormizona.php">
             <table width="371" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
               <tr>
@@ -217,15 +217,23 @@ $total=mysqli_num_rows($result);
                 </tr>
               </table>
             </form>
-
         </td>
         </tr>
+        <tr>
+          <td height="36" align="center" bgcolor="#999999" class="tabla10" >
+              <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
+	               SU LONGITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
+             <? } else { ?>
+			        SU LONGITUD ES: <? echo $longitud; ?> <br>
+ 		     <? } ?>
+          </td>
+        </tr>
     </table></td>
-    </tr>
+  </tr>
   <tr class="tit_menu_sup">
     <td height="188" valign="top" bgcolor="#FFFFCC">
       <!-- INICIO DE MUESTRA ITEMS -->
-      <table width="891" height="155" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" >
+      <table width="891" height="155" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" >
         
 		
 		
@@ -327,7 +335,7 @@ while ($tabla=mysqli_fetch_array($result)){
       </table> 
       <!-- FFFIIINNN  MUESTRA ITEMS -->
       
-      </td>
+    </td>
   </tr>
   
 </table>
