@@ -187,25 +187,17 @@ $total=mysqli_num_rows($result);
 
 
 ?>
-<table width="902" border="1" align="center" cellpadding="0" cellspacing="0">
+<table width="902" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td height="77" align="center" class="tit_menu_sup">POR MI ZONA</td>
     </tr>
   <tr class="tit_menu_sup">
-    <td width="898" height="141" align="center" bgcolor="#0099CC"><table width="788" border="0" cellspacing="0" cellpadding="0">
+    <td width="898" height="141" align="center" bgcolor="#999999"><table width="788" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td height="99" colspan="2" align="center" bgcolor="#0099CC" class="tabla10" ><img src="../static/imgs/Logos/logo_pormizona_borde_bl.png" width="285" height="86"></td>
-          <td width="337" rowspan="3" align="center" bgcolor="#000000"  class="tabla10" >
-          <? if ($xxxciudad=="SI") { ?>
-	        <img src="img_ciudades/<? echo ($imgciudad) ?>" width="300" height="225">
-		  <? } else {   ?>
-            <iframe id="mapa" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d402.28170424441254!2d<?php echo ($longitud) ?>!3d<?php echo ($latitud) ?>!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe"> </iframe>		
-          <? } ?>  
-            
-          </td>
+          <td height="99" colspan="2" align="center" bgcolor="#999999" class="tabla10" ><img src="../static/imgs/Logos/logo_pormizona_borde_bl.png" width="285" height="86"></td>
         </tr>
         <tr>
-        <td width="200" height="71" align="center" bgcolor="#0099CC" class="tabla10" >
+        <td width="255" height="71" align="center" bgcolor="#999999" class="tabla10" >
              <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
 	 	           SU LATITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
              <? } else { ?>
@@ -213,19 +205,7 @@ $total=mysqli_num_rows($result);
  		     <? } ?>
 
         </td>
-        <td width="251" align="center" bgcolor="#0099CC" class="tabla10" >
-        
-             <? if(strlen($longitud)==0 OR strlen($latitud)==0){	?>	
-	               SU LONGITUD ES:  <img src="iconos/alerta.png" width="25" height="22"> <br>
-             <? } else { ?>
-			        SU LONGITUD ES: <? echo $longitud; ?> <br>
- 		     <? } ?>
-   
-        </td>
-        </tr>
-      <tr>
-        
-        <td height="72" colspan="2" align="center" bgcolor="#0099CC" class="tabla10" >
+        <td width="533" align="center" bgcolor="#999999" class="tabla10" >
           <form id="form0" name="form0" method="get" action="buscar_pormizona.php">
             <table width="371" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
               <tr>
@@ -237,8 +217,9 @@ $total=mysqli_num_rows($result);
                 </tr>
               </table>
             </form>
-          </td>
-      </tr>
+
+        </td>
+        </tr>
     </table></td>
     </tr>
   <tr class="tit_menu_sup">
