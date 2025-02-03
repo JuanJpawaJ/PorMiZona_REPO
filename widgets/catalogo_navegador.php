@@ -27,16 +27,15 @@
           
            <li><a href="<?php echo $agregado_en_cab?>#syscomputer"><img src="<?php echo $agregado_en_cab?>assets/img/imagenes_index/bot_inicio_blanco.png" alt=""></a></li> -->
 
-    <li><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>" ><img src="<?php echo $agregado_en_cab?>assets/img/imagenes_index/bot_inicio_blanco.png" alt=""></a></li>
+    <li><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>" ><img src="<?php echo $agregado_en_cab?>assets/img/imagenes_index/bot_inicio_blanco.png" alt="" class="logo_borde_bl"></a></li>
+      
            
-          
            
-           
-           <li><a href="../siga_catalogo/a_lisgeneral.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo($rsocial_aso); ?>&xlogo=<? echo ($logo_aso); ?>"><img src="<?php echo $agregado_en_cab?>assets/img/imagenes_index/bot_productos_blanco.png" alt=""></a></li>
+           <li><a href="../siga_catalogo/a_lisgeneral.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo($rsocial_aso); ?>&xlogo=<? echo ($logo_aso); ?>"><img src="<?php echo $agregado_en_cab?>assets/img/imagenes_index/bot_productos_blanco.png" alt="" class="logo_borde_bl"></a></li>
  
 
  
-           <li><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>&#map"><img src="<?php echo $agregado_en_cab?>assets/img/imagenes_index/bot_ubicacion_blanco.png" alt=""></a></li>
+           <li><a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>&#map"><img src="<?php echo $agregado_en_cab?>assets/img/imagenes_index/bot_ubicacion_blanco.png" alt="" class="logo_borde_bl"></a></li>
 
        
        

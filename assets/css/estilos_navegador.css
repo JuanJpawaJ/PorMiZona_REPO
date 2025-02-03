@@ -40,7 +40,11 @@
     --color_grises_-2:#F7F7F7;
 }
 
-
+ .logo_borde_bl {
+    border: 5px solid white; /* Cambia el grosor del borde según sea necesario */
+    padding: 5px; /* Espacio entre la imagen y el borde */
+    background-color: white; /* Fondo blanco para evitar que la transparencia se vea negra */
+ }
 
 .navegador{
     background-color:#CCC;
