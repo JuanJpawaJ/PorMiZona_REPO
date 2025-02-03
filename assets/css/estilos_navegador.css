@@ -70,9 +70,9 @@
 
     .navegador > img.logo_principal{
         height: 65px;
-            /* filter: drop-shadow(0 0 3px white); */
+            filter: drop-shadow(0 0 10px white); 
 
-            outline: 3px solid white;
+            /* outline: 3px solid white;
             outline-offset: -3px; /* Ajusta este valor para obtener el efecto deseado */
             background-color: transparent;
 
