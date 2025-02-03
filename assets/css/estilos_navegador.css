@@ -40,14 +40,9 @@
     --color_grises_-2:#F7F7F7;
 }
 
- .logo_borde_bl {
-    border: 5px solid white; /* Cambia el grosor del borde según sea necesario */
-    padding: 5px; /* Espacio entre la imagen y el borde */
-    background-color: white; /* Fondo blanco para evitar que la transparencia se vea negra */
- }
-
+ 
 .navegador{
-    background-color:#000;
+    background-color: #999;
     height:100px;
     display: flex;
     align-items: center;
@@ -71,23 +66,15 @@
     .navegador > img.logo_principal{
         height: 65px;
              /*filter: drop-shadow(0 0 10px white); 
-
             outline: 3px solid white;
             outline-offset: -3px; /* Ajusta este valor para obtener el efecto deseado */
-
-
-
-            filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8)); /* Ajusta los valores aquí */
-            background-color: transparent;
-      
-
-
-
+          /*   filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8)); /* Ajusta los valores aquí */
+          /*   background-color: transparent;*/
     }
 
     .navegador > .cont_lista_elementos > ul{
         display: flex;
-        background-color: #000;
+        background-color: #999;
         gap:3rem;
         
     }
