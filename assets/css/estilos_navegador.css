@@ -71,7 +71,7 @@
 
     .navegador > .cont_lista_elementos > ul{
         display: flex;
-        background-color: var(--color_azul_oscuro_0);;
+        background-color: #CCC;
         gap:3rem;
         
     }
