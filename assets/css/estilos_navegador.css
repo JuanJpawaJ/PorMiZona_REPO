@@ -47,7 +47,7 @@
  }
 
 .navegador{
-    background-color:--color_azul_oscuro_0;
+    background-color:#000;
     height:100px;
     display: flex;
     align-items: center;
@@ -75,7 +75,7 @@
 
     .navegador > .cont_lista_elementos > ul{
         display: flex;
-        background-color: --color_azul_oscuro_0;
+        background-color: #000;
         gap:3rem;
         
     }
