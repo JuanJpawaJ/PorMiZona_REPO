@@ -220,12 +220,12 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
                 <h3>¿Quienes somos?</h3>
                 <p> <? echo $msjpublico_aso ?> </p>
                 <div class="contenedor_botones_de_contacto">
-                    <a href="https://wa.me/<? echo '+51' . $telf2_aso ?>" target="_blank">
+                    <a href="https://wa.me/<? echo '+51' . $telf1_aso ?>" target="_blank">
                         <p>Escribir por Whatsapp</p>
                         <img src="assets/img/imagenes_index/logo_whatsapp_blanco.png" alt="">
                     </a>
 
-                    <a href="tel:<? echo '+51' . $telf2_aso ?>">
+                    <a href="tel:<? echo '+51' . $telf1_aso ?>">
                         <p>Llamar por teléfono</p>
                         <img src="assets/img/imagenes_index/logo_llamada_negro.png" alt="">
                     </a>
