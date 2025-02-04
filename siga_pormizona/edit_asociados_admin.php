@@ -93,7 +93,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
            </div>
            <br/>
            
-           <div> <a href="geo_mendoza34.html?xcod=<? echo $cod_aso; ?>"><img src="imagenes/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
+           <div> <a href="geo_mendoza34.html?xcod=<? echo $cod_aso; ?>"><img src="iconos/bot_obligatorio_azu.png" width="352" height="44" style="border:0;" onMouseOver="this.style.border='solid 3px #c2bdb8';" onMouseOut="this.style.border=0;" ></a>
            </div>
                            
            <div>
@@ -218,14 +218,14 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
      </td>
    </tr>
    <tr>
-     <td>Correo electrónico</td>
+     <td bgcolor="#66FFCC">Correo electrónico</td>
      <td>
                <input type="text" class="campo_texto" name="xemail" value="<?php echo($email_aso); ?>"> 
     
      </td>
    </tr>
    <tr>
-     <td>Crear una contraseña (Max.10 - Utilice símbolos, mayúsculas y minúsculas)</td>
+     <td bgcolor="#66FFCC">Crear una contraseña (Max.10 - Utilice símbolos, mayúsculas y minúsculas)</td>
      <td>
        <input type="text"  class="campo_texto" name="xpass" value="<?php echo($pass_aso); ?>"> 
        
@@ -267,14 +267,14 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
      </td>
    </tr>
    <tr>
-     <td>Móvil</td>
+     <td>Telf1 (WEB)</td>
      <td>
                    <input type="text" class="campo_texto form_telef" name="xtelf1" value="<?php echo($telf1_aso); ?>"> 
      
      </td>
    </tr>
    <tr>
-     <td>Fijo</td>
+     <td>Telf2</td>
      <td>
                    <input type="text" class="campo_texto form_telef" name="xtelf2" value="<?php echo($telf2_aso); ?>"> 
      
@@ -381,37 +381,32 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
     
      </td>
    </tr>
-   <tr>
-     <td>Msj público</td>
-     <td>
-    <!--  <input type="text" class="campo_texto" name="xmsjpublico" value="<?php //echo($msjpublico_aso); ?>">  -->
-      <textarea class="campo_texto" name="xmsjpublico" rows="5" cols="30"><?php echo($msjpublico_aso); ?></textarea>
-
-
-
-     
-     </td>
-   </tr>
       <tr>
-     <td>Contrato SOCIO-CATALOGO S - N</td>
-     <td><input type="text"  class="campo_texto" name="xusuario" value="<?php echo($usua_aso); ?>"></td>
-   </tr>
+        <td bgcolor="#FFFFCC">WEB Contrato SOCIO-CATALOGO S - N</td>
+        <td bgcolor="#FFFFCC"><input type="text"  class="campo_texto" name="xusuario" value="<?php echo($usua_aso); ?>"></td>
+    </tr>
 
    <tr>
-     <td><p>Observaciones SOCIO CATALOGO </p></td>
-     <td>
+     <td bgcolor="#FFFFCC"><p>WEB Observaciones SOCIO CATALOGO </p></td>
+     <td bgcolor="#FFFFCC">
       <textarea class="campo_texto" name="xobsinterno" rows="5" cols="30"><?php echo($obsinterno_aso); ?></textarea>
      </td>
    </tr>
       <tr>
-     <td>Si CABECERA slide View4</td>
+     <td bgcolor="#FFFFCC">WEB Si CABECERA slide View4</td>
      <td>
       <input type="text" class="campo_texto" name="xview4" value="<?php echo($view04_aso); ?>"> 
 
      </td>
    </tr>
 
-   <tr>
+    <tr>
+        <td bgcolor="#FFFFCC">WEB Quienes Somos</td>
+        <td>
+           <textarea class="campo_texto" name="xmsjpublico" rows="5" cols="30"><?php echo($msjpublico_aso); ?></textarea>
+        </td>
+    </tr>
+    <tr>
      <td>fecha publicación</td>
      <td>
      <?php echo($date_aso); ?> 
