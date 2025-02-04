@@ -30,8 +30,59 @@
   $xgl = $_GET['xgl'];
   $pagina = $_GET['pagina'];
   $cod_aso = $_GET['xcod'];
-  $rsocial_aso = $_GET['xrsocial'];
-  $logo_aso = $_GET['xlogo'];
+  
+
+$result=mysqli_query($connec,"select * from asociado_51 where cod_aso='$cod_aso'");
+$total=mysqli_num_rows($result);
+$tabla = mysqli_fetch_array( $result );
+  
+  $xid=$tabla["id"];
+$cod_aso=$tabla["cod_aso"];
+
+$pais_aso=$tabla['pais_aso'];
+$rsocial_aso=$tabla['rsocial_aso'];
+$direccion_aso=$tabla['direccion_aso'];
+$distrito_aso=$tabla['distrito_aso'];
+$provincia_aso=$tabla['provincia_aso'];
+$departamento_aso=$tabla['departamento_aso'];
+
+    $resultaso=mysqli_query($connec,"SELECT * FROM estado_51   where cod_est='$departamento_aso'");
+	$tablaaso =mysqli_fetch_array( $resultaso );
+	$departamentotxt_aso=$tablaaso["estado_est"];
+
+
+$referencia_aso=$tabla['referencia_aso'];
+$gironeg_aso=$tabla["gironeg_aso"];
+$telf1_aso=$tabla['telf1_aso'];
+$telf2_aso=$tabla['telf2_aso'];
+$email_aso=$tabla['email_aso'];
+$categoria_aso=$tabla['categoria_aso'];
+$productos_aso=$tabla['productos_aso'];
+$latitud_aso=$tabla['latitud_aso'];
+$longitud_aso=$tabla['longitud_aso'];	
+$favicon_aso=$tabla["favicon_aso"];
+ if(strlen($favicon_aso)==0) {
+	$favicon_aso="f_pmz_bl.png";
+ }
+$date_aso=$tabla["date_aso"];	
+$publicidad_aso=$tabla["publicidad_aso"];	
+$grupolista_aso=$tabla["grupolista_aso"];
+$img1_aso=$tabla["img1_aso"];
+$img2_aso=$tabla["img2_aso"];
+$logo_aso=$tabla["logo_aso"];
+$view01_aso=$tabla["view01_aso"];
+$view02_aso=$tabla["view02_aso"];
+$view03_aso=$tabla["view03_aso"];
+$view04_aso=$tabla["view04_aso"]; // cabecera S - N
+$link01_aso=$tabla["link01_aso"];
+$link02_aso=$tabla["link02_aso"];
+$msjpublico_aso=$tabla["msjpublico_aso"];
+$obsinterno_aso=$tabla["obsinterno_aso"];
+
+
+
+  
+  
 
   $agregado_en_cab = "../";
   include '../widgets/catalogo_navegador.php';
