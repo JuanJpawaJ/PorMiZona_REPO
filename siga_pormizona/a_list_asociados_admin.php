@@ -67,9 +67,6 @@ if ($xdelreg=="SIDELREG") {
       <tr>
         <td width="63" height="17" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=SMRP">TODO</a></td>
         <td width="64" align="center" class="tabla10"><a href="a_list_asociados_admin.php?xgl=Y">ULTIMOS</a></td>
-        <td width="98" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=M">M.BONITA</a></td>
-        <td width="89" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=R">R.STORE</a></td>
-        <td width="88" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=P">PERFUMERIA</a></td>
         <td width="255" rowspan="2" align="center">
           <form id="form0" name="form0" method="get" action="a_list_asociados_admin.php">
             <table width="395" border="1" align="center" cellpadding="0" cellspacing="0" class="tablaingrenuevo">
@@ -84,7 +81,7 @@ if ($xdelreg=="SIDELREG") {
             </form>
           
           </td>
-        <td width="255" rowspan="2" align="center"><a href="formingre1.php">BOTON ASOCIADOS</a></td>
+        <td width="255" rowspan="2" align="center"><a href="formingre1.php">INGRESO ASOCIADOS</a></td>
         </tr>
     </table>
     </td>
