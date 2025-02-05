@@ -66,7 +66,7 @@ if ($xdelreg=="SIDELREG") {
     <td width="1076" height="76" align="center" bgcolor="#FFFFCC"><table width="912" border="3" cellspacing="0" cellpadding="5">
       <tr>
         <td width="63" height="17" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=SMRP">TODO</a></td>
-        <td width="64" align="center" class="tabla10"><a href="a_list_asociados_admin.php?xgl=Y">FECH.HOY</a></td>
+        <td width="64" align="center" class="tabla10"><a href="a_list_asociados_admin.php?xgl=Y">ULTIMOS</a></td>
         <td width="98" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=M">M.BONITA</a></td>
         <td width="89" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=R">R.STORE</a></td>
         <td width="88" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=P">PERFUMERIA</a></td>
@@ -118,7 +118,7 @@ if(strlen($bxproducto)==0){
         $result=mysqli_query($connec,"select * from asociado_51 order by rsocial_aso");
 	}elseif ($xgl=="Y") {
 		echo ( "YA ESTOY AQUIIIIIIIIIIIIIIII YYY");
-        $result=mysqli_query($connec,"select * from asociado_51 order by datehoy_aso DESC");
+        $result=mysqli_query($connec,"select * from asociado_51 order by cod_aso DESC");
 	}else{
 		$result=mysqli_query($connec,"select * from asociado_51 order by rsocial_aso");
         //$result=mysqli_query($connec,"select * from asociado_51 where grupolista_it like '%$xgl%' order by rsocial_aso");
