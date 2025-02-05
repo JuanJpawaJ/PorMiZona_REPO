@@ -85,7 +85,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <tr class="tit_menu_sup">
     <td width="1076" height="76" align="center" bgcolor="#FFFFCC"><table width="912" border="3" cellspacing="0" cellpadding="5">
       <tr>
-        <td width="63" align="center" class="tabla10">DEL</td>
         <td width="63" height="17" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=SMRP">TODO</a></td>
         <td width="64" align="center" class="tabla10"><a href="a_list_asociados_admin.php?xgl=Y">ULTIMOS</a></td>
         <td width="255" rowspan="2" align="center">
