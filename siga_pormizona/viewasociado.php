@@ -202,13 +202,13 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         <td width="815" height="142" colspan="2" align="center" valign="middle" background="iconos/f_cabview.jpg" >
 		<table width="772" border="0" cellspacing="0" cellpadding="0">
 		  <tr>
-		    <td width="166" height="84"
+		    <td width="129" height="84"
 			
-                 rowspan="4" align="center" valign="middle"><img src="img_asociados/<? echo($favicon_aso); ?>" width="100" height="100">
+                 rowspan="3" align="center" valign="middle"><img src="img_asociados/<? echo($favicon_aso); ?>" width="100" height="100">
 			
 					
 			</td>
-		    <td width="547" height="77">
+		    <td width="397" height="77">
 <?   
   	if(strlen(trim($logo_aso))==0) { ?>
        <span class="logo_aso"><? echo ($rsocial_aso); ?></span>		
@@ -219,9 +219,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 			
 			
 			</td>
-	      </tr>
-		  <tr>
-		    <td class="giro"><? echo $gironeg_aso; ?></td>
+		    <td width="246" class="giro"><? echo $gironeg_aso; ?></td>
 	      </tr>
 		  </table></td>
       </tr>
