@@ -43,14 +43,34 @@ $viewmodi=$_GET['viewmodi'];
 $xgl=$_GET['xgl']; //CMRD
 		
 // ********++  DEL REGISTRO
+$seguro="N";
 if ($xdelreg=="SIDELREG") {
-   $idx=$_GET['idx']; 
-   $delcod=$_GET['delcod'];
-   echo ("AHora estor dentro dl IFFFFF". "SIDELREG" . "delcod=====: "." ".$delcod);
-   $query = "delete from asociado_51 where cod_aso ='$delcod'";  
-   $result = mysqli_query($connec,$query); 
-   $xdelreg="NO";
-}
+	
+	echo "ESTA SEGURO DE ELIMINAR ESTE REGSTRO? S - N ";
+    echo '<form method="POST">
+            <label for="respuesta">¿Es "S" o "N"?</label>
+            <input type="text" id="respuesta" name="respuesta" value="N" >
+            <input type="submit" value="Enviar">
+          </form>';
+    }
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $respuesta = $_POST["respuesta"];
+    
+    if ($respuesta == "N") {
+	    // Cambiar el contenido de la variable y continuar con el programa
+        $xdelreg = "NOOOO";
+        echo "Continuando con el programa...";
+    } else {	
+       $idx=$_GET['idx']; 
+       $delcod=$_GET['delcod'];
+       echo ("AHora estor dentro dl IFFFFF". "SIDELREG" . "delcod=====: "." ".$delcod);
+       $query = "delete from asociado_51 where cod_aso ='$delcod'";  
+       $result = mysqli_query($connec,$query); 
+       $xdelreg="NO";
+       echo "El registro ha sido borrado.";
+     }	
+ }
 ?>
 
 <table width="1090" border="1" align="center" cellpadding="0" cellspacing="5">
@@ -65,6 +85,7 @@ if ($xdelreg=="SIDELREG") {
   <tr class="tit_menu_sup">
     <td width="1076" height="76" align="center" bgcolor="#FFFFCC"><table width="912" border="3" cellspacing="0" cellpadding="5">
       <tr>
+        <td width="63" align="center" class="tabla10">DEL</td>
         <td width="63" height="17" align="center" class="tabla10"><a href="a_list_items_admin.php?xgl=SMRP">TODO</a></td>
         <td width="64" align="center" class="tabla10"><a href="a_list_asociados_admin.php?xgl=Y">ULTIMOS</a></td>
         <td width="255" rowspan="2" align="center">
