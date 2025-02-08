@@ -179,7 +179,7 @@ if ($whatsapp=="SIWHATSAPP") {
 
     //$whatsapp_url = "https://wa.me/$whatsapp_number?text=Hola%20deseo%20información%20de:%20$link target='_blank'"; ?>
 
-      <a href="https://wa.me/<? echo $whatsapp_number; ?>?CATALOGO&?text=<?php echo ($link); ?>" target="_blank" >
+      <a href="https://wa.me/<? echo '51'.$whatsapp_number; ?>?CATALOGO&text=<?php echo ($link); ?>" </a>
 
 
  <?   //echo "<script>window.location.href = '$whatsapp_url';</script>";
