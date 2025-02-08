@@ -175,14 +175,12 @@ if ($xdelreg=="SIDELREG") {
 if ($whatsapp=="SIWHATSAPP") {
     $whatsapp_number = $_POST['whatsapp_number'];
     $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=" . $cod_aso . "&xrsocial=" . $rsocial_aso;
-    //$whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" . "CATALOGO: ".$rsocial_aso." ".$link;
+    $whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" . "CATALOGO: ".$rsocial_aso." ".$link;
 
-    //$whatsapp_url = "https://wa.me/$whatsapp_number?text=Hola%20deseo%20información%20de:%20$link target='_blank'"; ?>
-
-      <a href="https://wa.me/<? echo '51'.$whatsapp_number; ?>?CATALOGO&text=<?php echo ($link); ?>" </a>
+    //$whatsapp_url = "https://wa.me/$whatsapp_number?text=Hola%20deseo%20información%20de:%20$link target='_blank'"; 
 
 
- <?   //echo "<script>window.location.href = '$whatsapp_url';</script>";
+   echo "<script>window.location.href = '$whatsapp_url';</script>";
 	
 	
 	
