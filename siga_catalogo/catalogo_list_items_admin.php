@@ -171,6 +171,7 @@ if ($xdelreg=="SIDELREG") {
 
 
 
+
 // INICIO: SOLO PARA LOS BOTONES
 if ($whatsapp=="SIWHATSAPP") {
     $whatsapp_number = $_POST['whatsapp_number'];
