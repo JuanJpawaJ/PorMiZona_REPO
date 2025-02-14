@@ -179,11 +179,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Continuando con el programa...";
     } else {	
        $idx=$_GET['idx']; 
+	   $imgx_it=$_GET['ximg'];
        $delcod=$_GET['delcod'];
-       echo ("AHora estor dentro dl IFFFFF". "SIDELREG" . "delcod=====: "." ".$delcod);
+       //echo ("AHora estor dentro dl IFFFFF". "SIDELREG" . "delcod=====: "." ".$delcod);
        $query = "delete from catalogo_productos where codigo_it ='$delcod'";  
-
        $result = mysqli_query($connec,$query); 
+	   
+	   $ruta_archivo = "img_catacli/" . $imgx_it;
+	   // Verifica si el archivo existe antes de intentar eliminarlo
+	   if (file_exists($ruta_archivo)) {
+    		// Intenta eliminar el archivo
+    		if (unlink($ruta_archivo)) {
+        		echo "El archivo ha sido eliminado correctamente.";
+    		} else {
+        		echo "No se pudo eliminar el archivo.";
+    		}
+	   } else {
+    		echo "El archivo no existe.";
+	   }	   
        $xdelreg="NO";
        echo "El registro ha sido borrado.";
      }	
@@ -400,7 +413,7 @@ while ($tabla=mysqli_fetch_array($result)){
         <td align="center"><a href="catalogo_edit_items.php?idx=<?php  echo($id); ?>&xview=<?php  echo("ADMIN"); ?>&xcod=<?php  echo($cod_aso); ?>&xareg=NNOOO&xmodi=NOOOOO&xdelreg=NOOOOO"><img src="iconos/ico_editar.png" width="30" height="30"></a></td>
         <td bgcolor="#FFCC66" align="center"><a href="img_catacli/n_subir_xfile.php?id_img=<?php echo($id); ?>&xcod=<?php echo($cod_aso); ?>&xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?> "><img src="iconos/ico_imagen.png" width="30" height="30"></a></td>
 
-        <td bgcolor="#FFCC66" align="center"><a href="catalogo_list_items_admin.php?delcod=<?php echo($codigo_it);?>&xdelreg=<?php echo("SIDELREG");?>&xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&idx=NOOOO">X</a></td>
+        <td bgcolor="#FFCC66" align="center"><a href="catalogo_list_items_admin.php?delcod=<?php echo($codigo_it);?>&xdelreg=<?php echo("SIDELREG");?>&xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&ximg=<?php echo($img_it); ?>&xareg=NNOOO&idx=NOOOO">X</a></td>
       </tr>
       <?php 
 	}
