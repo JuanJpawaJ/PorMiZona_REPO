@@ -158,17 +158,38 @@ if ($xareg=="SIAREG") {
 
 
 // ********++  DEL REGISTRO
+
+$seguro="N";
 if ($xdelreg=="SIDELREG") {
 	
-   //$idx=$_GET['idx']; // CREO QUE ESTA DEM'AS
-   $delcod=$_GET['delcod'];
-   $query = "delete from catalogo_productos where codigo_it ='$delcod'";  
-   $result = mysqli_query($connec,$query); 
-   $xdelreg="NO";
-   $xareg="NO";
-   $xmodi="NOOO";
-}  // FIN DEL REGISTRO
+	echo "ESTA SEGURO DE ELIMINAR ESTE REGSTRO? S - N ";
+    echo '<form method="POST">
+            <label for="respuesta">¿Es "S" o "N"?</label>
+            <input type="text" id="respuesta" name="respuesta" value="N" >
+            <input type="submit" value="Enviar">
+          </form>';
+    }
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $respuesta = $_POST["respuesta"];
+    
+    if ($respuesta == "N") {
+	    // Cambiar el contenido de la variable y continuar con el programa
+        $xdelreg = "NOOOO";
+        echo "Continuando con el programa...";
+    } else {	
+       $idx=$_GET['idx']; 
+       $delcod=$_GET['delcod'];
+       echo ("AHora estor dentro dl IFFFFF". "SIDELREG" . "delcod=====: "." ".$delcod);
+       $query = "delete from catalogo_productos where codigo_it ='$delcod'";  
+
+       $result = mysqli_query($connec,$query); 
+       $xdelreg="NO";
+       echo "El registro ha sido borrado.";
+     }	
+ }
+
+// FIN "DEL REGISTRO"
 
 
 

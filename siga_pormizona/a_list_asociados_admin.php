@@ -222,7 +222,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         <td align="right" bgcolor="#FFFFFF"><? echo($latitud_aso." ".$longitud_aso) ?></td>
         <td align="right" bgcolor="#FFFFFF"><? echo($date_aso) ?></td>
         <td align="right" bgcolor="#FFFFFF"><? echo($direccion_aso) ?></td>
-        <td align="right" bgcolor="#FFFFFF"><?
+        <td align="center" bgcolor="#FFFFFF" ><?
 		if ($usua_aso=="S") { // TIENE CONTRATO DE CATALOGO?>  
 			<a href="../siga_catalogo/catalogo_list_items_admin.php?xusername=<?php  echo($email_aso); ?>&xpassword=<?php echo($pass_aso); ?>"><img src="iconos/ico_catalogo.png" width="30" height="30"></a>
       <? } ?>
