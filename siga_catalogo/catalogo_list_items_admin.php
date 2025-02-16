@@ -285,13 +285,13 @@ if ($whatsapp=="SIWHATSAPP") {
  </td>
     <td width="356" colspan="2" bgcolor="#FFFFCC"height="76" align="center"><table width="320" border="1">
       <tr>
-        <td width="143" rowspan="2" align="center"> 
+        <td width="143" rowspan="2" align="center" bgcolor="#FFCC00"> 
         
         <!-- Botón para enviar enlace por WhatsApp
        <button id="showFormBtn" style="background-color: #25D366; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px; font-size: 16px;">ENVIAR catálogo por WhatsApp</button>  -->
 
-   <div class="form-container"> <!-- BOTON WHATSAPP -->
-    <form id="formbot1" name="formbot1"action="catalogo_list_items_admin.php" method="POST">
+ <!--  <div class="form-container"> <!-- BOTON WHATSAPP -->
+ <!--   <form id="formbot1" name="formbot1"action="catalogo_list_items_admin.php" method="POST">
 
         <input type="text" name="whatsapp_number" class="form-input" placeholder="Número de WhatsApp" required>
         <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
@@ -300,7 +300,27 @@ if ($whatsapp=="SIWHATSAPP") {
 
         <button type="submit" class="btn">Enviar</button>
     </form>
-   </div>        
+   </div> -->
+    <div class="form-container">
+        <form id="formbot1" name="formbot1" action="catalogo_list_items_admin.php" method="POST">
+            <input type="text" name="whatsapp_number" class="form-input" placeholder="Número de WhatsApp" required>
+            <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
+            <input type="hidden" name="xpassword" value="<?php echo(trim($password)); ?>"/>  
+            <input type="hidden" name="xwhatsapp" value="SIWHATSAPP"/>  
+            <button type="submit" class="btn" style="background-color: #25D366; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px; font-size: 16px;">Enviar Catálogo</button>
+        </form>
+    </div>        
+
+    <!-- Segundo Formulario: Enviar mensaje previo por WhatsApp -->
+    <div class="form-container">
+        <form id="formbot2" name="formbot2" action="catalogo_list_items_admin.php" method="POST">
+            <input type="text" name="whatsapp_number" class="form-input" placeholder="Número de WhatsApp" required>
+            <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
+            <input type="hidden" name="xpassword" value="<?php echo(trim($password)); ?>"/>  
+            <input type="hidden" name="xwhatsapp" value="MENSAJE_PREVIO"/>  
+            <button type="submit" class="btn" style="background-color: #128C7E; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px; font-size: 16px;">Enviar Saludo y Catálogo</button>
+        </form>
+    </div>        
    </td>
    <td width="161" height="95" align="center">
       <!-- Segundo espacio: botón para copiar link -->
