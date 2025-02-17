@@ -225,6 +225,11 @@ if ($whatsapp=="SIMENSAJE") {
                        
 
     echo </script>";
+	
+	 sleep(10);
+	 
+	 
+	 
 
 }
 
