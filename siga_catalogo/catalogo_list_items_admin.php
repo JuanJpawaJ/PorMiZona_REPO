@@ -223,12 +223,17 @@ if ($whatsapp=="SIWHATSAPP") {
 
 }
 if ($whatsapp=="SIMENSAJE") {
+ echo "ECHO ETSPY EB SI MENSAJE";
+    $mensaje_previo = "Saludos, le enviaré mi Catálogo. Gracias.";
+
     $whatsapp_number = $_POST['whatsapp_number'];
     $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=" . $cod_aso . "&xrsocial=" . $rsocial_aso;
-    $whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" ." *Saludos. Enviaremos nuestro catálogo";
+    //$whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=Saludos Enviaremos nuestro catálogo";
+    $whatsapp_url_previo = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" . urlencode($mensaje_previo);
 
+    echo "<script>window.location.href = '$whatsapp_url_previo';</script>";
+	
                     //$whatsapp_url = "https://wa.me/$whatsapp_number?text=Hola%20deseo%20información%20de:%20$link target='_blank'"; 
-   echo "<script>window.location.href = '$whatsapp_url';</script>";
     echo "<script>
    setTimeout(function(){
     window.location.href = 'www.pormizona.com.pe/siga_catalogo/catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO';
@@ -314,7 +319,7 @@ if ($whatsapp=="SIMENSAJE") {
         <input type="hidden" name="xpassword" value="<?php echo(trim($password)); ?>"/>  
         <input type="hidden" name="xwhatsapp" value="SIMENSAJE"/>  
 
-        <button type="submit" class="btn">Enviar</button>
+        <button type="submit" class="btn">Enviar MENSAJE</button>
     </form>
    </div>
 
