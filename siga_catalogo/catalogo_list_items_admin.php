@@ -84,6 +84,7 @@ $xmodi=$_POST['xmodi'];
 $xdelreg=$_POST['xdelreg'];
 $viewmodi=$_POST['viewmodi'];
 $whatsapp=$_POST['xwhatsapp'];
+$whatsapp_number = $_POST['whatsapp_number'];
 
 
 if (strlen($usuario)==0){
@@ -224,7 +225,6 @@ if ($whatsapp=="SIWHATSAPP") {
 }
 if ($whatsapp=="SIMENSAJE") {
  echo "ECHO ETSPY EB SI MENSAJE";
-     $whatsapp_number = $_POST['whatsapp_number'];
 
     $mensaje_previo = "Saludos, le enviaré mi Catálogo. Gracias.";
 
