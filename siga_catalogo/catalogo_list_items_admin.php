@@ -209,23 +209,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 // INICIO: SOLO PARA LOS BOTONES
 if ($whatsapp=="SIMENSAJE") {
+
     $mensaje_previo = "Saludos, le enviaré mi Catálogo. Gracias.";
 
     //$whatsapp_number = $_POST['whatsapp_number'];
     //$whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=Saludos Enviaremos nuestro catálogo";
     $whatsapp_url_previo = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" . urlencode($mensaje_previo);
 
-
-    // Abrimos WhatsApp en una nueva pestaña
+    echo "<script>window.location.href = '$whatsapp_url_previo';</script>";
+	
+                    //$whatsapp_url = "https://wa.me/$whatsapp_number?text=Hola%20deseo%20información%20de:%20$link target='_blank'"; 
     echo "<script>
-        window.open('$whatsapp_url_previo', '_blank'); // Abre WhatsApp en una nueva pestaña
-        setTimeout(function() {
-            window.location.href = 'https://www.pormizona.com.pe/siga_catalogo/catalogo_list_items_admin.php?xusername=" . urlencode($usuario) . "&xpassword=" . urlencode($password) . "&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO';
-        }, 3000); // Espera 3 segundos antes de redirigir
-    </script>";
+
+    window.location.href = 'https://www.pormizona.com.pe/siga_catalogo/catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO';
+                       
+
+    echo </script>";
+
 }
-
-
 
 
 if ($whatsapp=="SIWHATSAPP") {
@@ -316,9 +317,9 @@ if ($whatsapp=="SIWHATSAPP") {
   <div class="form-container"> <!-- BOTON WHATSAPP -->
    <form id="formbot2" name="formbot2"action="catalogo_list_items_admin.php" method="POST">
 
-        <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
+         <input type="text" name="whatsapp_number" class="form-input" placeholder="Número de WhatsApp" required>
+       <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
         <input type="hidden" name="xpassword" value="<?php echo(trim($password)); ?>"/>  
-        <input type="hidden" name="whatsapp_number" value="<?php echo(trim($whatsapp_number)); ?>"/>  
 
         <input type="hidden" name="xwhatsapp" value="SIWHATSAPP"/>  
 
