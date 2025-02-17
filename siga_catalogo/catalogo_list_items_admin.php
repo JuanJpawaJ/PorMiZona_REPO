@@ -218,10 +218,10 @@ if ($whatsapp=="SIMENSAJE") {
 
     // Abrimos WhatsApp en una nueva pestaña
     echo "<script>
-        window.open('$whatsapp_url_previo', '_blank');
-        
-        // Redirigimos la pestaña actual de vuelta a la página inicial
-        window.location.href = 'https://www.pormizona.com.pe/siga_catalogo/catalogo_list_items_admin.php?xusername=$usuario&xpassword=$password&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO';
+        window.open('$whatsapp_url_previo', '_blank'); // Abre WhatsApp en una nueva pestaña
+        setTimeout(function() {
+            window.location.href = 'https://www.pormizona.com.pe/siga_catalogo/catalogo_list_items_admin.php?xusername=" . urlencode($usuario) . "&xpassword=" . urlencode($password) . "&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO';
+        }, 3000); // Espera 3 segundos antes de redirigir
     </script>";
 }
 
