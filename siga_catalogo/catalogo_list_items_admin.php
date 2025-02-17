@@ -207,30 +207,41 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 // INICIO: SOLO PARA LOS BOTONES
-if ($whatsapp=="SIWHATSAPP") {
+//if ($whatsapp=="SIWHATSAPP") {
+//    $whatsapp_number = $_POST['whatsapp_number'];
+//    $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=" . $cod_aso . "&xrsocial=" . $rsocial_aso;
+//    $whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" ." *ACEPTAR COMO CONTACTO* ". " CATALOGO: ".$rsocial_aso." ".$link ;
+
+                    //$whatsapp_url = "https://wa.me/$whatsapp_number?text=Hola%20deseo%20información%20de:%20$link target='_blank'"; 
+//   echo "<script>window.location.href = '$whatsapp_url';</script>";
+//    echo "<script>
+  //   setTimeout(function(){
+//  <!--       window.location.href = 'www.pormizona.com.pe/siga_catalogo/catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO';
+                       
+                       
+
+<? 
+ 
+
+if ($whatsapp == "MENSAJE_PREVIO") {
     $whatsapp_number = $_POST['whatsapp_number'];
-    $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=" . $cod_aso . "&xrsocial=" . $rsocial_aso;
-    $whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" ." *ACEPTAR COMO CONTACTO* ". " CATALOGO: ".$rsocial_aso." ".$link ;
+    $mensaje_previo = "Saludos, le enviaré mi Catálogo. Gracias.";
+    $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=" . $cod_aso . "&xrsocial=" . urlencode($rsocial_aso);
 
-    //$whatsapp_url = "https://wa.me/$whatsapp_number?text=Hola%20deseo%20información%20de:%20$link target='_blank'"; 
+    // Enviar el mensaje previo
+    $whatsapp_url_previo = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" . urlencode($mensaje_previo);
+    echo "<script>window.location.href = '$whatsapp_url_previo';</script>";
 
-
-   echo "<script>window.location.href = '$whatsapp_url';</script>";
-	
-	
-	
-	
-	
-
+    // Luego de unos segundos, redirigir para enviar el enlace del catálogo
     echo "<script>
     setTimeout(function(){
-        window.location.href = 'www.pormizona.com.pe/siga_catalogo/catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO';
-                       
-                       
+        window.location.href = 'https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" . urlencode("CATALOGO: ".$rsocial_aso." ".$link) . "';
     }, 5000);
-</script>";
-
+    </script>";
 }
+
+
+
 // FIN: SOLO PARA LOS BOTONES
 ?>
 
@@ -320,6 +331,9 @@ if ($whatsapp=="SIWHATSAPP") {
             <input type="hidden" name="xwhatsapp" value="MENSAJE_PREVIO"/>  
             <button type="submit" class="btn" style="background-color: #128C7E; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px; font-size: 16px;">Enviar Saludo y Catálogo</button>
         </form>
+        
+      
+        
     </div>        
    </td>
    <td width="161" height="95" align="center">
