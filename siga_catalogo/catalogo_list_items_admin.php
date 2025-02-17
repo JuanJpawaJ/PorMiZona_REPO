@@ -207,44 +207,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 // INICIO: SOLO PARA LOS BOTONES
-//if ($whatsapp=="SIWHATSAPP") {
-//    $whatsapp_number = $_POST['whatsapp_number'];
-//    $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=" . $cod_aso . "&xrsocial=" . $rsocial_aso;
-//    $whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" ." *ACEPTAR COMO CONTACTO* ". " CATALOGO: ".$rsocial_aso." ".$link ;
+if ($whatsapp=="SIWHATSAPP") {
+    $whatsapp_number = $_POST['whatsapp_number'];
+    $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=" . $cod_aso . "&xrsocial=" . $rsocial_aso;
+    $whatsapp_url = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" ." *ACEPTAR COMO CONTACTO* ". " CATALOGO: ".$rsocial_aso." ".$link ;
 
                     //$whatsapp_url = "https://wa.me/$whatsapp_number?text=Hola%20deseo%20información%20de:%20$link target='_blank'"; 
-//   echo "<script>window.location.href = '$whatsapp_url';</script>";
-//    echo "<script>
-  //   setTimeout(function(){
-//  <!--       window.location.href = 'www.pormizona.com.pe/siga_catalogo/catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO';
-                       
-                       
-
-<? 
- 
-
-if ($whatsapp == "MENSAJE_PREVIO") {
-    $whatsapp_number = $_POST['whatsapp_number'];
-    $mensaje_previo = "Saludos, le enviaré mi Catálogo. Gracias.";
-    $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=" . $cod_aso . "&xrsocial=" . urlencode($rsocial_aso);
-
-    // Enviar el mensaje previo
-    $whatsapp_url_previo = "https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" . urlencode($mensaje_previo);
-    echo "<script>window.location.href = '$whatsapp_url_previo';</script>";
-
-    // Luego de unos segundos, redirigir para enviar el enlace del catálogo
+   echo "<script>window.location.href = '$whatsapp_url';</script>";
     echo "<script>
-    setTimeout(function(){
-        window.location.href = 'https://api.whatsapp.com/send?phone=" . $whatsapp_number . "&text=" . urlencode("CATALOGO: ".$rsocial_aso." ".$link) . "';
-    }, 5000);
-    </script>";
+   setTimeout(function(){
+    window.location.href = 'www.pormizona.com.pe/siga_catalogo/catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO';
+                       
+   }
+    echo </script>";
+
 }
-
-
-
 // FIN: SOLO PARA LOS BOTONES
-?>
 
+?>
     <table width="1153" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td colspan="3" bgcolor="#CCCCCC" class="tit_menu_sup"><table width="767" height="63" border="0" cellpadding="0" cellspacing="0">
@@ -301,8 +281,8 @@ if ($whatsapp == "MENSAJE_PREVIO") {
         <!-- Botón para enviar enlace por WhatsApp
        <button id="showFormBtn" style="background-color: #25D366; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px; font-size: 16px;">ENVIAR catálogo por WhatsApp</button>  -->
 
- <!--  <div class="form-container"> <!-- BOTON WHATSAPP -->
- <!--   <form id="formbot1" name="formbot1"action="catalogo_list_items_admin.php" method="POST">
+  <div class="form-container"> <!-- BOTON WHATSAPP -->
+   <form id="formbot1" name="formbot1"action="catalogo_list_items_admin.php" method="POST">
 
         <input type="text" name="whatsapp_number" class="form-input" placeholder="Número de WhatsApp" required>
         <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
@@ -311,31 +291,9 @@ if ($whatsapp == "MENSAJE_PREVIO") {
 
         <button type="submit" class="btn">Enviar</button>
     </form>
-   </div> -->
-    <div class="form-container">
-        <form id="formbot1" name="formbot1" action="catalogo_list_items_admin.php" method="POST">
-            <input type="text" name="whatsapp_number" class="form-input" placeholder="Número de WhatsApp" required>
-            <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
-            <input type="hidden" name="xpassword" value="<?php echo(trim($password)); ?>"/>  
-            <input type="hidden" name="xwhatsapp" value="SIWHATSAPP"/>  
-            <button type="submit" class="btn" style="background-color: #25D366; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px; font-size: 16px;">Enviar Catálogo</button>
-        </form>
-    </div>        
+   </div>
 
-    <!-- Segundo Formulario: Enviar mensaje previo por WhatsApp -->
-    <div class="form-container">
-        <form id="formbot2" name="formbot2" action="catalogo_list_items_admin.php" method="POST">
-            <input type="text" name="whatsapp_number" class="form-input" placeholder="Número de WhatsApp" required>
-            <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
-            <input type="hidden" name="xpassword" value="<?php echo(trim($password)); ?>"/>  
-            <input type="hidden" name="xwhatsapp" value="MENSAJE_PREVIO"/>  
-            <button type="submit" class="btn" style="background-color: #128C7E; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px; font-size: 16px;">Enviar Saludo y Catálogo</button>
-        </form>
-        
-      
-        
-    </div>        
-   </td>
+    </td>
    <td width="161" height="95" align="center">
       <!-- Segundo espacio: botón para copiar link -->
       <div class="form-container">
