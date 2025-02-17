@@ -226,14 +226,14 @@ if ($whatsapp=="SIMENSAJE") {
 
     echo </script>";
 	
-	 sleep(10);
-	 
+
+	$whatsapp="SIWHATSAPP" ;
 	 
 	 
 
 }
 
-
+	 sleep(10);
 if ($whatsapp=="SIWHATSAPP") {
     //$whatsapp_number = $_POST['whatsapp_number'];
     $link = "https://www.pormizona.com.pe/idxcatalogo.php?xcod=" . $cod_aso . "&xrsocial=" . $rsocial_aso;
