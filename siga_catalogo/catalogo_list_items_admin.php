@@ -224,6 +224,8 @@ if ($whatsapp=="SIWHATSAPP") {
 }
 if ($whatsapp=="SIMENSAJE") {
  echo "ECHO ETSPY EB SI MENSAJE";
+     $whatsapp_number = $_POST['whatsapp_number'];
+
     $mensaje_previo = "Saludos, le enviaré mi Catálogo. Gracias.";
 
     $whatsapp_number = $_POST['whatsapp_number'];
@@ -301,25 +303,27 @@ if ($whatsapp=="SIMENSAJE") {
         <!-- Botón para enviar enlace por WhatsApp
        <button id="showFormBtn" style="background-color: #25D366; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px; font-size: 16px;">ENVIAR catálogo por WhatsApp</button>  -->
 
-  <div class="form-container"> <!-- BOTON WHATSAPP -->
-   <form id="formbot1" name="formbot1"action="catalogo_list_items_admin.php" method="POST">
-
-        <input type="text" name="whatsapp_number" class="form-input" placeholder="Número de WhatsApp" required>
-        <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
-        <input type="hidden" name="xpassword" value="<?php echo(trim($password)); ?>"/>  
-        <input type="hidden" name="xwhatsapp" value="SIWHATSAPP"/>  
-
-        <button type="submit" class="btn">Enviar</button>
-    </form>
-   </div>
      <div class="form-container"> <!-- BOTON WHATSAPP -->
    <form id="formbot2" name="formbot2"action="catalogo_list_items_admin.php" method="POST">
 
+        <input type="text" name="whatsapp_number" class="form-input" placeholder="Número de WhatsApp" required>
         <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
         <input type="hidden" name="xpassword" value="<?php echo(trim($password)); ?>"/>  
         <input type="hidden" name="xwhatsapp" value="SIMENSAJE"/>  
 
         <button type="submit" class="btn">Enviar MENSAJE</button>
+    </form>
+   </div>
+  <div class="form-container"> <!-- BOTON WHATSAPP -->
+   <form id="formbot1" name="formbot1"action="catalogo_list_items_admin.php" method="POST">
+
+        <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
+        <input type="hidden" name="xpassword" value="<?php echo(trim($password)); ?>"/>  
+        <input type="hidden" name="whatsapp_number" value="<?php echo($whatsapp_number); ?>"/>  
+
+        <input type="hidden" name="xwhatsapp" value="SIWHATSAPP"/>  
+
+        <button type="submit" class="btn">Enviar CATALOGO</button>
     </form>
    </div>
 
