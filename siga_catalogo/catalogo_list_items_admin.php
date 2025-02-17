@@ -317,7 +317,7 @@ if ($whatsapp=="SIWHATSAPP") {
   <div class="form-container"> <!-- BOTON WHATSAPP -->
    <form id="formbot2" name="formbot2"action="catalogo_list_items_admin.php" method="POST">
 
-         <input type="text" name="whatsapp_number" class="form-input" placeholder="Número de WhatsApp" required>
+         <input type="text" name="whatsapp_number" class="form-input" placeholder="Número de WhatsApp" value="<?php echo(trim($whatsapp_number)); ?>" required>
        <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
         <input type="hidden" name="xpassword" value="<?php echo(trim($password)); ?>"/>  
 
