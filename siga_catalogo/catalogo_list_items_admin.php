@@ -222,10 +222,10 @@ if ($whatsapp=="SIMENSAJE") {
 	
                     //$whatsapp_url = "https://wa.me/$whatsapp_number?text=Hola%20deseo%20información%20de:%20$link target='_blank'"; 
     echo "<script>
-   setTimeout(function(){
+
     window.location.href = 'www.pormizona.com.pe/siga_catalogo/catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO';
                        
-   }
+
     echo </script>";
 
 }
