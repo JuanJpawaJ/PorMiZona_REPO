@@ -1,11 +1,3 @@
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MI CATALOGO</title>
-    <link rel="icon" href="assets/img/imagenes_index/icono_pestana/icono_catalogo.png" type="image/png">
-    
-</head>
    <style>
 
 .contenedor_cabtxt{
@@ -126,8 +118,8 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
     <link rel="stylesheet" href="assets/css/estilos_index/estilos_contenedor_marcas.css">
     <link rel="stylesheet" href="assets/css/estilos_index/estilos_servicio_tecnico.css">
     <link rel="stylesheet" href="assets/css/estilos_index/estilos_bloque_marca_interclass.css">
-    <title>CATALOGO</title>
-    <link rel="icon" href="assets/img/imagenes_index/icono_pestana/icono_jpawaj.png" type="image/png">
+    <title>MI CATALOGO</title>
+    <link rel="icon" href="assets/img/imagenes_index/icono_pestana/icono_catalogo.png" type="image/png">
 </head>
 
 <body>
