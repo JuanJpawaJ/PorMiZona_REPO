@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="../static/css/estilos_index.css">
     <link rel="stylesheet" href="../static/css/estilos_contenedor_marcas.css">
     <title>PorMiZona</title>
+    <link rel="icon" href="assets/img/imagenes_index/icono_pestana/icono_pormizona.png" type="image/png">
+    
 </head>
 <body>
     <nav id="navbar">
