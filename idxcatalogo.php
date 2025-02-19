@@ -1,3 +1,11 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI CATALOGO</title>
+    <link rel="icon" href="assets/img/imagenes_index/icono_pestana/icono_catalogo.png" type="image/png">
+    
+</head>
    <style>
 
 .contenedor_cabtxt{
