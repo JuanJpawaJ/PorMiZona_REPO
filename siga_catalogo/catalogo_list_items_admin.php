@@ -2,7 +2,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<title>Administrador Productos1</title>
+<title>Administrador Productos</title>
 
 <link rel="icon" href="../assets/img/imagenes_index/icono_pestana/icono_catalogo.png" type="image/png">
 
