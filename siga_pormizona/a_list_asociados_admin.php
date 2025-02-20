@@ -77,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <tr>
     <td colspan="2" bgcolor="#000066" class="tit_menu_sup"><table width="904" height="63" border="0" cellpadding="0" cellspacing="0">
        <tr>
-         <td width="121" align="center" valign="top"><img src="imgs/pmz_01_rgb.jpg" width="120" height="60"></td>
+         <td width="121" align="center" valign="top"><img src="../imgs/pmz_01_rgb.jpg" width="120" height="50"></td>
          <td width="575"><div align="center"><span class="TITULO_NARANJA">ADMINISTRADOR - ASOCIADOS ***** P. Mi ZONA</span></div></td>
          <td width="154" align="center" valign="middle"><img src="iconos/logo_cli_120_60_png.png" width="120" height="60"></td>
        </tr>
