@@ -111,12 +111,13 @@ document.querySelector('input[type="file"]').addEventListener('change', function
             const canvas = document.getElementById('canvas');
             const ctx = canvas.getContext('2d');
 
-            // Ajusta estos valores para redimensionar la imagen
+            // Tamaño máximo permitido
             const MAX_WIDTH = 800;
             const MAX_HEIGHT = 800;
             let width = img.width;
             let height = img.height;
 
+            // Redimensionar manteniendo la proporción
             if (width > height) {
                 if (width > MAX_WIDTH) {
                     height *= MAX_WIDTH / width;
@@ -133,21 +134,21 @@ document.querySelector('input[type="file"]').addEventListener('change', function
             canvas.height = height;
             ctx.drawImage(img, 0, 0, width, height);
 
+            // Convertir a JPEG con compresión al 80%
             canvas.toBlob(function(blob) {
-                const newFile = new File([blob], file.name, { type: file.type });
+                const newFile = new File([blob], file.name.replace(/\.\w+$/, '.jpg'), { type: 'image/jpeg' });
                 const dataTransfer = new DataTransfer();
                 dataTransfer.items.add(newFile);
 
-                // Reemplaza el archivo original con la imagen redimensionada
+                // Reemplaza el archivo original con la imagen comprimida
                 event.target.files = dataTransfer.files;
-            }, file.type);
+            }, 'image/jpeg', 0.8); // Calidad 80%
         };
         img.src = e.target.result;
     };
     reader.readAsDataURL(file);
 });
 </script>
-
 
 
 
