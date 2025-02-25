@@ -271,8 +271,11 @@ if ($whatsapp=="SIWHATSAPP") {
     </td>
     </tr>
   <tr class="tit_menu_sup">
-    <td height="79" align="center" bgcolor="#FFFFCC">
-      <a href="catalogo_areg_producto.php?xusername=<?php echo(trim($usuario)); ?>&xpassword=<?php echo(trim($password)); ?>&xcodaso=<?php echo($cod_aso); ?>">nuevo ingreso productos</a>
+    <td height="79" align="center" bgcolor="#FFFFCC" >
+  <div class="form-container">
+    
+      <a href="catalogo_areg_producto.php?xusername=<?php echo(trim($usuario)); ?>&xpassword=<?php echo(trim($password)); ?>&xcodaso=<?php echo($cod_aso); ?>" class="btn">nuevo ingreso productos</a>
+    </div>    
     
     </td>
     <td align="center" bgcolor="#FFFFCC">
