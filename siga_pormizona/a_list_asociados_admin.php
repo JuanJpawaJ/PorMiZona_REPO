@@ -104,7 +104,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </form>
           
           </td>
-        <td width="255" rowspan="2" align="center"><a href="formingre1.php">INGRESO ASOCIADOS</a></td>
+        <td width="255" rowspan="2" align="center"><a href="formingre1.php"><button id="showFormBtn" style="background-color: #25D366; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px; font-size: 16px;">INGRESO ASOCIADOS</button></a></td>
+        
+        
+        
+        
+        
         </tr>
     </table>
     </td>
