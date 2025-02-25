@@ -173,7 +173,7 @@ if ($xdelreg=="SIDELREG") {
             <input type="text" id="respuesta" name="respuesta" value="N" >
             <input type="submit" value="Enviar">
           </form>';
-    }
+    
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $respuesta = $_POST["respuesta"];
@@ -206,6 +206,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
        echo "El registro ha sido borrado.";
      }	
  }
+}
 
 // FIN "DEL REGISTRO"
 
