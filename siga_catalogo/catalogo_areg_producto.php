@@ -78,6 +78,7 @@ setlocale(LC_ALL, "sp");
 
 $usuario  = trim($_POST['xusername']); // el usuario es el email_aso
 $password = trim($_POST['xpassword']);
+$cod_aso = $_POST['xcodaso'];
 
 $xareg=$_POST['xareg'];
 $xmodi=$_POST['xmodi'];
@@ -90,6 +91,8 @@ $whatsapp_number = $_POST['whatsapp_number'];
 if (strlen($usuario)==0){
    $usuario  = trim($_GET['xusername']); // el usuario es el email_aso
    $password = trim($_GET['xpassword']);
+   $cod_aso=$_GET['xcodaso'];
+
    $xareg=$_GET['xareg'];
 }
 
@@ -260,6 +263,7 @@ echo '<form id="redirectForm" action="' . $target_url . '" method="post">
             <td width="98"><span class="TITULO">
               <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
               <input type="hidden" name="xpassword" value="<?php echo(trim($password)); ?>"/>  
+              <input type="hidden" name="xcodaso" value="<?php echo($cod_aso); ?>"/>  
               
               <input type="hidden" name="xpv02" value=0/>
               <input type="hidden" name="xstockmin" value=0/>
