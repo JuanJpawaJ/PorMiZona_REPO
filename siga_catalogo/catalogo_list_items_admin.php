@@ -253,7 +253,7 @@ if ($whatsapp=="SIWHATSAPP") {
 ?>
     <table width="1153" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td colspan="3" bgcolor="#CCCCCC" class="tit_menu_sup"><table width="767" height="63" border="0" cellpadding="0" cellspacing="0">
+    <td colspan="5" bgcolor="#CCCCCC" class="tit_menu_sup"><table width="767" height="63" border="0" cellpadding="0" cellspacing="0">
       <tr>
         <td width="157" align="center" valign="top"><img src="../siga_pormizona/img_asociados/<? echo ($logo_aso); ?>" width="120" height="60"></a></td>
         <td width="610"><div align="center"><span class="TITULO_NEGRO">ADMINISTRADOR DE PRODUCTOS -<? echo $cod_aso." ".$rsocial_aso; ?></span></div></td>
@@ -262,8 +262,74 @@ if ($whatsapp=="SIWHATSAPP") {
     </table></td>
     </tr>
   <tr class="tit_menu_sup">
+    <td width="205" rowspan="2" align="center" bgcolor="#FFFFCC">
+    
+          <!-- Botón para enviar enlace por WhatsApp
+       <button id="showFormBtn" style="background-color: #25D366; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px; font-size: 16px;">ENVIAR catálogo por WhatsApp</button>  -->
+          
+          <div class="form-container"> <!-- BOTON WHATSAPP -->
+            <form id="formbot1" name="formbot1"action="catalogo_list_items_admin.php" method="POST">
+              
+              <input type="text" name="whatsapp_number" class="form-input" placeholder="Número de WhatsApp" required>
+              <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
+              <input type="hidden" name="xpassword" value="<?php echo(trim($password)); ?>"/>  
+              <input type="hidden" name="xwhatsapp" value="SIMENSAJE"/>  
+              
+              <button type="submit" class="btn">Enviar MENSAJE</button>
+              </form>
+            </div>
+          <div class="form-container"> <!-- BOTON WHATSAPP -->
+            <form id="formbot2" name="formbot2"action="catalogo_list_items_admin.php" method="POST">
+              
+              <input type="text" name="whatsapp_number" class="form-input" placeholder="Número de WhatsApp" value="<?php echo(trim($whatsapp_number)); ?>" required>
+              <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
+              <input type="hidden" name="xpassword" value="<?php echo(trim($password)); ?>"/>  
+              
+              <input type="hidden" name="xwhatsapp" value="SIWHATSAPP"/>  
+              
+              <button type="submit" class="btn">Enviar CATALOGO</button>
+              </form>
+            </div>
+
+    
+    
+    
+    
+    
+    </td>
+    <td width="203" height="167" align="center" bgcolor="#FFFFCC">
+          <!-- Segundo espacio: botón para copiar link -->
+          <div class="form-container">
+            <button onClick="copyLink()" class="btn">Copiar Link</button>
+            </div>        
+    
+    </td>
+    <td width="187" align="center" bgcolor="#FFFFCC">
+          <form id="form0" name="form0" method="post" onSubmit="return checkSubmit();" action="/siga_pormizona/formingre3_view.php" onKeyPress="javascript:if(event.keyCode==13){return false;}" >
+            <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> >
+            <div class="campo_botonin">
+              <button class="boton_form">MI PERFIL</button>
+              </div>
+            </form>
+    
+    </td>
+    <td height="203" colspan="2" rowspan="2" align="center" bgcolor="#FFFFCC">&nbsp;</td>
+  </tr>
+  <tr class="tit_menu_sup">
+    <td height="79" align="center" bgcolor="#FFFFCC">
+      <a href="catalogo_areg_producto.php?xusername=<?php echo(trim($usuario)); ?>&xpassword=<?php echo(trim($password)); ?>&xcodaso=<?php echo($cod_aso); ?>">nuevo ingreso productos</a>
+    
+    </td>
+    <td align="center" bgcolor="#FFFFCC">
+      
+  <div class="form-container">
+    <a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>" class="btn">VER MI CATALOGO</a>
+    </div>    
+    </td>
+    </tr>
+  <tr class="tit_menu_sup">
   
-    <td width="791" align="center" bgcolor="#FFFFCC"><table width="742" border="1" cellspacing="4" cellpadding="4">
+    <td colspan="3" align="center" bgcolor="#FFFFCC"><table width="742" border="1" cellspacing="4" cellpadding="4">
 
       <tr>
         <td width="87" height="17" align="center" class="tabla10"><a href="catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>&xareg=NNOOO&xmodi=NOOOOO&viewmodi=NOOOO&idx=NOOOO">NORMAL</a></td>
@@ -286,74 +352,19 @@ if ($whatsapp=="SIWHATSAPP") {
         </td>
         <td width="228" rowspan="2" align="center" bgcolor="#FFCC66">
         
-          <form id="form0" name="form0" method="post" onSubmit="return checkSubmit();" action="/siga_pormizona/formingre3_view.php" onKeyPress="javascript:if(event.keyCode==13){return false;}" >
-            <input type="hidden" name="xcod" value=<? echo $cod_aso; ?> >
-            <div class="campo_botonin">
-              <button class="boton_form">MI PERFIL</button>
-              </div>
-            </form>
           
         
         </td>
         
         </tr>
     </table>
-      <p><a href="catalogo_areg_producto.php?xusername=<?php echo(trim($usuario)); ?>&xpassword=<?php echo(trim($password)); ?>&xcodaso=<?php echo($cod_aso); ?>">nuevo ingreso productos</a></p>
     
     </td>
-    <td width="356" colspan="2" bgcolor="#FFFFCC"height="76" align="center"><table width="320" border="1">
-      <tr>
-        <td width="143" rowspan="2" align="center" bgcolor="#FFCC00"> 
-        
-        <!-- Botón para enviar enlace por WhatsApp
-       <button id="showFormBtn" style="background-color: #25D366; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px; font-size: 16px;">ENVIAR catálogo por WhatsApp</button>  -->
-
-     <div class="form-container"> <!-- BOTON WHATSAPP -->
-   <form id="formbot1" name="formbot1"action="catalogo_list_items_admin.php" method="POST">
-
-        <input type="text" name="whatsapp_number" class="form-input" placeholder="Número de WhatsApp" required>
-        <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
-        <input type="hidden" name="xpassword" value="<?php echo(trim($password)); ?>"/>  
-        <input type="hidden" name="xwhatsapp" value="SIMENSAJE"/>  
-
-        <button type="submit" class="btn">Enviar MENSAJE</button>
-    </form>
-   </div>
-  <div class="form-container"> <!-- BOTON WHATSAPP -->
-   <form id="formbot2" name="formbot2"action="catalogo_list_items_admin.php" method="POST">
-
-         <input type="text" name="whatsapp_number" class="form-input" placeholder="Número de WhatsApp" value="<?php echo(trim($whatsapp_number)); ?>" required>
-       <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
-        <input type="hidden" name="xpassword" value="<?php echo(trim($password)); ?>"/>  
-
-        <input type="hidden" name="xwhatsapp" value="SIWHATSAPP"/>  
-
-        <button type="submit" class="btn">Enviar CATALOGO</button>
-    </form>
-   </div>
-
-
+    <td width="503" colspan="2" bgcolor="#FFFFCC"height="76" align="center">
     </td>
-   <td width="161" height="95" align="center">
-      <!-- Segundo espacio: botón para copiar link -->
-      <div class="form-container">
-          <button onClick="copyLink()" class="btn">Copiar Link</button>
-      </div>        
-   </td>
- </tr>
-  <tr>
-    <td width="161" height="111" align="center">
-
-       <div class="form-container">
-          <a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>" class="btn">VER MI CATALOGO</a>
-       </div>        
-    </td>
-  </tr>
-  </table>
-  </td>
   </tr>
   <tr class="tit_menu_sup">
-    <td height="262" rowspan="4" valign="top" bgcolor="#FFFFCC">
+    <td height="262" colspan="3" rowspan="4" valign="top" bgcolor="#FFFFCC">
     <!-- INICIO DE MUESTRA ITEMS -->
     <table width="782" height="80" border="1" cellpadding="0" cellspacing="0">
       <tr bgcolor="#CCFFFF" class="diez">
@@ -457,123 +468,123 @@ while ($tabla=mysqli_fetch_array($result)){
        </td>
          
     <td colspan="2" valign="top" bgcolor="#FFFFCC">
-    <?php
+      <?php
 	//if($viewmodi<>"SIVM"){
 	?>
-    <form id="form1" name="form1" method="post" action="catalogo_list_items_admin.php">
-    <table width="290" border="1" class="tablaingrenuevo">
-    <tr>
-      <td colspan="2" bgcolor="#FFCC66"><div align="center"><strong>INGRESO NUEVO PRODUCTO</strong></div></td>
-    </tr>
-    <tr>
-      <td bgcolor="#FDF19B"><span class="TITULO">Cod. Item</span></td>
-      <td bgcolor="#FDF19B">&nbsp;</td> <!-- xcod -->
-    </tr>
-    <tr>
-      <td height="26" colspan="2" bgcolor="#FDF19B" class="TITULO">NOMBRE DEL PRODUCTO  
-        (120 caracteres)</td>
-      </tr>
-    <tr>
-      <td colspan="2" bgcolor="#FDF19B" class="TITULO" >
-      <input name="xproducto" type="text" id="xproducto" size="45" maxlength="120" onKeyUp="this.value=this.value.toUpperCase();" /></td>
-      
-      
-      </tr>
-    <tr>
-      <td bgcolor="#FDF19B" class="TITULO">Cod. Modelo.</td>
-      <td bgcolor="#FDF19B"><span class="TITULO">
-        <input class="cplomo" name="xcodfabrica" type="text" id="xcodfabrica" size="25" maxlength="30" onKeyUp="this.value=this.value.toUpperCase();" />
-        </span></td>
-    </tr>
-    <tr>
-      <td bgcolor="#FDF19B" class="TITULO">Marca</td>
-      <td bgcolor="#FDF19B"><span class="TITULO">
-        <input class="cplomo" name="xmarka" type="text" id="xmarka" size="25" maxlength="30" onKeyUp="this.value=this.value.toUpperCase();" />
-        </span></td>
-    </tr>
-    <tr>
-      <td bgcolor="#FDF19B" class="TITULO">Fabricante</td>
-       <td bgcolor="#FDF19B"><span class="TITULO">
-        <input class="cplomo" name="xfabricante" type="text" id="xfabricante" size="25" maxlength="30" onKeyUp="this.value=this.value.toUpperCase();" />
-      </span></td>
-
-    </tr>
-    <tr>
-      <td bgcolor="#FDF19B" class="TITULO">Características del producto.</td>
-      <td bgcolor="#FDF19B"><span class="TITULO">
-        <textarea name="xmsjpublico" id="xmsjpublico" cols="27" rows="5"></textarea> <!-- Características producto -->
-        </span></td>
-    </tr>
-    <tr>
-      <td bgcolor="#FDF19B" class="TITULO">Prec. compra</td>
-      <td bgcolor="#FDF19B"><span class="TITULO">
-        <input class="cplomo" name="xprecom" type="text" id="xprecom" size="10" maxlength="10" onKeyUp="this.value=this.value.toUpperCase();" />
-        </span></td>
-    </tr>
-    <tr>
-      <td bgcolor="#FDF19B" class="TITULO">Moneda &quot;S&quot; - &quot;D&quot;</td>
-      <td bgcolor="#FDF19B"><span class="TITULO">
-        <input class="cplomo" name="xmonelista" type="text" id="xmonelista" size="1" maxlength="1" onKeyUp="this.value=this.value.toUpperCase();" value="S" />
-        </span></td>
-    </tr>
-    <tr>
-      <td bgcolor="#FDF19B" class="TITULO">Precio VENTA 01</td>
-      <td bgcolor="#FDF19B"><span class="TITULO">
-        <input name="xpv01" type="text" id="xpv01" size="10" maxlength="10" onKeyUp="this.value=this.value.toUpperCase();" />
-        </span></td>
-    </tr>
-    <tr>
-      <td bgcolor="#FDF19B"><span class="TITULO">Precio OFERTA 03</span></td>
-      <td bgcolor="#FDF19B"><span class="TITULO">
-         <input name="xpv03" type="text" id="xpv03" size="10" maxlength="10" onKeyUp="this.value=this.value.toUpperCase();" />    
-     </span> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#FDF19B"><span class="TITULO">Observaciones para el administrador</span></td>
-      <td><span class="TITULO">
-        <textarea class="cplomo" name="xobscompra" id="xobscompra" cols="27" rows="5"></textarea>
-      </span></td>
-    </tr>
-    <tr>
-      <td colspan="2" bgcolor="#FDF19B"><table width="306" border="1">
-        <tr>
-          <td width="120" rowspan="2" align="center" bgcolor="#FDF19B" class="tabla10">Grupo Lista</td>
-          <td width="170" class="tabla10">1 2 3 4 5 </td>
-        </tr>
-        <tr>
-          <td><input class="cplomo" name="xgrupolista" type="text" id="xgrupolista" size="4" maxlength="4" onKeyUp="this.value=this.value.toUpperCase();" /></td>
-        </tr>
-      </table></td>
-      </tr>
-    <tr>
-      <td width="98"><span class="TITULO">
-     <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
-     <input type="hidden" name="xpassword" value="<?php echo(trim($password)); ?>"/>  
-         
-     <input type="hidden" name="xpv02" value=0/>
-     <input type="hidden" name="xstockmin" value=0/>
-     <input type="hidden" name="xlugar_al" value=""/>
-     <input type="hidden" name="xview01" value="S"/>
-     <input type="hidden" name="xview02" value=""/>
-     
-     <input type="hidden" name="ximg" value=""/>
-
-     <input type="hidden" name="xview03" value=""/>
-     <input type="hidden" name="xview04" value=""/>
-     <input type="hidden" name="xtime_entrega" value=""/>
-     <input type="hidden" name="xareg" value="<?php echo("SIAREG"); ?>" />
-     <input type="hidden" name="xmodi" value=NOOO/>
-     <input type="hidden" name="xcosto" value=NOOO/>
-     <input type="hidden" name="xdelreg" value=NOOO/>
-     <input type="hidden" name="viewmodi" value=NOOO/>
-        <input name="Submit" type="submit" class="Estilo38" value="-&gt; Guardar &lt;-" />
-      </span></td>
-      <td width="180"><span class="TITULO">
-        <input name="Submit2" type="reset" class="Estilo38" value="Borrar" />
-      </span></td>
-    </tr>
-  </table>
-</form>
+      <form id="form1" name="form1" method="post" action="catalogo_list_items_admin.php">
+        <table width="290" border="1" class="tablaingrenuevo">
+          <tr>
+            <td colspan="2" bgcolor="#FFCC66"><div align="center"><strong>INGRESO NUEVO PRODUCTO</strong></div></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FDF19B"><span class="TITULO">Cod. Item</span></td>
+            <td bgcolor="#FDF19B">&nbsp;</td> <!-- xcod -->
+          </tr>
+          <tr>
+            <td height="26" colspan="2" bgcolor="#FDF19B" class="TITULO">NOMBRE DEL PRODUCTO  
+            (120 caracteres)</td>
+          </tr>
+          <tr>
+            <td colspan="2" bgcolor="#FDF19B" class="TITULO" >
+            <input name="xproducto" type="text" id="xproducto" size="45" maxlength="120" onKeyUp="this.value=this.value.toUpperCase();" /></td>
+            
+            
+          </tr>
+          <tr>
+            <td bgcolor="#FDF19B" class="TITULO">Cod. Modelo.</td>
+            <td bgcolor="#FDF19B"><span class="TITULO">
+              <input class="cplomo" name="xcodfabrica" type="text" id="xcodfabrica" size="25" maxlength="30" onKeyUp="this.value=this.value.toUpperCase();" />
+            </span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FDF19B" class="TITULO">Marca</td>
+            <td bgcolor="#FDF19B"><span class="TITULO">
+              <input class="cplomo" name="xmarka" type="text" id="xmarka" size="25" maxlength="30" onKeyUp="this.value=this.value.toUpperCase();" />
+            </span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FDF19B" class="TITULO">Fabricante</td>
+            <td bgcolor="#FDF19B"><span class="TITULO">
+              <input class="cplomo" name="xfabricante" type="text" id="xfabricante" size="25" maxlength="30" onKeyUp="this.value=this.value.toUpperCase();" />
+            </span></td>
+            
+          </tr>
+          <tr>
+            <td bgcolor="#FDF19B" class="TITULO">Características del producto.</td>
+            <td bgcolor="#FDF19B"><span class="TITULO">
+              <textarea name="xmsjpublico" id="xmsjpublico" cols="27" rows="5"></textarea> <!-- Características producto -->
+            </span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FDF19B" class="TITULO">Prec. compra</td>
+            <td bgcolor="#FDF19B"><span class="TITULO">
+              <input class="cplomo" name="xprecom" type="text" id="xprecom" size="10" maxlength="10" onKeyUp="this.value=this.value.toUpperCase();" />
+            </span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FDF19B" class="TITULO">Moneda &quot;S&quot; - &quot;D&quot;</td>
+            <td bgcolor="#FDF19B"><span class="TITULO">
+              <input class="cplomo" name="xmonelista" type="text" id="xmonelista" size="1" maxlength="1" onKeyUp="this.value=this.value.toUpperCase();" value="S" />
+            </span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FDF19B" class="TITULO">Precio VENTA 01</td>
+            <td bgcolor="#FDF19B"><span class="TITULO">
+              <input name="xpv01" type="text" id="xpv01" size="10" maxlength="10" onKeyUp="this.value=this.value.toUpperCase();" />
+            </span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FDF19B"><span class="TITULO">Precio OFERTA 03</span></td>
+            <td bgcolor="#FDF19B"><span class="TITULO">
+              <input name="xpv03" type="text" id="xpv03" size="10" maxlength="10" onKeyUp="this.value=this.value.toUpperCase();" />    
+            </span> </td>
+          </tr>
+          <tr>
+            <td bgcolor="#FDF19B"><span class="TITULO">Observaciones para el administrador</span></td>
+            <td><span class="TITULO">
+              <textarea class="cplomo" name="xobscompra" id="xobscompra" cols="27" rows="5"></textarea>
+            </span></td>
+          </tr>
+          <tr>
+            <td colspan="2" bgcolor="#FDF19B"><table width="306" border="1">
+              <tr>
+                <td width="120" rowspan="2" align="center" bgcolor="#FDF19B" class="tabla10">Grupo Lista</td>
+                <td width="170" class="tabla10">1 2 3 4 5 </td>
+                </tr>
+              <tr>
+                <td><input class="cplomo" name="xgrupolista" type="text" id="xgrupolista" size="4" maxlength="4" onKeyUp="this.value=this.value.toUpperCase();" /></td>
+                </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td width="98"><span class="TITULO">
+              <input type="hidden" name="xusername" value="<?php echo(trim($usuario)); ?>"/>  
+              <input type="hidden" name="xpassword" value="<?php echo(trim($password)); ?>"/>  
+              
+              <input type="hidden" name="xpv02" value=0/>
+              <input type="hidden" name="xstockmin" value=0/>
+              <input type="hidden" name="xlugar_al" value=""/>
+              <input type="hidden" name="xview01" value="S"/>
+              <input type="hidden" name="xview02" value=""/>
+              
+              <input type="hidden" name="ximg" value=""/>
+              
+              <input type="hidden" name="xview03" value=""/>
+              <input type="hidden" name="xview04" value=""/>
+              <input type="hidden" name="xtime_entrega" value=""/>
+              <input type="hidden" name="xareg" value="<?php echo("SIAREG"); ?>" />
+              <input type="hidden" name="xmodi" value=NOOO/>
+              <input type="hidden" name="xcosto" value=NOOO/>
+              <input type="hidden" name="xdelreg" value=NOOO/>
+              <input type="hidden" name="viewmodi" value=NOOO/>
+              <input name="Submit" type="submit" class="Estilo38" value="-&gt; Guardar &lt;-" />
+            </span></td>
+            <td width="180"><span class="TITULO">
+              <input name="Submit2" type="reset" class="Estilo38" value="Borrar" />
+            </span></td>
+          </tr>
+        </table>
+  </form>
 </td>
 </tr>
   
