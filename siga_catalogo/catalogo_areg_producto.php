@@ -90,7 +90,7 @@ $whatsapp_number = $_POST['whatsapp_number'];
 if (strlen($usuario)==0){
    $usuario  = trim($_GET['xusername']); // el usuario es el email_aso
    $password = trim($_GET['xpassword']);
-   $xdelreg=$_GET['xdelreg'];
+   $xareg=$_GET['xareg'];
 }
 
 		
