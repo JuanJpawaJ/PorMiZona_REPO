@@ -297,8 +297,9 @@ if ($whatsapp=="SIWHATSAPP") {
         
         </tr>
     </table>
+      <p><a href="catalogo_areg_producto.php?xusername=<?php echo(trim($usuario)); ?>&xpassword=<?php echo(trim($password)); ?>">nuevo ingreso productos</a></p>
     
- </td>
+    </td>
     <td width="356" colspan="2" bgcolor="#FFFFCC"height="76" align="center"><table width="320" border="1">
       <tr>
         <td width="143" rowspan="2" align="center" bgcolor="#FFCC00"> 
