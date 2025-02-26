@@ -1,8 +1,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <!--  <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
 <title>Administrador Productos</title>
 
@@ -274,14 +274,14 @@ if ($whatsapp=="SIWHATSAPP") {
     <td height="79" align="center" bgcolor="#FFFFCC" >
   <div class="form-container">
     
-      <a href="catalogo_areg_producto.php?xusername=<?php echo(trim($usuario)); ?>&xpassword=<?php echo(trim($password)); ?>&xcodaso=<?php echo($cod_aso); ?>" class="btn">nuevo ingreso productos</a>
+      <a href="catalogo_areg_producto.php?xusername=<?php echo(trim($usuario)); ?>&xpassword=<?php echo(trim($password)); ?>&xcodaso=<?php echo($cod_aso); ?>" class="btn">NEW INGRESO <br> PRODUCTOS</a>
     </div>    
     
     </td>
     <td align="center" bgcolor="#FFFFCC">
       
   <div class="form-container">
-    <a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>" class="btn">VER MI CATALOGO</a>
+    <a href="https://www.pormizona.com.pe/idxcatalogo.php?xcod=<? echo $cod_aso; ?>&xrsocial=<? echo $rsocial_aso; ?>" class="btn">VER <br>  MI CATALOGO</a>
     </div>    
     </td>
     </tr>
