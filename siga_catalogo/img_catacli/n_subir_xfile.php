@@ -181,7 +181,7 @@ if ($action == "upload") {
 ?>
     <table width="363" border="0">
         <tr bgcolor="#F8DA94">
-            <th scope="col"><div align="center"><a href="../catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>">RETORNAR 09pm </a></div></th> 
+            <th scope="col"><div align="center"><a href="../catalogo_list_items_admin.php?xusername=<?php echo($usuario); ?>&xpassword=<?php echo($password); ?>">RETORNAR </a></div></th> 
         </tr>
     </table>
    <? 
