@@ -145,15 +145,20 @@ document.querySelector('input[type="file"]').addEventListener('change', function
 
                 // Reemplaza el archivo original con la imagen comprimida
                 event.target.files = dataTransfer.files;
-            }, 'image/jpeg', 0.8); // Calidad 80%
+				
+            }, file.type);				
+				
+           // }, 'image/jpeg', 0.8); // Calidad 80%
         };
         img.src = e.target.result;
     };
     reader.readAsDataURL(file);
 });
+
 </script>
 
 
+ññññ
 
 <?php
 extract($_POST);
