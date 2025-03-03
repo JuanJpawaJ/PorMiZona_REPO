@@ -199,7 +199,9 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 
     <table width="823" height="1153" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
-        <td height="142" colspan="2" align="center" valign="middle" background="iconos/f_cabview.jpg" >
+        <td height="142" colspan="2" align="center" valign="middle" bgcolor="#CCCCCC"  >
+		
+		<!-- background="iconos/f_cabview.jpg" -->
 		<table width="772" border="0" cellspacing="0" cellpadding="0">
 		  <tr>
 		    <td width="129" height="84"
@@ -221,7 +223,8 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 			</td>
 		    <td width="246" class="giro"><? echo $gironeg_aso; ?></td>
 	      </tr>
-		  </table></td>
+		  </table>
+		  </td>
       </tr>
       <tr>
         <td height="328" colspan="2" align="center" valign="middle" bgcolor="#EEF6F8"><img src="<?php echo "img_asociados/".$img1_aso ?>" width="<? echo $vw_ancho; ?>"  height="%"></td>
