@@ -197,7 +197,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 
 
 
-    <table width="823" height="1153" border="0" align="center" cellpadding="0" cellspacing="0">
+    <table width="823" height="1206" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
         <td height="142" colspan="2" align="center" valign="middle" bgcolor="#CCCCCC"  >
 		
@@ -248,6 +248,9 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 		</td>
       </tr>
       <tr>
+        <td height="11" colspan="2" align="center" bgcolor="#000000" class="txt_view_pie">&nbsp;</td>
+      </tr>
+      <tr>
         <td height="11" colspan="2" align="center" bgcolor="#000000" class="txt_view_pie"><table width="773" border="0" cellspacing="0" cellpadding="0">
           <tr>
             <td width="448" height="31" colspan="3"><table width="755" border="0" cellspacing="0" cellpadding="0">
@@ -277,7 +280,10 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         </table></td>
       </tr>
       <tr>
-        <td height="404" colspan="2">
+        <td height="8" colspan="2" bgcolor="#0099CC">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="400" colspan="2">
 		
     <div id="map" style="height: 400px; width: 100%; box-shadow: 0px -5px 9px 0px rgba(0,0,0,0.75)"></div>
 		
