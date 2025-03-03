@@ -227,8 +227,8 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         <td height="305" colspan="2" align="center" valign="middle" bgcolor="#EEF6F8"><img src="<?php echo "img_asociados/".$img1_aso ?>" width="<? echo $vw_ancho; ?>"  height="%"></td>
       </tr>
       <tr>
-        <td width="416" height="134" align="center" valign="middle" bgcolor="#EEF6F8" class="productos_aso"><? echo $productos_aso."<br>"; ?></td>
-        <td width="407" height="134" align="center" valign="middle" bgcolor="#EEF6F8" class="productos_aso">
+        <td width="416" height="134" align="center" valign="middle" bgcolor="#000000" class="txt_view_dir_otros"><? echo $productos_aso."<br>"; ?></td>
+        <td width="407" height="134" align="center" valign="middle" bgcolor="#000000" >
 		
 		<? if ($usua_aso=="S") { ?>
 		
