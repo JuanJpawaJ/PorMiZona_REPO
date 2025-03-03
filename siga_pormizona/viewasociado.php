@@ -232,8 +232,10 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 		
 		<? if ($usua_aso=="S") { ?>
 		
-		<a href="idxcatalogo.php?xcod=<?php  echo($cod_aso); ?> "><img src="iconos/bot_catalogo_digital_ok.png" width="358" height="119"></a> 	
+		<a href="../idxcatalogo.php?xcod=<?php  echo($cod_aso); ?>"><img src="iconos/bot_catalogo_digital_ok.png" width="358" height="119"></a> 	
 		
+
+
 		<? } else { ?>
 		<img src="iconos/bot_catalogo_digital_bl.png" width="358" height="119">
 			
