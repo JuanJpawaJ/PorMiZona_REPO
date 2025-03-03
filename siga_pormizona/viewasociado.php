@@ -230,12 +230,9 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         <td width="416" height="134" align="center" valign="middle" bgcolor="#EEF6F8" class="productos_aso"><? echo $productos_aso."<br>"; ?></td>
         <td width="407" height="134" align="center" valign="middle" bgcolor="#EEF6F8" class="productos_aso">
 		
-ñññ
- <td bgcolor="#FFCC66" align="center"><a href="img_asociados/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=02"><img src="iconos/ico_imagen.png" width="30" height="30"></a></td> 
-ñññ		
 		<? if ($usua_aso=="S") { ?>
 		
-		<a href="idxcatalogo.php?xcod=<?php  echo($cod_aso); ?> ><img src="iconos/bot_catalogo_digital_ok.png" width="358" height="119"></a> 	
+		<a href="idxcatalogo.php?xcod=<?php  echo($cod_aso); ?> "><img src="iconos/bot_catalogo_digital_ok.png" width="358" height="119"></a> 	
 		
 		<? } else { ?>
 		<img src="iconos/bot_catalogo_digital_bl.png" width="358" height="119">
