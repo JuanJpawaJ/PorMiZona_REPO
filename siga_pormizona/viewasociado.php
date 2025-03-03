@@ -197,9 +197,9 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 
 
 
-    <table width="823" height="1158" border="0" align="center" cellpadding="0" cellspacing="0">
+    <table width="823" height="1168" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
-        <td width="815" height="142" colspan="2" align="center" valign="middle" background="iconos/f_cabview.jpg" >
+        <td height="142" colspan="2" align="center" valign="middle" background="iconos/f_cabview.jpg" >
 		<table width="772" border="0" cellspacing="0" cellpadding="0">
 		  <tr>
 		    <td width="129" height="84"
@@ -227,7 +227,21 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         <td height="305" colspan="2" align="center" valign="middle" bgcolor="#EEF6F8"><img src="<?php echo "img_asociados/".$img1_aso ?>" width="<? echo $vw_ancho; ?>"  height="%"></td>
       </tr>
       <tr>
-        <td height="42" colspan="2" align="center" valign="middle" bgcolor="#EEF6F8" class="productos_aso"><? echo $productos_aso."<br>"; ?></td>
+        <td width="416" height="134" align="center" valign="middle" bgcolor="#EEF6F8" class="productos_aso"><? echo $productos_aso."<br>"; ?></td>
+        <td width="407" height="134" align="center" valign="middle" bgcolor="#EEF6F8" class="productos_aso">
+		
+ñññ
+ <td bgcolor="#FFCC66" align="center"><a href="img_asociados/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=02"><img src="iconos/ico_imagen.png" width="30" height="30"></a></td> 
+ñññ		
+		<? if ($usua_aso=="S") { ?>
+		
+		<a href="idxcatalogo.php?xcod=<?php  echo($cod_aso); ?> ><img src="iconos/bot_catalogo_digital_ok.png" width="358" height="119"></a> 	
+		
+		<? } else { ?>
+		<img src="iconos/bot_catalogo_digital_bl.png" width="358" height="119">
+			
+		<? } ?>
+		</td>
       </tr>
       <tr>
         <td height="11" colspan="2" align="center" bgcolor="#000000" class="txt_view_pie"><table width="773" border="0" cellspacing="0" cellpadding="0">
