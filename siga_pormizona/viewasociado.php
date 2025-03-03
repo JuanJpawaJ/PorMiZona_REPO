@@ -237,12 +237,12 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 		
 		<? if ($usua_aso=="S") { ?>
 		
-		<a href="../idxcatalogo.php?xcod=<?php  echo($cod_aso); ?>"><img src="iconos/bot_catalogo_digital_ok.png" width="179" height="59"></a> 	
+		<a href="../idxcatalogo.php?xcod=<?php  echo($cod_aso); ?>"><img src="iconos/bot_catalogo_digital_ok.png" width="239" height="89"></a> 	
 		
 
 
 		<? } else { ?>
-		<img src="iconos/bot_catalogo_digital_bl.png" width="179" height="59">
+		<img src="iconos/bot_catalogo_digital_bl.png" width="239" height="89">
 			
 		<? } ?>
 		</td>
