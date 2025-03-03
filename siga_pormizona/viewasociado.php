@@ -197,7 +197,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 
 
 
-    <table width="823" height="1168" border="0" align="center" cellpadding="0" cellspacing="0">
+    <table width="823" height="1153" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
         <td height="142" colspan="2" align="center" valign="middle" background="iconos/f_cabview.jpg" >
 		<table width="772" border="0" cellspacing="0" cellpadding="0">
@@ -224,13 +224,13 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
 		  </table></td>
       </tr>
       <tr>
-        <td height="305" colspan="2" align="center" valign="middle" bgcolor="#EEF6F8"><img src="<?php echo "img_asociados/".$img1_aso ?>" width="<? echo $vw_ancho; ?>"  height="%"></td>
+        <td height="328" colspan="2" align="center" valign="middle" bgcolor="#EEF6F8"><img src="<?php echo "img_asociados/".$img1_aso ?>" width="<? echo $vw_ancho; ?>"  height="%"></td>
       </tr>
       <tr>
-        <td width="416" height="134" align="center" valign="middle" bgcolor="#000000" class="txt_view_pie"><? echo $productos_aso."<br>"; ?></td>
+        <td width="513" height="126" align="center" valign="middle" bgcolor="#000000" class="txt_view_pie"><? echo $productos_aso."<br>"; ?></td>
 		
 		
-        <td width="407" height="134" align="center" valign="middle" bgcolor="#000000" >
+        <td width="310" height="126" align="center" valign="middle" bgcolor="#000000" >
 		
 		<? if ($usua_aso=="S") { ?>
 		
