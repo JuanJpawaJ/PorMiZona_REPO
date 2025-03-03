@@ -23,16 +23,16 @@
 .giro {
 	color: #0000FF;
 	text-align:right;
-	font-size: 20px;
-	font-family: "Comic Sans MS", cursive;
+	font-size: 22px;
+	font-family:Tahoma, Geneva, sans-serif
 	font-weight: bold;	
 }
 
 .productos_aso {
 	color: #000000;
 	text-align: center;
-	font-size: 14px;
-	font-family: "Comic Sans MS", cursive;
+	font-size: 15px;
+	font-family:Tahoma, Geneva, sans-serif
 	
 }
 .txt_view_direcc {
@@ -230,10 +230,10 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         <td height="328" colspan="2" align="center" valign="middle" bgcolor="#EEF6F8"><img src="<?php echo "img_asociados/".$img1_aso ?>" width="<? echo $vw_ancho; ?>"  height="%"></td>
       </tr>
       <tr>
-        <td width="513" height="126" align="center" valign="middle" bgcolor="#000000" class="txt_view_pie"><? echo $productos_aso."<br>"; ?></td>
+        <td width="513" height="126" align="center" valign="middle" bgcolor="#CCCCCC" class="productos_aso"><? echo $productos_aso."<br>"; ?></td>
 		
 		
-        <td width="310" height="126" align="center" valign="middle" bgcolor="#000000" >
+        <td width="310" height="126" align="center" valign="middle" bgcolor="#CCCCCC" >
 		
 		<? if ($usua_aso=="S") { ?>
 		
