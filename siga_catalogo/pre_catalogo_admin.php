@@ -146,13 +146,16 @@ Saludos.
 www.PorMiZona.com.pe  
 Tu conexión con la comunidad local
 
-Aquí tienes tu clave de acceso:";
+Aquí tienes tu clave de acceso:".
+" ".$usuario." ".$password;
+
+
 
 $urlWhatsApp = "https://wa.me/$celular1?text=" . urlencode($mensaje);
 ?>
 
 <a href="<?php echo $urlWhatsApp; ?>" class="button">
-  <i class="fab fa-whatsapp"></i> Enviar WhatsApp
+  <i class="fab fa-whatsapp"></i> Enviar Bienvenida y Accesos
 </a>      
        
         
