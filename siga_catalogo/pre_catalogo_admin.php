@@ -34,12 +34,12 @@
     .logo {
       width: 100px;
       height: auto;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
 
     /* Título */
     .title {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: bold;
       color: #333;
       margin-bottom: 20px;
@@ -117,7 +117,7 @@ if (strlen($usuario)==0){
     <!-- Grupo 1: Aplicación 1 -->
     <div class="subtitle">Aplicación 1</div>
     <div class="button-group">
-      <a href="catalogo_list_items_admin.php?xusername=<?php  echo($email_aso); ?>&xpassword=<?php echo($pass_aso); ?>" class="button">
+      <a href="catalogo_list_items_admin.php?xusername=<?php  echo($usuario); ?>&xpassword=<?php echo($password); ?>" class="button">
         <i class="fa-solid fa-newspaper"></i> CATALOGO SOCIO ADMIN</a>
       
   <!-- <a href="https://app1.com" class="button" target="_blank">Aplicación 1</a>  -->  
