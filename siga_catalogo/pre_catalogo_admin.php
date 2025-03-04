@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PRE CATALOGO ADMIN</title>
+  <title>PAWAJ SAC - Aplicación</title>
+  <!-- Incluir FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     /* Estilos generales */
     body {
@@ -24,7 +26,7 @@
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      max-width: 300px;
+      max-width: 400px; /* Aumenté el ancho para acomodar dos botones por línea */
       width: 100%;
     }
 
@@ -43,12 +45,21 @@
       margin-bottom: 20px;
     }
 
+    /* Contenedor de botones */
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px; /* Espacio entre botones */
+      margin-bottom: 20px;
+    }
+
     /* Botones */
     .button {
-      display: block;
-      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1 1 calc(50% - 10px); /* Dos botones por línea con espacio entre ellos */
       padding: 10px;
-      margin-bottom: 10px;
       font-size: 16px;
       color: #fff;
       background-color: #007bff;
@@ -62,6 +73,25 @@
     .button:hover {
       background-color: #0056b3;
     }
+
+    /* Botones de ancho completo */
+    .button.full-width {
+      flex: 1 1 100%; /* Ocupa el 100% del ancho */
+    }
+
+    /* Íconos */
+    .button i {
+      margin-right: 10px;
+    }
+
+    /* Subtítulos para grupos de botones */
+    .subtitle {
+      font-size: 18px;
+      font-weight: bold;
+      color: #555;
+      margin-bottom: 10px;
+      text-align: left;
+    }
   </style>
 </head>
 <body>
@@ -70,19 +100,37 @@
     <img src="logo.png" alt="Logo PAWAJ SAC" class="logo">
 
     <!-- Título -->
-    <div class="title">PAWAJ SAC</div>
+    <div class="title">PRE CATALOGO ADMIN</div>
 
-    <!-- Botones de enlace -->
-    <a href="https://app1.com" class="button">
-       <i class="fas fa-rocket"></i> Aplicación 1 </a>
-    
-    <a href="https://app2.com" class="button">Aplicación 2</a>
-    <a href="https://app3.com" class="button">Aplicación 3</a>
-    <a href="https://app4.com" class="button">Aplicación 4</a>
-    <a href="https://app5.com" class="button">Aplicación 5</a>
-    <a href="https://app6.com" class="button">Aplicación 6</a>
+    <!-- Grupo 1: Aplicación 1 -->
+    <div class="subtitle">Aplicación 1</div>
+    <div class="button-group">
+      <a href="https://app1.com" class="button">
+        <i class="fas fa-rocket"></i> Opción 1
+      </a>
+      <a href="https://app2.com" class="button">
+        <i class="fas fa-cogs"></i> Opción 2
+      </a>
+    </div>
+
+    <!-- Grupo 2: Aplicación 2 -->
+    <div class="subtitle">Aplicación 2</div>
+    <div class="button-group">
+      <a href="https://app3.com" class="button full-width">
+        <i class="fas fa-shopping-cart"></i> Opción 3
+      </a>
+    </div>
+
+    <!-- Grupo 3: Aplicación 3 -->
+    <div class="subtitle">Aplicación 3</div>
+    <div class="button-group">
+      <a href="https://app4.com" class="button">
+        <i class="fas fa-link"></i> Opción 4
+      </a>
+      <a href="https://app5.com" class="button">
+        <i class="fas fa-mobile-alt"></i> Opción 5
+      </a>
+    </div>
   </div>
 </body>
 </html>
-
-
