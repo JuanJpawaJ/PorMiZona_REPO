@@ -134,24 +134,21 @@ if (strlen($usuario)==0){
     <div class="button-group">
 <?php
 $celular1 = "51959956000"; // Número de teléfono
-$mensaje = " ¡Bienvenido a PorMiZona! Tu plataforma de conexión local
-ESTIMADO CLIENTE:  
-¡Bienvenido a PorMiZona! Desde ahora, tu negocio será más visible para tus clientes. A continuación, te enviamos tu clave de acceso para que puedas ingresar y modificar tus datos según lo necesites.
-En el apartado -Relación de Productos y Servicios-, asegúrate de ingresar aquellos productos clave que tus clientes buscarán. Aquí tienes tu clave de acceso:
+$mensaje = "AMIGO EPRESARIO:\n  
+¡Bienvenido a PorMiZona! Desde ahora, tu negocio será más visible para tus clientes. Te enviamos tu clave de acceso para que puedas ingresar y modificar tus datos según lo necesites.\n
+En el apartado -Relación de Productos y Servicios-, asegúrate de ingresar aquellos productos clave que tus clientes buscarán.\n
+Aquí tienes tu clave de acceso:
 
 USUARIO: ". $usuario.
 "\n CLAVE: ". $password.
 
-"\nwww.PorMiZona.com.pe  
+"¡Gracias por elegirnos!
+
+\n nwww.PorMiZona.com.pe  
 Tu conexión con la comunidad local
 
-¡Gracias por elegirnos!
-
-Además, si aún no tienes un CATÁLOGO VIRTUAL, aprovecha nuestra promoción exclusiva a un precio súper accesible. ¡Una página web con catalogo, te hace una empresa más seria!.
+Además, si aún no tienes un CATÁLOGO VIRTUAL, aprovecha nuestra promoción exclusiva a un precio súper accesible.\n ¡Una página web con catalogo, te hace una empresa más seria!.
 Saludos.";
-
-
-
 
 
 $urlWhatsApp = "https://wa.me/$celular1?text=" . urlencode($mensaje);
