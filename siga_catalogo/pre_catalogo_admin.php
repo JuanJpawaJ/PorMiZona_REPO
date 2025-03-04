@@ -95,6 +95,18 @@
   </style>
 </head>
 <body>
+
+<?
+$usuario  = trim($_POST['xusername']); // el usuario es el email_aso
+$password = trim($_POST['xpassword']);
+if (strlen($usuario)==0){
+   $usuario  = trim($_GET['xusername']); // el usuario es el email_aso
+   $password = trim($_GET['xpassword']);
+}
+
+
+?>
+
   <div class="container">
     <!-- Logo -->
     <img src="logo.png" alt="Logo PAWAJ SAC" class="logo">
@@ -105,11 +117,12 @@
     <!-- Grupo 1: Aplicación 1 -->
     <div class="subtitle">Aplicación 1</div>
     <div class="button-group">
-      <a href="https://app1.com" class="button">
-        <i class="fa-solid fa-newspaper"></i> CAT SOCIO </a>
+      <a href="siga_catalogo/catalogo_list_items_admin.php?xusername=<?php  echo($email_aso); ?>&xpassword=<?php echo($pass_aso); ?>" class="button">
+        <i class="fa-solid fa-newspaper"></i> CATALOGO SOCIO ADMIN</a>
       
   <!-- <a href="https://app1.com" class="button" target="_blank">Aplicación 1</a>  -->  
-      
+  
+  
       
       <a href="https://app2.com" class="button">
         <i class="fas fa-cogs"></i> Opción 2
