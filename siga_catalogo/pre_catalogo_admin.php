@@ -73,7 +73,9 @@
     <div class="title">PAWAJ SAC</div>
 
     <!-- Botones de enlace -->
-    <a href="https://app1.com" class="button">Aplicación 1</a>
+    <a href="https://app1.com" class="button">
+       <i class="fas fa-rocket"></i> Aplicación 1 </a>
+    
     <a href="https://app2.com" class="button">Aplicación 2</a>
     <a href="https://app3.com" class="button">Aplicación 3</a>
     <a href="https://app4.com" class="button">Aplicación 4</a>
