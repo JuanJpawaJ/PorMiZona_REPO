@@ -132,9 +132,33 @@ if (strlen($usuario)==0){
     <!-- Grupo 2: Aplicación 2 -->
     <div class="subtitle">Aplicación 2</div>
     <div class="button-group">
-      <a href="https://app3.com" class="button full-width">
-        <i class="fas fa-shopping-cart"></i> Opción 3
-      </a>
+<?php
+$celular1 = "519599560000"; // Número de teléfono
+$mensaje = " ¡Bienvenido a PorMiZona! Tu plataforma de conexión local
+ESTIMADO CLIENTE:  
+¡Bienvenido a PorMiZona! Desde ahora, tu negocio será más visible para tus clientes. A continuación, te enviamos tu clave de acceso para que puedas ingresar y modificar tus datos según lo necesites.
+En el apartado -Relación de Productos y Servicios-, asegúrate de ingresar aquellos productos clave que tus clientes buscarán
+
+¡Gracias por elegirnos!
+
+Además, si aún no tienes un CATÁLOGO VIRTUAL, aprovecha nuestra promoción exclusiva a un precio súper accesible. ¡Una página web con catalogo, te hace una empresa más seria!.
+Saludos.
+www.PorMiZona.com.pe  
+Tu conexión con la comunidad local
+
+Aquí tienes tu clave de acceso:";
+
+$urlWhatsApp = "https://wa.me/$celular1?text=" . urlencode($mensaje);
+?>
+
+<a href="<?php echo $urlWhatsApp; ?>" class="button">
+  <i class="fab fa-whatsapp"></i> Enviar WhatsApp
+</a>      
+       
+        
+        
+
+
     </div>
 
     <!-- Grupo 3: Aplicación 3 -->
