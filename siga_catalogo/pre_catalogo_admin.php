@@ -133,7 +133,7 @@ if (strlen($usuario)==0){
     <div class="subtitle">Aplicación 2</div>
     <div class="button-group">
 <?php
-$celular1 = "519599560000"; // Número de teléfono
+$celular1 = "51959956000"; // Número de teléfono
 $mensaje = " ¡Bienvenido a PorMiZona! Tu plataforma de conexión local
 ESTIMADO CLIENTE:  
 ¡Bienvenido a PorMiZona! Desde ahora, tu negocio será más visible para tus clientes. A continuación, te enviamos tu clave de acceso para que puedas ingresar y modificar tus datos según lo necesites.
