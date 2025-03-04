@@ -106,7 +106,7 @@
     <div class="subtitle">Aplicación 1</div>
     <div class="button-group">
       <a href="https://app1.com" class="button">
-        <i class="<i class="fa-solid fa-newspaper"></i> CAT SOCIO </a>
+        <i class="fa-solid fa-newspaper"></i> CAT SOCIO </a>
       
   <!-- <a href="https://app1.com" class="button" target="_blank">Aplicación 1</a>  -->  
       
