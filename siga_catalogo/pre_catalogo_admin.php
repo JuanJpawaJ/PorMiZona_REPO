@@ -140,15 +140,16 @@ ESTIMADO CLIENTE:
 En el apartado -Relación de Productos y Servicios-, asegúrate de ingresar aquellos productos clave que tus clientes buscarán. Aquí tienes tu clave de acceso:
 
 USUARIO: ". $usuario.
-" CLAVE: ". $password.
+"\n CLAVE: ". $password.
 
+"\nwww.PorMiZona.com.pe  
+Tu conexión con la comunidad local
 
-"¡Gracias por elegirnos!
+¡Gracias por elegirnos!
 
 Además, si aún no tienes un CATÁLOGO VIRTUAL, aprovecha nuestra promoción exclusiva a un precio súper accesible. ¡Una página web con catalogo, te hace una empresa más seria!.
-Saludos.
-www.PorMiZona.com.pe  
-Tu conexión con la comunidad local";
+Saludos.";
+
 
 
 
