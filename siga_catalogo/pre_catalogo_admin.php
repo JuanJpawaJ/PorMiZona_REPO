@@ -137,17 +137,19 @@ $celular1 = "51959956000"; // Número de teléfono
 $mensaje = " ¡Bienvenido a PorMiZona! Tu plataforma de conexión local
 ESTIMADO CLIENTE:  
 ¡Bienvenido a PorMiZona! Desde ahora, tu negocio será más visible para tus clientes. A continuación, te enviamos tu clave de acceso para que puedas ingresar y modificar tus datos según lo necesites.
-En el apartado -Relación de Productos y Servicios-, asegúrate de ingresar aquellos productos clave que tus clientes buscarán
+En el apartado -Relación de Productos y Servicios-, asegúrate de ingresar aquellos productos clave que tus clientes buscarán. Aquí tienes tu clave de acceso:
 
-¡Gracias por elegirnos!
+USUARIO: ". $usuario.
+" CLAVE: ". $password.
+
+
+"¡Gracias por elegirnos!
 
 Además, si aún no tienes un CATÁLOGO VIRTUAL, aprovecha nuestra promoción exclusiva a un precio súper accesible. ¡Una página web con catalogo, te hace una empresa más seria!.
 Saludos.
 www.PorMiZona.com.pe  
-Tu conexión con la comunidad local
+Tu conexión con la comunidad local";
 
-Aquí tienes tu clave de acceso:".
-" ".$usuario." ".$password;
 
 
 
