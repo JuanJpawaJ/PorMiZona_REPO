@@ -109,7 +109,7 @@ if (strlen($usuario)==0){
 
   <div class="container">
     <!-- Logo -->
-    <img src="logo.png" alt="Logo PAWAJ SAC" class="logo">
+    <img src="iconos/logo_catalogo_digital.png" alt="Logo PAWAJ SAC" class="logo">
 
     <!-- Título -->
     <div class="title">PRE CATALOGO ADMIN</div>
@@ -117,7 +117,7 @@ if (strlen($usuario)==0){
     <!-- Grupo 1: Aplicación 1 -->
     <div class="subtitle">Aplicación 1</div>
     <div class="button-group">
-      <a href="scatalogo_list_items_admin.php?xusername=<?php  echo($email_aso); ?>&xpassword=<?php echo($pass_aso); ?>" class="button">
+      <a href="catalogo_list_items_admin.php?xusername=<?php  echo($email_aso); ?>&xpassword=<?php echo($pass_aso); ?>" class="button">
         <i class="fa-solid fa-newspaper"></i> CATALOGO SOCIO ADMIN</a>
       
   <!-- <a href="https://app1.com" class="button" target="_blank">Aplicación 1</a>  -->  
