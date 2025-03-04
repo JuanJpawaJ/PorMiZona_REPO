@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PAWAJ SAC - Aplicación</title>
+  <title>PRE CATALOGO ADMIN</title>
   <!-- Incluir FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
@@ -106,8 +106,11 @@
     <div class="subtitle">Aplicación 1</div>
     <div class="button-group">
       <a href="https://app1.com" class="button">
-        <i class="fas fa-rocket"></i> Opción 1
-      </a>
+        <i class="<i class="fa-solid fa-newspaper"></i> CAT SOCIO </a>
+      
+  <!-- <a href="https://app1.com" class="button" target="_blank">Aplicación 1</a>  -->  
+      
+      
       <a href="https://app2.com" class="button">
         <i class="fas fa-cogs"></i> Opción 2
       </a>
