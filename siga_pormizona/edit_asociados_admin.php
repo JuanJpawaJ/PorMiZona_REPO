@@ -269,14 +269,15 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
    <tr>
      <td>Telf1 (WEB)</td>
      <td>
-                   <input type="text" class="campo_texto form_telef" name="xtelf1" value="<?php echo($telf1_aso); ?>"> 
+                   <input type="text" class="campo_texto agrandar" name="xtelf1" value="<?php echo($telf1_aso); ?>"> 
+                   
      
      </td>
    </tr>
    <tr>
      <td>Telf2</td>
      <td>
-                   <input type="text" class="campo_texto form_telef" name="xtelf2" value="<?php echo($telf2_aso); ?>"> 
+                   <input type="text" class="campo_texto agrandar" name="xtelf2" value="<?php echo($telf2_aso); ?>"> 
      
      </td>
    </tr>
