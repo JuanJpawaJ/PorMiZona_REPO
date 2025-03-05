@@ -130,28 +130,22 @@ $link_catalogo="https://www.pormizona.com.pe/idxcatalogo.php?xcod=0000046&xrsoci
       
   <!-- <a href="https://app1.com" class="button" target="_blank">Aplicación 1</a>  -->  
   
-  
-      
-      <a href="https://app2.com" class="button">
-        <i class="fas fa-cogs"></i> Opción 2
-      </a>
     </div>
 
     <!-- Grupo 2: Aplicación 2 -->
-    <div class="subtitle">Vienvenida</div>
+    <div class="subtitle">Bienvenida</div>
     <div class="button-group">
 <?php
 
-$mensaje = "AMIGO EPRESARIO:  
-¡Bienvenido a PorMiZona! Desde ahora, tu negocio será más visible para tus clientes. Te enviamos tu clave de acceso para que puedas ingresar y modificar tus datos según lo necesites.\n
+$mensaje = "AMIGO EPRESARIO: ".$rsocial_aso.  
+"\n ¡Bienvenido a PorMiZona! Desde ahora, tu negocio será más visible para tus clientes. Te enviamos tu clave de acceso para que puedas ingresar y modificar tus datos según lo necesites.\n
 En el apartado -Relación de Productos y Servicios-, asegúrate de ingresar aquellos productos clave que tus clientes buscarán.
 Aquí tienes tu clave de acceso:
 
 USUARIO: ". $usuario.
 "\n CLAVE: ". $password.
 
-"\n ¡Gracias por elegirnos!
-
+"\n \n ¡Gracias por elegirnos!
 www.PorMiZona.com.pe  
 Tu conexión con la comunidad local
 
@@ -169,7 +163,7 @@ $urlWhatsApp2 = "https://wa.me/$celular2?text=" . urlencode($mensaje);
        
         
  <a href="<?php echo $urlWhatsApp2; ?>" class="button">
-  <i class="fab fa-whatsapp"></i> Enviar1 BIENVENIDA y ACCESOS <? echo $celular2; ?> </a>      
+  <i class="fab fa-whatsapp"></i> Enviar2 BIENVENIDA y ACCESOS <? echo $celular2; ?> </a>      
         
 
 
