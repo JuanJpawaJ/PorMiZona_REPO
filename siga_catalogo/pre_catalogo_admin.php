@@ -104,12 +104,20 @@ if (strlen($usuario)==0){
    $password = trim($_GET['xpassword']);
 }
 
+$celular1 = $_GET['xtelf1'];
+$celular2 = $_GET['xtelf2'];
+$rsocial_aso= $_GET['xrsocial'];
+$link_catalogo="https://www.pormizona.com.pe/idxcatalogo.php?xcod=0000046&xrsocial=CATALOGO%20DIGITAL";
+
 
 ?>
 
   <div class="container">
     <!-- Logo -->
     <img src="iconos/logo_catalogo_digital.png" alt="Logo PAWAJ SAC" class="logo">
+    <div class="subtitle">
+    
+    Aplicación 1</div>
 
     <!-- Título -->
     <div class="title">PRE CATALOGO ADMIN</div>
@@ -130,35 +138,38 @@ if (strlen($usuario)==0){
     </div>
 
     <!-- Grupo 2: Aplicación 2 -->
-    <div class="subtitle">Aplicación 2</div>
+    <div class="subtitle">Vienvenida</div>
     <div class="button-group">
 <?php
-$celular1 = "51959956000"; // Número de teléfono
-$mensaje = "AMIGO EPRESARIO:\n  
+
+$mensaje = "AMIGO EPRESARIO:  
 ¡Bienvenido a PorMiZona! Desde ahora, tu negocio será más visible para tus clientes. Te enviamos tu clave de acceso para que puedas ingresar y modificar tus datos según lo necesites.\n
-En el apartado -Relación de Productos y Servicios-, asegúrate de ingresar aquellos productos clave que tus clientes buscarán.\n
+En el apartado -Relación de Productos y Servicios-, asegúrate de ingresar aquellos productos clave que tus clientes buscarán.
 Aquí tienes tu clave de acceso:
 
 USUARIO: ". $usuario.
 "\n CLAVE: ". $password.
 
-"¡Gracias por elegirnos!
+"\n ¡Gracias por elegirnos!
 
-\n nwww.PorMiZona.com.pe  
+www.PorMiZona.com.pe  
 Tu conexión con la comunidad local
 
 Además, si aún no tienes un CATÁLOGO VIRTUAL, aprovecha nuestra promoción exclusiva a un precio súper accesible.\n ¡Una página web con catalogo, te hace una empresa más seria!.
 Saludos.";
 
 
-$urlWhatsApp = "https://wa.me/$celular1?text=" . urlencode($mensaje);
+$urlWhatsApp1 = "https://wa.me/$celular1?text=" . urlencode($mensaje);
+$urlWhatsApp2 = "https://wa.me/$celular2?text=" . urlencode($mensaje);
+
 ?>
 
-<a href="<?php echo $urlWhatsApp; ?>" class="button">
-  <i class="fab fa-whatsapp"></i> Enviar Bienvenida y Accesos
-</a>      
+<a href="<?php echo $urlWhatsApp1; ?>" class="button">
+  <i class="fab fa-whatsapp"></i> Enviar1 BIENVENIDA y ACCESOS <? echo $celular1; ?> </a>      
        
         
+ <a href="<?php echo $urlWhatsApp2; ?>" class="button">
+  <i class="fab fa-whatsapp"></i> Enviar1 BIENVENIDA y ACCESOS <? echo $celular2; ?> </a>      
         
 
 

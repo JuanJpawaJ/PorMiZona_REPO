@@ -232,7 +232,7 @@ $obsinterno_aso=$tabla["obsinterno_aso"];
         <td align="right" bgcolor="#FFFFFF"><? echo($direccion_aso) ?></td>
         <td align="center" bgcolor="#FFFFFF" ><?
 		if ($usua_aso=="S") { // TIENE CONTRATO DE CATALOGO?>  
-			<a href="../siga_catalogo/pre_catalogo_admin.php?xusername=<?php  echo($email_aso); ?>&xpassword=<?php echo($pass_aso); ?>"><img src="iconos/ico_catalogo.png" width="30" height="30"></a>
+			<a href="../siga_catalogo/pre_catalogo_admin.php?xusername=<?php  echo($email_aso); ?>&xpassword=<?php echo($pass_aso); ?>&xrsocial=<?php echo($rsocial_aso); ?>&xtelf1=<?php echo($telf1_aso); ?>&xtelf2=<?php echo($telf2_aso); ?> "><img src="iconos/ico_catalogo.png" width="30" height="30"></a>
       <? } ?>
 		 </td>
         <td bgcolor="#FFCC66" align="center"><a href="img_asociados/n_subir_xfile.php?xcod=<?php  echo($cod_aso); ?>&xtip=01"><img src="iconos/ico_favicon.png" width="30" height="30"></a></td>                                                                  
