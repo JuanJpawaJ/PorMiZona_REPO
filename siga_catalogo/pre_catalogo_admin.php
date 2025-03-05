@@ -115,15 +115,13 @@ $link_catalogo="https://www.pormizona.com.pe/idxcatalogo.php?xcod=0000046&xrsoci
   <div class="container">
     <!-- Logo -->
     <img src="iconos/logo_catalogo_digital.png" alt="Logo PAWAJ SAC" class="logo">
-    <div class="subtitle">
-    
-    Aplicación 1</div>
+    <div class="subtitle">  <? echo $rsocial_aso; ?> </div>
 
     <!-- Título -->
     <div class="title">PRE CATALOGO ADMIN</div>
 
     <!-- Grupo 1: Aplicación 1 -->
-    <div class="subtitle">Aplicación 1</div>
+    <div class="subtitle">Catálogo</div>
     <div class="button-group">
       <a href="catalogo_list_items_admin.php?xusername=<?php  echo($usuario); ?>&xpassword=<?php echo($password); ?>" class="button">
         <i class="fa-solid fa-newspaper"></i> CATALOGO SOCIO ADMIN</a>
@@ -170,7 +168,7 @@ $urlWhatsApp2 = "https://wa.me/$celular2?text=" . urlencode($mensaje);
     </div>
 
     <!-- Grupo 3: Aplicación 3 -->
-    <div class="subtitle">Aplicación 3</div>
+    <div class="subtitle">Otros</div>
     <div class="button-group">
       <a href="https://app4.com" class="button">
         <i class="fas fa-link"></i> Opción 4
