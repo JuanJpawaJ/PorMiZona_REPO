@@ -54,6 +54,20 @@
             border-radius: 5px;
             font-size: 16px;
         }
+        .btnverde {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            margin: 10px auto;
+            background-color: #0F6;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
         .form-container {
             text-align: center;
             margin: 20px;
@@ -274,7 +288,7 @@ if ($whatsapp=="SIWHATSAPP") {
     <td height="79" align="center" bgcolor="#FFFFCC" >
   <div class="form-container">
     
-      <a href="catalogo_areg_producto.php?xusername=<?php echo(trim($usuario)); ?>&xpassword=<?php echo(trim($password)); ?>&xcodaso=<?php echo($cod_aso); ?>" class="btn">NEW INGRESO <br> PRODUCTOS</a>
+      <a href="catalogo_areg_producto.php?xusername=<?php echo(trim($usuario)); ?>&xpassword=<?php echo(trim($password)); ?>&xcodaso=<?php echo($cod_aso); ?>" class="btnverde">NEW INGRESO <br> PRODUCTOS</a>
     </div>    
     
     </td>
