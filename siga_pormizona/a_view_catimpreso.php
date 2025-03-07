@@ -3,6 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>PORMIZONA EVENTOS</title>
+<link rel="canonical" href="https://www.pormizona.com.pe/index.php">
+<meta name="robots" content="noindex, follow">
+
 <style type="text/css">
 .blanco {
 	color: #FFF;
