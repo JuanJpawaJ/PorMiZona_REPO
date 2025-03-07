@@ -60,8 +60,8 @@
             max-width: 300px;
             padding: 10px;
             margin: 10px auto;
-            background-color: #0F6;
-            color: white;
+            background-color: #0C3;
+            color: black;
             text-align: center;
             text-decoration: none;
             border-radius: 5px;
