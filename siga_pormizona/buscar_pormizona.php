@@ -1,6 +1,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="canonical" href="https://www.pormizona.com.pe/index.php">
+<meta name="robots" content="noindex, follow">
+
 <title>BUSCO Por Mi Zona</title>
 <style type="text/css">
 :root{

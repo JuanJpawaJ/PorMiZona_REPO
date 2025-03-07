@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plataformea de publicidad. Permite publicar a los negocios, tiendas, empresas, profesionales gratis">
+   <link rel="canonical" href="https://www.pormizona.com.pe/index.php">
+   <meta name="robots" content="index, follow">
+
     <link rel="stylesheet" href="../static/css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +19,6 @@
     <link rel="stylesheet" href="../static/css/estilos_contenedor_marcas.css">
     <title>PorMiZona</title>
     <link rel="icon" href="assets/img/imagenes_index/icono_pestana/icono_pormizona.png" type="image/png">
-    
 </head>
 <body>
     <nav id="navbar">
