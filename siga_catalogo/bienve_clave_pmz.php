@@ -114,22 +114,14 @@ $link_catalogo="https://www.pormizona.com.pe/idxcatalogo.php?xcod=0000046&xrsoci
 
   <div class="container">
     <!-- Logo -->
-    <img src="iconos/logo_catalogo_digital.png" alt="Logo PAWAJ SAC" class="logo">
+    <img src="iconos/logo_pmz.png" alt="Logo PAWAJ SAC" class="logo">
     <div class="subtitle">  <? echo $rsocial_aso; ?> </div>
 
     <!-- Título -->
-    <div class="title">PRE CATALOGO ADMIN</div>
+    <div class="title">BIENVENIDA-CLAVE ADMIN</div>
 
     <!-- Grupo 1: Aplicación 1 -->
-    <div class="subtitle">Catálogo</div>
-    <div class="button-group">
-      <a href="catalogo_list_items_admin.php?xusername=<?php  echo($usuario); ?>&xpassword=<?php echo($password); ?>" class="button">
-        <i class="fa-solid fa-newspaper"></i> CATALOGO SOCIO ADMIN</a>
-      
-  <!-- <a href="https://app1.com" class="button" target="_blank">Aplicación 1</a>  -->  
-  
-    </div>
-
+    <div class="subtitle">NO TIENE CATÁLOGO</div>
     <!-- Grupo 2: Aplicación 2 -->
     <div class="subtitle">Bienvenida</div>
     <div class="button-group">
