@@ -107,7 +107,8 @@ if (strlen($usuario)==0){
 $celular1 = $_GET['xtelf1'];
 $celular2 = $_GET['xtelf2'];
 $rsocial_aso= $_GET['xrsocial'];
-$link_catalogo="https://www.pormizona.com.pe/idxcatalogo.php?xcod=0000046&xrsocial=CATALOGO%20DIGITAL";
+//$link_catalogo="https://www.pormizona.com.pe/idxcatalogo.php?xcod=0000046&xrsocial=CATALOGO%20DIGITAL";
+$link_catalogo="https://www.pormizona.com.pe/idxcatalogo.php?xcod=0000004&xrsocial=JPAWAJ SAC";
 
 
 ?>
