@@ -160,15 +160,29 @@ $urlWhatsApp2 = "https://wa.me/$celular2?text=" . urlencode($mensaje);
     </div>
 
     <!-- Grupo 3: Aplicación 3 -->
+    <div class="subtitle">Link 1</div>
+    <div class="button-group">
+<?    
+$urlWhatsApp3 = "https://wa.me/$celular1?text=" . $link_catalogo;
+$urlWhatsApp4 = "https://wa.me/$celular2?text=" . $link_catalogo;
+?>    
+    
+    
+      <a href="<?php echo $urlWhatsApp3; ?>" class="button">
+        <i class="fab fa-whatsapp"></i> Env.1 CATALOG EJEMPLO <? echo $celular1; ?> </a>
+      <a href="<?php echo $urlWhatsApp4; ?>" class="button">
+        <i class="fab fa-whatsapp"></i> Env.2 CATALOG EJEMPLO <? echo $celular2; ?> </a>
+    </div>
+    
+        <!-- Grupo 4: Aplicación 3 -->
     <div class="subtitle">Otros</div>
     <div class="button-group">
       <a href="https://app4.com" class="button">
-        <i class="fas fa-link"></i> Opción 4
-      </a>
+        <i class="fas fa-link"></i> opcion 1 </a>
       <a href="https://app5.com" class="button">
-        <i class="fas fa-mobile-alt"></i> Opción 5
-      </a>
+        <i class="fas fa-mobile-alt"></i> Eopcion 2 </a>
     </div>
+
   </div>
 </body>
 </html>
