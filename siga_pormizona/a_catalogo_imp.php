@@ -40,11 +40,13 @@
         </div>
        <div class="contenedor_botones contenedor_botones_publicar2"> 
 
-            <a href="/siga_pormizona/a_datos_precios_cat.php" class="button button_text_img"><p>PRECIO DE ESPACIOS<br>PLATAFORMA IMPRESA<br>Avisos económicos</p><img src="../imgs/bc_precios.png" alt="Botón 1" ></a>
-            <a href="/siga_pormizona/a_view_espacios.php" class="button button_text_img"><p>VERIFIQUE LOS<br>ESPACIOS DISPONIBLES<br>Catálogo de turno</p><img src="../imgs/bc_espacios.png" alt="Botón 2" ></a>
             <a href="/siga_pormizona/a_view_catimpreso.php" class="button button_text_img"><p>CATÁLOGO PORMIZONA<br>Impresos y distribuidos,<br>Zona 1.5 Km.</p><img src="../imgs/bc_view.png" alt="Botón 3" ></a>
-            </a>
-<!---
+
+            <a href="/siga_pormizona/a_view_espacios.php" class="button button_text_img"><p>PRECIOS - VERIFIQUE LOS<br>ESPACIOS DISPONIBLES<br>Catálogo de turno</p><img src="../imgs/bc_espacios.png" alt="Botón 2" ></a>
+
+ <!---           <a href="/siga_pormizona/a_datos_precios_cat.php" class="button button_text_img"><p>PRECIO DE ESPACIOS<br>PLATAFORMA IMPRESA<br>Avisos económicos</p><img src="../imgs/bc_precios.png" alt="Botón 1" ></a>
+            
+
 
     <a href="https://example.com" class="button"><img src="button1.png" alt="Botón 1">
     </a>
