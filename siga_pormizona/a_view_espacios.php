@@ -55,7 +55,7 @@ $viewmodi=$_GET['viewmodi'];
 $xgl=$_GET['xgl'];
 
 if(strlen($xzona)==0){
-	$xzona="040204";
+	$xzona="050204";
 }
 
 ?>
