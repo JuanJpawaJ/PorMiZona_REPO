@@ -76,8 +76,8 @@ if(strlen($xzona)==0){
       <tr>
         <td width="105" height="101" align="center" bgcolor="#CCCCCC"><a href="../index.php"><img src="iconos/boton_pmz_3letras.jpg" width="85" height="80" /></a></td>
         <td width="202" align="center" 
-    <? if ($xzona=="040204") { ?> bgcolor="#FFFF00" <?	} else { ?> bgcolor="#CCCCCC" <?  } ?>
-        ><a href="a_view_espacios.php?&xzona=040204"><img src="iconos/boton_zona2.jpg" width="150" height="80" /></a></td>
+    <? if ($xzona=="050204") { ?> bgcolor="#FFFF00" <?	} else { ?> bgcolor="#CCCCCC" <?  } ?>
+        ><a href="a_view_espacios.php?&xzona=050204"><img src="iconos/boton_zona2.jpg" width="150" height="80" /></a></td>
         <td width="194" align="center"
     <? if ($xzona=="000000") { ?> bgcolor="#FFFF00" <?	} else { ?> bgcolor="#CCCCCC" <?  } ?>
          >Zona 3</td>
