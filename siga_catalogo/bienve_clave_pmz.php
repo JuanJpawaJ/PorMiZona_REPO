@@ -150,11 +150,11 @@ $urlWhatsApp2 = "https://wa.me/$celular2?text=" . urlencode($mensaje);
 ?>
 
 <a href="<?php echo $urlWhatsApp1; ?>" class="button">
-  <i class="fab fa-whatsapp"></i> Enviar1 BIENVENIDA y ACCESOS <? echo $celular1; ?> </a>      
+  <i class="fab fa-whatsapp"></i> Enviar1 BIENVENIDA y ACCESOS <? echo "51".$celular1; ?> </a>      
        
         
  <a href="<?php echo $urlWhatsApp2; ?>" class="button">
-  <i class="fab fa-whatsapp"></i> Enviar2 BIENVENIDA y ACCESOS <? echo $celular2; ?> </a>      
+  <i class="fab fa-whatsapp"></i> Enviar2 BIENVENIDA y ACCESOS <? echo "51".$celular2; ?> </a>      
         
 
 
@@ -170,9 +170,9 @@ $urlWhatsApp4 = "https://wa.me/$celular2?text=" . $link_catalogo;
     
     
       <a href="<?php echo $urlWhatsApp3; ?>" class="button">
-        <i class="fab fa-whatsapp"></i> Env.1 CATALOG EJEMPLO <? echo $celular1; ?> </a>
+        <i class="fab fa-whatsapp"></i> Env.1 CATALOG EJEMPLO <? echo "51".$celular1; ?> </a>
       <a href="<?php echo $urlWhatsApp4; ?>" class="button">
-        <i class="fab fa-whatsapp"></i> Env.2 CATALOG EJEMPLO <? echo $celular2; ?> </a>
+        <i class="fab fa-whatsapp"></i> Env.2 CATALOG EJEMPLO <? echo "51".$celular2; ?> </a>
     </div>
     
         <!-- Grupo 4: Aplicación 3 -->
