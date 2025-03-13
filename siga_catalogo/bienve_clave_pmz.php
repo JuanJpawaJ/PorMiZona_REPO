@@ -170,9 +170,9 @@ $urlWhatsApp4 = "https://wa.me/+51$celular2?text=" . $link_catalogo;
     
     
       <a href="<?php echo $urlWhatsApp3; ?>" class="button">
-        <i class="fab fa-whatsapp"></i> Env.1 CATALOG EJEMPLO <?php echo "+51".$celular1; ?> </a>
+        <i class="fab fa-whatsapp"></i> Env.1 CATALOG EJEMPLO <?php echo $celular1; ?> </a>
       <a href="<?php echo $urlWhatsApp4; ?>" class="button">
-        <i class="fab fa-whatsapp"></i> Env.2 CATALOG EJEMPLO <?php echo "+51".$celular2; ?> </a>
+        <i class="fab fa-whatsapp"></i> Env.2 CATALOG EJEMPLO <?php echo $celular2; ?> </a>
     </div>
     
         <!-- Grupo 4: Aplicación 3 -->
