@@ -108,8 +108,8 @@ $celular1 = $_GET['xtelf1'];
 $celular2 = $_GET['xtelf2'];
 $rsocial_aso= $_GET['xrsocial'];
 //$link_catalogo="https://www.pormizona.com.pe/idxcatalogo.php?xcod=0000046&xrsocial=CATALOGO%20DIGITAL";
-$link_catalogo="https://www.pormizona.com.pe/idxcatalogo.php?xcod=0000004&xrsocial=JPAWAJ SAC";
-
+$link_catalogo_jpawaj="https://www.pormizona.com.pe/idxcatalogo.php?xcod=0000004&xrsocial=JPAWAJ SAC";
+$link_catalogo_catmod="https://www.pormizona.com.pe/idxcatalogo.php?xcod=0000046&xrsocial=CAT-PRUEBA";
 
 ?>
 
@@ -161,21 +161,37 @@ $urlWhatsApp2 = "https://wa.me/+51$celular2?text=" . urlencode($mensaje);
     </div>
 
     <!-- Grupo 3: Aplicación 3 -->
-    <div class="subtitle">Link 1</div>
+    <div class="subtitle">Cat. JpawaJ</div>
     <div class="button-group">
 <?    
-$urlWhatsApp3 = "https://wa.me/+51$celular1?text=" . $link_catalogo;
-$urlWhatsApp4 = "https://wa.me/+51$celular2?text=" . $link_catalogo;
+$urlWhatsApp3 = "https://wa.me/+51$celular1?text=" . $link_catalogo_jpawaj;
+$urlWhatsApp4 = "https://wa.me/+51$celular2?text=" . $link_catalogo_jpawaj;
 ?>    
     
     
       <a href="<?php echo $urlWhatsApp3; ?>" class="button">
-        <i class="fab fa-whatsapp"></i> Env.1 CATALOG EJEMPLO <?php echo $celular1; ?> </a>
+        <i class="fab fa-whatsapp"></i> Env.1 CATALOG JPAWAJ <?php echo $celular1; ?> </a>
       <a href="<?php echo $urlWhatsApp4; ?>" class="button">
-        <i class="fab fa-whatsapp"></i> Env.2 CATALOG EJEMPLO <?php echo $celular2; ?> </a>
+        <i class="fab fa-whatsapp"></i> Env.2 CATALOG JPAWAJ <?php echo $celular2; ?> </a>
     </div>
+
+    <!-- Grupo 4: Aplicación 3 -->
+    <div class="subtitle">Cat. Cat. Modelo</div>
+    <div class="button-group">
+<?    
+$urlWhatsApp5 = "https://wa.me/+51$celular1?text=" . $link_catalogo_catmod;
+$urlWhatsApp6 = "https://wa.me/+51$celular2?text=" . $link_catalogo_catmod;
+?>    
     
-        <!-- Grupo 4: Aplicación 3 -->
+    
+      <a href="<?php echo $urlWhatsApp5; ?>" class="button">
+        <i class="fab fa-whatsapp"></i> Env.1 CATALOG MODELO <?php echo $celular1; ?> </a>
+      <a href="<?php echo $urlWhatsApp6; ?>" class="button">
+        <i class="fab fa-whatsapp"></i> Env.2 CATALOG MODELO <?php echo $celular2; ?> </a>
+    </div>
+
+    
+        <!-- Grupo 5: Aplicación 3 -->
     <div class="subtitle">Otros</div>
     <div class="button-group">
       <a href="https://app4.com" class="button">
