@@ -144,17 +144,17 @@ Además, si aún no tienes un CATÁLOGO VIRTUAL, aprovecha nuestra promoción ex
 Saludos.";
 
 
-$urlWhatsApp1 = "https://wa.me/$celular1?text=" . urlencode($mensaje);
-$urlWhatsApp2 = "https://wa.me/$celular2?text=" . urlencode($mensaje);
+$urlWhatsApp1 = "https://wa.me/+51$celular1?text=" . urlencode($mensaje);
+$urlWhatsApp2 = "https://wa.me/+51$celular2?text=" . urlencode($mensaje);
 
 ?>
 
 <a href="<?php echo $urlWhatsApp1; ?>" class="button">
-  <i class="fab fa-whatsapp"></i> Enviar1 BIENVENIDA y ACCESOS <?php echo "+51".$celular1; ?> </a>      
+  <i class="fab fa-whatsapp"></i> Enviar1 BIENVENIDA y ACCESOS <?php echo $celular1; ?> </a>      
        
         
  <a href="<?php echo $urlWhatsApp2; ?>" class="button">
-  <i class="fab fa-whatsapp"></i> Enviar2 BIENVENIDA y ACCESOS <?php echo "+51".$celular2; ?> </a>      
+  <i class="fab fa-whatsapp"></i> Enviar2 BIENVENIDA y ACCESOS <?php echo $celular2; ?> </a>      
         
 
 
@@ -164,8 +164,8 @@ $urlWhatsApp2 = "https://wa.me/$celular2?text=" . urlencode($mensaje);
     <div class="subtitle">Link 1</div>
     <div class="button-group">
 <?    
-$urlWhatsApp3 = "https://wa.me/$celular1?text=" . $link_catalogo;
-$urlWhatsApp4 = "https://wa.me/$celular2?text=" . $link_catalogo;
+$urlWhatsApp3 = "https://wa.me/+51$celular1?text=" . $link_catalogo;
+$urlWhatsApp4 = "https://wa.me/+51$celular2?text=" . $link_catalogo;
 ?>    
     
     
