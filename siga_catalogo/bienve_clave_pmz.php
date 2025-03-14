@@ -128,8 +128,8 @@ $link_catalogo_catmod="https://www.pormizona.com.pe/idxcatalogo.php?xcod=0000046
     <div class="button-group">
 <?php
 
-$mensaje = "AMIGO EPRESARIO: ".$rsocial_aso.  
-"\n ¡Bienvenido a PorMiZona! Desde ahora, tu negocio será más visible para tus clientes. Te enviamos tu clave de acceso para que puedas ingresar y modificar tus datos según lo necesites.\n
+$mensaje = "AMIGO EMPRESARIO: ".$rsocial_aso.  
+"\n ¡Bienvenido a PorMiZona! Desde este momento, tu negocio será más visible para tus clientes. Te enviamos tu clave de acceso para que puedas ingresar y modificar tus datos según lo necesites.\n
 En el apartado -Relación de Productos y Servicios-, asegúrate de ingresar aquellos productos clave que tus clientes buscarán.
 Aquí tienes tu clave de acceso:
 
@@ -140,7 +140,7 @@ USUARIO: ". $usuario.
 www.PorMiZona.com.pe  
 Tu conexión con la comunidad local
 
-Además, si aún no tienes un CATÁLOGO VIRTUAL, aprovecha nuestra promoción exclusiva a un precio súper accesible.\n ¡Una página web con catalogo, te hace una empresa más seria!.
+Además, si aún no tienes un CATÁLOGO DIGITAL, aprovecha nuestra promoción exclusiva a un precio súper accesible.\n ¡Una página web con catalogo, te hace una empresa más seria!.
 Saludos.";
 
 
