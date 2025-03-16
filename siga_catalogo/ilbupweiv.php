@@ -175,7 +175,7 @@ if (strlen($img_it) == 0) {
       <?php }?>
 
       <?php $precio = ($pv03_it > 0) ? $pv03_it : $pv01_it;?>
-
+<div class="cont_botones_producto">
 <?php
  if(strlen($vinculo1_it)<>0) { ?>
   <a href="<?php echo $vinculo1_it; ?>" target="_blank" class="boton_comprar">
@@ -183,11 +183,13 @@ if (strlen($img_it) == 0) {
   <img src="../assets/img/imagenes_index/icono_enlace_blanco.png" alt="">
 </a>      
 <?php } ?>
+
+
       <a href="https://wa.me/<? echo '51'.$telf1_aso ?>?text=Hola%20deseo%20información%20de:%20<?php echo ($producto_it); ?>" target="_blank" class="boton_comprar">
         <p>Deseo información - Whatsapp</p>
         <img src="../assets/img/imagenes_index/logo_whatsapp_blanco.png" alt="">
       </a>
-
+</div>
   </div>
 
 
