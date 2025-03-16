@@ -159,6 +159,11 @@ h1{
 	row-gap:1rem;
 }
 
+.cont_botones_producto > a{
+	margin-top:0;
+	align-self:auto;
+}
+
 @media only screen and (max-width: 1000px){
 
     .container_t{
