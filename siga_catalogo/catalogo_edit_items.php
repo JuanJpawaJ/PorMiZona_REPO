@@ -106,6 +106,8 @@ $tabla = mysqli_fetch_array( $result );
 		$time_entrega_it=$tabla["time_entrega_it"];
 		$msjpublico_it=$tabla["msjpublico_it"];
 		$obscompra_it=$tabla["obscompra_it"];
+		$vinculo1_it=$tabla["vinculo1_it"];
+		
 ?>
         
   <form id="form1" name="form1" method="get" action="catalogo_regmod_items.php">
