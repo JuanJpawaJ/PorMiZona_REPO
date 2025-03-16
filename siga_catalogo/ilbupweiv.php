@@ -88,6 +88,8 @@ $pv03_it = $tabla["pv03_it"];
 $view01_it = $tabla["view01_it"];
 
 $msjpublico_it = $tabla["msjpublico_it"];
+$vinculo1_it = $tabla["vinculo1_it"];
+$vinculo2_it = $tabla["vicnulo2_it"];
 $simbolo_mone = "S/  ";
 
 
@@ -174,6 +176,13 @@ if (strlen($img_it) == 0) {
 
       <?php $precio = ($pv03_it > 0) ? $pv03_it : $pv01_it;?>
 
+<?php
+ if(strlen($vinculo1_it)<>0) { ?>
+  <a href="<?php echo $vinculo1_it; ?>" target="_blank" class="boton_comprar">
+  <p>+ Datos / Ficha Técnica</p>
+  <img src="../assets/img/imagenes_index/icono_enlace_blanco.png" alt="">
+</a>      
+<?php } ?>
       <a href="https://wa.me/<? echo '51'.$telf1_aso ?>?text=Hola%20deseo%20información%20de:%20<?php echo ($producto_it); ?>" target="_blank" class="boton_comprar">
         <p>Deseo información - Whatsapp</p>
         <img src="../assets/img/imagenes_index/logo_whatsapp_blanco.png" alt="">
