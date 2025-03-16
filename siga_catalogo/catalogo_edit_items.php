@@ -53,8 +53,7 @@ echo ($xview."<br>");
     <table width="1100" border="0" cellspacing="0" cellpadding="0">
       <tr>
         <td width="265" height="32" align="center" valign="middle" class="TITULO_NARANJA">ADMIN -&gt;  TRI  -VIEW</td>
-        <td width="279" align="center" valign="middle" bgcolor="#FFFFFF"><a href="a_list_items_admin.php">LISTA ADMINISTRADOR</a></td>
-        <td width="228" align="center" valign="middle" bgcolor="#FFFFFF"><a href="xcxoxmxaxnxdxox.php">COMANDO GENERAL</a></td>
+        <td width="279" align="center" valign="middle" bgcolor="#FFFFFF"><a href="catalogo_list_items_admin.php">LISTA de PRODUCTOS</a></td>
         <td width="249" align="center" valign="middle" bgcolor="#FFFFFF"><a href="../index.php"><img src="../imagenes_idx/bot_ofertasemana.png" width="195" height="20"  style="border:0;" onmouseover="this.style.border='solid 3px #c2bdb8';" onmouseout="this.style.border=0;" /></a></td>
         <td width="79" align="center" valign="middle">&nbsp;</td>
       </tr>
@@ -138,8 +137,10 @@ $tabla = mysqli_fetch_array( $result );
       <td bgcolor="#E3E3E1"><textarea name="xmsjpub" id="xmsjpub" cols="30" rows="7"><?php echo($msjpublico_it); ?></textarea></td>
     </tr>
     <tr>
-      <td height="68" bgcolor="#E3E3E1">STOCK </td> 
-      <td bgcolor="#E3E3E1">     </td> 
+      <td height="68" bgcolor="#E3E3E1">Link 1 <br />
+         DATOS O<br />
+          FICHA TÉCNICA</td> 
+      <td bgcolor="#E3E3E1"><textarea name="xvinculo1" id="xvinculo1" cols="30" rows="7"><?php echo($vinculo1_it); ?></textarea></td> 
     </tr>
     <tr>
       <td height="74" bgcolor="#E3E3E1">ll</td> 
@@ -156,7 +157,7 @@ $tabla = mysqli_fetch_array( $result );
       <input type="hidden" name="xview" value=<?php echo($xview);  ?> />     
       <input type="hidden" name="xcod" value=<?php echo($cod_aso);  ?> />     
 
-      <td colspan="2">
+      <td colspan="2" align="center" bgcolor="#000066">
         
         
        <? if  (trim($xview) == 'ADMIN' ) {   ?>
@@ -222,7 +223,7 @@ if (trim($xview)=="ADMIN") { // solo si es ADMIN
         <input name="xmonelista" type="text" id="xmonelista" size="1" onkeyup="this.value=this.value.toUpperCase();" value="<?php echo($monelista_it); ?>"/></td>
     </tr>
     <tr>
-      <td colspan="3" align="center" bgcolor="#E3E3E1">
+      <td colspan="3" align="center" bgcolor="#000066">
       
           
         <input type="hidden" name="idx" value="<?php echo($id); ?>" />
@@ -298,7 +299,7 @@ if (trim($xview)=="ADMIN") { // solo si es ADMIN
           <td align="center"><?php echo(round($pv03_it*100/$precom_it-100,2))."%"; ?></td>
         </tr>
         <tr>
-          <td colspan="3" align="center">        <input type="hidden" name="idx" value="<?php echo($id); ?>" />
+          <td colspan="3" align="center" bgcolor="#000066">        <input type="hidden" name="idx" value="<?php echo($id); ?>" />
         <input type="hidden" name="idx" value="<?php echo($id); ?>" />
         <input type="hidden" name="xmod" value="4" />
       <input type="hidden" name="xcod" value=<?php echo($cod_aso);  ?> />     
@@ -356,7 +357,7 @@ echo(": ".$decri);
           <td align="center"><input name="xgrupolista" type="text" id="xgrupolista" size="4" maxlength="4" onKeyUp="this.value=this.value.toUpperCase();" value="<?php echo($grupolista_it); ?>"/></td>
         </tr>
         <tr>
-          <td colspan="3" align="center">
+          <td colspan="3" align="center" bgcolor="#000066">
           <input type="hidden" name="idx" value="<?php echo($id); ?>" />
           <input type="hidden" name="xmod" value="5" />
       <input type="hidden" name="xcod" value=<?php echo($cod_aso);  ?> />     
@@ -419,7 +420,7 @@ echo(": ".$decri);
               <td colspan="2"><textarea class="cplomo"  name="xobscompra" id="xobscompra" cols="30" rows="5"><?php echo($obscompra_it); ?></textarea></td>
               </tr>
             <tr>
-              <td colspan="3" align="center">
+              <td colspan="3" align="center" bgcolor="#000066">
                 
                 <input type="hidden" name="idx" value="<?php echo($id); ?>" />
                 <input type="hidden" name="xmod" value="6" />

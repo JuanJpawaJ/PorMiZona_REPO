@@ -19,8 +19,10 @@ if ($xmod=="1") {   // CARACTERISTICAS  11111 admin
 	$marka = $_GET['xmarka'];
 	$fabricante = $_GET['xfabricante'];
 	$msjpub = $_GET['xmsjpub'];
+	$vinculo1 = $_GET['xvinculo1'];
 	
-    $sql="UPDATE catalogo_productos SET codfabrica_it='$codfabrica',producto_it='$producto',marka_it='$marka',fabricante_it='$fabricante',msjpublico_it='$msjpub' WHERE id=$id";
+	
+    $sql="UPDATE catalogo_productos SET codfabrica_it='$codfabrica',producto_it='$producto',marka_it='$marka',fabricante_it='$fabricante',msjpublico_it='$msjpub',vinculo1_it='$vinculo1' WHERE id=$id";
     $result=mysqli_query($connec,$sql);
 	if($result){
 		echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok.</span>");
