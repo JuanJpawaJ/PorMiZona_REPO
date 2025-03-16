@@ -124,6 +124,8 @@ if ($xareg=="SIAREG") {
    $time_entrega_it=$_POST['xtime_entrega'];
    $msjpublico_it=$_POST['xmsjpublico'];
    $obscompra_it=$_POST['xobscompra'];
+   $vinculo1_it="";
+   $vinculo2_it="";
 
    // verifica si hay duplicados ....
    //$result=mysql_query("select * from a_items where producto_it=$xproducto",$connec);
@@ -131,8 +133,8 @@ if ($xareg=="SIAREG") {
    //if ($total==0) {
    $xspce="s";
    $xum=0;
-   $sql="INSERT INTO catalogo_productos (codigo_it,cod_aso_it,codfabrica_it,producto_it,grupolista_it,marka_it,fabricante_it, precom_it,monelista_it, pv01_it,pv02_it,pv03_it,img_it,stockmin_it,lugar_al_it,view01_it, view02_it,view03_it,view04_it,time_entrega_it,msjpublico_it,obscompra_it) VALUES 
-('$codigo_it','$cod_aso,fabrica_it','$codfabrica_it','$producto_it','$grupolista_it','$marka_it','$fabricante_it','$precom_it','$monelista_it', '$pv01_it', '$pv02_it','$pv03_it', '$img_it','$stockmin_it','$lugar_al_it','$view01_it','$view02_it','$view03_it','$view04_it','$time_entrega_it','$msjpublico_it','$obscompra_it')";
+   $sql="INSERT INTO catalogo_productos (codigo_it,cod_aso_it,codfabrica_it,producto_it,grupolista_it,marka_it,fabricante_it, precom_it,monelista_it, pv01_it,pv02_it,pv03_it,img_it,stockmin_it,lugar_al_it,view01_it, view02_it,view03_it,view04_it,time_entrega_it,msjpublico_it,obscompra_it,vinculo1_it,vinculo2_it) VALUES 
+('$codigo_it','$cod_aso,fabrica_it','$codfabrica_it','$producto_it','$grupolista_it','$marka_it','$fabricante_it','$precom_it','$monelista_it', '$pv01_it', '$pv02_it','$pv03_it', '$img_it','$stockmin_it','$lugar_al_it','$view01_it','$view02_it','$view03_it','$view04_it','$time_entrega_it','$msjpublico_it','$obscompra_it','$vinculo1_ït','$vinculo2_it')";
    $result=mysqli_query($connec,$sql);
    if($result){
 	   echo ("<span style='background-color: #006600'>Ok. ---DATOS REGISTRADOS-- Ok.</span>");
