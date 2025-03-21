@@ -61,15 +61,9 @@ if(strlen($xzona)==0){
 ?>
 
 
-<table width="908" height="1761" border="1" align="center" cellpadding="0" cellspacing="0">
+<table width="908" height="3352" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td width="900" height="119" align="center" valign="middle"><img src="../imagenes_1/logo_pmz_telf_rgb.jpg" width="853" height="147" />
-    
-  
-    </td>
-  </tr>
-  <tr>
-    <td height="402" align="center"><img src="../imagenes_1/titulo_catalogo_publicitario.jpg" width="947" height="400" /></td>
+    <td width="900" height="318" align="center"><img src="../imagenes_1/titulo_catalogo_publicitario.jpg" width="947" height="316" /></td>
   </tr>
   <tr>
     <td height="86" align="center" valign="middle" bgcolor="#8199A3"><table width="936" height="105" border="1" align="center" cellpadding="1" cellspacing="1">
@@ -291,7 +285,7 @@ $colorocu="#999999";
 </td>
   </tr>
   <tr>
-    <td height="61" align="center" class="blanco"><img src="../imagenes_1/titulo_catalogo_publicitario2.jpg" width="947" height="439" /></td>
+    <td height="61" align="center" class="blanco"><img src="../imagenes_1/pie_catalogo_publicitario.jpg" width="947" height="359" /></td>
   </tr>
   <tr>
     <td height="61" align="center" class="blanco"><img src="../imagenes_1/texto_comunica_pormizona.jpg" width="734" height="969" /></td>
