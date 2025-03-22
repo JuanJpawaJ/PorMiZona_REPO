@@ -278,7 +278,62 @@ while ($tabla=mysqli_fetch_array($result)){
 	$productos_aso=$tabla["productos_aso"];
 	$favicon_aso=$tabla["favicon_aso"];
 	if(strlen($favicon_aso)==0) {
-		$favicon_aso="f_pmz_bl.png";
+	   $favicon_aso="f_pmz_bl.png";	
+       $nombre = $rsocial_aso;  // El nombre que ya leíste de la tabla
+       $faviconPath == __DIR__ . 'img_asociados/f_pmz_bl.png';   // Ruta de tu imagen base
+// Obtener las dos primeras letras en mayúsculas y sin espacios
+       $letras = strtoupper(substr(trim($nombre), 0, 2));
+// Verificar si la extensión GD está habilitada
+//if (!extension_loaded('gd')) {
+ //   die("La extensión GD no está habilitada en este servidor.");
+//}
+
+// ==============================
+// CARGAR LA IMAGEN BASE
+// ==============================
+$imagen = imagecreatefrompng($faviconPath);
+if (!$imagen) {
+    die("No se pudo cargar la imagen.");
+}
+
+// Hacer la imagen transparente si es necesario
+imagealphablending($imagen, true);
+imagesavealpha($imagen, true);
+
+// ==============================
+// CONFIGURACIÓN DE COLORES Y FUENTES
+// ==============================
+$blanco = imagecolorallocate($imagen, 255, 255, 255);
+$negro = imagecolorallocate($imagen, 0, 0, 0);
+$fontSize = 50;  // Tamaño de la letra
+$fontFile = __DIR__ . '/arial.ttf';  // Asegúrate de tener la fuente Arial o coloca la que uses
+
+// ==============================
+// CENTRAR EL TEXTO
+// ==============================
+$box = imagettfbbox($fontSize, 0, $fontFile, $letras);
+$textWidth = $box[2] - $box[0];
+$textHeight = $box[1] - $box[7];
+$x = (imagesx($imagen) - $textWidth) / 2;
+$y = (imagesy($imagen) + $textHeight) / 2;
+
+// ==============================
+// DIBUJAR EL TEXTO SOBRE LA IMAGEN
+// ==============================
+imagettftext($imagen, $fontSize, 0, $x + 2, $y + 2, $negro, $fontFile, $letras);  // Contorno negro
+imagettftext($imagen, $fontSize, 0, $x, $y, $blanco, $fontFile, $letras);  // Letras blancas
+
+// ==============================
+// CONVERTIR A BASE64 PARA INCRUSTAR DIRECTAMENTE EN HTML
+// ==============================
+ob_start();  // Iniciar el buffer de salida
+imagepng($imagen);  // Enviar la imagen al buffer
+$imagenEnBase64 = base64_encode(ob_get_clean());  // Obtener contenido del buffer y codificarlo en Base64
+imagedestroy($imagen);  // Liberar memoria
+
+// Crear el string base64 que puedes incrustar en el src de tu <img>
+$imagenBase64Src = 'data:image/png;base64,' . $imagenEnBase64;		
+	
 	}
 	$latitud_aso=$tabla["latitud_aso"];
 	$longitud_aso=$tabla["longitud_aso"];
@@ -308,8 +363,16 @@ while ($tabla=mysqli_fetch_array($result)){
 
             <table width="887" border="0" cellspacing="0" cellpadding="1">
               <tr>
-                 <td width="150" rowspan="4" align="center" valign="middle"><img src="img_asociados/<? echo($favicon_aso); ?>" width="100" height="100"></td>
+                 <td width="150" rowspan="4" align="center" valign="middle">
+                <?php  	if(strlen($favicon_aso)==0) {  ?>
+                       <img src="<?php echo $imagenBase64Src; ?> width="100" height="100" >
+                <?php  } else { ?>
+                       <img src="img_asociados/<? echo($favicon_aso); ?>" width="100" height="100">
+                <?php }  ?>
                  
+                </td>
+                 
+
                 <td height="41" colspan="2" align="left" bgcolor="#FFFFFF"><span class="rsocial"><?php echo($rsocial_aso) ?></span></td>
                 </tr>
               <tr>
