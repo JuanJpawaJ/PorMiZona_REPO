@@ -278,7 +278,7 @@ while ($tabla=mysqli_fetch_array($result)){
 	$productos_aso=$tabla["productos_aso"];
 	$favicon_aso=$tabla["favicon_aso"];
 	if(strlen($favicon_aso)==0) {
-	   $favicon_aso="f_pmz_bl.png";	
+	   //$favicon_aso="f_pmz_bl.png";	
        $nombre = $rsocial_aso;  // El nombre que ya leíste de la tabla
        $faviconPath == __DIR__ . 'img_asociados/f_pmz_bl.png';   // Ruta de tu imagen base
 // Obtener las dos primeras letras en mayúsculas y sin espacios
@@ -306,7 +306,7 @@ imagesavealpha($imagen, true);
 $blanco = imagecolorallocate($imagen, 255, 255, 255);
 $negro = imagecolorallocate($imagen, 0, 0, 0);
 $fontSize = 50;  // Tamaño de la letra
-$fontFile = __DIR__ . '/arial.ttf';  // Asegúrate de tener la fuente Arial o coloca la que uses
+//$fontFile = __DIR__ . '/arial.ttf';  // Asegúrate de tener la fuente Arial o coloca la que uses
 
 // ==============================
 // CENTRAR EL TEXTO
