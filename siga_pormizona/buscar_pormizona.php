@@ -283,6 +283,7 @@ while ($tabla=mysqli_fetch_array($result)){
        $faviconPath == __DIR__ . 'img_asociados/f_pmz_bl.png';   // Ruta de tu imagen base
 // Obtener las dos primeras letras en mayúsculas y sin espacios
        $letras = strtoupper(substr(trim($nombre), 0, 2));
+	   echo "VARIOSSSSSS: ".$nombre;
 // Verificar si la extensión GD está habilitada
 if (!extension_loaded('gd')) {
     die("La extensión GD no está habilitada en este servidor.");
