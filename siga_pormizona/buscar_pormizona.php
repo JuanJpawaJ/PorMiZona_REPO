@@ -284,9 +284,9 @@ while ($tabla=mysqli_fetch_array($result)){
 // Obtener las dos primeras letras en mayúsculas y sin espacios
        $letras = strtoupper(substr(trim($nombre), 0, 2));
 // Verificar si la extensión GD está habilitada
-//if (!extension_loaded('gd')) {
- //   die("La extensión GD no está habilitada en este servidor.");
-//}
+if (!extension_loaded('gd')) {
+    die("La extensión GD no está habilitada en este servidor.");
+}
 
 // ==============================
 // CARGAR LA IMAGEN BASE
@@ -365,7 +365,7 @@ $imagenBase64Src = 'data:image/png;base64,' . $imagenEnBase64;
               <tr>
                  <td width="150" rowspan="4" align="center" valign="middle">
                 <?php  	if(strlen($favicon_aso)==0) {  ?>
-                       <img src="<?php echo "hola". $imagenBase64Src; ?> width="100" height="100" >
+                       <img src="<?php echo "hola". $imagenBase64Src; ?>" width="100" height="100" >
                 <?php  } else { ?>
                        <img src="img_asociados/<? echo($favicon_aso); ?>" width="100" height="100">
                 <?php }  ?>
