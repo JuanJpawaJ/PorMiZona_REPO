@@ -364,7 +364,7 @@ $imagenBase64Src = 'data:image/png;base64,' . $imagenEnBase64;
 
             <table width="887" border="0" cellspacing="0" cellpadding="1">
               <tr>
-                 <td width="150" rowspan="4" align="center" valign="middle">
+                 <td width="150" rowspan="4" align="center" valign="middle">AQUIIIII
                 <?php  	if(strlen($favicon_aso)==0) {  ?>
                        <img src="<?php echo "hola". $imagenBase64Src; ?>" width="100" height="100" >
                 <?php  } else { ?>
