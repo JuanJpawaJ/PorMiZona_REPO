@@ -257,7 +257,7 @@ $total=mysqli_num_rows($result);
 
 // $total=mysqli_num_rows($result);
 
-$numcolor=0;
+
 while ($tabla=mysqli_fetch_array($result)){
 	$id=$tabla["id"];
 	$cod_aso=$tabla["cod_aso"];
@@ -277,6 +277,65 @@ while ($tabla=mysqli_fetch_array($result)){
 	$categoria_aso=$tabla["categoria_aso"];
 	$productos_aso=$tabla["productos_aso"];
 	$favicon_aso=$tabla["favicon_aso"];
+	if(strlen($favicon_aso)==0) {
+	   //$favicon_aso="f_pmz_bl.png";	
+       $nombre = $rsocial_aso;  // El nombre que ya leíste de la tabla
+       $faviconPath == __DIR__ . 'img_asociados/f_pmz_bl.png';   // Ruta de tu imagen base
+// Obtener las dos primeras letras en mayúsculas y sin espacios
+       $letras = strtoupper(substr(trim($nombre), 0, 2));
+	   
+// Verificar si la extensión GD está habilitada
+if (!extension_loaded('gd')) {
+    die("La extensión GD no está habilitada en este servidor.");
+}
+
+// ==============================
+// CARGAR LA IMAGEN BASE
+// ==============================
+$imagen = imagecreatefrompng($faviconPath);
+if (!$imagen) {
+    die("No se pudo cargar la imagen.");
+}
+
+// Hacer la imagen transparente si es necesario
+imagealphablending($imagen, true);
+imagesavealpha($imagen, true);
+
+// ==============================
+// CONFIGURACIÓN DE COLORES Y FUENTES
+// ==============================
+$blanco = imagecolorallocate($imagen, 255, 255, 255);
+$negro = imagecolorallocate($imagen, 0, 0, 0);
+$fontSize = 50;  // Tamaño de la letra
+//$fontFile = __DIR__ . '/arial.ttf';  // Asegúrate de tener la fuente Arial o coloca la que uses
+
+// ==============================
+// CENTRAR EL TEXTO
+// ==============================
+$box = imagettfbbox($fontSize, 0, $fontFile, $letras);
+$textWidth = $box[2] - $box[0];
+$textHeight = $box[1] - $box[7];
+$x = (imagesx($imagen) - $textWidth) / 2;
+$y = (imagesy($imagen) + $textHeight) / 2;
+
+// ==============================
+// DIBUJAR EL TEXTO SOBRE LA IMAGEN
+// ==============================
+imagettftext($imagen, $fontSize, 0, $x + 2, $y + 2, $negro, $fontFile, $letras);  // Contorno negro
+imagettftext($imagen, $fontSize, 0, $x, $y, $blanco, $fontFile, $letras);  // Letras blancas
+
+// ==============================
+// CONVERTIR A BASE64 PARA INCRUSTAR DIRECTAMENTE EN HTML
+// ==============================
+ob_start();  // Iniciar el buffer de salida
+imagepng($imagen);  // Enviar la imagen al buffer
+$imagenEnBase64 = base64_encode(ob_get_clean());  // Obtener contenido del buffer y codificarlo en Base64
+imagedestroy($imagen);  // Liberar memoria
+
+// Crear el string base64 que puedes incrustar en el src de tu <img>
+$imagenBase64Src = 'data:image/png;base64,' . $imagenEnBase64;		
+	
+	}
 	$latitud_aso=$tabla["latitud_aso"];
 	$longitud_aso=$tabla["longitud_aso"];
 	
@@ -305,98 +364,7 @@ while ($tabla=mysqli_fetch_array($result)){
 
             <table width="887" border="0" cellspacing="0" cellpadding="1">
               <tr>
-                 <td width="150" rowspan="4" align="center" valign="middle">
-                 
-              <?php	if(strlen($favicon_aso)==0) {
-				  
-
-// ==============================
-// CONFIGURACIONES INICIALES
-// ==============================
-$nombre = $rsocial_aso;  // Puedes obtenerlo de tu base de datos
-$letras = strtoupper(substr(trim($nombre), 0, 2));  // Dos primeras letras
-
-// Ruta a la fuente TTF (debe estar en el mismo directorio que este archivo PHP)
-$fontFile = __DIR__ . '/arial.ttf';  // Asegúrate que arial.ttf esté aquí o usa otra fuente
-
-// Verificación de la fuente
-if (!file_exists($fontFile)) {
-    die("No se encontró el archivo de fuente: $fontFile");
-}
-
-// Tamaño de la imagen
-$ancho = 255;
-$alto = 255;
-
-// ==============================
-// CREAR IMAGEN EN BLANCO Y HACER TRANSPARENTE
-// ==============================
-$imagen = imagecreatetruecolor($ancho, $alto);
-imagesavealpha($imagen, true);
-$transparente = imagecolorallocatealpha($imagen, 0, 0, 0, 127);
-imagefill($imagen, 0, 0, $transparente);
-
-// ==============================
-// COLORES
-// ==============================
-$numcolor++;
-$blanco = imagecolorallocate($imagen, 255, 255, 255); 
-if ($numcolor==1) {
-    $xcolor = imagecolorallocate($imagen, 192, 192, 192);  // Color plomo
-} elseif ($numcolor==2){
-    $xcolor = imagecolorallocate($imagen, 153, 250, 153);  // verde
-} elseif ($numcolor==3){
-    $xcolor = imagecolorallocate($imagen, 52, 216, 218); // celeste
-} else{
-    $xcolor = imagecolorallocate($imagen, 245, 192, 78); // naranja
-	$numcolor=0;
-} 
-	
-
-// ==============================
-// DIBUJAR CÍRCULO
-// ==============================
-imagefilledellipse($imagen, $ancho / 2, $alto / 2, $ancho - 10, $alto - 10, $xcolor);
-
-// ==============================
-// AGREGAR TEXTO GRANDE
-// ==============================
-$fontSize = 100;  // Tamaño grande de la letra
-
-// Calcular posición para centrar el texto
-$box = imagettfbbox($fontSize, 0, $fontFile, $letras);
-$textWidth = $box[2] - $box[0];
-$textHeight = $box[1] - $box[7];
-$x = ($ancho - $textWidth) / 2;
-$y = ($alto + $textHeight) / 2 - 10;  // Ligeramente ajustado hacia arriba
-
-// Escribir el texto en color blanco
-imagettftext($imagen, $fontSize, 0, $x, $y, $blanco, $fontFile, $letras);
-
-// ==============================
-// CONVERTIR LA IMAGEN EN BASE64 PARA MOSTRARLA DIRECTAMENTE EN HTML
-// ==============================
-ob_start();
-imagepng($imagen);
-$imagenBase64 = base64_encode(ob_get_clean());
-imagedestroy($imagen);
-
-// Crear el string base64 que puedes incrustar en el src de tu <img>
-$imagenBase64Src = 'data:image/png;base64,' . $imagenBase64;
-?>
-
-
-				  
-				  
-				  
-				  
-				  
-				 
-                       <img src="<?php echo $imagenBase64Src; ?>" width="120" height="120" alt="Avatar con Letras">
-              <?php } else { ?>
-                       <img src="img_asociados/<? echo($favicon_aso); ?>" width="120" height="120">
-              <?php } ?>
-                  </td>
+                 <td width="150" rowspan="4" align="center" valign="middle"><img src="img_asociados/<? echo($favicon_aso); ?>" width="100" height="100"> </td>
                  
 
                 <td height="41" colspan="2" align="left" bgcolor="#FFFFFF"><span class="rsocial"><?php echo($rsocial_aso) ?></span></td>

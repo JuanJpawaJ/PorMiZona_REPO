@@ -40,8 +40,15 @@
             justify-content: center;
             align-items: center;
             position: relative;
+            flex-direction: column;
         }
 
+            .contenido_total > .contenido > .contenido_2 > a{
+                background-color: var(--color_amarillo_0);
+                padding: 0.5rem;
+                color: var(--color_negro);
+                font-weight: var(--fuente_extrabold);
+            }
 
             .contenido_total > .contenido > .contenido_2 > .seleccion_ubicacion{
                 display: flex;

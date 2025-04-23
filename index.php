@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Plataformea de publicidad. Permite publicar a los negocios, tiendas, empresas, profesionales gratis">
+    <meta name="description" content="Plataforma de publicidad. Permite publicar a los negocios, tiendas, empresas, profesionales gratis">
    <link rel="canonical" href="https://www.pormizona.com.pe/index.php">
    <meta name="robots" content="index, follow">
 
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../static/css/estilos_generales.css">
     <link rel="stylesheet" href="../static/css/estilos_index.css">
     <link rel="stylesheet" href="../static/css/estilos_contenedor_marcas.css">
-    <title>PorMiZona</title>
+    <title>PorMiZona por mi zona</title>
     <link rel="icon" href="assets/img/imagenes_index/icono_pestana/icono_pormizona.png" type="image/png">
 </head>
 <body>
@@ -26,7 +26,9 @@
             <img src="static/imgs/Logos/logo_pormizona_borde_bl.png" alt="">
         </div>
 
-        <a href="siga_pormizona/formingre1.php">¡PUBLICA TU TIENDA!</a>
+       <!-- <a href="siga_pormizona/formingre1.php">¡PUBLICA TU NEGOCIO!</a> -->
+            <a href="siga_pormizona/a_publicar.php">¡PUBLICA GRATIS!</a> 
+
         
         <button class="boton_nav" id="boton_hamburguesa">
             <span class="material-symbols-outlined">
@@ -37,7 +39,7 @@
 
         <ul id="menu">
             <li><a href="siga_pormizona/a_lis_mievento.php">Eventos locales</a></li>
-            <li><a href="siga_pormizona/a_catalogo_imp.php">Catálogo</a></li>
+            <li><a href="siga_pormizona/a_catalogo_imp.php">G/Empresarial impresa</a></li>
             <li><a href="siga_pormizona/a_publicar.php">Publicar avisos</a></li>
         </ul>
     </nav>
@@ -99,6 +101,8 @@ setlocale(LC_ALL, "sp");
                     <input type="hidden" id="ciudad" name="ciudad">
                     <button type="submit">Buscar</button>
                 </form>
+
+                <a href="siga_pormizona/a_publicar.php">¿A DÓNDE VOY?</a>
             </div>
         </div>
     </div>

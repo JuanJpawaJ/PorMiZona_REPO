@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://www.pormizona.com.pe/index.php">
+    <meta name="robots" content="noindex, follow">
+
 
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="../css/normalizar.css">
@@ -30,20 +33,20 @@
     <header>
         <div>
             <img src="../imgs/pmz_01_rgb.jpg" alt="" class="logo_por_mi_zona">
-            <img src="../imgs/c_edi_01_rgb.jpg" alt="" class="central_de_edicion">
+           <!-- <img src="../imgs/c_edi_01_rgb.jpg" alt="" class="central_de_edicion"> -->
             
 
         </div>
         <div>
-            <h2>ENCUENTRE LO QUE NECESITE CERCA DE USTED</h2>
+            <h2>¡PUBLICA COMPLETAMENTE GRATIS!</h2>
             <h2>PUBLICIDAD LOCALIZADA Y EVENTOS</h2>
         </div>
        <div class="contenedor_botones contenedor_botones_publicar"> 
 
-            <a href="/siga_pormizona/formingre1.php" class="button button_text_img"><p>PROPIETARIO DE:<br>Tienda, empresa,<br>profesional, ocupación.</p><img src="../imgs/bp_negocio.png" alt="Botón 1" ></a>
+            <a href="/siga_pormizona/formingre1.php" class="button button_text_img"><p>PROPIETARIO DE:<br>Negocios, tiendas, empresas,<br>profesionales, ocupación.</p><img src="../imgs/bp_negocio.png" alt="Botón 1" ></a>
             <a href="/siga_pormizona/formievento1.php" class="button button_text_img"><p>INVITA AL PÚBLICO A:<br>Eventos, espectáculos,<br>actividades culturales, etc.</p><img src="../imgs/bp_evento.png" alt="Botón 2" ></a>
-            <a href="/siga_pormizona/a_catalogo_imp.php" class="button button_text_img"><p>CATÁLOGO PORMIZONA<br>Publicidad impresa,<br>Distribución 1.5 Km.</p><img src="../imgs/bp_impreso.png" alt="Botón 3" ></a>
-            </a>
+           <!-- <a href="/siga_pormizona/a_catalogo_imp.php" class="button button_text_img"><p>CATÁLOGO PORMIZONA<br>Publicidad impresa,<br>Distribución 1.5 Km.</p><img src="../imgs/bp_impreso.png" alt="Botón 3" ></a> -->
+            
 <!---
 
     <a href="https://example.com" class="button"><img src="button1.png" alt="Botón 1">
