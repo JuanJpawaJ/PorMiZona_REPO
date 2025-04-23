@@ -102,7 +102,7 @@ setlocale(LC_ALL, "sp");
                     <button type="submit">Buscar</button>
                 </form>
 
-                <a href="siga_pormizona/a_publicar.php">¿A DÓNDE VOY?</a>
+                <a href="siga_pormizona/a_publicar.php">¿A DÓNDE VOY HOY?</a>
             </div>
         </div>
     </div>
